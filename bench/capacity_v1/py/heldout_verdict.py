@@ -22,7 +22,7 @@ def pair(df, pol, ref, metric="lat_per_slot_hour"):
     key = ["family", "variant", "seed", "cap"]
     a = df[df.policy == pol].set_index(key)
     b = df[df.policy == ref].set_index(key)
-    d = pd.DataFrame({"dz": (a[metric] - b[metric]) / b["dens0_sd"]}).reset_index()
+    d = pd.DataFrame({"dz": (a[metric] - b[metric]) / b["dens0_rms"]}).reset_index()
     return d
 
 

@@ -65,7 +65,7 @@ class MabwiserLinUCB(LinBandit):
     name = "MABWISER_LINUCB"
     def reset(self, cap, seed, N, cl):
         super().reset(cap, seed, N, cl)
-        self.mab = MAB(arms=list(range(N)), learning_policy=LearningPolicy.LinUCB(alpha=self.alpha, l2_reg=10.0), seed=seed)
+        self.mab = MAB(arms=list(range(N)), learning_policy=LearningPolicy.LinUCB(alpha=self.alpha, l2_lambda=10.0), seed=seed)
         self.buf = []; self.fitted = False
     def on_close(self, rec):
         self.upd_close(rec)
@@ -110,11 +110,11 @@ P = SCN.variants("S5_correlated", "VALIDATION")[0]
 W = make_world(P, 8100)
 Rr = W.R[:600]
 true_corr = np.corrcoef(W.R[:, :].T)   # long-sample proxy for the truth
-def ewma_corr(R, delta=0.2, a=0.01):
-    m = np.zeros(R.shape[1]); S = np.eye(R.shape[1]) * 40
-    for r in R:
-        d = r - m; m += a * d; S = (1 - a) * S + a * np.outer(d, d)
-    S = (1 - delta) * S + delta * np.diag(np.diag(S)); sd = np.sqrt(np.diag(S)); return S / np.outer(sd, sd)
+from policies import Stats
+def ewma_corr(R):
+    st = Stats(); st.init_stats(R.shape[1])
+    for i, r in enumerate(R): st.on_returns(i, r)
+    return st.corr_hat()[1]
 errs = {}
 for n in (100, 200, 400):
     R = Rr[:n]

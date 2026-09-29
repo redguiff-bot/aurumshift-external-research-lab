@@ -14,7 +14,7 @@ FIXED = ["FIFO", "ROUND_ROBIN", "RANDOM_SEEDED", "EQUAL_QUOTA", "FIFO_NETPOS", "
          "RANK_NET_UNKCOST_ZERO", "RANK_NET_MISSING_REJECT", "SECRETARY_1_OVER_E"]
 KEEP = ["n_opps", "n_admit", "n_evict", "evals_per_opp", "real_net", "lat_net", "real_per_slot_hour", "lat_per_slot_hour",
         "lat_per_used_hour", "utilisation", "idle", "mean_hold", "admit_per_slot_hour", "v0_admitted_mean", "v0_rejected_mean",
-        "v0_all_mean", "v0_sd", "dens0_sd", "n_hq", "hq_missed_frac", "hq_missed_capacity", "hq_declined_with_free_slot",
+        "v0_all_mean", "v0_sd", "dens0_sd", "dens0_rms", "n_hq", "hq_missed_frac", "hq_missed_capacity", "hq_declined_with_free_slot",
         "opp_cost_missed_value_per_slot_hour", "hhi_cluster", "eff_clusters", "max_cluster_share", "pnl_day_sd", "pnl_day_mean",
         "ret_to_risk", "max_drawdown", "starved_inst", "starved_pos_inst", "min_admit_ratio", "inst_admit_share_max",
         "spam_admit_share", "spam_opp_share", "long_slot_hour_share", "long_admit_share", "short_admit_share",
@@ -76,7 +76,7 @@ def tune():
     key = ["family", "variant", "seed", "cap"]
     fifo = df[df.policy == "FIFO"].set_index(key)
     df = df[df.policy != "FIFO"].join(fifo[["lat_per_slot_hour"]].rename(columns={"lat_per_slot_hour": "fifo"}), on=key)
-    df["z"] = (df.lat_per_slot_hour - df.fifo) / df.dens0_sd
+    df["z"] = (df.lat_per_slot_hour - df.fifo) / df.dens0_rms
     # objective = mean over cells of z (equal weight per cell; cells are family x variant x seed x cap)
     obj = df.groupby(["base", "policy", "params"]).z.mean().reset_index()
     tuned, table = {}, []
