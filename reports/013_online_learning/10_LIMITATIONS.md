@@ -1,0 +1,12 @@
+# 10 — Limitations
+
+1. **Synthetic only.** No market data. Regime shifts here are orthogonal linear rotations of a Gaussian, i.i.d. features, stationary noise. Real markets have heavy tails, autocorrelation, heteroskedasticity, tiny SNR and non-random drift. All absolute numbers are meaningless for AurumShift; only the *ordering* and the *mechanisms* are informative, and even the ordering is conditional on the generator (INFERENCE).
+2. **Optimistic gain for adaptation.** Orthogonal concepts are the harshest case for a stale model, so "adaptive ≫ frozen/batch" is an upper-end estimate. The only fair reading of the gain is against `rolling`: 12–15 %.
+3. **Tuning artefacts.** One config per model over all scenarios, 3 tuning seeds, tiny grids (≤4). Several choices sit on grid edges (see 08). `bank_*` were **not** tuned (single config) and still won C — a mild advantage-to-baseline the other way. Kalman is probably under-explored. Baselines got the same tuning budget, but the low-SNR run uses configs tuned at normal SNR.
+4. **No AurumShift knowledge.** Nothing here says a method is compatible with AurumShift's pipeline, PIT storage or PostgreSQL model. Integration adjudication is out of scope (`claude.md`).
+5. **Metrics.** Regret uses ground-truth probabilities/means (not available in reality). The adaptation-time metric is threshold-based (1.5× pre-change regret + 0.01) and degenerate for `gradual` (0 steps). The forgetting probes cannot separate "forgot" from "correctly moved" for a single-state learner (5.1). "Catastrophic forgetting" in the neural-network sense is not tested.
+6. **Compute numbers** come from a shared 4-core container with Python loops — indicative only.
+7. **Determinism** verified on one platform / library set / one seed per model; pickle is not a stable schema (06).
+8. **Not executed:** AdaBoost/ADWINBoosting/SRP/LeveragingBagging, VW, MOA, deep continual learning, PH/DDM/KSWIN detectors (only ADWIN), hybrid "RLS + bank" tuning, sample-size sweeps beyond T=4000, tree `max_size`/`max_depth` bounding.
+9. **Multiple comparisons.** 19 candidate entries × 10 scenarios × 2 tracks were examined; the 12–15 % gains have tight seed-bootstrap CIs (seeds are i.i.d. streams of one generator) but CIs do not cover generator misspecification.
+10. Different methods win on each track (`bank_sgd_log` vs `rls`). The bank on track R and RLS-as-classifier were both run; neither transferred. A single cross-track reference was therefore *not* established.
