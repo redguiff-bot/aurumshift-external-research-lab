@@ -7,11 +7,11 @@
   "kappa": 25.0
  },
  "SLOTHOUR_DENSITY": {
-  "h0": 6.0
+  "h0": 24.0
  },
  "SLOTHOUR_HAZARD": {
   "h0": 2.0,
-  "tau": 3.0
+  "tau": 1.0
  },
  "SHADOW_PRICE": {
   "eta": 0.1,
@@ -19,7 +19,7 @@
  },
  "ONLINE_KNAPSACK_PSI": {
   "L": 0.25,
-  "U": 4.0
+  "U": 1.5
  },
  "FLUID_QUANTILE": {
   "h0": 2.0,
@@ -33,13 +33,13 @@
   "f": 0.75
  },
  "CORR_PENALTY": {
-  "g": 0.05
+  "g": 0.005
  },
  "MARGINAL_RISK": {
   "g": 0.05
  },
  "CORR_HARD_REJECT": {
-  "rho": 0.6
+  "rho": 0.95
  },
  "EVICT_SWAP": {
   "M": 1.5,
