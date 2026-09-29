@@ -1,0 +1,36 @@
+CREATE EXTENSION
+psql:sql/010_without_overlaps.sql:2: NOTICE:  le schéma « w » n'existe pas, poursuite du traitement
+DROP SCHEMA
+CREATE SCHEMA
+CREATE TABLE
+INSERT 0 1
+UPDATE 1
+INSERT 0 1
+psql:sql/010_without_overlaps.sql:16: NOTICE:  OVERLAP_REJECTED (23P01)
+DO
+INSERT 0 1
+           test            | rows 
+---------------------------+------
+ LEAK_QUERY_T=10:05 sees Y |    1
+(1 ligne)
+
+CREATE TABLE
+INSERT 0 3
+SELECT 3
+ALTER TABLE
+     test      | count 
+---------------+-------
+ DERIVED_PK_OK |     3
+(1 ligne)
+
+               test                | count 
+-----------------------------------+-------
+ DERIVED_LEAK_QUERY_T=10:05 sees Y |     0
+(1 ligne)
+
+INSERT 0 2
+       test       | empty_ranges 
+------------------+--------------
+ TIE_EMPTY_RANGES |            1
+(1 ligne)
+
