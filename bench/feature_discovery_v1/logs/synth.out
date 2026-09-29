@@ -1,3 +1,7 @@
 synth 7004 {'discovered': 16, 'passed_validation': 15, 'final': 2, 'heldout_stable': 2, 'nonredundant': 2, 'new_stable_nonredundant': 2, 'invariant': 0, 'sym_stable_clusters': 1, 'sym_stable_heldout': 0} 464s
 synth 7002 {'discovered': 27, 'passed_validation': 26, 'final': 2, 'heldout_stable': 2, 'nonredundant': 2, 'new_stable_nonredundant': 2, 'invariant': 1, 'sym_stable_clusters': 1, 'sym_stable_heldout': 0} 505s
 synth 7001 {'discovered': 16, 'passed_validation': 16, 'final': 2, 'heldout_stable': 2, 'nonredundant': 2, 'new_stable_nonredundant': 2, 'invariant': 1, 'sym_stable_clusters': 2, 'sym_stable_heldout': 0} 513s
+synth 7003 {'discovered': 22, 'passed_validation': 20, 'final': 2, 'heldout_stable': 2, 'nonredundant': 2, 'new_stable_nonredundant': 2, 'invariant': 1, 'sym_stable_clusters': 3, 'sym_stable_heldout': 0} 604s
+synth 7005 {'discovered': 20, 'passed_validation': 18, 'final': 2, 'heldout_stable': 2, 'nonredundant': 2, 'new_stable_nonredundant': 2, 'invariant': 1, 'sym_stable_clusters': 1, 'sym_stable_heldout': 0} 210s
+synth 7006 {'discovered': 21, 'passed_validation': 18, 'final': 2, 'heldout_stable': 2, 'nonredundant': 2, 'new_stable_nonredundant': 2, 'invariant': 0, 'sym_stable_clusters': 1, 'sym_stable_heldout': 0} 182s
+total 692.5064260959625
