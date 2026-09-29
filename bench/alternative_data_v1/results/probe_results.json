@@ -1,0 +1,973 @@
+{
+ "bc_charts": [
+  {
+   "label": "n-transactions",
+   "url": "https://api.blockchain.info/charts/n-transactions",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 525.0,
+   "ms_max": 832.6,
+   "bytes": 1071,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:51:53 GMT",
+    "Cache-Control": "public, max-age=14400",
+    "last-modified": "Tue, 29 Sep 2026 17:51:53 GMT"
+   },
+   "shape": "dict:status,name,unit,period,description,values",
+   "err": []
+  },
+  {
+   "label": "mempool-size",
+   "url": "https://api.blockchain.info/charts/mempool-size",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 654.1,
+   "ms_max": 944.1,
+   "bytes": 20694,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:52:03 GMT",
+    "Cache-Control": "public, max-age=14400",
+    "last-modified": "Tue, 29 Sep 2026 17:52:03 GMT"
+   },
+   "shape": "dict:status,name,unit,period,description,values",
+   "err": []
+  }
+ ],
+ "mempool_space": [
+  {
+   "label": "fees_recommended",
+   "url": "https://mempool.space/api/v1/fees/recommended",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 356.4,
+   "ms_max": 461.7,
+   "bytes": 74,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:52:12 GMT",
+    "Content-Length": "74",
+    "ETag": "W/\"4a-tphdeVwQVzaBuGtNdB830c+BcyY\"",
+    "Cache-Control": "max-age=1, public"
+   },
+   "shape": "dict:fastestFee,halfHourFee,hourFee,economyFee,minimumFee",
+   "err": []
+  },
+  {
+   "label": "blocks_fees_3y",
+   "url": "https://mempool.space/api/v1/mining/blocks/fees/3y",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 473.1,
+   "ms_max": 488.7,
+   "bytes": 163437,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:52:20 GMT",
+    "Cache-control": "max-age=120, public",
+    "ETag": "W/\"27e6d-4i3aFP6zG4/I6EFjM154C497hgM\""
+   },
+   "shape": "list[2193]:avgHeight,timestamp,avgFees,USD",
+   "err": []
+  },
+  {
+   "label": "mempool_live",
+   "url": "https://mempool.space/api/mempool",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 485.7,
+   "ms_max": 527.4,
+   "bytes": 4461,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:52:29 GMT",
+    "cache-control": "max-age=1, public"
+   },
+   "shape": "dict:count,vsize,total_fee,fee_histogram",
+   "err": []
+  }
+ ],
+ "blockstream": [
+  {
+   "label": "tip",
+   "url": "https://blockstream.info/api/blocks/tip/height",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 625.9,
+   "ms_max": 690.2,
+   "bytes": 6,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:52:38 GMT",
+    "Content-Length": "6",
+    "cache-control": "public, max-age=10"
+   },
+   "shape": "int",
+   "err": []
+  },
+  {
+   "label": "fee_est",
+   "url": "https://blockstream.info/api/fee-estimates",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 656.1,
+   "ms_max": 677.8,
+   "bytes": 425,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:52:48 GMT",
+    "cache-control": "public, max-age=10"
+   },
+   "shape": "dict:6,16,25,14,19,5,11,21",
+   "err": []
+  }
+ ],
+ "blockchair": [
+  {
+   "label": "stats",
+   "url": "https://api.blockchair.com/bitcoin/stats",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 839.3,
+   "ms_max": 911.1,
+   "bytes": 1891,
+   "hdr": {
+    "Cache-Control": "no-cache, private",
+    "Date": "Tue, 29 Sep 2026 17:52:57 GMT"
+   },
+   "shape": "dict:data,context",
+   "err": []
+  }
+ ],
+ "defillama_stable": [
+  {
+   "label": "stable_all",
+   "url": "https://stablecoins.llama.fi/stablecoincharts/all",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 564.4,
+   "ms_max": 603.8,
+   "bytes": 1295823,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:53:07 GMT",
+    "cache-control": "public, max-age=1798",
+    "etag": "W/\"6abbe5c1-13c5cf\"",
+    "last-modified": "Tue, 29 Sep 2026 16:22:25 GMT",
+    "Age": "187"
+   },
+   "shape": "list[3227]:date,totalCirculating,totalCirculatingUSD",
+   "err": []
+  },
+  {
+   "label": "tvl_hist",
+   "url": "https://api.llama.fi/v2/historicalChainTvl",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 387.4,
+   "ms_max": 899.0,
+   "bytes": 122138,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:53:16 GMT",
+    "Cache-Control": "public, max-age=1798",
+    "etag": "\"6abbef64-1dd1a\"",
+    "last-modified": "Tue, 29 Sep 2026 17:03:32 GMT"
+   },
+   "shape": "list[3290]:date,tvl",
+   "err": []
+  }
+ ],
+ "gdelt_doc": [
+  {
+   "label": "timelinevol",
+   "url": "https://api.gdeltproject.org/api/v2/doc/doc",
+   "n_ok": 1,
+   "statuses": [
+    429,
+    200,
+    429
+   ],
+   "ms_median": 24404.9,
+   "ms_max": 24404.9,
+   "bytes": 5864,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 18:01:26 GMT",
+    "Cache-Control": "public, max-age=900",
+    "Content-Length": "5864"
+   },
+   "shape": "dict:query_details,timeline",
+   "err": []
+  }
+ ],
+ "rss_crypto": [
+  {
+   "label": "rss",
+   "url": "https://cointelegraph.com/rss",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 454.1,
+   "ms_max": 486.7,
+   "bytes": 52031,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:54:07 GMT",
+    "Cache-Control": "public, s-maxage=300",
+    "Age": "89",
+    "last-modified": "Tue, 29 Sep 2026 17:52:38 GMT"
+   },
+   "shape": "text:<?xml version=\"1.0\" encoding=\"UTF-8\"?> <rss version=\"2.0\" xmlns:content=\"http://",
+   "err": []
+  }
+ ],
+ "rss_fed": [
+  {
+   "label": "press_all",
+   "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 396.6,
+   "ms_max": 444.4,
+   "bytes": 14486,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:54:16 GMT",
+    "ETag": "W/\"3b98faa2c4ddd1:0\"",
+    "Age": "2",
+    "Last-Modified": "Fri, 25 Sep 2026 20:30:11 GMT"
+   },
+   "shape": "text:\u00ef\u00bb\u00bf<?xml version=\"1.0\" encoding=\"utf-8\" ?>\r <rss version=\"2.0\">\r     <channel>\r ",
+   "err": []
+  }
+ ],
+ "hn_algolia": [
+  {
+   "label": "search_by_date",
+   "url": "https://hn.algolia.com/api/v1/search_by_date",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 458.8,
+   "ms_max": 464.7,
+   "bytes": 15703,
+   "hdr": {
+    "date": "Tue, 29 Sep 2026 17:54:25 GMT",
+    "Content-Length": "15703"
+   },
+   "shape": "dict:exhaustive,exhaustiveNbHits,exhaustiveTypo,hits,hitsPerPage,nbHits,nbPages,page",
+   "err": []
+  }
+ ],
+ "stocktwits": [
+  {
+   "label": "btc_stream",
+   "url": "https://api.stocktwits.com/api/2/streams/symbol/BTC.X.json",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 503.0,
+   "ms_max": 511.1,
+   "bytes": 108087,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:54:34 GMT",
+    "etag": "W/\"61fe73a40d49e9bcafab1862184223ea\"",
+    "Cache-Control": "max-age=0, private, must-revalidate"
+   },
+   "shape": "dict:symbol,cursor,regions,filters,messages,response",
+   "err": []
+  }
+ ],
+ "reddit_json": [
+  {
+   "label": "r_bitcoin",
+   "url": "https://www.reddit.com/r/Bitcoin/new.json",
+   "n_ok": 0,
+   "statuses": [
+    403,
+    403,
+    403
+   ],
+   "ms_median": null,
+   "ms_max": null,
+   "bytes": null,
+   "hdr": {
+    "Content-Length": "189908",
+    "Retry-After": "0",
+    "Cache-Control": "private, no-store",
+    "Date": "Tue, 29 Sep 2026 17:54:43 GMT"
+   },
+   "shape": "<body class=theme-beta><div><style>.theme-light,:root{--rem360:22.5rem;--rem320:20rem;--rem192:12rem;--rem144:9rem;--rem",
+   "err": []
+  }
+ ],
+ "bluesky": [
+  {
+   "label": "profile",
+   "url": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile",
+   "n_ok": 2,
+   "statuses": [
+    200,
+    null,
+    200
+   ],
+   "ms_median": 534.4,
+   "ms_max": 553.0,
+   "bytes": 1054,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:54:52 GMT",
+    "Cache-Control": "public, max-age=30"
+   },
+   "shape": "dict:did,handle,displayName,avatar,associated,labels,createdAt,verification",
+   "err": [
+    "ConnectionError(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))"
+   ]
+  }
+ ],
+ "gtrends": [
+  {
+   "label": "daily",
+   "url": "https://trends.google.com/trends/api/dailytrends",
+   "n_ok": 0,
+   "statuses": [
+    404,
+    404,
+    404
+   ],
+   "ms_median": null,
+   "ms_max": null,
+   "bytes": null,
+   "hdr": {
+    "Content-Length": "134",
+    "Date": "Tue, 29 Sep 2026 17:55:12 GMT"
+   },
+   "shape": "<!doctype html><meta charset=\"utf-8\"><meta name=viewport content=\"width=device-width, initial-scale=1\"><title>404</title",
+   "err": []
+  }
+ ],
+ "wikipedia_pv": [
+  {
+   "label": "bitcoin_5d",
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Bitcoin/daily/20260901/20260905",
+   "n_ok": 2,
+   "statuses": [
+    200,
+    429,
+    200
+   ],
+   "ms_median": 393.9,
+   "ms_max": 468.6,
+   "bytes": 731,
+   "hdr": {
+    "cache-control": "s-maxage=14400, max-age=14400",
+    "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+    "date": "Tue, 29 Sep 2026 17:55:21 GMT",
+    "content-length": "731",
+    "age": "0"
+   },
+   "shape": "dict:items",
+   "err": []
+  }
+ ],
+ "fear_greed": [
+  {
+   "label": "fng",
+   "url": "https://api.alternative.me/fng/",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 337.2,
+   "ms_max": 405.9,
+   "bytes": 393,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:55:29 GMT"
+   },
+   "shape": "dict:name,data,metadata",
+   "err": []
+  }
+ ],
+ "polymarket": [
+  {
+   "label": "gamma_markets",
+   "url": "https://gamma-api.polymarket.com/markets",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 415.3,
+   "ms_max": 449.8,
+   "bytes": 29024,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:55:38 GMT",
+    "Age": "284",
+    "last-modified": "Tue, 29 Sep 2026 17:50:53 GMT",
+    "Cache-Control": "public, max-age=300"
+   },
+   "shape": "list[5]:id,question,conditionId,slug,resolutionSource,endDate,liquidity,startDate",
+   "err": []
+  },
+  {
+   "label": "clob_time",
+   "url": "https://clob.polymarket.com/time",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 526.3,
+   "ms_max": 542.2,
+   "bytes": 10,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:55:47 GMT",
+    "Content-Length": "10"
+   },
+   "shape": "int",
+   "err": []
+  }
+ ],
+ "kalshi": [
+  {
+   "label": "markets",
+   "url": "https://api.elections.kalshi.com/trade-api/v2/markets",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 390.4,
+   "ms_max": 475.9,
+   "bytes": 12652,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:55:56 GMT",
+    "Cache-Control": "public, max-age=15"
+   },
+   "shape": "dict:cursor,markets",
+   "err": []
+  }
+ ],
+ "cftc_cot": [
+  {
+   "label": "tff_btc",
+   "url": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 856.4,
+   "ms_max": 3180.1,
+   "bytes": 3055,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:56:07 GMT",
+    "ETag": "\"aG90ZWwuNDkzNTZfM18zNTFYa3VIMGZiUDJNTDhlOEhPakVVVGNTZ0ZuN0U---gzirAiNZRv8oJvveuVRoHTdvl2EIkSQ--gzip--gzip\"",
+    "Last-Modified": "Fri, 25 Sep 2026 19:30:07 GMT"
+   },
+   "shape": "list[1]:id,market_and_exchange_names,report_date_as_yyyy_mm_dd,yyyy_report_week_ww,contract_market_name,cftc_contract_market_code,cftc_market_code,cftc_region_code",
+   "err": []
+  }
+ ],
+ "etf_farside": [
+  {
+   "label": "btc",
+   "url": "https://farside.co.uk/btc/",
+   "n_ok": 0,
+   "statuses": [
+    403,
+    403,
+    403
+   ],
+   "ms_median": null,
+   "ms_max": null,
+   "bytes": null,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:56:17 GMT"
+   },
+   "shape": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/htm",
+   "err": []
+  }
+ ],
+ "etf_ssga_gld": [
+  {
+   "label": "gld_xlsx",
+   "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-gld.xlsx",
+   "n_ok": 0,
+   "statuses": [
+    404,
+    404,
+    404
+   ],
+   "ms_median": null,
+   "ms_max": null,
+   "bytes": null,
+   "hdr": {
+    "Content-Length": "11597",
+    "Cache-Control": "private, no-cache, no-store, must-revalidate",
+    "Date": "Tue, 29 Sep 2026 17:56:25 GMT"
+   },
+   "shape": "\n\n\n\n\n\n\n\n\n\n<!DOCTYPE HTML>\n<html lang=\"en\" dir=\"ltr\">\n\n   \n   <head>\n    <meta charset=\"UTF-8\"/>\n    <title>404 Error Pag",
+   "err": []
+  }
+ ],
+ "sec_edgar": [
+  {
+   "label": "submissions",
+   "url": "https://data.sec.gov/submissions/CIK0001838028.json",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 527.4,
+   "ms_max": 535.8,
+   "bytes": 18667,
+   "hdr": {
+    "Content-Length": "4314",
+    "Date": "Tue, 29 Sep 2026 17:56:34 GMT"
+   },
+   "shape": "dict:cik,entityType,sic,sicDescription,ownerOrg,insiderTransactionForOwnerExists,insiderTransactionForIssuerExists,name",
+   "err": []
+  }
+ ],
+ "fiscal_dts": [
+  {
+   "label": "dts",
+   "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/dts/operating_cash_balance",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 803.2,
+   "ms_max": 826.3,
+   "bytes": 2327,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:56:44 GMT",
+    "Content-Length": "691"
+   },
+   "shape": "dict:data,meta,links",
+   "err": []
+  }
+ ],
+ "nyfed": [
+  {
+   "label": "rrp",
+   "url": "https://markets.newyorkfed.org/api/rp/reverserepo/propositions/search.json",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 662.0,
+   "ms_max": 726.8,
+   "bytes": 1027,
+   "hdr": {
+    "Content-Length": "219",
+    "Cache-Control": "no-store",
+    "Date": "Tue, 29 Sep 2026 17:56:53 GMT"
+   },
+   "shape": "dict:repo",
+   "err": []
+  }
+ ],
+ "gh_playground": [
+  {
+   "label": "count",
+   "url": "https://play.clickhouse.com/",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 525.5,
+   "ms_max": 529.0,
+   "bytes": 6,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:57:03 GMT"
+   },
+   "shape": "int",
+   "err": []
+  }
+ ],
+ "gharchive": [
+  {
+   "label": "hour_head",
+   "url": "https://data.gharchive.org/2026-09-01-0.json.gz",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 586.7,
+   "ms_max": 948.6,
+   "bytes": 6905011,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:57:12 GMT",
+    "Content-Length": "6905011",
+    "Cache-Control": "public, max-age=14400",
+    "last-modified": "Tue, 01 Sep 2026 01:05:04 GMT",
+    "etag": "\"f77d62a9e64a93708e4c6f8915161a65\""
+   },
+   "shape": "text:\u001f\ufffd\b\b\ufffd$\ufffdj\u0002\u00032026-09-01-0.json\u0000\ufffd\\\ufffd\ufffd\ufffdr\ufffd\ufffd\ufffd \ufffd\u001fI\ufffd\u0468\ufffd}\ufffd\ufffd\b\u001c\ufffd\ufffd\ufffd\ufffd\ufffd\u07b3\ufffd\ufffdON6\ufffd\u9ac6;\u0014)\ufffd\ufffd\u0233\ufffd\u0005\ufffd\u0010y\ufffd<I\ufffdI](",
+   "err": []
+  }
+ ],
+ "github_rest": [
+  {
+   "label": "commit_activity",
+   "url": "https://api.github.com/repos/bitcoin/bitcoin/stats/commit_activity",
+   "n_ok": 0,
+   "statuses": [
+    403,
+    403,
+    403
+   ],
+   "ms_median": null,
+   "ms_max": null,
+   "bytes": null,
+   "hdr": {
+    "Content-Length": "378"
+   },
+   "shape": "{'message': 'GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_re",
+   "err": []
+  }
+ ],
+ "npm_pypi": [
+  {
+   "label": "npm",
+   "url": "https://api.npmjs.org/downloads/range/2026-09-01:2026-09-05/ethers",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 499.4,
+   "ms_max": 554.5,
+   "bytes": 269,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:57:33 GMT",
+    "Cache-Control": "public, max-age=300",
+    "Last-Modified": "Tue, 29 Sep 2026 17:57:33 GMT"
+   },
+   "shape": "dict:start,end,package,downloads",
+   "err": []
+  },
+  {
+   "label": "pypistats",
+   "url": "https://pypistats.org/api/packages/web3/overall",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 588.4,
+   "ms_max": 757.6,
+   "bytes": 25261,
+   "hdr": {
+    "Content-Length": "25261",
+    "Date": "Tue, 29 Sep 2026 17:57:42 GMT"
+   },
+   "shape": "dict:data,package,type",
+   "err": []
+  }
+ ],
+ "portwatch": [
+  {
+   "label": "chokepoints",
+   "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 630.0,
+   "ms_max": 643.7,
+   "bytes": 3822,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:57:52 GMT",
+    "Content-Length": "687",
+    "Cache-Control": "public, max-age=30, s-maxage=30",
+    "Last-Modified": "Tue, 29 Sep 2026 12:20:57 GMT",
+    "ETag": "sd2066_359486084"
+   },
+   "shape": "dict:objectIdFieldName,uniqueIdField,globalIdFieldName,fields,exceededTransferLimit,features",
+   "err": []
+  }
+ ],
+ "eia_files": [
+  {
+   "label": "crude_stocks",
+   "url": "https://www.eia.gov/dnav/pet/hist_xls/WCESTUS1w.xls",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 10257.0,
+   "ms_max": 10579.7,
+   "bytes": 130048,
+   "hdr": {
+    "Last-Modified": "Wed, 23 Sep 2026 15:48:49 GMT",
+    "ETag": "\"80c64c6734bdd1:0\"",
+    "Content-Length": "130048",
+    "Date": "Tue, 29 Sep 2026 17:58:09 GMT"
+   },
+   "shape": "text:\ufffd\ufffd\u0011\u0871\u001a\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000;\u0000\u0003\u0000\ufffd\ufffd\t\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\ufffd\u0000\u0000\u0000\u0001\u0000\u0000\u0000\ufffd\ufffd\ufffd\ufffd\u0000\u0000\u0000\u0000\ufffd\u0000\u0000\u0000\ufffd\u0000",
+   "err": []
+  }
+ ],
+ "eia_api": [
+  {
+   "label": "root",
+   "url": "https://api.eia.gov/v2/",
+   "n_ok": 0,
+   "statuses": [
+    403,
+    403,
+    403
+   ],
+   "ms_median": null,
+   "ms_max": null,
+   "bytes": null,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:58:38 GMT"
+   },
+   "shape": "{'error': {'code': 'API_KEY_MISSING', 'message': 'No api_key was supplied.  Please register for one at https://www.eia.g",
+   "err": []
+  }
+ ],
+ "gie_agsi": [
+  {
+   "label": "api",
+   "url": "https://agsi.gie.eu/api",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 703.1,
+   "ms_max": 906.2,
+   "bytes": 124,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:58:48 GMT",
+    "Cache-Control": "no-cache, private"
+   },
+   "shape": "dict:last_page,total,dataset,error,message,data",
+   "err": []
+  }
+ ],
+ "openmeteo": [
+  {
+   "label": "archive",
+   "url": "https://archive-api.open-meteo.com/v1/archive",
+   "n_ok": 0,
+   "statuses": [
+    429,
+    429,
+    429
+   ],
+   "ms_median": null,
+   "ms_max": null,
+   "bytes": null,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:58:58 GMT",
+    "Content-Length": "88"
+   },
+   "shape": "{'error': True, 'reason': 'Daily API request limit exceeded. Please try again tomorrow.'}",
+   "err": []
+  },
+  {
+   "label": "hist_forecast",
+   "url": "https://historical-forecast-api.open-meteo.com/v1/forecast",
+   "n_ok": 0,
+   "statuses": [
+    429,
+    429,
+    429
+   ],
+   "ms_median": null,
+   "ms_max": null,
+   "bytes": null,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:59:07 GMT",
+    "Content-Length": "88"
+   },
+   "shape": "{'error': True, 'reason': 'Daily API request limit exceeded. Please try again tomorrow.'}",
+   "err": []
+  }
+ ],
+ "nws": [
+  {
+   "label": "root",
+   "url": "https://api.weather.gov/",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 504.8,
+   "ms_max": 545.4,
+   "bytes": 9496,
+   "hdr": {
+    "Content-Length": "2349",
+    "Cache-Control": "private, no-cache",
+    "Date": "Tue, 29 Sep 2026 17:59:17 GMT"
+   },
+   "shape": "text:<!DOCTYPE html> <html>     <head>                     <title>api.weather.gov</ti",
+   "err": []
+  }
+ ],
+ "noaa_ndbc": [
+  {
+   "label": "41001",
+   "url": "https://www.ndbc.noaa.gov/data/realtime2/41001.txt",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 681.5,
+   "ms_max": 765.3,
+   "bytes": 350244,
+   "hdr": {
+    "Content-Length": "42805",
+    "Date": "Tue, 29 Sep 2026 17:54:17 GMT",
+    "Last-Modified": "Tue, 18 Aug 2026 19:28:25 GMT",
+    "Cache-Control": "max-age=600, must-revalidate",
+    "ETag": "\"55824-659574a6461c8-gzip\"",
+    "Age": "309"
+   },
+   "shape": "text:#YY  MM DD hh mm WDIR WSPD GST  WVHT   DPD   APD MWD   PRES  ATMP  WTMP  DEWP  V",
+   "err": []
+  }
+ ],
+ "deribit_dvol": [
+  {
+   "label": "index",
+   "url": "https://www.deribit.com/api/v2/public/get_index_price",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 470.6,
+   "ms_max": 477.4,
+   "bytes": 165,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:59:36 GMT",
+    "Cache-Control": "no-store"
+   },
+   "shape": "dict:jsonrpc,result,usIn,usOut,usDiff,testnet",
+   "err": []
+  },
+  {
+   "label": "funding_hist",
+   "url": "https://www.deribit.com/api/v2/public/get_funding_rate_history",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 478.8,
+   "ms_max": 608.3,
+   "bytes": 7283,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:59:45 GMT",
+    "Content-Length": "1848",
+    "Cache-Control": "no-store"
+   },
+   "shape": "dict:jsonrpc,result,usIn,usOut,usDiff,testnet",
+   "err": []
+  }
+ ],
+ "binance_vision": [
+  {
+   "label": "metrics",
+   "url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2026-09-20.zip",
+   "n_ok": 3,
+   "statuses": [
+    200,
+    200,
+    200
+   ],
+   "ms_median": 663.6,
+   "ms_max": 771.2,
+   "bytes": 11283,
+   "hdr": {
+    "Content-Length": "11283",
+    "Date": "Tue, 29 Sep 2026 17:59:55 GMT",
+    "Last-Modified": "Mon, 21 Sep 2026 07:05:56 GMT",
+    "ETag": "\"5673d9340394f739d14a2acf69fe9473\""
+   },
+   "shape": "text:PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u000145]\u001c\ufffd\ufffd>A+\u0000\u00003\ufffd\u0000\u0000\u001e\u0000\u001c\u0000BTCUSDT-metrics-2026-09-20.csvUT\t\u0000\u0003a\u03f0ja\u03f0jux\u000b\u0000\u0001\u0004\ufffd\u0003\u0000",
+   "err": []
+  }
+ ],
+ "exchange_reserves": [],
+ "baltic_shipping": [],
+ "ais_open": []
+}

@@ -1,0 +1,547 @@
+{
+ "btc_spot_1d": {
+  "rows": 1215,
+  "first": "2023-06-01",
+  "last": "2026-09-27",
+  "note": "",
+  "http": {
+   "status": 200,
+   "ms": 1193.6,
+   "bytes": 40313,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:47:03 GMT",
+    "Content-Length": "14052",
+    "Cache-Control": "no-cache, no-store, must-revalidate"
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "gold_fut_1d": {
+  "rows": 836,
+  "first": "2023-06-01",
+  "last": "2026-09-25",
+  "note": "Yahoo unofficial front-month continuous; roll-adjusted? NO (raw continuous)",
+  "http": {
+   "status": 200,
+   "ms": 570.5,
+   "bytes": 119875,
+   "hdr": {
+    "cache-control": "public, max-age=10, stale-while-revalidate=20",
+    "date": "Tue, 29 Sep 2026 17:47:04 GMT",
+    "Age": "0"
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "crude_fut_1d": {
+  "rows": 835,
+  "first": "2023-06-01",
+  "last": "2026-09-25",
+  "note": "Yahoo unofficial front-month continuous; roll-adjusted? NO (raw continuous)",
+  "http": {
+   "status": 200,
+   "ms": 514.5,
+   "bytes": 133035,
+   "hdr": {
+    "cache-control": "public, max-age=10, stale-while-revalidate=20",
+    "date": "Tue, 29 Sep 2026 17:47:04 GMT",
+    "Age": "0"
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "natgas_fut_1d": {
+  "rows": 836,
+  "first": "2023-06-01",
+  "last": "2026-09-25",
+  "note": "Yahoo unofficial front-month continuous; roll-adjusted? NO (raw continuous)",
+  "http": {
+   "status": 200,
+   "ms": 620.0,
+   "bytes": 138475,
+   "hdr": {
+    "cache-control": "public, max-age=10, stale-while-revalidate=20",
+    "date": "Tue, 29 Sep 2026 17:47:05 GMT",
+    "Age": "0"
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "stablecoin_total_mcap": {
+  "rows": 3227,
+  "first": "2017-11-29",
+  "last": "2026-09-29",
+  "note": "DefiLlama total pegged-USD circulating; mcap of USD-pegged",
+  "http": {
+   "status": 200,
+   "ms": 503.9,
+   "bytes": 1295823,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:47:05 GMT",
+    "Cache-Control": "public, max-age=1798",
+    "etag": "W/\"6abbe5c1-13c5cf\"",
+    "last-modified": "Tue, 29 Sep 2026 16:22:25 GMT",
+    "Age": "1624"
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "defi_tvl_total": {
+  "rows": 3290,
+  "first": "2017-09-27",
+  "last": "2026-09-29",
+  "note": "USD-denominated (includes token prices)",
+  "http": {
+   "status": 200,
+   "ms": 502.2,
+   "bytes": 122138,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:47:06 GMT",
+    "Cache-Control": "public, max-age=1798",
+    "etag": "\"6abbe9cb-1dd1a\"",
+    "last-modified": "Tue, 29 Sep 2026 16:39:39 GMT",
+    "Age": "1434"
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "cftc_btc_cme_tff": {
+  "rows": 173,
+  "first": "2023-06-06",
+  "last": "2026-09-22",
+  "note": "TFF futures-only; report_date = as-of Tuesday; NO publication timestamp per row",
+  "http": {
+   "status": 200,
+   "ms": 1324.3,
+   "bytes": 528782,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:47:08 GMT",
+    "ETag": "\"aG90ZWwuNDkzNTZfM18zNTFhRmVsX3V6a3ZpV3NrMHhzcG5qaXFzZ1lpX00---gzirPndb8a94oapzViQzeh_FAdvKMTg--gzip--gzip\"",
+    "Last-Modified": "Fri, 25 Sep 2026 19:30:07 GMT"
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "cftc_gold_comex_disagg": {
+  "rows": 173,
+  "first": "2023-06-06",
+  "last": "2026-09-22",
+  "note": "Disaggregated futures-only, COMEX gold",
+  "http": {
+   "status": 200,
+   "ms": 938.2,
+   "bytes": 1177734,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:47:09 GMT",
+    "ETag": "\"aG90ZWwuNTEzMDRfM180NTJXSzhNZWM0VlBvNGxHdE0wYS0yOVRrN2Zjcjg---gzipn8hfNknVynA7XV4li5cBTkJ7u_Q--gzip--gzip\"",
+    "Last-Modified": "Fri, 25 Sep 2026 19:30:08 GMT"
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "cftc_wti_ice_disagg": {
+  "rows": 173,
+  "first": "2023-06-06",
+  "last": "2026-09-22",
+  "note": "WTI ICE Europe managed money (NYMEX WTI would be preferable; kept simple)",
+  "http": {
+   "status": 200,
+   "ms": 1200.4,
+   "bytes": 1183388,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:47:10 GMT",
+    "ETag": "\"aG90ZWwuNTEzMDRfM180NTJwcUl5THBSV2VCN2NNRkZrWGpBZnpkOFlsR2s---gzipn8hfNknVynA7XV4li5cBTkJ7u_Q--gzip--gzip\"",
+    "Last-Modified": "Fri, 25 Sep 2026 19:30:08 GMT"
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "tga_balance": {
+  "rows": 833,
+  "first": "2023-06-01",
+  "last": "2026-09-25",
+  "note": "DTS TGA closing balance ($M) by record_date",
+  "http": {
+   "status": 200,
+   "ms": 994.7,
+   "bytes": 405813,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:47:11 GMT",
+    "Content-Length": "17261"
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "fear_greed": {
+  "rows": 3159,
+  "first": "2018-02-01",
+  "last": "2026-09-29",
+  "note": "composite: volatility, momentum/volume, social, dominance, trends (documented)",
+  "http": {
+   "status": 200,
+   "ms": 585.8,
+   "bytes": 298025,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:47:12 GMT"
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "btc_mempoolspace_blocks": {
+  "rows": 1097,
+  "first": "2023-09-29",
+  "last": "2026-09-29",
+  "note": "",
+  "http": {
+   "status": 200,
+   "ms": 395.2,
+   "bytes": 163437,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:47:12 GMT",
+    "Cache-control": "max-age=120, public",
+    "ETag": "W/\"27e6d-4r9O7KtgdS2gGqkvIGYm7Je+1d8\""
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "eia_crude_stocks_ex_spr": {
+  "rows": 173,
+  "first": "2023-06-02",
+  "last": "2026-09-18",
+  "note": "week-ending date; final values only (no vintages)",
+  "http": {
+   "status": 200,
+   "ms": 8693.5,
+   "bytes": 130048,
+   "hdr": {
+    "Last-Modified": "Wed, 23 Sep 2026 15:48:49 GMT",
+    "ETag": "\"80c64c6734bdd1:0\"",
+    "Content-Length": "130048",
+    "Date": "Tue, 29 Sep 2026 17:50:17 GMT"
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "eia_natgas_storage_lower48": {
+  "rows": 173,
+  "first": "2023-06-02",
+  "last": "2026-09-18",
+  "note": "week-ending date; final values only (no vintages)",
+  "http": {
+   "status": 200,
+   "ms": 9634.8,
+   "bytes": 66048,
+   "hdr": {
+    "Last-Modified": "Thu, 24 Sep 2026 14:58:47 GMT",
+    "ETag": "\"80ad6133354cdd1:0\"",
+    "Content-Length": "66048",
+    "Date": "Tue, 29 Sep 2026 17:50:27 GMT"
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "portwatch_probe": {
+  "status": 200,
+  "keys": [
+   "objectIdFieldName",
+   "uniqueIdField",
+   "globalIdFieldName",
+   "fields",
+   "exceededTransferLimit",
+   "features"
+  ],
+  "err": null
+ },
+ "portwatch_chokepoints_tankers": {
+  "rows": 250,
+  "first": "2023-06-01",
+  "last": "2024-02-05",
+  "note": "IMF PortWatch daily transit calls (AIS-derived, tankers); nowcast, revised historically (documented)",
+  "http": {
+   "status": 200,
+   "ms": 747.1,
+   "bytes": 93208,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:48:31 GMT",
+    "Content-Length": "6758",
+    "Cache-Control": "public, max-age=30, s-maxage=30",
+    "Last-Modified": "Tue, 29 Sep 2026 12:20:57 GMT",
+    "ETag": "sd2066_359486084"
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "btc_funding_daily": {
+  "rows": 1096,
+  "first": "2023-09-01",
+  "last": "2026-08-31",
+  "note": "Binance Vision monthly fundingRate; sum of prints per UTC day",
+  "http": null
+ },
+ "bc_n-transactions": {
+  "rows": 1290,
+  "period": "day",
+  "ms": 997.5,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:47:45 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:47:45 GMT"
+  }
+ },
+ "bc_n-unique-addresses": {
+  "rows": 1289,
+  "period": "day",
+  "ms": 792.9,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:47:46 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:47:46 GMT"
+  }
+ },
+ "bc_hash-rate": {
+  "rows": 1290,
+  "period": "day",
+  "ms": 869.1,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:47:48 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:47:48 GMT"
+  }
+ },
+ "bc_difficulty": {
+  "rows": 1290,
+  "period": "day",
+  "ms": 863.4,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:47:49 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:47:49 GMT"
+  }
+ },
+ "bc_avg-block-size": {
+  "rows": 1290,
+  "period": "day",
+  "ms": 905.7,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:47:50 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:47:50 GMT"
+  }
+ },
+ "bc_mempool-size": {
+  "rows": 1301,
+  "period": "minute",
+  "ms": 2270.7,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:47:53 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:47:53 GMT"
+  }
+ },
+ "bc_mempool-count": {
+  "rows": 1301,
+  "period": "minute",
+  "ms": 2454.5,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:47:56 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:47:56 GMT"
+  }
+ },
+ "bc_median-confirmation-time": {
+  "rows": 1290,
+  "period": "day",
+  "ms": 804.7,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:47:58 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:47:58 GMT"
+  }
+ },
+ "bc_transaction-fees": {
+  "rows": 1290,
+  "period": "day",
+  "ms": 887.1,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:47:59 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:47:59 GMT"
+  }
+ },
+ "bc_transaction-fees-usd": {
+  "rows": 1293,
+  "period": "day",
+  "ms": 777.3,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:48:00 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:48:00 GMT"
+  }
+ },
+ "bc_estimated-transaction-volume-usd": {
+  "rows": 1294,
+  "period": "day",
+  "ms": 787.3,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:48:02 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:48:02 GMT"
+  }
+ },
+ "bc_cost-per-transaction": {
+  "rows": 1293,
+  "period": "day",
+  "ms": 834.3,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:48:03 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:48:03 GMT"
+  }
+ },
+ "bc_miners-revenue": {
+  "rows": 1293,
+  "period": "day",
+  "ms": 813.8,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:48:04 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:48:04 GMT"
+  }
+ },
+ "bc_output-volume": {
+  "rows": 1298,
+  "period": "day",
+  "ms": 947.3,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:48:05 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:48:05 GMT"
+  }
+ },
+ "bc_n-transactions-excluding-popular": {
+  "rows": 1298,
+  "period": "day",
+  "ms": 912.7,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:48:07 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:48:07 GMT"
+  }
+ },
+ "bc_utxo-count": {
+  "rows": 1294,
+  "period": "hour",
+  "ms": 2578.6,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:48:09 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:48:09 GMT"
+  }
+ },
+ "bc_total-bitcoins": {
+  "rows": 1300,
+  "period": "day",
+  "ms": 2544.5,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:48:13 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:48:13 GMT"
+  }
+ },
+ "bc_market-cap": {
+  "rows": 1300,
+  "period": "day",
+  "ms": 2963.8,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 17:48:17 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Tue, 29 Sep 2026 17:48:17 GMT"
+  }
+ },
+ "btc_onchain_blockchaininfo": {
+  "rows": 1301,
+  "first": "2023-03-09",
+  "last": "2026-09-29",
+  "note": "",
+  "http": null
+ },
+ "gh_events_daily_by_repo": {
+  "rows": 4112,
+  "first": "2023-06-01",
+  "last": "2026-07-02",
+  "note": "ClickHouse playground github_events (GH Archive); event created_at time",
+  "http": {
+   "status": 200,
+   "ms": 542.4,
+   "bytes": 180669,
+   "hdr": {
+    "Date": "Tue, 29 Sep 2026 17:48:19 GMT"
+   },
+   "attempts": 1,
+   "err": null
+  }
+ },
+ "gh_crypto_dev_agg": {
+  "rows": 649,
+  "first": "2023-06-01",
+  "last": "2026-07-02",
+  "note": "sum of 4 core repos; stars = bitcoin/bitcoin WatchEvents (attention)",
+  "http": null
+ },
+ "gh_freshness_probe": "2026-07-02 22:59:59\t2026-09-29 17:48:19\n",
+ "eia": {
+  "error": "ImportError('`Import xlrd` failed. Install xlrd >= 2.0.1 for xls Excel support Use pip or conda to install the xlrd package.')"
+ },
+ "wx_DAL": {
+  "status": 429
+ },
+ "wx_ATL": {
+  "status": 429
+ },
+ "wx_LA": {
+  "status": 429
+ },
+ "weather_hdd_cdd_us5": {
+  "rows": 1215,
+  "first": "2023-06-01",
+  "last": "2026-09-27",
+  "note": "Open-Meteo ERA5 reanalysis (archive); NOT point-in-time",
+  "http": null
+ },
+ "btc_oi_metrics_daily": {
+  "rows": 1123,
+  "first": "2023-09-01",
+  "last": "2026-09-27",
+  "note": "Binance Vision daily metrics; 0 days missing",
+  "http": null
+ },
+ "hn_bitcoin_daily": {
+  "rows": 1093,
+  "first": "2023-10-01",
+  "last": "2026-09-27",
+  "note": "Algolia nbHits/day; 0 failures",
+  "http": null
+ },
+ "wikipedia_pageviews": {
+  "rows": 1215,
+  "first": "2023-06-01",
+  "last": "2026-09-27",
+  "note": "user agent only, en.wikipedia",
+  "http": null
+ }
+}

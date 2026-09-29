@@ -1,0 +1,44 @@
+{
+ "blockchain_info_ntx": {
+  "rows_compared": 51,
+  "rows_changed": 0,
+  "gap_s": 171.0,
+  "last_modified_t0": "Tue, 29 Sep 2026 17:58:35 GMT",
+  "last_modified_t1": "Tue, 29 Sep 2026 18:01:29 GMT"
+ },
+ "defillama_stable": {
+  "rows_compared": 3225,
+  "rows_changed": 0,
+  "gap_s": 171.0,
+  "last_modified_t0": "Tue, 29 Sep 2026 16:22:25 GMT",
+  "last_modified_t1": "Tue, 29 Sep 2026 16:22:25 GMT"
+ },
+ "cftc_btc_lev_short": {
+  "rows_compared": 198,
+  "rows_changed": 0,
+  "gap_s": 173.0,
+  "last_modified_t0": null,
+  "last_modified_t1": null
+ },
+ "fear_greed": {
+  "rows_compared": 88,
+  "rows_changed": 0,
+  "gap_s": 173.0,
+  "last_modified_t0": null,
+  "last_modified_t1": null
+ },
+ "treasury_tga": {
+  "rows_compared": 118,
+  "rows_changed": 0,
+  "gap_s": 174.0,
+  "last_modified_t0": null,
+  "last_modified_t1": null
+ },
+ "hn_algolia_count": {
+  "rows_compared": 1,
+  "rows_changed": 0,
+  "gap_s": 175.0,
+  "last_modified_t0": null,
+  "last_modified_t1": null
+ }
+}

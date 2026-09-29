@@ -1,0 +1,30 @@
+{
+ "observations": [
+  {
+   "utc": "2026-09-29T17:44",
+   "query": "SELECT max(created_at), min(created_at) FROM github_events",
+   "result": "2026-09-29 16:59:59 | 2011-02-12 00:00:00"
+  },
+  {
+   "utc": "2026-09-29T17:44",
+   "query": "count() bitcoin/bitcoin",
+   "result": "85546"
+  },
+  {
+   "utc": "2026-09-29T17:58",
+   "query": "SELECT max(created_at), min(created_at), count() FROM github_events",
+   "result": "2026-07-02 22:59:59 | 2023-01-13 13:00:00 | 3173399592"
+  },
+  {
+   "utc": "2026-09-29T17:58",
+   "query": "count() WHERE created_at>='2026-07-03'",
+   "result": "0"
+  },
+  {
+   "utc": "2026-09-29T17:48",
+   "query": "monthly event counts (data pulled for tests)",
+   "result": "2023-06..2024-06-05 present; 2024-06-06..2025-08 absent; 2025-09..2026-07-02 present"
+  }
+ ],
+ "interpretation": "OBSERVED: the same public playground table returned different global min/max created_at 14 minutes apart, and holds no rows after 2026-07-02 at 17:58. The table appears to be rebuilt/re-scoped without notice; INFERENCE: it is a demo dataset without a stability contract. Not usable as an authoritative developer-activity feed; GH Archive hourly files are the primary source."
+}

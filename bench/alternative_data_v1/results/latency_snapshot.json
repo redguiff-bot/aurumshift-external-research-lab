@@ -1,0 +1,52 @@
+{
+ "now_utc": "2026-09-29T17:57:28+00:00",
+ "blockchain_info_ntx": {
+  "newest_x": "2026-09-28T00:00:00+00:00",
+  "age_h": 42.0,
+  "last_modified": "Tue, 29 Sep 2026 17:57:29 GMT"
+ },
+ "mempool_space_tip": {
+  "tip_block_time": "2026-09-29T17:52:32+00:00",
+  "age_min": 6.0
+ },
+ "cftc_btc": {
+  "newest_report_date": "2026-09-22T00:00:00.000",
+  "dataset_last_modified": null
+ },
+ "treasury_dts": {
+  "newest_record_date": "2026-09-25"
+ },
+ "binance_vision_metrics_2026-09-28": {
+  "status": 200,
+  "last_modified": "Tue, 29 Sep 2026 07:18:11 GMT"
+ },
+ "binance_vision_metrics_2026-09-27": {
+  "status": 200,
+  "last_modified": "Mon, 28 Sep 2026 06:38:19 GMT"
+ },
+ "binance_vision_metrics_2026-09-26": {
+  "status": 200,
+  "last_modified": "Sun, 27 Sep 2026 06:44:17 GMT"
+ },
+ "gh_playground_last6d": "",
+ "gh_playground_after_0702": "1970-01-01 00:00:00\t0\n",
+ "hn_newest_bitcoin_story": {
+  "created": "2026-09-29T10:49:22Z"
+ },
+ "defillama_stable": {
+  "newest": "2026-09-29T00:00:00+00:00",
+  "last_modified": "Tue, 29 Sep 2026 16:22:25 GMT"
+ },
+ "eia_wpsr_xls": {
+  "last_modified": null,
+  "newest_week_ending": "2026-09-18 00:00:00"
+ },
+ "wikipedia_newest": "2026092800",
+ "fear_greed_newest": "2026-09-29T00:00:00+00:00",
+ "portwatch_newest": [
+  {
+   "date": "2026-09-27"
+  }
+ ],
+ "portwatch_last_modified": null
+}
