@@ -1,0 +1,2 @@
+main tasks: pending=10 running=10
+review tasks: pending=5 running=5
