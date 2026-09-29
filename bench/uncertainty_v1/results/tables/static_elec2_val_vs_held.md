@@ -1,0 +1,20 @@
+| base | cal | ece_val | ece_held_mean |
+|---|---|---|---|
+| GNB | bayes_bin | 0.035 | 0.062 |
+| GNB | beta | 0.071 | 0.06 |
+| GNB | isotonic | 0.032 | 0.056 |
+| GNB | platt | 0.066 | 0.057 |
+| GNB | raw | 0.063 | 0.101 |
+| GNB | temperature | 0.046 | 0.061 |
+| HGB | bayes_bin | 0.033 | 0.102 |
+| HGB | beta | 0.035 | 0.081 |
+| HGB | isotonic | 0.03 | 0.09 |
+| HGB | platt | 0.039 | 0.08 |
+| HGB | raw | 0.029 | 0.107 |
+| HGB | temperature | 0.04 | 0.068 |
+| LR | bayes_bin | 0.063 | 0.156 |
+| LR | beta | 0.018 | 0.153 |
+| LR | isotonic | 0.055 | 0.159 |
+| LR | platt | 0.015 | 0.153 |
+| LR | raw | 0.128 | 0.103 |
+| LR | temperature | 0.026 | 0.168 |
