@@ -1,0 +1,50 @@
+{
+ "n_tests_primary": 93,
+ "n_p05_family": 15,
+ "n_p05_expected_under_null": 4.7,
+ "min_q_family_excl_dvol": 0.25722325577824423,
+ "noise_tests": 12,
+ "noise_p05": 0,
+ "noise_dm_p10": 0,
+ "classes": {
+  "PRICE_DERIVATIVE_ONLY": 14,
+  "INDEPENDENT_NO_EVIDENCE": 11,
+  "INCREMENTAL_CANDIDATE": 1
+ },
+ "no_calendar_baseline": {
+  "n_p05": 29,
+  "n_tests": 90,
+  "n_p001": 11,
+  "n_oos_dm_p10": 8,
+  "npm_range_gain_pct": [
+   {
+    "cand": "npm_downloads_npm_bitcoinjs-lib",
+    "asset": "BTC",
+    "oos_gain_pct": 3.5768,
+    "dm_p_onesided": 0.0001,
+    "p_incr": 0.0
+   },
+   {
+    "cand": "npm_downloads_npm_ethers",
+    "asset": "ETH",
+    "oos_gain_pct": 1.9114,
+    "dm_p_onesided": 0.0269,
+    "p_incr": 0.0
+   },
+   {
+    "cand": "npm_downloads_npm_solana_web3.js",
+    "asset": "ETH",
+    "oos_gain_pct": 2.4271,
+    "dm_p_onesided": 0.0075,
+    "p_incr": 0.0
+   },
+   {
+    "cand": "npm_downloads_npm_web3",
+    "asset": "ETH",
+    "oos_gain_pct": 1.9344,
+    "dm_p_onesided": 0.0238,
+    "p_incr": 0.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,3 @@
+/home/user/aurumshift-external-research-lab/bench/alternative_data_v1/py/collect_rest.py:10: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  today = pd.Timestamp.utcnow().tz_localize(None).normalize(); last_full = today - pd.Timedelta(days=1)
+rest done

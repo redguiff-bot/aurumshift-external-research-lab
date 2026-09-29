@@ -1,3 +1,5 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+bench/alternative_data_v1/data/raw/
+bench/alternative_data_v1/data/um_metrics_5m_*.csv.gz
