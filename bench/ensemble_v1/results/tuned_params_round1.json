@@ -1,0 +1,59 @@
+{
+ "EQUAL": {},
+ "STATIC": {
+  "kappa": 10.0
+ },
+ "WTA": {},
+ "EWMA": {
+  "alpha": 0.01,
+  "beta": 20.0
+ },
+ "HEDGE_CUM": {
+  "eta": 0.01
+ },
+ "SLEEP_HEDGE": {
+  "eta": 0.03
+ },
+ "EG": {
+  "eta": 0.1
+ },
+ "FIXED_SHARE": {
+  "alpha": 0.01,
+  "eta": 0.3
+ },
+ "DISC_AWAKE": {
+  "eta": 1.0,
+  "gamma": 0.97
+ },
+ "DISC_CLOCK": {
+  "eta": 1.0,
+  "gamma": 0.97
+ },
+ "BMA": {
+  "kappa": 0.03
+ },
+ "MPP": {
+  "eta": 1.0,
+  "mpp": 0.02
+ },
+ "SLEEP_FLOOR": {
+  "eta": 0.3,
+  "floor": 0.2
+ },
+ "CONTEXT_MIX": {
+  "eta_c": 1.0,
+  "eta_g": 0.1
+ },
+ "DIVERSITY": {
+  "eta": 1.0,
+  "theta": 1.0
+ },
+ "EXP3": {
+  "eta": 1.0,
+  "gamma": 0.02
+ },
+ "EPS_GREEDY": {
+  "alpha": 0.03,
+  "eps": 0.05
+ }
+}
