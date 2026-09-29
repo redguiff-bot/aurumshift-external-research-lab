@@ -7,15 +7,15 @@
   "kappa": 25.0
  },
  "SLOTHOUR_DENSITY": {
-  "h0": 12.0
+  "h0": 24.0
  },
  "SLOTHOUR_HAZARD": {
   "h0": 2.0,
   "tau": 1.0
  },
  "SHADOW_PRICE": {
-  "eta": 0.02,
-  "target": 0.8
+  "eta": 0.1,
+  "target": 0.95
  },
  "ONLINE_KNAPSACK_PSI": {
   "L": 0.25,
@@ -23,17 +23,17 @@
  },
  "FLUID_QUANTILE": {
   "h0": 2.0,
-  "s": 1.0
+  "s": 1.3
  },
  "TRUNK_RESERVATION": {
-  "q": 0.75,
+  "q": 0.5,
   "r": 1
  },
  "CLUSTER_CAP": {
   "f": 0.75
  },
  "CORR_PENALTY": {
-  "g": 0.02
+  "g": 0.005
  },
  "MARGINAL_RISK": {
   "g": 0.05
@@ -49,7 +49,7 @@
   "alpha": 0.6
  },
  "LIN_TS": {
-  "alpha": 0.2
+  "alpha": 0.6
  },
  "SLEEPING_HEDGE": {
   "eta": 0.05,

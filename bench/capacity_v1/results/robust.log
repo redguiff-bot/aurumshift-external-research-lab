@@ -1,0 +1,19 @@
+robust jobs 180
+/home/user/aurumshift-external-research-lab/bench/capacity_v1/py/policies.py:190: RuntimeWarning: invalid value encountered in divide
+  sd = np.sqrt(np.diag(S)); return S, S / np.outer(sd, sd)
+/home/user/aurumshift-external-research-lab/bench/capacity_v1/py/policies.py:190: RuntimeWarning: invalid value encountered in divide
+  sd = np.sqrt(np.diag(S)); return S, S / np.outer(sd, sd)
+/home/user/aurumshift-external-research-lab/bench/capacity_v1/py/policies.py:190: RuntimeWarning: invalid value encountered in divide
+  sd = np.sqrt(np.diag(S)); return S, S / np.outer(sd, sd)
+/home/user/aurumshift-external-research-lab/bench/capacity_v1/py/policies.py:190: RuntimeWarning: invalid value encountered in divide
+  sd = np.sqrt(np.diag(S)); return S, S / np.outer(sd, sd)
+  18/180 jobs  40s
+  36/180 jobs  78s
+  54/180 jobs  117s
+  72/180 jobs  186s
+  90/180 jobs  224s
+  108/180 jobs  257s
+  126/180 jobs  292s
+  144/180 jobs  324s
+  162/180 jobs  354s
+  180/180 jobs  388s

@@ -143,7 +143,7 @@ class Stats:
         self.dens_buf = deque(maxlen=300)
         self.cov_n = 0
         self.cov_mean = np.zeros(N)
-        self.cov = np.eye(N) * 40.0
+        self.cov = np.zeros((N, N))
         self.entry = {}
 
     def observe(self, pend):
@@ -178,15 +178,14 @@ class Stats:
             self.dur_inst[i] = h if isnan(self.dur_inst[i]) else self.dur_inst[i] + 0.15 * (h - self.dur_inst[i])
 
     def on_returns(self, t, r):
-        a = 0.01
+        # bias-corrected EWMA: 1/n weights until the window (1/0.01=100 obs) is full, then exponential
         self.cov_n += 1
+        a = max(1.0 / self.cov_n, 0.01)
         d = r - self.cov_mean
         self.cov_mean += a * d
-        if self.cov_n < 30:
-            return
         self.cov = (1 - a) * self.cov + a * np.outer(d, d)
 
-    def corr_hat(self, delta=0.2):
+    def corr_hat(self, delta=0.05):
         S = (1 - delta) * self.cov + delta * np.diag(np.diag(self.cov))
         sd = np.sqrt(np.diag(S)); return S, S / np.outer(sd, sd)
 

@@ -1,0 +1,61 @@
+{
+ "title": "AURUMSHIFT_EXTERNAL_RISK_CAPACITY_AND_TURNOVER_ALLOCATION_V1 - pre-registration",
+ "status": "Written after TUNING and VALIDATION, before the HELDOUT run. HELDOUT results have not been generated or inspected.",
+ "caps": [
+  3,
+  4,
+  6,
+  10
+ ],
+ "heldout": {
+  "seed0": 9000,
+  "seeds_per_variant": 10,
+  "variants_per_family": 3,
+  "families": "S1..S12 + H1_chronic_corr_regime, H2_burst_noisy_missing, H3_spam_fastslow (H* never used in tuning/validation)"
+ },
+ "primary_metric": "lat_per_slot_hour: latent expected net outcome per slot-hour (bps, costs explicit, UNKNOWN_COST != 0), normalised by dens0_sd (std of per-opportunity value density in that run) => dz; paired against a reference policy on identical worlds (common random numbers).",
+ "secondary_metrics": [
+  "real_per_slot_hour",
+  "ret_to_risk",
+  "hq_missed_frac",
+  "hq_missed_capacity",
+  "hhi_cluster",
+  "eff_clusters",
+  "starved_pos_inst",
+  "n_evict",
+  "admit_per_slot_hour",
+  "mean_hold",
+  "long_slot_hour_share",
+  "idle",
+  "full_toggle_rate",
+  "diag_thr_cv",
+  "lp_bound regret"
+ ],
+ "unit_of_analysis": "pooled: mean over caps of dz per (family,variant,seed) block, bootstrap 95% CI over blocks (4000 resamples); cells: (family,cap) mean over variant x seed",
+ "thresholds": {
+  "delta_material": 0.15,
+  "delta_equivalence": 0.03
+ },
+ "shortlist": [
+  "COMPOSED",
+  "FLUID_QUANTILE",
+  "TRUNK_RESERVATION"
+ ],
+ "shortlist_rule": "Top-3 distinct method families by VALIDATION pooled dz vs FIFO (oracles, baselines and controls excluded). RANK_NET (simple net-EV ranking) is always evaluated as the simple reference in addition.",
+ "core_criteria": "(a) pooled dz vs FIFO >= delta_material with CI lower > 0; (b) >= 60% of (family,cap) cells with CI lower > 0; (c) <= 15% of cells materially worse than FIFO (dz <= -delta_material and CI upper < 0)",
+ "beats_simple_criteria": "(d) pooled dz vs RANK_NET >= delta_equivalence with CI lower > 0; (e) positive pooled dz vs RANK_NET at >= 3 of 4 caps; (f) leakage tests pass",
+ "verdict_rules": [
+  "STUDY_INCONCLUSIVE if leakage tests fail OR max pooled CI half-width vs FIFO > delta_material.",
+  "Else if >=1 shortlist method meets core AND beats-simple: if >=2 are within delta_equivalence of the best => MULTIPLE_CAPACITY_METHODS_SUPPORTED; else CAPACITY_ALLOCATION_REFERENCE_SUPPORTED.",
+  "Else if RANK_NET meets core AND beats FIFO_NETPOS by >= delta_equivalence (CI lower > 0): if >=2 shortlist methods meet core and are within delta_equivalence of RANK_NET => MULTIPLE_CAPACITY_METHODS_SUPPORTED; else CAPACITY_ALLOCATION_REFERENCE_SUPPORTED (reference = RANK_NET).",
+  "Else FIFO_REMAINS_SUFFICIENT unless the gain over FIFO is real (RANK_NET meets core and CI of gain over FIFO_NETPOS exceeds delta_equivalence), in which case NO_CAPACITY_METHOD_SUPPORTED.",
+  "'FIFO' in the verdict labels means FIFO with a net-positive admissibility filter (FIFO_NETPOS) whenever pure FIFO's loss is attributable only to admitting negative-expected-value opportunities; both comparisons are always reported."
+ ],
+ "fifo_failure_rule": "Per family, caps 4 and 6 pooled: best of {RANK_NET}+shortlist has dz vs FIFO >= delta_material with CI lower > 0 => FIFO_FAIL. FIFO_EQUIV if the CI upper bound of that best dz < 0.05. Also reported vs FIFO_NETPOS (filtering removed). Best-of selection inflates FIFO_FAIL; stated as a limitation.",
+ "reference_picks": "BEST_SLOT_HOUR / BEST_DIVERSIFICATION / BEST_TURNOVER references are descriptive: highest heldout pooled dz (lat) within {SLOTHOUR_*,SHADOW_PRICE,FLUID_QUANTILE,ONLINE_KNAPSACK_PSI} / {CLUSTER_CAP,CORR_PENALTY,MARGINAL_RISK,CORR_HARD_REJECT} (also ranked by ret_to_risk) / {SLOTHOUR_*,EVICT_SWAP,OLDEST_SLOT,SHADOW_PRICE}, always shown next to RANK_NET and reported as 'not distinguishable' when the paired CI vs RANK_NET includes 0 or |diff| < delta_equivalence.",
+ "oracle_policy": "ORACLE_* and the offline LP bound are upper-bound references only and never enter any verdict rule.",
+ "frozen_tuned_params_sha256": "8ee14fb686f0584204a3403b2474bba8b1ea5a75f445c5b42cad0c8eaec92cf0",
+ "verdict_script_sha256": "41f652c4bf59126a879e45dd1a8b6a1024c473bb114e485be784e9076d3c4ada",
+ "bootstrap_seed": 20260929,
+ "forbidden_after_this_file": "Changing tuned params, grids, thresholds, shortlist, scenarios, seeds or verdict script after the held-out run. runner.py heldout aborts if tuned params changed."
+}

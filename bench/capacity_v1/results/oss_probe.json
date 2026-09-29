@@ -1,0 +1,152 @@
+{
+ "versions": {
+  "scipy": "1.17.1",
+  "ortools": "9.15.6755",
+  "mabwiser": "2.7.4",
+  "simpy": "4.1.2",
+  "river": "0.26.1",
+  "cvxpy": "1.9.3",
+  "PyPortfolioOpt": "1.6.0",
+  "pulp": "3.3.2",
+  "scikit-learn": "1.9.1"
+ },
+ "simpy_erlang_crosscheck": [
+  {
+   "cap": 4,
+   "load": 1.0,
+   "offered_erlang": 3.4411,
+   "own_sim": 0.2408091810931725,
+   "simpy": 0.2495609756097561,
+   "erlang_b": 0.2540646697532207
+  },
+  {
+   "cap": 4,
+   "load": 2.0,
+   "offered_erlang": 6.8069999999999995,
+   "own_sim": 0.5020985846754514,
+   "simpy": 0.525036040365209,
+   "erlang_b": 0.5170941035605782
+  },
+  {
+   "cap": 6,
+   "load": 2.0,
+   "offered_erlang": 6.8069999999999995,
+   "own_sim": 0.2994631527574426,
+   "simpy": 0.3249902987970508,
+   "erlang_b": 0.3191269815961825
+  }
+ ],
+ "ortools_cpsat_equals_greedy": {
+  "agree": "100/100",
+  "mean_solve_ms": 2.827324867248535
+ },
+ "mabwiser_vs_own_linucb": {
+  "rows": [
+   {
+    "scenario": "S3_chronic",
+    "seed": 8001,
+    "fifo": -0.10262220431487404,
+    "own_linucb": 0.6608306123594746,
+    "mabwiser_linucb": 0.5315562091147885
+   },
+   {
+    "scenario": "S3_chronic",
+    "seed": 8002,
+    "fifo": 0.05135675523651095,
+    "own_linucb": 0.6107291691583127,
+    "mabwiser_linucb": 0.40240277664072316
+   },
+   {
+    "scenario": "S3_chronic",
+    "seed": 8003,
+    "fifo": -0.20147928968150322,
+    "own_linucb": 0.4005369202112458,
+    "mabwiser_linucb": 0.12242859658026947
+   },
+   {
+    "scenario": "S9_missing_quality",
+    "seed": 8001,
+    "fifo": -0.04079558355319635,
+    "own_linucb": 0.5935283981049115,
+    "mabwiser_linucb": 0.4281035319587428
+   },
+   {
+    "scenario": "S9_missing_quality",
+    "seed": 8002,
+    "fifo": 0.14246228281180823,
+    "own_linucb": 0.582181776586019,
+    "mabwiser_linucb": 0.5237938495905673
+   },
+   {
+    "scenario": "S9_missing_quality",
+    "seed": 8003,
+    "fifo": -0.29272049771562364,
+    "own_linucb": 0.034980027522294205,
+    "mabwiser_linucb": 0.0633712873825736
+   },
+   {
+    "scenario": "S8_noisy_ranking",
+    "seed": 8001,
+    "fifo": -0.0011477357662433771,
+    "own_linucb": 0.16890938295980112,
+    "mabwiser_linucb": 0.20760706578632995
+   },
+   {
+    "scenario": "S8_noisy_ranking",
+    "seed": 8002,
+    "fifo": 0.09931432302522825,
+    "own_linucb": 0.1127730999588896,
+    "mabwiser_linucb": 0.2850534137801632
+   },
+   {
+    "scenario": "S8_noisy_ranking",
+    "seed": 8003,
+    "fifo": -0.18390680187313707,
+    "own_linucb": 0.10330268038613494,
+    "mabwiser_linucb": -0.06706773454864043
+   }
+  ],
+  "seconds": 2.734914541244507
+ },
+ "corr_estimation_frobenius_error_vs_long_sample": {
+  "100": {
+   "sample": 0.49627056878588255,
+   "ewma_shrunk_own": 0.6185867558762782,
+   "ledoit_wolf_sklearn": 0.6320045796552435,
+   "pypfopt_ledoit_wolf": 0.6320045796552435
+  },
+  "200": {
+   "sample": 0.31294153390296675,
+   "ewma_shrunk_own": 0.434825192097025,
+   "ledoit_wolf_sklearn": 0.32947181467821746,
+   "pypfopt_ledoit_wolf": 0.32947181467821746
+  },
+  "400": {
+   "sample": 0.20307818676620923,
+   "ewma_shrunk_own": 0.4586144222329433,
+   "ledoit_wolf_sklearn": 0.200044157351167,
+   "pypfopt_ledoit_wolf": 0.20004415735116687
+  }
+ },
+ "pypfopt_hrp_ran": {
+  "n_weights": 12,
+  "note": "HRP returns portfolio weights over a fixed asset set; it does not decide admission of time-stamped opportunities into scarce slots"
+ },
+ "river_bandit_smoke": {
+  "ok": true,
+  "classes": [
+   "BayesUCB",
+   "EpsilonGreedy",
+   "Exp3",
+   "LinUCBDisjoint",
+   "RandomPolicy",
+   "ThompsonSampling",
+   "UCB"
+  ],
+  "note": "context-free / arm-level; no per-candidate contextual admission API used"
+ },
+ "cvxpy_qp_ran": {
+  "status": "optimal",
+  "note": "QP is a sizing tool; cardinality-constrained selection needs MIQP; not used in the sim"
+ }
+}

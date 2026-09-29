@@ -15,7 +15,7 @@ def boot_ci(x, n=2000):
     return float(np.quantile(m, 0.025)), float(np.quantile(m, 0.975))
 
 
-def paired(df, ref="FIFO", metric="lat_per_slot_hour", norm="dens0_sd"):
+def paired(df, ref="FIFO", metric="lat_per_slot_hour", norm="dens0_rms"):
     key = ["family", "variant", "seed", "cap"]
     r = df[df.policy == ref].set_index(key)[[metric, norm]].rename(columns={metric: "ref", norm: "scale"})
     d = df[df.policy != ref].join(r, on=key)

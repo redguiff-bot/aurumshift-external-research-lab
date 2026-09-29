@@ -405,6 +405,7 @@ def _metrics(W, cap, admitted, ta_arr, held_arr, real_arr, lat_arr, ever_free, e
     m["v0_all_mean"] = float(v0.mean()) if n else 0.0
     m["v0_sd"] = float(v0.std()) if n else 1.0
     m["dens0_sd"] = float(dens0.std()) if n else 1.0
+    m["dens0_rms"] = float(np.sqrt(dens0.var() + dens0.mean() ** 2)) if n else 1.0
     # missed high-quality: top-quartile-density opps with positive value that expired unadmitted
     if n >= 8:
         thr = np.quantile(dens0, 0.75)

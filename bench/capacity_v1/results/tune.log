@@ -1,1 +1,84 @@
 tuning jobs 108 specs 93
+/home/user/aurumshift-external-research-lab/bench/capacity_v1/py/policies.py:190: RuntimeWarning: invalid value encountered in divide
+  sd = np.sqrt(np.diag(S)); return S, S / np.outer(sd, sd)
+/home/user/aurumshift-external-research-lab/bench/capacity_v1/py/policies.py:190: RuntimeWarning: invalid value encountered in divide
+  sd = np.sqrt(np.diag(S)); return S, S / np.outer(sd, sd)
+/home/user/aurumshift-external-research-lab/bench/capacity_v1/py/policies.py:190: RuntimeWarning: invalid value encountered in divide
+  sd = np.sqrt(np.diag(S)); return S, S / np.outer(sd, sd)
+/home/user/aurumshift-external-research-lab/bench/capacity_v1/py/policies.py:190: RuntimeWarning: invalid value encountered in divide
+  sd = np.sqrt(np.diag(S)); return S, S / np.outer(sd, sd)
+  10/108 jobs  26s
+  20/108 jobs  63s
+  30/108 jobs  108s
+  40/108 jobs  150s
+  50/108 jobs  195s
+  60/108 jobs  239s
+  70/108 jobs  292s
+  80/108 jobs  357s
+  90/108 jobs  421s
+  100/108 jobs  474s
+{
+ "OLDEST_SLOT": {
+  "min_hold": 12
+ },
+ "UNCERTAINTY_LCB": {
+  "k": 0.5,
+  "kappa": 25.0
+ },
+ "SLOTHOUR_DENSITY": {
+  "h0": 12.0
+ },
+ "SLOTHOUR_HAZARD": {
+  "h0": 2.0,
+  "tau": 1.0
+ },
+ "SHADOW_PRICE": {
+  "eta": 0.02,
+  "target": 0.8
+ },
+ "ONLINE_KNAPSACK_PSI": {
+  "L": 0.25,
+  "U": 1.5
+ },
+ "FLUID_QUANTILE": {
+  "h0": 2.0,
+  "s": 1.0
+ },
+ "TRUNK_RESERVATION": {
+  "q": 0.75,
+  "r": 1
+ },
+ "CLUSTER_CAP": {
+  "f": 0.75
+ },
+ "CORR_PENALTY": {
+  "g": 0.02
+ },
+ "MARGINAL_RISK": {
+  "g": 0.05
+ },
+ "CORR_HARD_REJECT": {
+  "rho": 0.95
+ },
+ "EVICT_SWAP": {
+  "M": 1.5,
+  "mh": 12
+ },
+ "LINUCB": {
+  "alpha": 0.6
+ },
+ "LIN_TS": {
+  "alpha": 0.2
+ },
+ "SLEEPING_HEDGE": {
+  "eta": 0.05,
+  "zeta": 8.0
+ },
+ "COMPOSED": {
+  "g": 0.0,
+  "h0": 2.0,
+  "k": 0.5,
+  "s": 1.2,
+  "tau": 6.0
+ }
+}
