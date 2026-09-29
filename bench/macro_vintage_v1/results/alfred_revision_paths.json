@@ -1,0 +1,600 @@
+{
+ "revision_paths": [
+  {
+   "series": "GDPC1",
+   "obs": "2008-10-01",
+   "first_vintage": "2009-01-30",
+   "path": [
+    {
+     "vintage": "2009-01-30",
+     "value": 11599.4
+    },
+    {
+     "vintage": "2009-02-27",
+     "value": 11525.0
+    },
+    {
+     "vintage": "2009-03-26",
+     "value": 11522.1
+    },
+    {
+     "vintage": "2009-04-29",
+     "value": 11522.1
+    },
+    {
+     "vintage": "2009-05-29",
+     "value": 11522.1
+    },
+    {
+     "vintage": "2009-06-25",
+     "value": 11522.1
+    },
+    {
+     "vintage": "2010-02-26",
+     "value": 13141.9
+    },
+    {
+     "vintage": "2012-02-29",
+     "value": 12883.5
+    },
+    {
+     "vintage": "2026-08-26",
+     "value": 16485.35
+    }
+   ],
+   "n_distinct_values": 6,
+   "first_print": 11599.4,
+   "latest": 16485.35
+  },
+  {
+   "series": "GDPC1",
+   "obs": "2020-04-01",
+   "first_vintage": "2020-07-30",
+   "path": [
+    {
+     "vintage": "2020-07-30",
+     "value": 17205.822
+    },
+    {
+     "vintage": "2020-08-27",
+     "value": 17282.188
+    },
+    {
+     "vintage": "2020-09-30",
+     "value": 17302.511
+    },
+    {
+     "vintage": "2020-10-29",
+     "value": 17302.511
+    },
+    {
+     "vintage": "2020-11-25",
+     "value": 17302.511
+    },
+    {
+     "vintage": "2020-12-22",
+     "value": 17302.511
+    },
+    {
+     "vintage": "2021-08-26",
+     "value": 17258.205
+    },
+    {
+     "vintage": "2023-08-30",
+     "value": 17378.712
+    },
+    {
+     "vintage": "2026-08-26",
+     "value": 19077.992
+    }
+   ],
+   "n_distinct_values": 6,
+   "first_print": 17205.822,
+   "latest": 19077.992
+  },
+  {
+   "series": "GDPC1",
+   "obs": "2022-01-01",
+   "first_vintage": "2022-04-28",
+   "path": [
+    {
+     "vintage": "2022-04-28",
+     "value": 19735.895
+    },
+    {
+     "vintage": "2022-05-26",
+     "value": 19731.119
+    },
+    {
+     "vintage": "2022-06-29",
+     "value": 19727.918
+    },
+    {
+     "vintage": "2022-07-28",
+     "value": 19727.918
+    },
+    {
+     "vintage": "2022-08-25",
+     "value": 19727.918
+    },
+    {
+     "vintage": "2022-09-29",
+     "value": 19924.088
+    },
+    {
+     "vintage": "2023-05-25",
+     "value": 19924.088
+    },
+    {
+     "vintage": "2025-04-30",
+     "value": 21903.85
+    },
+    {
+     "vintage": "2026-08-26",
+     "value": 21932.71
+    }
+   ],
+   "n_distinct_values": 6,
+   "first_print": 19735.895,
+   "latest": 21932.71
+  },
+  {
+   "series": "GDP",
+   "obs": "2020-04-01",
+   "first_vintage": "2020-07-30",
+   "path": [
+    {
+     "vintage": "2020-07-30",
+     "value": 19408.759
+    },
+    {
+     "vintage": "2020-08-27",
+     "value": 19486.509
+    },
+    {
+     "vintage": "2020-09-30",
+     "value": 19520.114
+    },
+    {
+     "vintage": "2020-10-29",
+     "value": 19520.114
+    },
+    {
+     "vintage": "2020-11-25",
+     "value": 19520.114
+    },
+    {
+     "vintage": "2020-12-22",
+     "value": 19520.114
+    },
+    {
+     "vintage": "2021-08-26",
+     "value": 19477.444
+    },
+    {
+     "vintage": "2023-08-30",
+     "value": 19636.731
+    },
+    {
+     "vintage": "2026-08-26",
+     "value": 19958.291
+    }
+   ],
+   "n_distinct_values": 6,
+   "first_print": 19408.759,
+   "latest": 19958.291
+  },
+  {
+   "series": "PAYEMS",
+   "obs": "2020-04-01",
+   "first_vintage": "2020-05-08",
+   "path": [
+    {
+     "vintage": "2020-05-08",
+     "value": 131072.0
+    },
+    {
+     "vintage": "2020-05-11",
+     "value": 131045.0
+    },
+    {
+     "vintage": "2020-06-05",
+     "value": 130403.0
+    },
+    {
+     "vintage": "2020-07-02",
+     "value": 130303.0
+    },
+    {
+     "vintage": "2020-08-07",
+     "value": 130303.0
+    },
+    {
+     "vintage": "2020-09-04",
+     "value": 130303.0
+    },
+    {
+     "vintage": "2021-06-04",
+     "value": 130161.0
+    },
+    {
+     "vintage": "2023-06-02",
+     "value": 130430.0
+    },
+    {
+     "vintage": "2026-09-04",
+     "value": 130426.0
+    }
+   ],
+   "n_distinct_values": 7,
+   "first_print": 131072.0,
+   "latest": 130426.0
+  },
+  {
+   "series": "PAYEMS",
+   "obs": "2022-12-01",
+   "first_vintage": "2023-01-06",
+   "path": [
+    {
+     "vintage": "2023-01-06",
+     "value": 153743.0
+    },
+    {
+     "vintage": "2023-02-03",
+     "value": 154556.0
+    },
+    {
+     "vintage": "2023-03-10",
+     "value": 154535.0
+    },
+    {
+     "vintage": "2023-04-07",
+     "value": 154535.0
+    },
+    {
+     "vintage": "2023-05-05",
+     "value": 154535.0
+    },
+    {
+     "vintage": "2023-06-02",
+     "value": 154535.0
+    },
+    {
+     "vintage": "2024-02-02",
+     "value": 154291.0
+    },
+    {
+     "vintage": "2026-01-09",
+     "value": 154336.0
+    },
+    {
+     "vintage": "2026-09-04",
+     "value": 154342.0
+    }
+   ],
+   "n_distinct_values": 6,
+   "first_print": 153743.0,
+   "latest": 154342.0
+  },
+  {
+   "series": "PAYEMS",
+   "obs": "2019-03-01",
+   "first_vintage": "2019-04-05",
+   "path": [
+    {
+     "vintage": "2019-04-05",
+     "value": 150816.0
+    },
+    {
+     "vintage": "2019-05-03",
+     "value": 150832.0
+    },
+    {
+     "vintage": "2019-06-07",
+     "value": 150796.0
+    },
+    {
+     "vintage": "2019-07-05",
+     "value": 150796.0
+    },
+    {
+     "vintage": "2019-08-02",
+     "value": 150796.0
+    },
+    {
+     "vintage": "2019-09-06",
+     "value": 150796.0
+    },
+    {
+     "vintage": "2020-05-08",
+     "value": 150282.0
+    },
+    {
+     "vintage": "2022-05-06",
+     "value": 150348.0
+    },
+    {
+     "vintage": "2026-09-04",
+     "value": 150295.0
+    }
+   ],
+   "n_distinct_values": 6,
+   "first_print": 150816.0,
+   "latest": 150295.0
+  },
+  {
+   "series": "INDPRO",
+   "obs": "2020-04-01",
+   "first_vintage": "2020-05-15",
+   "path": [
+    {
+     "vintage": "2020-05-15",
+     "value": 92.5919
+    },
+    {
+     "vintage": "2020-06-16",
+     "value": 91.2823
+    },
+    {
+     "vintage": "2020-07-15",
+     "value": 91.1991
+    },
+    {
+     "vintage": "2020-08-14",
+     "value": 91.2071
+    },
+    {
+     "vintage": "2020-09-15",
+     "value": 91.008
+    },
+    {
+     "vintage": "2020-10-16",
+     "value": 91.2658
+    },
+    {
+     "vintage": "2021-05-28",
+     "value": 84.2018
+    },
+    {
+     "vintage": "2023-05-16",
+     "value": 84.5979
+    },
+    {
+     "vintage": "2026-09-18",
+     "value": 84.5619
+    }
+   ],
+   "n_distinct_values": 9,
+   "first_print": 92.5919,
+   "latest": 84.5619
+  },
+  {
+   "series": "INDPRO",
+   "obs": "2022-03-01",
+   "first_vintage": "2022-04-15",
+   "path": [
+    {
+     "vintage": "2022-04-15",
+     "value": 104.5853
+    },
+    {
+     "vintage": "2022-05-17",
+     "value": 104.4741
+    },
+    {
+     "vintage": "2022-06-17",
+     "value": 104.0733
+    },
+    {
+     "vintage": "2022-06-28",
+     "value": 103.719
+    },
+    {
+     "vintage": "2022-07-15",
+     "value": 103.7286
+    },
+    {
+     "vintage": "2022-08-16",
+     "value": 103.6218
+    },
+    {
+     "vintage": "2023-05-16",
+     "value": 102.478
+    },
+    {
+     "vintage": "2025-04-16",
+     "value": 102.6732
+    },
+    {
+     "vintage": "2026-09-18",
+     "value": 101.3907
+    }
+   ],
+   "n_distinct_values": 9,
+   "first_print": 104.5853,
+   "latest": 101.3907
+  },
+  {
+   "series": "CPIAUCSL",
+   "obs": "2021-06-01",
+   "first_vintage": "2021-07-13",
+   "path": [
+    {
+     "vintage": "2021-07-13",
+     "value": 270.981
+    },
+    {
+     "vintage": "2021-08-11",
+     "value": 270.981
+    },
+    {
+     "vintage": "2021-09-14",
+     "value": 270.981
+    },
+    {
+     "vintage": "2021-10-13",
+     "value": 270.981
+    },
+    {
+     "vintage": "2021-11-10",
+     "value": 270.981
+    },
+    {
+     "vintage": "2021-12-10",
+     "value": 270.981
+    },
+    {
+     "vintage": "2022-07-13",
+     "value": 270.955
+    },
+    {
+     "vintage": "2024-08-14",
+     "value": 270.664
+    },
+    {
+     "vintage": "2026-09-11",
+     "value": 270.654
+    }
+   ],
+   "n_distinct_values": 4,
+   "first_print": 270.981,
+   "latest": 270.654
+  },
+  {
+   "series": "CPIAUCSL",
+   "obs": "2022-06-01",
+   "first_vintage": "2022-07-13",
+   "path": [
+    {
+     "vintage": "2022-07-13",
+     "value": 295.328
+    },
+    {
+     "vintage": "2022-08-10",
+     "value": 295.328
+    },
+    {
+     "vintage": "2022-09-13",
+     "value": 295.328
+    },
+    {
+     "vintage": "2022-10-13",
+     "value": 295.328
+    },
+    {
+     "vintage": "2022-11-10",
+     "value": 295.328
+    },
+    {
+     "vintage": "2022-12-13",
+     "value": 295.328
+    },
+    {
+     "vintage": "2023-08-10",
+     "value": 294.728
+    },
+    {
+     "vintage": "2025-07-15",
+     "value": 295.072
+    },
+    {
+     "vintage": "2026-09-11",
+     "value": 294.957
+    }
+   ],
+   "n_distinct_values": 4,
+   "first_print": 295.328,
+   "latest": 294.957
+  },
+  {
+   "series": "UNRATE",
+   "obs": "2020-04-01",
+   "first_vintage": "2020-05-08",
+   "path": [
+    {
+     "vintage": "2020-05-08",
+     "value": 14.7
+    },
+    {
+     "vintage": "2020-06-05",
+     "value": 14.7
+    },
+    {
+     "vintage": "2020-07-02",
+     "value": 14.7
+    },
+    {
+     "vintage": "2020-08-07",
+     "value": 14.7
+    },
+    {
+     "vintage": "2020-09-04",
+     "value": 14.7
+    },
+    {
+     "vintage": "2020-10-02",
+     "value": 14.7
+    },
+    {
+     "vintage": "2021-06-04",
+     "value": 14.8
+    },
+    {
+     "vintage": "2023-06-02",
+     "value": 14.7
+    },
+    {
+     "vintage": "2026-09-04",
+     "value": 14.8
+    }
+   ],
+   "n_distinct_values": 2,
+   "first_print": 14.7,
+   "latest": 14.8
+  }
+ ],
+ "meta": {
+  "GDPC1": {
+   "n_vintages": 418,
+   "first_vintage": "1991-12-04",
+   "last_vintage": "2026-08-26",
+   "release_id": 53
+  },
+  "GDP": {
+   "n_vintages": 414,
+   "first_vintage": "1991-12-04",
+   "last_vintage": "2026-08-26",
+   "release_id": 53
+  },
+  "PAYEMS": {
+   "n_vintages": 859,
+   "first_vintage": "1955-05-06",
+   "last_vintage": "2026-09-04",
+   "release_id": 50
+  },
+  "INDPRO": {
+   "n_vintages": 1223,
+   "first_vintage": "1927-01-26",
+   "last_vintage": "2026-09-18",
+   "release_id": 13
+  },
+  "CPIAUCSL": {
+   "n_vintages": 669,
+   "first_vintage": "1972-07-21",
+   "last_vintage": "2026-09-11",
+   "release_id": 10
+  },
+  "UNRATE": {
+   "n_vintages": 799,
+   "first_vintage": "1960-03-15",
+   "last_vintage": "2026-09-04",
+   "release_id": 50
+  },
+  "DGS10": {
+   "n_vintages": 5118,
+   "first_vintage": "2005-06-28",
+   "last_vintage": "2026-09-28",
+   "release_id": 18
+  }
+ }
+}

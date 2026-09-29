@@ -1,0 +1,343 @@
+{
+ "worldbank_wdi_archive_USA_GDP_2015": [
+  [
+   "198904",
+   null
+  ],
+  [
+   "199004",
+   null
+  ],
+  [
+   "199009",
+   null
+  ],
+  [
+   "199104",
+   null
+  ],
+  [
+   "199109",
+   null
+  ],
+  [
+   "199204",
+   null
+  ],
+  [
+   "199209",
+   null
+  ],
+  [
+   "199304",
+   null
+  ],
+  [
+   "199309",
+   null
+  ],
+  [
+   "199404",
+   null
+  ],
+  [
+   "199409",
+   null
+  ],
+  [
+   "199504",
+   null
+  ],
+  [
+   "199509",
+   null
+  ],
+  [
+   "199704",
+   null
+  ],
+  [
+   "199804",
+   null
+  ],
+  [
+   "199904",
+   null
+  ],
+  [
+   "200004",
+   null
+  ],
+  [
+   "200104",
+   null
+  ],
+  [
+   "200204",
+   null
+  ],
+  [
+   "200304",
+   null
+  ],
+  [
+   "200404",
+   null
+  ],
+  [
+   "200504",
+   null
+  ],
+  [
+   "200509",
+   null
+  ],
+  [
+   "200604",
+   null
+  ],
+  [
+   "200609",
+   null
+  ],
+  [
+   "200704",
+   null
+  ],
+  [
+   "200709",
+   null
+  ],
+  [
+   "200804",
+   null
+  ],
+  [
+   "200809",
+   null
+  ],
+  [
+   "200812",
+   null
+  ],
+  [
+   "200905",
+   null
+  ],
+  [
+   "200910",
+   null
+  ],
+  [
+   "201004",
+   null
+  ],
+  [
+   "201007",
+   null
+  ],
+  [
+   "201012",
+   null
+  ],
+  [
+   "201104",
+   null
+  ],
+  [
+   "201107",
+   null
+  ],
+  [
+   "201109",
+   null
+  ],
+  [
+   "201112",
+   null
+  ],
+  [
+   "201204",
+   null
+  ],
+  [
+   "201205",
+   null
+  ],
+  [
+   "201207",
+   null
+  ],
+  [
+   "201209",
+   null
+  ],
+  [
+   "201210",
+   null
+  ],
+  [
+   "201212",
+   null
+  ],
+  [
+   "201304",
+   null
+  ],
+  [
+   "201307",
+   null
+  ],
+  [
+   "201310",
+   null
+  ],
+  [
+   "201312",
+   null
+  ],
+  [
+   "201404",
+   null
+  ],
+  [
+   "201405",
+   null
+  ],
+  [
+   "201407",
+   null
+  ],
+  [
+   "201409",
+   null
+  ],
+  [
+   "201411",
+   null
+  ],
+  [
+   "201412",
+   null
+  ],
+  [
+   "201501",
+   null
+  ],
+  [
+   "201503",
+   null
+  ],
+  [
+   "201504",
+   null
+  ],
+  [
+   "201507",
+   null
+  ],
+  [
+   "201509",
+   null
+  ]
+ ],
+ "ecb_hicp_status_values": [
+  [
+   "2025-09",
+   "2.2",
+   "A"
+  ],
+  [
+   "2025-10",
+   "2.1",
+   "E"
+  ],
+  [
+   "2025-11",
+   "2.1",
+   "A"
+  ],
+  [
+   "2025-12",
+   "1.9",
+   "A"
+  ]
+ ],
+ "eurostat_hicp": {
+  "updated": "2026-02-06T23:00:00+0100",
+  "status": null,
+  "time": {
+   "2025-09": 0,
+   "2025-10": 1,
+   "2025-11": 2,
+   "2025-12": 3
+  },
+  "value": {
+   "0": 2.2,
+   "1": 2.1,
+   "2": 2.1,
+   "3": 2.0
+  }
+ },
+ "eurostat_since_status": 400,
+ "cftc_fields_sample": {
+  "id": "26092286565AF",
+  "market_and_exchange_names": "GULF # 6 FUEL OIL CRACK - NEW YORK MERCANTILE EXCHANGE",
+  "report_date_as_yyyy_mm_dd": "2026-09-22T00:00:00.000",
+  "yyyy_report_week_ww": "2026 Report Week 38",
+  "contract_market_name": "GULF # 6 FUEL OIL CRACK",
+  "cftc_contract_market_code": "86565A",
+  "cftc_market_code": "NYME",
+  "cftc_region_code": "NYC"
+ },
+ "cftc_meta": {
+  "rowsUpdatedAt": 1790364609,
+  "viewLastModified": 1663761033,
+  "publicationDate": 1662988080,
+  "createdAt": 1662987562,
+  "license": null
+ },
+ "nyfed_fields": [
+  "effectiveDate",
+  "type",
+  "percentRate",
+  "percentPercentile1",
+  "percentPercentile25",
+  "percentPercentile75",
+  "percentPercentile99",
+  "volumeInBillions",
+  "revisionIndicator"
+ ],
+ "nyfed_revisions": [],
+ "treasury_fields": [
+  "record_date",
+  "debt_held_public_amt",
+  "intragov_hold_amt",
+  "tot_pub_debt_out_amt",
+  "src_line_nbr",
+  "record_fiscal_year",
+  "record_fiscal_quarter",
+  "record_calendar_year",
+  "record_calendar_quarter",
+  "record_calendar_month",
+  "record_calendar_day"
+ ],
+ "boc_series_detail_keys": [
+  "terms",
+  "seriesDetails"
+ ],
+ "oecd_flow_count": 1547,
+ "oecd_flows_revision_related": [
+  "Short-term economic statistics revisions"
+ ],
+ "oecd_flows_mei_like": [
+  "TEST - Main Economic Indicators Publication",
+  "Composite leading indicators",
+  "G20 - Consumer price indices, all items",
+  "Consumer price indices (CPIs, HICPs), COICOP 1999",
+  "Eurostat harmonised index of consumer prices (HICP)",
+  "Eurostat harmonised index of consumer prices (HICP), Item weights, All countries, All items",
+  "Consumer price indices (CPIs,HICPs), COICOP 2018",
+  "Eurostat harmonised index of consumer prices (HICP), Item weights, All countries, All items, COICOP 2018"
+ ]
+}

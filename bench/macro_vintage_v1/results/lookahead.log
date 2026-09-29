@@ -1,0 +1,6 @@
+PAYEMS {"n": 95, "median_abs_rev": 390.0, "mean_abs_rev": 477.69473684210527, "max_abs_rev": 1246.0, "share_value_changed": 1.0, "n_sign_flips_in_change": 3, "median_abs_pct_rev": 0.2584064932913699}
+INDPRO {"n": 95, "median_abs_rev": 3.450100000000006, "mean_abs_rev": 4.171270526315791, "max_abs_rev": 9.037700000000001, "share_value_changed": 1.0, "n_sign_flips_in_change": 16, "median_abs_pct_rev": 3.3294046043415615}
+CPIAUCSL {"n": 95, "median_abs_rev": 0.15799999999998704, "mean_abs_rev": 0.18416842105263467, "max_abs_rev": 0.7199999999999704, "share_value_changed": 1.0, "n_sign_flips_in_change": 6, "median_abs_pct_rev": 0.055260527914401496}
+UNRATE {"n": 95, "median_abs_rev": 0.0, "mean_abs_rev": 0.04210526315789476, "max_abs_rev": 0.10000000000000142, "share_value_changed": 0.42105263157894735, "n_sign_flips_in_change": 0, "median_abs_pct_rev": 0.0}
+GDPC1 {"n": 32, "median_abs_rev": 1748.2304999999997, "mean_abs_rev": 1478.7106874999997, "max_abs_rev": 2658.246000000003, "share_value_changed": 1.0, "n_sign_flips_in_change": 1, "median_abs_pct_rev": 9.12611961877895}
+{'PAYEMS': {'obs': '2020-05-01', 'release_date': '2020-06-05', 'vintage_day_before': None, 'vintage_release_day': 132912.0}, 'GDPC1': {'obs': '2020-04-01', 'release_date': '2020-07-30', 'vintage_day_before': None, 'vintage_release_day': 17205.822}}

@@ -1,0 +1,74 @@
+[
+ {
+  "series": "PAYEMS",
+  "obs": "2020-04-01",
+  "as_of_T": "2020-06-15",
+  "value_known_at_T_ALFRED": 130403.0,
+  "value_returned_today_FRED": 130426.0,
+  "lookahead_diff": 23.0,
+  "receipt_time_utc": "2026-09-29T18:37:17+00:00"
+ },
+ {
+  "series": "PAYEMS",
+  "obs": "2022-12-01",
+  "as_of_T": "2023-01-20",
+  "value_known_at_T_ALFRED": 153743.0,
+  "value_returned_today_FRED": 154342.0,
+  "lookahead_diff": 599.0,
+  "receipt_time_utc": "2026-09-29T18:37:19+00:00"
+ },
+ {
+  "series": "INDPRO",
+  "obs": "2020-04-01",
+  "as_of_T": "2020-05-20",
+  "value_known_at_T_ALFRED": 92.5919,
+  "value_returned_today_FRED": 84.5619,
+  "lookahead_diff": -8.030000000000001,
+  "receipt_time_utc": "2026-09-29T18:37:20+00:00"
+ },
+ {
+  "series": "INDPRO",
+  "obs": "2022-03-01",
+  "as_of_T": "2022-04-20",
+  "value_known_at_T_ALFRED": 104.5853,
+  "value_returned_today_FRED": 101.3907,
+  "lookahead_diff": -3.1946000000000083,
+  "receipt_time_utc": "2026-09-29T18:37:22+00:00"
+ },
+ {
+  "series": "CPIAUCSL",
+  "obs": "2022-06-01",
+  "as_of_T": "2022-07-20",
+  "value_known_at_T_ALFRED": 295.328,
+  "value_returned_today_FRED": 294.957,
+  "lookahead_diff": -0.3709999999999809,
+  "receipt_time_utc": "2026-09-29T18:37:24+00:00"
+ },
+ {
+  "series": "GDPC1",
+  "obs": "2020-04-01",
+  "as_of_T": "2020-08-01",
+  "value_known_at_T_ALFRED": 17205.822,
+  "value_returned_today_FRED": 19077.992,
+  "lookahead_diff": 1872.1699999999983,
+  "receipt_time_utc": "2026-09-29T18:37:26+00:00"
+ },
+ {
+  "series": "GDP",
+  "obs": "2020-04-01",
+  "as_of_T": "2020-08-01",
+  "value_known_at_T_ALFRED": 19408.759,
+  "value_returned_today_FRED": 19958.291,
+  "lookahead_diff": 549.5320000000029,
+  "receipt_time_utc": "2026-09-29T18:37:27+00:00"
+ },
+ {
+  "series": "UNRATE",
+  "obs": "2020-04-01",
+  "as_of_T": "2020-06-01",
+  "value_known_at_T_ALFRED": 14.7,
+  "value_returned_today_FRED": 14.8,
+  "lookahead_diff": 0.10000000000000142,
+  "receipt_time_utc": "2026-09-29T18:37:29+00:00"
+ }
+]

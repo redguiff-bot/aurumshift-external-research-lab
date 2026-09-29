@@ -1,0 +1,42 @@
+{
+ "PAYEMS": {
+  "n": 95,
+  "median_abs_diff_pct_change_pp": 0.04573130793692062,
+  "mean_abs_diff_pp": 0.06867497309160438,
+  "max_abs_diff_pp": 0.4582560196201584,
+  "share_diff_gt_0.05pp": 0.4842105263157895,
+  "sign_flips_first_vs_latest": 3
+ },
+ "INDPRO": {
+  "n": 95,
+  "median_abs_diff_pct_change_pp": 0.2520155463596243,
+  "mean_abs_diff_pp": 0.37395456391997123,
+  "max_abs_diff_pp": 1.9400510119339227,
+  "share_diff_gt_0.05pp": 0.8842105263157894,
+  "sign_flips_first_vs_latest": 16
+ },
+ "CPIAUCSL": {
+  "n": 94,
+  "median_abs_diff_pct_change_pp": 0.04397191927510677,
+  "mean_abs_diff_pp": 0.058687731832085775,
+  "max_abs_diff_pp": 0.22006981354294014,
+  "share_diff_gt_0.05pp": 0.4787234042553192,
+  "sign_flips_first_vs_latest": 6
+ },
+ "UNRATE": {
+  "n": 94,
+  "median_abs_diff_pct_change_pp": 1.6397849462365532,
+  "mean_abs_diff_pp": 1.4130303350399296,
+  "max_abs_diff_pp": 4.8780487804877986,
+  "share_diff_gt_0.05pp": 0.6276595744680851,
+  "sign_flips_first_vs_latest": 0
+ },
+ "GDPC1": {
+  "n": 32,
+  "median_abs_diff_pct_change_pp": 0.16492089132208,
+  "mean_abs_diff_pp": 0.2568241041564086,
+  "max_abs_diff_pp": 1.6179313633602446,
+  "share_diff_gt_0.05pp": 0.8125,
+  "sign_flips_first_vs_latest": 1
+ }
+}

@@ -1,0 +1,210 @@
+{
+ "FRED_API_terms": {
+  "url": "https://fred.stlouisfed.org/docs/api/terms_of_use.html",
+  "status": 200,
+  "chars": 19545,
+  "snippets": [
+   "Louis Fed Web Services: API Key Skip to main content Explore Our Apps FRED Tools and resources to find and use economic data worldwide FRASER U.S.",
+   "The Terms of Use define your download and use of the FRED\u00ae API and other materials provided by the Federal Reserve Bank of St.",
+   "If you disagree with any of the Terms of Use, the Federal Reserve Bank of St.",
+   "Louis does not grant you a license to use the FRED\u00ae API.",
+   "The Terms of Use shall include: These terms and conditions set forth in this document; The Federal Reserve Bank of St.",
+   "Before you use the FRED\u00ae API, you should read each of the documents comprising the Terms of Use, and print or save a local copy for your records.",
+   "The Terms of Use may be amended only by a writing executed by the Federal Reserve Bank of St.",
+   "Louis and we reserve the right to update and change the Terms of Use from time to time without notice."
+  ]
+ },
+ "FRED_legal": {
+  "url": "https://fred.stlouisfed.org/legal",
+  "status": 200,
+  "chars": 77993,
+  "snippets": [
+   "You can do a lot of things with FRED data, graphs, maps, software, and mobile apps for your own personal, non-commercial use such as...",
+   "Make cool graphs and maps and share them with friends Download data into Excel for homework assignments Support your policy stance on Facebook or your blog Make a sweet app using our FRED through our free API Just be sure to mention FRED as the service from which you retrieved the data and keep any copyright notices that appear with the data on FRED.",
+   "For complete information on personal accounts, see the full FRED\u00ae Services Terms of Use and our Privacy Notice & Policy .",
+   "For complete information see the full FRED\u00ae Services Terms of Use 3) Why do some series on FRED have a copyright notice?",
+   "Series with a copyright notice are owned by third parties and have special restrictions.",
+   "Before using data with a copyright notice for anything other than your own personal use, you must contact the data owner to obtain permission .",
+   "5) How should I cite or provide attribution to FRED?",
+   "FRED provides data and data services to the public for non-commercial, educational, and personal uses subject to a few prohibitions."
+  ]
+ },
+ "FRED_api_key": {
+  "url": "https://fred.stlouisfed.org/docs/api/api_key.html",
+  "status": 200,
+  "chars": 1942,
+  "snippets": [
+   "Louis Fed Web Services: API Key Skip to main content Explore Our Apps FRED Tools and resources to find and use economic data worldwide FRASER U.S.",
+   "All web service requests require an API key to identify requests.",
+   "Developers should request a distinct API key for each application they build.",
+   "All users of an application shall use their own API key.",
+   "The API key is set using the api_key variable, a 32 character lower-cased alpha-numeric string.",
+   "api_key=abcdefghijklmnopqrstuvwxyz123456 &search_text=canada Note that API key 'abcdefghijklmnopqrstuvwxyz123456' is for demonstration purposes only.",
+   "Use one of your registered API keys instead."
+  ]
+ },
+ "BLS_api_signup": {
+  "url": "https://www.bls.gov/developers/api_faqs.htm",
+  "status": 403,
+  "chars": 553,
+  "snippets": []
+ },
+ "BLS_linking": {
+  "url": "https://www.bls.gov/opub/linking-and-copyright-info.htm",
+  "status": 403,
+  "chars": 552,
+  "snippets": []
+ },
+ "BEA_api": {
+  "url": "https://apps.bea.gov/API/signup/",
+  "status": 200,
+  "chars": 4385,
+  "snippets": [
+   "--> Have questions about our data Contact us at developers@bea.gov BEA on GitHub BEA eu.us.opendata pages Register \u00d7 Please provide your name (or organization name), a valid email address, and agree to the published terms of service.",
+   "Name Email Captcha Reset Captcha --> I agree to the Terms of Service PDF Register Bureau of Economic Analysis 4600 Silver Hill Road \u2022 Suitland, MD 20746 Contact Us Working at BEA Frequently Asked Questions Our Policies Privacy Commitment to Scientific Integrity Data Dissemination Practices Open Data USA.gov Business USA No FEAR Act FOIA U.S."
+  ]
+ },
+ "BEA_terms": {
+  "url": "https://www.bea.gov/about/policies-and-information/terms-of-use",
+  "status": 404,
+  "chars": 2582,
+  "snippets": [
+   "Download Acrobat Reader Page last modified on 9/17/18 Bureau of Economic Analysis 4600 Silver Hill Road \u2022 Suitland, MD 20746 Contact Us Working at BEA Frequently Asked Questions Our Policies Privacy Commitment to Scientific Integrity Data Dissemination Practices Open Data USA.gov Business USA No FEAR Act FOIA U.S."
+  ]
+ },
+ "EIA_open": {
+  "url": "https://www.eia.gov/opendata/",
+  "status": 200,
+  "chars": 14342,
+  "snippets": [
+   "Energy Information Administration - EIA - Independent Statistics and Analysis Menu Statistics Analysis Tools Education News Enter Search Term(s): Search OPEN DATA Committed to making energy data more accessible, understandable, relevant, and responsive to your needs.",
+   "Energy Information Administration is committed to its free and open data by making it available through an Application Programming Interface (API) and its open data tools.",
+   "Application Programming Interface (API) Access EIA data how you need it Register Forgot API Key Registration and compliance with the API Terms of Service Agreement help EIA monitor usage and ensure service availability.",
+   "EIA data is provided free of charge and should be used in compliance with our Copyrights and Reuse Policy .",
+   "About EIA Open Data Legacy Contact Us U.S.",
+   "Energy Information Administration 1000 Independence Ave., SW Washington, DC 20585 Policies Privacy/Security Copyright & Reuse Accessibility Information Quality Freedom of Information Act (FOIA) Related Sites usa.gov U.S.",
+   "Monthly Energy Review Annual Energy Review Consumption & Efficiency Energy use in homes, commercial buildings, manufacturing, and transportation.",
+   "Residential Energy Consumption Survey (RECS) Commercial Buildings Energy Consumption Survey (CBECS) Manufacturing Energy Consumption Survey (MECS) U.S."
+  ]
+ },
+ "EIA_reuse": {
+  "url": "https://www.eia.gov/about/copyrights_reuse.php",
+  "status": 200,
+  "chars": 7930,
+  "snippets": [
+   "Energy Information Administration - EIA - Independent Statistics and Analysis Menu Statistics Analysis Tools Education News Enter Search Term(s): Search About EIA Copyrights and Reuse Public domain and use of EIA content U.S.",
+   "government publications are in the public domain and are not subject to copyright protection.",
+   "Protected materials You may see on our website documents, illustrations, photographs, or other information resources contributed or licensed by private individuals, companies, or organizations that may be protected by U.S.",
+   "Transmission or reproduction of protected items beyond that allowed by fair use as defined in the copyright laws requires the written permission of the copyright owners.",
+   "The EIA logo is a registered trademark (Registration Number 4019501) of the U.S.",
+   "Please note that our \" Energy Ant \" (seen on our Energy Kids website at http://www.eia.gov/kids/ ) is a registered servicemark of the U.S.",
+   "For background material on other copyright issues, see Copyright Basics from the U.S.",
+   "Energy Information Administration 1000 Independence Ave., SW Washington, DC 20585 Policies Privacy/Security Copyright & Reuse Accessibility Information Quality Freedom of Information Act (FOIA) Related Sites usa.gov U.S."
+  ]
+ },
+ "NYFED_terms": {
+  "url": "https://www.newyorkfed.org/terms-of-use",
+  "status": 200,
+  "chars": 6695,
+  "snippets": [
+   "Page Not Found The page you were looking for has been deleted, moved or does not exist By continuing to use our site, you agree to our Terms of Use and Privacy Statement .",
+   "Request a Speaker International Seminars & Training Governance & Culture Reform Data Visualization Economic Research Tracker Markets Data APIs Podcast Contact Us Terms of Use Privacy Site Map"
+  ]
+ },
+ "ECB_reuse": {
+  "url": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
+  "status": 200,
+  "chars": 18794,
+  "snippets": [
+   "Copyright Copyright \u00a9 for the entire content of this website: European Central Bank, Frankfurt am Main, Germany.",
+   "In this respect, the ECB would like to clarify that it does not provide commercial banking services to individuals or corporate entities, and that, in particular, it does not collect cross-border transfer fees or accept deposits from such parties, or issue any certificates for the release of funds."
+  ]
+ },
+ "ECB_data_terms": {
+  "url": "https://data.ecb.europa.eu/help/api/overview",
+  "status": 200,
+  "chars": 5260,
+  "snippets": [
+   "\u00d7 Login Register Login Email Password Remember me Forgot your password?",
+   "Register Register to manage and store your data, data comparisons as favourites, create personalised dashboards or subscribe to email notifications on data updates.",
+   "As a registered user you can save data comparisons in your favourites.",
+   "Site directory FOLLOW US X LinkedIn Instagram Youtube Flickr Sound Cloud RSS Copyright 2026, European Central Bank Useful links Glossary National Central Banks ECB website Using our site Help Disclaimer & Copyright Privacy statement Data Protection Tools Web Services API Contact Contacts Address Working hours"
+  ]
+ },
+ "EUROSTAT_reuse": {
+  "url": "https://ec.europa.eu/eurostat/about-us/policies/copyright",
+  "status": 404,
+  "chars": 3397,
+  "snippets": [
+   "https://ec.europa.eu/eurostat/about-us/policies/copyright Rate this page Select the number of stars that correspond to your rating 5 stars 4 stars 3 stars 2 stars 1 star Success Your rating has been submitted."
+  ]
+ },
+ "BOE_terms": {
+  "url": "https://www.bankofengland.co.uk/legal",
+  "status": 403,
+  "chars": 224,
+  "snippets": []
+ },
+ "BOC_terms": {
+  "url": "https://www.bankofcanada.ca/terms/",
+  "status": 200,
+  "chars": 16740,
+  "snippets": [
+   "Regulatory oversight Regulatory oversight Retail payments Financial market infrastructures Stablecoins Consumer-driven banking Registry Search the list of registered payment services providers.",
+   "Search the site Toggle Search Terms of Use, Disclosures and Disclaimers This website is provided by the Bank of Canada as a service to its users.",
+   "Your access to, and use of, this website constitutes your agreement to accept these Terms of Use and Disclaimers.",
+   "If you do not agree with these Terms of Use, or any part of them, you may leave the website.",
+   "The Bank of Canada reserves the right to update or modify these Terms of Use and Disclaimers at any time without prior notice.",
+   "See also the terms of use for accessing the Bank's social media .",
+   "Copyright / Permission to Reproduce Unless otherwise stated the copyright and any other rights in the contents of the material available through this website, including any images and text, are owned by the Bank of Canada.",
+   "Attribution You must attribute the Bank of Canada as the source of the content, and indicate if changes were made."
+  ]
+ },
+ "TREASURY_fiscaldata": {
+  "url": "https://fiscaldata.treasury.gov/api-documentation/",
+  "status": 200,
+  "chars": 22879,
+  "snippets": [
+   "API Endpoint URL Structure How to Access our API License and Authorization API Versioning Endpoints List of Endpoints Fields by Endpoint Fiscal Service Data Registry Methods Parameters Fields Data Types Fields by Endpoint Filters Sorting Format Pagination Responses and Response...",
+   "Department of the Treasury, Bureau of the Fiscal Service is committed to providing open data as part of its mission to promote the financial integrity and operational efficiency of the federal government.",
+   "The data is offered free, without restriction, and available to copy, adapt, redistribute, or otherwise use for non-commercial or commercial purposes.",
+   "Note that GET requests can be cached, remain in browser history, be bookmarked, and have length restrictions.",
+   "Response Code Description 200 OK - Response to a successful GET request 400 Bad Request - Request was malformed 403 Forbidden - API Key is not valid 404 Not Found - When a non-existent resource is requested 500 Internal Server Error - The server failed to fulfill a request Meta Object The meta object provides metadata about the resulting payload from your API request."
+  ]
+ },
+ "CFTC_policy": {
+  "url": "https://www.cftc.gov/PublicReporting/Web-Policy/index.htm",
+  "status": 404,
+  "chars": 2221,
+  "snippets": []
+ },
+ "WB_terms": {
+  "url": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+  "status": 200,
+  "chars": 26596,
+  "snippets": [
+   "The content available on this platform is provided for informational and non-commercial purposes only, unless otherwise stated.",
+   "The World Bank Group has additional specific terms of use, all of which are hereby incorporated by reference.",
+   "For purposes of these Terms of Use, \u201cThe World Bank Group\u201d means any or all of its member institutions, as the context may require.",
+   "Accessing the Site; Usernames and Interactive Tools access In order to access certain portions and features of the Site, you may have to create a \u201cusername\u201d and complete an account registration process.",
+   "If you do so, you agree to provide accurate, current, and complete information about yourself as prompted by the Site's registration forms.",
+   "You agree that all information you provide to register with this Site or otherwise, including but not limited to through the use of any interactive features on the Site, is governed by our Privacy Policy, (which is hereby incorporated herein by reference), and you consent to all actions we take with respect to your information consistent with our Privacy Policy.",
+   "Use of the Site siteuse Prohibited uses: You may use the Site only for lawful, personal and non-commercial purposes.",
+   "Collect or store personal information about anyone."
+  ]
+ },
+ "IMF_terms": {
+  "url": "https://www.imf.org/en/about/copyright-and-terms",
+  "status": 403,
+  "chars": 235,
+  "snippets": [
+   "Access Denied Access Denied You don't have permission to access \"http://www.imf.org/en/about/copyright-and-terms\" on this server."
+  ]
+ },
+ "OECD_terms": {
+  "url": "https://www.oecd.org/en/about/terms-conditions.html",
+  "status": 403,
+  "chars": 60,
+  "snippets": []
+ }
+}
