@@ -1,0 +1,104 @@
+{
+ "counts": {
+  "discovered": 68,
+  "executed": 46,
+  "part": 1,
+  "blocked": 9,
+  "cost": {
+   "FREE_UNAUTHENTICATED": 43,
+   "UNKNOWN": 17,
+   "PAID_ONLY": 1,
+   "FREE_TIER": 3,
+   "FREE_WITH_ACCOUNT": 4
+  },
+  "pit": {
+   "PIT_ADAPTABLE": 34,
+   "PIT_WEAK": 30,
+   "PIT_UNSUITABLE": 3,
+   "PIT_NATIVE": 1
+  },
+  "verdict": {
+   "ADOPT_REFERENCE": 8,
+   "ADAPT_CANDIDATE": 22,
+   "PARK": 37,
+   "REJECT": 1
+  }
+ },
+ "lists": {
+  "spot": [
+   "Binance Vision bulk (data.binance.vision)",
+   "Binance data-api.binance.vision (spot mirror)",
+   "Bitfinex public v2",
+   "Bitget v2",
+   "Bitstamp",
+   "Coinbase Exchange public",
+   "Gate.io v4",
+   "Hyperliquid info API",
+   "Kraken spot REST/WS",
+   "KuCoin public",
+   "OKX v5 public"
+  ],
+  "deriv": [
+   "Binance Vision bulk (data.binance.vision)",
+   "Bitfinex public v2",
+   "Bitget v2",
+   "Deribit public v2",
+   "Gate.io v4",
+   "Hyperliquid info API",
+   "Kraken Futures public",
+   "KuCoin public",
+   "OKX v5 public"
+  ],
+  "fx": [
+   "Alpha Vantage (demo key)",
+   "Bank of Canada Valet",
+   "Bank of England IADB",
+   "Dukascopy historical feed (bi5)",
+   "ECB Data Portal (SDMX) + eurofxref",
+   "Frankfurter",
+   "Yahoo Finance chart endpoint (unofficial)"
+  ],
+  "comm": [
+   "CFTC Commitments of Traders (Socrata)",
+   "Coinbase Exchange public",
+   "Deribit public v2",
+   "Dukascopy historical feed (bi5)",
+   "Hyperliquid info API",
+   "LBMA precious metals prices (prices.lbma.org.uk JSON)",
+   "Tokenised-gold pairs (PAXG/XAUT on OKX, Kraken, Coinbase, Deribit, Hyperliquid xyz)",
+   "World Bank API + Commodity Pink Sheet",
+   "Yahoo Finance chart endpoint (unofficial)"
+  ],
+  "mac": [
+   "BLS Public Data API",
+   "Bank of Canada Valet",
+   "Bank of England IADB",
+   "CFTC Commitments of Traders (Socrata)",
+   "Eurostat dissemination API",
+   "NY Fed Markets API (SOFR etc.)",
+   "US Treasury daily par yield curve (CSV)",
+   "World Bank API + Commodity Pink Sheet",
+   "Yahoo Finance chart endpoint (unofficial)"
+  ],
+  "fallback": [
+   "Alpha Vantage (demo key)",
+   "BLS Public Data API",
+   "Binance data-api.binance.vision (spot mirror)",
+   "CFTC Commitments of Traders (Socrata)",
+   "Coinbase Exchange public",
+   "Deribit public v2",
+   "ECB Data Portal (SDMX) + eurofxref",
+   "Eurostat dissemination API",
+   "Faireconomy/ForexFactory weekly calendar JSON",
+   "Frankfurter",
+   "Gate.io v4",
+   "Hyperliquid info API",
+   "Kraken Futures public",
+   "Kraken spot REST/WS",
+   "NY Fed Markets API (SOFR etc.)",
+   "OKX v5 public",
+   "Tokenised-gold pairs (PAXG/XAUT on OKX, Kraken, Coinbase, Deribit, Hyperliquid xyz)",
+   "US Treasury daily par yield curve (CSV)"
+  ]
+ }
+}

@@ -1,0 +1,636 @@
+{
+ "funding_summary": {
+  "okx_BTC-USDT-SWAP": {
+   "n": 30,
+   "first": 1789833600000,
+   "last": 1790668800000,
+   "gap_minutes_set": [
+    480
+   ],
+   "sample": [
+    [
+     1790668800000,
+     2.54900915325e-05
+    ]
+   ]
+  },
+  "okx_realized_field": {
+   "n": 30,
+   "first": 1789833600000,
+   "last": 1790668800000,
+   "gap_minutes_set": [
+    480
+   ],
+   "sample": [
+    [
+     1790668800000,
+     2.54900915325e-05
+    ]
+   ]
+  },
+  "gate_BTC_USDT": {
+   "n": 30,
+   "first": 1789833601000,
+   "last": 1790668800000,
+   "gap_minutes_set": [
+    479,
+    480
+   ],
+   "sample": [
+    [
+     1790668800000,
+     0.0
+    ]
+   ]
+  },
+  "bitget_BTCUSDT": {
+   "n": 30,
+   "first": 1789833600000,
+   "last": 1790668800000,
+   "gap_minutes_set": [
+    480
+   ],
+   "sample": [
+    [
+     1790668800000,
+     0.0001
+    ]
+   ]
+  },
+  "kucoin_XBTUSDTM": {
+   "n": 21,
+   "first": 1790092800000,
+   "last": 1790668800000,
+   "gap_minutes_set": [
+    480
+   ],
+   "sample": [
+    [
+     1790668800000,
+     2.8e-05
+    ]
+   ]
+  },
+  "hyperliquid_BTC(1h)": {
+   "n": 168,
+   "first": 1790085600059,
+   "last": 1790686800058,
+   "gap_minutes_set": [
+    59,
+    60
+   ],
+   "sample": [
+    [
+     1790085600059,
+     1.25e-05
+    ]
+   ]
+  },
+  "dydx_BTC-USD(1h)": {
+   "n": 200,
+   "first": 1789970400000,
+   "last": 1790686800000,
+   "gap_minutes_set": [
+    60
+   ],
+   "sample": [
+    [
+     1790686800000,
+     0.0
+    ]
+   ]
+  },
+  "krakenfut_PF_XBTUSD(1h,relative)": {
+   "n": 200,
+   "first": 1789970400000,
+   "last": 1790686800000,
+   "gap_minutes_set": [
+    60
+   ],
+   "sample": [
+    [
+     1789970400000,
+     {
+      "timestamp": "2026-09-21T06:00:00Z",
+      "fundingRate": 1.2015964116462228,
+      "relativeFundingRate": 1.4737458333333e-05
+     }
+    ]
+   ]
+  },
+  "deribit_BTC-PERPETUAL(1h)": {
+   "n": 168,
+   "first": 1790085600000,
+   "last": 1790686800000,
+   "gap_minutes_set": [
+    60
+   ],
+   "sample": [
+    [
+     1790085600000,
+     {
+      "timestamp": 1790085600000,
+      "index_price": 86320.22,
+      "interest_8h": 0.0001661204454487672,
+      "interest_1h": 1.3278174937136204e-05,
+      "prev_index_price": 86004.37
+     }
+    ]
+   ]
+  },
+  "bitmex_XBTUSDT": {
+   "n": 30,
+   "first": 1788724800000,
+   "last": 1789560000000,
+   "gap_minutes_set": [
+    480
+   ],
+   "sample": [
+    [
+     1789560000000,
+     0.0001
+    ]
+   ]
+  }
+ },
+ "funding_8h_compare": [
+  {
+   "t": 1790265600000,
+   "okx": -3.2786158009e-06,
+   "okx_realized": -3.2786158009e-06,
+   "gate": -8e-06,
+   "bitget": 4.4e-05,
+   "kucoin": 2.6e-05,
+   "bitmex_usdt": null,
+   "hl_sum8h": 8.789540000000001e-05,
+   "hl_n": 9
+  },
+  {
+   "t": 1790294400000,
+   "okx": -3.7995722708e-06,
+   "okx_realized": -3.7995722708e-06,
+   "gate": 7e-06,
+   "bitget": 2.7e-05,
+   "kucoin": 9e-06,
+   "bitmex_usdt": null,
+   "hl_sum8h": 0.00011250000000000002,
+   "hl_n": 9
+  },
+  {
+   "t": 1790323200000,
+   "okx": 7.18624451426e-05,
+   "okx_realized": 7.18624451426e-05,
+   "gate": 2.8e-05,
+   "bitget": 5.3e-05,
+   "kucoin": 2.6e-05,
+   "bitmex_usdt": null,
+   "hl_sum8h": 0.00011250000000000002,
+   "hl_n": 9
+  },
+  {
+   "t": 1790352000000,
+   "okx": 3.41625964238e-05,
+   "okx_realized": 3.41625964238e-05,
+   "gate": -7e-06,
+   "bitget": 7.8e-05,
+   "kucoin": 2.9e-05,
+   "bitmex_usdt": null,
+   "hl_sum8h": 0.00011250000000000002,
+   "hl_n": 9
+  },
+  {
+   "t": 1790380800000,
+   "okx": 1.70028374203e-05,
+   "okx_realized": 1.70028374203e-05,
+   "gate": -2.8e-05,
+   "bitget": 4.8e-05,
+   "kucoin": -2.8e-05,
+   "bitmex_usdt": null,
+   "hl_sum8h": 0.00010152720000000002,
+   "hl_n": 9
+  },
+  {
+   "t": 1790409600000,
+   "okx": 2.0707330059e-05,
+   "okx_realized": 2.0707330059e-05,
+   "gate": -9e-06,
+   "bitget": 7.1e-05,
+   "kucoin": -5e-06,
+   "bitmex_usdt": null,
+   "hl_sum8h": 7.7151e-05,
+   "hl_n": 9
+  },
+  {
+   "t": 1790438400000,
+   "okx": -5.5621777386e-06,
+   "okx_realized": -5.5621777386e-06,
+   "gate": -2e-05,
+   "bitget": 2.4e-05,
+   "kucoin": -1.4e-05,
+   "bitmex_usdt": null,
+   "hl_sum8h": 0.00010205360000000001,
+   "hl_n": 9
+  },
+  {
+   "t": 1790467200000,
+   "okx": -8.7510286654e-06,
+   "okx_realized": -8.7510286654e-06,
+   "gate": -1.5e-05,
+   "bitget": 2.4e-05,
+   "kucoin": 2.2e-05,
+   "bitmex_usdt": null,
+   "hl_sum8h": 7.308460000000001e-05,
+   "hl_n": 9
+  },
+  {
+   "t": 1790496000000,
+   "okx": -1.81443987004e-05,
+   "okx_realized": -1.81443987004e-05,
+   "gate": -4e-06,
+   "bitget": 1.7e-05,
+   "kucoin": 4e-06,
+   "bitmex_usdt": null,
+   "hl_sum8h": 0.00011250000000000002,
+   "hl_n": 9
+  },
+  {
+   "t": 1790524800000,
+   "okx": -1.07439144441e-05,
+   "okx_realized": -1.07439144441e-05,
+   "gate": 4e-06,
+   "bitget": 7e-06,
+   "kucoin": 5e-06,
+   "bitmex_usdt": null,
+   "hl_sum8h": 0.00011250000000000002,
+   "hl_n": 9
+  },
+  {
+   "t": 1790553600000,
+   "okx": 4.59235224734e-05,
+   "okx_realized": 4.59235224734e-05,
+   "gate": -2.3e-05,
+   "bitget": 1.2e-05,
+   "kucoin": -1e-06,
+   "bitmex_usdt": null,
+   "hl_sum8h": 9.793180000000001e-05,
+   "hl_n": 9
+  },
+  {
+   "t": 1790582400000,
+   "okx": -7.6067766736e-06,
+   "okx_realized": -7.6067766736e-06,
+   "gate": -1.5e-05,
+   "bitget": 0.0001,
+   "kucoin": -2.2e-05,
+   "bitmex_usdt": null,
+   "hl_sum8h": -2.5463e-06,
+   "hl_n": 9
+  },
+  {
+   "t": 1790611200000,
+   "okx": 7.09507874477e-05,
+   "okx_realized": 7.09507874477e-05,
+   "gate": 5.1e-05,
+   "bitget": 0.0001,
+   "kucoin": 6.5e-05,
+   "bitmex_usdt": null,
+   "hl_sum8h": 0.00010045310000000002,
+   "hl_n": 9
+  },
+  {
+   "t": 1790640000000,
+   "okx": 5.43754330817e-05,
+   "okx_realized": 5.43754330817e-05,
+   "gate": 1.7e-05,
+   "bitget": 0.0001,
+   "kucoin": 1.7e-05,
+   "bitmex_usdt": null,
+   "hl_sum8h": 5.67038e-05,
+   "hl_n": 9
+  },
+  {
+   "t": 1790668800000,
+   "okx": 2.54900915325e-05,
+   "okx_realized": 2.54900915325e-05,
+   "gate": 0.0,
+   "bitget": 0.0001,
+   "kucoin": 2.8e-05,
+   "bitmex_usdt": null,
+   "hl_sum8h": 3.20684e-05,
+   "hl_n": 9
+  }
+ ],
+ "oi_snapshot": {
+  "okx_BTC-USDT-SWAP_btc": 28328.517900000083,
+  "okx_ts": "1790686828666",
+  "bitget_BTCUSDT_btc": 31577.423299999995,
+  "bitget_ts": "1790686829582",
+  "deribit_perp_usd": 796941590,
+  "hyperliquid_btc": 34292.35912,
+  "krakenfut_PF_XBTUSD": 2335.3626,
+  "gate_position_size_contracts": 266817520,
+  "gate_quanto_multiplier": "0.0001",
+  "bitfinex_row": [
+   "tBTCF0:USTF0",
+   1790686832000,
+   null,
+   84413.13757476,
+   84361.5,
+   null,
+   61850259.60783556,
+   null,
+   1790697600000,
+   0.00033218,
+   5753,
+   null,
+   0,
+   null,
+   null,
+   84347.7463,
+   null,
+   null,
+   8933.01437798,
+   null,
+   null,
+   null,
+   0.0005,
+   0.0025
+  ],
+  "dydx_btc": "201.0849",
+  "okx_oi_hist_rows": 100,
+  "okx_oi_hist_span_h": 8.25,
+  "gate_stats_rows": 99,
+  "snapshot_ms": 1790686838501
+ },
+ "opt_counts": {
+  "deribit_btc_options": 944,
+  "okx_btc_usd_options": 1272,
+  "common_instruments": 690
+ },
+ "opt_iv_diff_pts": {
+  "median": 0.33619242875060706,
+  "mean": 0.6715101105641216,
+  "p05": -1.1395462058711772,
+  "p95": 2.3686275572134043,
+  "abs_median": 0.4754089953855427
+ },
+ "atm_by_expiry": [
+  {
+   "exp": [
+    2026,
+    9,
+    30
+   ],
+   "strike": 84500.0,
+   "cp": "C",
+   "deribit_iv": 26.56,
+   "okx_iv": 24.19
+  },
+  {
+   "exp": [
+    2026,
+    10,
+    1
+   ],
+   "strike": 84500.0,
+   "cp": "C",
+   "deribit_iv": 30.55,
+   "okx_iv": 29.19
+  },
+  {
+   "exp": [
+    2026,
+    10,
+    2
+   ],
+   "strike": 84500.0,
+   "cp": "P",
+   "deribit_iv": 33.08,
+   "okx_iv": 32.14
+  },
+  {
+   "exp": [
+    2026,
+    10,
+    3
+   ],
+   "strike": 84500.0,
+   "cp": "C",
+   "deribit_iv": 33.37,
+   "okx_iv": 32.73
+  },
+  {
+   "exp": [
+    2026,
+    10,
+    9
+   ],
+   "strike": 84000.0,
+   "cp": "C",
+   "deribit_iv": 33.48,
+   "okx_iv": 33.0
+  },
+  {
+   "exp": [
+    2026,
+    10,
+    16
+   ],
+   "strike": 84000.0,
+   "cp": "C",
+   "deribit_iv": 33.84,
+   "okx_iv": 33.59
+  },
+  {
+   "exp": [
+    2026,
+    10,
+    30
+   ],
+   "strike": 85000.0,
+   "cp": "C",
+   "deribit_iv": 34.9,
+   "okx_iv": 34.75
+  },
+  {
+   "exp": [
+    2026,
+    11,
+    27
+   ],
+   "strike": 85000.0,
+   "cp": "P",
+   "deribit_iv": 37.11,
+   "okx_iv": 36.85
+  }
+ ],
+ "dvol_rows": 72,
+ "deribit_futures": [
+  {
+   "n": "BTC-24SEP27",
+   "mark": 88726.55,
+   "est_delivery": 84337.71,
+   "oi": 3575080
+  },
+  {
+   "n": "BTC-9OCT26",
+   "mark": 84420.18,
+   "est_delivery": 84337.71,
+   "oi": 5752860
+  },
+  {
+   "n": "BTC-30SEP26",
+   "mark": 84329.79,
+   "est_delivery": 84337.71,
+   "oi": 1692400
+  },
+  {
+   "n": "BTC-3OCT26",
+   "mark": 84367.58,
+   "est_delivery": 84337.71,
+   "oi": 76420
+  },
+  {
+   "n": "BTC-30OCT26",
+   "mark": 84659.01,
+   "est_delivery": 84337.71,
+   "oi": 69544490
+  },
+  {
+   "n": "BTC-2OCT26",
+   "mark": 84357.18,
+   "est_delivery": 84337.71,
+   "oi": 8872130
+  },
+  {
+   "n": "BTC-25JUN27",
+   "mark": 87610.01,
+   "est_delivery": 84337.71,
+   "oi": 63730580
+  },
+  {
+   "n": "BTC-PERPETUAL",
+   "mark": 84351.6,
+   "est_delivery": 84337.71,
+   "oi": 796918520
+  },
+  {
+   "n": "BTC-26MAR27",
+   "mark": 86405.7,
+   "est_delivery": 84337.71,
+   "oi": 83713480
+  },
+  {
+   "n": "BTC-16OCT26",
+   "mark": 84493.08,
+   "est_delivery": 84337.71,
+   "oi": 1614710
+  },
+  {
+   "n": "BTC-25DEC26",
+   "mark": 85349.78,
+   "est_delivery": 84337.71,
+   "oi": 311788310
+  },
+  {
+   "n": "BTC-1OCT26",
+   "mark": 84338.55,
+   "est_delivery": 84337.71,
+   "oi": 1118490
+  },
+  {
+   "n": "BTC-27NOV26",
+   "mark": 85024.7,
+   "est_delivery": 84337.71,
+   "oi": 33557470
+  }
+ ],
+ "okx_future_instruments": [
+  {
+   "id": "BTC-USD-261030",
+   "exp": "1793347200000",
+   "listTime": "1786695000686"
+  },
+  {
+   "id": "BTC-USD-261127",
+   "exp": "1795766400000",
+   "listTime": "1790323800608"
+  },
+  {
+   "id": "BTC-USD-261225",
+   "exp": "1798185600000",
+   "listTime": "1775808600859"
+  },
+  {
+   "id": "BTC-USD-270326",
+   "exp": "1806048000000",
+   "listTime": "1784275800477"
+  },
+  {
+   "id": "BTC-USD-270625",
+   "exp": "1813910400000",
+   "listTime": "1784620800000"
+  },
+  {
+   "id": "BTC-USD-270924",
+   "exp": "1821772800000",
+   "listTime": "1784620800000"
+  },
+  {
+   "id": "BTC-USD_UM-261030",
+   "exp": "1793347200000",
+   "listTime": "1787904600714"
+  },
+  {
+   "id": "BTC-USD_UM-261127",
+   "exp": "1795766400000",
+   "listTime": "1790323800603"
+  },
+  {
+   "id": "BTC-USD_UM-261225",
+   "exp": "1798185600000",
+   "listTime": "1781251800815"
+  },
+  {
+   "id": "BTC-USD_UM-270326",
+   "exp": "1806048000000",
+   "listTime": "1784710800000"
+  },
+  {
+   "id": "BTC-USD_UM_XPERP-310404",
+   "exp": "1933056000000",
+   "listTime": "1774845000428"
+  }
+ ],
+ "kraken_fut_fixed_maturity": [
+  {
+   "symbol": "FI_XBTUSD_261030",
+   "markPrice": 84343.71,
+   "last": null,
+   "openInterest": 0,
+   "lastTime": null
+  },
+  {
+   "symbol": "FI_XBTUSD_261225",
+   "markPrice": 84343.71,
+   "last": null,
+   "openInterest": 0,
+   "lastTime": null
+  }
+ ],
+ "liq_okx": {
+  "n": 100,
+  "span_min": 163.69145
+ },
+ "liq_gate": {
+  "n": 13,
+  "span_min": 19.4
+ },
+ "liq_bitfinex_all_symbols": {
+  "n": 500,
+  "span_min": 4676.262816666666
+ },
+ "liq_bitmex_now": {
+  "n": null
+ }
+}

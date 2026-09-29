@@ -1,0 +1,262 @@
+{
+ "fred_dgs10": {
+  "status": null,
+  "ms": 30910.0,
+  "bytes": null,
+  "err": "ProxyError(MaxRetryError(\"HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=DGS10 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))\"))",
+  "head": "null"
+ },
+ "alfred_gdpc1_2020-01-30": {
+  "status": null,
+  "ms": 30886.5,
+  "bytes": null,
+  "err": "ProxyError(MaxRetryError(\"HTTPSConnectionPool(host='alfred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=GDPC1&vintage_date=2020-01-30 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))\"))",
+  "head": "null"
+ },
+ "fred_api_v1_doc": {
+  "status": 400,
+  "ms": 3400.6,
+  "bytes": 183,
+  "err": null,
+  "head": "{\"error_code\": 400, \"error_message\": \"Bad Request.  The value for variable api_key is not registered.  Read https://fred.stlouisfed.org/docs/api/api_key.html for more information.\"}"
+ },
+ "fred_dgs10_www": {
+  "status": null,
+  "ms": 31205.9,
+  "bytes": null,
+  "err": "ProxyError(MaxRetryError(\"HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /data/DGS10.txt (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))\"))",
+  "head": "null"
+ },
+ "fred_series_page": {
+  "status": null,
+  "ms": 30923.4,
+  "bytes": null,
+  "err": "ProxyError(MaxRetryError(\"HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /series/DGS10 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))\"))",
+  "head": "null"
+ },
+ "treasury_yield_csv": {
+  "rows": 24,
+  "first": "09/28/2026",
+  "last": "08/25/2026",
+  "cols": [
+   "Date",
+   "1 Mo",
+   "1.5 Month",
+   "2 Mo",
+   "3 Mo",
+   "4 Mo"
+  ],
+  "latest_10y": "5.24"
+ },
+ "treasury_1990_rows": 35,
+ "ecb_csv": {
+  "rows": 6,
+  "cols": "KEY,FREQ,CURRENCY,CURRENCY_DENOM,EXR_TYPE,EXR_SUFFIX,TIME_PERIOD,OBS_VALUE,OBS_STATUS,OBS_CONF,OBS_PRE_BREAK,OBS_COM,TIME_FORMAT,BREAKS,COLLECTION,COMPILING_ORG,DISS_ORG,DOM_SER_IDS,PUBL_ECB,PUBL_MU,PUBL_PUBLIC,UNIT_INDE"
+ },
+ "ecb_updatedAfter": {
+  "status": 200,
+  "rows": 8
+ },
+ "ecb_1999": "rence exchange rate, US dollar/Euro, 2.15 pm (C.E.T.)\",USD,0",
+ "nyfed_sofr": {
+  "latest": "2026-09-28",
+  "pct": 3.9,
+  "keys": [
+   "effectiveDate",
+   "type",
+   "percentRate",
+   "percentPercentile1",
+   "percentPercentile25",
+   "percentPercentile75",
+   "percentPercentile99",
+   "volumeInBillions",
+   "revisionIndicator"
+  ]
+ },
+ "nyfed_sofr_2018": [
+  {
+   "effectiveDate": "2018-04-05",
+   "type": "SOFR",
+   "percentRate": 1.75,
+   "percentPercentile1": 1.65,
+   "percentPercentile25": 1.7,
+   "percentPercentile75": 1.81,
+   "percentPercentile99": 1.85,
+   "volumeInBillions": 829,
+   "revisionIndicator": ""
+  }
+ ],
+ "bls_v1": {
+  "status": "REQUEST_SUCCEEDED",
+  "msg": []
+ },
+ "bls_v2_nokey": {
+  "status": "REQUEST_NOT_PROCESSED",
+  "msg": [
+   "Request could not be serviced, as the daily threshold for total number of requests allocated to the user with registration key  has been reached."
+  ]
+ },
+ "eurostat": {
+  "updated": "2026-02-06T23:00:00+0100",
+  "value": {
+   "0": 2.1,
+   "1": 2.1,
+   "2": 2.0
+  },
+  "time": {
+   "2025-10": 0,
+   "2025-11": 1,
+   "2025-12": 2
+  }
+ },
+ "boc": [
+  {
+   "d": "2026-09-28",
+   "FXUSDCAD": {
+    "v": "1.4168"
+   }
+  },
+  {
+   "d": "2026-09-25",
+   "FXUSDCAD": {
+    "v": "1.4145"
+   }
+  },
+  {
+   "d": "2026-09-24",
+   "FXUSDCAD": {
+    "v": "1.4136"
+   }
+  }
+ ],
+ "cftc_gold": [
+  {
+   "market_and_exchange_names": "PAX GOLD PERP STYLE - COINBASE DERIVATIVES, LLC",
+   "report_date_as_yyyy_mm_dd": "2026-09-22T00:00:00.000",
+   "open_interest_all": "1310",
+   "cftc_contract_market_code": "180LM9"
+  },
+  {
+   "market_and_exchange_names": "GOLD - COMMODITY EXCHANGE INC.",
+   "report_date_as_yyyy_mm_dd": "2026-09-22T00:00:00.000",
+   "open_interest_all": "412800",
+   "cftc_contract_market_code": "088691"
+  }
+ ],
+ "cftc_oldest": "1986-01-15T00:00:00.000",
+ "worldbank": {
+  "meta": {
+   "page": 1,
+   "pages": 22,
+   "per_page": 3,
+   "total": 66,
+   "sourceid": "2",
+   "lastupdated": "2026-07-13"
+  },
+  "first": "2025"
+ },
+ "lbma_gold_am": {
+  "n": 14844,
+  "first": {
+   "is_cms_locked": 0,
+   "d": "1968-01-02",
+   "v": [
+    35.18,
+    14.64,
+    null
+   ]
+  },
+  "last": {
+   "is_cms_locked": 0,
+   "d": "2026-09-28",
+   "v": [
+    4144.4,
+    3124.46,
+    3642.51
+   ]
+  },
+  "keys": [
+   "is_cms_locked",
+   "d",
+   "v"
+  ]
+ },
+ "ff_calendar": {
+  "events": 141,
+  "keys": [
+   "title",
+   "country",
+   "date",
+   "impact",
+   "forecast",
+   "previous"
+  ],
+  "impacts": [
+   "High",
+   "Holiday",
+   "Low",
+   "Medium"
+  ],
+  "countries": [
+   "AUD",
+   "CAD",
+   "CHF",
+   "CNY",
+   "EUR",
+   "GBP",
+   "JPY",
+   "NZD",
+   "USD"
+  ],
+  "with_actual": 0,
+  "identical_two_fetches": true,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 13:06:37 GMT",
+   "Server": "cloudflare"
+  },
+  "sample": {
+   "title": "Monetary Policy Meeting Minutes",
+   "country": "JPY",
+   "date": "2026-09-27T19:50:00-04:00",
+   "impact": "Low",
+   "forecast": "",
+   "previous": ""
+  }
+ },
+ "ff_nextweek": {
+  "status": 404,
+  "n": 0
+ },
+ "ff_lastweek": {
+  "status": 404
+ },
+ "yahoo_wti": {
+  "status": 200,
+  "n": 106
+ },
+ "yahoo_brent": {
+  "status": 200,
+  "n": 106
+ },
+ "yahoo_natgas": {
+  "status": 429,
+  "n": null
+ },
+ "yahoo_copper": {
+  "status": 200,
+  "n": 106
+ },
+ "yahoo_silver": {
+  "status": 200,
+  "n": 106
+ },
+ "yahoo_dxy": {
+  "status": 200,
+  "n": 106
+ },
+ "yahoo_spx": {
+  "status": 200,
+  "n": 36
+ },
+ "fear_greed_rows": 3159
+}
