@@ -10,8 +10,8 @@ sleep 4.5
 echo "PG crash ($MODE) at $(date +%s.%N)"
 if [ $MODE = immediate ]; then su lab -c "/tmp/lab/pg18root/usr/lib/postgresql/18/bin/pg_ctl -D $PGD -m immediate stop" | tail -1
 else PM=$(head -1 $PGD/postmaster.pid); pkill -9 -P $PM; kill -9 $PM; sleep 1; fi
-sleep 15
-echo "PG down 15s; worker alive? $(kill -0 $W1 2>/dev/null && echo yes || echo NO)"
+sleep ${DOWN:-15}
+echo "PG down ${DOWN:-15}s; worker alive? $(kill -0 $W1 2>/dev/null && echo yes || echo NO)"
 echo "restart PG at $(date +%s.%N)"; /tmp/lab/bin/pgstart.sh procrastinate 55403 >/dev/null 2>&1
 for i in $(seq 1 20); do echo "$(date +%s.%N) worker_alive=$(kill -0 $W1 2>/dev/null && echo y || echo n) $(./q.sh $D "select string_agg(task_name||':'||status||':'||c, ' ' order by task_name,status) from (select task_name,status,count(*) c from procrastinate_jobs group by 1,2) x" 2>&1 | head -1)"; sleep 5; done
 kill -TERM $W1 2>/dev/null; sleep 3
