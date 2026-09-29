@@ -1,0 +1,20 @@
+SOURCES_DISCOVERED=68
+SOURCES_EXECUTED=46 (data path executed, HTTP 200 and parsed); 1 reachable-but-data-path-not-completed (FRED); 9 blocked from the test egress; 12 not executed (key/account/own error/deliberate)
+FREE_PUBLIC_SOURCES=43 classified FREE_UNAUTHENTICATED (43 of them executed)
+FREE_ACCOUNT_SOURCES=4 classified FREE_WITH_ACCOUNT (0 executed with an account; +3 FREE_TIER executed with a shared demo key; 17 UNKNOWN; 1 PAID_ONLY)
+
+CRYPTO_SPOT_CANDIDATES=11
+DERIVATIVES_CANDIDATES=9
+FX_CANDIDATES=7
+COMMODITY_CANDIDATES=9 (incl. gold proxies; strictly energy/base-metal price feeds: 1, Yahoo unofficial - see 04)
+MACRO_CANDIDATES=9
+
+PIT_NATIVE_COUNT=0 observed (+1 DOCUMENTED_CLAIM only: ALFRED, execution blocked)
+PIT_ADAPTABLE_COUNT=34 classified (30 executed)
+
+FALLBACK_CAPABLE_COUNT=18 (executed sources holding a PRIMARY/SECONDARY/FALLBACK role in at least one gap class)
+
+ANY_DROP_IN_SOURCE=NO
+ANY_SCIENTIFIC_INVALIDATION=NO
+
+FINAL_VERDICT=MULTIPLE_DATA_SOURCE_CANDIDATES_SUPPORTED

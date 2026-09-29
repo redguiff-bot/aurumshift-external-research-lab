@@ -1,0 +1,1248 @@
+{
+ "okx_v5": {
+  "rate_limit": {
+   "quote": "GET /api/v5/market/candles Rate Limit: 40 requests per 2 seconds; history-candles 20/2s; funding-rate 10/2s; open-interest 20/2s; opt-summary 20/2s (rule: IP)",
+   "url": "https://www.okx.com/docs-v5/en/"
+  },
+  "auth": {
+   "quote": "Public endpoints don't need authorization.",
+   "url": "https://www.okx.com/docs-v5/en/"
+  },
+  "history": {
+   "quote": "market/candles: 'This endpoint can retrieve the latest 1,440 data entries'; 'The maximum is 300' per request (history-candles 'from recent years'); funding-rate-history 'can return data up to three months'",
+   "url": "https://www.okx.com/docs-v5/en/"
+  },
+  "timestamp": {
+   "quote": "Opening time of the candlestick, Unix timestamp format in milliseconds",
+   "url": "https://www.okx.com/docs-v5/en/"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.okx.com/docs-v5/en/"
+  },
+  "revision": {
+   "quote": "candle field confirm: '0 represents that it is uncompleted, 1 represents that it is completed' (WS candle doc); no correction policy found",
+   "url": "https://www.okx.com/docs-v5/en/"
+  },
+  "note_liquidation": {
+   "quote": "REST liquidation-orders endpoint not present in current docs; only 'Liquidation orders channel' (WebSocket): 'Retrieve the recent liquidation orders. This data doesn't represent the total number of liquidations on OKX.'",
+   "url": "https://www.okx.com/docs-v5/en/"
+  }
+ },
+ "kraken_spot": {
+  "rate_limit": {
+   "quote": "Every REST API user has a 'call counter'... Tier Max API Counter: Starter 15, Intermediate 20, Pro 20; decay -0.33/-0.5/-1 per sec",
+   "url": "https://docs.kraken.com/api/docs/guides/spot-rest-ratelimits"
+  },
+  "auth": {
+   "quote": "OHLC endpoint is public (no security scheme); no API key required (curl example without auth headers)",
+   "url": "https://docs.kraken.com/api/docs/rest-api/get-ohlc-data"
+  },
+  "history": {
+   "quote": "Returns up to 720 of the most recent entries (older data cannot be retrieved, regardless of the value of since).",
+   "url": "https://docs.kraken.com/api/docs/rest-api/get-ohlc-data"
+  },
+  "timestamp": {
+   "quote": "Return OHLC entries since the given timestamp (intended for incremental updates); interval in minutes: 1,5,15,30,60,240,1440,10080,21600; last entry is current not-yet-committed timeframe",
+   "url": "https://docs.kraken.com/api/docs/rest-api/get-ohlc-data"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://docs.kraken.com/api/docs/rest-api/get-ohlc-data"
+  },
+  "revision": {
+   "quote": "The last entry in the OHLC array is for the current, not-yet-committed timeframe, and will always be present, regardless of the value of since.",
+   "url": "https://docs.kraken.com/api/docs/rest-api/get-ohlc-data"
+  }
+ },
+ "kraken_futures": {
+  "rate_limit": {
+   "quote": "Public endpoints do not have a cost and therefore do not count against any rate limiting budget.",
+   "url": "https://docs.kraken.com/api/docs/guides/futures-rate-limits"
+  },
+  "auth": {
+   "quote": "Historical data endpoints are public but rate-limited per IP. (Futures OHLCV: GET /api/charts/v1/{tick_type}/{symbol}/{resolution})",
+   "url": "https://docs.kraken.com/llms-full.txt"
+  },
+  "history": {
+   "quote": "more_candles: 'True if there are more candles in time range' (paginated); Kraken does not provide a bulk historical data dump or websocket replay service.",
+   "url": "https://docs.kraken.com/api-reference/candles/market-candles"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://docs.kraken.com/api-reference/candles/market-candles"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://docs.kraken.com/llms-full.txt"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://docs.kraken.com/llms-full.txt"
+  }
+ },
+ "coinbase_exchange": {
+  "rate_limit": {
+   "quote": "Public Endpoints: Requests per second per IP: 10; Requests per second per IP in bursts: Up to 15",
+   "url": "https://docs.cdp.coinbase.com/exchange/introduction/rate-limits-overview"
+  },
+  "auth": {
+   "quote": "Docs page lists cb-access-* headers for the endpoint, but the curl example shows no auth; public-endpoint status not stated verbatim on candles page (rate-limit page distinguishes 'Private endpoints are authenticated')",
+   "url": "https://docs.cdp.coinbase.com/exchange/reference/exchangerestapi_getproductcandles"
+  },
+  "history": {
+   "quote": "The maximum number of data points for a single request is 300 candles. If your selection ... results in more than 300 data points, your request is rejected.",
+   "url": "https://docs.cdp.coinbase.com/exchange/reference/exchangerestapi_getproductcandles"
+  },
+  "timestamp": {
+   "quote": "time bucket start time; Candle schema is of the form [timestamp, price_low, price_high, price_open, price_close]",
+   "url": "https://docs.cdp.coinbase.com/exchange/reference/exchangerestapi_getproductcandles"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://docs.cdp.coinbase.com/exchange/reference/exchangerestapi_getproductcandles"
+  },
+  "revision": {
+   "quote": "Historical rate data may be incomplete. No data is published for intervals where there are no ticks.",
+   "url": "https://docs.cdp.coinbase.com/exchange/reference/exchangerestapi_getproductcandles"
+  }
+ },
+ "bitstamp": {
+  "rate_limit": {
+   "quote": "As standard, all clients can make 400 requests per second. There is a default limit threshold of 10,000 requests per 10 minutes in place.",
+   "url": "https://www.bitstamp.net/api/"
+  },
+  "auth": {
+   "quote": "Authentication: All private API calls require authentication. (public endpoints therefore need none; no explicit 'public needs no key' sentence)",
+   "url": "https://www.bitstamp.net/api/"
+  },
+  "history": {
+   "quote": "OHLC endpoint has 'limit' and 'step' params (max 1000 per request per doc summary; not re-verified verbatim)",
+   "url": "https://www.bitstamp.net/api/"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bitstamp.net/api/"
+  },
+  "license": {
+   "quote": "Companies seeking to utilize Bitstamp's exchange data for their own commercial purposes are directed to contact partners@bitstamp.net to receive and sign a commercial use Data License Agreement.",
+   "url": "https://www.bitstamp.net/api/"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bitstamp.net/api/"
+  }
+ },
+ "bitfinex": {
+  "rate_limit": {
+   "quote": "The current rate limit is between 10 and 90 requests per minute, depending on the specific REST API endpoint; candles: Rate Limit: 30 reqs/min",
+   "url": "https://docs.bitfinex.com/docs/requirements-and-limitations"
+  },
+  "auth": {
+   "quote": "Access to our public API does not require a Bitfinex account.",
+   "url": "https://docs.bitfinex.com/docs/requirements-and-limitations"
+  },
+  "history": {
+   "quote": "limit: Number of records in response (max. 10000). The endpoint provides the last 100 candles by default",
+   "url": "https://docs.bitfinex.com/reference/rest-public-candles"
+  },
+  "timestamp": {
+   "quote": "If start is given, only records with MTS >= start (milliseconds) will be given as response.",
+   "url": "https://docs.bitfinex.com/reference/rest-public-candles"
+  },
+  "license": {
+   "quote": "any use of our API needs to be in compliance with our API Terms of Service",
+   "url": "https://docs.bitfinex.com/docs/requirements-and-limitations"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://docs.bitfinex.com/reference/rest-public-candles"
+  }
+ },
+ "kucoin": {
+  "rate_limit": {
+   "quote": "Public Rate Limit Pool ... endpoints that can be accessed without authentication. Rate limits for these endpoints are managed based on the IP address.",
+   "url": "https://www.kucoin.com/docs-new/rate-limit-rule-classic"
+  },
+  "auth": {
+   "quote": "Public Rate Limit Pool applies to API endpoints that can be accessed without authentication. (Get Klines is tagged 'Public')",
+   "url": "https://www.kucoin.com/docs-new/rest/spot-trading/market-data/get-klines"
+  },
+  "history": {
+   "quote": "For each query, the system would return at most 1500 pieces of data. To obtain more data, please page the data by time. (UTA v2: Spot: no limit on historical range; Futures <8h intervals only after 2025-01-01)",
+   "url": "https://www.kucoin.com/docs-new/v2/rest/ua/get-klines"
+  },
+  "timestamp": {
+   "quote": "Start time of the candle interval, in seconds (UTA v2 Get Klines); classic startAt/endAt: 'Start time (second)'",
+   "url": "https://www.kucoin.com/docs-new/v2/rest/ua/get-klines"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.kucoin.com/docs-new/rest/spot-trading/market-data/get-klines"
+  },
+  "revision": {
+   "quote": "No data is published for intervals where there are no ticks.",
+   "url": "https://www.kucoin.com/docs-new/rest/spot-trading/market-data/get-klines"
+  }
+ },
+ "gemini": {
+  "rate_limit": {
+   "quote": "For public API entry points, we limit requests to 120 requests per minute, and recommend that you do not exceed 1 request per second.",
+   "url": "https://developer.gemini.com/rate-limit"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://developer.gemini.com/trading/rest-api/market-data/list-candles"
+  },
+  "history": {
+   "quote": "NOT_FOUND",
+   "url": "https://developer.gemini.com/trading/rest-api/market-data/list-candles"
+  },
+  "timestamp": {
+   "quote": "Response is an array of arrays: timestamp (milliseconds), open, high, low, close, volume; time frames 1m,5m,15m,30m,1h,6h,1day (open/close semantics not stated)",
+   "url": "https://developer.gemini.com/trading/rest-api/market-data/list-candles"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://developer.gemini.com/trading/rest-api/market-data/list-candles"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://developer.gemini.com/trading/rest-api/market-data/list-candles"
+  }
+ },
+ "gateio_v4": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.gate.com/docs/developers/apiv4/en/"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.gate.com/docs/developers/apiv4/en/"
+  },
+  "history": {
+   "quote": "Maximum of 1000 points can be returned in a query. Be sure not to exceed the limit when specifying from, to and interval (official Gate SDK doc of GET /spot/candlesticks)",
+   "url": "https://raw.githubusercontent.com/gateio/gateapi-python/master/docs/SpotApi.md"
+  },
+  "timestamp": {
+   "quote": "Start time of candlesticks, formatted in Unix timestamp in seconds. Default to `to - 100 * interval` if not specified",
+   "url": "https://raw.githubusercontent.com/gateio/gateapi-python/master/docs/SpotApi.md"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.gate.com/docs/developers/apiv4/en/"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://raw.githubusercontent.com/gateio/gateapi-python/master/docs/SpotApi.md"
+  }
+ },
+ "bitget_v2": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bitget.com/api-doc/spot/market/Get-Candle-Data"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bitget.com/api-doc/spot/market/Get-Candle-Data"
+  },
+  "history": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bitget.com/api-doc/spot/market/Get-Candle-Data"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bitget.com/api-doc/spot/market/Get-Candle-Data"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bitget.com/api-doc/spot/market/Get-Candle-Data"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bitget.com/api-doc/spot/market/Get-Candle-Data"
+  }
+ },
+ "htx": {
+  "rate_limit": {
+   "quote": "New Version Rate limit ... applied on UID basis... [market] It is suggested to use WebSocket interface ... WebSocket notification has lower latency and not have rate limit. (no public REST number found)",
+   "url": "https://huobiapi.github.io/docs/spot/v1/en/"
+  },
+  "auth": {
+   "quote": "Public API: It is for basic information and market data. It doesn't need authentication.",
+   "url": "https://huobiapi.github.io/docs/spot/v1/en/"
+  },
+  "history": {
+   "quote": "size: The number of data returns [1-2000] (GET /market/history/kline); 'The market data is updated once per second.'",
+   "url": "https://huobiapi.github.io/docs/spot/v1/en/"
+  },
+  "timestamp": {
+   "quote": "id: The UNIX timestamp in seconds as response id; 'The start time for candlesticks is based on Singapore time (GMT+8)'; ts Unit: Millisecond",
+   "url": "https://huobiapi.github.io/docs/spot/v1/en/"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://huobiapi.github.io/docs/spot/v1/en/"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://huobiapi.github.io/docs/spot/v1/en/"
+  }
+ },
+ "deribit_v2": {
+  "rate_limit": {
+   "quote": "Public, non-authorized API requests are rate-limited on a per-IP basis. They do not draw from the sub-account-level credit pool.",
+   "url": "https://docs.deribit.com/articles/rate-limits"
+  },
+  "auth": {
+   "quote": "Public methods can be used without authentication",
+   "url": "https://docs.deribit.com/api-reference/market-data/public-get_funding_rate_history"
+  },
+  "history": {
+   "quote": "NOT_FOUND",
+   "url": "https://docs.deribit.com/api-reference/market-data/public-get_volatility_index_data",
+   "note": "funding_rate_history / volatility_index_data docs give no max range; DVOL continuation via end_timestamp"
+  },
+  "timestamp": {
+   "quote": "The earliest timestamp to return result from (milliseconds since the UNIX epoch); DVOL candles: 'timestamp in ms, open, high, low, close'; book summary creation_timestamp ms",
+   "url": "https://docs.deribit.com/api-reference/market-data/public-get_funding_rate_history"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://docs.deribit.com/api-reference/market-data/public-get_funding_rate_history"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://docs.deribit.com/api-reference/market-data/public-get_funding_rate_history"
+  }
+ },
+ "bitmex": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bitmex.com/app/restAPI"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bitmex.com/app/restAPI"
+  },
+  "history": {
+   "quote": "count: Number of results to fetch. Must be a positive integer. (binSize options 1m,5m,1h,1d; max value not stated in swagger)",
+   "url": "https://www.bitmex.com/api/explorer/swagger.json"
+  },
+  "timestamp": {
+   "quote": "Timestamps returned by our bucketed endpoints are the **end** of the period, indicating when the bucket was written to disk.",
+   "url": "https://www.bitmex.com/api/explorer/swagger.json"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bitmex.com/api/explorer/swagger.json"
+  },
+  "revision": {
+   "quote": "Also note the `open` price is equal to the `close` price of the previous timeframe bucket. partial: If true, will send in-progress (incomplete) bins",
+   "url": "https://www.bitmex.com/api/explorer/swagger.json"
+  }
+ },
+ "hyperliquid_info": {
+  "rate_limit": {
+   "quote": "The following rate limits apply per IP address: REST requests share an aggregated weight limit of 1200 per minute.",
+   "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint",
+   "note": "info endpoint docs show no auth header, only Content-Type: application/json"
+  },
+  "history": {
+   "quote": "Candle snapshot: Only the most recent 5000 candles are available; 'To query larger ranges, use the last returned timestamp as the next startTime for pagination.'",
+   "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint"
+  },
+  "timestamp": {
+   "quote": "req: {\"coin\": <coin>, \"interval\": \"15m\", \"startTime\": <epoch millis>, \"endTime\": <epoch millis>} (open/close semantics of returned candle not stated on page)",
+   "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint"
+  }
+ },
+ "dydx_v4_indexer": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://docs.dydx.xyz/concepts/trading/limits/rate-limits",
+   "note": "docs 'Rate Limits' page covers order placement, not indexer REST"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://docs.dydx.xyz/indexer-client/http"
+  },
+  "history": {
+   "quote": "get_perpetual_market_candles: limit (u32) 'The maximum number of candles to retrieve.'; fromISO/toISO 'The start timestamp in ISO format.' (no max stated)",
+   "url": "https://docs.dydx.xyz/indexer-client/http"
+  },
+  "timestamp": {
+   "quote": "fromISO: The start timestamp in ISO format. (candle startedAt semantics not stated)",
+   "url": "https://docs.dydx.xyz/indexer-client/http"
+  },
+  "license": {
+   "quote": "Terms-of-Use & Privacy Policy page: 'By using, recording, referencing, or downloading ... any information contained on this page or in any dYdX Trading Inc. database or documentation, you hereby ... agree to the v4 Terms of Use'",
+   "url": "https://docs.dydx.xyz/policies/terms"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://docs.dydx.xyz/indexer-client/http"
+  }
+ },
+ "binance_data_api_vision": {
+  "rate_limit": {
+   "quote": "Every request will contain X-MBX-USED-WEIGHT-(intervalNum)(intervalLetter) ...; Repeatedly violating rate limits ... will result in an automated IP ban (HTTP status 418). klines Weight: 2",
+   "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md"
+  },
+  "auth": {
+   "quote": "These URLs do not require any authentication (i.e. The API key is not necessary) and serve only public market data.",
+   "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/faqs/market_data_only.md"
+  },
+  "history": {
+   "quote": "GET /api/v3/klines: limit 'Default: 500; Maximum: 1000.' 'If startTime and endTime are not sent, the most recent klines are returned.'",
+   "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md"
+  },
+  "timestamp": {
+   "quote": "Klines are uniquely identified by their open time. Timestamp parameters (e.g. startTime, endTime, timestamp) can be passed in milliseconds or microseconds.",
+   "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://raw.githubusercontent.com/binance/binance-public-data/master/README.md",
+   "note": "binance-public-data README has no licence text; LICENSE file 404"
+  },
+  "revision": {
+   "quote": "Archived files may be updated at a later date as a result of recently discovered issues. Below is an exhaustive list of updates performed to the archive",
+   "url": "https://raw.githubusercontent.com/binance/binance-public-data/master/README.md"
+  }
+ },
+ "binance_data_binance_vision_bulk": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://raw.githubusercontent.com/binance/binance-public-data/master/README.md"
+  },
+  "auth": {
+   "quote": "The website Binance Data Collection offers easy access for anyone to download Binance's public market data, which is aggregated into daily or monthly files.",
+   "url": "https://raw.githubusercontent.com/binance/binance-public-data/master/README.md"
+  },
+  "history": {
+   "quote": "All symbols are supported, with new daily data becoming available the next day and new monthly data at the first monday of the month.",
+   "url": "https://raw.githubusercontent.com/binance/binance-public-data/master/README.md"
+  },
+  "timestamp": {
+   "quote": "Note: The timestamp for SPOT Data from January 1st 2025 onwards will be in microseconds. Klines columns: Open time ... Close time",
+   "url": "https://raw.githubusercontent.com/binance/binance-public-data/master/README.md"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://raw.githubusercontent.com/binance/binance-public-data/master/README.md"
+  },
+  "revision": {
+   "quote": "Archived files may be updated at a later date as a result of recently discovered issues. | 2022-08-08 ... Fixed inconsistent data",
+   "url": "https://raw.githubusercontent.com/binance/binance-public-data/master/README.md"
+  }
+ },
+ "frankfurter": {
+  "rate_limit": {
+   "quote": "Requests are rate-limited to prevent abuse, but there are no monthly or daily caps.",
+   "url": "https://frankfurter.dev/"
+  },
+  "auth": {
+   "quote": "You don't need an API key.",
+   "url": "https://frankfurter.dev/"
+  },
+  "history": {
+   "quote": "For large date ranges, request NDJSON to stream results line by line. (no explicit max range)",
+   "url": "https://frankfurter.dev/"
+  },
+  "timestamp": {
+   "quote": "Frankfurter tracks daily exchange rates from 104 central banks and off[icial providers] (daily date-stamped rates; time-of-day not stated)",
+   "url": "https://frankfurter.dev/"
+  },
+  "license": {
+   "quote": "The rates themselves fall under each provider's terms.",
+   "url": "https://frankfurter.dev/"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://frankfurter.dev/"
+  }
+ },
+ "ecb_data_portal": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://data.ecb.europa.eu/help/api/overview"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://data.ecb.europa.eu/help/api/overview",
+   "note": "no API key mentioned in SDMX docs"
+  },
+  "history": {
+   "quote": "startPeriod & endPeriod (Defining a date range) - 'It is possible to define a date range for which Observations are to be returned'; no max stated",
+   "url": "https://data.ecb.europa.eu/help/api/data"
+  },
+  "timestamp": {
+   "quote": "Periods: YYYY for annual; YYYY-MM for monthly; YYYY-MM-DD for daily. EUR ref rates: 'based on the daily concertation procedure ... around 14:10 CET' (euro FX ref rates page)",
+   "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
+  },
+  "license": {
+   "quote": "When such information is distributed or reproduced, it must appear accurately and the ECB must be cited as the source.",
+   "url": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html"
+  },
+  "revision": {
+   "quote": "Developers who update their local databases with data stored in the ECB Data Portal should make use of the updatedAfter parameter",
+   "url": "https://data.ecb.europa.eu/help/api/data"
+  }
+ },
+ "fred_api": {
+  "rate_limit": {
+   "quote": "The Federal Reserve Bank of St. Louis may impose or adjust the limit on the amount of bandwidth you may use or the number of transactions you may send or receive through the FRED® API",
+   "url": "https://fred.stlouisfed.org/docs/api/terms_of_use.html"
+  },
+  "auth": {
+   "quote": "api_key: 32 character alpha-numeric lowercase string, required",
+   "url": "https://fred.stlouisfed.org/docs/api/fred/series_observations.html"
+  },
+  "history": {
+   "quote": "limit: maximum value 100,000 observations per request; observation_start default 1776-07-04, observation_end default 9999-12-31",
+   "url": "https://fred.stlouisfed.org/docs/api/fred/series_observations.html"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://fred.stlouisfed.org/docs/api/fred/series_observations.html",
+   "note": "observation date semantics not stated on fetched page"
+  },
+  "license": {
+   "quote": "Data series available through the FRED® API, may be owned by third parties and subject to copyright restrictions... Before using data series owned by third parties for anything other than your own personal use, you must contact the data owner to obtain permission.",
+   "url": "https://fred.stlouisfed.org/docs/api/terms_of_use.html"
+  },
+  "revision": {
+   "quote": "output_type options: 'Observations by Vintage Date, New and Revised Observations Only' (3) and 'Observations, Initial Release Only' (4); default real-time period is today",
+   "url": "https://fred.stlouisfed.org/docs/api/fred/realtime_period.html"
+  }
+ },
+ "alfred": {
+  "rate_limit": {
+   "quote": "Same FRED API terms: FRB St. Louis 'may impose or adjust the limit on the amount of bandwidth you may use or the number of transactions'",
+   "url": "https://fred.stlouisfed.org/docs/api/terms_of_use.html"
+  },
+  "auth": {
+   "quote": "FRED API api_key required (ALFRED accessed via FRED API realtime_start/realtime_end): 'api_key: 32 character alpha-numeric lowercase string, required'",
+   "url": "https://fred.stlouisfed.org/docs/api/fred/series_observations.html"
+  },
+  "history": {
+   "quote": "ALFRED® allows you to retrieve each economic data release (vintage) that was available on a specific date in history. / Economic data time travel since 2006",
+   "url": "https://alfred.stlouisfed.org/"
+  },
+  "timestamp": {
+   "quote": "The real-time period marks when facts were true or when information was known until it changed.",
+   "url": "https://fred.stlouisfed.org/docs/api/fred/realtime_period.html"
+  },
+  "license": {
+   "quote": "Same FRED API terms: third-party series 'subject to copyright restrictions'; must display 'This product uses the FRED® API but is not endorsed or certified by the Federal Reserve Bank of St. Louis.'",
+   "url": "https://fred.stlouisfed.org/docs/api/terms_of_use.html"
+  },
+  "revision": {
+   "quote": "ALFRED® users can change the real-time period to retrieve information that was known as of a past period of history.",
+   "url": "https://fred.stlouisfed.org/docs/api/fred/realtime_period.html"
+  }
+ },
+ "bls_api": {
+  "rate_limit": {
+   "quote": "Daily query limit: 500 (v2.0 registered) vs 25 (v1.0); Series per query limit: 50 vs 25",
+   "url": "https://www.bls.gov/developers/api_faqs.htm"
+  },
+  "auth": {
+   "quote": "Registered users are offered higher usage API limits ... (v1.0 unregistered allowed; v2.0 requires registration key)",
+   "url": "https://www.bls.gov/developers/api_faqs.htm"
+  },
+  "history": {
+   "quote": "Years per query limit: 20 (v2.0) vs 10 (v1.0)",
+   "url": "https://www.bls.gov/developers/api_faqs.htm"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bls.gov/developers/api_faqs.htm"
+  },
+  "license": {
+   "quote": "Data accessed through BLS.gov do not, and should not, include controls over its end use. / cite the date that data were accessed or retrieved",
+   "url": "https://www.bls.gov/developers/termsOfService.htm"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bls.gov/developers/api_faqs.htm"
+  }
+ },
+ "eia_api": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.eia.gov/opendata/documentation.php"
+  },
+  "auth": {
+   "quote": "Using an API key: To call our API, you must use the unique API key assigned to you.",
+   "url": "https://www.eia.gov/opendata/documentation.php"
+  },
+  "history": {
+   "quote": "The API can only return 5000 rows in JSON format. Please consider constraining your request with facet, start, or end, or using offset to paginate results.",
+   "url": "https://www.eia.gov/opendata/documentation.php"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.eia.gov/opendata/documentation.php"
+  },
+  "license": {
+   "quote": "U.S. government publications are in the public domain and are not subject to copyright protection.",
+   "url": "https://www.eia.gov/about/copyrights_reuse.php"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.eia.gov/opendata/documentation.php"
+  }
+ },
+ "us_treasury_fiscaldata": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://fiscaldata.treasury.gov/api-documentation/"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://fiscaldata.treasury.gov/api-documentation/",
+   "note": "docs mention only 'Forbidden - API Key is not valid' error code; no key procedure"
+  },
+  "history": {
+   "quote": "page[size]= and page[number]= ... The page size will set the number of rows that are returned on a request; neither pagination parameter is required (max not stated)",
+   "url": "https://fiscaldata.treasury.gov/api-documentation/"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://fiscaldata.treasury.gov/api-documentation/"
+  },
+  "license": {
+   "quote": "The data is offered free, without restriction, and available to copy, adapt, redistribute, or otherwise use for non-commercial or commercial purposes.",
+   "url": "https://fiscaldata.treasury.gov/api-documentation/"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://fiscaldata.treasury.gov/api-documentation/"
+  }
+ },
+ "us_treasury_daily_yield_curve": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics"
+  },
+  "history": {
+   "quote": "Treasury provides historical data back to 2000. (page text)",
+   "url": "https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics"
+  },
+  "timestamp": {
+   "quote": "The par yields are derived from input market prices, which are indicative quotations obtained by the Federal Reserve Bank of New York at approximately 3:30 PM each business day.",
+   "url": "https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics"
+  }
+ },
+ "nyfed_markets_api": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://markets.newyorkfed.org/static/docs/markets-api.html"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://markets.newyorkfed.org/static/docs/markets-api.html"
+  },
+  "history": {
+   "quote": "NOT_FOUND",
+   "url": "https://markets.newyorkfed.org/static/docs/markets-api.html"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://markets.newyorkfed.org/static/docs/markets-api.html"
+  },
+  "license": {
+   "quote": "In general, the New York Fed intends for Website visitors to have permission to use and share Content.",
+   "url": "https://www.newyorkfed.org/privacy/termsofuse"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.newyorkfed.org/privacy/termsofuse"
+  }
+ },
+ "bank_of_england_iadb": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bankofengland.co.uk/boeapps/database/help.asp"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bankofengland.co.uk/boeapps/database/help.asp"
+  },
+  "history": {
+   "quote": "The new/revised data filter was enabled on 3 June 2007 and therefore won't allow a request prior to this date.",
+   "url": "https://www.bankofengland.co.uk/boeapps/database/help.asp"
+  },
+  "timestamp": {
+   "quote": "Daily rates will be updated at 9:30am, no more than two working days after the date to which they relate.",
+   "url": "https://www.bankofengland.co.uk/boeapps/database/help.asp"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bankofengland.co.uk/boeapps/database/help.asp"
+  },
+  "revision": {
+   "quote": "This option flags new and revised data observations between the selected date ranges that have been published; (a) since the previous publication or (b) from a given date.",
+   "url": "https://www.bankofengland.co.uk/boeapps/database/help.asp"
+  }
+ },
+ "bank_of_canada_valet": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bankofcanada.ca/valet/docs"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bankofcanada.ca/valet/docs"
+  },
+  "history": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bankofcanada.ca/valet/docs"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bankofcanada.ca/valet/docs"
+  },
+  "license": {
+   "quote": "the Bank permits you to freely use, copy, distribute and transmit its website content under the following terms: 1.1. Attribution You must attribute the Bank of Canada as the source of the content, and indicate if changes were made.",
+   "url": "https://www.bankofcanada.ca/terms/"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.bankofcanada.ca/terms/"
+  }
+ },
+ "eurostat_api": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/api-getting-started"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/api-getting-started"
+  },
+  "history": {
+   "quote": "A request for full dataset could result in a response of up to several megabytes, and can be returned after several minutes. ... asynchronous requests may be useful.",
+   "url": "https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/api-getting-started"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/api-getting-started"
+  },
+  "license": {
+   "quote": "Reuse of statistical data, metadata, publications, and other dissemination tools published on this website for commercial or non-commercial purposes is authorised provided the source is acknowledged.",
+   "url": "https://ec.europa.eu/eurostat/web/main/help/copyright-notice"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/api-getting-started"
+  }
+ },
+ "world_bank_api": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/898581-api-basic-call-structures"
+  },
+  "auth": {
+   "quote": "API keys and other authentication methods are no longer necessary to access the API.",
+   "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation"
+  },
+  "history": {
+   "quote": "The default setting is 50 results per page (max not stated); Many data series date back over 50 years",
+   "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/898581-api-basic-call-structures"
+  },
+  "timestamp": {
+   "quote": "date formats: yearly 2000, monthly 2012M01, quarterly 2013Q1, YTD:2013; ranges with colon '2000:2001'",
+   "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/898581-api-basic-call-structures"
+  },
+  "license": {
+   "quote": "When you download or use the Datasets, you are agreeing to comply with the terms of a CC BY 4.0 license, and also agreeing to the following mandatory and binding addition",
+   "url": "https://data.worldbank.org/summary-terms-of-use"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/898581-api-basic-call-structures"
+  }
+ },
+ "cftc_public_reporting": {
+  "rate_limit": {
+   "quote": "Socrata: we do not throttle API requests that are using an application token, unless those requests are determined to be abusive; requests without token come from a shared pool via IP address and may be throttled (429)",
+   "url": "https://dev.socrata.com/docs/app-tokens.html"
+  },
+  "auth": {
+   "quote": "Application tokens are optional (API functions without them; unauthenticated requests share IP-based pool)",
+   "url": "https://dev.socrata.com/docs/app-tokens.html"
+  },
+  "history": {
+   "quote": "Each historical report is viewable with the data for the respective reporting week, along with all historical data compressed within an annual file.",
+   "url": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm"
+  },
+  "timestamp": {
+   "quote": "The COT Report is generally published each Friday at 3:30 pm Eastern Time (US), using the data from the immediately preceding Tuesday of that week.",
+   "url": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm"
+  },
+  "revision": {
+   "quote": "The CFTC receives the data from the reporting firms on Wednesday morning and then corrects and verifies the data for release by Friday afternoon.",
+   "url": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm"
+  }
+ },
+ "lbma_prices": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.lbma.org.uk/prices-and-data/precious-metal-prices"
+  },
+  "auth": {
+   "quote": "Tables have moved to the MyLBMA Portal; sign in required to view tables of data (licence needed)",
+   "url": "https://www.lbma.org.uk/prices-and-data/precious-metal-prices"
+  },
+  "history": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.lbma.org.uk/prices-and-data/precious-metal-prices"
+  },
+  "timestamp": {
+   "quote": "The LBMA Gold Price is set twice daily in auctions ... commencing at 10:30 and 15:00 London time. The LBMA Silver Price is set daily ... commencing at 12:00 noon London time.",
+   "url": "https://www.lbma.org.uk/prices-and-data/precious-metal-prices"
+  },
+  "license": {
+   "quote": "A licence from IBA is required in order to obtain, use or redistribute real-time or historical LBMA Platinum and Palladium Price data",
+   "url": "https://www.lbma.org.uk/prices-and-data/precious-metal-prices"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.lbma.org.uk/prices-and-data/precious-metal-prices"
+  }
+ },
+ "dukascopy_historical": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.dukascopy.com/swiss/english/marketwatch/historical/"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.dukascopy.com/swiss/english/marketwatch/historical/"
+  },
+  "history": {
+   "quote": "You can download forex data for major currency pairs and other assets. The data is in .csv format and you can download it in different timeframes, from tick-by-tick to monthly.",
+   "url": "https://www.dukascopy.com/swiss/english/marketwatch/historical/"
+  },
+  "timestamp": {
+   "quote": "Timestamp uint32: Milliseconds since start of day (UTC)  (Dukascopy wiki data-export, .bi5 tick format)",
+   "url": "https://www.dukascopy.com/wiki/en/development/data-export/"
+  },
+  "license": {
+   "quote": "you agree to use the WEBSITE solely for your own non-commercial use and benefit, and not for resale or other transfer ...; you may download material ... for your own personal, non-commercial use, provided that you retain all copyright ... notices",
+   "url": "https://www.dukascopy.com/europe/english/legal-pages/terms-of-use/"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.dukascopy.com/europe/english/legal-pages/terms-of-use/"
+  }
+ },
+ "gold_api_com": {
+  "rate_limit": {
+   "quote": "No Rate Limiting for real time prices; Free: 10 API requests/hour to the price history API OR the OHLC Endpoint",
+   "url": "https://gold-api.com/pricing"
+  },
+  "auth": {
+   "quote": "Authentication: No authentication required - Free endpoint with no rate limits (Get Symbols)",
+   "url": "https://gold-api.com/docs"
+  },
+  "history": {
+   "quote": "Premium: Unlimited API requests, including the price history API; Minute and Hour Aggregations on the price history API",
+   "url": "https://gold-api.com/pricing"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://gold-api.com/docs"
+  },
+  "license": {
+   "quote": "Terms: The Service is provided 'as is'; 'If you send multiple requests per second or otherwise abuse the Service, your IP address may be temporarily or permanently banned' (no explicit redistribution/commercial clause found)",
+   "url": "https://gold-api.com/terms"
+  },
+  "revision": {
+   "quote": "gold-api.com makes no guarantees regarding the accuracy, completeness, or reliability of any Data provided through the Service.",
+   "url": "https://gold-api.com/terms"
+  }
+ },
+ "swissquote_public_quotes": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://en.swissquote.com/forex/resources/legal-information"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAU/USD",
+   "note": "endpoint returned JSON unauthenticated when fetched, but no official doc states this"
+  },
+  "history": {
+   "quote": "NOT_FOUND",
+   "url": "https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAU/USD"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAU/USD",
+   "note": "live response contains field \"ts\" as 13-digit epoch, unit not documented officially"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://en.swissquote.com/forex/resources/legal-information"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAU/USD"
+  }
+ },
+ "open_er_api": {
+  "rate_limit": {
+   "quote": "Rate Limiting: our open access free exchange rate API has to be rate limited. If you only request once every 24 hours you won't need to read any more of this section. Rate limited IP's will receive HTTP code 429 responses. After 20 minutes the rate limit will finish",
+   "url": "https://www.exchangerate-api.com/docs/free"
+  },
+  "auth": {
+   "quote": "Open API: No API Key; Attribution Required; Updates Once Per Day; Rate Limited",
+   "url": "https://www.exchangerate-api.com/docs/free"
+  },
+  "history": {
+   "quote": "Open access returns latest rates only; no historical endpoint documented in open access docs (Free plan differs)",
+   "url": "https://www.exchangerate-api.com/docs/free"
+  },
+  "timestamp": {
+   "quote": "response fields time_last_update_unix / time_last_update_utc / time_next_update_unix (example \"time_last_update_utc\": \"Fri, 02 Apr 2020 00:06:37 +0000\")",
+   "url": "https://www.exchangerate-api.com/docs/free"
+  },
+  "license": {
+   "quote": "This open access API is subject to our Terms and requires attribution. / this license does not permit re-distribution of our data.",
+   "url": "https://www.exchangerate-api.com/terms"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.exchangerate-api.com/docs/free"
+  }
+ },
+ "alpha_vantage_free": {
+  "rate_limit": {
+   "quote": "We are pleased to provide free stock API service covering the majority of our datasets for 25 API requests per day and unlimited API requests for verified open-source or educational projects.",
+   "url": "https://www.alphavantage.co/support/"
+  },
+  "auth": {
+   "quote": "Claim your free API key today to explore our full API offerings! (apikey required)",
+   "url": "https://www.alphavantage.co/documentation/"
+  },
+  "history": {
+   "quote": "TIME_SERIES_DAILY: 'covering 25+ years of historical data'; intraday: 'Any month in the last 25+ years since 2000-01'; outputsize compact = latest 100 data points",
+   "url": "https://www.alphavantage.co/documentation/"
+  },
+  "timestamp": {
+   "quote": "Intraday regular hours '9:30am to 4:00pm US Eastern Time'; FX endpoints return '(timestamp, open, high, low, close)'; bar timestamp semantic not stated",
+   "url": "https://www.alphavantage.co/documentation/"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.alphavantage.co/terms_of_service/",
+   "note": "ToS is a PDF; text not extractable"
+  },
+  "revision": {
+   "quote": "By default, adjusted=true and the output time series is adjusted by historical split and dividend events.",
+   "url": "https://www.alphavantage.co/documentation/"
+  }
+ },
+ "twelve_data_free": {
+  "rate_limit": {
+   "quote": "8 API credits per minute (800 a day) on Basic (free) plan; 'API credits quota will be reset each minute'",
+   "url": "https://twelvedata.com/pricing"
+  },
+  "auth": {
+   "quote": "Docs: 'Sign in to query' - API key required (apikey param)",
+   "url": "https://twelvedata.com/docs"
+  },
+  "history": {
+   "quote": "outputsize: Number of data points to retrieve. Supports values in the range from 1 to 5000.",
+   "url": "https://twelvedata.com/docs"
+  },
+  "timestamp": {
+   "quote": "timezone param: 'UTC for datetime at universal UTC standard'; or exchange local / IANA name (default per docs; open/close semantics not verified)",
+   "url": "https://twelvedata.com/docs"
+  },
+  "license": {
+   "quote": "Personal & non-commercial: Access the data for personal, internal, and non-commercial purposes.",
+   "url": "https://twelvedata.com/pricing"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://twelvedata.com/pricing"
+  }
+ },
+ "finnhub_free": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://finnhub.io/docs/api/rate-limit"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://finnhub.io/docs/api"
+  },
+  "history": {
+   "quote": "NOT_FOUND",
+   "url": "https://finnhub.io/docs/api/stock-candles"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://finnhub.io/docs/api/stock-candles"
+  },
+  "license": {
+   "quote": "You hereby agree to not redistribute or share access to data or derived results from the data obtained from Finnhub with anyone or any 3rd party without written approval from Finnhub. / All plan listed on Finnhub website is strictly for personal use unless explicitly stated otherwise.",
+   "url": "https://finnhub.io/terms-of-service"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://finnhub.io/terms-of-service"
+  }
+ },
+ "fmp_free": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://site.financialmodelingprep.com/pricing-plans"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://site.financialmodelingprep.com/pricing-plans"
+  },
+  "history": {
+   "quote": "NOT_FOUND",
+   "url": "https://site.financialmodelingprep.com/pricing-plans"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://site.financialmodelingprep.com/pricing-plans"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://site.financialmodelingprep.com/pricing-plans"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://site.financialmodelingprep.com/pricing-plans"
+  }
+ },
+ "polygon_io_free": {
+  "rate_limit": {
+   "quote": "5 API Calls / Minute (Stocks Basic free plan)",
+   "url": "https://massive.com/pricing"
+  },
+  "auth": {
+   "quote": "Obtaining Your API Key ... You can include your API key in two ways: Query String Parameter (e.g., ?apiKey=YOUR_API_KEY)",
+   "url": "https://polygon.io/docs/rest/quickstart"
+  },
+  "history": {
+   "quote": "2 Years Historical Data; End of Day Data (Basic plan); aggs limit: Max 50,000; default 5,000",
+   "url": "https://massive.com/docs/rest/stocks/aggregates/custom-bars"
+  },
+  "timestamp": {
+   "quote": "The Unix millisecond timestamp for the start of the aggregate window (field t)",
+   "url": "https://massive.com/docs/rest/stocks/aggregates/custom-bars"
+  },
+  "license": {
+   "quote": "free plan 'for personal use only' (pricing page summary; Terms index page lists separate Individuals/Businesses ToS, not read)",
+   "url": "https://massive.com/pricing"
+  },
+  "revision": {
+   "quote": "Results are adjusted for splits by default; set adjusted: false to disable",
+   "url": "https://massive.com/docs/rest/stocks/aggregates/custom-bars"
+  }
+ },
+ "oanda_fxpractice": {
+  "rate_limit": {
+   "quote": "120 requests per second. Excess requests will receive HTTP 429 error.",
+   "url": "https://developer.oanda.com/rest-live-v20/development-guide/"
+  },
+  "auth": {
+   "quote": "Authentication: Required (Bearer personal access token); fxPractice: https://api-fxpractice.oanda.com 'recommended for testing with your fxTrade Practice account and your personal access token.'",
+   "url": "https://developer.oanda.com/rest-live-v20/development-guide/"
+  },
+  "history": {
+   "quote": "NOT_FOUND",
+   "url": "https://developer.oanda.com/rest-live-v20/instrument-ep/",
+   "note": "instrument candles page 404"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://developer.oanda.com/rest-live-v20/development-guide/"
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://developer.oanda.com/rest-live-v20/development-guide/"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://developer.oanda.com/rest-live-v20/development-guide/"
+  }
+ },
+ "faireconomy_forexfactory_calendar": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://nfs.faireconomy.media/ff_calendar_thisweek.json"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://nfs.faireconomy.media/ff_calendar_thisweek.json"
+  },
+  "history": {
+   "quote": "NOT_FOUND",
+   "url": "https://nfs.faireconomy.media/ff_calendar_thisweek.json"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://nfs.faireconomy.media/ff_calendar_thisweek.json",
+   "note": "no official doc; feed items observed with ISO-8601 offset strings e.g. \"date\":\"2026-09-27T19:50:00-04:00\""
+  },
+  "license": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.forexfactory.com/legal",
+   "note": "forexfactory.com/legal returned 403"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://nfs.faireconomy.media/ff_calendar_thisweek.json"
+  }
+ },
+ "gdelt": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.gdeltproject.org/about.html"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.gdeltproject.org/about.html"
+  },
+  "history": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.gdeltproject.org/about.html"
+  },
+  "timestamp": {
+   "quote": "within 15 minutes of GDELT monitoring a news report ... GDELT Event and Global Knowledge Graph now update every 15 minutes.",
+   "url": "https://blog.gdeltproject.org/gdelt-2-0-our-global-world-in-realtime/"
+  },
+  "license": {
+   "quote": "all datasets released by the GDELT Project are available for unlimited and unrestricted use for any academic, commercial, or governmental use ... You may redistribute, rehost, republish, and mirror any of the GDELT datasets in any form. However, any use or redistribution of the data must include a citation to the GDELT Project",
+   "url": "https://www.gdeltproject.org/about.html"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.gdeltproject.org/about.html"
+  }
+ },
+ "yahoo_finance_chart": {
+  "rate_limit": {
+   "quote": "NOT_FOUND",
+   "url": "https://legal.yahoo.com/us/en/yahoo/terms/product-atos/apiforydn/index.html"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://legal.yahoo.com/us/en/yahoo/terms/product-atos/apiforydn/index.html"
+  },
+  "history": {
+   "quote": "NOT_FOUND",
+   "url": "https://legal.yahoo.com/us/en/yahoo/terms/product-atos/apiforydn/index.html"
+  },
+  "timestamp": {
+   "quote": "NOT_FOUND",
+   "url": "https://legal.yahoo.com/us/en/yahoo/terms/product-atos/apiforydn/index.html"
+  },
+  "license": {
+   "quote": "(Yahoo developer API terms, not Finance-chart specific) prohibits: 'Sell, lease, share, transfer, or sublicense the Yahoo APIs or access or access codes thereto or derive income from the use or provision of the Yahoo APIs...unless the API Documents specifically permit otherwise'",
+   "url": "https://legal.yahoo.com/us/en/yahoo/terms/product-atos/apiforydn/index.html"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://legal.yahoo.com/us/en/yahoo/terms/product-atos/apiforydn/index.html"
+  }
+ },
+ "coingecko_public": {
+  "rate_limit": {
+   "quote": "Demo plan: 100 calls/min, 10k call credits/mo (pricing page)",
+   "url": "https://www.coingecko.com/en/api/pricing"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://docs.coingecko.com/reference/introduction",
+   "note": "Demo API key required per docs index: 'Free Demo API with limited endpoints and rate limits'; no-key public statement not found"
+  },
+  "history": {
+   "quote": "Historical data on the Basic plan is restricted to the past 2 years. (OHLC docs); pricing table shows '1 year' daily historical for Demo; OHLC days: '1','7','14','30','90','180','365',max",
+   "url": "https://docs.coingecko.com/reference/coins-id-ohlc"
+  },
+  "timestamp": {
+   "quote": "The timestamp in the response indicates the close time of each OHLC candle. / The last completed UTC day (00:00) is available 35 minutes after midnight (00:35 UTC).",
+   "url": "https://docs.coingecko.com/reference/coins-id-ohlc"
+  },
+  "license": {
+   "quote": "you shall duly attribute ownership of the CoinGecko API to CoinGecko by displaying prominently the message 'Powered by CoinGecko' / you are not permitted to sell, rent, lease, sub-license, re-distribute or syndicate access to the CoinGecko API",
+   "url": "https://www.coingecko.com/en/api_terms"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://www.coingecko.com/en/api_terms"
+  }
+ },
+ "alternative_me_fng": {
+  "rate_limit": {
+   "quote": "Limits: Please respect our server capacities and avoid unnecessary requests, our endpoints will only update every 5 minutes anyway. (crypto API docs; no numeric FNG limit)",
+   "url": "https://alternative.me/crypto/api/"
+  },
+  "auth": {
+   "quote": "NOT_FOUND",
+   "url": "https://alternative.me/crypto/fear-and-greed-index/",
+   "note": "docs show example URLs without key"
+  },
+  "history": {
+   "quote": "limit: Limit the number of returned results. The default value is '1', use '0' for all available data.",
+   "url": "https://alternative.me/crypto/fear-and-greed-index/"
+  },
+  "timestamp": {
+   "quote": "Timestamp format: Unix time (default); time_until_update returned only for latest value; date_format option",
+   "url": "https://alternative.me/crypto/fear-and-greed-index/"
+  },
+  "license": {
+   "quote": "Commercial use is allowed as long as the attribution is given right next to the display of the data. / You must properly acknowledge the source of the data and prominently reference it accordingly.",
+   "url": "https://alternative.me/crypto/fear-and-greed-index/"
+  },
+  "revision": {
+   "quote": "NOT_FOUND",
+   "url": "https://alternative.me/crypto/fear-and-greed-index/"
+  }
+ },
+ "_meta": {
+  "generated": "2026-09-29",
+  "method": "Fetched official pages (curl/WebFetch); quotes may be lightly condensed or paraphrased where marked; long quotes joined from adjacent sentences. NOT_FOUND = not located on an official page reachable in this session (several sites returned 403/JS-only pages).",
+  "providers_with_data": 43
+ }
+}

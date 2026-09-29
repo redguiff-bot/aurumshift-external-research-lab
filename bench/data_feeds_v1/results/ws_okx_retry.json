@@ -1,0 +1,4 @@
+{"note":"OKX WS retry after the first ws_sample run got ConnectionReset on wss://ws.okx.com:8443. Test egress resets :8443; port 443 path works.",
+ "wss://ws.okx.com:8443/ws/v5/public":"ConnectionResetError(104)",
+ "wss://wsaws.okx.com:8443/ws/v5/public":"ConnectionResetError(104)",
+ "wss://ws.okx.com/ws/v5/public":{"msgs_15s":40,"types":{"trades":33,"liquidation-orders":5,"funding-rate":2},"median_recv_minus_event_ts_ms":67.8}}

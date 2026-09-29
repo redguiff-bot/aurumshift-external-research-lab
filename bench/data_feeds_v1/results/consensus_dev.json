@@ -1,0 +1,130 @@
+{
+ "kraken_spot_XBTUSD": {
+  "group": "USD_spot",
+  "n": 240,
+  "signed_med_bps": -0.29,
+  "abs_med_bps": 0.43,
+  "abs_p95_bps": 1.74,
+  "vol_vs_group_med": 1.748
+ },
+ "coinbase_BTC-USD": {
+  "group": "USD_spot",
+  "n": 240,
+  "signed_med_bps": -0.28,
+  "abs_med_bps": 0.62,
+  "abs_p95_bps": 1.97,
+  "vol_vs_group_med": 8.996
+ },
+ "bitstamp_btcusd": {
+  "group": "USD_spot",
+  "n": 240,
+  "signed_med_bps": -0.68,
+  "abs_med_bps": 0.7,
+  "abs_p95_bps": 2.01,
+  "vol_vs_group_med": 0.866
+ },
+ "bitfinex_tBTCUSD": {
+  "group": "USD_spot",
+  "n": 240,
+  "signed_med_bps": 13.24,
+  "abs_med_bps": 13.24,
+  "abs_p95_bps": 15.41,
+  "vol_vs_group_med": 0.197
+ },
+ "gemini_btcusd": {
+  "group": "USD_spot",
+  "n": 240,
+  "signed_med_bps": 0.08,
+  "abs_med_bps": 0.88,
+  "abs_p95_bps": 3.52,
+  "vol_vs_group_med": 0.003
+ },
+ "okx_spot_BTCUSDT": {
+  "group": "USDT_spot",
+  "n": 240,
+  "signed_med_bps": 0.34,
+  "abs_med_bps": 0.44,
+  "abs_p95_bps": 1.31,
+  "vol_vs_group_med": 0.817
+ },
+ "kucoin_BTC-USDT": {
+  "group": "USDT_spot",
+  "n": 240,
+  "signed_med_bps": -0.02,
+  "abs_med_bps": 0.76,
+  "abs_p95_bps": 1.82,
+  "vol_vs_group_med": 0.377
+ },
+ "gate_BTC_USDT": {
+  "group": "USDT_spot",
+  "n": 240,
+  "signed_med_bps": 0.12,
+  "abs_med_bps": 0.37,
+  "abs_p95_bps": 1.09,
+  "vol_vs_group_med": 0.897
+ },
+ "bitget_BTCUSDT": {
+  "group": "USDT_spot",
+  "n": 239,
+  "signed_med_bps": 0.87,
+  "abs_med_bps": 0.87,
+  "abs_p95_bps": 2.19,
+  "vol_vs_group_med": 0.341
+ },
+ "mexc_BTCUSDT": {
+  "group": "USDT_spot",
+  "n": 240,
+  "signed_med_bps": -1.32,
+  "abs_med_bps": 1.32,
+  "abs_p95_bps": 2.67,
+  "vol_vs_group_med": 2.409
+ },
+ "htx_btcusdt": {
+  "group": "USDT_spot",
+  "n": 240,
+  "signed_med_bps": -4.54,
+  "abs_med_bps": 4.54,
+  "abs_p95_bps": 6.37,
+  "vol_vs_group_med": 0.52
+ },
+ "binance_dataapi_BTCUSDT": {
+  "group": "USDT_spot",
+  "n": 240,
+  "signed_med_bps": 0.5,
+  "abs_med_bps": 0.51,
+  "abs_p95_bps": 1.49,
+  "vol_vs_group_med": 4.619
+ },
+ "okx_swap_BTC-USDT-SWAP": {
+  "group": "perp",
+  "n": 240,
+  "signed_med_bps": -0.83,
+  "abs_med_bps": 1.02,
+  "abs_p95_bps": 3.18,
+  "vol_vs_group_med": 584.579
+ },
+ "hyperliquid_perp_BTC": {
+  "group": "perp",
+  "n": 240,
+  "signed_med_bps": -0.57,
+  "abs_med_bps": 0.86,
+  "abs_p95_bps": 2.97,
+  "vol_vs_group_med": 0.01
+ },
+ "deribit_perp_BTC-PERPETUAL": {
+  "group": "perp",
+  "n": 240,
+  "signed_med_bps": 2.2,
+  "abs_med_bps": 2.2,
+  "abs_p95_bps": 3.69,
+  "vol_vs_group_med": 0.006
+ },
+ "dydx_perp_BTC-USD": {
+  "group": "perp",
+  "n": 240,
+  "signed_med_bps": -0.4,
+  "abs_med_bps": 2.74,
+  "abs_p95_bps": 9.29,
+  "vol_vs_group_med": 0.0
+ }
+}

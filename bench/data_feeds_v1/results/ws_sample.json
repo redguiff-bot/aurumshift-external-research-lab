@@ -1,0 +1,236 @@
+[
+ {
+  "name": "okx_trades_tickers",
+  "connect_s": null,
+  "msgs": 0,
+  "types": {},
+  "err": "ConnectionResetError(104, 'Connection reset by peer')",
+  "lat_ms_median": null,
+  "lat_ms_p95": null,
+  "lat_n": 0,
+  "samples": []
+ },
+ {
+  "name": "kraken_trades",
+  "connect_s": 1.8,
+  "msgs": 39,
+  "types": {
+   "status": 1,
+   "?": 1,
+   "heartbeat": 20,
+   "trade": 17
+  },
+  "err": null,
+  "lat_ms_median": null,
+  "lat_ms_p95": null,
+  "lat_n": 0,
+  "samples": [
+   "{\"channel\":\"status\",\"type\":\"update\",\"data\":[{\"version\":\"2.0.10\",\"system\":\"online\",\"api_version\":\"v2\",\"connection_id\":416867438492713658,\"upcoming_maintenance\":[{\"affected_services\":[\"spot_trading\",\"spot_fix\",\"spot_rest\",\"spot_ws\"],\"cancel_before_utc\":\"2026-10-01T06:56:00.000000Z\",\"event_id\":32,\"expe",
+   "{\"method\":\"subscribe\",\"result\":{\"channel\":\"trade\",\"snapshot\":false,\"symbol\":\"BTC/USD\"},\"success\":true,\"time_in\":\"2026-09-29T12:57:41.820930Z\",\"time_out\":\"2026-09-29T12:57:41.820983Z\"}",
+   "{\"channel\":\"heartbeat\"}"
+  ]
+ },
+ {
+  "name": "coinbase_matches",
+  "connect_s": 0.7,
+  "msgs": 214,
+  "types": {
+   "subscriptions": 1,
+   "last_match": 1,
+   "ticker": 106,
+   "match": 106
+  },
+  "err": null,
+  "lat_ms_median": null,
+  "lat_ms_p95": null,
+  "lat_n": 0,
+  "samples": [
+   "{\"type\":\"subscriptions\",\"channels\":[{\"name\":\"matches\",\"product_ids\":[\"BTC-USD\"],\"account_ids\":null},{\"name\":\"ticker\",\"product_ids\":[\"BTC-USD\"],\"account_ids\":null}]}",
+   "{\"type\":\"last_match\",\"trade_id\":1099976015,\"maker_order_id\":\"1a2ae6f4-6ffc-4015-94c5-f6c055535c3d\",\"taker_order_id\":\"3ffbb973-92c5-4398-b0cb-12a9b3a5e9a8\",\"side\":\"buy\",\"size\":\"0.00001249\",\"price\":\"84339.79\",\"product_id\":\"BTC-USD\",\"sequence\":136964816360,\"time\":\"2026-09-29T12:57:40.508610Z\"}",
+   "{\"type\":\"ticker\",\"sequence\":136964816360,\"product_id\":\"BTC-USD\",\"price\":\"84339.79\",\"open_24h\":\"83560.35\",\"volume_24h\":\"5660.31814124\",\"low_24h\":\"82510.37\",\"high_24h\":\"84482.83\",\"volume_30d\":\"180555.54005530\",\"best_bid\":\"84339.79\",\"best_bid_size\":\"0.36195755\",\"best_ask\":\"84339.80\",\"best_ask_size\":\"0."
+  ]
+ },
+ {
+  "name": "deribit_ws",
+  "connect_s": 0.86,
+  "msgs": 76,
+  "types": {
+   "ctl": 1,
+   "ticker.BTC-P": 50,
+   "deribit_pric": 21,
+   "trades.BTC-P": 4
+  },
+  "err": null,
+  "lat_ms_median": 68.6,
+  "lat_ms_p95": 292.1,
+  "lat_n": 71,
+  "samples": [
+   "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":[\"trades.BTC-PERPETUAL.100ms\",\"ticker.BTC-PERPETUAL.100ms\",\"deribit_price_index.btc_usd\"],\"usIn\":1790686660873861,\"usOut\":1790686660874185,\"usDiff\":324,\"testnet\":false}",
+   "{\"jsonrpc\":\"2.0\",\"method\":\"subscription\",\"params\":{\"channel\":\"ticker.BTC-PERPETUAL.100ms\",\"data\":{\"timestamp\":1790686660871,\"state\":\"open\",\"stats\":{\"high\":84486.0,\"low\":82550.5,\"price_change\":0.9648,\"volume\":9561.91634759,\"volume_usd\":799514140.0,\"volume_notional\":799514140.0},\"index_price\":84336.35",
+   "{\"jsonrpc\":\"2.0\",\"method\":\"subscription\",\"params\":{\"channel\":\"deribit_price_index.btc_usd\",\"data\":{\"timestamp\":1790686660342,\"price\":84336.35,\"index_name\":\"btc_usd\"}}}"
+  ]
+ },
+ {
+  "name": "hyperliquid_ws",
+  "connect_s": 0.98,
+  "msgs": 68,
+  "types": {
+   "subscriptionResponse": 2,
+   "trades": 61,
+   "l2Book": 5
+  },
+  "err": null,
+  "lat_ms_median": 300.5,
+  "lat_ms_p95": 625.8,
+  "lat_n": 66,
+  "samples": [
+   "{\"channel\":\"subscriptionResponse\",\"data\":{\"method\":\"subscribe\",\"subscription\":{\"type\":\"trades\",\"coin\":\"BTC\"}}}",
+   "{\"channel\":\"trades\",\"data\":[{\"coin\":\"BTC\",\"side\":\"B\",\"px\":\"84351.0\",\"sz\":\"0.00019\",\"time\":1790686647457,\"hash\":\"0x02af9cb159db56fb0429044576cb9e0201e70096f4de75cda678480418df30e5\",\"tid\":823725618315940,\"users\":[\"0xa2da83d69c26713758d355853544ebe3962f8a09\",\"0xecb63caa47c7c4e77f60f1ce858cf28dc2b82b00\"",
+   "{\"channel\":\"subscriptionResponse\",\"data\":{\"method\":\"subscribe\",\"subscription\":{\"type\":\"l2Book\",\"coin\":\"BTC\",\"nSigFigs\":null,\"mantissa\":null,\"fast\":false}}}"
+  ]
+ },
+ {
+  "name": "bitstamp_ws",
+  "connect_s": 1.19,
+  "msgs": 12,
+  "types": {
+   "bts:subscription_succeeded": 1,
+   "trade": 11
+  },
+  "err": null,
+  "lat_ms_median": 45.6,
+  "lat_ms_p95": 81.8,
+  "lat_n": 11,
+  "samples": [
+   "{\"event\":\"bts:subscription_succeeded\",\"channel\":\"live_trades_btcusd\",\"data\":{}}",
+   "{\"data\":{\"id\":645829954,\"timestamp\":\"1790686666\",\"amount\":0.0000599,\"amount_str\":\"0.00005990\",\"price\":84343.25,\"price_str\":\"84343.25\",\"type\":1,\"microtimestamp\":\"1790686666433000\",\"buy_order_id\":2055584511037451,\"sell_order_id\":2055584529514498},\"channel\":\"live_trades_btcusd\",\"event\":\"trade\"}",
+   "{\"data\":{\"id\":645829984,\"timestamp\":\"1790686671\",\"amount\":0.00018756,\"amount_str\":\"0.00018756\",\"price\":84343.25,\"price_str\":\"84343.25\",\"type\":1,\"microtimestamp\":\"1790686671742000\",\"buy_order_id\":2055584516407296,\"sell_order_id\":2055584551239733},\"channel\":\"live_trades_btcusd\",\"event\":\"trade\"}"
+  ]
+ },
+ {
+  "name": "bitfinex_ws",
+  "connect_s": 1.0,
+  "msgs": 15,
+  "types": {
+   "info": 1,
+   "subscribed": 1,
+   "data": 13
+  },
+  "err": null,
+  "lat_ms_median": null,
+  "lat_ms_p95": null,
+  "lat_n": 0,
+  "samples": [
+   "{\"event\":\"info\",\"version\":2,\"serverId\":\"e9ccf00a-7e04-40ca-897f-367754a9c63a\",\"platform\":{\"status\":1}}",
+   "{\"event\":\"subscribed\",\"channel\":\"trades\",\"chanId\":1,\"symbol\":\"tBTCUSD\",\"pair\":\"BTCUSD\"}",
+   "[1,[[1984808188,1790686647846,0.00474386,84449],[1984808189,1790686647846,0.00040042,84449],[1984808187,1790686645882,-0.00022,84436],[1984808175,1790686631188,-0.03199498,84439],[1984808173,1790686630596,-0.025,84439],[1984808172,1790686630573,-0.025,84439],[1984806170,1790686628725,-0.003563,84439"
+  ]
+ },
+ {
+  "name": "dydx_ws",
+  "connect_s": 1.33,
+  "msgs": 2,
+  "types": {
+   "connected": 1,
+   "subscribed": 1
+  },
+  "err": null,
+  "lat_ms_median": null,
+  "lat_ms_p95": null,
+  "lat_n": 0,
+  "samples": [
+   "{\"type\":\"connected\",\"connection_id\":\"66d4e91c-6c08-47c3-89b2-146d00f21a94\",\"message_id\":0}",
+   "{\"type\":\"subscribed\",\"connection_id\":\"66d4e91c-6c08-47c3-89b2-146d00f21a94\",\"message_id\":1,\"channel\":\"v4_trades\",\"id\":\"BTC-USD\",\"contents\":{\"trades\":[{\"id\":\"0666556e0000000200000002\",\"side\":\"BUY\",\"size\":\"0.0004\",\"price\":\"84317\",\"type\":\"LIMIT\",\"createdAt\":\"2026-09-29T12:56:28.869Z\",\"createdAtHeight\":"
+  ]
+ },
+ {
+  "name": "gemini_ws",
+  "connect_s": 0.75,
+  "msgs": 2102,
+  "types": {
+   "update": 2102
+  },
+  "err": null,
+  "lat_ms_median": null,
+  "lat_ms_p95": null,
+  "lat_n": 0,
+  "samples": [
+   "{\"eventId\":1764559565292100,\"events\":[{\"delta\":\"0.02371393\",\"price\":\"84343.88\",\"reason\":\"initial\",\"remaining\":\"0.02371393\",\"side\":\"bid\",\"type\":\"change\"},{\"delta\":\"0.03557012\",\"price\":\"84343.65\",\"reason\":\"initial\",\"remaining\":\"0.03557012\",\"side\":\"bid\",\"type\":\"change\"},{\"delta\":\"0.01279136\",\"price\":\"8",
+   "{\"eventId\":1764559565292568,\"events\":[{\"delta\":\"3.0\",\"price\":\"84340.0\",\"reason\":\"place\",\"remaining\":\"3.0\",\"side\":\"bid\",\"type\":\"change\"}],\"socket_sequence\":1,\"timestamp\":1790686660,\"timestampms\":1790686660806,\"type\":\"update\"}",
+   "{\"eventId\":1764559565292570,\"events\":[{\"delta\":\"-3.0\",\"price\":\"84338.0\",\"reason\":\"cancel\",\"remaining\":\"0.0\",\"side\":\"bid\",\"type\":\"change\"}],\"socket_sequence\":2,\"timestamp\":1790686660,\"timestampms\":1790686660808,\"type\":\"update\"}"
+  ]
+ },
+ {
+  "name": "kucoin_ws_needs_token",
+  "connect_s": null,
+  "msgs": 0,
+  "types": {},
+  "err": "InvalidProxyStatus(Response(status_code=502, reason_phrase='Bad Gateway', headers=Headers([('Content-Type', 'text/plain; charset=utf-8'), ('X-Content-Type-Options', 'nosniff'), ('Content-Length', '20'",
+  "lat_ms_median": null,
+  "lat_ms_p95": null,
+  "lat_n": 0,
+  "samples": []
+ },
+ {
+  "name": "binance_ws",
+  "connect_s": null,
+  "msgs": 0,
+  "types": {},
+  "err": "ConnectionResetError(104, 'Connection reset by peer')",
+  "lat_ms_median": null,
+  "lat_ms_p95": null,
+  "lat_n": 0,
+  "samples": []
+ },
+ {
+  "name": "binance_ws_datapub",
+  "connect_s": 1.11,
+  "msgs": 627,
+  "types": {
+   "trade": 627
+  },
+  "err": null,
+  "lat_ms_median": 66.0,
+  "lat_ms_p95": 80.1,
+  "lat_n": 627,
+  "samples": [
+   "{\"e\":\"trade\",\"E\":1790686661260,\"s\":\"BTCUSDT\",\"t\":6721952031,\"p\":\"84364.98000000\",\"q\":\"0.01232000\",\"T\":1790686661260,\"m\":true,\"M\":true}",
+   "{\"e\":\"trade\",\"E\":1790686661438,\"s\":\"BTCUSDT\",\"t\":6721952032,\"p\":\"84364.98000000\",\"q\":\"0.00012000\",\"T\":1790686661438,\"m\":true,\"M\":true}",
+   "{\"e\":\"trade\",\"E\":1790686661645,\"s\":\"BTCUSDT\",\"t\":6721952033,\"p\":\"84364.99000000\",\"q\":\"0.00023000\",\"T\":1790686661645,\"m\":false,\"M\":true}"
+  ]
+ },
+ {
+  "name": "bitmex_ws",
+  "connect_s": 1.41,
+  "msgs": 5,
+  "types": {
+   "ctl": 3,
+   "trade": 1,
+   "liquidation": 1
+  },
+  "err": null,
+  "lat_ms_median": null,
+  "lat_ms_p95": null,
+  "lat_n": 0,
+  "samples": [
+   "{\"info\":\"Welcome to the BitMEX Realtime API.\",\"version\":\"2.0.0\",\"timestamp\":\"2026-09-29T12:57:41.254Z\",\"docs\":\"https://www.bitmex.com/app/wsAPI\",\"heartbeatEnabled\":false,\"appName\":\"ws-feedhandler-7bd9d5949c-2zzjq\"}",
+   "{\"success\":true,\"subscribe\":\"trade:XBTUSDT\",\"pool\":\"Aggregated\",\"request\":{\"op\":\"subscribe\",\"args\":\"trade:XBTUSDT\"}}",
+   "{\"table\":\"trade\",\"action\":\"partial\",\"keys\":[],\"types\":{\"timestamp\":\"timestamp\",\"symbol\":\"symbol\",\"side\":\"symbol\",\"size\":\"long\",\"price\":\"float\",\"tickDirection\":\"symbol\",\"trdMatchID\":\"guid\",\"grossValue\":\"long\",\"homeNotional\":\"float\",\"foreignNotional\":\"float\",\"trdType\":\"symbol\",\"pool\":\"symbol\"},\"filter"
+  ]
+ },
+ {
+  "name": "bybit_ws",
+  "connect_s": 1.39,
+  "msgs": 1,
+  "types": {
+   "ctl": 1
+  },
+  "err": null,
+  "lat_ms_median": null,
+  "lat_ms_p95": null,
+  "lat_n": 0,
+  "samples": [
+   "{\"success\":false,\"ret_msg\":\"error:handler not found,topic:liquidation.BTCUSDT\",\"conn_id\":\"da7tpqcjdk6urkmpl1fg-ai1ki\",\"req_id\":\"\",\"op\":\"subscribe\"}"
+  ]
+ }
+]
