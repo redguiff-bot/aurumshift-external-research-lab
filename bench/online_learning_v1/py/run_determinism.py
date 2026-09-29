@@ -9,9 +9,11 @@ def h(a): return hashlib.sha256(np.asarray(a).tobytes()).hexdigest()[:16]
 class Cheater(Base):
     """NEGATIVE CONTROL: peeks at the true label of the *current* sample. The leakage test must flag it."""
     kind = "C"
-    def __init__(s, labels): s.labels = labels; s.t = 0
+    def __init__(s, labels, X): s.labels = labels; s.X = X; s.t = 0
     def _learn(s, x, y, now): pass
-    def predict(s, x): p = 0.05 + 0.9 * s.labels[s.t]; s.t += 1; return p
+    def predict(s, x):      # probe-set calls (x not equal to the next stream row) are ignored
+        if s.t < len(s.X) and np.array_equal(x, s.X[s.t]): p = 0.05 + 0.9 * s.labels[s.t]; s.t += 1; return p
+        return 0.5
 
 def child(name, kind, sc, seed):     # executed in a fresh interpreter with a different PYTHONHASHSEED
     st = S.make(sc, seed); r = H.run(st, kind, name, hp(name, kind)); print(r["hash"])
@@ -41,6 +43,6 @@ if __name__ == "__main__":
     st = S.make(SC, SEED)
     # negative control: a cheater that reads y_t at prediction time is exposed by the same corrupt-future-labels protocol
     yc = st.yC.copy(); yc[C0:] = 1 - yc[C0:]
-    ch_base = H.run(st, "C", "frozen", {}, model=Cheater(st.yC)); ch_cor = H.run(st, "C", "frozen", {}, model=Cheater(yc))
+    ch_base = H.run(st, "C", "frozen", {}, model=Cheater(st.yC, st.X)); ch_cor = H.run(st, "C", "frozen", {}, model=Cheater(yc, st.X))
     neg = dict(cheater_detected=bool(not np.array_equal(ch_base["pred"][:C0 + 1], ch_cor["pred"][:C0 + 1])))
     print(neg); json.dump(dict(rows=out, negative_control=neg), open("../results/determinism.json", "w"), indent=1)

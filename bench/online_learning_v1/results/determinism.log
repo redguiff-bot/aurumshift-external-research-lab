@@ -1,0 +1,16 @@
+{'model': 'frozen', 'kind': 'R', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 313, 'no_future_leakage': True, 'last_update_ts': 3999}
+{'model': 'frozen', 'kind': 'C', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 334, 'no_future_leakage': True, 'last_update_ts': 3999}
+{'model': 'batch', 'kind': 'R', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 220669, 'no_future_leakage': True, 'last_update_ts': 3999}
+{'model': 'batch', 'kind': 'C', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 220682, 'no_future_leakage': True, 'last_update_ts': 3999}
+{'model': 'rolling', 'kind': 'R', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 17755, 'no_future_leakage': True, 'last_update_ts': 3999}
+{'model': 'rolling', 'kind': 'C', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 35169, 'no_future_leakage': True, 'last_update_ts': 3999}
+{'model': 'rls', 'kind': 'R', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 841, 'no_future_leakage': True, 'last_update_ts': 3999}
+{'model': 'kalman', 'kind': 'R', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 838, 'no_future_leakage': True, 'last_update_ts': 3999}
+{'model': 'sgd_lin', 'kind': 'R', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 693, 'no_future_leakage': True, 'last_update_ts': 3999}
+{'model': 'par_reg', 'kind': 'R', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 649, 'no_future_leakage': True, 'last_update_ts': 3999}
+{'model': 'blr', 'kind': 'R', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 1693, 'no_future_leakage': True, 'last_update_ts': 3999}
+{'model': 'hat', 'kind': 'R', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 352784, 'no_future_leakage': True, 'last_update_ts': 3999}
+{'model': 'hat', 'kind': 'C', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 69165, 'no_future_leakage': True, 'last_update_ts': 3999}
+{'model': 'arf', 'kind': 'R', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 1062899, 'no_future_leakage': True, 'last_update_ts': 3999}
+{'model': 'arf', 'kind': 'C', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 4951298, 'no_future_leakage': True, 'last_update_ts': 3999}
+{'model': 'ht', 'kind': 'C', 'replay_same_process': True, 'replay_cross_process': True, 'checkpoint_resume_identical': True, 'checkpoint_bytes': 63252, 'no_future_leakage': True, 'last_update_ts': 3999}
