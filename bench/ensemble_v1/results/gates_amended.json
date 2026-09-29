@@ -1,0 +1,282 @@
+{
+ "Equal": {
+  "G1": false,
+  "G2a": true,
+  "G2b": true,
+  "G3": false,
+  "G4a2": false,
+  "G4a2_detail": [
+   8.305301607115487,
+   "S5a_clones_of_bad"
+  ],
+  "G4b2": false,
+  "G234b": false,
+  "G1234b": false
+ },
+ "Static": {
+  "G1": false,
+  "G2a": true,
+  "G2b": true,
+  "G3": true,
+  "G4a2": false,
+  "G4a2_detail": [
+   4.4273910412696145,
+   "S8_composite"
+  ],
+  "G4b2": false,
+  "G234b": false,
+  "G1234b": false
+ },
+ "WTA": {
+  "G1": false,
+  "G2a": false,
+  "G2b": true,
+  "G3": true,
+  "G4a2": false,
+  "G4a2_detail": [
+   1.728972430115704,
+   "S6d_abstain_informative"
+  ],
+  "G4b2": true,
+  "G234b": false,
+  "G1234b": false
+ },
+ "EWMA": {
+  "G1": false,
+  "G2a": false,
+  "G2b": true,
+  "G3": true,
+  "G4a2": false,
+  "G4a2_detail": [
+   1.7384717250228199,
+   "S6d_abstain_informative"
+  ],
+  "G4b2": true,
+  "G234b": false,
+  "G1234b": false
+ },
+ "HedgePlain": {
+  "G1": false,
+  "G2a": false,
+  "G2b": true,
+  "G3": true,
+  "G4a2": false,
+  "G4a2_detail": [
+   2.7631645415215518,
+   "S8_composite"
+  ],
+  "G4b2": true,
+  "G234b": false,
+  "G1234b": false
+ },
+ "SleepHedge": {
+  "G1": false,
+  "G2a": true,
+  "G2b": true,
+  "G3": true,
+  "G4a2": false,
+  "G4a2_detail": [
+   2.321191874249188,
+   "S8_composite"
+  ],
+  "G4b2": true,
+  "G234b": false,
+  "G1234b": false
+ },
+ "SleepEG": {
+  "G1": false,
+  "G2a": true,
+  "G2b": true,
+  "G3": true,
+  "G4a2": false,
+  "G4a2_detail": [
+   1.825818369157558,
+   "S8_composite"
+  ],
+  "G4b2": false,
+  "G234b": false,
+  "G1234b": false
+ },
+ "FixedShare": {
+  "G1": false,
+  "G2a": true,
+  "G2b": true,
+  "G3": true,
+  "G4a2": false,
+  "G4a2_detail": [
+   1.5447053375900508,
+   "S4_disappears"
+  ],
+  "G4b2": false,
+  "G234b": false,
+  "G1234b": false
+ },
+ "DiscFreeze": {
+  "G1": false,
+  "G2a": false,
+  "G2b": true,
+  "G3": true,
+  "G4a2": false,
+  "G4a2_detail": [
+   1.6244757448140303,
+   "S6b_gap_burst"
+  ],
+  "G4b2": true,
+  "G234b": false,
+  "G1234b": false
+ },
+ "DiscAmnesty": {
+  "G1": false,
+  "G2a": false,
+  "G2b": true,
+  "G3": false,
+  "G4a2": false,
+  "G4a2_detail": [
+   1.5098786697526612,
+   "S6b_gap_burst"
+  ],
+  "G4b2": true,
+  "G234b": false,
+  "G1234b": false
+ },
+ "SH_bounded": {
+  "G1": false,
+  "G2a": true,
+  "G2b": true,
+  "G3": true,
+  "G4a2": false,
+  "G4a2_detail": [
+   3.0268296138827018,
+   "S4_disappears"
+  ],
+  "G4b2": false,
+  "G234b": false,
+  "G1234b": false
+ },
+ "EWMA_bounded": {
+  "G1": false,
+  "G2a": true,
+  "G2b": true,
+  "G3": true,
+  "G4a2": false,
+  "G4a2_detail": [
+   2.7617355549483666,
+   "S8_composite"
+  ],
+  "G4b2": false,
+  "G234b": false,
+  "G1234b": false
+ },
+ "BMA": {
+  "G1": false,
+  "G2a": false,
+  "G2b": true,
+  "G3": true,
+  "G4a2": false,
+  "G4a2_detail": [
+   1.63266260214057,
+   "S6d_abstain_informative"
+  ],
+  "G4b2": true,
+  "G234b": false,
+  "G1234b": false
+ },
+ "CtxOracle": {
+  "G1": true,
+  "G2a": true,
+  "G2b": true,
+  "G3": true,
+  "G4a2": true,
+  "G4a2_detail": [
+   1.06748094361887,
+   "S1_leadership"
+  ],
+  "G4b2": true,
+  "G234b": true,
+  "G1234b": true
+ },
+ "CtxLag": {
+  "G1": true,
+  "G2a": true,
+  "G2b": true,
+  "G3": true,
+  "G4a2": true,
+  "G4a2_detail": [
+   1.242870968094628,
+   "S4_disappears"
+  ],
+  "G4b2": true,
+  "G234b": true,
+  "G1234b": true
+ },
+ "CtxNoisy": {
+  "G1": false,
+  "G2a": true,
+  "G2b": true,
+  "G3": true,
+  "G4a2": false,
+  "G4a2_detail": [
+   1.6624785629474121,
+   "S4_disappears"
+  ],
+  "G4b2": false,
+  "G234b": false,
+  "G1234b": false
+ },
+ "DivEWMA": {
+  "G1": false,
+  "G2a": false,
+  "G2b": true,
+  "G3": true,
+  "G4a2": false,
+  "G4a2_detail": [
+   1.739689294698766,
+   "S6d_abstain_informative"
+  ],
+  "G4b2": true,
+  "G234b": false,
+  "G1234b": false
+ },
+ "DivSH": {
+  "G1": false,
+  "G2a": true,
+  "G2b": true,
+  "G3": true,
+  "G4a2": false,
+  "G4a2_detail": [
+   2.3211174020083183,
+   "S8_composite"
+  ],
+  "G4b2": true,
+  "G234b": false,
+  "G1234b": false
+ },
+ "SleepEXP3": {
+  "G1": false,
+  "G2a": true,
+  "G2b": true,
+  "G3": false,
+  "G4a2": false,
+  "G4a2_detail": [
+   7.586440609170246,
+   "S5a_clones_of_bad"
+  ],
+  "G4b2": false,
+  "G234b": false,
+  "G1234b": false
+ },
+ "DUCB": {
+  "G1": false,
+  "G2a": true,
+  "G2b": true,
+  "G3": true,
+  "G4a2": false,
+  "G4a2_detail": [
+   2.245581758250678,
+   "S6d_abstain_informative"
+  ],
+  "G4b2": false,
+  "G234b": false,
+  "G1234b": false
+ }
+}
