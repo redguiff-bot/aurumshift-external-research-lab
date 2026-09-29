@@ -1,0 +1,1 @@
+python3 -m venv /home/user/venv_v2; pip install numpy scipy river vowpalwabbit pytest; pip freeze > requirements.lock.txt

@@ -1,0 +1,12 @@
+{
+ "frozen_utc": "2026-09-29T07:52:22.850226Z",
+ "files": {
+  "src/scenario_core.py": "503b4dd0af3ad99e9b13583707774becbc8404bc54dc8d90b7fbb9a0480eb8e6",
+  "src/scenarios_dev.py": "e5dc94f607ab24dacca7bab20698f00d49f662ec4bcdb136a7b11b7f9a165bea",
+  "src/scenarios_heldout.py": "3080f43e7a5b3cdd627176c5ca88fdae81504962ea3ebcb3910a3cfaf1ed72a2",
+  "src/tune.py": "5d83224b0a2cb2a3654740e289802d1baedb5b607bf6f0f7ad6d98e68533459d",
+  "configs/protocol.json": "123f3e41d2c323323e165d4f882e1f349dd91195022e9c4feec3e2f3a97c5c63"
+ },
+ "parent_git_head": "034d04a13a935d4dd49d36e0a32a5b825748b3de",
+ "statement": "Scenario generators, split, seeds, search spaces, selection objective and practical thresholds were fixed before any policy other than the fixed reference A and round-robin was run on held-out/pilot scenarios."
+}
