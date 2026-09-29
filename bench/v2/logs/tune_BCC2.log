@@ -1,0 +1,3 @@
+B chosen B|g0.9995|S25|M16 trainJ 0.6915 valJ 0.6324 errors 0 wall 21s
+C chosen C|eps_ew|f0.3|e0.2 trainJ 0.5797 valJ 0.5112 errors 0 wall 23s
+C2 chosen C2|eps_ew|f0.1|e0.2|S50|M4 trainJ 0.7415 valJ 0.7499 errors 0 wall 19s

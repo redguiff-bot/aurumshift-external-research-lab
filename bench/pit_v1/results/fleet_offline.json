@@ -1,0 +1,10 @@
+{
+  "T": "2026-03-10 19:30:02.809993+01:00",
+  "rows": 1102621,
+  "pg_pit_asof_s": 0.62,
+  "ref_size": 630740,
+  "polars_s": 0.18,
+  "polars_equal": true,
+  "duckdb_s": 0.56,
+  "duckdb_equal": true
+}

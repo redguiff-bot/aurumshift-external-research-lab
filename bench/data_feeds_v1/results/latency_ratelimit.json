@@ -1,0 +1,241 @@
+{
+ "okx_candles": {
+  "ok": 10,
+  "fail": 0,
+  "status": [
+   200
+  ],
+  "ms_med": 666.1,
+  "ms_p90": 690.7,
+  "ms_max": 716.3,
+  "hdrs": {
+   "Date": "Tue, 29 Sep 2026 13:07:24 GMT",
+   "Server": "cloudflare"
+  }
+ },
+ "kraken_ohlc": {
+  "ok": 10,
+  "fail": 0,
+  "status": [
+   200
+  ],
+  "ms_med": 590.8,
+  "ms_p90": 620.0,
+  "ms_max": 702.4,
+  "hdrs": {
+   "Date": "Tue, 29 Sep 2026 13:07:40 GMT",
+   "Server": "cloudflare"
+  }
+ },
+ "coinbase_candles": {
+  "ok": 10,
+  "fail": 0,
+  "status": [
+   200
+  ],
+  "ms_med": 509.6,
+  "ms_p90": 533.6,
+  "ms_max": 556.2,
+  "hdrs": {
+   "Date": "Tue, 29 Sep 2026 13:07:55 GMT",
+   "Server": "cloudflare"
+  }
+ },
+ "bitstamp_ohlc": {
+  "ok": 10,
+  "fail": 0,
+  "status": [
+   200
+  ],
+  "ms_med": 644.8,
+  "ms_p90": 801.5,
+  "ms_max": 1351.5,
+  "hdrs": {
+   "Date": "Tue, 29 Sep 2026 13:08:12 GMT",
+   "Server": "Apache"
+  }
+ },
+ "deribit_ticker": {
+  "ok": 10,
+  "fail": 0,
+  "status": [
+   200
+  ],
+  "ms_med": 613.8,
+  "ms_p90": 636.7,
+  "ms_max": 670.9,
+  "hdrs": {
+   "Date": "Tue, 29 Sep 2026 13:08:28 GMT",
+   "Server": "cloudflare"
+  }
+ },
+ "hyperliquid_info_meta": {
+  "ok": 10,
+  "fail": 0,
+  "status": [
+   200
+  ],
+  "ms_med": 724.8,
+  "ms_p90": 971.2,
+  "ms_max": 979.1,
+  "hdrs": {
+   "Server": "nginx/1.22.1",
+   "Date": "Tue, 29 Sep 2026 13:08:46 GMT"
+  }
+ },
+ "kucoin_candles": {
+  "ok": 10,
+  "fail": 0,
+  "status": [
+   200
+  ],
+  "ms_med": 707.5,
+  "ms_p90": 831.5,
+  "ms_max": 1912.8,
+  "hdrs": {
+   "Date": "Tue, 29 Sep 2026 13:09:04 GMT",
+   "Server": "cloudflare"
+  }
+ },
+ "gate_candles": {
+  "ok": 10,
+  "fail": 0,
+  "status": [
+   200
+  ],
+  "ms_med": 1297.3,
+  "ms_p90": 1390.2,
+  "ms_max": 1448.4,
+  "hdrs": {
+   "Date": "Tue, 29 Sep 2026 13:09:27 GMT",
+   "Server": "openresty"
+  }
+ },
+ "bitget_candles": {
+  "ok": 10,
+  "fail": 0,
+  "status": [
+   200
+  ],
+  "ms_med": 710.3,
+  "ms_p90": 815.5,
+  "ms_max": 856.7,
+  "hdrs": {
+   "Date": "Tue, 29 Sep 2026 13:09:44 GMT",
+   "Server": "cloudflare"
+  }
+ },
+ "dydx_candles": {
+  "ok": 10,
+  "fail": 0,
+  "status": [
+   200
+  ],
+  "ms_med": 562.7,
+  "ms_p90": 768.3,
+  "ms_max": 1213.4,
+  "hdrs": {
+   "Date": "Tue, 29 Sep 2026 13:10:01 GMT",
+   "ratelimit-remaining": "999",
+   "ratelimit-reset": "1790687396631",
+   "ratelimit-limit": "1000",
+   "Server": "cloudflare"
+  }
+ },
+ "binance_dataapi": {
+  "ok": 10,
+  "fail": 0,
+  "status": [
+   200
+  ],
+  "ms_med": 1180.3,
+  "ms_p90": 1353.5,
+  "ms_max": 2124.2,
+  "hdrs": {
+   "Date": "Tue, 29 Sep 2026 13:10:23 GMT",
+   "Server": "nginx",
+   "x-mbx-used-weight": "24",
+   "x-mbx-used-weight-1m": "24"
+  }
+ },
+ "frankfurter_latest": {
+  "ok": 10,
+  "fail": 0,
+  "status": [
+   200
+  ],
+  "ms_med": 508.8,
+  "ms_p90": 571.5,
+  "ms_max": 616.6,
+  "hdrs": {
+   "Date": "Tue, 29 Sep 2026 13:10:39 GMT",
+   "Server": "cloudflare"
+  }
+ },
+ "ecb_sdmx": {
+  "ok": 10,
+  "fail": 0,
+  "status": [
+   200
+  ],
+  "ms_med": 905.4,
+  "ms_p90": 976.6,
+  "ms_max": 1191.4,
+  "hdrs": {
+   "Server": "myracloud",
+   "Date": "Tue, 29 Sep 2026 13:10:58 GMT"
+  }
+ },
+ "nyfed_sofr": {
+  "ok": 10,
+  "fail": 0,
+  "status": [
+   200
+  ],
+  "ms_med": 677.8,
+  "ms_p90": 819.0,
+  "ms_max": 905.5,
+  "hdrs": {
+   "Date": "Tue, 29 Sep 2026 13:11:15 GMT"
+  }
+ },
+ "_burst_okx_candles_20_in_4s(doc:40/2s)": {
+  "n": 20,
+  "target_window_s": 4,
+  "actual_s": 13.59,
+  "statuses": [
+   "200"
+  ],
+  "ms_med": 669.5,
+  "last_hdr": {
+   "Date": "Tue, 29 Sep 2026 13:11:29 GMT",
+   "Server": "cloudflare"
+  }
+ },
+ "_burst_coinbase_candles_8_in_2s(doc:10/s)": {
+  "n": 8,
+  "target_window_s": 2,
+  "actual_s": 4.02,
+  "statuses": [
+   "200"
+  ],
+  "ms_med": 491.85,
+  "last_hdr": {
+   "Date": "Tue, 29 Sep 2026 13:11:33 GMT",
+   "Server": "cloudflare"
+  }
+ },
+ "_burst_deribit_ticker_20_in_4s(doc numeric: see docs_facts)": {
+  "n": 20,
+  "target_window_s": 4,
+  "actual_s": 11.26,
+  "statuses": [
+   "200"
+  ],
+  "ms_med": 567.15,
+  "last_hdr": {
+   "Date": "Tue, 29 Sep 2026 13:11:45 GMT",
+   "Server": "cloudflare"
+  }
+ }
+}

@@ -1,0 +1,979 @@
+[
+ {
+  "name": "hyperliquid_info",
+  "url": "https://api.hyperliquid.xyz/info",
+  "params": null,
+  "method": "POST",
+  "ms": 657.6,
+  "status": 200,
+  "bytes": 72257,
+  "hdr": {
+   "Server": "nginx/1.22.1",
+   "Date": "Tue, 29 Sep 2026 12:53:03 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686383.251734,
+  "ok": true
+ },
+ {
+  "name": "hyperliquid_candle",
+  "url": "https://api.hyperliquid.xyz/info",
+  "params": null,
+  "method": "POST",
+  "ms": 619.8,
+  "status": 200,
+  "bytes": 13642,
+  "hdr": {
+   "Server": "nginx/1.22.1",
+   "Date": "Tue, 29 Sep 2026 12:53:03 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686383.8754034,
+  "ok": true
+ },
+ {
+  "name": "hyperliquid_funding",
+  "url": "https://api.hyperliquid.xyz/info",
+  "params": null,
+  "method": "POST",
+  "ms": 680.7,
+  "status": 200,
+  "bytes": 16876,
+  "hdr": {
+   "Server": "nginx/1.22.1",
+   "Date": "Tue, 29 Sep 2026 12:53:04 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686384.5579345,
+  "ok": true
+ },
+ {
+  "name": "frankfurter_latest",
+  "url": "https://api.frankfurter.dev/v1/latest?base=EUR&symbols=USD,JPY,GBP,CHF",
+  "params": null,
+  "method": "GET",
+  "ms": 745.0,
+  "status": 200,
+  "bytes": 109,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:53:05 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686385.3049886,
+  "ok": true
+ },
+ {
+  "name": "frankfurter_hist",
+  "url": "https://api.frankfurter.dev/v1/2020-01-01..2020-03-01?base=EUR&symbols=USD",
+  "params": null,
+  "method": "GET",
+  "ms": 762.6,
+  "status": 200,
+  "bytes": 1286,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:53:06 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686386.0687776,
+  "ok": true
+ },
+ {
+  "name": "open_er_api",
+  "url": "https://open.er-api.com/v6/latest/USD",
+  "params": null,
+  "method": "GET",
+  "ms": 477.3,
+  "status": 200,
+  "bytes": 2965,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:53:06 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686386.5474505,
+  "ok": true
+ },
+ {
+  "name": "fawaz_currency",
+  "url": "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json",
+  "params": null,
+  "method": "GET",
+  "ms": 481.8,
+  "status": 200,
+  "bytes": 7512,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:53:07 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686387.0309422,
+  "ok": true
+ },
+ {
+  "name": "ecb_eurofxref",
+  "url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+  "params": null,
+  "method": "GET",
+  "ms": 861.4,
+  "status": 200,
+  "bytes": 1547,
+  "hdr": {
+   "Server": "myracloud",
+   "Date": "Tue, 29 Sep 2026 12:53:07 GMT"
+  },
+  "ctype": "text/xml",
+  "recv_utc": 1790686387.894124,
+  "ok": true
+ },
+ {
+  "name": "ecb_sdmx_fx",
+  "url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?lastNObservations=5&format=jsondata",
+  "params": null,
+  "method": "GET",
+  "ms": 1381.0,
+  "status": 200,
+  "bytes": 3644,
+  "hdr": {
+   "Server": "myracloud",
+   "Date": "Tue, 29 Sep 2026 12:53:09 GMT"
+  },
+  "ctype": "application/vnd.sdmx.data+json;version=1.0.0-wd",
+  "recv_utc": 1790686389.2767146,
+  "ok": true
+ },
+ {
+  "name": "ecb_sdmx_fx_hist",
+  "url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?startPeriod=1999-01-04&endPeriod=1999-01-10&format=jsondata",
+  "params": null,
+  "method": "GET",
+  "ms": 2081.6,
+  "status": 200,
+  "bytes": 3634,
+  "hdr": {
+   "Server": "myracloud",
+   "Date": "Tue, 29 Sep 2026 12:53:11 GMT"
+  },
+  "ctype": "application/vnd.sdmx.data+json;version=1.0.0-wd",
+  "recv_utc": 1790686391.3606179,
+  "ok": true
+ },
+ {
+  "name": "exchangerate_host",
+  "url": "https://api.exchangerate.host/latest?base=USD",
+  "params": null,
+  "method": "GET",
+  "ms": 680.3,
+  "status": 200,
+  "bytes": 193,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:53:12 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; Charset=UTF-8",
+  "recv_utc": 1790686392.0426347,
+  "ok": true
+ },
+ {
+  "name": "yahoo_chart_xau",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?interval=1h&range=5d",
+  "params": null,
+  "method": "GET",
+  "ms": 544.3,
+  "status": 200,
+  "bytes": 8333,
+  "hdr": {
+   "date": "Tue, 29 Sep 2026 12:53:12 GMT",
+   "server": "ATS"
+  },
+  "ctype": "application/json;charset=utf-8",
+  "recv_utc": 1790686392.5882478,
+  "ok": true
+ },
+ {
+  "name": "yahoo_chart_eurusd",
+  "url": "https://query2.finance.yahoo.com/v8/finance/chart/EURUSD=X?interval=1h&range=5d",
+  "params": null,
+  "method": "GET",
+  "ms": 535.6,
+  "status": 200,
+  "bytes": 11277,
+  "hdr": {
+   "date": "Tue, 29 Sep 2026 12:53:13 GMT",
+   "server": "ATS"
+  },
+  "ctype": "application/json;charset=utf-8",
+  "recv_utc": 1790686393.1261768,
+  "ok": true
+ },
+ {
+  "name": "stooq_xau",
+  "url": "https://stooq.com/q/d/l/?s=xauusd&i=d",
+  "params": null,
+  "method": "GET",
+  "ms": 11563.3,
+  "ok": false,
+  "err": "ConnectionError(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))"
+ },
+ {
+  "name": "stooq_pl",
+  "url": "https://stooq.pl/q/d/l/?s=xauusd&i=d",
+  "params": null,
+  "method": "GET",
+  "ms": 11866.4,
+  "ok": false,
+  "err": "ConnectionError(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))"
+ },
+ {
+  "name": "dukascopy_bi5",
+  "url": "https://datafeed.dukascopy.com/datafeed/XAUUSD/2024/00/02/10h_ticks.bi5",
+  "params": null,
+  "method": "GET",
+  "ms": 19728.7,
+  "status": 200,
+  "bytes": 21048,
+  "hdr": {
+   "date": "Tue, 29 Sep 2026 12:53:56 GMT",
+   "server": "YANDA"
+  },
+  "ctype": "application/octet-stream",
+  "recv_utc": 1790686436.2868023,
+  "ok": true
+ },
+ {
+  "name": "gold_api_xau",
+  "url": "https://api.gold-api.com/price/XAU",
+  "params": null,
+  "method": "GET",
+  "ms": 652.4,
+  "status": 200,
+  "bytes": 182,
+  "hdr": {
+   "Server": "nginx/1.24.0 (Ubuntu)",
+   "Date": "Tue, 29 Sep 2026 12:53:56 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686436.9526865,
+  "ok": true
+ },
+ {
+  "name": "gold_api_xag",
+  "url": "https://api.gold-api.com/price/XAG",
+  "params": null,
+  "method": "GET",
+  "ms": 633.8,
+  "status": 200,
+  "bytes": 182,
+  "hdr": {
+   "Server": "nginx/1.24.0 (Ubuntu)",
+   "Date": "Tue, 29 Sep 2026 12:53:57 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686437.5875885,
+  "ok": true
+ },
+ {
+  "name": "goldprice_org",
+  "url": "https://data-asg.goldprice.org/dbXRates/USD",
+  "params": null,
+  "method": "GET",
+  "ms": 641.6,
+  "status": 403,
+  "bytes": 10,
+  "hdr": {
+   "Server": "Webscale",
+   "Date": "Tue, 29 Sep 2026 12:53:58 GMT"
+  },
+  "ctype": "text/plain; charset=utf-8",
+  "recv_utc": 1790686438.2303114,
+  "ok": false
+ },
+ {
+  "name": "metals_live",
+  "url": "https://api.metals.live/v1/spot",
+  "params": null,
+  "method": "GET",
+  "ms": 529.3,
+  "ok": false,
+  "err": "SSLError(MaxRetryError(\"HTTPSConnectionPool(host='api.metals.live', port=443): Max retries exceeded with url: /v1/spot (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))\"))"
+ },
+ {
+  "name": "swissquote_xau",
+  "url": "https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAU/USD",
+  "params": null,
+  "method": "GET",
+  "ms": 569.8,
+  "status": 200,
+  "bytes": 1129,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:53:59 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686439.3303514,
+  "ok": true
+ },
+ {
+  "name": "lbma_gold_am",
+  "url": "https://prices.lbma.org.uk/json/gold_am.json",
+  "params": null,
+  "method": "GET",
+  "ms": 1070.8,
+  "status": 200,
+  "bytes": 924963,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:54:00 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686440.4026105,
+  "ok": true
+ },
+ {
+  "name": "kraken_paxg",
+  "url": "https://api.kraken.com/0/public/OHLC?pair=PAXGUSD&interval=60",
+  "params": null,
+  "method": "GET",
+  "ms": 533.8,
+  "status": 200,
+  "bytes": 57718,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:54:00 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686440.9983325,
+  "ok": true
+ },
+ {
+  "name": "kraken_xauusd_fx",
+  "url": "https://api.kraken.com/0/public/OHLC?pair=XAUTUSD&interval=60",
+  "params": null,
+  "method": "GET",
+  "ms": 632.7,
+  "status": 200,
+  "bytes": 53396,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:54:01 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686441.6370034,
+  "ok": true
+ },
+ {
+  "name": "okx_xaut",
+  "url": "https://www.okx.com/api/v5/market/candles?instId=XAUT-USDT&bar=1H",
+  "params": null,
+  "method": "GET",
+  "ms": 729.5,
+  "status": 200,
+  "bytes": 10253,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:54:02 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686442.3697329,
+  "ok": true
+ },
+ {
+  "name": "coinbase_paxg",
+  "url": "https://api.exchange.coinbase.com/products/PAXG-USD/candles?granularity=3600",
+  "params": null,
+  "method": "GET",
+  "ms": 540.9,
+  "status": 200,
+  "bytes": 18430,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:54:02 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686442.9125996,
+  "ok": true
+ },
+ {
+  "name": "deribit_paxg_perp",
+  "url": "https://www.deribit.com/api/v2/public/get_tradingview_chart_data?instrument_name=PAXG_USDC-PERPETUAL&resolution=60&start_timestamp=1790000000000&end_timestamp=1790680000000",
+  "params": null,
+  "method": "GET",
+  "ms": 621.4,
+  "status": 200,
+  "bytes": 10987,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:54:03 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686443.5367706,
+  "ok": true
+ },
+ {
+  "name": "okx_swap_xaut",
+  "url": "https://www.okx.com/api/v5/market/candles?instId=XAUT-USDT-SWAP&bar=1H",
+  "params": null,
+  "method": "GET",
+  "ms": 588.3,
+  "status": 200,
+  "bytes": 97,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:54:04 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686444.127776,
+  "ok": true
+ },
+ {
+  "name": "hl_xyz_gold",
+  "url": "https://api.hyperliquid.xyz/info",
+  "params": null,
+  "method": "POST",
+  "ms": 660.9,
+  "status": 200,
+  "bytes": 2588,
+  "hdr": {
+   "Server": "nginx/1.30.3",
+   "Date": "Tue, 29 Sep 2026 12:54:04 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686444.7898684,
+  "ok": true
+ },
+ {
+  "name": "fred_csv_dgs10",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10",
+  "params": null,
+  "method": "GET",
+  "ms": 20543.6,
+  "ok": false,
+  "err": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)\"))"
+ },
+ {
+  "name": "fred_csv_wti",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILWTICO",
+  "params": null,
+  "method": "GET",
+  "ms": 20488.2,
+  "ok": false,
+  "err": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)\"))"
+ },
+ {
+  "name": "fred_csv_gold",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GOLDAMGBD228NLBM",
+  "params": null,
+  "method": "GET",
+  "ms": 20509.1,
+  "ok": false,
+  "err": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)\"))"
+ },
+ {
+  "name": "fred_api_nokey",
+  "url": "https://api.stlouisfed.org/fred/series/observations?series_id=DGS10&file_type=json",
+  "params": null,
+  "method": "GET",
+  "ms": 1009.6,
+  "status": 400,
+  "bytes": 162,
+  "hdr": {
+   "Server": "Apache",
+   "Date": "Tue, 29 Sep 2026 12:55:07 GMT"
+  },
+  "ctype": "application/json; charset=UTF-8",
+  "recv_utc": 1790686507.3420718,
+  "ok": false
+ },
+ {
+  "name": "alfred_csv_vintage",
+  "url": "https://alfred.stlouisfed.org/graph/fredgraph.csv?id=GDPC1&vintage_date=2020-01-30",
+  "params": null,
+  "method": "GET",
+  "ms": 20469.9,
+  "ok": false,
+  "err": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='alfred.stlouisfed.org', port=443): Read timed out. (read timeout=20)\"))"
+ },
+ {
+  "name": "eia_nokey",
+  "url": "https://api.eia.gov/v2/petroleum/pri/spt/data/?frequency=daily&data[0]=value",
+  "params": null,
+  "method": "GET",
+  "ms": 973.9,
+  "status": 403,
+  "bytes": 163,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:28 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686528.7873774,
+  "ok": false
+ },
+ {
+  "name": "bls_api_v1",
+  "url": "https://api.bls.gov/publicAPI/v1/timeseries/data/CUUR0000SA0",
+  "params": null,
+  "method": "GET",
+  "ms": 621.7,
+  "status": 200,
+  "bytes": 224,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:29 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686529.4103572,
+  "ok": true
+ },
+ {
+  "name": "treasury_fiscal",
+  "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/avg_interest_rates?page[size]=3",
+  "params": null,
+  "method": "GET",
+  "ms": 852.9,
+  "status": 200,
+  "bytes": 2398,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:30 GMT",
+   "Server": "nginx"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686530.264561,
+  "ok": true
+ },
+ {
+  "name": "treasury_yield_csv",
+  "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+  "params": null,
+  "method": "GET",
+  "ms": 677.4,
+  "status": 200,
+  "bytes": 15176,
+  "hdr": {
+   "Server": "nginx",
+   "Date": "Tue, 29 Sep 2026 12:55:30 GMT"
+  },
+  "ctype": "text/csv; charset=UTF-8",
+  "recv_utc": 1790686530.9433653,
+  "ok": true
+ },
+ {
+  "name": "nyfed_sofr",
+  "url": "https://markets.newyorkfed.org/api/rates/secured/sofr/last/5.json",
+  "params": null,
+  "method": "GET",
+  "ms": 888.7,
+  "status": 200,
+  "bytes": 1208,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:31 GMT"
+  },
+  "ctype": "application/json;charset=utf-8",
+  "recv_utc": 1790686531.8339176,
+  "ok": true
+ },
+ {
+  "name": "worldbank",
+  "url": "https://api.worldbank.org/v2/country/US/indicator/NY.GDP.MKTP.CD?format=json&per_page=5",
+  "params": null,
+  "method": "GET",
+  "ms": 541.8,
+  "status": 200,
+  "bytes": 1146,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:32 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json;charset=utf-8",
+  "recv_utc": 1790686532.3774922,
+  "ok": true
+ },
+ {
+  "name": "worldbank_pink",
+  "url": "https://thedocs.worldbank.org/en/doc/5d903e848db1d1b83e0ec8f744e55570-0350012021/related/CMO-Historical-Data-Monthly.xlsx",
+  "params": null,
+  "method": "GET",
+  "ms": 757.9,
+  "status": 200,
+  "bytes": 765246,
+  "hdr": {
+   "Server": "Apache",
+   "Date": "Tue, 29 Sep 2026 11:03:44 GMT"
+  },
+  "ctype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "recv_utc": 1790686533.1367097,
+  "ok": true
+ },
+ {
+  "name": "imf_datamapper",
+  "url": "https://www.imf.org/external/datamapper/api/v1/NGDP_RPCH/USA",
+  "params": null,
+  "method": "GET",
+  "ms": 727.6,
+  "status": 403,
+  "bytes": 429,
+  "hdr": {
+   "Server": "AkamaiGHost",
+   "Date": "Tue, 29 Sep 2026 12:55:34 GMT"
+  },
+  "ctype": "text/html",
+  "recv_utc": 1790686534.0474072,
+  "ok": false
+ },
+ {
+  "name": "eurostat",
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_manr?geo=EA&coicop=CP00&lastTimePeriod=3",
+  "params": null,
+  "method": "GET",
+  "ms": 764.3,
+  "status": 200,
+  "bytes": 3219,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:34 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686534.8129027,
+  "ok": true
+ },
+ {
+  "name": "oecd_sdmx",
+  "url": "https://sdmx.oecd.org/public/rest/data/OECD.SDD.STES,DSD_KEI@DF_KEI,4.0/USA.M.CPI.PA._Z.?lastNObservations=3&format=jsondata",
+  "params": null,
+  "method": "GET",
+  "ms": 614.0,
+  "status": 403,
+  "bytes": 49,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:35 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "text/plain",
+  "recv_utc": 1790686535.4291408,
+  "ok": false
+ },
+ {
+  "name": "cftc_cot",
+  "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json?$limit=3&$order=report_date_as_yyyy_mm_dd DESC",
+  "params": null,
+  "method": "GET",
+  "ms": 941.9,
+  "status": 200,
+  "bytes": 13961,
+  "hdr": {
+   "Server": "nginx",
+   "Date": "Tue, 29 Sep 2026 12:55:36 GMT"
+  },
+  "ctype": "application/json;charset=utf-8",
+  "recv_utc": 1790686536.3720515,
+  "ok": true
+ },
+ {
+  "name": "bea_nokey",
+  "url": "https://apps.bea.gov/api/data?method=GETDATASETLIST&ResultFormat=JSON",
+  "params": null,
+  "method": "GET",
+  "ms": 845.8,
+  "status": 200,
+  "bytes": 0,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:37 GMT"
+  },
+  "ctype": "text/plain; charset=utf-8",
+  "recv_utc": 1790686537.2197957,
+  "ok": true
+ },
+ {
+  "name": "bankofcanada",
+  "url": "https://www.bankofcanada.ca/valet/observations/FXUSDCAD/json?recent=5",
+  "params": null,
+  "method": "GET",
+  "ms": 724.4,
+  "status": 200,
+  "bytes": 1003,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:37 GMT",
+   "Server": "BoC"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686537.945632,
+  "ok": true
+ },
+ {
+  "name": "boe_iadb",
+  "url": "https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp?csv.x=yes&Datefrom=01/Sep/2026&Dateto=now&SeriesCodes=XUDLUSS&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N",
+  "params": null,
+  "method": "GET",
+  "ms": 1033.1,
+  "status": 200,
+  "bytes": 412,
+  "hdr": {
+   "Server": "Microsoft-IIS/10.0",
+   "Date": "Tue, 29 Sep 2026 12:55:38 GMT"
+  },
+  "ctype": "application/csv",
+  "recv_utc": 1790686538.980203,
+  "ok": true
+ },
+ {
+  "name": "snb",
+  "url": "https://data.snb.ch/api/cube/devkum/data/json/en",
+  "params": null,
+  "method": "GET",
+  "ms": 1921.2,
+  "status": 200,
+  "bytes": 891356,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:40 GMT",
+   "Server": "Apache"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686540.903921,
+  "ok": true
+ },
+ {
+  "name": "ff_calendar",
+  "url": "https://nfs.faireconomy.media/ff_calendar_thisweek.json",
+  "params": null,
+  "method": "GET",
+  "ms": 493.0,
+  "status": 200,
+  "bytes": 19110,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:41 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686541.4642866,
+  "ok": true
+ },
+ {
+  "name": "ff_calendar_xml",
+  "url": "https://nfs.faireconomy.media/ff_calendar_thisweek.xml",
+  "params": null,
+  "method": "GET",
+  "ms": 482.7,
+  "status": 200,
+  "bytes": 48669,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:41 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "text/xml",
+  "recv_utc": 1790686541.9508717,
+  "ok": true
+ },
+ {
+  "name": "fed_fomc_cal",
+  "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+  "params": null,
+  "method": "GET",
+  "ms": 554.7,
+  "status": 200,
+  "bytes": 165460,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:42 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "text/html",
+  "recv_utc": 1790686542.5069153,
+  "ok": true
+ },
+ {
+  "name": "bls_schedule_ics",
+  "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+  "params": null,
+  "method": "GET",
+  "ms": 731.7,
+  "status": 403,
+  "bytes": 1325,
+  "hdr": {
+   "Server": "AkamaiGHost",
+   "Date": "Tue, 29 Sep 2026 12:55:43 GMT"
+  },
+  "ctype": "text/html",
+  "recv_utc": 1790686543.2401247,
+  "ok": false
+ },
+ {
+  "name": "gdelt_doc",
+  "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=bitcoin&mode=artlist&maxrecords=5&format=json",
+  "params": null,
+  "method": "GET",
+  "ms": 11471.7,
+  "ok": false,
+  "err": "ConnectionError(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))"
+ },
+ {
+  "name": "cryptopanic_nokey",
+  "url": "https://cryptopanic.com/api/v1/posts/?public=true",
+  "params": null,
+  "method": "GET",
+  "ms": 279.9,
+  "status": 403,
+  "bytes": 4551,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:55 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "text/html; charset=UTF-8",
+  "recv_utc": 1790686554.9927475,
+  "ok": false
+ },
+ {
+  "name": "fear_greed",
+  "url": "https://api.alternative.me/fng/?limit=3",
+  "params": null,
+  "method": "GET",
+  "ms": 500.6,
+  "status": 200,
+  "bytes": 393,
+  "hdr": {
+   "Server": "nginx/1.14.2",
+   "Date": "Tue, 29 Sep 2026 12:55:55 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686555.4944093,
+  "ok": true
+ },
+ {
+  "name": "blockchain_info",
+  "url": "https://api.blockchain.info/charts/hash-rate?timespan=5days&format=json",
+  "params": null,
+  "method": "GET",
+  "ms": 934.0,
+  "status": 200,
+  "bytes": 422,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:56 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686556.430367,
+  "ok": true
+ },
+ {
+  "name": "mempool_space",
+  "url": "https://mempool.space/api/v1/prices",
+  "params": null,
+  "method": "GET",
+  "ms": 506.6,
+  "status": 200,
+  "bytes": 108,
+  "hdr": {
+   "Server": "nginx",
+   "Date": "Tue, 29 Sep 2026 12:55:56 GMT"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686556.9383414,
+  "ok": true
+ },
+ {
+  "name": "tradingeconomics_guest",
+  "url": "https://api.tradingeconomics.com/calendar?c=guest:guest&f=json",
+  "params": null,
+  "method": "GET",
+  "ms": 658.6,
+  "status": 410,
+  "bytes": 214,
+  "hdr": {
+   "Server": "awselb/2.0",
+   "Date": "Tue, 29 Sep 2026 12:55:57 GMT"
+  },
+  "ctype": "text/html",
+  "recv_utc": 1790686557.5980675,
+  "ok": false
+ },
+ {
+  "name": "fmp_nokey",
+  "url": "https://financialmodelingprep.com/api/v3/economic_calendar",
+  "params": null,
+  "method": "GET",
+  "ms": 592.9,
+  "status": 401,
+  "bytes": 184,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:58 GMT",
+   "Server": "nginx"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686558.1919334,
+  "ok": false
+ },
+ {
+  "name": "finnhub_nokey",
+  "url": "https://finnhub.io/api/v1/calendar/economic",
+  "params": null,
+  "method": "GET",
+  "ms": 605.9,
+  "status": 401,
+  "bytes": 34,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:58 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686558.7993999,
+  "ok": false
+ },
+ {
+  "name": "alphavantage_demo",
+  "url": "https://www.alphavantage.co/query?function=FX_DAILY&from_symbol=EUR&to_symbol=USD&apikey=demo",
+  "params": null,
+  "method": "GET",
+  "ms": 552.4,
+  "status": 200,
+  "bytes": 17313,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:59 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686559.353073,
+  "ok": true
+ },
+ {
+  "name": "twelvedata_demo",
+  "url": "https://api.twelvedata.com/time_series?symbol=EUR/USD&interval=1h&apikey=demo",
+  "params": null,
+  "method": "GET",
+  "ms": 480.9,
+  "status": 200,
+  "bytes": 3228,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:55:59 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686559.8361216,
+  "ok": true
+ },
+ {
+  "name": "polygon_nokey",
+  "url": "https://api.polygon.io/v2/aggs/ticker/C:EURUSD/range/1/hour/2026-09-01/2026-09-05",
+  "params": null,
+  "method": "GET",
+  "ms": 551.5,
+  "status": 401,
+  "bytes": 101,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:56:00 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686560.3899868,
+  "ok": false
+ },
+ {
+  "name": "oanda_nokey",
+  "url": "https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles",
+  "params": null,
+  "method": "GET",
+  "ms": 519.9,
+  "status": 401,
+  "bytes": 65,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:56:00 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686560.9108098,
+  "ok": false
+ }
+]

@@ -1,0 +1,1048 @@
+[
+ {
+  "name": "okx_spot_candles",
+  "url": "https://www.okx.com/api/v5/market/candles",
+  "params": {
+   "instId": "BTC-USDT",
+   "bar": "1m",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 700.0,
+  "status": 200,
+  "bytes": 11173,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:51:52 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686312.5967278,
+  "ok": true
+ },
+ {
+  "name": "kraken_ohlc",
+  "url": "https://api.kraken.com/0/public/OHLC",
+  "params": {
+   "pair": "XBTUSD",
+   "interval": "1"
+  },
+  "method": "GET",
+  "ms": 511.1,
+  "status": 200,
+  "bytes": 57258,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:51:53 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686313.109598,
+  "ok": true
+ },
+ {
+  "name": "coinbase_candles",
+  "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles",
+  "params": {
+   "granularity": "60"
+  },
+  "method": "GET",
+  "ms": 510.3,
+  "status": 200,
+  "bytes": 20485,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:51:53 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686313.6234565,
+  "ok": true
+ },
+ {
+  "name": "bitstamp_ohlc",
+  "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/",
+  "params": {
+   "step": "60",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 794.9,
+  "status": 200,
+  "bytes": 13341,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:51:54 GMT",
+   "Server": "Apache"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686314.4225721,
+  "ok": true
+ },
+ {
+  "name": "bitfinex_candles",
+  "url": "https://api-pub.bitfinex.com/v2/candles/trade:1m:tBTCUSD/hist",
+  "params": {
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 649.7,
+  "status": 200,
+  "bytes": 5160,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:51:55 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686315.074754,
+  "ok": true
+ },
+ {
+  "name": "kucoin_klines",
+  "url": "https://api.kucoin.com/api/v1/market/candles",
+  "params": {
+   "symbol": "BTC-USDT",
+   "type": "1min"
+  },
+  "method": "GET",
+  "ms": 811.8,
+  "status": 200,
+  "bytes": 8559,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:51:55 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686315.8891907,
+  "ok": true
+ },
+ {
+  "name": "gemini_candles",
+  "url": "https://api.gemini.com/v2/candles/btcusd/1m",
+  "params": null,
+  "method": "GET",
+  "ms": 650.4,
+  "status": 200,
+  "bytes": 88548,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:51:56 GMT",
+   "server": "istio-envoy"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686316.5416424,
+  "ok": true
+ },
+ {
+  "name": "gateio_spot",
+  "url": "https://api.gateio.ws/api/v4/spot/candlesticks",
+  "params": {
+   "currency_pair": "BTC_USDT",
+   "interval": "1m",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 1249.4,
+  "status": 200,
+  "bytes": 9184,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:51:57 GMT",
+   "Server": "openresty"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686317.7990248,
+  "ok": true
+ },
+ {
+  "name": "bitget_spot",
+  "url": "https://api.bitget.com/api/v2/spot/market/candles",
+  "params": {
+   "symbol": "BTCUSDT",
+   "granularity": "1min",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 679.2,
+  "status": 200,
+  "bytes": 10618,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:51:58 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686318.480271,
+  "ok": true
+ },
+ {
+  "name": "mexc_spot",
+  "url": "https://api.mexc.com/api/v3/klines",
+  "params": {
+   "symbol": "BTCUSDT",
+   "interval": "1m",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 826.3,
+  "status": 200,
+  "bytes": 9717,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:51:59 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686319.3082223,
+  "ok": true
+ },
+ {
+  "name": "htx_spot",
+  "url": "https://api.huobi.pro/market/history/kline",
+  "params": {
+   "symbol": "btcusdt",
+   "period": "1min",
+   "size": "100"
+  },
+  "method": "GET",
+  "ms": 804.4,
+  "status": 200,
+  "bytes": 13347,
+  "hdr": {
+   "Server": "openresty",
+   "Date": "Tue, 29 Sep 2026 12:52:00 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686320.114276,
+  "ok": true
+ },
+ {
+  "name": "cryptocompare",
+  "url": "https://min-api.cryptocompare.com/data/v2/histominute",
+  "params": {
+   "fsym": "BTC",
+   "tsym": "USD",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 528.3,
+  "status": 401,
+  "bytes": 273,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:00 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686320.6454005,
+  "ok": false
+ },
+ {
+  "name": "coingecko_ohlc",
+  "url": "https://api.coingecko.com/api/v3/coins/bitcoin/ohlc",
+  "params": {
+   "vs_currency": "usd",
+   "days": "1"
+  },
+  "method": "GET",
+  "ms": 478.4,
+  "status": 200,
+  "bytes": 2305,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:01 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686321.1248403,
+  "ok": true
+ },
+ {
+  "name": "coinpaprika",
+  "url": "https://api.coinpaprika.com/v1/tickers/btc-bitcoin",
+  "params": null,
+  "method": "GET",
+  "ms": 576.9,
+  "status": 200,
+  "bytes": 814,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:01 GMT",
+   "ratelimit-limit": "20000",
+   "ratelimit-remaining": "19996",
+   "ratelimit-reset": "212893",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686321.7033448,
+  "ok": true
+ },
+ {
+  "name": "binance_vision_list",
+  "url": "https://data.binance.vision/?prefix=data/spot/daily/klines/BTCUSDT/1m/",
+  "params": null,
+  "method": "GET",
+  "ms": 693.7,
+  "status": 200,
+  "bytes": 2712,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:03 GMT",
+   "Server": "AmazonS3"
+  },
+  "ctype": "text/html",
+  "recv_utc": 1790686322.3987625,
+  "ok": true
+ },
+ {
+  "name": "binance_us",
+  "url": "https://api.binance.us/api/v3/klines",
+  "params": {
+   "symbol": "BTCUSDT",
+   "interval": "1m",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 1083.7,
+  "status": 200,
+  "bytes": 15771,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:03 GMT",
+   "Server": "nginx",
+   "x-mbx-used-weight": "2",
+   "x-mbx-used-weight-1m": "2"
+  },
+  "ctype": "application/json;charset=UTF-8",
+  "recv_utc": 1790686323.4837182,
+  "ok": true
+ },
+ {
+  "name": "binance_data_api",
+  "url": "https://data-api.binance.vision/api/v3/klines",
+  "params": {
+   "symbol": "BTCUSDT",
+   "interval": "1m",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 1459.7,
+  "status": 200,
+  "bytes": 16953,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:04 GMT",
+   "Server": "nginx",
+   "x-mbx-used-weight": "2",
+   "x-mbx-used-weight-1m": "2"
+  },
+  "ctype": "application/json;charset=UTF-8",
+  "recv_utc": 1790686324.9458997,
+  "ok": true
+ },
+ {
+  "name": "bybit_kline",
+  "url": "https://api.bybit.com/v5/market/kline",
+  "params": {
+   "category": "spot",
+   "symbol": "BTCUSDT",
+   "interval": "1",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 491.7,
+  "status": 403,
+  "bytes": 96,
+  "hdr": {
+   "Server": "CloudFront",
+   "Date": "Tue, 29 Sep 2026 12:52:05 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686325.4399545,
+  "ok": false
+ },
+ {
+  "name": "bybit_nl",
+  "url": "https://api.bybit.nl/v5/market/kline",
+  "params": {
+   "category": "spot",
+   "symbol": "BTCUSDT",
+   "interval": "1",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 613.2,
+  "status": 403,
+  "bytes": 96,
+  "hdr": {
+   "Server": "CloudFront",
+   "Date": "Tue, 29 Sep 2026 12:52:06 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686326.054087,
+  "ok": false
+ },
+ {
+  "name": "okx_funding",
+  "url": "https://www.okx.com/api/v5/public/funding-rate-history",
+  "params": {
+   "instId": "BTC-USDT-SWAP",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 678.7,
+  "status": 200,
+  "bytes": 19498,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:06 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json;charset=UTF-8",
+  "recv_utc": 1790686326.7339785,
+  "ok": true
+ },
+ {
+  "name": "okx_oi",
+  "url": "https://www.okx.com/api/v5/public/open-interest",
+  "params": {
+   "instType": "SWAP",
+   "instId": "BTC-USDT-SWAP"
+  },
+  "method": "GET",
+  "ms": 747.3,
+  "status": 200,
+  "bytes": 189,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:07 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json;charset=UTF-8",
+  "recv_utc": 1790686327.4840825,
+  "ok": true
+ },
+ {
+  "name": "okx_oi_hist",
+  "url": "https://www.okx.com/api/v5/rubik/stat/contracts/open-interest-history",
+  "params": {
+   "instId": "BTC-USDT-SWAP",
+   "period": "5m"
+  },
+  "method": "GET",
+  "ms": 675.9,
+  "status": 200,
+  "bytes": 8946,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:08 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json;charset=UTF-8",
+  "recv_utc": 1790686328.161257,
+  "ok": true
+ },
+ {
+  "name": "okx_liq",
+  "url": "https://www.okx.com/api/v5/public/liquidation-orders",
+  "params": {
+   "instType": "SWAP",
+   "uly": "BTC-USDT",
+   "state": "filled"
+  },
+  "method": "GET",
+  "ms": 723.4,
+  "status": 200,
+  "bytes": 12727,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:08 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json;charset=UTF-8",
+  "recv_utc": 1790686328.8867517,
+  "ok": true
+ },
+ {
+  "name": "okx_mark_candles",
+  "url": "https://www.okx.com/api/v5/market/mark-price-candles",
+  "params": {
+   "instId": "BTC-USDT-SWAP",
+   "bar": "1m"
+  },
+  "method": "GET",
+  "ms": 678.1,
+  "status": 200,
+  "bytes": 6156,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:09 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686329.5669017,
+  "ok": true
+ },
+ {
+  "name": "okx_opt_summary",
+  "url": "https://www.okx.com/api/v5/public/opt-summary",
+  "params": {
+   "uly": "BTC-USD"
+  },
+  "method": "GET",
+  "ms": 822.7,
+  "status": 200,
+  "bytes": 748923,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:10 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json;charset=UTF-8",
+  "recv_utc": 1790686330.3913105,
+  "ok": true
+ },
+ {
+  "name": "deribit_funding",
+  "url": "https://www.deribit.com/api/v2/public/get_funding_rate_history",
+  "params": {
+   "instrument_name": "BTC-PERPETUAL",
+   "start_timestamp": "1780000000000",
+   "end_timestamp": "1790000000000"
+  },
+  "method": "GET",
+  "ms": 1113.8,
+  "status": 200,
+  "bytes": 107825,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:11 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686331.5345495,
+  "ok": true
+ },
+ {
+  "name": "deribit_chart",
+  "url": "https://www.deribit.com/api/v2/public/get_tradingview_chart_data",
+  "params": {
+   "instrument_name": "BTC-PERPETUAL",
+   "resolution": "1",
+   "start_timestamp": "1790000000000",
+   "end_timestamp": "1790100000000"
+  },
+  "method": "GET",
+  "ms": 700.7,
+  "status": 200,
+  "bytes": 110775,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:12 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686332.2432497,
+  "ok": true
+ },
+ {
+  "name": "deribit_book_summary_opt",
+  "url": "https://www.deribit.com/api/v2/public/get_book_summary_by_currency",
+  "params": {
+   "currency": "BTC",
+   "kind": "option"
+  },
+  "method": "GET",
+  "ms": 665.0,
+  "status": 200,
+  "bytes": 421024,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:12 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686332.9152143,
+  "ok": true
+ },
+ {
+  "name": "deribit_dvol",
+  "url": "https://www.deribit.com/api/v2/public/get_volatility_index_data",
+  "params": {
+   "currency": "BTC",
+   "start_timestamp": "1790000000000",
+   "end_timestamp": "1790100000000",
+   "resolution": "3600"
+  },
+  "method": "GET",
+  "ms": 542.7,
+  "status": 200,
+  "bytes": 1285,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:13 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686333.4809628,
+  "ok": true
+ },
+ {
+  "name": "deribit_trades",
+  "url": "https://www.deribit.com/api/v2/public/get_last_trades_by_currency",
+  "params": {
+   "currency": "BTC",
+   "kind": "option",
+   "count": "100"
+  },
+  "method": "GET",
+  "ms": 576.1,
+  "status": 200,
+  "bytes": 32788,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:14 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686334.0593696,
+  "ok": true
+ },
+ {
+  "name": "deribit_ticker_perp",
+  "url": "https://www.deribit.com/api/v2/public/ticker",
+  "params": {
+   "instrument_name": "BTC-PERPETUAL"
+  },
+  "method": "GET",
+  "ms": 548.3,
+  "status": 200,
+  "bytes": 694,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:14 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686334.611365,
+  "ok": true
+ },
+ {
+  "name": "kraken_fut_tickers",
+  "url": "https://futures.kraken.com/derivatives/api/v3/tickers",
+  "params": null,
+  "method": "GET",
+  "ms": 696.8,
+  "status": 200,
+  "bytes": 151529,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:15 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686335.3105292,
+  "ok": true
+ },
+ {
+  "name": "kraken_fut_hist_funding",
+  "url": "https://futures.kraken.com/derivatives/api/v4/historicalfundingrates",
+  "params": {
+   "symbol": "PF_XBTUSD"
+  },
+  "method": "GET",
+  "ms": 1069.1,
+  "status": 200,
+  "bytes": 1022545,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:16 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686336.3869033,
+  "ok": true
+ },
+ {
+  "name": "bitmex_funding",
+  "url": "https://www.bitmex.com/api/v1/funding",
+  "params": {
+   "symbol": "XBTUSD",
+   "count": "100",
+   "reverse": "true"
+  },
+  "method": "GET",
+  "ms": 981.1,
+  "status": 200,
+  "bytes": 16572,
+  "hdr": {
+   "server": "istio-envoy",
+   "date": "Tue, 29 Sep 2026 12:52:17 GMT",
+   "x-ratelimit-limit": "180",
+   "x-ratelimit-remaining": "179",
+   "x-ratelimit-reset": "1790686337"
+  },
+  "ctype": "application/json;charset=utf-8",
+  "recv_utc": 1790686337.405893,
+  "ok": true
+ },
+ {
+  "name": "bitmex_liq",
+  "url": "https://www.bitmex.com/api/v1/liquidation",
+  "params": {
+   "count": "50",
+   "reverse": "true"
+  },
+  "method": "GET",
+  "ms": 763.8,
+  "status": 200,
+  "bytes": 2,
+  "hdr": {
+   "server": "istio-envoy",
+   "date": "Tue, 29 Sep 2026 12:52:18 GMT",
+   "x-ratelimit-limit": "180",
+   "x-ratelimit-remaining": "179",
+   "x-ratelimit-reset": "1790686338"
+  },
+  "ctype": "application/json;charset=utf-8",
+  "recv_utc": 1790686338.1722422,
+  "ok": true
+ },
+ {
+  "name": "bitmex_bucketed",
+  "url": "https://www.bitmex.com/api/v1/trade/bucketed",
+  "params": {
+   "binSize": "1m",
+   "symbol": "XBTUSD",
+   "count": "100",
+   "reverse": "true"
+  },
+  "method": "GET",
+  "ms": 861.4,
+  "status": 200,
+  "bytes": 21946,
+  "hdr": {
+   "server": "istio-envoy",
+   "date": "Tue, 29 Sep 2026 12:52:18 GMT",
+   "x-ratelimit-limit": "180",
+   "x-ratelimit-remaining": "179",
+   "x-ratelimit-reset": "1790686338"
+  },
+  "ctype": "application/json;charset=utf-8",
+  "recv_utc": 1790686339.0347922,
+  "ok": true
+ },
+ {
+  "name": "bitmex_instr",
+  "url": "https://www.bitmex.com/api/v1/instrument",
+  "params": {
+   "symbol": "XBTUSD"
+  },
+  "method": "GET",
+  "ms": 786.3,
+  "status": 200,
+  "bytes": 2050,
+  "hdr": {
+   "server": "istio-envoy",
+   "date": "Tue, 29 Sep 2026 12:52:19 GMT",
+   "x-ratelimit-limit": "180",
+   "x-ratelimit-remaining": "179",
+   "x-ratelimit-reset": "1790686339"
+  },
+  "ctype": "application/json;charset=utf-8",
+  "recv_utc": 1790686339.8235888,
+  "ok": true
+ },
+ {
+  "name": "bitfinex_deriv_status",
+  "url": "https://api-pub.bitfinex.com/v2/status/deriv",
+  "params": {
+   "keys": "tBTCF0:USTF0"
+  },
+  "method": "GET",
+  "ms": 450.3,
+  "status": 200,
+  "bytes": 196,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:20 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686340.2757137,
+  "ok": true
+ },
+ {
+  "name": "bitfinex_liq",
+  "url": "https://api-pub.bitfinex.com/v2/liquidations/hist",
+  "params": {
+   "limit": "50"
+  },
+  "method": "GET",
+  "ms": 961.2,
+  "status": 200,
+  "bytes": 4856,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:21 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686341.2382798,
+  "ok": true
+ },
+ {
+  "name": "gate_fut_funding",
+  "url": "https://api.gateio.ws/api/v4/futures/usdt/funding_rate",
+  "params": {
+   "contract": "BTC_USDT",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 1183.6,
+  "status": 200,
+  "bytes": 2873,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:22 GMT",
+   "Server": "openresty"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686342.4235654,
+  "ok": true
+ },
+ {
+  "name": "gate_fut_liq",
+  "url": "https://api.gateio.ws/api/v4/futures/usdt/liq_orders",
+  "params": {
+   "contract": "BTC_USDT",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 1141.3,
+  "status": 200,
+  "bytes": 1833,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:23 GMT",
+   "Server": "openresty"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686343.5663903,
+  "ok": true
+ },
+ {
+  "name": "gate_fut_stats",
+  "url": "https://api.gateio.ws/api/v4/futures/usdt/contract_stats",
+  "params": {
+   "contract": "BTC_USDT",
+   "interval": "5m",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 1521.0,
+  "status": 200,
+  "bytes": 61497,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:24 GMT",
+   "Server": "openresty"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686345.0889661,
+  "ok": true
+ },
+ {
+  "name": "bitget_funding",
+  "url": "https://api.bitget.com/api/v2/mix/market/history-fund-rate",
+  "params": {
+   "symbol": "BTCUSDT",
+   "productType": "usdt-futures"
+  },
+  "method": "GET",
+  "ms": 667.7,
+  "status": 200,
+  "bytes": 1579,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:25 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686345.7628644,
+  "ok": true
+ },
+ {
+  "name": "bitget_oi",
+  "url": "https://api.bitget.com/api/v2/mix/market/open-interest",
+  "params": {
+   "symbol": "BTCUSDT",
+   "productType": "usdt-futures"
+  },
+  "method": "GET",
+  "ms": 644.6,
+  "status": 200,
+  "bytes": 161,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:26 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686346.4090192,
+  "ok": true
+ },
+ {
+  "name": "mexc_fut_funding",
+  "url": "https://contract.mexc.com/api/v1/contract/funding_rate/history",
+  "params": {
+   "symbol": "BTC_USDT",
+   "page_num": "1",
+   "page_size": "100"
+  },
+  "method": "GET",
+  "ms": 687.6,
+  "status": 403,
+  "bytes": 432,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:27 GMT"
+  },
+  "ctype": "text/html",
+  "recv_utc": 1790686347.0977862,
+  "ok": false
+ },
+ {
+  "name": "kucoin_fut_funding",
+  "url": "https://api-futures.kucoin.com/api/v1/contract/funding-rates",
+  "params": {
+   "symbol": "XBTUSDTM",
+   "from": "1789000000000",
+   "to": "1790000000000"
+  },
+  "method": "GET",
+  "ms": 473.2,
+  "status": 200,
+  "bytes": 2374,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:27 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686347.5721612,
+  "ok": true
+ },
+ {
+  "name": "hyperliquid_meta",
+  "url": "https://api.hyperliquid.xyz/info",
+  "params": null,
+  "method": "GET",
+  "ms": 638.2,
+  "status": 405,
+  "bytes": 0,
+  "hdr": {
+   "Server": "nginx/1.22.1",
+   "Date": "Tue, 29 Sep 2026 12:52:28 GMT"
+  },
+  "ctype": null,
+  "recv_utc": 1790686348.2120857,
+  "ok": false
+ },
+ {
+  "name": "dydx_candles",
+  "url": "https://indexer.dydx.trade/v4/candles/perpetualMarkets/BTC-USD",
+  "params": {
+   "resolution": "1MIN",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 1236.4,
+  "status": 200,
+  "bytes": 29610,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:29 GMT",
+   "ratelimit-remaining": "999",
+   "ratelimit-reset": "1790686359209",
+   "ratelimit-limit": "1000",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686349.449465,
+  "ok": true
+ },
+ {
+  "name": "dydx_funding",
+  "url": "https://indexer.dydx.trade/v4/historicalFunding/BTC-USD",
+  "params": {
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 1049.5,
+  "status": 200,
+  "bytes": 13228,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:30 GMT",
+   "ratelimit-remaining": "99",
+   "ratelimit-reset": "1790685507861",
+   "ratelimit-limit": "100",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686350.5010405,
+  "ok": true
+ },
+ {
+  "name": "bybit_fund",
+  "url": "https://api.bybit.com/v5/market/funding/history",
+  "params": {
+   "category": "linear",
+   "symbol": "BTCUSDT",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 483.7,
+  "status": 403,
+  "bytes": 96,
+  "hdr": {
+   "Server": "CloudFront",
+   "Date": "Tue, 29 Sep 2026 12:52:31 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686350.9911258,
+  "ok": false
+ },
+ {
+  "name": "binance_fapi_funding",
+  "url": "https://fapi.binance.com/fapi/v1/fundingRate",
+  "params": {
+   "symbol": "BTCUSDT",
+   "limit": "100"
+  },
+  "method": "GET",
+  "ms": 473.5,
+  "status": 451,
+  "bytes": 224,
+  "hdr": {
+   "Server": "CloudFront",
+   "Date": "Tue, 29 Sep 2026 12:52:31 GMT"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686351.4657435,
+  "ok": false
+ },
+ {
+  "name": "binance_vision_um",
+  "url": "https://data.binance.vision/?prefix=data/futures/um/daily/metrics/BTCUSDT/",
+  "params": null,
+  "method": "GET",
+  "ms": 643.9,
+  "status": 200,
+  "bytes": 2712,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:33 GMT",
+   "Server": "AmazonS3"
+  },
+  "ctype": "text/html",
+  "recv_utc": 1790686352.1110494,
+  "ok": true
+ },
+ {
+  "name": "coinalyze_demo",
+  "url": "https://api.coinalyze.net/v1/exchanges",
+  "params": null,
+  "method": "GET",
+  "ms": 640.5,
+  "status": 401,
+  "bytes": 37,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:32 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json; charset=utf-8",
+  "recv_utc": 1790686352.753334,
+  "ok": false
+ },
+ {
+  "name": "cryptocompare_fut",
+  "url": "https://min-api.cryptocompare.com/data/v2/histohour",
+  "params": {
+   "fsym": "BTC",
+   "tsym": "USDT",
+   "limit": "10"
+  },
+  "method": "GET",
+  "ms": 319.2,
+  "status": 401,
+  "bytes": 273,
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 12:52:33 GMT",
+   "Server": "cloudflare"
+  },
+  "ctype": "application/json",
+  "recv_utc": 1790686353.0736353,
+  "ok": false
+ }
+]

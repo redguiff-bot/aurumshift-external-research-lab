@@ -1,0 +1,555 @@
+{
+  "checks": [
+    {
+      "scenario": "S1 avant réception",
+      "T": "2026-03-02 10:00:01+00:00",
+      "sql": [],
+      "expected": [],
+      "oracle": [],
+      "pass": true
+    },
+    {
+      "scenario": "S1 après réception",
+      "T": "2026-03-02 10:00:04+00:00",
+      "sql": [
+        "S1.a"
+      ],
+      "expected": [
+        "S1.a"
+      ],
+      "oracle": [
+        "S1.a"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S2 avant arrivée tardive",
+      "T": "2026-03-02 10:06:00+00:00",
+      "sql": [],
+      "expected": [],
+      "oracle": [],
+      "pass": true
+    },
+    {
+      "scenario": "S2 après arrivée tardive",
+      "T": "2026-03-02 10:08:00+00:00",
+      "sql": [
+        "S2.a"
+      ],
+      "expected": [
+        "S2.a"
+      ],
+      "oracle": [
+        "S2.a"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S3 BACKFILL décision 10:05",
+      "T": "2026-03-02 10:05:00+00:00",
+      "sql": [],
+      "expected": [],
+      "oracle": [],
+      "pass": true
+    },
+    {
+      "scenario": "S3 après backfill",
+      "T": "2026-03-02 20:00:01+00:00",
+      "sql": [
+        "S3.a"
+      ],
+      "expected": [
+        "S3.a"
+      ],
+      "oracle": [
+        "S3.a"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S3b backfill à first_observed mensonger",
+      "T": "2026-03-02 10:05:00+00:00",
+      "sql": [],
+      "expected": [],
+      "oracle": [],
+      "pass": true
+    },
+    {
+      "scenario": "S3c backfill mal étiqueté LIVE",
+      "T": "2026-03-02 10:05:00+00:00",
+      "sql": [],
+      "expected": [],
+      "oracle": [],
+      "pass": true
+    },
+    {
+      "scenario": "S4/S11 décision entre publication et correction",
+      "T": "2026-03-02 11:10:00+00:00",
+      "sql": [
+        "S4.r1"
+      ],
+      "expected": [
+        "S4.r1"
+      ],
+      "oracle": [
+        "S4.r1"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S4 après correction",
+      "T": "2026-03-02 11:30:00+00:00",
+      "sql": [
+        "S4.r2"
+      ],
+      "expected": [
+        "S4.r2"
+      ],
+      "oracle": [
+        "S4.r2"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S4b rev2 arrivée avant rev1: rev2 gagne",
+      "T": "2026-03-02 11:30:00+00:00",
+      "sql": [
+        "S4b.r2"
+      ],
+      "expected": [
+        "S4b.r2"
+      ],
+      "oracle": [
+        "S4b.r2"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S4b avant rev1 retardée",
+      "T": "2026-03-02 11:22:00+00:00",
+      "sql": [
+        "S4b.r2"
+      ],
+      "expected": [
+        "S4b.r2"
+      ],
+      "oracle": [
+        "S4b.r2"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S5 doublons: 1 seule version",
+      "T": "2026-03-02 12:30:00+00:00",
+      "sql": [
+        "S5.a1"
+      ],
+      "expected": [
+        "S5.a1"
+      ],
+      "oracle": [
+        "S5.a1"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S5b redélivrance superseded ignorée",
+      "T": "2026-03-02 12:30:00+00:00",
+      "sql": [
+        "S5b.B"
+      ],
+      "expected": [
+        "S5b.B"
+      ],
+      "oracle": [
+        "S5b.B"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S6 A seul avant B",
+      "T": "2026-03-02 13:00:10+00:00",
+      "sql": [
+        "S6.A"
+      ],
+      "expected": [
+        "S6.A"
+      ],
+      "oracle": [
+        "S6.A"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S6 A et B après",
+      "T": "2026-03-02 13:01:00+00:00",
+      "sql": [
+        "S6.A",
+        "S6.B"
+      ],
+      "expected": [
+        "S6.A",
+        "S6.B"
+      ],
+      "oracle": [
+        "S6.A",
+        "S6.B"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S7 préliminaire visible (ALL)",
+      "T": "2026-03-02 14:02:00+00:00",
+      "sql": [
+        "S7.p"
+      ],
+      "expected": [
+        "S7.p"
+      ],
+      "oracle": [
+        "S7.p"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S7 FINAL_ONLY avant final",
+      "T": "2026-03-02 14:02:00+00:00",
+      "sql": [],
+      "expected": [],
+      "oracle": [],
+      "pass": true
+    },
+    {
+      "scenario": "S7 FINAL_ONLY après final",
+      "T": "2026-03-02 14:06:00+00:00",
+      "sql": [
+        "S7.f"
+      ],
+      "expected": [
+        "S7.f"
+      ],
+      "oracle": [
+        "S7.f"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S7b restatement préliminaire: dernier gagne (ALL)",
+      "T": "2026-03-02 14:10:00+00:00",
+      "sql": [
+        "S7b.p"
+      ],
+      "expected": [
+        "S7b.p"
+      ],
+      "oracle": [
+        "S7b.p"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S7b FINAL_ONLY select-puis-filtre: rien",
+      "T": "2026-03-02 14:10:00+00:00",
+      "sql": [],
+      "expected": [],
+      "oracle": [],
+      "pass": true
+    },
+    {
+      "scenario": "S9 dernier connu",
+      "T": "2026-03-02 16:30:00+00:00",
+      "sql": [
+        "S9.a"
+      ],
+      "expected": [
+        "S9.a"
+      ],
+      "oracle": [
+        "S9.a"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S10 avant ré-import",
+      "T": "2026-03-02 17:10:00+00:00",
+      "sql": [
+        "S10.v1"
+      ],
+      "expected": [
+        "S10.v1"
+      ],
+      "oracle": [
+        "S10.v1"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S10 après ré-import identique",
+      "T": "2026-03-02 17:40:00+00:00",
+      "sql": [
+        "S10.v1"
+      ],
+      "expected": [
+        "S10.v1"
+      ],
+      "oracle": [
+        "S10.v1"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "S10 après restatement",
+      "T": "2026-03-02 18:05:00+00:00",
+      "sql": [
+        "S10.v3"
+      ],
+      "expected": [
+        "S10.v3"
+      ],
+      "oracle": [
+        "S10.v3"
+      ],
+      "pass": true
+    }
+  ],
+  "controls": {
+    "C1_event_time_only": {
+      "leaks": [
+        {
+          "check": "S1 avant réception",
+          "leaked": [
+            "S1.a"
+          ]
+        },
+        {
+          "check": "S2 avant arrivée tardive",
+          "leaked": [
+            "S2.a"
+          ]
+        },
+        {
+          "check": "S3 BACKFILL décision 10:05",
+          "leaked": [
+            "S3.a"
+          ]
+        },
+        {
+          "check": "S3b backfill à first_observed mensonger",
+          "leaked": [
+            "S3b.a"
+          ]
+        },
+        {
+          "check": "S3c backfill mal étiqueté LIVE",
+          "leaked": [
+            "S3c.a"
+          ]
+        },
+        {
+          "check": "S4/S11 décision entre publication et correction",
+          "leaked": [
+            "S4.r2"
+          ]
+        },
+        {
+          "check": "S6 A seul avant B",
+          "leaked": [
+            "S6.B"
+          ]
+        },
+        {
+          "check": "S7 préliminaire visible (ALL)",
+          "leaked": [
+            "S7.f"
+          ]
+        },
+        {
+          "check": "S10 avant ré-import",
+          "leaked": [
+            "S10.v3"
+          ]
+        },
+        {
+          "check": "S10 après ré-import identique",
+          "leaked": [
+            "S10.v3"
+          ]
+        }
+      ],
+      "wrong": [],
+      "verdict": "LOOKAHEAD_DETECTED"
+    },
+    "C2_first_observed_at_raw": {
+      "leaks": [
+        {
+          "check": "S3b backfill à first_observed mensonger",
+          "leaked": [
+            "S3b.a"
+          ]
+        },
+        {
+          "check": "S3c backfill mal étiqueté LIVE",
+          "leaked": [
+            "S3c.a"
+          ]
+        }
+      ],
+      "wrong": [],
+      "verdict": "LOOKAHEAD_DETECTED"
+    },
+    "C3_collector_axis_validated": {
+      "leaks": [],
+      "wrong": [],
+      "verdict": "LOOKAHEAD_PREVENTED"
+    },
+    "C4_arrival_order_only": {
+      "leaks": [],
+      "wrong": [
+        {
+          "check": "S4b rev2 arrivée avant rev1: rev2 gagne",
+          "got": [
+            "S4b.r1"
+          ],
+          "expected": [
+            "S4b.r2"
+          ]
+        }
+      ],
+      "verdict": "WRONG_RESULT_NO_LEAK"
+    },
+    "C5_scd1_current_state_overwrite": {
+      "leaks": [
+        {
+          "check": "S1 avant réception",
+          "leaked": [
+            "S1.a"
+          ]
+        },
+        {
+          "check": "S2 avant arrivée tardive",
+          "leaked": [
+            "S2.a"
+          ]
+        },
+        {
+          "check": "S3 BACKFILL décision 10:05",
+          "leaked": [
+            "S3.a"
+          ]
+        },
+        {
+          "check": "S3b backfill à first_observed mensonger",
+          "leaked": [
+            "S3b.a"
+          ]
+        },
+        {
+          "check": "S3c backfill mal étiqueté LIVE",
+          "leaked": [
+            "S3c.a"
+          ]
+        },
+        {
+          "check": "S4/S11 décision entre publication et correction",
+          "leaked": [
+            "S4.r2"
+          ]
+        },
+        {
+          "check": "S6 A seul avant B",
+          "leaked": [
+            "S6.B"
+          ]
+        },
+        {
+          "check": "S7 préliminaire visible (ALL)",
+          "leaked": [
+            "S7.f"
+          ]
+        },
+        {
+          "check": "S10 avant ré-import",
+          "leaked": [
+            "S10.v3"
+          ]
+        },
+        {
+          "check": "S10 après ré-import identique",
+          "leaked": [
+            "S10.v3"
+          ]
+        }
+      ],
+      "wrong": [],
+      "verdict": "LOOKAHEAD_DETECTED"
+    },
+    "C6_coalesce_event_time": {
+      "leaks": [
+        {
+          "check": "S3b backfill à first_observed mensonger",
+          "leaked": [
+            "S3b.a"
+          ]
+        },
+        {
+          "check": "S3c backfill mal étiqueté LIVE",
+          "leaked": [
+            "S3c.a"
+          ]
+        }
+      ],
+      "wrong": [],
+      "verdict": "LOOKAHEAD_DETECTED"
+    }
+  },
+  "counts": {
+    "S5_obs_rows": 1,
+    "S5_receipts": 3,
+    "S5b_obs_rows": 2,
+    "S5_first_known_unchanged": true,
+    "S10_obs_rows": 2,
+    "S10_receipts": 3,
+    "S10_silent_restatements": 1,
+    "S6_disagreement_view": 1
+  },
+  "dedup_aliases": {
+    "S5.a2": "S5.a1",
+    "S5.a3": "S5.a1",
+    "S5b.A2": "S5b.A",
+    "S10.v2": "S10.v1"
+  },
+  "counts_pass": true,
+  "slots": {
+    "S8": [
+      "AVAILABLE",
+      "NEVER_OBSERVED",
+      "AVAILABLE"
+    ],
+    "S8b": [
+      "AVAILABLE",
+      "NOT_YET_KNOWN_AT_T",
+      "AVAILABLE"
+    ],
+    "S8_expected": [
+      "AVAILABLE",
+      "NEVER_OBSERVED",
+      "AVAILABLE"
+    ],
+    "S8b_expected": [
+      "AVAILABLE",
+      "NOT_YET_KNOWN_AT_T",
+      "AVAILABLE"
+    ]
+  },
+  "gate": {
+    "S8_missing": "FAIL_CLOSED: PIT_PROVENANCE_INCOMPLETE: non_available_slots=1, unverified_provenance_rows=0, stale=f",
+    "S8b_backfilled_later": "FAIL_CLOSED: PIT_PROVENANCE_INCOMPLETE: non_available_slots=1, unverified_provenance_rows=0, stale=f",
+    "S8b_after_backfill": "PASS",
+    "S9_stale_30m": "FAIL_CLOSED: PIT_PROVENANCE_INCOMPLETE: non_available_slots=0, unverified_provenance_rows=0, stale=t",
+    "S9_fresh_5m": "PASS"
+  },
+  "gate_pass": true,
+  "reference_leaks": [],
+  "reference_verdict": "LOOKAHEAD_PREVENTED",
+  "all_reference_checks_pass": true
+}
