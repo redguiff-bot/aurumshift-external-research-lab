@@ -1,0 +1,23 @@
+{
+ "checks": {
+  "frozen_file_unchanged:src/scenario_core.py": true,
+  "frozen_file_unchanged:src/scenarios_dev.py": true,
+  "frozen_file_unchanged:src/scenarios_heldout.py": true,
+  "frozen_file_unchanged:src/tune.py": true,
+  "frozen_file_unchanged:configs/protocol.json": true,
+  "selected_params_match_lock:B": true,
+  "selected_params_match_lock:C": true,
+  "selected_params_match_lock:C2": true,
+  "selected_params_match_lock:D": true,
+  "heldout_generator_matches_lock": true,
+  "selected_params_committed_before_heldout_results": true,
+  "no_heldout_import:tune.py": true,
+  "no_heldout_import:scenarios_dev.py": true,
+  "seed_ranges_disjoint": true,
+  "tuning_runs_used_only_dev_seeds": true,
+  "heldout_runs_used_only_heldout_seeds": true,
+  "v1_artifacts_unmodified": true
+ },
+ "HELDOUT_ISOLATION": "PASS",
+ "head": "d98ef1a7a6044bd0e4632b032c3314e5fb4d5bb7"
+}

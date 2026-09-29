@@ -1,0 +1,146 @@
+{
+ "S1_MASSIVE_COLD_START|A": {
+  "identical": true,
+  "hashes": [
+   "4b5e7f465ea46b87",
+   "4b5e7f465ea46b87",
+   "4b5e7f465ea46b87"
+  ]
+ },
+ "S1_MASSIVE_COLD_START|R": {
+  "identical": true,
+  "hashes": [
+   "e1b86d6f724e9bb5",
+   "e1b86d6f724e9bb5",
+   "e1b86d6f724e9bb5"
+  ]
+ },
+ "S1_MASSIVE_COLD_START|B": {
+  "identical": true,
+  "hashes": [
+   "ebad78fcb7678979",
+   "ebad78fcb7678979",
+   "ebad78fcb7678979"
+  ]
+ },
+ "S1_MASSIVE_COLD_START|C": {
+  "identical": true,
+  "hashes": [
+   "0ba8a0bc852e045a",
+   "0ba8a0bc852e045a",
+   "0ba8a0bc852e045a"
+  ]
+ },
+ "S1_MASSIVE_COLD_START|C2": {
+  "identical": true,
+  "hashes": [
+   "1fb730ba362c41f5",
+   "1fb730ba362c41f5",
+   "1fb730ba362c41f5"
+  ]
+ },
+ "S1_MASSIVE_COLD_START|D": {
+  "identical": true,
+  "hashes": [
+   "5231694bb66ac060",
+   "5231694bb66ac060",
+   "5231694bb66ac060"
+  ]
+ },
+ "S5_PROVIDER_DATA_GAP|A": {
+  "identical": true,
+  "hashes": [
+   "0592b23c151278e1",
+   "0592b23c151278e1",
+   "0592b23c151278e1"
+  ]
+ },
+ "S5_PROVIDER_DATA_GAP|R": {
+  "identical": true,
+  "hashes": [
+   "4dfa2c8313a70ee3",
+   "4dfa2c8313a70ee3",
+   "4dfa2c8313a70ee3"
+  ]
+ },
+ "S5_PROVIDER_DATA_GAP|B": {
+  "identical": true,
+  "hashes": [
+   "cb8ee73783bbed47",
+   "cb8ee73783bbed47",
+   "cb8ee73783bbed47"
+  ]
+ },
+ "S5_PROVIDER_DATA_GAP|C": {
+  "identical": true,
+  "hashes": [
+   "5e095847997be860",
+   "5e095847997be860",
+   "5e095847997be860"
+  ]
+ },
+ "S5_PROVIDER_DATA_GAP|C2": {
+  "identical": true,
+  "hashes": [
+   "b181d89a8826f981",
+   "b181d89a8826f981",
+   "b181d89a8826f981"
+  ]
+ },
+ "S5_PROVIDER_DATA_GAP|D": {
+  "identical": true,
+  "hashes": [
+   "1e68a9a477cf12fe",
+   "1e68a9a477cf12fe",
+   "1e68a9a477cf12fe"
+  ]
+ },
+ "S10_DYNAMIC_POPULATION|A": {
+  "identical": true,
+  "hashes": [
+   "32d8215a0f7d8997",
+   "32d8215a0f7d8997",
+   "32d8215a0f7d8997"
+  ]
+ },
+ "S10_DYNAMIC_POPULATION|R": {
+  "identical": true,
+  "hashes": [
+   "e1191fb84caf9b08",
+   "e1191fb84caf9b08",
+   "e1191fb84caf9b08"
+  ]
+ },
+ "S10_DYNAMIC_POPULATION|B": {
+  "identical": true,
+  "hashes": [
+   "a17fbb502bb58813",
+   "a17fbb502bb58813",
+   "a17fbb502bb58813"
+  ]
+ },
+ "S10_DYNAMIC_POPULATION|C": {
+  "identical": true,
+  "hashes": [
+   "cd7058832699710c",
+   "cd7058832699710c",
+   "cd7058832699710c"
+  ]
+ },
+ "S10_DYNAMIC_POPULATION|C2": {
+  "identical": true,
+  "hashes": [
+   "91f1eff1f336e428",
+   "91f1eff1f336e428",
+   "91f1eff1f336e428"
+  ]
+ },
+ "S10_DYNAMIC_POPULATION|D": {
+  "identical": true,
+  "hashes": [
+   "ee1cfe8f8727806b",
+   "ee1cfe8f8727806b",
+   "ee1cfe8f8727806b"
+  ]
+ }
+}

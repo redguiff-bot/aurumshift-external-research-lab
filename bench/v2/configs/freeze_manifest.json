@@ -1,0 +1,19 @@
+{
+ "frozen_utc": "2026-09-29T07:52:22.850226Z",
+ "files": {
+  "src/scenario_core.py": "503b4dd0af3ad99e9b13583707774becbc8404bc54dc8d90b7fbb9a0480eb8e6",
+  "src/scenarios_dev.py": "e5dc94f607ab24dacca7bab20698f00d49f662ec4bcdb136a7b11b7f9a165bea",
+  "src/scenarios_heldout.py": "3080f43e7a5b3cdd627176c5ca88fdae81504962ea3ebcb3910a3cfaf1ed72a2",
+  "src/tune.py": "5d83224b0a2cb2a3654740e289802d1baedb5b607bf6f0f7ad6d98e68533459d",
+  "configs/protocol.json": "123f3e41d2c323323e165d4f882e1f349dd91195022e9c4feec3e2f3a97c5c63"
+ },
+ "parent_git_head": "034d04a13a935d4dd49d36e0a32a5b825748b3de",
+ "statement": "Scenario generators, split, seeds, search spaces, selection objective and practical thresholds were fixed before ANY run of ANY policy on held-out seeds (3000-3019). Correction (honesty note): pilot seeds 9000-9002 of held-out generators were already executed by tests/test_semantics.py for all policies, but those tests assert invariants only (no metric value was read or printed); dev (train) scenarios were smoke-run with default parameters for harness debugging before tuning. No held-out metric influenced any parameter.",
+ "amendments": [
+  {
+   "utc": "2026-09-29T08:05:08.151162Z",
+   "reason": "tune.py: tie-break rule implemented as pre-registered (nearest grid centre); dev tuning re-run; runner.py: added A_w kind for descriptive sensitivity; no held-out run had occurred",
+   "tune_py_sha256": "95fe833fe2f1f6c8f2d818df5304367ab613fa8ee7d5cdc9ba2b28b2aab5b852"
+  }
+ ]
+}

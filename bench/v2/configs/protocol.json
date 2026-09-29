@@ -1,0 +1,38 @@
+{
+  "protocol_version": "v2.0.0",
+  "note": "PRE-REGISTRATION. Written and committed before any held-out policy run. Nothing here may be edited after the freeze commit except through a documented INVALIDATION entry.",
+  "constants": {"K": 10, "R": 400, "T0_burn_in": 80, "FRESH": 60, "H_STARVE": 80, "W_COV": 40, "GROUPS": 10,
+                "MAG": 0.5, "MAG_RARE": 1.0, "LOW_INFO_EV": 0.05, "PIT_FRACTION": 0.1},
+  "seeds": {"train": [1000, 1005], "validation": [2000, 2005], "heldout": [3000, 3020], "pilot": [9000, 9003], "adversarial_posthoc": [4000, 4020]},
+  "splits": {
+    "TRAIN_SCENARIOS": ["T1_mixed_abrupt", "T2_mixed_drift_gap", "T3_churn_lowinfo", "T4_dormancy_rare"],
+    "VALIDATION_SCENARIOS": ["V1_coldstart_outage", "V2_abrupt_then_drift", "V3_silence_rare_lowinfo"],
+    "HELDOUT_SCENARIOS": ["S1_MASSIVE_COLD_START", "S2_ABRUPT_REGIME_CHANGE", "S3_SLOW_DRIFT", "S4_TEMPORARY_SILENCE",
+                          "S5_PROVIDER_DATA_GAP", "S6_STALE_BUT_VALID", "S7_GENUINELY_LOW_INFORMATION",
+                          "S8_RARE_HIGH_INFORMATION", "S9_LONG_DORMANCY_RETURN", "S10_DYNAMIC_POPULATION"]
+  },
+  "policy_A_fixed": {"weights": {"EXPLORATION": 1.5, "PROMISING": 1.0, "PROVEN": 0.75, "DEGRADING": 0.5, "RETIRED": 0.0},
+                     "exploration_floor_ratio": 0.05, "tuned": false,
+                     "source": "OPERATOR_SUPPLIED_REFERENCE_CONTRACT (not V1-derived)",
+                     "lifecycle_classifier": "V2 experimental definition, fixed, not tuned (see policies.py CLS)"},
+  "tuning_objective_J": "info_ratio - 1.0*starvation_rate - 0.5*stale_rate - 0.5*max(silent_excess,0) - 0.25*max(lowinfo_excess,0); mean over TRAIN scenarios x seeds",
+  "selection_rule": "top-3 configs by TRAIN J are re-scored on VALIDATION; the config with the highest VALIDATION J is frozen. Ties (|dJ|<0.005) -> the config nearer the centre of the search grid. Held-out data are never read.",
+  "search_spaces": {
+    "B": {"gamma": [0.98, 0.99, 0.995, 0.998, 0.9995], "S": [25, 50, 100], "M": [1, 4, 16]},
+    "C": {"eps_ew": {"fading": [0.05, 0.1, 0.3], "eps": [0.05, 0.1, 0.2]},
+          "ucb_ew": {"fading": [0.05, 0.1, 0.3], "delta": [0.1, 0.5, 1.0]},
+          "ucb_mean": {"delta": [0.1, 0.5, 1.0]}},
+    "C2_guard_on_top3_C": {"S": [25, 50, 100], "M": [1, 4, 16]},
+    "D": {"squarecb": {"gamma_scale": [5, 20, 100], "lr": [0.01, 0.05, 0.2], "use_group": [true, false]},
+          "eps": {"eps": [0.05, 0.2], "lr": [0.01, 0.05, 0.2], "use_group": [true, false]}}
+  },
+  "practical_thresholds": {"info_ratio": 0.03, "starvation_rate": 0.02, "stale_rate": 0.03, "silent_excess": 0.03,
+                           "coverage_W": 0.03, "adapt_delay": 10, "gini_attention_rate": 0.05, "turnover": 0.05,
+                           "new_ttfa_median": 2, "rare_discovery_rate": 0.05, "lowinfo_excess": 0.03,
+                           "degraded_excess_post": 0.02, "max_starvation_duration": 10, "longsilent_share": 0.02},
+  "statistics": {"bootstrap_resamples": 10000, "ci": 0.95, "paired_by": "scenario seed (common random numbers)",
+                 "categories": ["STATISTICALLY_DISTINGUISHABLE", "PRACTICALLY_MEANINGFUL", "INCONCLUSIVE"],
+                 "rule": "CI of paired mean difference excludes 0 => STATISTICALLY_DISTINGUISHABLE; |mean diff| >= practical threshold => PRACTICALLY_MEANINGFUL; both => reported as 'DISTINGUISHABLE+MEANINGFUL'; otherwise INCONCLUSIVE"},
+  "held_out_target_seeds": 20,
+  "post_selection_sensitivity": "DESCRIPTIVE only; results never feed back into selected parameters (frozen)."
+}
