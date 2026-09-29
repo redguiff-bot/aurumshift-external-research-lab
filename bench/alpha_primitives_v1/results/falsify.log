@@ -1,0 +1,58 @@
+P01_TSMOM net S base -0.27 | d1 -0.22 | x3 -1.13 | miss25 -0.39 | stale25 -0.25
+P02_XS_RS7D net S base -0.13 | d1 -0.17 | x3 -1.72 | miss25 -0.81 | stale25 -0.21
+P03_REV4H net S base -3.58 | d1 -3.74 | x3 -11.05 | miss25 -3.93 | stale25 -3.88
+P04_VOLCOMP_BRK net S base -0.00 | d1 -0.16 | x3 -1.04 | miss25 -0.03 | stale25 0.01
+P05_BRK_PERSIST net S base -0.11 | d1 -0.07 | x3 -1.19 | miss25 -0.26 | stale25 -0.11
+P06_FUND_CARRY net S base 0.24 | d1 0.24 | x3 -0.82 | miss25 -0.87 | stale25 0.25
+P07_PREMIUM net S base -2.10 | d1 -2.10 | x3 -6.05 | miss25 -2.98 | stale25 -1.97
+P08_OI_PRICE net S base -0.37 | d1 -0.47 | x3 -2.43 | miss25 -0.55 | stale25 -0.39
+P09_OI_FLUSH net S base -0.53 | d1 -0.37 | x3 -2.16 | miss25 -0.50 | stale25 -0.43
+P10_TAKER_IMB net S base -4.02 | d1 -3.95 | x3 -11.68 | miss25 -4.83 | stale25 -4.06
+P11_LIQ_SHOCK net S base -2.53 | d1 -2.71 | x3 -6.74 | miss25 -2.52 | stale25 -2.48
+P12_LEADLAG_BTC net S base -16.02 | d1 -16.61 | x3 -46.81 | miss25 -17.22 | stale25 -18.03
+P13_SEASON_HOD net S base -3.62 | d1 -4.46 | x3 -11.99 | miss25 -4.58 | stale25 -4.34
+P14_VRP_DVOL net S base 0.09 | d1 0.11 | x3 -0.14 | miss25 -0.10 | stale25 0.03
+P15_FUND_DIV net S base -1.13 | d1 -1.16 | x3 -3.78 | miss25 -1.75 | stale25 -1.10
+{'n': 150, 'gross_t_sd': 0.9384800091506873, 'gross_t_p95': 1.5796235974991462, 'gross_t_p99': 2.0530767249903885, 'net_t_p95': -1.6212958835177613, 'sharpe_sd': 0.47756475543699045}
+{
+ "planted_future_H4_delay0": {
+  "gross_sharpe": 26.693762454683185,
+  "gross_t": 32.12369227203368,
+  "net_sharpe": 21.26297652412789
+ },
+ "planted_future_H4_delay1": {
+  "gross_sharpe": 21.74315023140135,
+  "gross_t": 29.765531997887848,
+  "net_sharpe": 15.729465041656733
+ },
+ "misaligned_3H_H4_delay0": {
+  "gross_sharpe": -0.38933391920183896,
+  "gross_t": -0.8827112198810231,
+  "net_sharpe": -9.500613948124595
+ },
+ "misaligned_3H_H4_delay1": {
+  "gross_sharpe": 0.2215276656242371,
+  "gross_t": 0.4736186282679804,
+  "net_sharpe": -8.867985690000923
+ },
+ "planted_future_H24_delay0": {
+  "gross_sharpe": 16.71669878688089,
+  "gross_t": 21.423705258185258,
+  "net_sharpe": 15.347042637956676
+ },
+ "planted_future_H24_delay1": {
+  "gross_sharpe": 15.87971979607324,
+  "gross_t": 20.87129199918175,
+  "net_sharpe": 14.513449028974584
+ },
+ "misaligned_3H_H24_delay0": {
+  "gross_sharpe": -0.6012190745200809,
+  "gross_t": -1.3641695101732576,
+  "net_sharpe": -2.581502312842415
+ },
+ "misaligned_3H_H24_delay1": {
+  "gross_sharpe": -0.5351129072343446,
+  "gross_t": -1.2215388074096154,
+  "net_sharpe": -2.5157856791985815
+ }
+}
