@@ -1,0 +1,8 @@
+job n=2 attempt 0 at +0
+job n=99 attempt 0 at +0
+job n=2 attempt 1 at +2.03s (gap 2.03s)
+job n=99 attempt 1 at +2.03s (gap 2.03s)
+job n=2 attempt 2 at +6.07s (gap 4.04s)
+job n=99 attempt 2 at +6.06s (gap 4.04s)
+job n=99 attempt 3 at +14.12s (gap 8.05s)
+job n=99 attempt 4 at +30.21s (gap 16.09s)

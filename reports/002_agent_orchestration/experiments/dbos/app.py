@@ -38,7 +38,7 @@ def pipeline(task: int) -> str:
     return review(task, r)
 
 def main():
-    cfg: DBOSConfig = {"name": "labapp", "system_database_url": DB, "application_version": "v1",
+    cfg: DBOSConfig = {"name": "labapp", "system_database_url": DB, "application_version": os.environ.get("APP_VER","v1"),
                        "executor_id": os.environ.get("EXEC_ID", "w1")}
     DBOS(config=cfg)
     DBOS.launch()

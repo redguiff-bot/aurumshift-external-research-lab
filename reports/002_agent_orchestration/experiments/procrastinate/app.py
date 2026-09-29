@@ -32,7 +32,7 @@ async def flaky_placeholder(ctx, n: int): pass
           retry=RetryStrategy(max_attempts=4, exponential_wait=2))  # waits 2,4,8 s
 async def flaky2(ctx, n: int):
     side("flaky2", n, ctx.job.attempts)
-    if ctx.job.attempts < int(os.environ.get("FAIL_TIMES", "2")):
+    if ctx.job.attempts < n:  # n = number of times to fail
         raise RuntimeError(f"transient failure attempt {ctx.job.attempts}")
 
 if os.environ.get("RETRY_STALLED") == "1":
