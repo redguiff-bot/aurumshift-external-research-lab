@@ -1,0 +1,13 @@
+                                    cand            target     n       first        last  coef_s     t_s  p_incr  p_univ  react_past  oos_n  oos_r2_base  oos_r2_full  oos_gain_pct    dm_t  dm_p_onesided
+0        eia_crude_stock_surprise_vs_WTI     release_day:y  1026  2007-01-03  2026-09-16 -0.0041 -4.6047  0.0000  0.0164      0.0291    626      -0.0158      -0.0068        0.8880  0.7702         0.2206
+1        eia_crude_stock_surprise_vs_WTI  release_day:absy  1026  2007-01-03  2026-09-16 -0.0003 -0.5278  0.5976  0.1389      0.0291    626       0.1665       0.1655       -0.1249 -0.8431         0.8004
+2        eia_crude_stock_surprise_vs_WTI        next_day:y  1026  2007-01-04  2026-09-17 -0.0000 -0.0548  0.9563  0.5313      0.0413    626      -0.0115      -0.0138       -0.2324 -0.6674         0.7477
+3        eia_crude_stock_surprise_vs_WTI     next_day:absy  1026  2007-01-04  2026-09-17  0.0000  0.0271  0.9784  0.0327      0.0413    626       0.1347       0.1314       -0.3831 -0.8695         0.8077
+4   eia_gas_storage_surprise_vs_HenryHub     release_day:y   661  2014-01-09  2026-09-17  0.0094  2.2911  0.0220  0.0395      0.0677    261      -0.1243      -0.1037        1.8300  1.1375         0.1277
+5   eia_gas_storage_surprise_vs_HenryHub  release_day:absy   661  2014-01-09  2026-09-17 -0.0011 -0.3050  0.7603  0.3309      0.0677    261       0.0494       0.0385       -1.1488 -1.7357         0.9587
+6   eia_gas_storage_surprise_vs_HenryHub        next_day:y   661  2014-01-10  2026-09-18 -0.0004 -0.0854  0.9319  0.6239      0.0394    261      -0.0278      -0.0328       -0.4805 -1.8553         0.9682
+7   eia_gas_storage_surprise_vs_HenryHub     next_day:absy   661  2014-01-10  2026-09-18 -0.0111 -2.3438  0.0191  0.0320      0.0394    261       0.0281       0.0379        1.0086  1.2269         0.1099
+8     cpc_hdd_weekly_anomaly_vs_HenryHub     release_day:y   902  2007-04-09  2026-09-21 -0.0158 -2.3740  0.0176  0.0329      0.0073    502      -0.1889      -0.1703        1.5711  1.3114         0.0949
+9     cpc_hdd_weekly_anomaly_vs_HenryHub  release_day:absy   902  2007-04-09  2026-09-21  0.0136  2.2160  0.0267  0.0226      0.0073    502      -0.0640      -0.0399        2.2691  1.4874         0.0685
+10    cpc_hdd_weekly_anomaly_vs_HenryHub        next_day:y   902  2007-04-10  2026-09-22 -0.0023 -0.4976  0.6188  0.3582      0.0420    502      -0.0495      -0.0542       -0.4468 -1.1041         0.8652
+11    cpc_hdd_weekly_anomaly_vs_HenryHub     next_day:absy   902  2007-04-10  2026-09-22  0.0028  0.7406  0.4589  0.4739      0.0420    502       0.1180       0.1127       -0.6056 -0.7615         0.7768

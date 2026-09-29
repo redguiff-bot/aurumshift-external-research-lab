@@ -1,0 +1,272 @@
+{
+ "gdelt_gkg": [
+  {
+   "stamp": "20160101120000",
+   "status": 200,
+   "rows": 1470,
+   "last_modified": "2016-01-01 11:50:37",
+   "lm_minus_nominal_min": -9.4,
+   "distinct_V21DATE": [
+    "20160101120000"
+   ],
+   "crypto_mention_rows": 1,
+   "bytes": 5460168,
+   "first_col_sample": [
+    "20160101120000-0",
+    "20160101120000"
+   ]
+  },
+  {
+   "stamp": "20180601120000",
+   "status": 200,
+   "rows": 2872,
+   "last_modified": "2018-06-01 11:55:27",
+   "lm_minus_nominal_min": -4.5,
+   "distinct_V21DATE": [
+    "20180601120000"
+   ],
+   "crypto_mention_rows": 20,
+   "bytes": 11927205,
+   "first_col_sample": [
+    "20180601120000-0",
+    "20180601120000"
+   ]
+  },
+  {
+   "stamp": "20200601120000",
+   "status": 200,
+   "rows": 2032,
+   "last_modified": "2020-06-01 11:54:34",
+   "lm_minus_nominal_min": -5.4,
+   "distinct_V21DATE": [
+    "20200601120000"
+   ],
+   "crypto_mention_rows": 0,
+   "bytes": 7890400,
+   "first_col_sample": [
+    "20200601120000-0",
+    "20200601120000"
+   ]
+  },
+  {
+   "stamp": "20220601120000",
+   "status": 200,
+   "rows": 1280,
+   "last_modified": "2022-06-01 11:51:49",
+   "lm_minus_nominal_min": -8.2,
+   "distinct_V21DATE": [
+    "20220601120000"
+   ],
+   "crypto_mention_rows": 6,
+   "bytes": 5261906,
+   "first_col_sample": [
+    "20220601120000-0",
+    "20220601120000"
+   ]
+  },
+  {
+   "stamp": "20240601120000",
+   "status": 200,
+   "rows": 942,
+   "last_modified": "2024-06-01 11:49:57",
+   "lm_minus_nominal_min": -10.1,
+   "distinct_V21DATE": [
+    "20240601120000"
+   ],
+   "crypto_mention_rows": 4,
+   "bytes": 3732584,
+   "first_col_sample": [
+    "20240601120000-0",
+    "20240601120000"
+   ]
+  },
+  {
+   "stamp": "20260601120000",
+   "status": 200,
+   "rows": 1218,
+   "last_modified": "2026-06-01 11:50:02",
+   "lm_minus_nominal_min": -10.0,
+   "distinct_V21DATE": [
+    "20260601120000"
+   ],
+   "crypto_mention_rows": 10,
+   "bytes": 5105266,
+   "first_col_sample": [
+    "20260601120000-0",
+    "20260601120000"
+   ]
+  },
+  {
+   "stamp": "20260928120000",
+   "status": 200,
+   "rows": 1384,
+   "last_modified": "2026-09-28 11:50:01",
+   "lm_minus_nominal_min": -10.0,
+   "distinct_V21DATE": [
+    "20260928120000"
+   ],
+   "crypto_mention_rows": 16,
+   "bytes": 5736056,
+   "first_col_sample": [
+    "20260928120000-0",
+    "20260928120000"
+   ]
+  }
+ ],
+ "gharchive": {
+  "events": 122625,
+  "first_created": "2026-09-27T12:00:00Z",
+  "last_created": "2026-09-27T12:59:57Z",
+  "last_modified": "2026-09-27 13:05:08",
+  "lm_minus_hour_end_min": 5.1,
+  "types": {
+   "PushEvent": 101642,
+   "CreateEvent": 15029,
+   "DeleteEvent": 3723,
+   "PullRequestEvent": 756,
+   "IssueCommentEvent": 474,
+   "IssuesEvent": 361
+  },
+  "bytes": 18251047
+ },
+ "binance_vision": {
+  "spot_kline_1d": {
+   "n": 40,
+   "restated_gt3d": 4,
+   "median_lag_days": -0.3,
+   "max_lag_days": 943.16
+  },
+  "um_metrics": {
+   "n": 40,
+   "restated_gt3d": 33,
+   "median_lag_days": 371.45,
+   "max_lag_days": 1897.48
+  }
+ },
+ "cftc": {
+  "rows": 442,
+  "bulk_loaded_rows": 231,
+  "first_real_stamp_row_date": "2022-09-13",
+  "real_rows": 211,
+  "real_lag_days_median": 3.813094583333333,
+  "real_lag_days_p90": 6.854776076388889,
+  "real_lag_days_max": 50.854681238425925,
+  "weekday_of_created": {
+   "Friday": 183,
+   "Monday": 16,
+   "Tuesday": 6,
+   "Wednesday": 5,
+   "Thursday": 1
+  }
+ },
+ "coinmetrics": {
+  "completion_lag_h_median_by_year": {
+   "2020": 2807.19,
+   "2021": 4.0,
+   "2022": 5.43,
+   "2023": 5.21,
+   "2024": 3.72,
+   "2025": 3.0,
+   "2026": 3.0
+  },
+  "backfilled_rows_lag_gt_72h": 178,
+  "rows": 2219,
+  "status_values": {
+   "flash": 2219
+  },
+  "status_time_month_counts": {
+   "2026-04": 2067,
+   "2026-05": 31,
+   "2026-06": 30,
+   "2026-07": 31,
+   "2026-08": 31,
+   "2026-09": 29
+  },
+  "rows_recomputed_after_completion_gt_30d": 2024
+ },
+ "prediction_markets": {
+  "kalshi_kxfed_settled_markets_first_page": 22,
+  "kalshi_candles": {
+   "status": 200,
+   "n": 316,
+   "open": "2025-08-06 14:30:00+00:00",
+   "close": "2026-09-16 17:55:00+00:00",
+   "ticker": "KXFED-26SEP-T5.25"
+  },
+  "kalshi_market_keys_time": {
+   "close_time": "2026-09-16T17:55:00Z",
+   "created_time": "2025-08-06T14:28:40.659503Z",
+   "expected_expiration_time": "2026-09-16T18:05:00Z",
+   "expiration_time": "2026-09-23T18:05:00Z",
+   "latest_expiration_time": "2026-09-23T18:05:00Z",
+   "occurrence_datetime": "2026-09-16T17:54:42.998Z",
+   "open_time": "2025-08-06T14:30:00Z",
+   "settlement_timer_seconds": 300,
+   "settlement_ts": "2026-09-16T18:20:58.459351Z",
+   "updated_time": "2026-09-16T18:20:58.506931Z"
+  },
+  "polymarket_fed_events": 5
+ },
+ "rss_retention": {
+  "hackernews_algolia": {
+   "items": 100,
+   "span_hours": 1940.1
+  },
+  "reddit_rss": {
+   "items": 25,
+   "span_hours": 22.6
+  },
+  "stocktwits_stream": {
+   "items": 30,
+   "span_hours": 0.5
+  },
+  "mastodon_tag_bitcoin": {
+   "items": 40,
+   "span_hours": 14.9
+  },
+  "rss_bbc_business": {
+   "items": 52,
+   "span_hours": 2178.2
+  },
+  "rss_cointelegraph": {
+   "items": 30,
+   "span_hours": 32.2
+  },
+  "rss_coindesk": {
+   "items": 25,
+   "span_hours": 32.9
+  },
+  "rss_decrypt": {
+   "items": 56,
+   "span_hours": 6578.1
+  },
+  "rss_federal_reserve_press": {
+   "items": 20,
+   "status": 200,
+   "note": "no parsable timestamps or blocked"
+  },
+  "rss_sec_press": {
+   "items": 25,
+   "span_hours": 1464.0
+  },
+  "rss_treasury_press": {
+   "items": null,
+   "status": 404,
+   "note": "no parsable timestamps or blocked"
+  },
+  "rss_ecb_press": {
+   "items": 15,
+   "span_hours": 355.0
+  }
+ },
+ "wayback": {
+  "fng": {
+   "status": 429,
+   "body": "<html><body><h1>429 Too Many Requests</h1>\nYou have sent too many requests in a given amount of time.\n</body></html>\n"
+  },
+  "llama_stables": {
+   "status": 429,
+   "body": "<html><body><h1>429 Too Many Requests</h1>\nYou have sent too many requests in a given amount of time.\n</body></html>\n"
+  }
+ }
+}

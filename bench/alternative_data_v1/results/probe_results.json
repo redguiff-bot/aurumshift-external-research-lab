@@ -1,0 +1,3784 @@
+[
+ {
+  "id": "coinmetrics_community",
+  "cat": "on-chain",
+  "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics",
+  "params": {
+   "assets": "btc",
+   "metrics": "FlowInExUSD,FlowOutExUSD,SplyExUSD,AdrActCnt,AssetCompletionTime",
+   "frequency": "1d",
+   "start_time": "2009-01-01",
+   "page_size": 10000,
+   "paging_from": "start"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    848
+   ],
+   [
+    200,
+    1929
+   ],
+   [
+    200,
+    762
+   ]
+  ],
+  "status": 200,
+  "bytes": 3154123,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:35:44 GMT",
+   "cache-control": "no-cache",
+   "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+   "x-ratelimit-limit": "6000, 6000;w=20;comment=\"sliding window\"",
+   "x-ratelimit-remaining": "5999",
+   "x-ratelimit-reset": "20",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": 848,
+  "latency_ms_all": [
+   848,
+   1929,
+   762
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 6478,
+  "first_utc": "2009-01-03T00:00:00",
+  "last_utc": "2026-09-28T00:00:00",
+  "last_age_h": 42.59,
+  "probed_utc": "2026-09-29T18:35:44.459741Z"
+ },
+ {
+  "id": "blockchain_com_charts",
+  "cat": "on-chain",
+  "url": "https://api.blockchain.info/charts/n-transactions",
+  "params": {
+   "timespan": "all",
+   "sampled": "false",
+   "format": "json"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    883
+   ],
+   [
+    200,
+    435
+   ],
+   [
+    200,
+    513
+   ]
+  ],
+  "status": 200,
+  "bytes": 189435,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:35:49 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "Server": "cloudflare",
+   "Age": "3",
+   "last-modified": "Tue, 29 Sep 2026 18:35:45 GMT",
+   "expires": "Tue, 29 Sep 2026 22:35:49 GMT"
+  },
+  "latency_ms_med": 513,
+  "latency_ms_all": [
+   883,
+   435,
+   513
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 6454,
+  "first_utc": "2009-01-17T00:00:00",
+  "last_utc": "2026-09-28T00:00:00",
+  "last_age_h": 42.59,
+  "probed_utc": "2026-09-29T18:35:49.197665Z"
+ },
+ {
+  "id": "mempool_space_blocks",
+  "cat": "mempool",
+  "url": "https://mempool.space/api/v1/blocks",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    466
+   ],
+   [
+    200,
+    491
+   ],
+   [
+    200,
+    545
+   ]
+  ],
+  "status": 200,
+  "bytes": 30480,
+  "headers": {
+   "Server": "nginx",
+   "Date": "Tue, 29 Sep 2026 18:35:53 GMT",
+   "Expires": "Tue, 29 Sep 2026 18:35:52 GMT",
+   "ETag": "W/\"7710-QkTKG6OhtqYwwHsF1WHeNg0wkCA\"",
+   "Cache-Control": "no-cache, public"
+  },
+  "latency_ms_med": 491,
+  "latency_ms_all": [
+   466,
+   491,
+   545
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 15,
+  "first_utc": "2026-09-29T15:51:29",
+  "last_utc": "2026-09-29T18:30:24",
+  "last_age_h": 0.09,
+  "probed_utc": "2026-09-29T18:35:53.603164Z"
+ },
+ {
+  "id": "mempool_space_mempool_snapshot",
+  "cat": "mempool",
+  "url": "https://mempool.space/api/mempool",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    440
+   ],
+   [
+    200,
+    515
+   ],
+   [
+    200,
+    657
+   ]
+  ],
+  "status": 200,
+  "bytes": 4302,
+  "headers": {
+   "Server": "nginx",
+   "Date": "Tue, 29 Sep 2026 18:35:58 GMT",
+   "cache-control": "max-age=1, public",
+   "Expires": "Tue, 29 Sep 2026 18:35:59 GMT"
+  },
+  "latency_ms_med": 515,
+  "latency_ms_all": [
+   440,
+   515,
+   657
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 86679,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:35:58.118916Z"
+ },
+ {
+  "id": "mempool_space_fees_recommended",
+  "cat": "mempool",
+  "url": "https://mempool.space/api/v1/fees/recommended",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    562
+   ],
+   [
+    200,
+    457
+   ],
+   [
+    200,
+    498
+   ]
+  ],
+  "status": 200,
+  "bytes": 74,
+  "headers": {
+   "Server": "nginx",
+   "Date": "Tue, 29 Sep 2026 18:36:02 GMT",
+   "ETag": "W/\"4a-JSIyI0u1hsJVogiisdJUpsL7XsI\"",
+   "Expires": "Tue, 29 Sep 2026 18:36:03 GMT",
+   "Cache-Control": "max-age=1, public"
+  },
+  "latency_ms_med": 498,
+  "latency_ms_all": [
+   562,
+   457,
+   498
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 5,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:36:02.539327Z"
+ },
+ {
+  "id": "mempool_space_hashrate_3y",
+  "cat": "on-chain",
+  "url": "https://mempool.space/api/v1/mining/hashrate/3y",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    557
+   ],
+   [
+    200,
+    485
+   ],
+   [
+    200,
+    452
+   ]
+  ],
+  "status": 200,
+  "bytes": 74734,
+  "headers": {
+   "Server": "nginx",
+   "Date": "Tue, 29 Sep 2026 18:36:06 GMT",
+   "Cache-control": "max-age=120, public",
+   "Expires": "Tue, 29 Sep 2026 18:38:06 GMT",
+   "ETag": "W/\"123ee-zDOPPxD9VAuqlqHePrj63QTVb78\""
+  },
+  "latency_ms_med": 485,
+  "latency_ms_all": [
+   557,
+   485,
+   452
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1096,
+  "first_utc": "2023-09-30T00:00:00",
+  "last_utc": "2026-09-29T00:00:00",
+  "last_age_h": 18.59,
+  "probed_utc": "2026-09-29T18:36:06.939176Z"
+ },
+ {
+  "id": "mempool_space_blockfees_all",
+  "cat": "on-chain",
+  "url": "https://mempool.space/api/v1/mining/blocks/fees/all",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    599
+   ],
+   [
+    200,
+    477
+   ],
+   [
+    200,
+    524
+   ]
+  ],
+  "status": 200,
+  "bytes": 482141,
+  "headers": {
+   "Server": "nginx",
+   "Date": "Tue, 29 Sep 2026 18:36:11 GMT",
+   "Cache-control": "max-age=120, public",
+   "Expires": "Tue, 29 Sep 2026 18:38:11 GMT",
+   "ETag": "W/\"75b5d-IkM6374r1KTCc/z8SNbmM3IiU2M\""
+  },
+  "latency_ms_med": 524,
+  "latency_ms_all": [
+   599,
+   477,
+   524
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 6474,
+  "first_utc": "2009-01-03T18:15:05",
+  "last_utc": "2026-09-29T09:00:32",
+  "last_age_h": 9.59,
+  "probed_utc": "2026-09-29T18:36:11.450834Z"
+ },
+ {
+  "id": "blockstream_esplora_tip",
+  "cat": "on-chain",
+  "url": "https://blockstream.info/api/blocks/tip/height",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    681
+   ],
+   [
+    200,
+    817
+   ],
+   [
+    200,
+    730
+   ]
+  ],
+  "status": 200,
+  "bytes": 6,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:36:16 GMT",
+   "cache-control": "public, max-age=10"
+  },
+  "latency_ms_med": 730,
+  "latency_ms_all": [
+   681,
+   817,
+   730
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:36:16.582429Z"
+ },
+ {
+  "id": "blockchair_stats",
+  "cat": "on-chain",
+  "url": "https://api.blockchair.com/bitcoin/stats",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    926
+   ],
+   [
+    200,
+    1110
+   ],
+   [
+    200,
+    883
+   ]
+  ],
+  "status": 200,
+  "bytes": 1889,
+  "headers": {
+   "Server": "nginx/1.18.0",
+   "Cache-Control": "no-cache, private",
+   "Date": "Tue, 29 Sep 2026 18:36:22 GMT"
+  },
+  "latency_ms_med": 926,
+  "latency_ms_all": [
+   926,
+   1110,
+   883
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1,
+  "first_utc": null,
+  "last_utc": "2026-09-29T18:36:19",
+  "last_age_h": -0.01,
+  "probed_utc": "2026-09-29T18:36:22.405932Z"
+ },
+ {
+  "id": "etherscan_free_noKey",
+  "cat": "on-chain",
+  "url": "https://api.etherscan.io/api",
+  "params": {
+   "module": "proxy",
+   "action": "eth_blockNumber"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    579
+   ],
+   [
+    200,
+    535
+   ],
+   [
+    200,
+    655
+   ]
+  ],
+  "status": 200,
+  "bytes": 155,
+  "headers": {
+   "Server": "nginx",
+   "Date": "Tue, 29 Sep 2026 18:36:27 GMT",
+   "Cache-Control": "private"
+  },
+  "latency_ms_med": 579,
+  "latency_ms_all": [
+   579,
+   535,
+   655
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:36:27.078221Z"
+ },
+ {
+  "id": "ethereum_publicnode_rpc",
+  "cat": "on-chain",
+  "url": "https://ethereum-rpc.publicnode.com",
+  "params": null,
+  "method": "POST",
+  "samples": [
+   [
+    200,
+    529
+   ],
+   [
+    200,
+    315
+   ],
+   [
+    200,
+    498
+   ]
+  ],
+  "status": 200,
+  "bytes": 30184,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:36:31 GMT",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": 498,
+  "latency_ms_all": [
+   529,
+   315,
+   498
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1,
+  "first_utc": null,
+  "last_utc": "2026-09-29T18:36:23",
+  "last_age_h": -0.01,
+  "probed_utc": "2026-09-29T18:36:31.323490Z"
+ },
+ {
+  "id": "defillama_stablecoins_total",
+  "cat": "on-chain",
+  "url": "https://stablecoins.llama.fi/stablecoincharts/all",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    716
+   ],
+   [
+    200,
+    611
+   ],
+   [
+    200,
+    657
+   ]
+  ],
+  "status": 200,
+  "bytes": 1295823,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:36:36 GMT",
+   "Cache-Control": "public, max-age=1798",
+   "etag": "W/\"6abbf3cf-13c5cf\"",
+   "last-modified": "Tue, 29 Sep 2026 17:22:23 GMT",
+   "Server": "cloudflare",
+   "Age": "997"
+  },
+  "latency_ms_med": 657,
+  "latency_ms_all": [
+   716,
+   611,
+   657
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 3227,
+  "first_utc": "2017-11-29T00:00:00",
+  "last_utc": "2026-09-29T00:00:00",
+  "last_age_h": 18.59,
+  "probed_utc": "2026-09-29T18:36:36.224013Z"
+ },
+ {
+  "id": "defillama_chain_tvl",
+  "cat": "on-chain",
+  "url": "https://api.llama.fi/v2/historicalChainTvl",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    475
+   ],
+   [
+    200,
+    561
+   ],
+   [
+    200,
+    514
+   ]
+  ],
+  "status": 200,
+  "bytes": 122138,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:36:40 GMT",
+   "Cache-Control": "public, max-age=1798",
+   "etag": "\"6abbfe14-1dd1a\"",
+   "last-modified": "Tue, 29 Sep 2026 18:06:12 GMT",
+   "Server": "cloudflare",
+   "Age": "690"
+  },
+  "latency_ms_med": 514,
+  "latency_ms_all": [
+   475,
+   561,
+   514
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 3290,
+  "first_utc": "2017-09-27T00:00:00",
+  "last_utc": "2026-09-29T00:00:00",
+  "last_age_h": 18.59,
+  "probed_utc": "2026-09-29T18:36:40.679135Z"
+ },
+ {
+  "id": "defillama_dex_volume",
+  "cat": "on-chain",
+  "url": "https://api.llama.fi/overview/dexs",
+  "params": {
+   "excludeTotalDataChartBreakdown": "true"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    674
+   ],
+   [
+    200,
+    574
+   ],
+   [
+    200,
+    640
+   ]
+  ],
+  "status": 200,
+  "bytes": 2059633,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:36:45 GMT",
+   "expires": "Tue, 29 Sep 2026 19:06:16 GMT",
+   "Server": "cloudflare",
+   "Age": "28",
+   "last-modified": "Tue, 29 Sep 2026 18:36:17 GMT"
+  },
+  "latency_ms_med": 640,
+  "latency_ms_all": [
+   674,
+   574,
+   640
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 4608,
+  "first_utc": "2014-02-17T00:00:00",
+  "last_utc": "2026-09-29T00:00:00",
+  "last_age_h": 18.59,
+  "probed_utc": "2026-09-29T18:36:45.521607Z"
+ },
+ {
+  "id": "defillama_bridges",
+  "cat": "on-chain",
+  "url": "https://bridges.llama.fi/bridges",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    402,
+    541
+   ]
+  ],
+  "status": 402,
+  "bytes": 66,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:36:46 GMT",
+   "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+   "Expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "Upgrade to the paid API plan at https://defillama.com/subscription",
+  "probed_utc": "2026-09-29T18:36:46.565789Z"
+ },
+ {
+  "id": "glassnode_api",
+  "cat": "on-chain",
+  "url": "https://api.glassnode.com/v1/metrics/addresses/active_count",
+  "params": {
+   "a": "BTC"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    401,
+    631
+   ]
+  ],
+  "status": 401,
+  "bytes": 1110,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:36:47 GMT",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "<html>\r\n<head><title>401 Authorization Required</title></head>\r\n<body>\r\n<center><h1>401 Authorization Required</h1></center>\r\n<hr><center>nginx</center>\r\n<script>(function(){function c(){var b=a.conte",
+  "probed_utc": "2026-09-29T18:36:47.700452Z"
+ },
+ {
+  "id": "beaconcha_in",
+  "cat": "on-chain",
+  "url": "https://beaconcha.in/api/v1/epoch/latest",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    401,
+    609
+   ]
+  ],
+  "status": 401,
+  "bytes": 96,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:36:48 GMT",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "{\"error\":\"Unauthorized: a valid API key is required. Create one at https://beaconcha.in/login\"}\n",
+  "probed_utc": "2026-09-29T18:36:48.812233Z"
+ },
+ {
+  "id": "binance_vision_um_metrics",
+  "cat": "exchange flows",
+  "url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2026-09-20.zip",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    584
+   ],
+   [
+    200,
+    708
+   ],
+   [
+    200,
+    625
+   ]
+  ],
+  "status": 200,
+  "bytes": 11283,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:36:54 GMT",
+   "Last-Modified": "Mon, 21 Sep 2026 07:05:56 GMT",
+   "ETag": "\"5673d9340394f739d14a2acf69fe9473\"",
+   "Server": "AmazonS3"
+  },
+  "latency_ms_med": 625,
+  "latency_ms_all": [
+   584,
+   708,
+   625
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 288,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:36:53.634243Z"
+ },
+ {
+  "id": "binance_fapi_openinterest_hist",
+  "cat": "exchange flows",
+  "url": "https://fapi.binance.com/futures/data/openInterestHist",
+  "params": {
+   "symbol": "BTCUSDT",
+   "period": "1d",
+   "limit": 5
+  },
+  "method": "GET",
+  "samples": [
+   [
+    451,
+    877
+   ]
+  ],
+  "status": 451,
+  "bytes": 224,
+  "headers": {
+   "Server": "CloudFront",
+   "Date": "Tue, 29 Sep 2026 18:36:54 GMT"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "{\n  \"code\": 0,\n  \"msg\": \"Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received t",
+  "probed_utc": "2026-09-29T18:36:55.015150Z"
+ },
+ {
+  "id": "okx_rubik_longshort",
+  "cat": "exchange flows",
+  "url": "https://www.okx.com/api/v5/rubik/stat/contracts/long-short-account-ratio",
+  "params": {
+   "ccy": "BTC",
+   "period": "1D"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    716
+   ],
+   [
+    200,
+    617
+   ],
+   [
+    200,
+    616
+   ]
+  ],
+  "status": 200,
+  "bytes": 4510,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:36:59 GMT",
+   "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+   "expires": "0",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": 617,
+  "latency_ms_all": [
+   716,
+   617,
+   616
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 180,
+  "first_utc": "2026-04-03T16:00:00",
+  "last_utc": "2026-09-29T16:00:00",
+  "last_age_h": 2.59,
+  "probed_utc": "2026-09-29T18:36:59.868173Z"
+ },
+ {
+  "id": "okx_rubik_taker_volume",
+  "cat": "exchange flows",
+  "url": "https://www.okx.com/api/v5/rubik/stat/taker-volume",
+  "params": {
+   "ccy": "BTC",
+   "instType": "CONTRACTS",
+   "period": "1D"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    671
+   ],
+   [
+    200,
+    600
+   ],
+   [
+    200,
+    646
+   ]
+  ],
+  "status": 200,
+  "bytes": 3893,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:37:04 GMT",
+   "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+   "expires": "0",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": 646,
+  "latency_ms_all": [
+   671,
+   600,
+   646
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 72,
+  "first_utc": "2026-07-20T16:00:00",
+  "last_utc": "2026-09-29T16:00:00",
+  "last_age_h": 2.59,
+  "probed_utc": "2026-09-29T18:37:04.687963Z"
+ },
+ {
+  "id": "okx_funding_history",
+  "cat": "exchange flows",
+  "url": "https://www.okx.com/api/v5/public/funding-rate-history",
+  "params": {
+   "instId": "BTC-USDT-SWAP",
+   "limit": 100
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    658
+   ],
+   [
+    200,
+    545
+   ],
+   [
+    200,
+    689
+   ]
+  ],
+  "status": 200,
+  "bytes": 19498,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:37:09 GMT",
+   "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+   "Expires": "0",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": 658,
+  "latency_ms_all": [
+   658,
+   545,
+   689
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 100,
+  "first_utc": "2026-08-27T16:00:00",
+  "last_utc": "2026-09-29T16:00:00",
+  "last_age_h": 2.59,
+  "probed_utc": "2026-09-29T18:37:09.483680Z"
+ },
+ {
+  "id": "bitfinex_margin_positions",
+  "cat": "exchange flows",
+  "url": "https://api-pub.bitfinex.com/v2/stats1/pos.size:1m:tBTCUSD:long/hist",
+  "params": {
+   "limit": 10000
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    1517
+   ],
+   [
+    200,
+    375
+   ],
+   [
+    200,
+    601
+   ]
+  ],
+  "status": 200,
+  "bytes": 309171,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:37:14 GMT",
+   "Server": "cloudflare",
+   "Age": "3",
+   "last-modified": "Tue, 29 Sep 2026 18:37:11 GMT"
+  },
+  "latency_ms_med": 601,
+  "latency_ms_all": [
+   1517,
+   375,
+   601
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 10000,
+  "first_utc": "2026-09-22T19:58:00",
+  "last_utc": "2026-09-29T18:37:00",
+  "last_age_h": -0.02,
+  "probed_utc": "2026-09-29T18:37:14.886573Z"
+ },
+ {
+  "id": "deribit_dvol",
+  "cat": "exchange flows",
+  "url": "https://www.deribit.com/api/v2/public/get_volatility_index_data",
+  "params": {
+   "currency": "BTC",
+   "start_timestamp": 1600000000000,
+   "end_timestamp": 1790706938489,
+   "resolution": 86400
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    625
+   ],
+   [
+    200,
+    531
+   ],
+   [
+    200,
+    676
+   ]
+  ],
+  "status": 200,
+  "bytes": 39776,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:37:19 GMT",
+   "Server": "cloudflare",
+   "Cache-Control": "no-store"
+  },
+  "latency_ms_med": 625,
+  "latency_ms_all": [
+   625,
+   531,
+   676
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1000,
+  "first_utc": "2024-01-04T00:00:00",
+  "last_utc": "2026-09-29T00:00:00",
+  "last_age_h": 18.59,
+  "probed_utc": "2026-09-29T18:37:19.624443Z"
+ },
+ {
+  "id": "deribit_book_summary_options",
+  "cat": "exchange flows",
+  "url": "https://www.deribit.com/api/v2/public/get_book_summary_by_currency",
+  "params": {
+   "currency": "BTC",
+   "kind": "option"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    585
+   ],
+   [
+    200,
+    665
+   ],
+   [
+    200,
+    769
+   ]
+  ],
+  "status": 200,
+  "bytes": 421220,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:37:24 GMT",
+   "Server": "cloudflare",
+   "Cache-Control": "no-store, public, max-age=1"
+  },
+  "latency_ms_med": 665,
+  "latency_ms_all": [
+   585,
+   665,
+   769
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 944,
+  "first_utc": "2026-09-29T18:37:22.578000",
+  "last_utc": "2026-09-29T18:37:22.590000",
+  "last_age_h": -0.03,
+  "probed_utc": "2026-09-29T18:37:24.552273Z"
+ },
+ {
+  "id": "hyperliquid_info_meta",
+  "cat": "exchange flows",
+  "url": "https://api.hyperliquid.xyz/info",
+  "params": null,
+  "method": "POST",
+  "samples": [
+   [
+    200,
+    743
+   ],
+   [
+    200,
+    671
+   ],
+   [
+    200,
+    715
+   ]
+  ],
+  "status": 200,
+  "bytes": 72211,
+  "headers": {
+   "Server": "nginx/1.22.1",
+   "Date": "Tue, 29 Sep 2026 18:37:29 GMT"
+  },
+  "latency_ms_med": 715,
+  "latency_ms_all": [
+   743,
+   671,
+   715
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 234,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:37:29.586530Z"
+ },
+ {
+  "id": "bybit_v5",
+  "cat": "exchange flows",
+  "url": "https://api.bybit.com/v5/market/open-interest",
+  "params": {
+   "category": "linear",
+   "symbol": "BTCUSDT",
+   "intervalTime": "1d",
+   "limit": 5
+  },
+  "method": "GET",
+  "samples": [
+   [
+    403,
+    405
+   ]
+  ],
+  "status": 403,
+  "bytes": 96,
+  "headers": {
+   "Server": "CloudFront",
+   "Date": "Tue, 29 Sep 2026 18:37:30 GMT"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "{\n    error:The Amazon CloudFront distribution is configured to block access from your country\n}",
+  "probed_utc": "2026-09-29T18:37:30.495940Z"
+ },
+ {
+  "id": "github_rest_unauth",
+  "cat": "developer/GitHub",
+  "url": "https://api.github.com/repos/bitcoin/bitcoin/commits",
+  "params": {
+   "per_page": 1
+  },
+  "method": "GET",
+  "samples": [
+   [
+    403,
+    323
+   ]
+  ],
+  "status": 403,
+  "bytes": 378,
+  "headers": {},
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "{\"message\":\"GitHub access to this repository is not enabled for this session. Use add_repo to request access. If add_repo answers that read access is already available and you need GitHub API or write",
+  "probed_utc": "2026-09-29T18:37:31.322614Z"
+ },
+ {
+  "id": "gharchive_hourly",
+  "cat": "developer/GitHub",
+  "url": "https://data.gharchive.org/2026-09-27-12.json.gz",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    780
+   ],
+   [
+    200,
+    547
+   ],
+   [
+    200,
+    878
+   ]
+  ],
+  "status": 200,
+  "bytes": 18251047,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:37:36 GMT",
+   "expires": "Tue, 29 Sep 2026 19:37:36 GMT",
+   "Cache-Control": "public, max-age=14400",
+   "last-modified": "Sun, 27 Sep 2026 13:05:08 GMT",
+   "etag": "\"0e8f1bcf5e5bc38a97298923e317a35e\"",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": 780,
+  "latency_ms_all": [
+   780,
+   547,
+   878
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:37:36.432867Z"
+ },
+ {
+  "id": "npm_downloads_api",
+  "cat": "developer/GitHub",
+  "url": "https://api.npmjs.org/downloads/range/2020-09-01:2022-02-28/ethers",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    595
+   ],
+   [
+    200,
+    594
+   ],
+   [
+    200,
+    502
+   ]
+  ],
+  "status": 200,
+  "bytes": 21336,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:37:41 GMT",
+   "Age": "3",
+   "Cache-Control": "public, max-age=300",
+   "Expires": "Tue, 29 Sep 2026 18:42:41 GMT",
+   "Last-Modified": "Tue, 29 Sep 2026 18:37:37 GMT",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": 594,
+  "latency_ms_all": [
+   595,
+   594,
+   502
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 546,
+  "first_utc": "2020-09-01T00:00:00",
+  "last_utc": "2022-02-28T00:00:00",
+  "last_age_h": 40194.59,
+  "probed_utc": "2026-09-29T18:37:41.029736Z"
+ },
+ {
+  "id": "pypistats_web3",
+  "cat": "developer/GitHub",
+  "url": "https://pypistats.org/api/packages/web3/overall",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    747
+   ],
+   [
+    200,
+    555
+   ],
+   [
+    200,
+    539
+   ]
+  ],
+  "status": 200,
+  "bytes": 25261,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:37:45 GMT",
+   "Server": "gunicorn"
+  },
+  "latency_ms_med": 555,
+  "latency_ms_all": [
+   747,
+   555,
+   539
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 368,
+  "first_utc": "2026-03-29T00:00:00",
+  "last_utc": "2026-09-28T00:00:00",
+  "last_age_h": 42.59,
+  "probed_utc": "2026-09-29T18:37:45.776916Z"
+ },
+ {
+  "id": "crates_io_downloads",
+  "cat": "developer/GitHub",
+  "url": "https://crates.io/api/v1/crates/bitcoin/downloads",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    476
+   ],
+   [
+    200,
+    486
+   ],
+   [
+    200,
+    470
+   ]
+  ],
+  "status": 200,
+  "bytes": 23709,
+  "headers": {
+   "Server": "Heroku",
+   "Date": "Tue, 29 Sep 2026 18:37:50 GMT"
+  },
+  "latency_ms_med": 476,
+  "latency_ms_all": [
+   476,
+   486,
+   470
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 355,
+  "first_utc": "2026-07-02T00:00:00",
+  "last_utc": "2026-09-29T00:00:00",
+  "last_age_h": 18.59,
+  "probed_utc": "2026-09-29T18:37:50.113798Z"
+ },
+ {
+  "id": "wikimedia_pageviews",
+  "cat": "search/trend",
+  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Bitcoin/daily/20150701/20260927",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    429,
+    429
+   ]
+  ],
+  "status": 429,
+  "bytes": 278,
+  "headers": {
+   "retry-after": "7",
+   "date": "Tue, 29 Sep 2026 18:57:52 GMT",
+   "server": "envoy",
+   "age": "1"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "You are making too many requests to the API.\nPlease follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.\nIf you are unsure how to get the access you need, contact ",
+  "probed_utc": "2026-09-29T18:57:53.103276Z"
+ },
+ {
+  "id": "google_trends_dailytrends",
+  "cat": "search/trend",
+  "url": "https://trends.google.com/trends/api/dailytrends",
+  "params": {
+   "geo": "US"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    404,
+    807
+   ]
+  ],
+  "status": 404,
+  "bytes": 134,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:37:52 GMT"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "<!doctype html><meta charset=\"utf-8\"><meta name=viewport content=\"width=device-width, initial-scale=1\"><title>404</title>404 Not Found",
+  "probed_utc": "2026-09-29T18:37:52.380408Z"
+ },
+ {
+  "id": "hackernews_algolia",
+  "cat": "public social",
+  "url": "https://hn.algolia.com/api/v1/search_by_date",
+  "params": {
+   "query": "bitcoin",
+   "tags": "story",
+   "hitsPerPage": 100
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    823
+   ],
+   [
+    200,
+    671
+   ],
+   [
+    200,
+    676
+   ]
+  ],
+  "status": 200,
+  "bytes": 108755,
+  "headers": {
+   "date": "Tue, 29 Sep 2026 18:37:57 GMT",
+   "server": "Google Frontend"
+  },
+  "latency_ms_med": 676,
+  "latency_ms_all": [
+   823,
+   671,
+   676
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 100,
+  "first_utc": "2026-07-10T14:45:45",
+  "last_utc": "2026-09-29T10:49:22",
+  "last_age_h": 7.77,
+  "probed_utc": "2026-09-29T18:37:57.456909Z"
+ },
+ {
+  "id": "reddit_json",
+  "cat": "public social",
+  "url": "https://www.reddit.com/r/Bitcoin/new.json",
+  "params": {
+   "limit": 100
+  },
+  "method": "GET",
+  "samples": [
+   [
+    403,
+    586
+   ]
+  ],
+  "status": 403,
+  "bytes": 189908,
+  "headers": {
+   "Retry-After": "0",
+   "Cache-Control": "private, no-store",
+   "Date": "Tue, 29 Sep 2026 18:37:58 GMT",
+   "Server": "snooserv"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "<body class=theme-beta><div><style>.theme-light,:root{--rem360:22.5rem;--rem320:20rem;--rem192:12rem;--rem144:9rem;--rem128:8rem;--rem96:6rem;--rem90:5.625rem;--rem88:5.5rem;--rem64:4rem;--rem56:3.5re",
+  "probed_utc": "2026-09-29T18:37:58.546813Z"
+ },
+ {
+  "id": "reddit_rss",
+  "cat": "public social",
+  "url": "https://www.reddit.com/r/Bitcoin/new/.rss",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    490
+   ]
+  ],
+  "status": 200,
+  "bytes": 48542,
+  "headers": {
+   "x-ratelimit-remaining": "0.0",
+   "x-ratelimit-reset": "0",
+   "Date": "Tue, 29 Sep 2026 18:37:59 GMT",
+   "Cache-Control": "private, max-age=3600",
+   "Server": "snooserv"
+  },
+  "latency_ms_med": 490,
+  "latency_ms_all": [
+   490
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 25,
+  "first_utc": "2026-09-28T20:00:02",
+  "last_utc": "2026-09-29T18:37:59",
+  "last_age_h": -0.04,
+  "probed_utc": "2026-09-29T18:37:59.540749Z"
+ },
+ {
+  "id": "stocktwits_stream",
+  "cat": "public social",
+  "url": "https://api.stocktwits.com/api/2/streams/symbol/BTC.X.json",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    482
+   ],
+   [
+    200,
+    477
+   ],
+   [
+    200,
+    453
+   ]
+  ],
+  "status": 200,
+  "bytes": 99599,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:38:03 GMT",
+   "etag": "W/\"34ed1b70d8a8681f9199695f01972c47\"",
+   "Cache-Control": "max-age=0, private, must-revalidate",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": 477,
+  "latency_ms_all": [
+   482,
+   477,
+   453
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 30,
+  "first_utc": "2026-09-29T18:07:19",
+  "last_utc": "2026-09-29T18:37:56",
+  "last_age_h": -0.04,
+  "probed_utc": "2026-09-29T18:38:03.857604Z"
+ },
+ {
+  "id": "mastodon_tag_bitcoin",
+  "cat": "public social",
+  "url": "https://mastodon.social/api/v1/timelines/tag/bitcoin",
+  "params": {
+   "limit": 40
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    1104
+   ],
+   [
+    200,
+    557
+   ],
+   [
+    200,
+    420
+   ]
+  ],
+  "status": 200,
+  "bytes": 199896,
+  "headers": {
+   "cache-control": "max-age=15, public, stale-while-revalidate=30, stale-if-error=86400",
+   "etag": "W/\"0e0e98519fa471f2527e3b7083b78c8c\"",
+   "server": "Mastodon",
+   "x-ratelimit-remaining": "299",
+   "x-ratelimit-limit": "300",
+   "x-ratelimit-reset": "2026-09-29T18:40:00.148790Z",
+   "Date": "Tue, 29 Sep 2026 18:38:08 GMT",
+   "Age": "3"
+  },
+  "latency_ms_med": 557,
+  "latency_ms_all": [
+   1104,
+   557,
+   420
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 40,
+  "first_utc": "2026-09-29T03:24:17.399000",
+  "last_utc": "2026-09-29T18:15:21.163000",
+  "last_age_h": 0.34,
+  "probed_utc": "2026-09-29T18:38:08.843586Z"
+ },
+ {
+  "id": "bluesky_search",
+  "cat": "public social",
+  "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts",
+  "params": {
+   "q": "bitcoin",
+   "limit": 25
+  },
+  "method": "GET",
+  "samples": [
+   [
+    403,
+    437
+   ]
+  ],
+  "status": 403,
+  "bytes": 2334,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:38:09 GMT",
+   "Server": "BunnyCDN-PB1-1430",
+   "Cache-Control": "no-cache, no-store, max-age=0"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "<html><head><title>403 Forbidden</title><link href='//fonts.bunny.net/css?family=Rubik:300,400,500' rel='stylesheet' type='text/css'><style>html, body { width: 100%; margin: 0; padding: 0; text-align:",
+  "probed_utc": "2026-09-29T18:38:09.784415Z"
+ },
+ {
+  "id": "4chan_biz_catalog",
+  "cat": "public social",
+  "url": "https://a.4cdn.org/biz/catalog.json",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    582
+   ],
+   [
+    200,
+    627
+   ],
+   [
+    200,
+    516
+   ]
+  ],
+  "status": 200,
+  "bytes": 449552,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:38:14 GMT",
+   "Server": "cloudflare",
+   "last-modified": "Tue, 29 Sep 2026 18:37:34 GMT",
+   "etag": "\"6abc056e-22ca4\"",
+   "cache-control": "max-age=5, stale-while-revalidate=10",
+   "Age": "5"
+  },
+  "latency_ms_med": 582,
+  "latency_ms_all": [
+   582,
+   627,
+   516
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 201,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:38:14.418295Z"
+ },
+ {
+  "id": "lunarcrush_api",
+  "cat": "public social",
+  "url": "https://lunarcrush.com/api4/public/coins/list/v1",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    401,
+    608
+   ]
+  ],
+  "status": 401,
+  "bytes": 56,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:38:15 GMT",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "{\"error\":\"Not authorized: Invalid token provided (CFE)\"}",
+  "probed_utc": "2026-09-29T18:38:15.530279Z"
+ },
+ {
+  "id": "arctic_shift_reddit",
+  "cat": "public social",
+  "url": "https://arctic-shift.photon-reddit.com/api/posts/search",
+  "params": {
+   "subreddit": "Bitcoin",
+   "limit": 50,
+   "after": "2024-06-01"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    1470
+   ]
+  ],
+  "status": 200,
+  "bytes": 168578,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:38:16 GMT",
+   "Server": "cloudflare",
+   "ETag": "W/\"29282-ksq0BBgui+qeDYDzGH/zCW5Zb4I\"",
+   "X-RateLimit-Reset": "44"
+  },
+  "latency_ms_med": 1470,
+  "latency_ms_all": [
+   1470
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 50,
+  "first_utc": "2026-09-28T21:08:44",
+  "last_utc": "2026-09-29T18:13:59",
+  "last_age_h": 0.36,
+  "probed_utc": "2026-09-29T18:38:17.506402Z"
+ },
+ {
+  "id": "gdelt_v2_lastupdate",
+  "cat": "news",
+  "url": "http://data.gdeltproject.org/gdeltv2/lastupdate.txt",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    375
+   ],
+   [
+    200,
+    480
+   ],
+   [
+    200,
+    526
+   ]
+  ],
+  "status": 200,
+  "bytes": 320,
+  "headers": {
+   "date": "Tue, 29 Sep 2026 18:38:21 GMT",
+   "cache-control": "private, max-age=0, no-transform",
+   "expires": "Tue, 29 Sep 2026 18:38:21 GMT",
+   "last-modified": "Tue, 29 Sep 2026 18:35:29 GMT",
+   "etag": "\"6a3c743a66c8a9307dea51b2e5cd3c4c\"",
+   "server": "UploadServer"
+  },
+  "latency_ms_med": 480,
+  "latency_ms_all": [
+   375,
+   480,
+   526
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 3,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:38:21.791683Z"
+ },
+ {
+  "id": "gdelt_gkg_file_2020",
+  "cat": "news",
+  "url": "http://data.gdeltproject.org/gdeltv2/20200601120000.gkg.csv.zip",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    567
+   ],
+   [
+    200,
+    610
+   ],
+   [
+    200,
+    774
+   ]
+  ],
+  "status": 200,
+  "bytes": 7890400,
+  "headers": {
+   "server": "UploadServer",
+   "Date": "Tue, 29 Sep 2026 18:30:05 GMT",
+   "Last-Modified": "Mon, 01 Jun 2020 11:54:34 GMT",
+   "ETag": "\"b76252e321eaee387b2d55cd1a32fc7b\"",
+   "Age": "501",
+   "Cache-Control": "public,max-age=3600"
+  },
+  "latency_ms_med": 610,
+  "latency_ms_all": [
+   567,
+   610,
+   774
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:38:26.649031Z"
+ },
+ {
+  "id": "gdelt_doc_api_timeline",
+  "cat": "news",
+  "url": "https://api.gdeltproject.org/api/v2/doc/doc",
+  "params": {
+   "query": "bitcoin",
+   "mode": "timelinevolraw",
+   "format": "json",
+   "timespan": "3months"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    429,
+    10305
+   ]
+  ],
+  "status": 429,
+  "bytes": 444,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:58:02 GMT",
+   "Server": "GDELT Server"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "Please limit requests to one every 5 seconds or contact kalev.leetaru5@gmail.com for larger queries. All high-traffic users should switch to our ngrams dataset: https://blog.gdeltproject.org/using-the",
+  "probed_utc": "2026-09-29T18:58:03.915733Z"
+ },
+ {
+  "id": "rss_bbc_business",
+  "cat": "RSS",
+  "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    397
+   ],
+   [
+    200,
+    449
+   ],
+   [
+    200,
+    414
+   ]
+  ],
+  "status": 200,
+  "bytes": 37883,
+  "headers": {
+   "Server": "Belfrage",
+   "Cache-Control": "public, max-age=4",
+   "Expires": "Tue, 29 Sep 2026 18:38:46 GMT",
+   "Date": "Tue, 29 Sep 2026 18:38:42 GMT"
+  },
+  "latency_ms_med": 414,
+  "latency_ms_all": [
+   397,
+   449,
+   414
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 52,
+  "first_utc": "2026-06-30T23:05:19",
+  "last_utc": "2026-09-29T17:17:07",
+  "last_age_h": 1.31,
+  "probed_utc": "2026-09-29T18:38:42.386832Z"
+ },
+ {
+  "id": "rss_cointelegraph",
+  "cat": "RSS",
+  "url": "https://cointelegraph.com/rss",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    538
+   ],
+   [
+    200,
+    498
+   ],
+   [
+    200,
+    544
+   ]
+  ],
+  "status": 200,
+  "bytes": 52031,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:38:46 GMT",
+   "Cache-Control": "public, s-maxage=300",
+   "Age": "65",
+   "last-modified": "Tue, 29 Sep 2026 18:37:41 GMT",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": 538,
+  "latency_ms_all": [
+   538,
+   498,
+   544
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 30,
+  "first_utc": "2026-09-28T09:03:20",
+  "last_utc": "2026-09-29T17:14:36",
+  "last_age_h": 1.35,
+  "probed_utc": "2026-09-29T18:38:46.870984Z"
+ },
+ {
+  "id": "rss_coindesk",
+  "cat": "RSS",
+  "url": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    576
+   ],
+   [
+    200,
+    550
+   ],
+   [
+    200,
+    628
+   ]
+  ],
+  "status": 200,
+  "bytes": 29450,
+  "headers": {
+   "Age": "968",
+   "Cache-Control": "public, max-age=0, must-revalidate",
+   "Date": "Tue, 29 Sep 2026 18:22:43 GMT",
+   "Server": "Vercel"
+  },
+  "latency_ms_med": 576,
+  "latency_ms_all": [
+   576,
+   550,
+   628
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 25,
+  "first_utc": "2026-09-28T09:29:34",
+  "last_utc": "2026-09-29T18:21:07",
+  "last_age_h": 0.24,
+  "probed_utc": "2026-09-29T18:38:51.537840Z"
+ },
+ {
+  "id": "rss_decrypt",
+  "cat": "RSS",
+  "url": "https://decrypt.co/feed",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    522
+   ],
+   [
+    200,
+    486
+   ],
+   [
+    200,
+    477
+   ]
+  ],
+  "status": 200,
+  "bytes": 75574,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:38:55 GMT",
+   "Cache-Control": "public, s-maxage=10, stale-while-revalidate=59",
+   "Age": "1",
+   "last-modified": "Tue, 29 Sep 2026 18:38:54 GMT",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": 486,
+  "latency_ms_all": [
+   522,
+   486,
+   477
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 56,
+  "first_utc": "2025-12-29T16:10:19",
+  "last_utc": "2026-09-29T18:18:33",
+  "last_age_h": 0.28,
+  "probed_utc": "2026-09-29T18:38:55.935490Z"
+ },
+ {
+  "id": "rss_federal_reserve_press",
+  "cat": "RSS",
+  "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    494
+   ],
+   [
+    200,
+    943
+   ],
+   [
+    200,
+    519
+   ]
+  ],
+  "status": 200,
+  "bytes": 14486,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:39:00 GMT",
+   "ETag": "W/\"3b98faa2c4ddd1:0\"",
+   "Age": "2",
+   "Last-Modified": "Fri, 25 Sep 2026 20:30:11 GMT",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": 519,
+  "latency_ms_all": [
+   494,
+   943,
+   519
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 20,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:39:00.798178Z"
+ },
+ {
+  "id": "rss_sec_press",
+  "cat": "RSS",
+  "url": "https://www.sec.gov/news/pressreleases.rss",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    489
+   ],
+   [
+    200,
+    524
+   ],
+   [
+    200,
+    582
+   ]
+  ],
+  "status": 200,
+  "bytes": 18483,
+  "headers": {
+   "Server": "nginx",
+   "Last-Modified": "Tue, 29 Sep 2026 18:31:09 GMT",
+   "ETag": "\"1790706669\"",
+   "Cache-Control": "public, max-age=5",
+   "Expires": "Tue, 29 Sep 2026 18:39:10 GMT",
+   "Date": "Tue, 29 Sep 2026 18:39:05 GMT"
+  },
+  "latency_ms_med": 524,
+  "latency_ms_all": [
+   489,
+   524,
+   582
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 25,
+  "first_utc": "2026-07-30T13:53:38",
+  "last_utc": "2026-09-29T13:55:53",
+  "last_age_h": 4.66,
+  "probed_utc": "2026-09-29T18:39:05.297973Z"
+ },
+ {
+  "id": "rss_treasury_press",
+  "cat": "RSS",
+  "url": "https://home.treasury.gov/system/files/136/treasury-press-releases.xml",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    404,
+    1640
+   ]
+  ],
+  "status": 404,
+  "bytes": 95948,
+  "headers": {
+   "Server": "nginx",
+   "Cache-Control": "public, max-age=30",
+   "Expires": "Tue, 29 Sep 2026 18:39:37 GMT",
+   "Date": "Tue, 29 Sep 2026 18:39:07 GMT"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "<!DOCTYPE html>\n<!-- \n         __  __  ____    ______                                   _________________\n   .====/ /=/ /=/ __/===/_  __/==================================/######__________/\n  .==  / /",
+  "probed_utc": "2026-09-29T18:39:07.444231Z"
+ },
+ {
+  "id": "rss_ecb_press",
+  "cat": "RSS",
+  "url": "https://www.ecb.europa.eu/rss/press.html",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    740
+   ],
+   [
+    200,
+    821
+   ],
+   [
+    200,
+    808
+   ]
+  ],
+  "status": 200,
+  "bytes": 5734,
+  "headers": {
+   "Server": "myracloud",
+   "Date": "Tue, 29 Sep 2026 18:39:12 GMT",
+   "Expires": "Tue, 29 Sep 2026 18:40:04 GMT",
+   "cache-control": "max-age=60",
+   "ETag": "\"myra-1f6ae1b3\""
+  },
+  "latency_ms_med": 808,
+  "latency_ms_all": [
+   740,
+   821,
+   808
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 15,
+  "first_utc": "2026-09-14T13:00:00",
+  "last_utc": "2026-09-29T08:00:00",
+  "last_age_h": 10.59,
+  "probed_utc": "2026-09-29T18:39:12.721125Z"
+ },
+ {
+  "id": "cointelegraph_via_coingecko_news",
+  "cat": "news",
+  "url": "https://api.coingecko.com/api/v3/news",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    401,
+    477
+   ]
+  ],
+  "status": 401,
+  "bytes": 255,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:39:13 GMT",
+   "Cache-Control": "no-cache",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "{\"status\":{\"timestamp\":\"2026-09-29T18:39:13.693+00:00\",\"error_code\":10005,\"error_message\":\"This request is limited to PRO API subscribers. Please visit https://www.coingecko.com/en/api/pricing to subs",
+  "probed_utc": "2026-09-29T18:39:13.702603Z"
+ },
+ {
+  "id": "polymarket_gamma_markets",
+  "cat": "prediction markets",
+  "url": "https://gamma-api.polymarket.com/markets",
+  "params": {
+   "limit": 100,
+   "closed": "false"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    551
+   ],
+   [
+    200,
+    406
+   ],
+   [
+    200,
+    425
+   ]
+  ],
+  "status": 200,
+  "bytes": 551534,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:39:17 GMT",
+   "Server": "cloudflare",
+   "Age": "278",
+   "last-modified": "Tue, 29 Sep 2026 18:34:51 GMT",
+   "expires": "Tue, 29 Sep 2026 18:44:17 GMT",
+   "Cache-Control": "public, max-age=300"
+  },
+  "latency_ms_med": 425,
+  "latency_ms_all": [
+   551,
+   406,
+   425
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 100,
+  "first_utc": "2025-07-03T20:25:56.889606",
+  "last_utc": "2025-07-08T19:06:22.604902",
+  "last_age_h": 10751.49,
+  "probed_utc": "2026-09-29T18:39:17.998369Z"
+ },
+ {
+  "id": "polymarket_clob_prices_history",
+  "cat": "prediction markets",
+  "url": "https://clob.polymarket.com/prices-history",
+  "params": {
+   "market": "21742633143463906290569050155826241533067272736897614950488156847949938836455",
+   "interval": "max",
+   "fidelity": 1440
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    721
+   ],
+   [
+    200,
+    480
+   ],
+   [
+    200,
+    457
+   ]
+  ],
+  "status": 200,
+  "bytes": 8357,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:39:22 GMT",
+   "Age": "3",
+   "last-modified": "Tue, 29 Sep 2026 18:39:19 GMT",
+   "expires": "Tue, 29 Sep 2026 18:40:52 GMT",
+   "Cache-Control": "public, max-age=90",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": 480,
+  "latency_ms_all": [
+   721,
+   480,
+   457
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 307,
+  "first_utc": "2024-01-05T00:00:03",
+  "last_utc": "2024-11-06T00:00:02",
+  "last_age_h": 16626.59,
+  "probed_utc": "2026-09-29T18:39:22.563109Z"
+ },
+ {
+  "id": "kalshi_events",
+  "cat": "prediction markets",
+  "url": "https://api.elections.kalshi.com/trade-api/v2/events",
+  "params": {
+   "limit": 100,
+   "status": "open"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    402
+   ],
+   [
+    200,
+    430
+   ],
+   [
+    200,
+    548
+   ]
+  ],
+  "status": 200,
+  "bytes": 71447,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:39:26 GMT"
+  },
+  "latency_ms_med": 430,
+  "latency_ms_all": [
+   402,
+   430,
+   548
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 100,
+  "first_utc": "2026-08-27T13:43:31.865379",
+  "last_utc": "2026-09-29T14:11:02.000305",
+  "last_age_h": 4.41,
+  "probed_utc": "2026-09-29T18:39:26.852759Z"
+ },
+ {
+  "id": "kalshi_markets",
+  "cat": "prediction markets",
+  "url": "https://api.elections.kalshi.com/trade-api/v2/markets",
+  "params": {
+   "limit": 100
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    283
+   ],
+   [
+    200,
+    459
+   ],
+   [
+    200,
+    560
+   ]
+  ],
+  "status": 200,
+  "bytes": 403831,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:58:04 GMT",
+   "Cache-Control": "public, max-age=15",
+   "Age": "4"
+  },
+  "latency_ms_med": 459,
+  "latency_ms_all": [
+   283,
+   459,
+   560
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 100,
+  "first_utc": "2026-09-29T18:57:30.918160",
+  "last_utc": "2026-09-29T18:57:32.232691",
+  "last_age_h": 0.01,
+  "probed_utc": "2026-09-29T18:58:08.127998Z"
+ },
+ {
+  "id": "cftc_socrata_tff",
+  "cat": "CFTC positioning",
+  "url": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
+  "params": {
+   "$limit": 5000,
+   "$where": "market_and_exchange_names = 'BITCOIN - CHICAGO MERCANTILE EXCHANGE'",
+   "$select": ":created_at,report_date_as_yyyy_mm_dd"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    848
+   ],
+   [
+    200,
+    980
+   ],
+   [
+    200,
+    881
+   ]
+  ],
+  "status": 200,
+  "bytes": 43317,
+  "headers": {
+   "Server": "nginx",
+   "Date": "Tue, 29 Sep 2026 18:39:36 GMT",
+   "ETag": "\"aG90ZWwuNDkzNTZfM18zNTFfX1VFZ2VzRGhkM3FDSThiTmxwVXRoOE9kU28---gzioIxeY7lPZ6iCkBLaE4zv74fKw-qg--gzip--gzip\"",
+   "Last-Modified": "Fri, 25 Sep 2026 19:30:07 GMT"
+  },
+  "latency_ms_med": 881,
+  "latency_ms_all": [
+   848,
+   980,
+   881
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 442,
+  "first_utc": "2018-04-10T00:00:00",
+  "last_utc": "2026-09-22T00:00:00",
+  "last_age_h": 186.59,
+  "probed_utc": "2026-09-29T18:39:36.625637Z"
+ },
+ {
+  "id": "cftc_socrata_legacy",
+  "cat": "CFTC positioning",
+  "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json",
+  "params": {
+   "$limit": 5000,
+   "$where": "market_and_exchange_names like 'GOLD - COMMODITY EXCHANGE%'",
+   "$select": ":created_at,report_date_as_yyyy_mm_dd"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    854
+   ],
+   [
+    200,
+    992
+   ],
+   [
+    200,
+    836
+   ]
+  ],
+  "status": 200,
+  "bytes": 189631,
+  "headers": {
+   "Server": "nginx",
+   "Date": "Tue, 29 Sep 2026 18:39:42 GMT",
+   "ETag": "\"aG90ZWwuNTEzMDVfM18zOTFlVXJmMzFTYkhKSDNlUXJFTy0yei1lVTZ2c00---gzir_eUrhmtMwRetfV78Riq4WJNFPGA--gzip--gzip\"",
+   "Last-Modified": "Fri, 25 Sep 2026 19:30:08 GMT"
+  },
+  "latency_ms_med": 854,
+  "latency_ms_all": [
+   854,
+   992,
+   836
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1935,
+  "first_utc": "1986-01-15T00:00:00",
+  "last_utc": "2026-09-22T00:00:00",
+  "last_age_h": 186.59,
+  "probed_utc": "2026-09-29T18:39:42.216950Z"
+ },
+ {
+  "id": "cftc_deacot_txt",
+  "cat": "CFTC positioning",
+  "url": "https://www.cftc.gov/dea/newcot/deacot.txt",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    404,
+    726
+   ]
+  ],
+  "status": 404,
+  "bytes": 199,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:39:43 GMT",
+   "Server": "cloudflare",
+   "Cache-Control": "max-age=2592000, public, no-store",
+   "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+   "last-modified": "Mon, 28 Sep 2026 19:34:03 GMT"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "<!DOCTYPE html><html><head><title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL \"https://www.cftc.gov/dea/newcot/deacot.txt\" was not found on this server.</p></body></html>",
+  "probed_utc": "2026-09-29T18:39:43.446878Z"
+ },
+ {
+  "id": "cftc_disagg_socrata",
+  "cat": "CFTC positioning",
+  "url": "https://publicreporting.cftc.gov/resource/72hh-3qpy.json",
+  "params": {
+   "$limit": 5,
+   "$order": "report_date_as_yyyy_mm_dd DESC"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    873
+   ],
+   [
+    200,
+    780
+   ],
+   [
+    200,
+    820
+   ]
+  ],
+  "status": 200,
+  "bytes": 32429,
+  "headers": {
+   "Server": "nginx",
+   "Date": "Tue, 29 Sep 2026 18:39:48 GMT",
+   "ETag": "\"aG90ZWwuNTEzMDRfM180NTJQblVla19KS0NIam94eUY4R0EzTDgwNDBhbzg---gzipn8hfNknVynA7XV4li5cBTkJ7u_Q--gzip--gzip\"",
+   "Last-Modified": "Fri, 25 Sep 2026 19:30:08 GMT"
+  },
+  "latency_ms_med": 820,
+  "latency_ms_all": [
+   873,
+   780,
+   820
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 5,
+  "first_utc": "2026-09-22T00:00:00",
+  "last_utc": "2026-09-22T00:00:00",
+  "last_age_h": 186.59,
+  "probed_utc": "2026-09-29T18:39:48.826013Z"
+ },
+ {
+  "id": "ishares_ibit_csv",
+  "cat": "ETF flows",
+  "url": "https://www.ishares.com/us/products/333011/ishares-bitcoin-trust/1467271812596.ajax",
+  "params": {
+   "fileType": "csv",
+   "fileName": "IBIT_holdings",
+   "dataType": "fund"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    958
+   ],
+   [
+    200,
+    987
+   ],
+   [
+    200,
+    1222
+   ]
+  ],
+  "status": 200,
+  "bytes": 1329970,
+  "headers": {
+   "Server": "istio-envoy",
+   "Expires": "Tue, 29 Sep 2026 18:39:54 GMT",
+   "Cache-Control": "no-cache, no-store",
+   "Date": "Tue, 29 Sep 2026 18:39:54 GMT"
+  },
+  "latency_ms_med": 987,
+  "latency_ms_all": [
+   958,
+   987,
+   1222
+  ],
+  "ok": true,
+  "parsed_ok": false,
+  "n": 0,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:39:54.901619Z"
+ },
+ {
+  "id": "ishares_ivv_holdings_csv",
+  "cat": "ETF flows",
+  "url": "https://www.ishares.com/us/products/239726/ishares-core-sp-500-etf/1467271812596.ajax",
+  "params": {
+   "fileType": "csv",
+   "fileName": "IVV_holdings",
+   "dataType": "fund"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    978
+   ],
+   [
+    200,
+    1100
+   ],
+   [
+    200,
+    1007
+   ]
+  ],
+  "status": 200,
+  "bytes": 2251840,
+  "headers": {
+   "Server": "istio-envoy",
+   "Expires": "Tue, 29 Sep 2026 18:40:00 GMT",
+   "Cache-Control": "no-cache, no-store",
+   "Date": "Tue, 29 Sep 2026 18:40:00 GMT"
+  },
+  "latency_ms_med": 1007,
+  "latency_ms_all": [
+   978,
+   1100,
+   1007
+  ],
+  "ok": true,
+  "parsed_ok": false,
+  "n": 0,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:40:00.895096Z"
+ },
+ {
+  "id": "farside_btc_etf_flows",
+  "cat": "ETF flows",
+  "url": "https://farside.co.uk/btc/",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    403,
+    413
+   ]
+  ],
+  "status": 403,
+  "bytes": 5543,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:40:01 GMT",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam",
+  "probed_utc": "2026-09-29T18:40:01.812403Z"
+ },
+ {
+  "id": "sec_edgar_submissions",
+  "cat": "ETF flows",
+  "url": "https://data.sec.gov/submissions/CIK0001980994.json",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    269
+   ],
+   [
+    200,
+    510
+   ],
+   [
+    200,
+    500
+   ]
+  ],
+  "status": 200,
+  "bytes": 13360,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:40:06 GMT"
+  },
+  "latency_ms_med": 500,
+  "latency_ms_all": [
+   269,
+   510,
+   500
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 74,
+  "first_utc": "2023-06-15T20:43:42",
+  "last_utc": "2026-08-05T23:37:31",
+  "last_age_h": 1314.97,
+  "probed_utc": "2026-09-29T18:40:05.996389Z"
+ },
+ {
+  "id": "sec_edgar_efts_search",
+  "cat": "public government",
+  "url": "https://efts.sec.gov/LATEST/search-index",
+  "params": {
+   "q": "bitcoin",
+   "forms": "8-K",
+   "dateRange": "custom",
+   "startdt": "2026-09-20",
+   "enddt": "2026-09-29"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    659
+   ],
+   [
+    200,
+    516
+   ],
+   [
+    200,
+    464
+   ]
+  ],
+  "status": 200,
+  "bytes": 16032,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:58:12 GMT"
+  },
+  "latency_ms_med": 516,
+  "latency_ms_all": [
+   659,
+   516,
+   464
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 23,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:58:12.672726Z"
+ },
+ {
+  "id": "sec_edgar_atom_current",
+  "cat": "public government",
+  "url": "https://www.sec.gov/cgi-bin/browse-edgar",
+  "params": {
+   "action": "getcurrent",
+   "type": "8-K",
+   "output": "atom"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    403,
+    571
+   ]
+  ],
+  "status": 403,
+  "bytes": 4819,
+  "headers": {
+   "Server": "AkamaiGHost",
+   "Cache-control": "no-cache, no-store, must-revalidate",
+   "Expires": "0",
+   "Date": "Tue, 29 Sep 2026 18:40:08 GMT"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-T",
+  "probed_utc": "2026-09-29T18:40:08.169639Z"
+ },
+ {
+  "id": "yahoo_chart_ibit",
+  "cat": "ETF flows",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/IBIT",
+  "params": {
+   "range": "5d",
+   "interval": "1d"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    429,
+    518
+   ]
+  ],
+  "status": 429,
+  "bytes": 19,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:40:09 GMT",
+   "Server": "ATS",
+   "Cache-Control": "no-store",
+   "Age": "0"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "Too Many Requests\r\n",
+  "probed_utc": "2026-09-29T18:40:09.195083Z"
+ },
+ {
+  "id": "imf_portwatch_chokepoints",
+  "cat": "shipping",
+  "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query",
+  "params": {
+   "where": "portname='Suez Canal'",
+   "outFields": "date,portname,n_total,capacity",
+   "orderByFields": "date ASC",
+   "resultRecordCount": 2000,
+   "f": "json"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    632
+   ],
+   [
+    200,
+    552
+   ],
+   [
+    200,
+    791
+   ]
+  ],
+  "status": 200,
+  "bytes": 93682,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:40:14 GMT",
+   "Cache-Control": "public, max-age=30, s-maxage=30",
+   "Last-Modified": "Tue, 29 Sep 2026 12:20:57 GMT",
+   "ETag": "sd2066_359486084"
+  },
+  "latency_ms_med": 632,
+  "latency_ms_all": [
+   632,
+   552,
+   791
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1000,
+  "first_utc": "2019-01-01T00:00:00",
+  "last_utc": "2021-09-26T00:00:00",
+  "last_age_h": 43914.59,
+  "probed_utc": "2026-09-29T18:40:14.080208Z"
+ },
+ {
+  "id": "imf_portwatch_ports",
+  "cat": "shipping",
+  "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Ports_Data/FeatureServer/0/query",
+  "params": {
+   "where": "portname='Los Angeles'",
+   "outFields": "date,portname,portcalls",
+   "orderByFields": "date DESC",
+   "resultRecordCount": 5,
+   "f": "json"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    740
+   ],
+   [
+    200,
+    746
+   ],
+   [
+    200,
+    556
+   ]
+  ],
+  "status": 200,
+  "bytes": 131,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:58:17 GMT",
+   "Cache-Control": "public, max-age=30, s-maxage=30",
+   "Last-Modified": "Tue, 29 Sep 2026 16:43:41 GMT",
+   "ETag": "sd2069_-650295016"
+  },
+  "latency_ms_med": 740,
+  "latency_ms_all": [
+   740,
+   746,
+   556
+  ],
+  "ok": true,
+  "parsed_ok": false,
+  "n": 0,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:58:17.621957Z"
+ },
+ {
+  "id": "aishub_free",
+  "cat": "shipping",
+  "url": "https://data.aishub.net/ws.php",
+  "params": {
+   "username": "x",
+   "format": "1",
+   "output": "json"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    1223
+   ],
+   [
+    200,
+    1259
+   ],
+   [
+    200,
+    1367
+   ]
+  ],
+  "status": 200,
+  "bytes": 96,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:40:52 GMT",
+   "Server": "Apache",
+   "Expires": "0",
+   "Cache-Control": "must-revalidate",
+   "Last-Modified": "Tue, 29 Sep 2026 18:40:52 GMT"
+  },
+  "latency_ms_med": 1259,
+  "latency_ms_all": [
+   1223,
+   1259,
+   1367
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:40:52.050457Z"
+ },
+ {
+  "id": "stooq_bdi",
+  "cat": "shipping",
+  "url": "https://stooq.com/q/d/l/",
+  "params": {
+   "s": "^bdi",
+   "i": "d"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    0,
+    11315
+   ]
+  ],
+  "status": 0,
+  "ok": false,
+  "err": "ConnectionError(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))",
+  "probed_utc": "2026-09-29T18:41:03.869700Z"
+ },
+ {
+  "id": "eia_wpsr_table1_csv",
+  "cat": "energy inventories",
+  "url": "https://ir.eia.gov/wpsr/table1.csv",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    402
+   ],
+   [
+    200,
+    728
+   ],
+   [
+    200,
+    654
+   ]
+  ],
+  "status": 200,
+  "bytes": 6578,
+  "headers": {
+   "Server": "AmazonS3",
+   "Last-Modified": "Wed, 23 Sep 2026 13:37:23 GMT",
+   "Date": "Tue, 29 Sep 2026 18:41:09 GMT",
+   "ETag": "W/\"0a69107262c0fa73af43cef920a413e4\""
+  },
+  "latency_ms_med": 654,
+  "latency_ms_all": [
+   402,
+   728,
+   654
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 59,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:41:08.559883Z"
+ },
+ {
+  "id": "eia_bulk_PET_zip",
+  "cat": "energy inventories",
+  "url": "https://www.eia.gov/opendata/bulk/PET.zip",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    9872
+   ],
+   [
+    200,
+    9580
+   ],
+   [
+    200,
+    8562
+   ]
+  ],
+  "status": 200,
+  "bytes": 56051112,
+  "headers": {
+   "Last-Modified": "Thu, 24 Sep 2026 09:54:55 GMT",
+   "ETag": "\"804143c0a4cdd1:0\"",
+   "Server": "Microsoft-IIS/10.0",
+   "Date": "Tue, 29 Sep 2026 18:41:39 GMT"
+  },
+  "latency_ms_med": 9580,
+  "latency_ms_all": [
+   9872,
+   9580,
+   8562
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:41:39.480686Z"
+ },
+ {
+  "id": "eia_bulk_NG_zip",
+  "cat": "energy inventories",
+  "url": "https://www.eia.gov/opendata/bulk/NG.zip",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    10618
+   ],
+   [
+    200,
+    10420
+   ],
+   [
+    200,
+    9243
+   ]
+  ],
+  "status": 200,
+  "bytes": 4425090,
+  "headers": {
+   "Last-Modified": "Fri, 25 Sep 2026 10:09:57 GMT",
+   "ETag": "\"80484f4d64cdd1:0\"",
+   "Server": "Microsoft-IIS/10.0",
+   "Date": "Tue, 29 Sep 2026 18:42:12 GMT"
+  },
+  "latency_ms_med": 10420,
+  "latency_ms_all": [
+   10618,
+   10420,
+   9243
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:42:12.668970Z"
+ },
+ {
+  "id": "eia_api_v2_noKey",
+  "cat": "energy inventories",
+  "url": "https://api.eia.gov/v2/petroleum/stoc/wstk/data/",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    403,
+    922
+   ]
+  ],
+  "status": 403,
+  "bytes": 163,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:42:14 GMT"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "{\n  \"error\": {\n    \"code\": \"API_KEY_MISSING\",\n    \"message\": \"No api_key was supplied.  Please register for one at https://www.eia.gov/opendata/register.php\"\n  }\n}",
+  "probed_utc": "2026-09-29T18:42:14.095067Z"
+ },
+ {
+  "id": "eia_ngs_html",
+  "cat": "energy inventories",
+  "url": "https://ir.eia.gov/ngs/ngs.html",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    513
+   ],
+   [
+    200,
+    715
+   ],
+   [
+    200,
+    668
+   ]
+  ],
+  "status": 200,
+  "bytes": 25172,
+  "headers": {
+   "Server": "AmazonS3",
+   "Last-Modified": "Thu, 24 Sep 2026 13:34:49 GMT",
+   "Date": "Tue, 29 Sep 2026 18:42:19 GMT",
+   "ETag": "W/\"e16642384b774d68ce31a8bf64c2dab1\""
+  },
+  "latency_ms_med": 668,
+  "latency_ms_all": [
+   513,
+   715,
+   668
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 643,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:42:18.897652Z"
+ },
+ {
+  "id": "gie_agsi_gas_storage_noKey",
+  "cat": "energy inventories",
+  "url": "https://agsi.gie.eu/api",
+  "params": {
+   "country": "eu"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    31138
+   ],
+   [
+    200,
+    801
+   ],
+   [
+    200,
+    825
+   ]
+  ],
+  "status": 200,
+  "bytes": 124,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:42:54 GMT",
+   "Server": "cloudflare",
+   "Cache-Control": "no-cache, private"
+  },
+  "latency_ms_med": 825,
+  "latency_ms_all": [
+   31138,
+   801,
+   825
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:42:54.567533Z"
+ },
+ {
+  "id": "open_meteo_forecast",
+  "cat": "weather",
+  "url": "https://api.open-meteo.com/v1/forecast",
+  "params": {
+   "latitude": 29.7,
+   "longitude": -95.3,
+   "hourly": "temperature_2m"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    429,
+    758
+   ]
+  ],
+  "status": 429,
+  "bytes": 86,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:58:18 GMT"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "{\"error\":true,\"reason\":\"Daily API request limit exceeded. Please try again tomorrow.\"}",
+  "probed_utc": "2026-09-29T18:58:18.885459Z"
+ },
+ {
+  "id": "open_meteo_archive",
+  "cat": "weather",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "params": {
+   "latitude": 29.7,
+   "longitude": -95.3,
+   "start_date": "2020-09-01",
+   "end_date": "2020-09-10",
+   "hourly": "temperature_2m"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    429,
+    673
+   ]
+  ],
+  "status": 429,
+  "bytes": 86,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:43:26 GMT"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "{\"error\":true,\"reason\":\"Daily API request limit exceeded. Please try again tomorrow.\"}",
+  "probed_utc": "2026-09-29T18:43:26.919085Z"
+ },
+ {
+  "id": "open_meteo_historical_forecast",
+  "cat": "weather",
+  "url": "https://historical-forecast-api.open-meteo.com/v1/forecast",
+  "params": {
+   "latitude": 29.7,
+   "longitude": -95.3,
+   "start_date": "2024-01-01",
+   "end_date": "2024-01-02",
+   "hourly": "temperature_2m"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    863
+   ]
+  ],
+  "status": 200,
+  "bytes": 1403,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:43:28 GMT"
+  },
+  "latency_ms_med": 863,
+  "latency_ms_all": [
+   863
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 48,
+  "first_utc": "2024-01-01T00:00:00",
+  "last_utc": "2024-01-02T23:00:00",
+  "last_age_h": 24019.59,
+  "probed_utc": "2026-09-29T18:43:28.287652Z"
+ },
+ {
+  "id": "nws_gridpoint_forecast",
+  "cat": "weather",
+  "url": "https://api.weather.gov/gridpoints/HGX/65,97/forecast",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    484
+   ],
+   [
+    200,
+    2465
+   ],
+   [
+    200,
+    470
+   ]
+  ],
+  "status": 200,
+  "bytes": 14751,
+  "headers": {
+   "Server": "nginx/1.28.3",
+   "Last-Modified": "Tue, 29 Sep 2026 12:20:22 GMT",
+   "ETag": "W/\"1790684424:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+   "Cache-Control": "public, max-age=1707, s-maxage=3600",
+   "Expires": "Tue, 29 Sep 2026 19:12:01 GMT",
+   "Date": "Tue, 29 Sep 2026 18:43:34 GMT"
+  },
+  "latency_ms_med": 484,
+  "latency_ms_all": [
+   484,
+   2465,
+   470
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 14,
+  "first_utc": "2026-09-29T14:00:00",
+  "last_utc": "2026-10-05T23:00:00",
+  "last_age_h": -148.41,
+  "probed_utc": "2026-09-29T18:43:34.613605Z"
+ },
+ {
+  "id": "noaa_cpc_degree_days",
+  "cat": "weather",
+  "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2024/Population.Heating.txt",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    700
+   ],
+   [
+    200,
+    576
+   ],
+   [
+    200,
+    563
+   ]
+  ],
+  "status": 200,
+  "bytes": 12366,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:43:34 GMT",
+   "Server": "Apache",
+   "Last-Modified": "Thu, 02 Jan 2025 08:12:21 GMT",
+   "Cache-Control": "private"
+  },
+  "latency_ms_med": 576,
+  "latency_ms_all": [
+   700,
+   576,
+   563
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 14,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:43:39.358349Z"
+ },
+ {
+  "id": "noaa_ncei_daily_summaries",
+  "cat": "weather",
+  "url": "https://www.ncei.noaa.gov/access/services/data/v1",
+  "params": {
+   "dataset": "daily-summaries",
+   "stations": "USW00012918",
+   "startDate": "2020-09-01",
+   "endDate": "2020-09-30",
+   "dataTypes": "TMAX,TMIN",
+   "format": "json"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    568
+   ],
+   [
+    200,
+    614
+   ],
+   [
+    200,
+    382
+   ]
+  ],
+  "status": 200,
+  "bytes": 2313,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:43:43 GMT",
+   "Server": "Apache"
+  },
+  "latency_ms_med": 568,
+  "latency_ms_all": [
+   568,
+   614,
+   382
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 30,
+  "first_utc": "2020-09-01T00:00:00",
+  "last_utc": "2020-09-30T00:00:00",
+  "last_age_h": 52578.59,
+  "probed_utc": "2026-09-29T18:43:43.827684Z"
+ },
+ {
+  "id": "nasa_power_daily",
+  "cat": "weather",
+  "url": "https://power.larc.nasa.gov/api/temporal/daily/point",
+  "params": {
+   "parameters": "T2M",
+   "community": "RE",
+   "longitude": -95,
+   "latitude": 30,
+   "start": "20200901",
+   "end": "20200930",
+   "format": "JSON"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    900
+   ],
+   [
+    200,
+    517
+   ],
+   [
+    200,
+    453
+   ]
+  ],
+  "status": 200,
+  "bytes": 969,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:43:48 GMT"
+  },
+  "latency_ms_med": 517,
+  "latency_ms_all": [
+   900,
+   517,
+   453
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 30,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:43:48.604604Z"
+ },
+ {
+  "id": "noaa_gfs_s3_listing",
+  "cat": "weather",
+  "url": "https://noaa-gfs-bdp-pds.s3.amazonaws.com/",
+  "params": {
+   "list-type": "2",
+   "prefix": "gfs.20240101/00/atmos/",
+   "max-keys": "3"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    526
+   ],
+   [
+    200,
+    531
+   ],
+   [
+    200,
+    527
+   ]
+  ],
+  "status": 200,
+  "bytes": 1189,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:43:54 GMT",
+   "Server": "AmazonS3"
+  },
+  "latency_ms_med": 527,
+  "latency_ms_all": [
+   526,
+   531,
+   527
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 3,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:43:53.099564Z"
+ },
+ {
+  "id": "treasury_fiscaldata_dts",
+  "cat": "public government",
+  "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/dts/operating_cash_balance",
+  "params": {
+   "sort": "record_date",
+   "page[size]": 1000,
+   "filter": "record_date:gte:2005-01-01,account_type:eq:Treasury General Account (TGA) Closing Balance"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    1516
+   ],
+   [
+    200,
+    1213
+   ],
+   [
+    200,
+    1310
+   ]
+  ],
+  "status": 200,
+  "bytes": 486787,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:43:59 GMT",
+   "Server": "nginx"
+  },
+  "latency_ms_med": 1310,
+  "latency_ms_all": [
+   1516,
+   1213,
+   1310
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1000,
+  "first_utc": "2022-04-18T00:00:00",
+  "last_utc": "2026-04-15T00:00:00",
+  "last_age_h": 4026.59,
+  "probed_utc": "2026-09-29T18:44:00.050110Z"
+ },
+ {
+  "id": "nyfed_reverse_repo",
+  "cat": "public government",
+  "url": "https://markets.newyorkfed.org/api/rp/reverserepo/propositions/search.json",
+  "params": {
+   "startDate": "2020-09-01",
+   "endDate": "2026-09-28"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    735
+   ],
+   [
+    200,
+    700
+   ],
+   [
+    200,
+    613
+   ]
+  ],
+  "status": 200,
+  "bytes": 577459,
+  "headers": {
+   "Cache-Control": "no-store",
+   "Date": "Tue, 29 Sep 2026 18:44:04 GMT"
+  },
+  "latency_ms_med": 700,
+  "latency_ms_all": [
+   735,
+   700,
+   613
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 1525,
+  "first_utc": "2020-09-01T00:00:00",
+  "last_utc": "2026-09-28T00:00:00",
+  "last_age_h": 42.59,
+  "probed_utc": "2026-09-29T18:44:05.016720Z"
+ },
+ {
+  "id": "fred_fredgraph_csv",
+  "cat": "public government",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv",
+  "params": {
+   "id": "WALCL"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    0,
+    20433
+   ]
+  ],
+  "status": 0,
+  "ok": false,
+  "err": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)\"))",
+  "probed_utc": "2026-09-29T18:44:25.954674Z"
+ },
+ {
+  "id": "fed_h41_datadownload",
+  "cat": "public government",
+  "url": "https://www.federalreserve.gov/datadownload/Output.aspx",
+  "params": {
+   "rel": "H41",
+   "series": "cd4a8d4d8c1b0ab7d5a2e8a0c2a3a6b1",
+   "lastobs": 5,
+   "filetype": "csv"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    689
+   ],
+   [
+    200,
+    516
+   ],
+   [
+    200,
+    457
+   ]
+  ],
+  "status": 200,
+  "bytes": 0,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:44:30 GMT",
+   "Age": "3",
+   "Cache-Control": "private",
+   "Last-Modified": "Tue, 29 Sep 2026 18:44:27 GMT",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": 516,
+  "latency_ms_all": [
+   689,
+   516,
+   457
+  ],
+  "ok": true,
+  "parsed_ok": false,
+  "n": 0,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:44:30.521691Z"
+ },
+ {
+  "id": "sec_edgar_xbrl_frames",
+  "cat": "public government",
+  "url": "https://data.sec.gov/api/xbrl/frames/us-gaap/Revenues/USD/CY2023.json",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    652
+   ],
+   [
+    200,
+    587
+   ],
+   [
+    200,
+    463
+   ]
+  ],
+  "status": 200,
+  "bytes": 409821,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:44:35 GMT"
+  },
+  "latency_ms_med": 587,
+  "latency_ms_all": [
+   652,
+   587,
+   463
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 2678,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:44:35.134966Z"
+ },
+ {
+  "id": "ecb_eurofxref_daily",
+  "cat": "public government",
+  "url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    918
+   ],
+   [
+    200,
+    1141
+   ],
+   [
+    200,
+    822
+   ]
+  ],
+  "status": 200,
+  "bytes": 1547,
+  "headers": {
+   "Server": "myracloud",
+   "Date": "Tue, 29 Sep 2026 18:44:40 GMT",
+   "Last-Modified": "Tue, 29 Sep 2026 13:56:14 GMT",
+   "Expires": "Tue, 29 Sep 2026 14:07:38 GMT",
+   "cache-control": "max-age=300"
+  },
+  "latency_ms_med": 918,
+  "latency_ms_all": [
+   918,
+   1141,
+   822
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 40,
+  "first_utc": null,
+  "last_utc": null,
+  "last_age_h": null,
+  "probed_utc": "2026-09-29T18:44:40.922660Z"
+ },
+ {
+  "id": "imf_datamapper",
+  "cat": "public government",
+  "url": "https://www.imf.org/external/datamapper/api/v1/NGDP_RPCH",
+  "params": null,
+  "method": "GET",
+  "samples": [
+   [
+    403,
+    530
+   ]
+  ],
+  "status": 403,
+  "bytes": 421,
+  "headers": {
+   "Server": "AkamaiGHost",
+   "Expires": "Tue, 29 Sep 2026 18:44:41 GMT",
+   "Date": "Tue, 29 Sep 2026 18:44:41 GMT"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;imf&#46;org&#47;external&#47;datamapper&#47;api&#47;v1&",
+  "probed_utc": "2026-09-29T18:44:41.957773Z"
+ },
+ {
+  "id": "alt_me_fng",
+  "cat": "search/trend",
+  "url": "https://api.alternative.me/fng/",
+  "params": {
+   "limit": 0,
+   "format": "json"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    200,
+    1420
+   ],
+   [
+    200,
+    646
+   ],
+   [
+    200,
+    594
+   ]
+  ],
+  "status": 200,
+  "bytes": 298025,
+  "headers": {
+   "Server": "nginx/1.14.2",
+   "Date": "Tue, 29 Sep 2026 18:44:47 GMT"
+  },
+  "latency_ms_med": 646,
+  "latency_ms_all": [
+   1420,
+   646,
+   594
+  ],
+  "ok": true,
+  "parsed_ok": true,
+  "n": 3159,
+  "first_utc": "2018-02-01T00:00:00",
+  "last_utc": "2026-09-29T00:00:00",
+  "last_age_h": 18.59,
+  "probed_utc": "2026-09-29T18:44:47.533884Z"
+ },
+ {
+  "id": "coingecko_free_ping_history",
+  "cat": "on-chain",
+  "url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart",
+  "params": {
+   "vs_currency": "usd",
+   "days": "max",
+   "interval": "daily"
+  },
+  "method": "GET",
+  "samples": [
+   [
+    401,
+    471
+   ]
+  ],
+  "status": 401,
+  "bytes": 335,
+  "headers": {
+   "Date": "Tue, 29 Sep 2026 18:44:48 GMT",
+   "Cache-Control": "no-cache",
+   "Server": "cloudflare"
+  },
+  "latency_ms_med": null,
+  "latency_ms_all": [],
+  "ok": false,
+  "body_head": "{\"error\":{\"status\":{\"timestamp\":\"2026-09-29T18:44:48.502+00:00\",\"error_code\":10012,\"error_message\":\"Your request exceeds the allowed time range. Public API users are limited to querying historical dat",
+  "probed_utc": "2026-09-29T18:44:48.512313Z"
+ }
+]

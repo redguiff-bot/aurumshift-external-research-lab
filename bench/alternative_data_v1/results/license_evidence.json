@@ -1,0 +1,491 @@
+{
+ "coinmetrics_community": [
+  {
+   "url": "https://coinmetrics.io/community-network-data/",
+   "status": 200,
+   "text_chars": 8921,
+   "snippets": [
+    "lable to said persons. Any other persons resident in the UK must not rely or act upon this communication. Talos is not regulated by the Seychelles Financial Service"
+   ]
+  },
+  {
+   "url": "https://docs.coinmetrics.io/api/v4/",
+   "status": 200,
+   "text_chars": 808676,
+   "snippets": [
+    "Coin Metrics API v4 Authentication Response headers General Rate limits Reference Data Reference Data get Assets get Asset Groups get Exchanges get Markets get Indexes get Protocols get Pairs get Asset metrics ",
+    "t endpoint URL is https://community-api.coinmetrics.io/v4 . API key is not required when accessing community endpoints. Available to the community under the Creative Commons lice",
+    "g community endpoints. Available to the community under the Creative Commons license. Authentication api_key Coin Metrics API key can be specifi",
+    "eative Commons license. Authentication api_key Coin Metrics API key can be specified as ?api_key= query parameter. Security Scheme Type: API Key Query parameter name: api_ke",
+    "ecified as ?api_key= query parameter. Security Scheme Type: API Key Query parameter name: api_key Response headers Note that Coin Metrics API responses have a CF-RAY HTTP header e.g. 88a6",
+    "equests, please ensure to provide the value of this header. Rate limits To ensure the quality of Coin Metrics services, API is subject to rate limiting. Rate Limit Plan REST API: Requests per Second (sliding wi"
+   ]
+  }
+ ],
+ "defillama": [
+  {
+   "url": "https://defillama.com/docs/api",
+   "status": 403,
+   "text_chars": 60,
+   "snippets": []
+  },
+  {
+   "url": "https://docs.llama.fi/",
+   "status": 200,
+   "text_chars": 4617,
+   "snippets": []
+  }
+ ],
+ "blockchain_com": [
+  {
+   "url": "https://www.blockchain.com/explorer/api",
+   "status": 200,
+   "text_chars": 92501,
+   "snippets": [
+    "er-Auth-Key\",\"description\":\"Optional. Provide your Explorer API key in the `X-Explorer-Auth-Key` header. Requests sent without a key use the default (unauthenticat",
+    "quests sent without a key use the default (unauthenticated) rate limits.\"}},\"responses\":{\"Error\":{\"description\":\"Error\",\"content\":{"
+   ]
+  },
+  {
+   "url": "https://www.blockchain.com/legal/terms",
+   "status": 200,
+   "text_chars": 162008,
+   "snippets": [
+    "oftware Tools or your use of the DeFi Wallet Interface, and must not be understood as providing oversight, approval, or protection in connection with your use of the Software Tools or Third-Party Services. Yo",
+    "th a transaction or otherwise (an \"Erroneous Deposit\"), you must notify Blockchain.com immediately and return the Erroneous Deposit as soon as",
+    "use any of the Services if such use is illegal or otherwise prohibited or limited by any rule or regulation. Your use of the Services requires you to bear all attendan",
+    "y the Services is made available for your personal, lawful, non-commercial use only and that you may only use such material and content for the purpose of using the Services as set forth in this Agreement. (c) You ",
+    "that any other use of content from the Services is strictly prohibited and you agree not to infringe on or enable others to infringe on our intellectual property rights. You agree to retain all copyrighted and ",
+    "file-sharing or similar service for any purpose is strictly prohibited. You may not copy any material or content derived or create"
+   ]
+  }
+ ],
+ "mempool_space": [
+  {
+   "url": "https://mempool.space/terms-of-service",
+   "status": 200,
+   "text_chars": 28,
+   "snippets": []
+  },
+  {
+   "url": "https://mempool.space/docs/faq",
+   "status": 200,
+   "text_chars": 28,
+   "snippets": []
+  }
+ ],
+ "blockchair": [
+  {
+   "url": "https://blockchair.com/api/docs",
+   "status": 401,
+   "text_chars": 1,
+   "snippets": []
+  }
+ ],
+ "gdelt": [
+  {
+   "url": "https://www.gdeltproject.org/about.html",
+   "status": 200,
+   "text_chars": 7368,
+   "snippets": [
+    " is the largest, most comprehensive, and highest resolution open database of human society ever created. Creating a platform that monitors the world's news media f",
+    "c, commercial, or governmental use of any kind without fee. Redistributing GDELT You may redistribute, rehost, republish, and mirror any of the GDELT datasets in any form. However, any use or redistribution of t",
+    " any of the GDELT datasets in any form. However, any use or redistribution of the data must include a citation to the GDELT Project and a link to this website (https://www.gdeltproject.org/). Home Intro Watching"
+   ]
+  },
+  {
+   "url": "https://blog.gdeltproject.org/gdelt-2-0-our-global-world-in-realtime/",
+   "status": 200,
+   "text_chars": 11724,
+   "snippets": [
+    "lanet itself. GDELT 2.0 is an index over global society, an open dataset that attempts to make human society itself \u201ccomputable,\u201d leveraging the enormous power of Google Cloud to fundamenta"
+   ]
+  }
+ ],
+ "cftc": [
+  {
+   "url": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm",
+   "status": 200,
+   "text_chars": 23643,
+   "snippets": [
+    "column. Inter-market spreads are not considered. Example: A non-commercial trader has 350 long and 200 short positions. In commitment positions, 150 long, 0 short, and 200 spread",
+    "hout regard to whether they are classified as commercial or non-commercial. The concentration ratios are shown with trader positions c",
+    "eportable open interest positions into two classifications: non-commercial and commercial traders. 2. Supplemental -- The Supplemental report includes 13 sel",
+    " open interest positions into three trader classifications: non-commercial, commercial, and index traders. 3. Disaggregated -- The Disaggregated reports are broken d",
+    "e positions, additional data is provided for commercial and non-commercial holdings, spreading (in certain categories only), changes from the previous report, percent of open interest by category, and numbers of tr"
+   ]
+  },
+  {
+   "url": "https://www.cftc.gov/policy/websitedisclaimer/index.htm",
+   "status": 404,
+   "text_chars": 2221,
+   "snippets": []
+  }
+ ],
+ "treasury_fiscaldata": [
+  {
+   "url": "https://fiscaldata.treasury.gov/api-documentation/",
+   "status": 200,
+   "text_chars": 22890,
+   "snippets": [
+    "ury, Bureau of the Fiscal Service is committed to providing open data as part of its mission to promote the financial integrity and operational efficiency of the federal government. The dat",
+    "ed free, without restriction, and available to copy, adapt, redistribute, or otherwise use for non-commercial or commercial purposes. API Versioning Our APIs are currently in v1.0.0 or v2.0.0.",
+    "est 400 Bad Request - Request was malformed 403 Forbidden - API Key is not valid 404 Not Found - When a non-existent resource is requested 500 Internal Server Error - The server failed to"
+   ]
+  },
+  {
+   "url": "https://fiscaldata.treasury.gov/about-us/",
+   "status": 200,
+   "text_chars": 10357,
+   "snippets": [
+    "ata Mission Who We Are What Makes Fiscal Data... Background Open Data Policy International Monetary Fund... Data Sources Understanding the Data Development and Rele",
+    "to learn more! Background Fiscal Service is a leader in the open data community within the federal government. In 2018, we re-launched USAspending.gov to enhance the pub",
+    "ency work by modernizing how we provide data to the public. Open Data Policy Fiscal Service recognizes the importance of providing accurate data on the financial operations of the federal g",
+    "ing the trust of the American people. The OCDO developed an Open Data Policy which outlines policies and procedures governing Fiscal Service\u00e2\u0080\u0099s open data. Fiscal Service\u00e2\u0080\u0099s publicly avail",
+    "tlines policies and procedures governing Fiscal Service\u00e2\u0080\u0099s open data. Fiscal Service\u00e2\u0080\u0099s publicly available data will be made ac",
+    "n Fiscal Data. Please visit us regularly for updates to the Open Data Policy. International Monetary Fund Special Data Dissemination Sta"
+   ]
+  }
+ ],
+ "nyfed": [
+  {
+   "url": "https://www.newyorkfed.org/termsofuse",
+   "status": 200,
+   "text_chars": 6695,
+   "snippets": []
+  },
+  {
+   "url": "https://markets.newyorkfed.org/static/docs/markets-api.html",
+   "status": 200,
+   "text_chars": 19,
+   "snippets": []
+  }
+ ],
+ "eia": [
+  {
+   "url": "https://www.eia.gov/about/copyrights_reuse.php",
+   "status": 200,
+   "text_chars": 7918,
+   "snippets": [
+    "Enter Search Term(s): Search About EIA Copyrights and Reuse Public domain and use of EIA content U.S. government publications are in the public domain and are",
+    " use of EIA content U.S. government publications are in the public domain and are not subject to copyright protection. You may use and/or distribute any of our data, files, data",
+    "r Website About EIA.gov Help Improve Our Site --> About EIA Open Data Legacy Contact Us U.S. Energy Information Administration 1000 Independence Ave.",
+    " study detailed documentation, and access time-series data. Open Data EIA's free and open data available as API, Excel add-in, bulk files, and widgets EIA Beta Come test out some of the pro"
+   ]
+  },
+  {
+   "url": "https://www.eia.gov/opendata/documentation.php",
+   "status": 200,
+   "text_chars": 37421,
+   "snippets": [
+    " Analysis Tools Education News Enter Search Term(s): Search OPEN DATA Committed to making energy data more accessible, understandable, relevant, and responsive to your needs. API Add-Ons Do",
+    "ghted, bold to indicate important code and output. Using an API key To call our API, you must use the unique API key assigned to you. Visit our Open Data pages ( https://www.eia.gov/opend",
+    " you must use the unique API key assigned to you. Visit our Open Data pages ( https://www.eia.gov/opendata/ ) to register for this free key. EIA will",
+    " key automatically to the email address provided. To use an API key, place it as a parameter after the route. https://api.eia.gov/API_route? api_key=xxxxxxx Replace xxx",
+    ".eia.gov/API_route? api_key=xxxxxxx Replace xxxxxx with the API key transmitted in your email. You must use the API key. Submitting requests to our RESTf",
+    "ith the API key transmitted in your email. You must use the API key. Submitting requests to our RESTful API and legacy APIv1 Se"
+   ]
+  }
+ ],
+ "noaa_cpc": [
+  {
+   "url": "https://www.weather.gov/disclaimer",
+   "status": 200,
+   "text_chars": 13951,
+   "snippets": [
+    "tion on National Weather Service (NWS) Web pages are in the public domain, unless specifically noted otherwise, and may be used without charge for any lawful purpose so long as you do not: 1) c",
+    " Google Maps, or Esri ArcGIS Online map services are in the public domain and are also made available in open geospatial standard formats such as KML/KMZ (Google) and shapefile (Esri) among oth",
+    "ational Weather Service Web servers and Web sites is in the public domain, unless specifically annotated otherwise, and may be used freely by the public. Before using information obtained from "
+   ]
+  },
+  {
+   "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/cdus/degree_days/",
+   "status": 200,
+   "text_chars": 4524,
+   "snippets": []
+  }
+ ],
+ "nasa_power": [
+  {
+   "url": "https://power.larc.nasa.gov/docs/services/api/",
+   "status": 200,
+   "text_chars": 1774,
+   "snippets": []
+  }
+ ],
+ "open_meteo": [
+  {
+   "url": "https://open-meteo.com/en/terms",
+   "status": 200,
+   "text_chars": 9509,
+   "snippets": [
+    "e, whether arising from contract, tort, or any other cause. Non-Commercial Use By using the Free API for non-commercial use you agree to following terms: Less than 10'000 API calls per day, 5'000 per hour and 600 p",
+    " 600 per minute. You may only use the free API services for non-commercial purposes. You accept to the CC-BY 4.0 licence, as specified in the l",
+    "API services for non-commercial purposes. You accept to the CC-BY 4.0 licence, as specified in the licence conditions . We rese",
+    " IP addresses that misuse our service without prior notice. Non-commercial use is defined as elaborated by creative commons . To make it easier to understand, here are some examples th",
+    "asier to understand, here are some examples that qualify as non-commercial use: Using our service for private or non-profit websites or apps that do not have subscriptions or advertising. Utilizing our service for ",
+    "t. On the other hand, the following examples are considered commercial use: Operating websites or apps that have subscriptions or display advertisements. Integrating our service into commercial products or promot"
+   ]
+  },
+  {
+   "url": "https://open-meteo.com/en/license",
+   "status": 200,
+   "text_chars": 1,
+   "snippets": []
+  }
+ ],
+ "wikimedia_pageviews": [
+  {
+   "url": "https://dumps.wikimedia.org/other/pageviews/readme.html",
+   "status": 200,
+   "text_chars": 1368,
+   "snippets": [
+    "ics Datasets All Analytics datasets are available under the Creative Commons CC0 dedication . "
+   ]
+  },
+  {
+   "url": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/documentation/getting-started.html",
+   "status": 200,
+   "text_chars": 3275,
+   "snippets": [
+    "xt steps \u00e2\u0080\u008b Read about policies for data licensing and API rate limits. Discover the underlying concepts behind Wikimedia data, su",
+    "page Access policy Privacy Policy | Terms of Use | Content: CC BY-SA 4.0 | Code: MIT-0 Copyright \u00c2\u00a9 Wikimedia Foundation and contr"
+   ]
+  }
+ ],
+ "alternative_me": [
+  {
+   "url": "https://alternative.me/crypto/api/",
+   "status": 200,
+   "text_chars": 11900,
+   "snippets": [
+    " only update every 5 minutes anyway. The limit is set to 60 requests per minute enforced over a 10 minute window. If you need a higher request budget please contact us at s"
+   ]
+  }
+ ],
+ "kalshi": [
+  {
+   "url": "https://docs.kalshi.com/welcome",
+   "status": 200,
+   "text_chars": 1541,
+   "snippets": [
+    "ronment Build and test safely against the demo environment. API Keys Generate and manage your API credentials. Kalshi Academy New to prediction markets? Explore educatio",
+    "ets? Explore educational resources and tutorials. Reference Rate Limits Token budgets, tiers, and bursting. Changelog Stay updated with the latest API changes. Glossa"
+   ]
+  },
+  {
+   "url": "https://kalshi.com/regulatory/rulebook",
+   "status": 429,
+   "text_chars": 278,
+   "snippets": []
+  }
+ ],
+ "polymarket": [
+  {
+   "url": "https://docs.polymarket.com/",
+   "status": 200,
+   "text_chars": 2787,
+   "snippets": []
+  },
+  {
+   "url": "https://polymarket.com/tos",
+   "status": 200,
+   "text_chars": 2437,
+   "snippets": []
+  }
+ ],
+ "binance_vision": [
+  {
+   "url": "https://data.binance.vision/",
+   "status": 200,
+   "text_chars": 74,
+   "snippets": []
+  },
+  {
+   "url": "https://www.binance.com/en/terms",
+   "status": 202,
+   "text_chars": 0,
+   "snippets": []
+  }
+ ],
+ "deribit": [
+  {
+   "url": "https://docs.deribit.com/",
+   "status": 200,
+   "text_chars": 4112,
+   "snippets": [
+    "to Deribit API Quickstart Guide Authentication Creating new API key Authentication Access Scope Security Keys Technical Information API Usage Policy Rate Limits Best Practices Connection ",
+    " Scope Security Keys Technical Information API Usage Policy Rate Limits Best Practices Connection Management Market Data Collection Options Data Collection Order Management Using the currency Parameter Guides M",
+    "Positions Block Trading Voice Broker Trading API Asymmetric API Keys Market Maker Protection (MMP) API Configuration Liquidity Support Program (LSP) API Guide Accessing Historical Trades ",
+    "Core Concepts Authentication Learn how to create and manage API keys, and authenticate your requests. Rate Limits Understand rate limits, credit system, and how",
+    "create and manage API keys, and authenticate your requests. Rate Limits Understand rate limits, credit system, and how to optimize API usage. Access Scopes Learn about API permissions and access scope",
+    "ions and access scopes for controlling what operations your API keys can perform. Notifications Subscribe to real-time market data and accou"
+   ]
+  },
+  {
+   "url": "https://www.deribit.com/pages/information/terms-of-service",
+   "status": 200,
+   "text_chars": 242,
+   "snippets": []
+  }
+ ],
+ "okx": [
+  {
+   "url": "https://www.okx.com/docs-v5/en/",
+   "status": 200,
+   "text_chars": 1553594,
+   "snippets": [
+    "ces and Support Tutorials Python libraries Customer service API key Creation Generating an API key API key permissions API key security REST Authentication Making Requests Signature WebSo",
+    "plorer General Info Transaction Timeouts REST API WebSocket Rate Limits Trading-related APIs Sub-account rate limit Fill ratio based sub-account rate limit Best practices Market Maker Program Broker Program Tra",
+    "T / Mass cancel order POST / Cancel All After GET / Account rate limit POST / Order precheck WS / Order channel WS / Fills channel WS / Place order WS / Place multiple orders WS / Cancel order WS / Cancel multi",
+    " REST API Get sub-account list Create sub-account Create an API Key for a sub-account Query the API Key of a sub-account Reset the API Key of a sub-account Delete the API Key of sub-accou",
+    " a sub-account Query the API Key of a sub-account Reset the API Key of a sub-account Delete the API Key of sub-accounts Get sub-account trading balance Get sub-account funding balance Get",
+    "reach out to us by scanning the code below via the OKX APP. API key Creation Please refer to my api page regarding API Key creation. Generating an API key Create an API key on the website"
+   ]
+  }
+ ],
+ "sec_edgar": [
+  {
+   "url": "https://www.sec.gov/os/webmaster-faq#developers",
+   "status": 403,
+   "text_chars": 379,
+   "snippets": []
+  },
+  {
+   "url": "https://www.sec.gov/privacy.htm#dissemination",
+   "status": 403,
+   "text_chars": 378,
+   "snippets": []
+  }
+ ],
+ "imf_portwatch": [
+  {
+   "url": "https://portwatch.imf.org/pages/data-and-methodology",
+   "status": 200,
+   "text_chars": 28,
+   "snippets": []
+  },
+  {
+   "url": "https://www.imf.org/en/About/copyright-and-terms",
+   "status": 403,
+   "text_chars": 235,
+   "snippets": []
+  }
+ ],
+ "stocktwits": [
+  {
+   "url": "https://stocktwits.com/terms",
+   "status": 200,
+   "text_chars": 18806,
+   "snippets": [
+    "ls and for all activity that occurs under your account. You must notify us promptly at support@stocktwits.com if you believe your account has been compromised or use",
+    "ur act or omission under these Terms. 6. Acceptable Use and Prohibited Conduct post, upload, or share content that you do not have the right to share; post unlawful, defamatory, threatening, harassing, abusive,",
+    "ain unauthorized access; circumvent our technical measures, rate limits, access controls, or security protections; use the Service to send spam, unsolicited promotions, or deceptive advertising; or use the Serv",
+    "or that party\u2019s own conduct to the extent such indemnity is prohibited by applicable law. 18. Suspension and Termination We can suspend, restrict, o"
+   ]
+  }
+ ],
+ "reddit": [
+  {
+   "url": "https://www.redditinc.com/policies/data-api-terms",
+   "status": 200,
+   "text_chars": 55414,
+   "snippets": [
+    "se of Data APIs 3. Fees; Restrictions on Use 4. Trademarks; Attribution; Publicity 5. Support; Changes; Feedback 6. Termination 7. Disclaimer; L",
+    "ve owners, which may include \"all rights reserved\" notices, Creative Commons licenses, or other terms and conditions that may be agreed upon between you and the owners. Except as expressly permitt",
+    "he Data APIs for commercial purposes, research in excess of rate limits, or for any use that is not expressly permitted under the Data API Terms, then you will need to enter into a separate agreement with Reddi",
+    "iew our Developer Documentation here . 3.2 Restrictions You must not, and must not allow those acting on your behalf to: use the Data APIs to encourage or promote illegal activity or violation of third party ",
+    "of, except to the extent that this restriction is expressly prohibited by applicable law; circumvent or exceed limitations on calls and use of the Data APIs as outlined in the Developer Documentation, or otherw",
+    " APIs to spam, incentivize, or harass users. 4. Trademarks; Attribution; Publicity 4.1 Use of Reddit Trademarks You are not permitted to use the"
+   ]
+  }
+ ],
+ "gharchive": [
+  {
+   "url": "https://www.gharchive.org/",
+   "status": 200,
+   "text_chars": 8004,
+   "snippets": [
+    "port it. Note that you get 1 TB of data processed per month free of charge . In order to make best use of it, you can restrict your que"
+   ]
+  }
+ ],
+ "npm": [
+  {
+   "url": "https://docs.npmjs.com/policies/npm-open-source-terms",
+   "status": 404,
+   "text_chars": 6227,
+   "snippets": []
+  }
+ ],
+ "bbc_rss": [
+  {
+   "url": "https://www.bbc.co.uk/news/10628494",
+   "status": 200,
+   "text_chars": 5895,
+   "snippets": [
+    " website, however, we do require that the proper format and attribution is used when BBC News content appears. The attribution text should read \"BBC News\" or \"bbc.co.uk/",
+    " and attribution is used when BBC News content appears. The attribution text should read \"BBC News\" or \"bbc.co.uk/news\" as appropriate. You may not use any BBC logo or"
+   ]
+  }
+ ],
+ "cointelegraph": [
+  {
+   "url": "https://cointelegraph.com/terms-and-privacy",
+   "status": 200,
+   "text_chars": 25551,
+   "snippets": [
+    "s the Content for personal and informational purposes only. Redistribution, reproduction, automated scraping, or creation of independent content pipelines based on Cointelegraph reputation is strictly prohibited",
+    "ent pipelines based on Cointelegraph reputation is strictly prohibited without prior written authorization. Quoting Cointelegraph Content is permitted when it reflect",
+    "t is permitted when it reflects fair use and includes clear attribution to Cointelegraph as the source. Use of the Platform Content for training, fine-tuning, val",
+    "nguage models or similar automated technologies is strictly prohibited without the prior written consent of Cointelegraph. 4. Complaints and Takedown Procedure Cointelegraph maintai",
+    "ite or any portion of it (\u201cContent\u201d), for your own personal non-commercial use. Except as set out above, you are not permitted to copy, re",
+    "rsonal non-commercial use. Except as set out above, you are not permitted to copy, reproduce, duplicate, broadcast, download, store (in any medium), transmit, resell, show or play in public, adapt or modify in any"
+   ]
+  }
+ ],
+ "coingecko_api": [
+  {
+   "url": "https://www.coingecko.com/en/api/documentation",
+   "status": 403,
+   "text_chars": 150,
+   "snippets": []
+  },
+  {
+   "url": "https://www.coingecko.com/en/api_terms",
+   "status": 200,
+   "text_chars": 94735,
+   "snippets": [
+    "rivacy Policy and/or Website Terms and Conditions , you are not permitted to use the CoinGecko API. You, as a user of the CoinGecko API, acknowledges and acce",
+    "corporate or integrates our CoinGecko API. However, you are not permitted to sell, rent, lease, sub-license, re-distribute or syndicate access to the CoinGecko API or part thereof (unless pursuant to the terms of ",
+    "corporate or integrates our CoinGecko API. However, you are not permitted to:- place any advertisements on any of our Property, and any advertisements that you place on or around your products, services, website, ",
+    "e, platforms, mobile applications and software applications must not resemble or be reasonably likely to confuse any persons into thinking that the advertisements belong to CoinGecko, pertain to any CoinGecko",
+    "led to do so without any restrictions or notice to you. (i) Rate limit and monthly call limits for the CoinGecko API can be found on https://www.coingecko.com/en/api/pricing , (or in the event that you si",
+    "you sign a separate API usage agreement with CoinGecko your rate limit and/or monthly call limit may be stated in such API usage agreement). Such rate limit or monthly call limit may be varied by Coi"
+   ]
+  }
+ ],
+ "yahoo_finance": [
+  {
+   "url": "https://legal.yahoo.com/us/en/yahoo/terms/otos/index.html",
+   "status": 200,
+   "text_chars": 107633,
+   "snippets": [
+    "ny guidelines or policies associated with the Services. You must not misuse or interfere with the Services or try to access them using a method other than the interface and the instructions that we provide. Y",
+    " Control. You represent and warrant that you: (1) are not a prohibited party identified on any government export exclusion lists (see e.g., https://www.bis.doc.gov/index.php/policy-guidance/lists",
+    "o transfer software, technology, or other technical data to prohibited parties or countries; and (3) will not use the Services for military, nuclear, missile, chemical or biological weaponry end uses or conduct",
+    "or interests in the Services or the content you access. You must not use any branding or logos used in the Services unless we have given you separate explicit written permission. You may not remove, obscure, ",
+    " Services. Unless you have explicit written permission, you must not reproduce, modify, rent, lease, sell, trade, distribute, transmit, broadcast, publicly perform, create derivative works based on, or exploi",
+    "nnection with the Services engage in commercial activity on non-commercial properties or apps or high volume activity without our prior written consent. You may not engage in conduct or activity that is disrupti"
+   ]
+  }
+ ],
+ "fred": [
+  {
+   "url": "https://fred.stlouisfed.org/docs/api/terms_of_use.html",
+   "status": 0,
+   "err": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=3",
+   "snippets": []
+  }
+ ]
+}

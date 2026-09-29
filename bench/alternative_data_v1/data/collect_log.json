@@ -1,0 +1,177 @@
+{
+ "klines_BTCUSDT": {
+  "rows": 2220,
+  "first": "2020-09-01 00:00:00",
+  "last": "2026-09-29 00:00:00",
+  "recv_utc": "2026-09-29T18:32:26.638771Z"
+ },
+ "klines_ETHUSDT": {
+  "rows": 2220,
+  "first": "2020-09-01 00:00:00",
+  "last": "2026-09-29 00:00:00",
+  "recv_utc": "2026-09-29T18:32:27.656970Z"
+ },
+ "um_metrics_BTCUSDT": {
+  "rows": 713693,
+  "first": "2020-09-01 00:00:00",
+  "last": "2026-09-28 23:55:00",
+  "days_requested": 2219,
+  "days_ok": 2219,
+  "recv_utc": "2026-09-29T18:34:21.285947Z"
+ },
+ "um_funding_BTCUSDT": {
+  "rows": 6573,
+  "first": "2020-09-01 00:00:00",
+  "last": "2026-08-31 16:00:00.001000",
+  "months_ok": 72,
+  "months_requested": 72,
+  "recv_utc": "2026-09-29T18:34:25.238533Z"
+ },
+ "um_metrics_ETHUSDT": {
+  "rows": 507604,
+  "first": "2021-12-01 00:00:00",
+  "last": "2026-09-28 23:55:00",
+  "days_requested": 2219,
+  "days_ok": 1763,
+  "recv_utc": "2026-09-29T18:36:17.345294Z"
+ },
+ "um_funding_ETHUSDT": {
+  "rows": 6573,
+  "first": "2020-09-01 00:00:00",
+  "last": "2026-08-31 16:00:00.001000",
+  "months_ok": 72,
+  "months_requested": 72,
+  "recv_utc": "2026-09-29T18:36:20.620509Z"
+ },
+ "cm_btc": {
+  "rows": 2219,
+  "first": "2020-09-01 00:00:00",
+  "last": "2026-09-28 00:00:00",
+  "metrics": [
+   "FlowInExUSD",
+   "FlowOutExUSD",
+   "SplyExUSD",
+   "AdrActCnt",
+   "TxCnt",
+   "HashRate",
+   "FeeTotNtv",
+   "CapMVRVCur",
+   "AssetCompletionTime"
+  ],
+  "recv_utc": "2026-09-29T18:36:21.425037Z"
+ },
+ "cm_eth": {
+  "rows": 2219,
+  "first": "2020-09-01 00:00:00",
+  "last": "2026-09-28 00:00:00",
+  "metrics": [
+   "FlowInExUSD",
+   "FlowOutExUSD",
+   "SplyExUSD",
+   "AdrActCnt",
+   "TxCnt",
+   "AssetCompletionTime"
+  ],
+  "recv_utc": "2026-09-29T18:36:21.677812Z"
+ },
+ "bc_n-transactions": {
+  "rows": 2209,
+  "first": "2020-09-01 00:00:00",
+  "last": "2026-09-28 00:00:00",
+  "recv_utc": "2026-09-29T18:36:22.695094Z"
+ },
+ "bc_mempool-size": {
+  "rows": 2220,
+  "first": "2020-09-01 00:00:00",
+  "last": "2026-09-29 00:00:00",
+  "recv_utc": "2026-09-29T18:36:38.849243Z"
+ },
+ "bc_avg-block-size": {
+  "rows": 2209,
+  "first": "2020-09-01 00:00:00",
+  "last": "2026-09-28 00:00:00",
+  "recv_utc": "2026-09-29T18:36:39.428517Z"
+ },
+ "bc_transaction-fees": {
+  "rows": 2209,
+  "first": "2020-09-01 00:00:00",
+  "last": "2026-09-28 00:00:00",
+  "recv_utc": "2026-09-29T18:36:39.938073Z"
+ },
+ "bc_hash-rate": {
+  "rows": 2209,
+  "first": "2020-09-01 00:00:00",
+  "last": "2026-09-28 00:00:00",
+  "recv_utc": "2026-09-29T18:36:40.312200Z"
+ },
+ "bc_n-unique-addresses": {
+  "rows": 2208,
+  "first": "2020-09-01 00:00:00",
+  "last": "2026-09-28 00:00:00",
+  "recv_utc": "2026-09-29T18:36:40.929249Z"
+ },
+ "llama_stables": {
+  "rows": 3227,
+  "first": "2017-11-29 00:00:00",
+  "last": "2026-09-29 00:00:00",
+  "recv_utc": "2026-09-29T18:36:41.914125Z"
+ },
+ "llama_dex": {
+  "rows": 4608,
+  "first": "2014-02-17 00:00:00",
+  "last": "2026-09-29 00:00:00",
+  "recv_utc": "2026-09-29T18:36:42.835844Z"
+ },
+ "fng": {
+  "rows": 3159,
+  "first": "2018-02-01 00:00:00",
+  "last": "2026-09-29 00:00:00",
+  "recv_utc": "2026-09-29T18:36:43.617962Z"
+ },
+ "cftc_tff_btc_cme": {
+  "rows": 442,
+  "first": "2018-04-10T00:00:00.000",
+  "last": "2026-09-22T00:00:00.000",
+  "recv_utc": "2026-09-29T18:36:44.537998Z"
+ },
+ "treasury_tga": {
+  "rows": 1114,
+  "first": "2022-04-18",
+  "last": "2026-09-25",
+  "recv_utc": "2026-09-29T18:36:45.880541Z"
+ },
+ "nyfed_rrp": {
+  "rows": 1525,
+  "recv_utc": "2026-09-29T18:36:46.828783Z"
+ },
+ "wiki_Bitcoin": {
+  "rows": 2219,
+  "recv_utc": "2026-09-29T18:43:05.935587Z"
+ },
+ "wiki_Ethereum": {
+  "rows": 2219,
+  "recv_utc": "2026-09-29T18:44:05.445451Z"
+ },
+ "npm_ethers": {
+  "rows": 2192,
+  "recv_utc": "2026-09-29T18:44:13.849713Z"
+ },
+ "npm_web3": {
+  "rows": 2192,
+  "recv_utc": "2026-09-29T18:44:18.953345Z"
+ },
+ "npm_bitcoinjs-lib": {
+  "rows": 2192,
+  "recv_utc": "2026-09-29T18:44:24.114598Z"
+ },
+ "npm_@solana/web3.js": {
+  "rows": 2192,
+  "recv_utc": "2026-09-29T18:44:29.486972Z"
+ },
+ "deribit_dvol": {
+  "rows": 2016,
+  "first": "2021-03-24 00:00:00",
+  "last": "2026-09-29 00:00:00",
+  "recv_utc": "2026-09-29T18:44:30.487433Z"
+ }
+}
