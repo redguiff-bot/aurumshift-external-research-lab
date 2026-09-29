@@ -1,0 +1,6 @@
+real 13 {'discovered': 19, 'passed_validation': 0, 'final': 0, 'heldout_stable': 0, 'nonredundant': 0, 'new_stable_nonredundant': 0, 'invariant': 0, 'sym_stable_clusters': 4, 'sym_stable_heldout': 0} 128s
+real 12 {'discovered': 20, 'passed_validation': 0, 'final': 0, 'heldout_stable': 0, 'nonredundant': 0, 'new_stable_nonredundant': 0, 'invariant': 0, 'sym_stable_clusters': 2, 'sym_stable_heldout': 0} 128s
+real 11 {'discovered': 18, 'passed_validation': 0, 'final': 0, 'heldout_stable': 0, 'nonredundant': 0, 'new_stable_nonredundant': 0, 'invariant': 0, 'sym_stable_clusters': 3, 'sym_stable_heldout': 0} 128s
+real 14 {'discovered': 22, 'passed_validation': 0, 'final': 0, 'heldout_stable': 0, 'nonredundant': 0, 'new_stable_nonredundant': 0, 'invariant': 0, 'sym_stable_clusters': 2, 'sym_stable_heldout': 0} 130s
+real 15 {'discovered': 20, 'passed_validation': 0, 'final': 0, 'heldout_stable': 0, 'nonredundant': 0, 'new_stable_nonredundant': 0, 'invariant': 0, 'sym_stable_clusters': 2, 'sym_stable_heldout': 0} 126s
+total 256.9637060165405

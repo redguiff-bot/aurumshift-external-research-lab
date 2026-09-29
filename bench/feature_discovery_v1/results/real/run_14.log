@@ -1,0 +1,8 @@
+[6s] library 590 candidates, train rows 58878
+[28s] MI top30, CMI-selected 1
+[42s] stability selection alpha=0.0194: 0 features with freq>=0.6
+[101s] symbolic: 30 programs, 11 clusters, 2 stable (>=3 seeds)
+[102s] discovered (pre-validation, deduplicated): 22
+[107s] passed validation gate: 0/22
+[130s] final list (validation-selected): []
+[130s] counts {'discovered': 22, 'passed_validation': 0, 'final': 0, 'heldout_stable': 0, 'nonredundant': 0, 'new_stable_nonredundant': 0, 'invariant': 0, 'sym_stable_clusters': 2, 'sym_stable_heldout': 0}
