@@ -25,6 +25,6 @@ def make(queue_main="main", **kw):
     def review(params, ctx):
         att = ctx._task["attempt"]
         def r():
-            se("review", params["n"], att); time.sleep(0.2); return "ok"
+            se("review", params["n"], att); time.sleep(float(os.environ.get("REVIEW_SECS","0.2"))); return "ok"
         return {"review": ctx.step("review", r)}
     return a

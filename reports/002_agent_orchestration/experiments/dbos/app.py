@@ -29,6 +29,7 @@ def work(task: int) -> str:
 @DBOS.step()
 def review(task: int, res: str) -> str:
     se("review", task)
+    time.sleep(float(os.environ.get("REVIEW_SLEEP", "0")))
     return f"reviewed({res})"
 
 @DBOS.workflow()
