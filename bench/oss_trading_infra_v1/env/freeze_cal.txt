@@ -1,0 +1,11 @@
+exchange-calendars==4.13.2
+holidays==0.105
+korean-lunar-calendar==0.4.0
+numpy==2.4.6
+pandas==3.0.6
+pandas-market-calendars==5.4.0
+pyluach==2.3.0
+python-dateutil==2.9.0.post0
+six==1.17.0
+toolz==1.1.0
+tzdata==2026.4

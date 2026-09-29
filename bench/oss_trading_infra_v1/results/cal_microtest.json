@@ -1,0 +1,146 @@
+{
+ "versions": {
+  "exchange_calendars": "4.13.2",
+  "pandas_market_calendars": "5.4.0",
+  "holidays": "0.105"
+ },
+ "XNYS_sessions": {
+  "xc": 1758,
+  "pmc": 1758,
+  "only_xc": [],
+  "only_pmc": []
+ },
+ "spot_checks": {
+  "2025-01-09": {
+   "xc_is_session": false,
+   "pmc_is_session": false
+  },
+  "2024-07-03": {
+   "xc_is_session": true,
+   "xc_close_utc": "2024-07-03 17:00:00+00:00",
+   "pmc_is_session": true,
+   "pmc_close_utc": "2024-07-03 17:00:00+00:00"
+  },
+  "2024-11-29": {
+   "xc_is_session": true,
+   "xc_close_utc": "2024-11-29 18:00:00+00:00",
+   "pmc_is_session": true,
+   "pmc_close_utc": "2024-11-29 18:00:00+00:00"
+  },
+  "2024-12-24": {
+   "xc_is_session": true,
+   "xc_close_utc": "2024-12-24 18:00:00+00:00",
+   "pmc_is_session": true,
+   "pmc_close_utc": "2024-12-24 18:00:00+00:00"
+  },
+  "2025-04-18": {
+   "xc_is_session": false,
+   "pmc_is_session": false
+  },
+  "2026-07-03": {
+   "xc_is_session": false,
+   "pmc_is_session": false
+  }
+ },
+ "XNYS_early_closes_2020_2026_xc": [
+  "2020-11-27",
+  "2020-12-24",
+  "2021-11-26",
+  "2022-11-25",
+  "2023-07-03",
+  "2023-11-24",
+  "2024-07-03",
+  "2024-11-29",
+  "2024-12-24",
+  "2025-07-03",
+  "2025-11-28",
+  "2025-12-24",
+  "2026-11-27",
+  "2026-12-24"
+ ],
+ "XNYS_early_closes_2020_2026_pmc": [
+  "2020-11-27",
+  "2020-12-24",
+  "2021-11-26",
+  "2022-11-25",
+  "2023-07-03",
+  "2023-11-24",
+  "2024-07-03",
+  "2024-11-29",
+  "2024-12-24",
+  "2025-07-03",
+  "2025-11-28",
+  "2025-12-24",
+  "2026-11-27",
+  "2026-12-24"
+ ],
+ "other_calendars_xc": {
+  "CMES": {
+   "sessions_2024": 255,
+   "has_break": false,
+   "example_open_close_utc": [
+    "2024-01-18 23:00:00+00:00",
+    "2024-01-19 23:00:00+00:00"
+   ]
+  },
+  "XLON": {
+   "sessions_2024": 250,
+   "has_break": false,
+   "example_open_close_utc": [
+    "2024-01-19 08:00:00+00:00",
+    "2024-01-19 16:30:00+00:00"
+   ]
+  },
+  "XTKS": {
+   "sessions_2024": 244,
+   "has_break": true,
+   "example_open_close_utc": [
+    "2024-01-22 00:00:00+00:00",
+    "2024-01-22 06:00:00+00:00"
+   ]
+  },
+  "XHKG": {
+   "sessions_2024": 242,
+   "has_break": true,
+   "example_open_close_utc": [
+    "2024-01-19 01:30:00+00:00",
+    "2024-01-19 08:00:00+00:00"
+   ]
+  },
+  "IEPA": {
+   "sessions_2024": 255,
+   "has_break": false,
+   "example_open_close_utc": [
+    "2024-01-19 01:00:00+00:00",
+    "2024-01-19 23:00:00+00:00"
+   ]
+  }
+ },
+ "crypto_24_7_calendar": "present",
+ "n_calendars": {
+  "xc": 71,
+  "pmc": 211
+ },
+ "dst_close_utc": {
+  "2024-03-08_EST": "2024-03-08 21:00:00+00:00",
+  "2024-03-11_EDT": "2024-03-11 20:00:00+00:00"
+ },
+ "xc_load_default_seconds": 0.171,
+ "xc_minutes_2024H1_seconds": 0.036,
+ "xc_default_bounds": [
+  "2006-09-29 00:00:00",
+  "2027-09-29 00:00:00"
+ ],
+ "requires_xc": [
+  "numpy>=1.26.4",
+  "pandas>=1.5.0",
+  "pyluach>=2.3.0",
+  "toolz>=1.0.0",
+  "tzdata>=2025.2",
+  "korean_lunar_calendar>=0.3.1"
+ ],
+ "requires_pmc": [
+  "exchange-calendars>=3.3",
+  "pandas>=1.1"
+ ]
+}

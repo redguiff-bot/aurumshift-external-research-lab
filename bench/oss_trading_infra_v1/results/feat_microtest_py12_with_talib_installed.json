@@ -1,0 +1,22 @@
+{
+ "python": "3.12.3",
+ "libs": {
+  "TA-Lib": {
+   "version": "0.8.1",
+   "rsi_20k_ms": 0.165,
+   "prefix_consistency_maxabs": 0.0,
+   "ref": {
+    "EMA20": 102.3386535295528,
+    "RSI14": 48.787754266123784,
+    "ATR14": 0.05013326663026824
+   }
+  },
+  "pandas-ta": {
+   "version": "0.4.71b0",
+   "mean_rsi_last1000": 48.787754266123784,
+   "mean_atr_last1000": 0.05013326663026824,
+   "prefix_consistency_maxabs": 0.0,
+   "vs_talib_rsi_maxabs_after_200": 0.0
+  }
+ }
+}

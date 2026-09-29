@@ -1,0 +1,10 @@
+PROJECTS_DISCOVERED=67
+PROJECTS_EXECUTED=41 (behavioural microtest run); 3 install/import only; 23 screened from metadata only
+
+ADOPT_REFERENCE_COUNT=14
+ADAPT_CANDIDATE_COUNT=10
+PARK_COUNT=36
+REJECT_COUNT=7
+
+SECOND_SERVICE_REQUIRED_CANDIDATES=5 (tcapy, QuestDB, ClickHouse, VictoriaMetrics, InfluxDB)
+SECOND_DATASTORE_REQUIRED_CANDIDATES=8 (zipline-reloaded, tcapy, QuestDB, ClickHouse, ArcticDB, VictoriaMetrics, InfluxDB, tstables)

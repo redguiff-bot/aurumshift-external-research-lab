@@ -1,0 +1,16 @@
+{
+ "version": "1.5.1",
+ "spread_only_a=10bps": {
+  "cost_1M": 1000.0,
+  "cost_4M": 4000.0,
+  "ratio_4M_over_1M": 4.0,
+  "expected_ratio": 4.0,
+  "expected_cost_1M_if_10bps_on_traded_notional": 1000.0
+ },
+ "impact_only_b=1": {
+  "cost_1M": 2042.4470639723586,
+  "cost_4M": 16339.576511779334,
+  "ratio_4M_over_1M": 8.000000000000227,
+  "expected_ratio_exponent_1.5": 8.0
+ }
+}

@@ -1,0 +1,332 @@
+[
+ {
+  "name": "hftbacktest",
+  "pkg": "hftbacktest",
+  "n_distributions_installed": 43,
+  "site_packages_MB": 735,
+  "install_seconds_warm_cache": 0.4,
+  "import_seconds": 1.17,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "nautilus_trader",
+  "pkg": "nautilus_trader",
+  "n_distributions_installed": 15,
+  "site_packages_MB": 574,
+  "install_seconds_warm_cache": 0.2,
+  "import_seconds": 0.06,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "ccxt",
+  "pkg": "ccxt",
+  "n_distributions_installed": 23,
+  "site_packages_MB": 83,
+  "install_seconds_warm_cache": 0.2,
+  "import_seconds": 1.94,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "cryptofeed",
+  "pkg": "cryptofeed",
+  "n_distributions_installed": 26,
+  "site_packages_MB": 40,
+  "install_seconds_warm_cache": 0.3,
+  "import_seconds": 0.82,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "backtesting.py",
+  "pkg": "backtesting",
+  "n_distributions_installed": 15,
+  "site_packages_MB": 158,
+  "install_seconds_warm_cache": 0.2,
+  "import_seconds": 2.54,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "vectorbt",
+  "pkg": "vectorbt",
+  "n_distributions_installed": 59,
+  "site_packages_MB": 622,
+  "install_seconds_warm_cache": 0.6,
+  "import_seconds": 8.05,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "backtrader",
+  "pkg": "backtrader",
+  "n_distributions_installed": 1,
+  "site_packages_MB": 2,
+  "install_seconds_warm_cache": 0.3,
+  "import_seconds": 0.49,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "bt",
+  "pkg": "bt",
+  "n_distributions_installed": 43,
+  "site_packages_MB": 389,
+  "install_seconds_warm_cache": 0.3,
+  "import_seconds": 6.44,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "zipline-reloaded",
+  "pkg": "zipline-reloaded",
+  "n_distributions_installed": 64,
+  "site_packages_MB": 464,
+  "install_seconds_warm_cache": 0.3,
+  "import_seconds": 6.29,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "cvxportfolio",
+  "pkg": "cvxportfolio",
+  "n_distributions_installed": 30,
+  "site_packages_MB": 554,
+  "install_seconds_warm_cache": 0.3,
+  "import_seconds": 5.35,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "PyPortfolioOpt",
+  "pkg": "pyportfolioopt",
+  "n_distributions_installed": 24,
+  "site_packages_MB": 476,
+  "install_seconds_warm_cache": 0.2,
+  "import_seconds": 3.49,
+  "import_ok": false,
+  "import_err": "ModuleNotFoundError: No module named 'packaging'"
+ },
+ {
+  "name": "Riskfolio-Lib",
+  "pkg": "riskfolio-lib",
+  "n_distributions_installed": 85,
+  "site_packages_MB": 963,
+  "install_seconds_warm_cache": 0.6,
+  "import_seconds": 8.45,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "skfolio",
+  "pkg": "skfolio",
+  "n_distributions_installed": 19,
+  "site_packages_MB": 358,
+  "install_seconds_warm_cache": 0.2,
+  "import_seconds": 4.33,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "river",
+  "pkg": "river",
+  "n_distributions_installed": 4,
+  "site_packages_MB": 179,
+  "install_seconds_warm_cache": 0.1,
+  "import_seconds": 0.01,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "talipp",
+  "pkg": "talipp",
+  "n_distributions_installed": 1,
+  "site_packages_MB": 1,
+  "install_seconds_warm_cache": 0.1,
+  "import_seconds": 0.01,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "ta",
+  "pkg": "ta",
+  "n_distributions_installed": 5,
+  "site_packages_MB": 100,
+  "install_seconds_warm_cache": 0.2,
+  "import_seconds": 1.3,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "TA-Lib",
+  "pkg": "TA-Lib",
+  "n_distributions_installed": 2,
+  "site_packages_MB": 85,
+  "install_seconds_warm_cache": 0.1,
+  "import_seconds": 0.29,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "ddsketch",
+  "pkg": "ddsketch",
+  "n_distributions_installed": 2,
+  "site_packages_MB": 1,
+  "install_seconds_warm_cache": 0.1,
+  "import_seconds": 0.04,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "tdigest",
+  "pkg": "tdigest",
+  "n_distributions_installed": 3,
+  "site_packages_MB": 2,
+  "install_seconds_warm_cache": 0.1,
+  "import_seconds": 0.03,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "hdrhistogram",
+  "pkg": "hdrhistogram",
+  "n_distributions_installed": 3,
+  "site_packages_MB": 5,
+  "install_seconds_warm_cache": 0.1,
+  "import_seconds": 0.02,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "exchange_calendars",
+  "pkg": "exchange-calendars",
+  "n_distributions_installed": 9,
+  "site_packages_MB": 104,
+  "install_seconds_warm_cache": 0.1,
+  "import_seconds": 1.35,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "pandas_market_calendars",
+  "pkg": "pandas-market-calendars",
+  "n_distributions_installed": 10,
+  "site_packages_MB": 104,
+  "install_seconds_warm_cache": 0.2,
+  "import_seconds": 1.51,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "pandera",
+  "pkg": "pandera",
+  "n_distributions_installed": 10,
+  "site_packages_MB": 11,
+  "install_seconds_warm_cache": 0.2,
+  "import_seconds": 0.12,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "great_expectations",
+  "pkg": "great-expectations",
+  "n_distributions_installed": 35,
+  "site_packages_MB": 267,
+  "install_seconds_warm_cache": 0.3,
+  "import_seconds": 6.72,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "frictionless-py",
+  "pkg": "frictionless",
+  "n_distributions_installed": 39,
+  "site_packages_MB": 35,
+  "install_seconds_warm_cache": 0.3,
+  "import_seconds": 0.46,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "pointblank",
+  "pkg": "pointblank",
+  "n_distributions_installed": 47,
+  "site_packages_MB": 145,
+  "install_seconds_warm_cache": 0.3,
+  "import_seconds": 1.08,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "DuckDB",
+  "pkg": "duckdb",
+  "n_distributions_installed": 1,
+  "site_packages_MB": 59,
+  "install_seconds_warm_cache": 0.1,
+  "import_seconds": 0.08,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "ArcticDB",
+  "pkg": "arcticdb",
+  "n_distributions_installed": 12,
+  "site_packages_MB": 186,
+  "install_seconds_warm_cache": 0.2,
+  "import_seconds": 1.65,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "pyarrow",
+  "pkg": "pyarrow",
+  "n_distributions_installed": 1,
+  "site_packages_MB": 152,
+  "install_seconds_warm_cache": 0.1,
+  "import_seconds": 0.07,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "polars",
+  "pkg": "polars",
+  "n_distributions_installed": 2,
+  "site_packages_MB": 177,
+  "install_seconds_warm_cache": 0.1,
+  "import_seconds": 0.46,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "tardis-python",
+  "pkg": "tardis-dev",
+  "n_distributions_installed": 15,
+  "site_packages_MB": 35,
+  "install_seconds_warm_cache": 0.2,
+  "import_seconds": 0.44,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "quantstats",
+  "pkg": "quantstats",
+  "n_distributions_installed": 35,
+  "site_packages_MB": 349,
+  "install_seconds_warm_cache": 0.3,
+  "import_seconds": 4.81,
+  "import_ok": true,
+  "import_err": ""
+ },
+ {
+  "name": "empyrical-reloaded",
+  "pkg": "empyrical-reloaded",
+  "n_distributions_installed": 8,
+  "site_packages_MB": 216,
+  "install_seconds_warm_cache": 0.2,
+  "import_seconds": 3.26,
+  "import_ok": false,
+  "import_err": "ModuleNotFoundError: No module named 'pytz'"
+ }
+]

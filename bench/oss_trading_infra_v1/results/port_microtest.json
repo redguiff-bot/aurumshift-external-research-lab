@@ -1,0 +1,80 @@
+{
+ "n_assets": 5,
+ "T": 1000,
+ "oracle_minvar_weights": {
+  "A": 0.0897,
+  "B": 0.18328,
+  "C": 0.26401,
+  "D": 0.22383,
+  "E": 0.23917
+ },
+ "PyPortfolioOpt": {
+  "weights": {
+   "A": 0.0897,
+   "B": 0.18328,
+   "C": 0.26401,
+   "D": 0.22383,
+   "E": 0.23917
+  },
+  "maxabs_vs_oracle": 2.599644680079116e-09,
+  "deterministic": true,
+  "seconds_2_runs": 0.53,
+  "version_pypi": null
+ },
+ "Riskfolio-Lib": {
+  "weights": {
+   "A": 0.0897,
+   "B": 0.18328,
+   "C": 0.26402,
+   "D": 0.22383,
+   "E": 0.23917
+  },
+  "maxabs_vs_oracle": 5.136906859881663e-07,
+  "deterministic": true,
+  "seconds_2_runs": 1.48,
+  "version_pypi": null
+ },
+ "skfolio": {
+  "weights": {
+   "A": 0.08967,
+   "B": 0.18328,
+   "C": 0.26402,
+   "D": 0.22384,
+   "E": 0.23918
+  },
+  "maxabs_vs_oracle": 2.977683533611497e-05,
+  "deterministic": true,
+  "seconds_2_runs": 0.37,
+  "version_pypi": null
+ },
+ "empyrical_reloaded": {
+  "sharpe": 0.8449484175733435,
+  "max_dd": -0.26293334574612715,
+  "vs_numpy": {
+   "sharpe_absdiff": 9.992007221626409e-16,
+   "dd_absdiff": 0.0
+  }
+ },
+ "quantstats": {
+  "sharpe": 0.8449484175733425,
+  "max_dd": -0.26293334574612715,
+  "vs_numpy": {
+   "sharpe_absdiff": 0.0,
+   "dd_absdiff": 0.0
+  }
+ },
+ "numpy_reference": {
+  "sharpe_daily_ann": 0.8449484175733425,
+  "max_dd": -0.26293334574612715
+ },
+ "cvxportfolio": {
+  "version": "1.5.1",
+  "policy_constructed": true,
+  "note": "TransactionCost(a,b,exponent) = spread + sqrt-law-style impact; simulated via MarketSimulator on UserProvidedMarketData (cash column added)",
+  "sim_ran": true,
+  "final_value": 986900.1886478509,
+  "turnover": 0.0036771206123270552,
+  "seconds": 0.74,
+  "deterministic": true
+ }
+}

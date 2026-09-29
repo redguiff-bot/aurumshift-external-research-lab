@@ -1,0 +1,11 @@
+{
+ "version": "3.1.1",
+ "ingest_seconds": 0.48,
+ "run_seconds": 1.09,
+ "n_days": 271,
+ "final_portfolio_value": 1007095.5562094997,
+ "deterministic_2runs": true,
+ "commission_slippage_defaults": "per-share commission $0.001 min $0 & VolumeShareSlippage(0.025, 0.1) by default (OBSERVED in source: finance/commission.py L25-28, slippage.py L269-270)",
+ "orders_filled_next_bar": true,
+ "calendar_gate": "ingest REJECTED: AssertionError: Got 30 rows for daily bars table with first day=2023-01-03, last day=2023-02-01, expected 21 rows.\nMissing sessions: []\nExtra sessions: [Timestamp('2023-01-07 0"
+}

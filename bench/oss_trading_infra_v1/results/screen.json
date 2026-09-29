@@ -1,0 +1,3919 @@
+[
+ {
+  "name": "ccxt",
+  "classes": [
+   "COLL",
+   "DL"
+  ],
+  "lang": "TypeScript/Python/PHP/C#/Go",
+  "git": {
+   "repo": "ccxt/ccxt",
+   "commits_12m": 10126,
+   "authors_12m": 113,
+   "top_author_share": 0.505,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-29",
+   "n_files": 9957,
+   "test_files": 2173,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE.txt",
+   "license_head": "MIT License Copyright \u00a9 2024 Igor Kroitor Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documenta",
+   "readme_flags": "",
+   "lockfiles": [
+    "Dockerfile",
+    "docker-compose.yml",
+    "package.json",
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "4.5.84",
+   "license": "MIT",
+   "classifiers_license": [],
+   "requires_python": ">=3.10",
+   "requires_dist": [
+    "certifi==2026.6.17",
+    "requests<3,>=2.32",
+    "cryptography<51,>=50",
+    "typing_extensions==4.16.0",
+    "aiohttp<3.15,>=3.14.3",
+    "yarl<2,>=1.20",
+    "aiohttp-fast-zlib==0.3.0",
+    "zlib-ng==1.0.0",
+    "uvloop==0.22.1; platform_system != \"Windows\" and implementation_name == \"cpython\"",
+    "winloop==0.6.3; platform_system == \"Windows\" and implementation_name == \"cpython\" and python_version < \"3.15\" and platform_machine in \"AMD64 ARM64\"",
+    "orjson==3.11.9; implementation_name == \"cpython\" and python_version < \"3.15\" and platform_machine in \"x86_64 AMD64 aarch64 arm64 armv7l i686 ppc64le s390x\"",
+    "coincurve==21.0.0; implementation_name == \"cpython\" and python_version < \"3.14\" and platform_machine in \"x86_64 AMD64 aarch64 arm64 ARM64 i686\" and platform_machine != \"x86\"",
+    "aiohappyeyeballs==2.7.1",
+    "aiosignal==1.4.0",
+    "attrs==26.1.0",
+    "frozenlist==1.8.0",
+    "multidict==6.7.1",
+    "propcache==0.5.2",
+    "cffi==2.0.0",
+    "pycparser==3.0",
+    "charset_normalizer==3.4.7",
+    "idna==3.18",
+    "urllib3==2.7.0",
+    "ruff==0.0.292; extra == \"qa\"",
+    "tox==4.56.1; extra == \"qa\"",
+    "mypy==1.6.1; extra == \"type\"",
+    "certifi==2026.6.17; extra == \"dev\"",
+    "requests<3,>=2.32; extra == \"dev\"",
+    "cryptography<51,>=50; extra == \"dev\"",
+    "typing_extensions==4.16.0; extra == \"dev\"",
+    "aiohttp<3.15,>=3.14.3; extra == \"dev\"",
+    "aiodns==4.0.4; extra == \"dev\"",
+    "yarl<2,>=1.20; extra == \"dev\"",
+    "aiohttp-fast-zlib==0.3.0; extra == \"dev\"",
+    "zlib-ng==1.0.0; extra == \"dev\"",
+    "uvloop==0.22.1; (platform_system != \"Windows\" and implementation_name == \"cpython\") and extra == \"dev\"",
+    "winloop==0.6.3; (platform_system == \"Windows\" and implementation_name == \"cpython\" and python_version < \"3.15\" and platform_machine in \"AMD64 ARM64\") and extra == \"dev\"",
+    "orjson==3.11.9; (implementation_name == \"cpython\" and python_version < \"3.15\" and platform_machine in \"x86_64 AMD64 aarch64 arm64 armv7l i686 ppc64le s390x\") and extra == \"dev\"",
+    "coincurve==21.0.0; (implementation_name == \"cpython\" and python_version < \"3.14\" and platform_machine in \"x86_64 AMD64 aarch64 arm64 ARM64 i686\" and platform_machine != \"x86\") and extra == \"dev\"",
+    "ruff==0.0.292; extra == \"dev\"",
+    "tox==4.56.1; extra == \"dev\"",
+    "mypy==1.6.1; extra == \"dev\""
+   ],
+   "last_release": [
+    "2026-09-24",
+    "4.5.84"
+   ],
+   "releases_12m": 76,
+   "n_releases": 1622,
+   "first_release": "2017-07-12",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "cryptofeed",
+  "classes": [
+   "COLL",
+   "OB"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "bmoscon/cryptofeed",
+   "commits_12m": 39,
+   "authors_12m": 4,
+   "top_author_share": 0.744,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-28",
+   "n_files": 237,
+   "test_files": 22,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "cryptofeed Copyright (C) 2017-2026 Bryant Moscon This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero Gener",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "3.0.1",
+   "license": "AGPL-3.0-or-later",
+   "classifiers_license": [],
+   "requires_python": ">=3.13",
+   "requires_dist": [
+    "websockets>=14.1",
+    "pyyaml",
+    "aiohttp>=3.14.3",
+    "msgspec>=0.19.0",
+    "uvloop; platform_system != \"Windows\"",
+    "order_book>=1.1.0",
+    "aiodns>=1.1",
+    "zstandard>=0.23; python_version < \"3.14\"",
+    "aiokafka>=0.7.0; extra == \"kafka\"",
+    "pymongo>=4.9; extra == \"mongo\"",
+    "asyncpg; extra == \"postgres\"",
+    "hiredis; extra == \"redis\"",
+    "redis>=4.5.1; extra == \"redis\"",
+    "pyzmq; extra == \"zmq\"",
+    "aiokafka>=0.7.0; extra == \"all\"",
+    "pymongo>=4.9; extra == \"all\"",
+    "asyncpg; extra == \"all\"",
+    "hiredis; extra == \"all\"",
+    "redis>=4.5.1; extra == \"all\"",
+    "pyzmq; extra == \"all\"",
+    "zstandard; python_version < \"3.14\" and extra == \"all\""
+   ],
+   "last_release": [
+    "2026-09-27",
+    "3.0.1"
+   ],
+   "releases_12m": 3,
+   "n_releases": 79,
+   "first_release": "2017-12-22",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "binance-public-data",
+  "classes": [
+   "DL"
+  ],
+  "lang": "Python/shell",
+  "git": {
+   "repo": "binance/binance-public-data",
+   "commits_12m": 0,
+   "authors_12m": 0,
+   "top_author_share": null,
+   "authors_for_50pct": null,
+   "last_commit": "2025-01-09",
+   "n_files": 18,
+   "test_files": 0,
+   "ci": [],
+   "license_file": null,
+   "readme_flags": "",
+   "lockfiles": []
+  },
+  "pypi": null
+ },
+ {
+  "name": "freqtrade",
+  "classes": [
+   "COLL",
+   "DL",
+   "BT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "freqtrade/freqtrade",
+   "commits_12m": 3282,
+   "authors_12m": 46,
+   "top_author_share": 0.7,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-29",
+   "n_files": 782,
+   "test_files": 206,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/> Everyone is permitted to copy and distrib",
+   "readme_flags": "",
+   "lockfiles": [
+    "Dockerfile",
+    "docker-compose.yml",
+    "pyproject.toml",
+    "requirements.txt"
+   ]
+  },
+  "pypi": {
+   "version": "2026.9",
+   "license": "GPLv3",
+   "classifiers_license": [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
+   ],
+   "requires_python": ">=3.11",
+   "requires_dist": [
+    "ccxt>=4.5.76",
+    "SQLAlchemy>=2.0.6",
+    "python-telegram-bot>=20.1",
+    "humanize>=4.0.0",
+    "cachetools",
+    "requests",
+    "httpx>=0.24.1",
+    "urllib3",
+    "certifi>=2026.1.4",
+    "jsonschema",
+    "scipy",
+    "numpy<3.0,>2.0",
+    "pandas<4.0,>=2.2.0",
+    "bottleneck>=1.5.0",
+    "numexpr>=2.14.0",
+    "TA-Lib<0.9",
+    "ft-pandas-ta",
+    "technical",
+    "tabulate",
+    "pycoingecko>=3.2.0",
+    "python-rapidjson",
+    "orjson",
+    "jinja2",
+    "questionary",
+    "prompt-toolkit",
+    "joblib>=1.2.0",
+    "cloudpickle<4.0,>=3.1.2",
+    "rich",
+    "pyarrow; platform_machine != \"armv7l\"",
+    "fastapi",
+    "pydantic>=2.2.0",
+    "pyjwt",
+    "websockets",
+    "uvicorn",
+    "psutil",
+    "schedule",
+    "janus",
+    "ast-comments",
+    "aiofiles",
+    "aiohttp",
+    "cryptography",
+    "sdnotify",
+    "python-dateutil",
+    "pytz",
+    "packaging",
+    "freqtrade-client",
+    "plotly>=4.0; extra == \"plot\"",
+    "cmaes; extra == \"hyperopt\"",
+    "filelock; extra == \"hyperopt\"",
+    "optuna>4.0.0; extra == \"hyperopt\"",
+    "scikit-learn; extra == \"hyperopt\"",
+    "datasieve>=0.1.5; extra == \"freqai\"",
+    "joblib; extra == \"freqai\"",
+    "lightgbm; extra == \"freqai\"",
+    "scikit-learn; extra == \"freqai\"",
+    "tensorboard; extra == \"freqai\"",
+    "xgboost; extra == \"freqai\"",
+    "gymnasium; extra == \"freqai-rl\"",
+    "sb3-contrib; (sys_platform != \"darwin\" or platform_machine != \"x86_64\") and extra == \"freqai-rl\"",
+    "stable-baselines3; (sys_platform != \"darwin\" or platform_machine != \"x86_64\") and extra == \"freqai-rl\"",
+    "torch; (sys_platform != \"darwin\" or platform_machine != \"x86_64\") and extra == \"freqai-rl\"",
+    "tqdm; extra == \"freqai-rl\"",
+    "mypy; extra == \"develop\"",
+    "pre-commit; extra == \"develop\"",
+    "pytest-asyncio; extra == \"develop\"",
+    "pytest-cov; extra == \"develop\"",
+    "pytest-mock; extra == \"develop\"",
+    "pytest-random-order; extra == \"develop\"",
+    "pytest-timeout; extra == \"develop\"",
+    "pytest-xdist; extra == \"develop\"",
+    "pytest; extra == \"develop\"",
+    "ruff; extra == \"develop\"",
+    "scipy-stubs; extra == \"develop\"",
+    "time-machine; extra == \"develop\"",
+    "types-cachetools; extra == \"develop\"",
+    "types-filelock; extra == \"develop\"",
+    "types-python-dateutil; extra == \"develop\"",
+    "types-requests; extra == \"develop\"",
+    "types-tabulate; extra == \"develop\"",
+    "ipykernel; extra == \"jupyter\"",
+    "jupyter; extra == \"jupyter\"",
+    "nbconvert; extra == \"jupyter\"",
+    "nbstripout; extra == \"jupyter\"",
+    "freqtrade[freqai,freqai_rl,hyperopt,jupyter,plot]; extra == \"all\"",
+    "freqtrade[all,develop]; extra == \"dev\""
+   ],
+   "last_release": [
+    "2026-09-29",
+    "2026.9"
+   ],
+   "releases_12m": 17,
+   "n_releases": 99,
+   "first_release": "2018-12-13",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "hummingbot",
+  "classes": [
+   "COLL",
+   "OB",
+   "SIM"
+  ],
+  "lang": "Python/Cython",
+  "git": {
+   "repo": "hummingbot/hummingbot",
+   "commits_12m": 1733,
+   "authors_12m": 41,
+   "top_author_share": 0.268,
+   "authors_for_50pct": 3,
+   "last_commit": "2026-09-22",
+   "n_files": 1892,
+   "test_files": 694,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "Dockerfile",
+    "docker-compose.yml",
+    "pyproject.toml",
+    "setup.py"
+   ]
+  },
+  "pypi": null
+ },
+ {
+  "name": "yfinance",
+  "classes": [
+   "DL"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "ranaroussi/yfinance",
+   "commits_12m": 319,
+   "authors_12m": 50,
+   "top_author_share": 0.536,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-25",
+   "n_files": 222,
+   "test_files": 105,
+   "ci": [
+    ".travis.yml",
+    "workflows"
+   ],
+   "license_file": "LICENSE.txt",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "1.7.0",
+   "license": "Apache-2.0",
+   "classifiers_license": [
+    "License :: OSI Approved :: Apache Software License"
+   ],
+   "requires_python": null,
+   "requires_dist": [
+    "beautifulsoup4>=4.11.1",
+    "curl_cffi>=0.15",
+    "lxml>=4.9.0",
+    "multitasking>=0.0.7",
+    "numpy>=1.16.5",
+    "pandas>=1.3.0",
+    "peewee>=3.16.2",
+    "platformdirs>=2.0.0",
+    "protobuf>=3.19.0",
+    "pytz>=2022.5",
+    "requests>=2.31",
+    "websockets>=13.0",
+    "scipy>=1.6.3; extra == \"repair\"",
+    "scikit-learn>=1.0; extra == \"repair\"",
+    "jinja2==3.1.4; extra == \"dev\"",
+    "pydata-sphinx-theme==0.15.4; extra == \"dev\"",
+    "pytest>=9.0.3; extra == \"dev\"",
+    "pytest-cov>=7.1.0; extra == \"dev\"",
+    "ruff>=0.15.16; extra == \"dev\"",
+    "sphinx==8.0.2; extra == \"dev\"",
+    "sphinx-copybutton==0.5.2; extra == \"dev\""
+   ],
+   "last_release": [
+    "2026-08-26",
+    "1.7.0"
+   ],
+   "releases_12m": 12,
+   "n_releases": 150,
+   "first_release": "2019-05-26",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "openbb",
+  "classes": [
+   "DL",
+   "COLL"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "OpenBB-finance/OpenBB",
+   "commits_12m": 135,
+   "authors_12m": 21,
+   "top_author_share": 0.733,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-29",
+   "n_files": 4134,
+   "test_files": 1543,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Copyright (c) 2021-2026 OpenBB Inc. All files in this repository are licensed under the Apache License, Version 2.0. Apache License Version 2.0, January 2004 ht",
+   "readme_flags": "",
+   "lockfiles": []
+  },
+  "pypi": {
+   "version": "5.0.0",
+   "license": "Apache-2.0",
+   "classifiers_license": [],
+   "requires_python": "<4,>=3.10",
+   "requires_dist": [
+    "openbb-bls>=2.0.0",
+    "openbb-cboe[charting]>=2.0.0",
+    "openbb-cftc>=2.0.0",
+    "openbb-charting[pywry]>=4.0.0",
+    "openbb-cli[all,charting,interactive]>=2.0.1",
+    "openbb-core[flask,pandas]>=2.0.1",
+    "openbb-deribit>=2.0.0",
+    "openbb-devtools>=2.0.1",
+    "openbb-ecb>=2.0.0",
+    "openbb-famafrench>=2.0.0",
+    "openbb-federal-reserve>=2.0.0",
+    "openbb-finra>=2.0.0",
+    "openbb-fred>=2.0.0",
+    "openbb-government-us>=2.0.0",
+    "openbb-imf[charting]>=3.0.0",
+    "openbb-jodi>=2.0.0",
+    "openbb-mcp-server[cli]>=2.0.1",
+    "openbb-nasdaq>=2.0.0",
+    "openbb-news>=2.0.0",
+    "openbb-oecd>=2.0.0",
+    "openbb-platform-api>=2.0.1",
+    "openbb-sec>=2.0.0",
+    "openbb-tmx[all,builder,charting]>=2.0.0",
+    "openbb-us-eia>=2.0.0",
+    "openbb-commodity>=2.0.0; extra == \"routers\"",
+    "openbb-crypto>=2.0.0; extra == \"routers\"",
+    "openbb-currency>=2.0.0; extra == \"routers\"",
+    "openbb-derivatives>=2.0.0; extra == \"routers\"",
+    "openbb-econometrics>=2.0.0; extra == \"routers\"",
+    "openbb-economy>=2.0.0; extra == \"routers\"",
+    "openbb-equity>=2.0.0; extra == \"routers\"",
+    "openbb-etf>=2.0.0; extra == \"routers\"",
+    "openbb-fixedincome>=2.0.0; extra == \"routers\"",
+    "openbb-index>=2.0.0; extra == \"routers\"",
+    "openbb-quantitative>=2.0.0; extra == \"routers\"",
+    "openbb-technical>=2.0.1; extra == \"routers\""
+   ],
+   "last_release": [
+    "2026-09-29",
+    "5.0.0"
+   ],
+   "releases_12m": 6,
+   "n_releases": 63,
+   "first_release": "2022-11-23",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "databento-python",
+  "classes": [
+   "DL"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "databento/databento-python",
+   "commits_12m": 157,
+   "authors_12m": 10,
+   "top_author_share": 0.726,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-22",
+   "n_files": 190,
+   "test_files": 114,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "0.87.0",
+   "license": "Apache-2.0",
+   "classifiers_license": [],
+   "requires_python": ">=3.10",
+   "requires_dist": [
+    "aiohttp<4.0.0,>=3.8.3; python_version < \"3.12\"",
+    "aiohttp<4.0.0,>=3.9.0; python_version >= \"3.12\"",
+    "databento-dbn<0.71.0,>=0.70.0",
+    "numpy>=1.23.5; python_version < \"3.12\"",
+    "numpy>=1.26.0; python_version >= \"3.12\"",
+    "pandas<4.0.0,>=1.5.3",
+    "pip-system-certs>=4.0; platform_system == \"Windows\"",
+    "pyarrow>=13.0.0",
+    "requests>=2.27.0",
+    "zstandard>=0.21.0"
+   ],
+   "last_release": [
+    "2026-09-22",
+    "0.87.0"
+   ],
+   "releases_12m": 27,
+   "n_releases": 112,
+   "first_release": "2021-09-29",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "tardis-python",
+  "classes": [
+   "DL"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "tardis-dev/tardis-python",
+   "commits_12m": 35,
+   "authors_12m": 2,
+   "top_author_share": 0.657,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-28",
+   "n_files": 26,
+   "test_files": 10,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Mozilla Public License Version 2.0 ================================== 1. Definitions -------------- 1.1. \"Contributor\" means each individual or legal entity tha",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "5.0.1",
+   "license": "MPL-2.0",
+   "classifiers_license": [],
+   "requires_python": "<4.0,>=3.10",
+   "requires_dist": [
+    "aiohttp>=3.14.3",
+    "python-dateutil<3,>=2.8.2",
+    "aiofiles<25,>=24.1.0",
+    "zstandard>=0.19.0"
+   ],
+   "last_release": [
+    "2026-09-28",
+    "5.0.1"
+   ],
+   "releases_12m": 14,
+   "n_releases": 31,
+   "first_release": "2020-04-09",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "pandas-datareader",
+  "classes": [
+   "DL"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "pydata/pandas-datareader",
+   "commits_12m": 35,
+   "authors_12m": 3,
+   "top_author_share": 0.857,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-07-21",
+   "n_files": 110,
+   "test_files": 32,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE.md",
+   "license_head": "======= License ======= pandas is distributed under a 3-clause (\"Simplified\" or \"New\") BSD license. Parts of NumPy, SciPy, numpydoc, bottleneck, which all have ",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml",
+    "requirements.txt"
+   ]
+  },
+  "pypi": {
+   "version": "0.11.1",
+   "license": "BSD-3-Clause",
+   "classifiers_license": [],
+   "requires_python": ">=3.11",
+   "requires_dist": [
+    "lxml",
+    "pandas>=2.1.4",
+    "requests>=2.19.0",
+    "setuptools"
+   ],
+   "last_release": [
+    "2026-06-24",
+    "0.11.1"
+   ],
+   "releases_12m": 2,
+   "n_releases": 23,
+   "first_release": "2015-03-27",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "findatapy",
+  "classes": [
+   "DL",
+   "COLL"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "cuemacro/findatapy",
+   "commits_12m": 11,
+   "authors_12m": 1,
+   "top_author_share": 1.0,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-07-02",
+   "n_files": 92,
+   "test_files": 9,
+   "ci": [],
+   "license_file": "LICENCE",
+   "license_head": "Copyright (c) 2016 Cuemacro All rights reserved. Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUC",
+   "readme_flags": "",
+   "lockfiles": [
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "0.1.42",
+   "license": "Apache 2.0",
+   "classifiers_license": [],
+   "requires_python": null,
+   "requires_dist": [
+    "pandas",
+    "twython",
+    "pytz",
+    "requests",
+    "numpy",
+    "pandas-datareader",
+    "alpha-vantage",
+    "eikon",
+    "yfinance",
+    "quandl",
+    "chartpy",
+    "statsmodels",
+    "multiprocess",
+    "redis",
+    "numba",
+    "pyarrow",
+    "keyring",
+    "openpyxl",
+    "databento; extra == \"databento\""
+   ],
+   "last_release": [
+    "2026-03-20",
+    "0.1.42"
+   ],
+   "releases_12m": 2,
+   "n_releases": 41,
+   "first_release": "2019-11-02",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "hftbacktest",
+  "classes": [
+   "REPLAY",
+   "SIM",
+   "OB",
+   "TCM",
+   "BT"
+  ],
+  "lang": "Rust/Python",
+  "git": {
+   "repo": "nkaz001/hftbacktest",
+   "commits_12m": 24,
+   "authors_12m": 5,
+   "top_author_share": 0.625,
+   "authors_for_50pct": 1,
+   "last_commit": "2025-12-23",
+   "n_files": 232,
+   "test_files": 1,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "MIT License Copyright (c) 2022 nkaz001@protonmail.com Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associat",
+   "readme_flags": "",
+   "lockfiles": [
+    "Cargo.toml"
+   ]
+  },
+  "pypi": {
+   "version": "2.4.4",
+   "license": "",
+   "classifiers_license": [
+    "License :: OSI Approved :: MIT License"
+   ],
+   "requires_python": ">=3.11",
+   "requires_dist": [
+    "numpy<2.3,>=2.0",
+    "numba~=0.61",
+    "polars",
+    "matplotlib",
+    "holoviews",
+    "databento; extra == \"databento\""
+   ],
+   "last_release": [
+    "2025-12-10",
+    "2.4.4"
+   ],
+   "releases_12m": 2,
+   "n_releases": 42,
+   "first_release": "2022-11-02",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "nautilus_trader",
+  "classes": [
+   "REPLAY",
+   "SIM",
+   "OB",
+   "BT",
+   "TCM",
+   "COLL"
+  ],
+  "lang": "Rust/Python/Cython",
+  "git": {
+   "repo": "nautechsystems/nautilus_trader",
+   "commits_12m": 5529,
+   "authors_12m": 127,
+   "top_author_share": 0.852,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-29",
+   "n_files": 5016,
+   "test_files": 462,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/> Everyone is permitted to copy and",
+   "readme_flags": "",
+   "lockfiles": [
+    "Cargo.toml"
+   ]
+  },
+  "pypi": {
+   "version": "1.231.0",
+   "license": "LGPL-3.0-or-later",
+   "classifiers_license": [
+    "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)"
+   ],
+   "requires_python": "<3.15,>=3.12",
+   "requires_dist": [
+    "betfair-parser==0.19.1; extra == \"betfair\"",
+    "click<9.0.0,>=8.4.1",
+    "defusedxml<1.0.0,>=0.7.1; extra == \"ib\"",
+    "docker<8.0.0,>=7.2.0; extra == \"docker\"",
+    "fsspec==2026.2.0",
+    "kaleido<2.0.0,>=1.3.0; extra == \"visualization\"",
+    "msgspec<1.0.0,>=0.21.1",
+    "nautilus-ibapi==10.45.1; extra == \"ib\"",
+    "numpy>=1.26.4",
+    "pandas<4.0.0,>=2.3.3",
+    "plotly<7.0.0,>=6.9.0; extra == \"visualization\"",
+    "portion>=2.6.1",
+    "protobuf==5.29.6; extra == \"ib\"",
+    "py-clob-client-v2<2.0.0,>=1.0.2; extra == \"polymarket\"",
+    "pyarrow>=25.0.0",
+    "pytz>=2026.2",
+    "simplejson==3.20.2; extra == \"visualization\"",
+    "tqdm<5.0.0,>=4.68.4",
+    "tzdata>=2026.3",
+    "uvloop==0.22.1; sys_platform != \"win32\""
+   ],
+   "last_release": [
+    "2026-09-15",
+    "2.0.0rc5"
+   ],
+   "releases_12m": 16,
+   "n_releases": 35,
+   "first_release": "2024-09-27",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "abides-jpmc-public",
+  "classes": [
+   "SIM",
+   "OB"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "jpmorganchase/abides-jpmc-public",
+   "commits_12m": 0,
+   "authors_12m": 0,
+   "top_author_share": null,
+   "authors_for_50pct": null,
+   "last_commit": "2023-12-13",
+   "n_files": 115,
+   "test_files": 22,
+   "ci": [],
+   "license_file": "LICENSE",
+   "license_head": "BSD 3-Clause License Copyright (c) 2021, J.P. Morgan Chase All rights reserved. Redistribution and use in source and binary forms, with or without modification,",
+   "readme_flags": "archivePrefix={arXiv},\n      archivePrefix={arXiv},",
+   "lockfiles": [
+    "requirements.txt"
+   ]
+  },
+  "pypi": null
+ },
+ {
+  "name": "abides-gym-markets",
+  "classes": [
+   "SIM",
+   "OB"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "abides-sim/abides",
+   "commits_12m": 0,
+   "authors_12m": 0,
+   "top_author_share": null,
+   "authors_for_50pct": null,
+   "last_commit": "2020-11-19",
+   "n_files": 184,
+   "test_files": 9,
+   "ci": [],
+   "license_file": "LICENSE.txt",
+   "license_head": "The authors of ABIDES are David Byrd and Dr. Tucker Balch of the Georgia Institute of Technology. BSD 3-Clause License Copyright (c) 2019 Georgia Tech Research ",
+   "readme_flags": "",
+   "lockfiles": [
+    "requirements.txt",
+    "setup.py"
+   ]
+  },
+  "pypi": null
+ },
+ {
+  "name": "orderbook (dyn4mik3)",
+  "classes": [
+   "OB"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "dyn4mik3/OrderBook",
+   "commits_12m": 1,
+   "authors_12m": 1,
+   "top_author_share": 1.0,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-02-03",
+   "n_files": 20,
+   "test_files": 2,
+   "ci": [],
+   "license_file": "LICENSE.txt",
+   "license_head": "The MIT License (MIT) Copyright (c) 2012 Ash Booth Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated ",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "0.1.2",
+   "license": "LICENSE.txt",
+   "classifiers_license": [],
+   "requires_python": null,
+   "requires_dist": [],
+   "last_release": [
+    "2013-12-31",
+    "0.1.2"
+   ],
+   "releases_12m": 0,
+   "n_releases": 3,
+   "first_release": "2013-12-30",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "vectorbt",
+  "classes": [
+   "BT"
+  ],
+  "lang": "Python/numba",
+  "git": {
+   "repo": "polakowo/vectorbt",
+   "commits_12m": 158,
+   "authors_12m": 11,
+   "top_author_share": 0.766,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-26",
+   "n_files": 298,
+   "test_files": 28,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE.md",
+   "license_head": "\u201cCommons Clause\u201d License Condition v1.0 The Software is provided to you by the Licensor under the License, as defined below, subject to the following condition.",
+   "readme_flags": "",
+   "lockfiles": [
+    "Dockerfile",
+    "pyproject.toml",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "1.1.1",
+   "license": "",
+   "classifiers_license": [],
+   "requires_python": "<3.15,>=3.11",
+   "requires_dist": [
+    "numpy>=2.4.6",
+    "pandas<4.0,>=3.0.3",
+    "scipy",
+    "matplotlib",
+    "plotly>=4.12.0",
+    "ipywidgets>=7.0.0",
+    "anywidget",
+    "numba>=0.66",
+    "dill",
+    "tqdm",
+    "dateparser",
+    "imageio",
+    "scikit-learn",
+    "schedule",
+    "requests",
+    "pytz",
+    "mypy_extensions",
+    "vectorbt-rust==1.1.1; extra == \"rust\"",
+    "TA-Lib; extra == \"full\"",
+    "yfinance>=0.2.22; extra == \"full\"",
+    "python-binance; extra == \"full\"",
+    "ccxt>=4.0.14; extra == \"full\"",
+    "alpaca-py; extra == \"full\"",
+    "ray>=1.4.1; extra == \"full\"",
+    "ta; extra == \"full\"",
+    "pandas-ta-classic; extra == \"full\"",
+    "python-telegram-bot>=13.4; extra == \"full\"",
+    "quantstats>=0.0.37; extra == \"full\"",
+    "pytest; extra == \"test\"",
+    "pytest-cov; extra == \"test\"",
+    "pytest-xdist; extra == \"test\"",
+    "codecov; extra == \"test\"",
+    "vectorbt[test]; extra == \"test-rust\"",
+    "maturin<2.0,>=1.14; extra == \"test-rust\"",
+    "zensical>=0.0.62; extra == \"docs\"",
+    "tomlkit>=0.13; extra == \"docs\"",
+    "mako; extra == \"docs\"",
+    "vectorbt[rust]; extra == \"all\"",
+    "vectorbt[full]; extra == \"all\"",
+    "vectorbt[test]; extra == \"all\"",
+    "vectorbt[docs]; extra == \"all\""
+   ],
+   "last_release": [
+    "2026-09-26",
+    "1.1.1"
+   ],
+   "releases_12m": 6,
+   "n_releases": 64,
+   "first_release": "2020-12-06",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "backtrader",
+  "classes": [
+   "BT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "mementum/backtrader",
+   "commits_12m": 0,
+   "authors_12m": 0,
+   "top_author_share": null,
+   "authors_for_50pct": null,
+   "last_commit": "2023-04-19",
+   "n_files": 378,
+   "test_files": 83,
+   "ci": [
+    ".travis.yml"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/> Everyone is permitted to copy and distrib",
+   "readme_flags": "",
+   "lockfiles": [
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "1.9.78.123",
+   "license": "GPLv3+",
+   "classifiers_license": [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"
+   ],
+   "requires_python": "",
+   "requires_dist": [
+    "matplotlib ; extra == 'plotting'"
+   ],
+   "last_release": [
+    "2023-04-19",
+    "1.9.78.123"
+   ],
+   "releases_12m": 0,
+   "n_releases": 5,
+   "first_release": "2019-05-30",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "backtesting.py",
+  "classes": [
+   "BT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "kernc/backtesting.py",
+   "commits_12m": 33,
+   "authors_12m": 12,
+   "top_author_share": 0.636,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-08-05",
+   "n_files": 53,
+   "test_files": 6,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE.md",
+   "license_head": "### GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007 Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/> Everyone is permitted to ",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml",
+    "requirements.txt",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "0.6.6",
+   "license": "AGPL-3.0",
+   "classifiers_license": [
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)"
+   ],
+   "requires_python": ">=3.9",
+   "requires_dist": [
+    "numpy>=1.17.0",
+    "pandas!=0.25.0,>=0.25.0",
+    "bokeh!=3.0.*,!=3.2.*,>=3.0.0",
+    "pdoc3; extra == \"doc\"",
+    "jupytext>=1.3; extra == \"doc\"",
+    "nbconvert; extra == \"doc\"",
+    "ipykernel; extra == \"doc\"",
+    "jupyter_client; extra == \"doc\"",
+    "matplotlib; extra == \"test\"",
+    "scikit-learn; extra == \"test\"",
+    "sambo; extra == \"test\"",
+    "tqdm; extra == \"test\"",
+    "ipywidgets; extra == \"test\"",
+    "flake8; extra == \"dev\"",
+    "coverage; extra == \"dev\"",
+    "mypy; extra == \"dev\""
+   ],
+   "last_release": [
+    "2026-07-22",
+    "0.6.6"
+   ],
+   "releases_12m": 1,
+   "n_releases": 27,
+   "first_release": "2019-01-17",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "zipline-reloaded",
+  "classes": [
+   "BT",
+   "CAL"
+  ],
+  "lang": "Python/Cython",
+  "git": {
+   "repo": "stefan-jansen/zipline-reloaded",
+   "commits_12m": 4,
+   "authors_12m": 1,
+   "top_author_share": 1.0,
+   "authors_for_50pct": 1,
+   "last_commit": "2025-11-13",
+   "n_files": 423,
+   "test_files": 123,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "3.1.1",
+   "license": "Apache-2.0",
+   "classifiers_license": [],
+   "requires_python": ">=3.10",
+   "requires_dist": [
+    "numpy>=1.23.5; python_version < \"3.12\"",
+    "numpy>=1.26.0; python_version >= \"3.12\"",
+    "numpy>=2.1; python_version >= \"3.13\"",
+    "pandas<3.0,>=1.3.0",
+    "alembic>=0.7.7",
+    "bcolz-zipline>=1.2.6",
+    "bottleneck>=1.0.0",
+    "click>=4.0.0",
+    "empyrical-reloaded>=0.5.7",
+    "h5py>=2.7.1",
+    "intervaltree>=2.1.0",
+    "iso3166>=2.1.1",
+    "iso4217>=1.6.20180829",
+    "lru-dict>=1.1.4",
+    "multipledispatch>=0.6.0",
+    "networkx>=2.0",
+    "numexpr>=2.6.1",
+    "patsy>=0.4.0",
+    "python-dateutil>=2.4.2",
+    "pytz>=2018.5",
+    "requests>=2.9.1",
+    "scipy>=0.17.1",
+    "six>=1.10.0",
+    "sqlalchemy>=2",
+    "statsmodels>=0.6.1",
+    "tables>=3.4.3",
+    "toolz>=0.8.2",
+    "exchange-calendars>=4.2.4",
+    "tox; extra == \"test\"",
+    "pytest>=7.2.0; extra == \"test\"",
+    "pytest-cov>=3.0.0; extra == \"test\"",
+    "pytest-xdist>=2.5.0; extra == \"test\"",
+    "pytest-timeout>=1.4.2; extra == \"test\"",
+    "parameterized>=0.6.1; extra == \"test\"",
+    "testfixtures>=4.1.2; extra == \"test\"",
+    "flake8>=3.9.1; extra == \"test\"",
+    "matplotlib>=1.5.3; extra == \"test\"",
+    "responses>=0.9.0; extra == \"test\"",
+    "pandas-datareader>=0.2.1; extra == \"test\"",
+    "click; extra == \"test\"",
+    "coverage; extra == \"test\"",
+    "pytest-rerunfailures; extra == \"test\"",
+    "Cython<3.2.0,>=0.29.21; extra == \"test\"",
+    "pre-commit>=2.12.1; extra == \"dev\"",
+    "Cython>=0.29.21; extra == \"dev\"",
+    "ruff>=0.11.12; extra == \"dev\"",
+    "mypy>=1.10.0; extra == \"dev\"",
+    "Cython; extra == \"docs\"",
+    "Sphinx>=1.3.2; extra == \"docs\"",
+    "numpydoc>=0.5.0; extra == \"docs\"",
+    "sphinx-autobuild>=0.6.0; extra == \"docs\"",
+    "pydata-sphinx-theme; extra == \"docs\"",
+    "sphinx_markdown_tables; extra == \"docs\"",
+    "m2r2; extra == \"docs\""
+   ],
+   "last_release": [
+    "2025-07-19",
+    "3.1.1"
+   ],
+   "releases_12m": 0,
+   "n_releases": 25,
+   "first_release": "2021-03-29",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "bt",
+  "classes": [
+   "BT",
+   "PORT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "pmorissette/bt",
+   "commits_12m": 223,
+   "authors_12m": 17,
+   "top_author_share": 0.704,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-27",
+   "n_files": 159,
+   "test_files": 6,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "The MIT License (MIT) Copyright (c) 2015 Philippe Morissette Permission is hereby granted, free of charge, to any person obtaining a copy of this software and a",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "1.2.3",
+   "license": "MIT",
+   "classifiers_license": [
+    "License :: OSI Approved :: MIT License"
+   ],
+   "requires_python": ">=3.9",
+   "requires_dist": [
+    "ffn>=1.1.2",
+    "pyprind>=2.11",
+    "tqdm>=4",
+    "build; extra == \"dev\"",
+    "bump-my-version; extra == \"dev\"",
+    "check-dist; extra == \"dev\"",
+    "cibuildwheel; extra == \"dev\"",
+    "codespell; extra == \"dev\"",
+    "cython>=0.29.25; extra == \"dev\"",
+    "ffn>=1.1.2; extra == \"dev\"",
+    "hatch-cython; extra == \"dev\"",
+    "hatchling; extra == \"dev\"",
+    "matplotlib>=2; extra == \"dev\"",
+    "mdformat; extra == \"dev\"",
+    "mdformat-tables>=1; extra == \"dev\"",
+    "numpy>=1; extra == \"dev\"",
+    "packaging>=24.2; extra == \"dev\"",
+    "pandas>=0.19; extra == \"dev\"",
+    "pyprind>=2.11; extra == \"dev\"",
+    "pytest; extra == \"dev\"",
+    "pytest-benchmark; extra == \"dev\"",
+    "pytest-cov; extra == \"dev\"",
+    "ruff; extra == \"dev\"",
+    "setuptools; extra == \"dev\"",
+    "twine>=6.1; extra == \"dev\"",
+    "ty; extra == \"dev\"",
+    "uv; extra == \"dev\"",
+    "wheel; extra == \"dev\"",
+    "build; extra == \"develop\"",
+    "bump-my-version; extra == \"develop\"",
+    "check-dist; extra == \"develop\"",
+    "cibuildwheel; extra == \"develop\"",
+    "codespell; extra == \"develop\"",
+    "cython>=0.29.25; extra == \"develop\"",
+    "ffn>=1.1.2; extra == \"develop\"",
+    "hatch-cython; extra == \"develop\"",
+    "hatchling; extra == \"develop\"",
+    "matplotlib>=2; extra == \"develop\"",
+    "mdformat; extra == \"develop\"",
+    "mdformat-tables>=1; extra == \"develop\"",
+    "numpy>=1; extra == \"develop\"",
+    "packaging>=24.2; extra == \"develop\"",
+    "pandas>=0.19; extra == \"develop\"",
+    "pyprind>=2.11; extra == \"develop\"",
+    "pytest; extra == \"develop\"",
+    "pytest-benchmark; extra == \"develop\"",
+    "pytest-cov; extra == \"develop\"",
+    "ruff; extra == \"develop\"",
+    "setuptools; extra == \"develop\"",
+    "twine>=6.1; extra == \"develop\"",
+    "ty; extra == \"develop\"",
+    "uv; extra == \"develop\"",
+    "wheel; extra == \"develop\""
+   ],
+   "last_release": [
+    "2026-09-12",
+    "1.2.3"
+   ],
+   "releases_12m": 7,
+   "n_releases": 37,
+   "first_release": "2014-06-26",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "qstrader",
+  "classes": [
+   "BT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "mhallsmoore/qstrader",
+   "commits_12m": 0,
+   "authors_12m": 0,
+   "top_author_share": null,
+   "authors_for_50pct": null,
+   "last_commit": "2024-06-24",
+   "n_files": 137,
+   "test_files": 35,
+   "ci": [
+    ".travis.yml"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "The MIT License (MIT) Copyright (c) 2015-2024 QuantStart.com, QuarkGluon Ltd Permission is hereby granted, free of charge, to any person obtaining a copy of thi",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "0.3.0",
+   "license": "",
+   "classifiers_license": [
+    "License :: OSI Approved :: MIT License"
+   ],
+   "requires_python": ">=3.9",
+   "requires_dist": [
+    "click>=8.1",
+    "matplotlib>=3.8",
+    "numpy>=2.0.0",
+    "pandas>=2.2",
+    "seaborn>=0.13"
+   ],
+   "last_release": [
+    "2024-06-24",
+    "0.3.0"
+   ],
+   "releases_12m": 0,
+   "n_releases": 16,
+   "first_release": "2020-05-15",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "pysystemtrade",
+  "classes": [
+   "BT",
+   "PORT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "robcarver17/pysystemtrade",
+   "commits_12m": 189,
+   "authors_12m": 15,
+   "top_author_share": 0.688,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-26",
+   "n_files": 1564,
+   "test_files": 95,
+   "ci": [
+    ".travis.yml",
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/> Everyone is permitted to copy and distrib",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml",
+    "requirements.txt",
+    "setup.py"
+   ]
+  },
+  "pypi": null
+ },
+ {
+  "name": "qlib",
+  "classes": [
+   "BT",
+   "FEAT",
+   "PORT"
+  ],
+  "lang": "Python/Cython",
+  "git": {
+   "repo": "microsoft/qlib",
+   "commits_12m": 27,
+   "authors_12m": 13,
+   "top_author_share": 0.519,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-16",
+   "n_files": 626,
+   "test_files": 48,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "MIT License Copyright (c) Microsoft Corporation. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated do",
+   "readme_flags": "archivePrefix={arXiv},",
+   "lockfiles": [
+    "Dockerfile",
+    "package.json",
+    "pyproject.toml",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "0.9.7",
+   "license": "",
+   "classifiers_license": [
+    "License :: OSI Approved :: MIT License"
+   ],
+   "requires_python": ">=3.8.0",
+   "requires_dist": [
+    "pyyaml",
+    "numpy",
+    "pandas>=0.24",
+    "mlflow",
+    "filelock>=3.16.0",
+    "redis",
+    "dill",
+    "fire",
+    "ruamel.yaml>=0.17.38",
+    "python-redis-lock",
+    "tqdm",
+    "pymongo",
+    "loguru",
+    "lightgbm",
+    "gym",
+    "cvxpy",
+    "joblib",
+    "matplotlib",
+    "jupyter",
+    "nbconvert",
+    "pyarrow",
+    "pydantic-settings",
+    "pytest; extra == \"dev\"",
+    "statsmodels; extra == \"dev\"",
+    "tianshou<=0.4.10; extra == \"rl\"",
+    "torch; extra == \"rl\"",
+    "numpy<2.0.0; extra == \"rl\"",
+    "black; extra == \"lint\"",
+    "pylint; extra == \"lint\"",
+    "mypy<1.5.0; extra == \"lint\"",
+    "flake8; extra == \"lint\"",
+    "nbqa; extra == \"lint\"",
+    "scipy<=1.15.3; extra == \"docs\"",
+    "sphinx; extra == \"docs\"",
+    "sphinx_rtd_theme; extra == \"docs\"",
+    "readthedocs_sphinx_ext; extra == \"docs\"",
+    "snowballstemmer<3.0; extra == \"docs\"",
+    "twine; extra == \"package\"",
+    "build; extra == \"package\"",
+    "yahooquery; extra == \"test\"",
+    "baostock; extra == \"test\"",
+    "plotly; extra == \"analysis\"",
+    "statsmodels; extra == \"analysis\""
+   ],
+   "last_release": [
+    "2025-08-15",
+    "0.9.7"
+   ],
+   "releases_12m": 0,
+   "n_releases": 29,
+   "first_release": "2020-09-28",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "LEAN",
+  "classes": [
+   "BT",
+   "REPLAY",
+   "DL"
+  ],
+  "lang": "C#",
+  "git": {
+   "repo": "QuantConnect/Lean",
+   "commits_12m": 441,
+   "authors_12m": 35,
+   "top_author_share": 0.268,
+   "authors_for_50pct": 3,
+   "last_commit": "2026-09-28",
+   "n_files": 6354,
+   "test_files": 1029,
+   "ci": [
+    ".travis.yml",
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "Dockerfile"
+   ]
+  },
+  "pypi": null
+ },
+ {
+  "name": "vnpy",
+  "classes": [
+   "BT",
+   "COLL"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "vnpy/vnpy",
+   "commits_12m": 48,
+   "authors_12m": 5,
+   "top_author_share": 0.771,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-08-06",
+   "n_files": 196,
+   "test_files": 4,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "The MIT License (MIT) Copyright (c) 2015-present, Xiaoyou Chen Permission is hereby granted, free of charge, to any person obtaining a copy of this software and",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "4.4.0",
+   "license": "MIT",
+   "classifiers_license": [
+    "License :: OSI Approved :: MIT License"
+   ],
+   "requires_python": ">=3.10",
+   "requires_dist": [
+    "deap>=1.4.2",
+    "loguru>=0.7.3",
+    "nbformat>=5.10.4",
+    "numpy>=2.2.3",
+    "pandas>=2.2.3",
+    "plotly>=6.0.0",
+    "pyqtgraph>=0.13.7",
+    "pyside6==6.8.2.1",
+    "pyzmq>=26.3.0",
+    "qdarkstyle>=3.2.3",
+    "qrcode>=7.4.2",
+    "requests>=2.32.0",
+    "ta-lib>=0.6.4",
+    "tqdm>=4.67.1",
+    "tzlocal>=5.3.1",
+    "alphalens-reloaded>=0.4.5; extra == \"alpha\"",
+    "lightgbm>=4.6.0; extra == \"alpha\"",
+    "polars>=1.26.0; extra == \"alpha\"",
+    "pyarrow>=19.0.1; extra == \"alpha\"",
+    "scikit-learn>=1.6.1; extra == \"alpha\"",
+    "scipy>=1.15.2; extra == \"alpha\"",
+    "torch>=2.6.0; extra == \"alpha\"",
+    "babel>=2.17.0; extra == \"dev\"",
+    "hatchling>=1.27.0; extra == \"dev\"",
+    "pandas-stubs>=2.2.3.250308; extra == \"dev\"",
+    "scipy-stubs>=1.16.3.0; extra == \"dev\""
+   ],
+   "last_release": [
+    "2026-05-14",
+    "4.4.0"
+   ],
+   "releases_12m": 3,
+   "n_releases": 29,
+   "first_release": "2017-03-07",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "cvxportfolio",
+  "classes": [
+   "TCM",
+   "PORT",
+   "BT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "cvxgrp/cvxportfolio",
+   "commits_12m": 375,
+   "authors_12m": 1,
+   "top_author_share": 1.0,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-04-27",
+   "n_files": 182,
+   "test_files": 18,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/> Everyone is permitted to copy and distri",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "1.5.1",
+   "license": "GPLv3",
+   "classifiers_license": [],
+   "requires_python": null,
+   "requires_dist": [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "cvxpy",
+    "curl_cffi; python_version >= \"3.9\"",
+    "requests; python_version < \"3.9\"",
+    "scs",
+    "sphinx; extra == \"docs\"",
+    "pydata_sphinx_theme; extra == \"docs\"",
+    "sphinx-github-style; extra == \"docs\"",
+    "setuptools-scm; extra == \"docs\"",
+    "build; extra == \"dev\"",
+    "twine; extra == \"dev\"",
+    "diff_cover; extra == \"dev\"",
+    "pylint; extra == \"dev\"",
+    "isort; extra == \"dev\"",
+    "setuptools-scm; extra == \"dev\"",
+    "autopep8; extra == \"dev\"",
+    "docformatter; extra == \"dev\"",
+    "beautifulsoup4; extra == \"dev\"",
+    "rstcheck; extra == \"dev\"",
+    "beautifulsoup4; extra == \"examples\"",
+    "lxml; extra == \"examples\"",
+    "clarabel; extra == \"examples\"",
+    "ecos; extra == \"examples\"",
+    "ecos; extra == \"test\"",
+    "coverage[toml]; extra == \"test\""
+   ],
+   "last_release": [
+    "2025-07-06",
+    "1.5.1"
+   ],
+   "releases_12m": 0,
+   "n_releases": 51,
+   "first_release": "2018-05-01",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "tcapy",
+  "classes": [
+   "TCM"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "cuemacro/tcapy",
+   "commits_12m": 0,
+   "authors_12m": 0,
+   "top_author_share": null,
+   "authors_for_50pct": null,
+   "last_commit": "2022-05-23",
+   "n_files": 295,
+   "test_files": 19,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENCE",
+   "license_head": "Copyright (c) 2016 Cuemacro All rights reserved. Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUC",
+   "readme_flags": "",
+   "lockfiles": [
+    "Dockerfile",
+    "docker-compose.yml",
+    "requirements.txt",
+    "setup.py"
+   ]
+  },
+  "pypi": null
+ },
+ {
+  "name": "PyPortfolioOpt",
+  "classes": [
+   "PORT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "robertmartin8/PyPortfolioOpt",
+   "commits_12m": 41,
+   "authors_12m": 11,
+   "top_author_share": 0.512,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-07-08",
+   "n_files": 100,
+   "test_files": 24,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "MIT License Copyright (c) 2018 Robert Andrew Martin Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml",
+    "requirements.txt"
+   ]
+  },
+  "pypi": {
+   "version": "1.6.0",
+   "license": "MIT License\n        \n        Copyright (c) 2018 Robert Andrew Martin\n        \n  ",
+   "classifiers_license": [
+    "License :: OSI Approved :: MIT License"
+   ],
+   "requires_python": null,
+   "requires_dist": [
+    "cvxpy>=1.1.19",
+    "numpy<3.0.0,>=1.26.0",
+    "pandas<4.0.0,>=1.0.0",
+    "scikit-base<0.14.0",
+    "scikit-learn>=0.24.1",
+    "scipy>=1.3.0",
+    "matplotlib>=3.2.0; extra == \"all-extras\"",
+    "ecos<2.1,>=2.0.14; extra == \"all-extras\"",
+    "plotly<7,>=5.0.0; extra == \"all-extras\"",
+    "cvxopt; python_version < \"3.14\" and extra == \"all-extras\"",
+    "pytest>=9.0.0; extra == \"dev\"",
+    "pytest-cov>=7.0.0; extra == \"dev\"",
+    "yfinance>=0.2.66; extra == \"dev\"",
+    "nbmake; extra == \"notebook-test\"",
+    "pytest-rerunfailures; extra == \"notebook-test\""
+   ],
+   "last_release": [
+    "2026-02-26",
+    "1.6.0"
+   ],
+   "releases_12m": 1,
+   "n_releases": 43,
+   "first_release": "2018-06-10",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "Riskfolio-Lib",
+  "classes": [
+   "PORT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "dcajasn/Riskfolio-Lib",
+   "commits_12m": 51,
+   "authors_12m": 4,
+   "top_author_share": 0.882,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-24",
+   "n_files": 2101,
+   "test_files": 357,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE.txt",
+   "license_head": "Copyright (c) 2020-2026, Dany Cajas All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml",
+    "requirements.txt",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "7.3.0",
+   "license": "BSD (3-clause)",
+   "classifiers_license": [
+    "License :: OSI Approved :: BSD License"
+   ],
+   "requires_python": ">=3.10",
+   "requires_dist": [
+    "numpy>=1.26.4",
+    "scipy>=1.16.1",
+    "pandas>=2.2.2",
+    "matplotlib>=3.9.2",
+    "clarabel>=0.11.1",
+    "SCS>=3.2.7",
+    "cvxpy>=1.6.6",
+    "scikit-learn>=1.3.0",
+    "statsmodels>=0.14.5",
+    "arch>=7.2",
+    "xlsxwriter>=3.2.2",
+    "networkx>=3.4.2",
+    "astropy>=6.1.3",
+    "pybind11>=2.13.6",
+    "vectorbt>=0.28.0"
+   ],
+   "last_release": [
+    "2026-05-31",
+    "7.3.0"
+   ],
+   "releases_12m": 4,
+   "n_releases": 58,
+   "first_release": "2020-03-03",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "skfolio",
+  "classes": [
+   "PORT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "skfolio/skfolio",
+   "commits_12m": 235,
+   "authors_12m": 25,
+   "top_author_share": 0.306,
+   "authors_for_50pct": 2,
+   "last_commit": "2026-09-29",
+   "n_files": 688,
+   "test_files": 216,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "BSD 3-Clause License Copyright (c) 2023-2026 The skfolio developers. All rights reserved. Redistribution and use in source and binary forms, with or without mod",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "1.4.9",
+   "license": "BSD 3-Clause License\n        \n        Copyright (c) 2023-2026 The skfolio develo",
+   "classifiers_license": [
+    "License :: OSI Approved :: BSD License"
+   ],
+   "requires_python": ">=3.10",
+   "requires_dist": [
+    "numpy>=1.24.0",
+    "scipy>=1.15.2",
+    "pandas>=2.1.0",
+    "cvxpy-base>=1.5.0",
+    "clarabel>=0.10.0",
+    "scikit-learn>=1.6.0",
+    "plotly>=6.0.0"
+   ],
+   "last_release": [
+    "2026-09-29",
+    "1.4.9"
+   ],
+   "releases_12m": 52,
+   "n_releases": 89,
+   "first_release": "2023-12-14",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "quantstats",
+  "classes": [
+   "PORT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "ranaroussi/quantstats",
+   "commits_12m": 21,
+   "authors_12m": 2,
+   "top_author_share": 0.952,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-27",
+   "n_files": 44,
+   "test_files": 9,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE.txt",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml",
+    "requirements.txt"
+   ]
+  },
+  "pypi": {
+   "version": "0.0.86",
+   "license": "Apache-2.0",
+   "classifiers_license": [
+    "License :: OSI Approved :: Apache Software License"
+   ],
+   "requires_python": ">=3.10",
+   "requires_dist": [
+    "matplotlib>=3.7.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "python-dateutil>=2.8.0",
+    "scipy>=1.11.0",
+    "seaborn>=0.13.0",
+    "tabulate>=0.9.0",
+    "yfinance>=0.2.40",
+    "pyright>=1.1.0; extra == \"dev\"",
+    "pytest-cov>=4.0.0; extra == \"dev\"",
+    "pytest>=7.0.0; extra == \"dev\"",
+    "ruff>=0.1.0; extra == \"dev\"",
+    "plotly>=5.0.0; extra == \"plotly\""
+   ],
+   "last_release": [
+    "2026-09-27",
+    "0.0.86"
+   ],
+   "releases_12m": 6,
+   "n_releases": 82,
+   "first_release": "2019-05-01",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "empyrical-reloaded",
+  "classes": [
+   "PORT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "stefan-jansen/empyrical-reloaded",
+   "commits_12m": 0,
+   "authors_12m": 0,
+   "top_author_share": null,
+   "authors_for_50pct": null,
+   "last_commit": "2025-07-29",
+   "n_files": 43,
+   "test_files": 11,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "0.5.12",
+   "license": "Apache License\n                                   Version 2.0, January 2004\n    ",
+   "classifiers_license": [
+    "License :: OSI Approved :: Apache Software License"
+   ],
+   "requires_python": ">=3.9",
+   "requires_dist": [
+    "numpy>=1.23.5; python_version < \"3.12\"",
+    "numpy>=1.26.0; python_version >= \"3.12\"",
+    "pandas>=1.5.0; python_version < \"3.12\"",
+    "pandas>=2.2.2; python_version >= \"3.12\"",
+    "bottleneck>=1.3.0",
+    "pandas>=1.5.0",
+    "scipy>=0.15.1",
+    "peewee<3.17.4",
+    "tox>=2.3.1; extra == \"test\"",
+    "pytest>=6.2.3; extra == \"test\"",
+    "pytest-cov>=2.11.1; extra == \"test\"",
+    "flake8>=3.9.1; extra == \"test\"",
+    "black; extra == \"test\"",
+    "flake8>=3.9.1; extra == \"dev\"",
+    "black; extra == \"dev\"",
+    "pre-commit>=2.12.1; extra == \"dev\"",
+    "Cython; extra == \"doc\"",
+    "Sphinx>=1.3.2; extra == \"doc\"",
+    "numpydoc>=0.5.0; extra == \"doc\"",
+    "sphinx-autobuild>=0.6.0; extra == \"doc\"",
+    "pydata-sphinx-theme; extra == \"doc\"",
+    "sphinx-markdown-tables; extra == \"doc\"",
+    "sphinx_copybutton; extra == \"doc\"",
+    "nbsphinx; extra == \"doc\"",
+    "m2r2; extra == \"doc\"",
+    "yfinance>=0.1.63; extra == \"yfinance\"",
+    "pandas-datareader>=0.4; extra == \"datareader\""
+   ],
+   "last_release": [
+    "2025-06-01",
+    "0.5.12"
+   ],
+   "releases_12m": 0,
+   "n_releases": 8,
+   "first_release": "2021-04-19",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "pyfolio-reloaded",
+  "classes": [
+   "PORT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "stefan-jansen/pyfolio-reloaded",
+   "commits_12m": 0,
+   "authors_12m": 0,
+   "top_author_share": null,
+   "authors_for_50pct": null,
+   "last_commit": "2025-06-02",
+   "n_files": 76,
+   "test_files": 28,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "0.9.9",
+   "license": "Apache License\n                                   Version 2.0, January 2004\n    ",
+   "classifiers_license": [
+    "License :: OSI Approved :: Apache Software License"
+   ],
+   "requires_python": ">=3.9",
+   "requires_dist": [
+    "numpy>=1.23.5; python_version < \"3.12\"",
+    "numpy>=1.26.0; python_version >= \"3.12\"",
+    "pandas<3.0,>=1.5.0",
+    "ipython>=3.2.3",
+    "matplotlib>=1.4.0",
+    "pytz>=2014.10",
+    "scipy>=0.14.0",
+    "scikit-learn>=0.16.1",
+    "seaborn>=0.7.1",
+    "empyrical-reloaded>=0.5.9",
+    "tox>=2.3.1; extra == \"test\"",
+    "coverage>=4.0.3; extra == \"test\"",
+    "coveralls==3.0.1; extra == \"test\"",
+    "pytest>=6.2; extra == \"test\"",
+    "pytest-xdist>=2.5.0; extra == \"test\"",
+    "pytest-cov>=2.12; extra == \"test\"",
+    "parameterized>=0.6.1; extra == \"test\"",
+    "pytest-rerunfailures; extra == \"test\"",
+    "flake8>=3.9.1; extra == \"test\"",
+    "black; extra == \"test\"",
+    "flake8>=3.9.1; extra == \"dev\"",
+    "black; extra == \"dev\"",
+    "pre-commit>=2.12.1; extra == \"dev\"",
+    "Cython; extra == \"docs\"",
+    "Sphinx>=1.3.2; extra == \"docs\"",
+    "numpydoc>=0.5.0; extra == \"docs\"",
+    "sphinx-autobuild>=0.6.0; extra == \"docs\"",
+    "pydata-sphinx-theme; extra == \"docs\"",
+    "sphinx-markdown-tables; extra == \"docs\"",
+    "sphinx_copybutton; extra == \"docs\"",
+    "m2r2; extra == \"docs\""
+   ],
+   "last_release": [
+    "2025-06-02",
+    "0.9.9"
+   ],
+   "releases_12m": 0,
+   "n_releases": 9,
+   "first_release": "2021-04-20",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "alphalens-reloaded",
+  "classes": [
+   "FEAT",
+   "PORT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "stefan-jansen/alphalens-reloaded",
+   "commits_12m": 0,
+   "authors_12m": 0,
+   "top_author_share": null,
+   "authors_for_50pct": null,
+   "last_commit": "2025-06-02",
+   "n_files": 38,
+   "test_files": 5,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "0.4.6",
+   "license": "Apache License\n                                   Version 2.0, January 2004\n    ",
+   "classifiers_license": [
+    "License :: OSI Approved :: Apache Software License"
+   ],
+   "requires_python": ">=3.10",
+   "requires_dist": [
+    "numpy>=1.23.5; python_version < \"3.12\"",
+    "numpy>=1.26.0; python_version >= \"3.12\"",
+    "pandas<3.0,>=1.5.0",
+    "matplotlib>=1.4.0",
+    "scipy>=0.14.0",
+    "seaborn>=0.6.0",
+    "statsmodels>=0.6.1",
+    "IPython>=3.2.3",
+    "empyrical-reloaded>=0.5.7",
+    "tox>=2.3.1; extra == \"test\"",
+    "coverage>=4.0.3; extra == \"test\"",
+    "coveralls==3.0.1; extra == \"test\"",
+    "pytest>=6.2; extra == \"test\"",
+    "pytest-xdist>=2.5.0; extra == \"test\"",
+    "pytest-cov>=2.12; extra == \"test\"",
+    "parameterized>=0.6.1; extra == \"test\"",
+    "flake8>=3.9.1; extra == \"test\"",
+    "black; extra == \"test\"",
+    "flake8>=3.9.1; extra == \"dev\"",
+    "black; extra == \"dev\"",
+    "pre-commit>=2.12.1; extra == \"dev\"",
+    "Cython; extra == \"docs\"",
+    "Sphinx>=1.3.2; extra == \"docs\"",
+    "numpydoc>=0.5.0; extra == \"docs\"",
+    "sphinx-autobuild>=0.6.0; extra == \"docs\"",
+    "pydata-sphinx-theme; extra == \"docs\"",
+    "sphinx-markdown-tables; extra == \"docs\"",
+    "sphinx_copybutton; extra == \"docs\"",
+    "m2r2; extra == \"docs\""
+   ],
+   "last_release": [
+    "2025-06-02",
+    "0.4.6"
+   ],
+   "releases_12m": 0,
+   "n_releases": 8,
+   "first_release": "2021-04-19",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "arch",
+  "classes": [
+   "PORT",
+   "FEAT"
+  ],
+  "lang": "Python/Cython",
+  "git": {
+   "repo": "bashtage/arch",
+   "commits_12m": 113,
+   "authors_12m": 7,
+   "top_author_share": 0.788,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-27",
+   "n_files": 248,
+   "test_files": 39,
+   "ci": [
+    "azure-pipelines.yml",
+    "workflows"
+   ],
+   "license_file": "LICENSE.md",
+   "license_head": "# License **Copyright (c) 2017 Kevin Sheppard. All rights reserved.** Developed by: Kevin Sheppard (<kevin.sheppard@economics.ox.ac.uk>, <kevin.k.sheppard@gmail",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml",
+    "requirements.txt"
+   ]
+  },
+  "pypi": {
+   "version": "8.0.0",
+   "license": "NCSA",
+   "classifiers_license": [],
+   "requires_python": ">=3.10",
+   "requires_dist": [
+    "numpy<3,>=1.22.3",
+    "pandas>=1.4.0",
+    "scipy>=1.8",
+    "statsmodels>=0.13.0",
+    "packaging",
+    "pytest<9,>=8.4.1; extra == \"test\"",
+    "pytest-randomly; extra == \"test\"",
+    "pytest-xdist; extra == \"test\"",
+    "pytest-cov; extra == \"test\"",
+    "coverage[toml]; extra == \"test\"",
+    "meson; extra == \"test\"",
+    "ninja; extra == \"test\"",
+    "setuptools>=61; extra == \"doc\"",
+    "wheel; extra == \"doc\"",
+    "setuptools_scm[toml]<10,>=9.2.0; extra == \"doc\"",
+    "cython<4,>=3.0.13; extra == \"doc\"",
+    "numpy>=2.3.4; extra == \"doc\"",
+    "scipy>=1.16.0; extra == \"doc\"",
+    "ipython>=8.0.1; extra == \"doc\"",
+    "matplotlib>=3.10; extra == \"doc\"",
+    "patsy>=0.5.3; extra == \"doc\"",
+    "statsmodels>=0.13.5; extra == \"doc\"",
+    "jinja2; extra == \"doc\"",
+    "sphinx>=7; extra == \"doc\"",
+    "seaborn; extra == \"doc\"",
+    "numpydoc>=1.0.0; extra == \"doc\"",
+    "nbsphinx; extra == \"doc\"",
+    "sphinx-immaterial; extra == \"doc\"",
+    "jupyter; extra == \"doc\"",
+    "notebook; extra == \"doc\"",
+    "sphinx-autodoc-typehints; extra == \"doc\"",
+    "fonttools>=4.43.0; extra == \"doc\"",
+    "jupyterlab>=4.4.8; extra == \"doc\"",
+    "ipython>=7; extra == \"doc\"",
+    "sphinx_immaterial; extra == \"doc\"",
+    "nbconvert; extra == \"doc\"",
+    "pickleshare; extra == \"doc\"",
+    "pandas~=2.3.3; extra == \"doc\"",
+    "setuptools_scm[toml]<10,>=9.2.0; extra == \"dev\"",
+    "packaging; extra == \"dev\"",
+    "cython>=3.0.10; extra == \"dev\"",
+    "numba>=0.55; extra == \"dev\"",
+    "matplotlib>=3; extra == \"dev\"",
+    "seaborn; extra == \"dev\"",
+    "pytest<9,>=8.4.1; extra == \"dev\"",
+    "pytest-randomly; extra == \"dev\"",
+    "pytest-xdist; extra == \"dev\"",
+    "pytest-cov; extra == \"dev\"",
+    "black[jupyter]~=25.9.0; extra == \"dev\"",
+    "isort~=6.0; extra == \"dev\"",
+    "colorama; extra == \"dev\"",
+    "flake8; extra == \"dev\"",
+    "flake8-bugbear; extra == \"dev\"",
+    "mypy>=1.3; extra == \"dev\"",
+    "ruff>=0.8.6; extra == \"dev\"",
+    "pyupgrade>=3.4.0; extra == \"dev\"",
+    "jupyterlab-code-formatter; extra == \"dev\"",
+    "jupyterlab>=4.4.8; extra == \"dev\"",
+    "zipp>=3.19.1; extra == \"dev\""
+   ],
+   "last_release": [
+    "2025-10-21",
+    "8.0.0"
+   ],
+   "releases_12m": 1,
+   "n_releases": 48,
+   "first_release": "2014-09-03",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "TA-Lib (python)",
+  "classes": [
+   "FEAT"
+  ],
+  "lang": "C/Cython",
+  "git": {
+   "repo": "TA-Lib/ta-lib-python",
+   "commits_12m": 57,
+   "authors_12m": 9,
+   "top_author_share": 0.614,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-13",
+   "n_files": 68,
+   "test_files": 7,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "# BSD 2-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are",
+   "readme_flags": "",
+   "lockfiles": [
+    "Dockerfile",
+    "pyproject.toml",
+    "requirements.txt",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "0.8.1",
+   "license": "",
+   "classifiers_license": [],
+   "requires_python": ">=3.9",
+   "requires_dist": [
+    "numpy"
+   ],
+   "last_release": [
+    "2026-09-21",
+    "0.8.1"
+   ],
+   "releases_12m": 5,
+   "n_releases": 45,
+   "first_release": "2015-06-01",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "pandas-ta",
+  "classes": [
+   "FEAT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "twopirllc/pandas-ta",
+   "error": "clone failed"
+  },
+  "pypi": {
+   "version": "0.4.71b0",
+   "license": "",
+   "classifiers_license": [],
+   "requires_python": ">=3.12",
+   "requires_dist": [
+    "numba==0.61.2",
+    "numpy>=2.2.6",
+    "pandas>=2.3.2",
+    "tqdm>=4.67.1"
+   ],
+   "last_release": [
+    "2025-09-14",
+    "0.4.71b0"
+   ],
+   "releases_12m": 0,
+   "n_releases": 2,
+   "first_release": "2025-09-03",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "ta",
+  "classes": [
+   "FEAT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "bukosabino/ta",
+   "commits_12m": 1,
+   "authors_12m": 1,
+   "top_author_share": 1.0,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-03-18",
+   "n_files": 79,
+   "test_files": 38,
+   "ci": [
+    ".circleci/config.yml"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "The MIT License (MIT) Copyright 2020 Dar\u00edo L\u00f3pez Padial (Bukosabino) Permission is hereby granted, free of charge, to any person obtaining a copy of this softwa",
+   "readme_flags": "",
+   "lockfiles": [
+    "requirements.txt",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "0.11.0",
+   "license": "The MIT License (MIT)",
+   "classifiers_license": [
+    "License :: OSI Approved :: MIT License"
+   ],
+   "requires_python": null,
+   "requires_dist": [],
+   "last_release": [
+    "2023-11-02",
+    "0.11.0"
+   ],
+   "releases_12m": 0,
+   "n_releases": 55,
+   "first_release": "2018-04-06",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "talipp",
+  "classes": [
+   "FEAT",
+   "ONLINE"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "nardew/talipp",
+   "commits_12m": 0,
+   "authors_12m": 0,
+   "top_author_share": null,
+   "authors_for_50pct": null,
+   "last_commit": "2025-09-09",
+   "n_files": 166,
+   "test_files": 63,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "MIT License Copyright (c) 2020 nardew Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation",
+   "readme_flags": "",
+   "lockfiles": [
+    "requirements.txt",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "2.7.0",
+   "license": "",
+   "classifiers_license": [
+    "License :: OSI Approved :: MIT License"
+   ],
+   "requires_python": ">=3.8.0",
+   "requires_dist": [],
+   "last_release": [
+    "2025-09-09",
+    "2.7.0"
+   ],
+   "releases_12m": 0,
+   "n_releases": 31,
+   "first_release": "2020-10-28",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "tsfresh",
+  "classes": [
+   "FEAT"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "blue-yonder/tsfresh",
+   "commits_12m": 6,
+   "authors_12m": 5,
+   "top_author_share": 0.333,
+   "authors_for_50pct": 2,
+   "last_commit": "2026-07-06",
+   "n_files": 150,
+   "test_files": 41,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE.txt",
+   "license_head": "MIT LICENCE Copyright (c) 2016 Maximilian Christ, Blue Yonder GmbH Permission is hereby granted, free of charge, to any person obtaining a copy of this software",
+   "readme_flags": "",
+   "lockfiles": [
+    "Dockerfile",
+    "pyproject.toml",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "0.21.2",
+   "license": "MIT",
+   "classifiers_license": [],
+   "requires_python": ">=3.9",
+   "requires_dist": [
+    "requests>=2.9.1",
+    "numpy>=1.15.1",
+    "pandas>=0.25.0",
+    "statsmodels>=0.13",
+    "patsy>=0.4.1",
+    "pywavelets",
+    "scikit-learn>=0.22.0",
+    "tqdm>=4.10.0",
+    "stumpy>=1.11.1",
+    "cloudpickle",
+    "scipy>=1.2.0; python_version < \"3.10\"",
+    "scipy>=1.14.0; python_version >= \"3.10\"",
+    "dask[dataframe]>=2.9.0; extra == \"dask\"",
+    "distributed>=2.11.0; extra == \"dask\"",
+    "Sphinx>=6.1.3; extra == \"docs\"",
+    "sphinx-rtd-theme>=1.2.0; extra == \"docs\"",
+    "b2luigi; extra == \"docs\"",
+    "docutils>=0.18.1; extra == \"docs\"",
+    "matrixprofile<2.0.0,>=1.1.10; extra == \"matrixprofile\"",
+    "dask[dataframe]>=2.9.0; extra == \"testing\"",
+    "distributed>=2.11.0; extra == \"testing\"",
+    "pytest>=4.4.0; extra == \"testing\"",
+    "pytest-cov>=2.6.1; extra == \"testing\"",
+    "pytest-xdist>=1.26.1; extra == \"testing\"",
+    "pytest-benchmark>=3.0.0; extra == \"testing\"",
+    "mock>=2.0.0; extra == \"testing\"",
+    "matplotlib>=2.0.0; extra == \"testing\"",
+    "seaborn>=0.7.1; extra == \"testing\"",
+    "ipython>=5.3.0; extra == \"testing\"",
+    "notebook>=4.4.1; extra == \"testing\"",
+    "pandas-datareader>=0.5.0; extra == \"testing\"",
+    "pre-commit; extra == \"testing\""
+   ],
+   "last_release": [
+    "2026-05-31",
+    "0.21.2"
+   ],
+   "releases_12m": 1,
+   "n_releases": 33,
+   "first_release": "2016-10-27",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "river",
+  "classes": [
+   "ONLINE",
+   "FEAT"
+  ],
+  "lang": "Python/Rust",
+  "git": {
+   "repo": "online-ml/river",
+   "commits_12m": 299,
+   "authors_12m": 38,
+   "top_author_share": 0.589,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-28",
+   "n_files": 797,
+   "test_files": 143,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "BSD 3-Clause License Copyright (c) 2020, the river developers All rights reserved. Redistribution and use in source and binary forms, with or without modificati",
+   "readme_flags": "As a quick example, we'll train a logistic regression to classify the [website phishing dataset](http://archive.ics.uci.edu/ml/datasets/Website+Phishing). Here's a look at the first observation in the",
+   "lockfiles": [
+    "Cargo.toml",
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "0.26.1",
+   "license": "BSD-3-Clause",
+   "classifiers_license": [],
+   "requires_python": ">=3.11",
+   "requires_dist": [
+    "scipy<2,>=1.14.1",
+    "numpy<3,>=2.2.5",
+    "narwhals>=2.0.0",
+    "pandas<3,>=2.2; extra == \"pandas\""
+   ],
+   "last_release": [
+    "2026-08-21",
+    "0.26.1"
+   ],
+   "releases_12m": 7,
+   "n_releases": 30,
+   "first_release": "2021-04-16",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "tdigest",
+  "classes": [
+   "ONLINE"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "CamDavidsonPilon/tdigest",
+   "commits_12m": 0,
+   "authors_12m": 0,
+   "top_author_share": null,
+   "authors_for_50pct": null,
+   "last_commit": "2022-10-11",
+   "n_files": 13,
+   "test_files": 1,
+   "ci": [
+    ".travis.yml"
+   ],
+   "license_file": "LICENSE.txt",
+   "license_head": "The MIT License (MIT) Copyright (c) 2015 Cameron Davidson-Pilon Permission is hereby granted, free of charge, to any person obtaining a copy of this software an",
+   "readme_flags": "",
+   "lockfiles": [
+    "requirements.txt",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "0.5.2.2",
+   "license": "MIT",
+   "classifiers_license": [
+    "License :: OSI Approved :: MIT License"
+   ],
+   "requires_python": "",
+   "requires_dist": [
+    "accumulation-tree",
+    "pyudorandom",
+    "pytest ; extra == 'tests'",
+    "pytest-timeout ; extra == 'tests'",
+    "pytest-cov ; extra == 'tests'",
+    "numpy ; extra == 'tests'"
+   ],
+   "last_release": [
+    "2019-05-07",
+    "0.5.2.2"
+   ],
+   "releases_12m": 0,
+   "n_releases": 14,
+   "first_release": "2015-05-10",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "sketches-py (ddsketch)",
+  "classes": [
+   "ONLINE"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "DataDog/sketches-py",
+   "commits_12m": 1,
+   "authors_12m": 1,
+   "top_author_share": 1.0,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-01-30",
+   "n_files": 50,
+   "test_files": 6,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Copyright 2020 DataDog, Inc. Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. Yo",
+   "readme_flags": "New features, bug fixes, deprecations and other breaking changes must have",
+   "lockfiles": [
+    "docker-compose.yml",
+    "pyproject.toml",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "3.0.1",
+   "license": "",
+   "classifiers_license": [
+    "License :: OSI Approved :: Apache Software License"
+   ],
+   "requires_python": ">=3.7",
+   "requires_dist": [
+    "six",
+    "protobuf>=3.0.0; extra == \"serialization\""
+   ],
+   "last_release": [
+    "2024-04-01",
+    "3.0.1"
+   ],
+   "releases_12m": 0,
+   "n_releases": 9,
+   "first_release": "2020-12-07",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "hdrhistogram (hdrh)",
+  "classes": [
+   "ONLINE"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "HdrHistogram/HdrHistogram_py",
+   "commits_12m": 6,
+   "authors_12m": 4,
+   "top_author_share": 0.5,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-06-09",
+   "n_files": 30,
+   "test_files": 7,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "requirements.txt",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "error": "HTTP Error 404: Not Found"
+  }
+ },
+ {
+  "name": "exchange_calendars",
+  "classes": [
+   "CAL"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "gerrymanoim/exchange_calendars",
+   "commits_12m": 62,
+   "authors_12m": 14,
+   "top_author_share": 0.339,
+   "authors_for_50pct": 2,
+   "last_commit": "2026-09-14",
+   "n_files": 289,
+   "test_files": 148,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml",
+    "requirements.txt"
+   ]
+  },
+  "pypi": {
+   "version": "4.13.2",
+   "license": "Apache-2.0",
+   "classifiers_license": [],
+   "requires_python": "<4,>=3.10",
+   "requires_dist": [
+    "pandas>=1.5.0",
+    "pyluach>=2.3.0",
+    "toolz>=1.0.0",
+    "tzdata>=2025.2",
+    "korean_lunar_calendar>=0.3.1",
+    "numpy>=1.26.4"
+   ],
+   "last_release": [
+    "2026-03-10",
+    "4.13.2"
+   ],
+   "releases_12m": 6,
+   "n_releases": 48,
+   "first_release": "2021-02-02",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "pandas_market_calendars",
+  "classes": [
+   "CAL"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "rsheftel/pandas_market_calendars",
+   "commits_12m": 100,
+   "authors_12m": 14,
+   "top_author_share": 0.43,
+   "authors_for_50pct": 2,
+   "last_commit": "2026-05-26",
+   "n_files": 118,
+   "test_files": 43,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "MIT License Copyright (c) 2016 rsheftel Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentati",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "5.4.0",
+   "license": "MIT",
+   "classifiers_license": [
+    "License :: OSI Approved :: MIT License"
+   ],
+   "requires_python": ">=3.10",
+   "requires_dist": [
+    "exchange-calendars>=3.3",
+    "pandas>=1.1"
+   ],
+   "last_release": [
+    "2026-05-27",
+    "5.4.0"
+   ],
+   "releases_12m": 12,
+   "n_releases": 84,
+   "first_release": "2016-12-28",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "python-holidays",
+  "classes": [
+   "CAL"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "vacanza/holidays",
+   "commits_12m": 690,
+   "authors_12m": 83,
+   "top_author_share": 0.232,
+   "authors_for_50pct": 3,
+   "last_commit": "2026-09-28",
+   "n_files": 2344,
+   "test_files": 313,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Copyright (c) Vacanza Team and individual contributors (see CONTRIBUTORS file) Copyright (c) dr-prodigy <dr.prodigy.github@gmail.com>, 2017-2023 Copyright (c) r",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "0.105",
+   "license": "MIT",
+   "classifiers_license": [],
+   "requires_python": ">=3.10",
+   "requires_dist": [
+    "python-dateutil<3,>=2.9.0.post0"
+   ],
+   "last_release": [
+    "2026-09-28",
+    "0.106.dev20260928192037"
+   ],
+   "releases_12m": 70,
+   "n_releases": 173,
+   "first_release": "2014-08-28",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "great_expectations",
+  "classes": [
+   "DQ"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "great-expectations/great_expectations",
+   "commits_12m": 528,
+   "authors_12m": 59,
+   "top_author_share": 0.347,
+   "authors_for_50pct": 3,
+   "last_commit": "2026-09-28",
+   "n_files": 3770,
+   "test_files": 815,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml",
+    "requirements.txt",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "1.23.2",
+   "license": "Apache-2.0",
+   "classifiers_license": [
+    "License :: OSI Approved :: Apache Software License"
+   ],
+   "requires_python": "<3.14,>=3.10",
+   "requires_dist": [
+    "altair<7.0.0,>=5.0.0",
+    "cryptography>=3.2",
+    "jinja2>=3",
+    "jsonschema>=2.5.1",
+    "marshmallow>=3.18.0",
+    "mistune>=0.8.4",
+    "numpy>=1.22.4; python_version >= \"3.10\"",
+    "numpy>=1.26.0; python_version >= \"3.12\"",
+    "numpy>=2.1.0; python_version >= \"3.13\"",
+    "packaging",
+    "pandas>=1.3.0; python_version >= \"3.10\"",
+    "pandas>=2.2.3; python_version >= \"3.13\"",
+    "pandas>=1.3.0; python_version >= \"3.12\"",
+    "pydantic>=1.10.7",
+    "pyparsing!=3.2.4,>=2.4",
+    "python-dateutil>=2.8.1",
+    "requests>=2.20",
+    "ruamel.yaml>=0.16",
+    "scipy>=1.6.0",
+    "tqdm>=4.59.0",
+    "typing-extensions>=4.1.0",
+    "tzlocal>=1.2",
+    "pyodbc>=4.0.30; extra == \"sql-server\"",
+    "sqlalchemy>=1.4.0; extra == \"sql-server\"",
+    "psycopg2-binary>=2.7.6; extra == \"gx-redshift\"",
+    "sqlalchemy-redshift>=0.8.8; extra == \"gx-redshift\"",
+    "sqlalchemy>=1.4.0; extra == \"gx-redshift\"",
+    "teradatasqlalchemy==17.0.0.5; extra == \"teradata\"",
+    "sqlalchemy<2.0.0; extra == \"teradata\"",
+    "orjson>=3.9.7; extra == \"cloud\"",
+    "pact-python<4,>=3.1.0; extra == \"cloud\"",
+    "gcsfs>=0.5.1; extra == \"bigquery\"",
+    "google-cloud-bigquery>=3.3.6; extra == \"bigquery\"",
+    "google-cloud-bigquery-storage>=2.20.0; extra == \"bigquery\"",
+    "google-cloud-secret-manager>=1.0.0; extra == \"bigquery\"",
+    "google-cloud-storage>=2.10.0; python_version >= \"3.11\" and extra == \"bigquery\"",
+    "google-cloud-storage>=1.28.0; python_version < \"3.11\" and extra == \"bigquery\"",
+    "pandas_gbq>=0.26.1; extra == \"bigquery\"",
+    "sqlalchemy-bigquery>=1.3.0; extra == \"bigquery\"",
+    "sqlalchemy>=1.4.0; extra == \"bigquery\"",
+    "singlestoredb>=1.0.0; extra == \"singlestore\"",
+    "sqlalchemy-singlestoredb>=1.2.1; extra == \"singlestore\"",
+    "databricks-sqlalchemy>=1.0.0; extra == \"databricks\"",
+    "sqlalchemy<2.1; extra == \"databricks\"",
+    "sqlalchemy>=1.4.0; extra == \"databricks\"",
+    "psycopg2-binary>=2.7.6; extra == \"postgresql\"",
+    "sqlalchemy>=1.4.0; extra == \"postgresql\"",
+    "PyHive>=0.6.5; extra == \"hive\"",
+    "thrift>=0.16.0; extra == \"hive\"",
+    "thrift-sasl>=0.4.3; extra == \"hive\"",
+    "sqlalchemy>=1.4.0; extra == \"hive\"",
+    "trino!=0.316.0,>=0.310.0; extra == \"trino\"",
+    "sqlalchemy>=1.4.0; extra == \"trino\"",
+    "google-cloud-storage>=2.10.0; python_version >= \"3.11\" and extra == \"gcs\"",
+    "google-cloud-storage>=1.28.0; python_version < \"3.11\" and extra == \"gcs\"",
+    "sqlalchemy-vertica-python>=0.5.10; extra == \"vertica\"",
+    "sqlalchemy>=1.4.0; extra == \"vertica\"",
+    "pyspark<4.2,>=2.3.2; extra == \"spark\"",
+    "azure-identity>=1.10.0; extra == \"azure\"",
+    "azure-keyvault-secrets>=4.0.0; extra == \"azure\"",
+    "azure-storage-blob>=12.5.0; extra == \"azure\"",
+    "pyathena[SQLAlchemy]>=2.0.0; extra == \"athena\"",
+    "sqlalchemy>=1.4.0; extra == \"athena\"",
+    "PyMySQL>=1.1.1; extra == \"mysql\"",
+    "sqlalchemy>=1.4.0; extra == \"mysql\"",
+    "pypd==1.1.0; extra == \"pagerduty\"",
+    "feather-format>=0.4.1; extra == \"arrow\"",
+    "pyarrow>=14; python_version >= \"3.12\" and extra == \"arrow\"",
+    "pyarrow; python_version < \"3.12\" and extra == \"arrow\"",
+    "pyodbc>=4.0.30; extra == \"dremio\"",
+    "sqlalchemy-dremio==1.2.1; extra == \"dremio\"",
+    "sqlalchemy>=1.4.0; extra == \"dremio\"",
+    "googleapis-common-protos>=1.56.4; extra == \"spark-connect\"",
+    "grpcio>=1.48.1; extra == \"spark-connect\"",
+    "grpcio-status>=1.48.1; extra == \"spark-connect\"",
+    "zstandard>=0.25.0; extra == \"spark-connect\"",
+    "oracledb>=2.4.0; extra == \"oracle\"",
+    "sqlalchemy>=2.0; extra == \"oracle\"",
+    "sqlalchemy>=1.4.0; extra == \"oracle\"",
+    "clickhouse-sqlalchemy>=0.2.2; python_version < \"3.12\" and extra == \"clickhouse\"",
+    "clickhouse-sqlalchemy>=0.3.0; python_version >= \"3.12\" and extra == \"clickhouse\"",
+    "sqlalchemy<2.0.0; extra == \"clickhouse\"",
+    "openpyxl>=3.0.7; extra == \"excel\"",
+    "xlrd<2.0.0,>=1.1.0; extra == \"excel\"",
+    "psycopg2-binary>=2.7.6; extra == \"redshift\"",
+    "sqlalchemy-redshift>=0.8.8; extra == \"redshift\"",
+    "sqlalchemy>=1.4.0; extra == \"redshift\"",
+    "pyarrow>=14; python_version >= \"3.12\" and extra == \"snowflake\"",
+    "snowflake-connector-python>=3.5.0; extra == \"snowflake\"",
+    "snowflake-sqlalchemy!=1.7.0,>=1.2.3; extra == \"snowflake\"",
+    "sqlalchemy<2.1; extra == \"snowflake\"",
+    "sqlalchemy>=1.4.0; extra == \"snowflake\"",
+    "boto3>=1.17.106; extra == \"test\"",
+    "coverage[toml]>=7.5.1; extra == \"test\"",
+    "flaky>=3.7.0; extra == \"test\"",
+    "flask>=1.0.0; extra == \"test\"",
+    "freezegun>=0.3.15; extra == \"test\"",
+    "moto[s3,sns]<5.0,>=4.2.13; extra == \"test\"",
+    "pact-python<4,>=3.1.0; extra == \"test\"",
+    "pyfakefs>=4.5.1; extra == \"test\"",
+    "pytest>=8.2.1; extra == \"test\"",
+    "pytest-benchmark>=3.4.1; extra == \"test\"",
+    "pytest-cov>=5.0.0; extra == \"test\"",
+    "pytest-icdiff>=0.9.0; extra == \"test\"",
+    "pytest-mock>=3.14.0; extra == \"test\"",
+    "pytest-order>=1.2.1; extra == \"test\"",
+    "pytest-random-order>=1.1.1; extra == \"test\"",
+    "pytest-split>=0.9.0; extra == \"test\"",
+    "pytest-timeout>=2.3.1; extra == \"test\"",
+    "pytest-xdist>=3.6.1; extra == \"test\"",
+    "requirements-parser>=0.9.0; extra == \"test\"",
+    "responses!=0.25.5,>=0.23.1; extra == \"test\"",
+    "setuptools>=70.0.0; extra == \"test\"",
+    "sqlalchemy>=1.4.0; extra == \"test\"",
+    "adr-tools-python==1.0.3; extra == \"test\"",
+    "invoke==3.0.0; extra == \"test\"",
+    "mypy==1.19.0; extra == \"test\"",
+    "pre-commit>=2.21.0; extra == \"test\"",
+    "ruff==0.14.9; extra == \"test\"",
+    "tomli>=2.0.1; extra == \"test\"",
+    "datasets>=4.1.0; extra == \"test\"",
+    "docstring-parser==0.16; extra == \"test\"",
+    "pdf2image>=1.17.0; extra == \"test\"",
+    "pytesseract>=0.3.13; extra == \"test\"",
+    "feather-format>=0.4.1; extra == \"test\"",
+    "pyarrow>=14; python_version >= \"3.12\" and extra == \"test\"",
+    "pyarrow; python_version < \"3.12\" and extra == \"test\"",
+    "boto3>=1.17.106; extra == \"aws-secrets\"",
+    "azure-identity>=1.10.0; extra == \"azure-secrets\"",
+    "azure-keyvault-secrets>=4.0.0; extra == \"azure-secrets\"",
+    "azure-storage-blob>=12.5.0; extra == \"azure-secrets\"",
+    "pyodbc>=4.0.30; extra == \"fabric\"",
+    "sqlalchemy>=1.4.0; extra == \"fabric\"",
+    "gcsfs>=0.5.1; extra == \"gcp\"",
+    "google-cloud-bigquery>=3.3.6; extra == \"gcp\"",
+    "google-cloud-bigquery-storage>=2.20.0; extra == \"gcp\"",
+    "google-cloud-secret-manager>=1.0.0; extra == \"gcp\"",
+    "google-cloud-storage>=2.10.0; python_version >= \"3.11\" and extra == \"gcp\"",
+    "google-cloud-storage>=1.28.0; python_version < \"3.11\" and extra == \"gcp\"",
+    "pandas_gbq>=0.26.1; extra == \"gcp\"",
+    "sqlalchemy-bigquery>=1.3.0; extra == \"gcp\"",
+    "sqlalchemy>=1.4.0; extra == \"gcp\"",
+    "boto3>=1.17.106; extra == \"s3\""
+   ],
+   "last_release": [
+    "2026-09-25",
+    "1.23.2"
+   ],
+   "releases_12m": 37,
+   "n_releases": 369,
+   "first_release": "2017-12-22",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "pandera",
+  "classes": [
+   "DQ"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "unionai-oss/pandera",
+   "commits_12m": 267,
+   "authors_12m": 56,
+   "top_author_share": 0.213,
+   "authors_for_50pct": 3,
+   "last_commit": "2026-09-26",
+   "n_files": 596,
+   "test_files": 207,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE.txt",
+   "license_head": "MIT License Copyright (c) 2018 Niels Bantilan Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated docum",
+   "readme_flags": "[![Slack](https://img.shields.io/badge/Slack-4A154B?logo=slack&logoColor=fff&style=for-the-badge)](https://flyte-org.slack.com/archives/C08FDTY2X3L)",
+   "lockfiles": [
+    "pyproject.toml",
+    "requirements.txt",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "0.33.1",
+   "license": "MIT License\n        \n        Copyright (c) 2018 Niels Bantilan\n        \n        ",
+   "classifiers_license": [
+    "License :: OSI Approved :: MIT License"
+   ],
+   "requires_python": ">=3.10",
+   "requires_dist": [
+    "packaging>=20.0",
+    "pydantic",
+    "typeguard",
+    "typing_extensions",
+    "typing_inspect>=0.6.0",
+    "typer>=0.12.3; extra == \"cli\"",
+    "rich; extra == \"cli\"",
+    "pyyaml>=5.1; extra == \"cli\"",
+    "numpy>=1.24.4; extra == \"pandas\"",
+    "pandas>=2.1.1; extra == \"pandas\"",
+    "hypothesis>=6.92.7; extra == \"strategies\"",
+    "scipy; extra == \"hypotheses\"",
+    "pyyaml>=5.1; extra == \"io\"",
+    "frictionless<=4.40.8; extra == \"frictionless\"",
+    "pandas-stubs; extra == \"mypy\"",
+    "scipy-stubs; python_version >= \"3.10\" and extra == \"mypy\"",
+    "fastapi; extra == \"fastapi\"",
+    "geopandas; extra == \"geopandas\"",
+    "shapely; extra == \"geopandas\"",
+    "pyspark[connect]>=3.2.0; extra == \"pyspark\"",
+    "modin; extra == \"modin\"",
+    "ray; extra == \"modin\"",
+    "dask[dataframe]; extra == \"modin\"",
+    "distributed; extra == \"modin\"",
+    "modin; extra == \"modin-ray\"",
+    "ray; extra == \"modin-ray\"",
+    "modin; extra == \"modin-dask\"",
+    "dask[dataframe]; extra == \"modin-dask\"",
+    "distributed; extra == \"modin-dask\"",
+    "dask[dataframe]; extra == \"dask\"",
+    "distributed; extra == \"dask\"",
+    "ibis-framework>=9.0.0; extra == \"ibis\"",
+    "pyarrow-hotfix; extra == \"ibis\"",
+    "polars>=1.20.0; extra == \"polars\"",
+    "xarray>=2024.10.0; extra == \"xarray\"",
+    "numpy>=1.24.4; extra == \"xarray\"",
+    "narwhals>=1.26.0; extra == \"narwhals\"",
+    "pyarrow>=13; extra == \"pyarrow\"",
+    "narwhals>=1.26.0; extra == \"pyarrow\"",
+    "typer>=0.12.3; extra == \"all\"",
+    "rich; extra == \"all\"",
+    "hypothesis>=6.92.7; extra == \"all\"",
+    "scipy; extra == \"all\"",
+    "scipy-stubs; python_version >= \"3.10\" and extra == \"all\"",
+    "pyyaml>=5.1; extra == \"all\"",
+    "black; extra == \"all\"",
+    "frictionless<=4.40.8; extra == \"all\"",
+    "pyspark[connect]>=3.2.0; extra == \"all\"",
+    "modin; extra == \"all\"",
+    "ray; extra == \"all\"",
+    "dask[dataframe]; extra == \"all\"",
+    "distributed; extra == \"all\"",
+    "pandas-stubs; extra == \"all\"",
+    "fastapi; extra == \"all\"",
+    "geopandas; extra == \"all\"",
+    "shapely; extra == \"all\"",
+    "ibis-framework>=9.0.0; extra == \"all\"",
+    "pyarrow-hotfix; extra == \"all\"",
+    "polars>=1.20.0; extra == \"all\"",
+    "xarray>=2024.10.0; extra == \"all\"",
+    "numpy>=1.24.4; extra == \"all\"",
+    "narwhals>=1.26.0; extra == \"all\"",
+    "pyarrow>=13; extra == \"all\""
+   ],
+   "last_release": [
+    "2026-09-01",
+    "0.33.1"
+   ],
+   "releases_12m": 15,
+   "n_releases": 125,
+   "first_release": "2018-11-05",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "soda-core",
+  "classes": [
+   "DQ"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "sodadata/soda-core",
+   "commits_12m": 264,
+   "authors_12m": 16,
+   "top_author_share": 0.341,
+   "authors_for_50pct": 2,
+   "last_commit": "2026-09-29",
+   "n_files": 459,
+   "test_files": 238,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Elastic License 2.0 ## Acceptance By using the software, you agree to all of the terms and conditions below. ## Copyright License The licensor grants you a non-",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "4.25.0",
+   "license": "Proprietary",
+   "classifiers_license": [],
+   "requires_python": ">=3.10",
+   "requires_dist": [
+    "ruamel.yaml<0.18.0,>=0.17.0",
+    "requests<2.34.0,>=2.32.3",
+    "pydantic<3.0,>=2.11",
+    "opentelemetry-api<2.0.0,>=1.16.0",
+    "opentelemetry-exporter-otlp-proto-http<2.0.0,>=1.16.0",
+    "tabulate[widechars]",
+    "python-dotenv~=1.0",
+    "sqlglot"
+   ],
+   "last_release": [
+    "2026-09-23",
+    "4.25.0"
+   ],
+   "releases_12m": 26,
+   "n_releases": 143,
+   "first_release": "2022-03-22",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "pointblank (python)",
+  "classes": [
+   "DQ"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "posit-dev/pointblank",
+   "commits_12m": 2105,
+   "authors_12m": 8,
+   "top_author_share": 0.924,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-25",
+   "n_files": 1390,
+   "test_files": 251,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "MIT License Copyright (c) 2024-2026 Posit Software, PBC Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associ",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "0.27.0",
+   "license": "MIT License\n        \n        Copyright (c) 2024-2026 Posit Software, PBC\n       ",
+   "classifiers_license": [
+    "License :: OSI Approved :: MIT License"
+   ],
+   "requires_python": ">=3.10",
+   "requires_dist": [
+    "commonmark>=0.9.1",
+    "importlib-metadata",
+    "great-tables>=0.0.0",
+    "narwhals>=2.0.1",
+    "typing_extensions>=3.10.0.0",
+    "requests>=2.31.0",
+    "click>=8.0.0",
+    "rich>=13.0.0",
+    "pyyaml>=6.0.0",
+    "anthropic[bedrock]>=0.68.0",
+    "pandas>=2.2.3; extra == \"pd\"",
+    "polars>=1.33.0; extra == \"pl\"",
+    "pyspark==3.5.6; extra == \"pyspark\"",
+    "chatlas>=0.3.0; extra == \"generate\"",
+    "anthropic[bedrock]>=0.45.2; extra == \"generate\"",
+    "openai>=1.63.0; extra == \"generate\"",
+    "httpx>=0.28.0; extra == \"generate\"",
+    "shiny>=1.3.0; extra == \"generate\"",
+    "fastmcp>=2.14.2; extra == \"mcp\"",
+    "pytest-asyncio>=1.0.0; extra == \"mcp\"",
+    "opentelemetry-api>=1.22.0; extra == \"otel\"",
+    "opentelemetry-sdk>=1.22.0; extra == \"otel\"",
+    "openpyxl>=3.0.0; extra == \"excel\"",
+    "lxml>=4.9.0; extra == \"cdisc\"",
+    "pyreadstat>=1.2.0; extra == \"cdisc-core\"",
+    "ibis-framework[bigquery]>=9.5.0; extra == \"bigquery\"",
+    "ibis-framework[databricks]>=9.5.0; extra == \"databricks\"",
+    "ibis-framework[duckdb]>=9.5.0; extra == \"duckdb\"",
+    "ibis-framework[mysql]>=9.5.0; extra == \"mysql\"",
+    "ibis-framework[mssql]>=9.5.0; extra == \"mssql\"",
+    "ibis-framework[postgres]>=9.5.0; extra == \"postgres\"",
+    "ibis-framework[snowflake]>=9.5.0; extra == \"snowflake\"",
+    "ibis-framework[sqlite]>=9.5.0; extra == \"sqlite\"",
+    "jupyter; extra == \"docs\"",
+    "nbclient>=0.10.0; extra == \"docs\"",
+    "nbformat>=5.10.4; extra == \"docs\"",
+    "pandas<3,>=2.2.3; extra == \"docs\"",
+    "polars>=1.17.1; extra == \"docs\"",
+    "pyspark==3.5.6; extra == \"docs\"",
+    "openpyxl>=3.0.0; extra == \"docs\"",
+    "duckdb<1.3.3,>=1.2.0; extra == \"docs\"",
+    "lxml>=4.9.0; extra == \"docs\"",
+    "pyreadstat>=1.2.0; extra == \"docs\""
+   ],
+   "last_release": [
+    "2026-08-13",
+    "0.27.0"
+   ],
+   "releases_12m": 14,
+   "n_releases": 58,
+   "first_release": "2024-12-05",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "whylogs",
+  "classes": [
+   "DQ"
+  ],
+  "lang": "Python/Java",
+  "git": {
+   "repo": "whylabs/whylogs",
+   "commits_12m": 0,
+   "authors_12m": 0,
+   "top_author_share": null,
+   "authors_for_50pct": null,
+   "last_commit": "2025-01-10",
+   "n_files": 618,
+   "test_files": 131,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "Dockerfile"
+   ]
+  },
+  "pypi": {
+   "version": "1.6.4",
+   "license": "Apache-2.0",
+   "classifiers_license": [
+    "License :: OSI Approved :: Apache Software License"
+   ],
+   "requires_python": "<4,>=3.7.1",
+   "requires_dist": [
+    "Pillow<11,>=10.1.0; python_version >= \"3.8\" and (extra == \"viz\" or extra == \"image\" or extra == \"all\")",
+    "Pillow>=9.2.0; python_version < \"3.8\" and (extra == \"viz\" or extra == \"image\" or extra == \"all\")",
+    "backoff<3.0.0,>=2.2.1",
+    "boto3<2.0.0,>=1.22.13; python_version >= \"3.8\" and (extra == \"s3\" or extra == \"all\")",
+    "databricks-cli<0.9.0,>=0.8.0; extra == \"mlflow\"",
+    "faster-fifo<2.0.0,>=1.4.5; extra == \"proc\" or extra == \"all\"",
+    "fugue<0.9.0,>=0.8.1; extra == \"fugue\" or extra == \"all\"",
+    "furo<2023.0.0,>=2022.3.4; extra == \"docs\"",
+    "google-cloud-storage<3.0.0,>=2.5.0; extra == \"gcs\" or extra == \"all\"",
+    "importlib-metadata<4.3; python_version < \"3.8\"",
+    "ipython; extra == \"viz\" or extra == \"all\"",
+    "ipython_genutils<0.3.0,>=0.2.0; extra == \"docs\"",
+    "mlflow-skinny<2.0.1; python_version < \"3.8\" and (extra == \"mlflow\" or extra == \"all\")",
+    "mlflow-skinny<3.0.0,>=2.5.0; python_version >= \"3.8\" and (extra == \"mlflow\" or extra == \"all\")",
+    "myst-parser[sphinx]<0.18.0,>=0.17.2; extra == \"docs\"",
+    "nbconvert<8.0.0,>=7.0.0; extra == \"docs\"",
+    "nbsphinx<0.9.0,>=0.8.9; extra == \"docs\"",
+    "numpy>=1.23.2; python_version >= \"3.11\" and (extra == \"viz\" or extra == \"image\" or extra == \"embeddings\" or extra == \"all\")",
+    "numpy; python_version < \"3.11\" and (extra == \"viz\" or extra == \"image\" or extra == \"embeddings\" or extra == \"all\")",
+    "orjson<4.0.0,>=3.8.10; extra == \"proc\" or extra == \"proc-mp\" or extra == \"all\"",
+    "pandas; extra == \"datasets\" or extra == \"proc\" or extra == \"proc-mp\" or extra == \"all\"",
+    "platformdirs<4.0.0,>=3.5.0",
+    "protobuf>=3.19.4",
+    "pyarrow<13,>=8.0.0; extra == \"spark\" or extra == \"all\"",
+    "pybars3<0.10,>=0.9; extra == \"viz\" or extra == \"all\"",
+    "pyspark<4.0.0,>=3.0.0; extra == \"spark\" or extra == \"all\"",
+    "requests<3.0,>=2.27",
+    "scikit-learn<2.0.0,>=1.0.2; python_version < \"3.11\" and (extra == \"embeddings\" or extra == \"all\")",
+    "scikit-learn<2,>=1.1.2; python_version >= \"3.11\" and (extra == \"embeddings\" or extra == \"all\")",
+    "scipy>=1.5; python_version < \"3.11\" and (extra == \"viz\" or extra == \"all\")",
+    "scipy>=1.9.2; python_version >= \"3.11\" and (extra == \"viz\" or extra == \"all\")",
+    "sphinx; extra == \"docs\"",
+    "sphinx-autoapi; extra == \"docs\"",
+    "sphinx-autobuild<2022.0.0,>=2021.3.14; extra == \"docs\"",
+    "sphinx-copybutton<0.6.0,>=0.5.0; extra == \"docs\"",
+    "sphinx-inline-tabs; (python_version >= \"3.8\" and python_version < \"4\") and extra == \"docs\"",
+    "sphinxext-opengraph<0.7.0,>=0.6.3; extra == \"docs\"",
+    "typing-extensions>=3.10; python_version < \"4\"",
+    "whylabs-client<0.7.0,>=0.6.15",
+    "whylogs-sketching>=3.4.1.dev3"
+   ],
+   "last_release": [
+    "2024-12-03",
+    "1.6.4"
+   ],
+   "releases_12m": 0,
+   "n_releases": 339,
+   "first_release": "2020-09-11",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "frictionless-py",
+  "classes": [
+   "DQ"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "frictionlessdata/frictionless-py",
+   "commits_12m": 26,
+   "authors_12m": 7,
+   "top_author_share": 0.769,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-09-25",
+   "n_files": 1433,
+   "test_files": 458,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE.md",
+   "license_head": "# The MIT License (MIT) Copyright \u00a9 `2020` `Open Knowledge Foundation` Permission is hereby granted, free of charge, to any person obtaining a copy of this soft",
+   "readme_flags": "",
+   "lockfiles": [
+    "Dockerfile",
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "5.19.1",
+   "license": "MIT",
+   "classifiers_license": [
+    "License :: OSI Approved :: MIT License"
+   ],
+   "requires_python": ">=3.8",
+   "requires_dist": [
+    "attrs>=22.2.0",
+    "chardet>=3.0; python_version < \"3.10\"",
+    "chardet>=6.0; python_version >= \"3.10\"",
+    "humanize>=4.2",
+    "isodate>=0.6",
+    "jinja2>=3.0",
+    "jsonschema>=4.20",
+    "marko>=1.0",
+    "petl>=1.6",
+    "pydantic>=2.0",
+    "python-dateutil>=2.8",
+    "python-slugify>=1.2",
+    "pyyaml>=5.3",
+    "requests>=2.10",
+    "rfc3986>=1.4",
+    "simpleeval>=0.9.11",
+    "tabulate>=0.8.10",
+    "typer>=0.12",
+    "typing-extensions>=4.3",
+    "validators>=0.18",
+    "boto3>=1.9; extra == \"aws\"",
+    "google-api-python-client>=1.12.1; extra == \"bigquery\"",
+    "frictionless-ckan-mapper>=1.0; extra == \"ckan\"",
+    "datasette>=0.64.2; extra == \"datasette\"",
+    "hatch; extra == \"dev\"",
+    "httpx; extra == \"dev\"",
+    "ipython; extra == \"dev\"",
+    "livemark; extra == \"dev\"",
+    "moto; extra == \"dev\"",
+    "neovim; extra == \"dev\"",
+    "oauth2client; extra == \"dev\"",
+    "pyright==1.1.317; extra == \"dev\"",
+    "pytest; extra == \"dev\"",
+    "pytest-cov; extra == \"dev\"",
+    "pytest-dotenv; extra == \"dev\"",
+    "pytest-lazy-fixtures; extra == \"dev\"",
+    "pytest-mock; extra == \"dev\"",
+    "pytest-timeout; extra == \"dev\"",
+    "pytest-vcr; extra == \"dev\"",
+    "requests-mock; extra == \"dev\"",
+    "ruff; extra == \"dev\"",
+    "yattag; extra == \"dev\"",
+    "duckdb-engine>=0.7; extra == \"duckdb\"",
+    "duckdb>=0.8; extra == \"duckdb\"",
+    "sqlalchemy<=2.0.35,>=1.4; extra == \"duckdb\"",
+    "openpyxl>=3.0; extra == \"excel\"",
+    "tableschema-to-template>=0.0; extra == \"excel\"",
+    "xlrd>=1.2; extra == \"excel\"",
+    "xlwt>=1.2; extra == \"excel\"",
+    "pygithub>=1.50; extra == \"github\"",
+    "pygsheets>=2.0; extra == \"gsheets\"",
+    "pyquery>=1.4; extra == \"html\"",
+    "ijson>=3.0; extra == \"json\"",
+    "jsonlines>=1.2; extra == \"json\"",
+    "pymysql>=1.0; extra == \"mysql\"",
+    "sqlalchemy>=1.4; extra == \"mysql\"",
+    "ezodf>=0.3; extra == \"ods\"",
+    "lxml>=4.0; extra == \"ods\"",
+    "pandas>=1.0; extra == \"pandas\"",
+    "pyarrow>=14.0; extra == \"pandas\"",
+    "pyarrow>=14.0; extra == \"parquet\"",
+    "psycopg2>=2.9; extra == \"postgresql\"",
+    "psycopg>=3.0; extra == \"postgresql\"",
+    "sqlalchemy>=1.4; extra == \"postgresql\"",
+    "savreaderwriter>=3.0; extra == \"spss\"",
+    "sqlalchemy>=1.4; extra == \"sql\"",
+    "visidata>=2.10; extra == \"visidata\"",
+    "tatsu<5.15,>=5.8.3; extra == \"wkt\"",
+    "pyzenodo3>=1.0; extra == \"zenodo\""
+   ],
+   "last_release": [
+    "2026-09-25",
+    "5.20.0rc2"
+   ],
+   "releases_12m": 4,
+   "n_releases": 309,
+   "first_release": "2020-07-18",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "pydantic",
+  "classes": [
+   "DQ"
+  ],
+  "lang": "Python/Rust",
+  "git": {
+   "repo": "pydantic/pydantic",
+   "commits_12m": 659,
+   "authors_12m": 133,
+   "top_author_share": 0.431,
+   "authors_for_50pct": 2,
+   "last_commit": "2026-09-29",
+   "n_files": 851,
+   "test_files": 358,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "The MIT License (MIT) Copyright (c) 2017 to present Pydantic Services Inc. and individual contributors. Permission is hereby granted, free of charge, to any per",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml"
+   ]
+  },
+  "pypi": {
+   "version": "2.13.5",
+   "license": "MIT",
+   "classifiers_license": [],
+   "requires_python": ">=3.9",
+   "requires_dist": [
+    "annotated-types>=0.6.0",
+    "pydantic-core==2.46.5",
+    "typing-extensions>=4.14.1",
+    "typing-inspection>=0.4.2",
+    "email-validator>=2.0.0; extra == \"email\"",
+    "tzdata; (python_version >= \"3.9\" and platform_system == \"Windows\") and extra == \"timezone\""
+   ],
+   "last_release": [
+    "2026-09-09",
+    "2.14.0b2"
+   ],
+   "releases_12m": 22,
+   "n_releases": 206,
+   "first_release": "2017-05-03",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "TimescaleDB",
+  "classes": [
+   "TSS"
+  ],
+  "lang": "C",
+  "git": {
+   "repo": "timescale/timescaledb",
+   "commits_12m": 1214,
+   "authors_12m": 42,
+   "top_author_share": 0.391,
+   "authors_for_50pct": 2,
+   "last_commit": "2026-09-29",
+   "n_files": 3077,
+   "test_files": 2172,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Source code in this repository is variously licensed under the Apache License Version 2.0, an Apache compatible license, or the Timescale License. All source co",
+   "readme_flags": "[![SLACK](https://img.shields.io/badge/Ask_the_community-black?style=for-the-badge&logo=slack&logoColor=white)](https://timescaledb.slack.com/archives/C4GT3N90X)",
+   "lockfiles": [
+    "CMakeLists.txt"
+   ]
+  },
+  "pypi": null
+ },
+ {
+  "name": "pg_partman",
+  "classes": [
+   "TSS"
+  ],
+  "lang": "SQL/PLpgSQL",
+  "git": {
+   "repo": "pgpartman/pg_partman",
+   "commits_12m": 20,
+   "authors_12m": 7,
+   "top_author_share": 0.65,
+   "authors_for_50pct": 1,
+   "last_commit": "2026-08-22",
+   "n_files": 258,
+   "test_files": 91,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE.txt",
+   "license_head": "LICENSE AND COPYRIGHT --------------------- PG Partition Manager (pg_partman) is released under the PostgreSQL License, a liberal Open Source license, similar t",
+   "readme_flags": "pg_partman is an extension to create and manage both time-based and number-based table partition sets. As of version 5.0.1, only built-in, declarative partitioning is supported and the older trigger-b",
+   "lockfiles": []
+  },
+  "pypi": null
+ },
+ {
+  "name": "QuestDB",
+  "classes": [
+   "TSS"
+  ],
+  "lang": "Java/Rust",
+  "git": {
+   "repo": "questdb/questdb",
+   "commits_12m": 867,
+   "authors_12m": 35,
+   "top_author_share": 0.205,
+   "authors_for_50pct": 5,
+   "last_commit": "2026-09-28",
+   "n_files": 7311,
+   "test_files": 2676,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE.txt",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "pom.xml"
+   ]
+  },
+  "pypi": null
+ },
+ {
+  "name": "ClickHouse",
+  "classes": [
+   "TSS"
+  ],
+  "lang": "C++",
+  "git": {
+   "repo": "ClickHouse/ClickHouse",
+   "error": "clone failed"
+  },
+  "pypi": null
+ },
+ {
+  "name": "DuckDB",
+  "classes": [
+   "TSS",
+   "FEAT"
+  ],
+  "lang": "C++",
+  "git": {
+   "repo": "duckdb/duckdb",
+   "commits_12m": 23579,
+   "authors_12m": 359,
+   "top_author_share": 0.147,
+   "authors_for_50pct": 6,
+   "last_commit": "2026-09-29",
+   "n_files": 16124,
+   "test_files": 6716,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Copyright 2018-2026 Stichting DuckDB Foundation Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated doc",
+   "readme_flags": "",
+   "lockfiles": [
+    "CMakeLists.txt"
+   ]
+  },
+  "pypi": {
+   "version": "1.5.6",
+   "license": "",
+   "classifiers_license": [
+    "License :: OSI Approved :: MIT License"
+   ],
+   "requires_python": ">=3.10.0",
+   "requires_dist": [
+    "ipython; extra == \"all\"",
+    "fsspec; extra == \"all\"",
+    "numpy; extra == \"all\"",
+    "pandas; extra == \"all\"",
+    "pyarrow; extra == \"all\"",
+    "adbc-driver-manager; extra == \"all\""
+   ],
+   "last_release": [
+    "2026-09-28",
+    "1.5.6"
+   ],
+   "releases_12m": 90,
+   "n_releases": 145,
+   "first_release": "2019-05-08",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "ArcticDB",
+  "classes": [
+   "TSS"
+  ],
+  "lang": "C++/Python",
+  "git": {
+   "repo": "man-group/ArcticDB",
+   "commits_12m": 453,
+   "authors_12m": 17,
+   "top_author_share": 0.221,
+   "authors_for_50pct": 3,
+   "last_commit": "2026-09-28",
+   "n_files": 2216,
+   "test_files": 447,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE.txt",
+   "license_head": "**Business Source License 1.1** Licensor: Man Group Operations Limited Licensed Work: ArcticDB Additional Use Grant: You may make use of the Licensed Work under",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml",
+    "setup.py"
+   ]
+  },
+  "pypi": {
+   "version": "6.26.0",
+   "license": "Business Source License 1.1 (See LICENSE.txt)",
+   "classifiers_license": [],
+   "requires_python": null,
+   "requires_dist": [
+    "pandas<3",
+    "numpy",
+    "attrs",
+    "protobuf<7,>=3.15.0",
+    "msgpack>=0.5.0",
+    "pyyaml",
+    "packaging",
+    "pytz",
+    "polars; extra == \"arrow\"",
+    "pyarrow; extra == \"arrow\"",
+    "pytest; extra == \"testing\"",
+    "polars; extra == \"testing\"",
+    "pyarrow; extra == \"testing\"",
+    "pytest-cpp; extra == \"testing\"",
+    "pytest-timeout; extra == \"testing\"",
+    "pytest-xdist; extra == \"testing\"",
+    "packaging; extra == \"testing\"",
+    "future; extra == \"testing\"",
+    "mock; extra == \"testing\"",
+    "boto3; extra == \"testing\"",
+    "aioboto3>=9; extra == \"testing\"",
+    "moto; extra == \"testing\"",
+    "flask; extra == \"testing\"",
+    "flask-cors; extra == \"testing\"",
+    "hypothesis<6.73; extra == \"testing\"",
+    "azure-storage-blob; extra == \"testing\"",
+    "azure-identity; extra == \"testing\"",
+    "coverage; extra == \"testing\"",
+    "asv; (platform_system == \"Linux\" or python_version < \"3.13\") and extra == \"testing\"",
+    "virtualenv; extra == \"testing\"",
+    "pymongo; extra == \"testing\"",
+    "trustme; extra == \"testing\"",
+    "psutil; extra == \"testing\"",
+    "retrying; extra == \"testing\""
+   ],
+   "last_release": [
+    "2026-09-29",
+    "6.27.0"
+   ],
+   "releases_12m": 40,
+   "n_releases": 109,
+   "first_release": "2022-09-12",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "Apache Arrow (pyarrow)",
+  "classes": [
+   "TSS"
+  ],
+  "lang": "C++/Python",
+  "git": {
+   "repo": "apache/arrow",
+   "commits_12m": 1374,
+   "authors_12m": 217,
+   "top_author_share": 0.11,
+   "authors_for_50pct": 7,
+   "last_commit": "2026-09-29",
+   "n_files": 5335,
+   "test_files": 1023,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE.txt",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": []
+  },
+  "pypi": {
+   "version": "25.0.1",
+   "license": "Apache-2.0",
+   "classifiers_license": [],
+   "requires_python": ">=3.10",
+   "requires_dist": [],
+   "last_release": [
+    "2026-08-10",
+    "25.0.1"
+   ],
+   "releases_12m": 6,
+   "n_releases": 64,
+   "first_release": "2017-03-16",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "polars",
+  "classes": [
+   "TSS",
+   "FEAT"
+  ],
+  "lang": "Rust/Python",
+  "git": {
+   "repo": "pola-rs/polars",
+   "commits_12m": 2379,
+   "authors_12m": 201,
+   "top_author_share": 0.154,
+   "authors_for_50pct": 5,
+   "last_commit": "2026-09-29",
+   "n_files": 3463,
+   "test_files": 718,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Copyright (c) 2025 Ritchie Vink Copyright (c) 2024 (Some portions) NVIDIA CORPORATION & AFFILIATES. All rights reserved. Permission is hereby granted, free of c",
+   "readme_flags": "",
+   "lockfiles": [
+    "Cargo.toml"
+   ]
+  },
+  "pypi": {
+   "version": "1.44.2",
+   "license": "Copyright (c) 2025 Ritchie Vink\n        Copyright (c) 2024 (Some portions) NVIDI",
+   "classifiers_license": [
+    "License :: OSI Approved :: MIT License"
+   ],
+   "requires_python": ">=3.10",
+   "requires_dist": [
+    "polars-runtime-32==1.44.2",
+    "polars-runtime-64==1.44.2; extra == \"rt64\"",
+    "polars-runtime-compat==1.44.2; extra == \"rtcompat\"",
+    "polars_cloud>=0.9.0; extra == \"polars-cloud\"",
+    "numpy>=1.16.0; extra == \"numpy\"",
+    "pandas; extra == \"pandas\"",
+    "polars[pyarrow]; extra == \"pandas\"",
+    "pyarrow>=7.0.0; extra == \"pyarrow\"",
+    "pydantic; extra == \"pydantic\"",
+    "fastexcel>=0.9; extra == \"calamine\"",
+    "openpyxl>=3.0.0; extra == \"openpyxl\"",
+    "xlsx2csv>=0.8.0; extra == \"xlsx2csv\"",
+    "xlsxwriter; extra == \"xlsxwriter\"",
+    "polars[calamine,openpyxl,xlsx2csv,xlsxwriter]; extra == \"excel\"",
+    "adbc-driver-manager[dbapi]; extra == \"adbc\"",
+    "adbc-driver-sqlite[dbapi]; extra == \"adbc\"",
+    "connectorx>=0.3.2; extra == \"connectorx\"",
+    "sqlalchemy; extra == \"sqlalchemy\"",
+    "polars[pandas]; extra == \"sqlalchemy\"",
+    "polars[adbc,connectorx,sqlalchemy]; extra == \"database\"",
+    "fsspec; extra == \"fsspec\"",
+    "deltalake!=1.5.*,>=1.0.0; extra == \"deltalake\"",
+    "pyiceberg>=0.9.0; extra == \"iceberg\"",
+    "gevent; extra == \"async\"",
+    "cloudpickle; extra == \"cloudpickle\"",
+    "matplotlib; extra == \"graph\"",
+    "altair>=5.4.0; extra == \"plot\"",
+    "great-tables>=0.8.0; extra == \"style\"",
+    "tzdata; platform_system == \"Windows\" and extra == \"timezone\"",
+    "cudf-polars-cu12; extra == \"gpu\"",
+    "polars[async,cloudpickle,database,deltalake,excel,fsspec,graph,iceberg,numpy,pandas,plot,pyarrow,pydantic,style,timezone]; extra == \"all\""
+   ],
+   "last_release": [
+    "2026-09-20",
+    "2.0.0rc2"
+   ],
+   "releases_12m": 30,
+   "n_releases": 431,
+   "first_release": "2021-03-15",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "sortedcontainers",
+  "classes": [
+   "OB",
+   "ONLINE"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "grantjenks/python-sortedcontainers",
+   "commits_12m": 0,
+   "authors_12m": 0,
+   "top_author_share": null,
+   "authors_for_50pct": null,
+   "last_commit": "2024-03-01",
+   "n_files": 258,
+   "test_files": 32,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Copyright 2014-2024 Grant Jenks Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License.",
+   "readme_flags": "",
+   "lockfiles": [
+    "pyproject.toml",
+    "requirements.txt"
+   ]
+  },
+  "pypi": {
+   "version": "2.4.0",
+   "license": "Apache 2.0",
+   "classifiers_license": [
+    "License :: OSI Approved :: Apache Software License"
+   ],
+   "requires_python": "",
+   "requires_dist": [],
+   "last_release": [
+    "2021-05-16",
+    "2.4.0"
+   ],
+   "releases_12m": 0,
+   "n_releases": 40,
+   "first_release": "2014-03-18",
+   "yanked_latest": null
+  }
+ },
+ {
+  "name": "VictoriaMetrics",
+  "classes": [
+   "TSS"
+  ],
+  "lang": "Go",
+  "git": {
+   "repo": "VictoriaMetrics/VictoriaMetrics",
+   "commits_12m": 1555,
+   "authors_12m": 104,
+   "top_author_share": 0.212,
+   "authors_for_50pct": 5,
+   "last_commit": "2026-09-29",
+   "n_files": 8659,
+   "test_files": 465,
+   "ci": [
+    "workflows"
+   ],
+   "license_file": "LICENSE",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "go.mod"
+   ]
+  },
+  "pypi": null
+ },
+ {
+  "name": "InfluxDB",
+  "classes": [
+   "TSS"
+  ],
+  "lang": "Rust",
+  "git": {
+   "repo": "influxdata/influxdb",
+   "commits_12m": 106,
+   "authors_12m": 19,
+   "top_author_share": 0.226,
+   "authors_for_50pct": 3,
+   "last_commit": "2026-09-18",
+   "n_files": 1845,
+   "test_files": 113,
+   "ci": [
+    ".circleci/config.yml",
+    "workflows"
+   ],
+   "license_file": "LICENSE-APACHE",
+   "license_head": "Apache License Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1. Definitions. \"License\" ",
+   "readme_flags": "",
+   "lockfiles": [
+    "Cargo.toml",
+    "Dockerfile"
+   ]
+  },
+  "pypi": null
+ },
+ {
+  "name": "tstables",
+  "classes": [
+   "TSS"
+  ],
+  "lang": "Python",
+  "git": {
+   "repo": "afiedler/tstables",
+   "commits_12m": 0,
+   "authors_12m": 0,
+   "top_author_share": null,
+   "authors_for_50pct": null,
+   "last_commit": "2015-10-10",
+   "n_files": 16,
+   "test_files": 3,
+   "ci": [],
+   "license_file": null,
+   "readme_flags": "",
+   "lockfiles": [
+    "setup.py"
+   ]
+  },
+  "pypi": null
+ }
+]

@@ -1,0 +1,100 @@
+{
+ "versions": {
+  "ccxt": "4.5.84",
+  "cryptofeed": "2.4.1"
+ },
+ "ccxt_import_seconds": 0.27,
+ "ccxt_n_exchanges": 104,
+ "ccxt_fetch_ohlcv": {
+  "kraken": {
+   "ok": true,
+   "n": 100,
+   "seconds": 2.36,
+   "first_ts": 1790701260000,
+   "step_ms_unique": [
+    60000
+   ],
+   "last_bar_is_forming": true
+  },
+  "coinbase": {
+   "ok": true,
+   "n": 100,
+   "seconds": 1.34,
+   "first_ts": 1790701260000,
+   "step_ms_unique": [
+    60000
+   ],
+   "last_bar_is_forming": true
+  },
+  "okx": {
+   "ok": true,
+   "n": 100,
+   "seconds": 1.95,
+   "first_ts": 1790701260000,
+   "step_ms_unique": [
+    60000
+   ],
+   "last_bar_is_forming": true
+  },
+  "bitstamp": {
+   "ok": true,
+   "n": 100,
+   "seconds": 0.73,
+   "first_ts": 1790701260000,
+   "step_ms_unique": [
+    60000
+   ],
+   "last_bar_is_forming": true
+  },
+  "binance": {
+   "ok": false,
+   "error": "ExchangeNotAvailable: binance GET https://api.binance.com/api/v3/exchangeInfo 451 Unknown {\n  \"code\": 0,\n  \"msg\": \"Service unavailable from a "
+  },
+  "bybit": {
+   "ok": false,
+   "error": "RateLimitExceeded: bybit GET https://api.bybit.com/v5/market/instruments-info?category=spot 403 Forbidden {\n    error:The Amazon CloudFront"
+  }
+ },
+ "ccxt_trade_fields": [
+  "amount",
+  "cost",
+  "datetime",
+  "fee",
+  "fees",
+  "id",
+  "info",
+  "order",
+  "price",
+  "side",
+  "symbol",
+  "takerOrMaker",
+  "timestamp",
+  "type"
+ ],
+ "ccxt_trade_has_receipt_ts": false,
+ "cryptofeed_20s_live": {
+  "Kraken": {
+   "n": 38,
+   "first": {
+    "exchange": "KRAKEN",
+    "symbol": "BTC-USD",
+    "ts": 1790707225.947723,
+    "receipt": 1790707225.9131005,
+    "id": null
+   }
+  },
+  "Bitstamp": {
+   "n": 24,
+   "first": {
+    "exchange": "BITSTAMP",
+    "symbol": "BTC-USD",
+    "ts": 1790707245.516,
+    "receipt": 1790707250.359068,
+    "id": "646046775"
+   }
+  },
+  "Coinbase": {
+   "error": "requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.coinbase.com/api/v3/brokerage/products"
+  }
+ }
+}

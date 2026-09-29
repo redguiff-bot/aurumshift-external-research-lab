@@ -1,0 +1,61 @@
+{
+ "version": "2.4.4",
+ "ground_truth": "bid 100.0 has 10 ahead when we join (t=5s). trades at 100.0: 4@6s, 6@8s, 6@9s; depth falls to 4 at 7s. Sell-side volume at our price through 9s = 16 >= 10 ahead: FIFO says filled by 9s (after 8s: 4+6=10 ahead consumed -> 8s or 9s edge). risk_adverse: ahead only reduces by depth change (10->4 at 7s => 4 ahead) then trades 6@8s clear it => fill expected 8s.",
+ "queue_models": {
+  "risk_adverse": {
+   "fill_t_s": 8.0,
+   "position": 1.0,
+   "fee": 0.0,
+   "balance": -100.0
+  },
+  "prob_power2": {
+   "fill_t_s": 8.0,
+   "position": 1.0,
+   "fee": 0.0,
+   "balance": -100.0
+  },
+  "prob_log": {
+   "fill_t_s": 8.0,
+   "position": 1.0,
+   "fee": 0.0,
+   "balance": -100.0
+  },
+  "prob_power3": {
+   "fill_t_s": 8.0,
+   "position": 1.0,
+   "fee": 0.0,
+   "balance": -100.0
+  }
+ },
+ "order_latency": {
+  "lat_0": {
+   "fill_t_s": 8.0,
+   "position": 1.0,
+   "fee": 0.0,
+   "balance": -100.0
+  },
+  "lat_1.5s_(entry_at_6.5s_after_4@6s_trade)": {
+   "fill_t_s": null,
+   "position": 1.0,
+   "fee": 0.0,
+   "balance": -100.0
+  },
+  "lat_4s_(entry_at_9s)": {
+   "fill_t_s": null,
+   "position": 0.0,
+   "fee": 0.0,
+   "balance": 0.0
+  }
+ },
+ "fee_model_value_maker_-0.01%_taker_0.05%": {
+  "fill_t_s": 8.0,
+  "position": 1.0,
+  "fee": -0.01,
+  "balance": -100.0
+ },
+ "determinism_3_runs_identical": true,
+ "throughput_2M_events": {
+  "seconds_warm": 0.184,
+  "events_per_s": 10884616
+ }
+}
