@@ -1,0 +1,11 @@
+server up after unclean death of both procs; deployments:
+"id":"dp_11DOD7ohrLzgdGsjRkj4JFf"
+submitted 20 with service DOWN
+graceful stop took 0s
+5.0M	restate-data
+pending after restart: 20
+START 20 END 20 REVIEW 20
+Showing 0/0 invocations. Query took 14.971167ms
+  RSS NLWP CMD
+306780  55 ./node_modules/@restatedev/restate-server-linux-x
+221M	restate-data

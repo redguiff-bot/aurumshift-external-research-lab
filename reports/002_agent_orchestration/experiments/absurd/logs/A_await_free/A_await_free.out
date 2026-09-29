@@ -1,0 +1,12 @@
+./scnA.sh: line 18: 20688 Killed                  python worker.py main 10 5 > $R/w_M1.log 2>&1
+1790665286.251 SIGKILL M1 pid=20688
+1790665296.744 all main tasks terminal after 11 polls
+work executions 20 unique tasks 20 duplicate executions 0
+review executions 20 unique tasks 20 duplicate executions 0
+kill_ts 1790665286.251 no attempt>1 side effects
+tasks with >1 work: []
+main tasks: completed=20
+review tasks: completed=20
+1|completed|15
+1|failed|5
+2|completed|5

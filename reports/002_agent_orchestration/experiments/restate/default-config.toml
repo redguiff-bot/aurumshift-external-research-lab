@@ -1,0 +1,284 @@
+Using the deprecated config option 'no-proxy' instead of 'worker.invoker.no-proxy'. Please update the config to use 'worker.invoker.no-proxy' instead.
+roles = [
+    "http-ingress",
+    "admin",
+    "worker",
+    "log-server",
+    "metadata-server",
+]
+cluster-name = "localcluster"
+auto-provision = true
+default-num-partitions = 24
+default-replication = 1
+shutdown-timeout = "1m"
+tracing-filter = "info"
+log-filter = "warn,restate=info"
+log-format = "pretty"
+log-disable-ansi-codes = false
+disable-prometheus = false
+rocksdb-max-write-rate-per-second = "7.0 GiB"
+rocksdb-total-memory-size = "2.0 GiB"
+rocksdb-total-memtables-ratio = 0.85
+rocksdb-perf-level = "enable-count"
+metadata-update-interval = "10s"
+metadata-fetch-from-peer-timeout = "3s"
+initialization-timeout = "5m"
+disable-telemetry = false
+gossip-tick-interval = "100ms"
+gossip-failure-threshold = 10
+gossip-num-peers = 2
+gossip-fd-stability-threshold = 3
+gossip-suspect-interval = "5s"
+gossip-loneliness-threshold = 30
+gossip-extras-exchange-frequency = 10
+gossip-time-skew-threshold = "1s"
+hlc-max-drift = "5s"
+default-journal-retention = "1d"
+default-idempotency-retention = "1d"
+default-workflow-completion-retention = "1d"
+
+[metadata-client]
+type = "replicated"
+addresses = []
+connect-timeout = "3s"
+keep-alive-interval = "5s"
+keep-alive-timeout = "5s"
+message-size-limit = "32.0 MiB"
+
+[metadata-client.backoff-policy]
+type = "exponential"
+initial-interval = "100ms"
+factor = 1.4
+max-attempts = 10
+max-interval = "1s"
+
+[network-error-retry-policy]
+type = "exponential"
+initial-interval = "10ms"
+factor = 2.0
+max-attempts = 15
+max-interval = "5s"
+
+[default-retry-policy]
+initial-interval = "500ms"
+exponentiation-factor = 2.0
+max-attempts = 70
+on-max-attempts = "pause"
+max-interval = "1m"
+
+[worker]
+internal-queue-length = 1000
+cleanup-interval = "1h"
+max-command-batch-size = 32
+max-command-batch-bytes = "1.0 MiB"
+trim-delay-interval = "10m"
+data-service-memory-limit = "256.0 MiB"
+rule-book-poll-interval = "30s"
+self-proposal-queue-memory-limit = "64.0 MiB"
+
+[worker.storage]
+rocksdb-disable-direct-io-for-reads = true
+rocksdb-disable-direct-io-for-flush-and-compactions = true
+rocksdb-disable-statistics = false
+rocksdb-compaction-readahead-size = "1.9 MiB"
+rocksdb-disable-auto-compactions = false
+rocksdb-statistics-level = "except-timers"
+rocksdb-log-level = "error"
+rocksdb-log-keep-file-num = 1
+rocksdb-log-max-file-size = "61.0 MiB"
+rocksdb-block-size = "64.0 KiB"
+rocksdb-disable-wal-compression = false
+rocksdb-disable-l0-l1-compression = false
+rocksdb-memory-budget = "853.0 MiB"
+rocksdb-memory-ratio = 0.49
+rocksdb-disable-auto-memory-reclaimer = false
+rocksdb-max-background-flushes = 1
+rocksdb-max-background-compactions = 2
+rocksdb-max-sub-compactions = 1
+rocksdb-max-file-size = "64.0 MiB"
+rocksdb-writable-file-max-buffer-size = "1.0 MiB"
+rocksdb-l0-num-compaction-trigger = 2
+
+[worker.invoker]
+inactivity-timeout = "1m"
+abort-timeout = "10m"
+message-size-warning = "10.0 MiB"
+message-size-limit = "32.0 MiB"
+in-memory-queue-length-limit = 66049
+concurrent-invocations-limit = 1000
+eager-state-size-limit = "32.0 MiB"
+memory-limit = "1.5 GiB"
+per-invocation-memory-limit = "32.0 MiB"
+per-invocation-initial-memory = "32.0 KiB"
+http2-keep-alive-interval = "40s"
+http2-keep-alive-timeout = "20s"
+http2-keep-alive-jitter = 0.2
+no-proxy = "localhost,127.0.0.1,::1,127.0.0.0/8,0.0.0.0/8,::,169.254.0.0/16,api.anthropic.com,api-staging.anthropic.com,api-pr-preview.anthropic.com,mcp-proxy.anthropic.com,mcp-proxy-staging.anthropic.com,registry.npmjs.org,jsr.io,npm.jsr.io,pypi.org,files.pythonhosted.org,index.crates.io,proxy.golang.org,host.docker.internal,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,100.64.0.0/10,.svc.cluster.local,*.svc.cluster.local"
+connect-timeout = "10s"
+http2-streams-per-connection-limit = 128
+http2-idle-connection-timeout = "5m"
+http2-initial-stream-window-size = "2.0 MiB"
+http2-initial-connection-window-size = "5.0 MiB"
+http2-max-frame-size = "16.0 KiB"
+request-compression-threshold = "4.0 MiB"
+request-identity-expiration = "1m"
+max-awaited-future-depth = 1000
+
+[worker.invoker.additional-request-headers]
+x-restate-cluster-name = "localcluster"
+
+[worker.snapshots]
+num-retained = 1
+
+[worker.snapshots.object-store-retry-policy]
+type = "exponential"
+initial-interval = "100ms"
+factor = 2.0
+max-attempts = 10
+max-interval = "10s"
+
+[worker.shuffle]
+inflight-memory-budget = "10.0 MiB"
+request-batch-size = "50.0 KiB"
+
+[worker.shuffle.connection-retry-policy]
+type = "exponential"
+initial-interval = "250ms"
+factor = 2.0
+max-interval = "3s"
+
+[admin]
+heartbeat-interval = "1s 500ms"
+disable-web-ui = false
+
+[admin.query-engine]
+memory-size = "1.0 GiB"
+
+[ingress]
+kafka-clusters = []
+request-size-limit = "32.0 MiB"
+
+[ingress.ingestion]
+inflight-memory-budget = "1.0 MiB"
+request-batch-size = "50.0 KiB"
+
+[ingress.ingestion.connection-retry-policy]
+type = "exponential"
+initial-interval = "250ms"
+factor = 2.0
+max-interval = "3s"
+
+[bifrost]
+default-provider = "replicated"
+seal-retry-interval = "2s"
+auto-recovery-interval = "15s"
+append-retry-min-interval = "10ms"
+append-retry-max-interval = "1s"
+record-cache-memory-size = "250.0 MiB"
+disable-auto-improvement = false
+record-size-limit = "32.0 MiB"
+
+[bifrost.local]
+rocksdb-disable-direct-io-for-reads = true
+rocksdb-disable-direct-io-for-flush-and-compactions = true
+rocksdb-disable-statistics = false
+rocksdb-compaction-readahead-size = "1.9 MiB"
+rocksdb-disable-auto-compactions = false
+rocksdb-statistics-level = "except-timers"
+rocksdb-log-level = "error"
+rocksdb-log-keep-file-num = 1
+rocksdb-log-max-file-size = "61.0 MiB"
+rocksdb-block-size = "64.0 KiB"
+rocksdb-disable-wal-compression = false
+rocksdb-disable-l0-l1-compression = false
+rocksdb-memory-budget = "870.4 MiB"
+rocksdb-memory-ratio = 0.5
+rocksdb-disable-wal = false
+rocksdb-disable-wal-fsync = false
+writer-batch-commit-count = 5000
+writer-batch-commit-duration = "0s"
+rocksdb-max-background-flushes = 1
+rocksdb-max-background-compactions = 1
+
+[bifrost.replicated-loglet]
+maximum-inflight-records = 1000
+rpc-timeout = "250ms..1m"
+store-timeout = "2s..1m"
+sequencer-inactivity-timeout = "15s"
+readahead-records = 20
+read-batch-size = "32.0 KiB"
+readahead-trigger-ratio = 0.5
+
+[bifrost.read-retry-policy]
+type = "exponential"
+initial-interval = "50ms"
+factor = 2.0
+max-attempts = 50
+max-interval = "1s"
+
+[metadata-server]
+request-queue-length = 32
+rocksdb-memory-budget = "17.4 MiB"
+rocksdb-memory-ratio = 0.01
+rocksdb-disable-direct-io-for-reads = true
+rocksdb-disable-direct-io-for-flush-and-compactions = true
+rocksdb-disable-statistics = false
+rocksdb-compaction-readahead-size = "1.9 MiB"
+rocksdb-disable-auto-compactions = false
+rocksdb-statistics-level = "except-timers"
+rocksdb-log-level = "error"
+rocksdb-log-keep-file-num = 1
+rocksdb-log-max-file-size = "61.0 MiB"
+rocksdb-block-size = "64.0 KiB"
+rocksdb-disable-wal-compression = false
+rocksdb-disable-l0-l1-compression = false
+raft-election-tick = 10
+raft-heartbeat-tick = 2
+raft-tick-interval = "100ms"
+status-update-interval = "5s"
+log-trim-threshold = 1000
+auto-join = true
+rocksdb-max-background-flushes = 1
+rocksdb-max-background-compactions = 1
+
+[networking]
+connect-timeout = "3s"
+handshake-timeout = "3s"
+http2-keep-alive-interval = "1s"
+http2-keep-alive-timeout = "3s"
+http2-adaptive-window = true
+disable-compression = false
+data-stream-window-size = "2.0 MiB"
+
+[networking.connect-retry-policy]
+type = "exponential"
+initial-interval = "250ms"
+factor = 2.0
+max-attempts = 10
+max-interval = "3s"
+
+[log-server]
+rocksdb-disable-direct-io-for-reads = true
+rocksdb-disable-direct-io-for-flush-and-compactions = true
+rocksdb-disable-statistics = false
+rocksdb-compaction-readahead-size = "1.9 MiB"
+rocksdb-disable-auto-compactions = false
+rocksdb-statistics-level = "except-timers"
+rocksdb-log-level = "error"
+rocksdb-log-keep-file-num = 1
+rocksdb-log-max-file-size = "61.0 MiB"
+rocksdb-block-size = "64.0 KiB"
+rocksdb-disable-wal-compression = false
+rocksdb-disable-l0-l1-compression = false
+rocksdb-memory-budget = "870.4 MiB"
+rocksdb-memory-ratio = 0.5
+rocksdb-disable-wal-fsync = false
+rocksdb-max-sub-compactions = 1
+rocksdb-enable-blob-separation = false
+rocksdb-max-background-compactions = 2
+rocksdb-max-file-size = "128.0 MiB"
+rocksdb-writable-file-max-buffer-size = "1.0 MiB"
+rocksdb-l0-num-compaction-trigger = 8
+rocksdb-partition-sst-by-log = true
+rocksdb-partition-sst-by-loglet = false
+

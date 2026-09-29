@@ -1,0 +1,8 @@
+bind-ip = "127.0.0.1"
+bind-port = 55413
+[admin]
+bind-ip = "127.0.0.1"
+bind-port = 55412
+[ingress]
+bind-ip = "127.0.0.1"
+bind-port = 55411

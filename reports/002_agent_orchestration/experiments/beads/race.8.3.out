@@ -1,0 +1,4 @@
+Error updating lab-12w: issue already claimed by agent6
+Error: 1 of 1 issues failed to update
+  lab-12w: updating issue: issue already claimed by agent6
+exit=1
