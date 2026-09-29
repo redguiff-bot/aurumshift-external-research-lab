@@ -1,0 +1,24 @@
+{
+ "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:22:46.033470Z",
+ "request_time_utc": "2026-09-29T18:22:45.665740Z",
+ "latency_s": 0.368,
+ "headers": {
+  "Content-Type": "text/html",
+  "X-XSS-Protection": "1; mode=block",
+  "P3P": "CP=\"NOI DSP COR NID CURaADMa OUR STP\"",
+  "Pool-Info": "WP2",
+  "X-Frame-Options": "ALLOW-FROM https://www.bls.gov",
+  "Content-Security-Policy": "frame-ancestors https://*.bls.gov",
+  "Cross-Origin-Opener-Policy": "same-origin",
+  "Vary": "Accept-Encoding",
+  "Date": "Tue, 29 Sep 2026 18:22:46 GMT",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+ },
+ "bytes": 55572,
+ "sha256": "36b83ba3723ac4e1d96431214b22f22bb4240718dab1ec2b6289fef9e7829580"
+}

@@ -1,0 +1,24 @@
+{
+ "url": "https://www.bankofcanada.ca/valet/lists/series/json",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:22:59.091552Z",
+ "request_time_utc": "2026-09-29T18:22:58.541130Z",
+ "latency_s": 0.55,
+ "headers": {
+  "Access-Control-Allow-Origin": "*",
+  "Content-Disposition": "attachment; filename=series_list.json",
+  "Content-Type": "application/json; charset=utf-8",
+  "X-Dc": "a",
+  "X-Generated": "2026-09-29 11:46:18",
+  "X-Valet-Mode": "l10",
+  "Vary": "Accept-Encoding",
+  "Cache-Control": "max-age=30",
+  "Expires": "Tue, 29 Sep 2026 18:23:28 GMT",
+  "Date": "Tue, 29 Sep 2026 18:22:58 GMT",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Server": "BoC"
+ },
+ "bytes": 3629099,
+ "sha256": "44eed8c7e48007c04ba9b4bb40487654b487d8a81d4e1b29f058a539a2c71811"
+}

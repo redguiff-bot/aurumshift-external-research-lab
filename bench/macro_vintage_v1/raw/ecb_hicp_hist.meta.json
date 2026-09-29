@@ -1,0 +1,25 @@
+{
+ "url": "https://data-api.ecb.europa.eu/service/data/ICP/M.U2.N.000000.4.ANR?lastNObservations=24&format=csvdata",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:28:54.671354Z",
+ "request_time_utc": "2026-09-29T18:28:53.509312Z",
+ "latency_s": 1.163,
+ "headers": {
+  "Server": "myracloud",
+  "Date": "Tue, 29 Sep 2026 18:28:54 GMT",
+  "Content-Type": "text/csv",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Cache-Control": "max-age=30",
+  "Content-Disposition": "attachment;filename=data.csv",
+  "Last-Modified": "Mon, 19 Jan 2026 10:05:23 GMT",
+  "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+  "Vary": "accept",
+  "X-Content-Type-Options": "nosniff",
+  "X-Frame-Options": "DENY",
+  "X-Xss-Protection": "0",
+  "Expires": "Tue, 29 Sep 2026 18:29:24 GMT"
+ },
+ "bytes": 7300,
+ "sha256": "a0882574a0b9628ded09cf2ec0501071a6bf1158839ce764499bb749ae43d4aa"
+}

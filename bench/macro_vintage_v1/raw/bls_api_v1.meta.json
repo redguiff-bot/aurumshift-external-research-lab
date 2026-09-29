@@ -1,0 +1,32 @@
+{
+ "url": "https://api.bls.gov/publicAPI/v1/timeseries/data/CES0000000001",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:22:45.664893Z",
+ "request_time_utc": "2026-09-29T18:22:45.280137Z",
+ "latency_s": 0.385,
+ "headers": {
+  "X-Content-Type-Options": "nosniff",
+  "Content-Type": "application/json",
+  "APC-Route-id": "_01_05v",
+  "Access-Control-Allow-Headers": "origin,x-requested-with,access-control-request-headers,content-type,access-control-request-method,accept",
+  "Access-Control-Allow-Origin": "*",
+  "Route-Id": "_t8_07v; ",
+  "Pool-Info": "AP01",
+  "X-Frame-Options": "ALLOW-FROM https://www.bls.gov",
+  "Content-Security-Policy": "frame-ancestors https://*.bls.gov",
+  "Cross-Origin-Opener-Policy": "same-origin",
+  "Vary": "origin",
+  "Expires": "Tue, 29 Sep 2026 18:22:45 GMT",
+  "Cache-Control": "max-age=0, no-cache, no-store",
+  "Pragma": "no-cache",
+  "Date": "Tue, 29 Sep 2026 18:22:45 GMT",
+  "Content-Length": "2985",
+  "Connection": "close",
+  "Set-Cookie": "JSESSIONID=53EAE2DB8CCE2907462A25624B3EAFD7._t8_07v; Path=/publicAPI; Version=1; Secure; Httponly",
+  "Server-Timing": "cdn-cache; desc=MISS",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+ },
+ "bytes": 2985,
+ "sha256": "9f82b94a57dcb93ebc4aa2cb2e8880d56e4372903eb3c84d380c2a4af675d27b"
+}

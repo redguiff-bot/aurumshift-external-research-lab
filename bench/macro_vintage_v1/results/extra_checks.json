@@ -1,0 +1,133 @@
+{
+ "run_utc": "2026-09-29T18:34:50.978014Z",
+ "bea_gdp_vs_alfred": {
+  "n": 11,
+  "same_day": 11,
+  "rows": [
+   {
+    "bea_ics_utc": "20250130T133000Z",
+    "summary": "Gross Domestic Product\\, 4th Quarter and Year 2024 (Advance Estima",
+    "alfred_vintage_same_day": true
+   },
+   {
+    "bea_ics_utc": "20250227T133000Z",
+    "summary": "Gross Domestic Product\\, 4th Quarter and Year 2024 (Second Estimat",
+    "alfred_vintage_same_day": true
+   },
+   {
+    "bea_ics_utc": "20250327T123000Z",
+    "summary": "Gross Domestic Product\\, 4th Quarter and Year 2024 (Third Estimate",
+    "alfred_vintage_same_day": true
+   },
+   {
+    "bea_ics_utc": "20250430T123000Z",
+    "summary": "Gross Domestic Product\\, 1st Quarter 2025 (Advance Estimate)",
+    "alfred_vintage_same_day": true
+   },
+   {
+    "bea_ics_utc": "20250529T123000Z",
+    "summary": "Gross Domestic Product\\, 1st Quarter 2025 (Second Estimate) and Co",
+    "alfred_vintage_same_day": true
+   },
+   {
+    "bea_ics_utc": "20250626T123000Z",
+    "summary": "Gross Domestic Product\\, 1st Quarter 2025 (Third Estimate)\\, GDP b",
+    "alfred_vintage_same_day": true
+   },
+   {
+    "bea_ics_utc": "20250730T123000Z",
+    "summary": "Gross Domestic Product\\, 2nd Quarter 2025 (Advance Estimate)",
+    "alfred_vintage_same_day": true
+   },
+   {
+    "bea_ics_utc": "20250828T123000Z",
+    "summary": "Gross Domestic Product\\, 2nd Quarter 2025 (Second Estimate) and Co",
+    "alfred_vintage_same_day": true
+   },
+   {
+    "bea_ics_utc": "20250925T123000Z",
+    "summary": "Gross Domestic Product\\, 2nd Quarter 2025 (Third Estimate)\\, GDP b",
+    "alfred_vintage_same_day": true
+   },
+   {
+    "bea_ics_utc": "20251223T133000Z",
+    "summary": "Gross Domestic Product\\, 3rd Quarter 2025 (Initial Estimate) and C",
+    "alfred_vintage_same_day": true
+   },
+   {
+    "bea_ics_utc": "20260122T133000Z",
+    "summary": "Gross Domestic Product\\, 3rd Quarter 2025 (Updated Estimate)\\, GDP",
+    "alfred_vintage_same_day": true
+   }
+  ]
+ },
+ "oecd_stes_revisions": {
+  "rows": 3148,
+  "n_editions": 79,
+  "first_edition": "202003",
+  "last_edition": "202609",
+  "key": "USA.M.PRVM.IX.BTE",
+  "obs_2020-03_by_edition_first12": [
+   [
+    "202005",
+    "99.57"
+   ],
+   [
+    "202006",
+    "100.21"
+   ],
+   [
+    "202007",
+    "100.23"
+   ],
+   [
+    "202008",
+    "100.34"
+   ],
+   [
+    "202009",
+    "100.47"
+   ],
+   [
+    "202010",
+    "100.39"
+   ],
+   [
+    "202011",
+    "100.39"
+   ],
+   [
+    "202012",
+    "100.39"
+   ],
+   [
+    "202101",
+    "100.39"
+   ],
+   [
+    "202102",
+    "100.39"
+   ],
+   [
+    "202103",
+    "100.39"
+   ],
+   [
+    "202104",
+    "100.39"
+   ]
+  ],
+  "distinct_values_2020-03": [
+   "100.21",
+   "100.23",
+   "100.34",
+   "100.39",
+   "100.47",
+   "96.47",
+   "96.59",
+   "96.7699999999999",
+   "96.77",
+   "96.81"
+  ]
+ }
+}

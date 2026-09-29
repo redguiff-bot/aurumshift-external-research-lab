@@ -1,0 +1,25 @@
+{
+ "url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?includeHistory=true&format=csvdata&lastNObservations=2",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:28:57.790639Z",
+ "request_time_utc": "2026-09-29T18:28:56.388592Z",
+ "latency_s": 1.402,
+ "headers": {
+  "Server": "myracloud",
+  "Date": "Tue, 29 Sep 2026 18:28:57 GMT",
+  "Content-Type": "text/csv",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Cache-Control": "max-age=30",
+  "Content-Disposition": "attachment;filename=data.csv",
+  "Last-Modified": "Tue, 29 Sep 2026 13:56:59 GMT",
+  "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+  "Vary": "accept",
+  "X-Content-Type-Options": "nosniff",
+  "X-Frame-Options": "DENY",
+  "X-Xss-Protection": "0",
+  "Expires": "Tue, 29 Sep 2026 18:29:27 GMT"
+ },
+ "bytes": 742,
+ "sha256": "6087ad5c9281462ff2f1fab13bac7ef0078e90888bb19f7261e05fa5343b6679"
+}

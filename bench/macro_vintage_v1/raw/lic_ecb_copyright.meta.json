@@ -1,0 +1,23 @@
+{
+ "url": "https://www.ecb.europa.eu/services/disclaimer/html/index.en.html",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:35:31.154533Z",
+ "request_time_utc": "2026-09-29T18:35:29.585844Z",
+ "latency_s": 1.569,
+ "headers": {
+  "Server": "myracloud",
+  "Date": "Tue, 29 Sep 2026 18:35:30 GMT",
+  "Content-Type": "text/html; charset=UTF-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Strict-Transport-Security": "max-age=63072000; includeSubDomains",
+  "X-XSS-Protection": "1; mode=block",
+  "Expires": "Tue, 29 Sep 2026 18:36:13 GMT",
+  "cache-control": "max-age=60",
+  "ETag": "\"myra-d89d2db8\"",
+  "X-CDN": "1"
+ },
+ "bytes": 107588,
+ "sha256": "c24a8415969becaae91ea9f8893bdceae4a134eaed6f57f585d1147b911814a0"
+}

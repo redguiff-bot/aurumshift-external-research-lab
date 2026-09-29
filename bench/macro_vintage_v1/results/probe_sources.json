@@ -1,0 +1,519 @@
+[
+ {
+  "name": "fred_api_nokey",
+  "url": "https://api.stlouisfed.org/fred/series/observations?series_id=GDPC1&realtime_start=2009-01-30&realtime_end=2009-01-30&file_type=json",
+  "status": 400,
+  "bytes": 162,
+  "receipt": "2026-09-29T18:22:43.237892Z",
+  "hdr": {
+   "Content-Type": "application/json; charset=UTF-8",
+   "Date": "Tue, 29 Sep 2026 18:22:43 GMT"
+  },
+  "head": "{\"error_code\":400,\"error_message\":\"Bad Request.  Variable api_key is not set.  Read https:\\/\\/fred.stlouisfed.org\\/docs\\/api\\/api_key.html for more information."
+ },
+ {
+  "name": "fred_graph_csv",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPC1&cosd=2025-01-01",
+  "status": 200,
+  "bytes": 149,
+  "receipt": "2026-09-29T18:22:43.711649Z",
+  "hdr": {
+   "Last-Modified": "Wed, 26 Aug 2026 12:49:02 GMT",
+   "Content-Type": "application/csv",
+   "Date": "Tue, 29 Sep 2026 18:22:43 GMT"
+  },
+  "head": "observation_date,GDPC1 2025-01-01,23548.210 2025-04-01,23770.976 2025-07-01,24026.834 2025-10-01,24055.749 2026-01-01,24180.419 2026-04-01,24269.613 "
+ },
+ {
+  "name": "alfred_graph_csv",
+  "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1&cosd=2008-07-01&coed=2009-01-01&vintage_date=2009-01-30",
+  "status": 200,
+  "bytes": 70,
+  "receipt": "2026-09-29T18:22:44.244507Z",
+  "hdr": {
+   "Content-Type": "application/csv",
+   "Last-Modified": "Wed, 21 Dec 2016 20:22:17 GMT",
+   "Date": "Tue, 29 Sep 2026 18:22:44 GMT"
+  },
+  "head": "observation_date,GDPC1_20090130 2008-07-01,11712.4 2008-10-01,11599.4 "
+ },
+ {
+  "name": "alfred_downloaddata_page",
+  "url": "https://alfred.stlouisfed.org/series/downloaddata?seid=GDPC1",
+  "status": 200,
+  "bytes": 64878,
+  "receipt": "2026-09-29T18:22:44.639409Z",
+  "hdr": {
+   "Content-Type": "text/html; charset=UTF-8",
+   "Date": "Tue, 29 Sep 2026 18:22:44 GMT"
+  },
+  "head": "<!DOCTYPE html> <html lang=\"en\"> <head>     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">     <meta charset=\"utf-8\">     <title>         Download Data f"
+ },
+ {
+  "name": "fred_release_calendar_html",
+  "url": "https://fred.stlouisfed.org/releases/calendar",
+  "status": 200,
+  "bytes": 77114,
+  "receipt": "2026-09-29T18:22:44.911330Z",
+  "hdr": {
+   "Content-Type": "text/html; charset=UTF-8",
+   "Date": "Tue, 29 Sep 2026 18:22:44 GMT"
+  },
+  "head": "<!DOCTYPE html> <html lang=\"en\"> <head>     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">     <meta charset=\"utf-8\">                 <title>Economic Rel"
+ },
+ {
+  "name": "bls_api_v2_nokey",
+  "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/CES0000000001",
+  "status": 200,
+  "bytes": 224,
+  "receipt": "2026-09-29T18:22:45.279064Z",
+  "hdr": {
+   "Content-Type": "application/json",
+   "Date": "Tue, 29 Sep 2026 18:22:45 GMT"
+  },
+  "head": "{\"status\":\"REQUEST_NOT_PROCESSED\",\"responseTime\":0,\"message\":[\"Request could not be serviced, as the daily threshold for total number of requests allocated to t"
+ },
+ {
+  "name": "bls_api_v1",
+  "url": "https://api.bls.gov/publicAPI/v1/timeseries/data/CES0000000001",
+  "status": 200,
+  "bytes": 2985,
+  "receipt": "2026-09-29T18:22:45.664893Z",
+  "hdr": {
+   "Content-Type": "application/json",
+   "Date": "Tue, 29 Sep 2026 18:22:45 GMT"
+  },
+  "head": "{\"status\":\"REQUEST_SUCCEEDED\",\"responseTime\":88,\"message\":[],\"Results\":{ \"series\": [{\"seriesID\":\"CES0000000001\",\"data\":[{\"year\":\"2026\",\"period\":\"M08\",\"periodNam"
+ },
+ {
+  "name": "bls_schedule_html",
+  "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+  "status": 200,
+  "bytes": 55572,
+  "receipt": "2026-09-29T18:22:46.033470Z",
+  "hdr": {
+   "Content-Type": "text/html",
+   "Date": "Tue, 29 Sep 2026 18:22:46 GMT"
+  },
+  "head": "<!DOCTYPE HTML>\r <html lang=\"en-us\">\r <head>\r \r <title>Schedule of Releases for the Consumer Price Index</title>\r <!-- *****************************************"
+ },
+ {
+  "name": "bls_schedule_ics",
+  "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+  "status": 200,
+  "bytes": 80672,
+  "receipt": "2026-09-29T18:22:46.344000Z",
+  "hdr": {
+   "Content-Type": "text/calendar",
+   "Last-Modified": "Wed, 10 Jun 2026 16:56:37 GMT",
+   "ETag": "\"8090a419faf8dc1:0\"",
+   "Date": "Tue, 29 Sep 2026 18:22:46 GMT"
+  },
+  "head": "BEGIN:VCALENDAR PRODID:-//Department of Labor//Bureau of Labor Statistics//EN VERSION:2.0 CALSCALE:GREGORIAN METHOD:PUBLISH SUMMARY:BLS.gov Economic News Releas"
+ },
+ {
+  "name": "bls_release_calendar_2026",
+  "url": "https://www.bls.gov/schedule/2026/home.htm",
+  "status": 200,
+  "bytes": 100849,
+  "receipt": "2026-09-29T18:22:46.636020Z",
+  "hdr": {
+   "Content-Type": "text/html",
+   "Date": "Tue, 29 Sep 2026 18:22:46 GMT"
+  },
+  "head": "<!DOCTYPE HTML>\r <html lang=\"en-us\">\r \r <head>\r \r \t<title>Schedule of Selected Releases 2026</title>\r \t<!-- ****************************************** Begin MET"
+ },
+ {
+  "name": "bea_api_nokey",
+  "url": "https://apps.bea.gov/api/data?method=GETDATASETLIST&ResultFormat=JSON",
+  "status": 200,
+  "bytes": 0,
+  "receipt": "2026-09-29T18:22:47.125984Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:22:47 GMT",
+   "Content-Type": "text/plain; charset=utf-8"
+  },
+  "head": ""
+ },
+ {
+  "name": "bea_schedule_html",
+  "url": "https://www.bea.gov/news/schedule",
+  "status": 200,
+  "bytes": 74360,
+  "receipt": "2026-09-29T18:22:47.750818Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:22:47 GMT",
+   "Content-Type": "text/html; charset=UTF-8",
+   "ETag": "\"1790702401\"",
+   "Last-Modified": "Tue, 29 Sep 2026 17:20:01 GMT",
+   "Age": "31"
+  },
+  "head": " <!DOCTYPE html> <html  lang=\"en\" dir=\"ltr\" prefix=\"content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foa"
+ },
+ {
+  "name": "bea_schedule_ics",
+  "url": "https://www.bea.gov/news/schedule/ical",
+  "status": 200,
+  "bytes": 61290,
+  "receipt": "2026-09-29T18:22:48.375939Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:22:48 GMT",
+   "Content-Type": "text/html; charset=UTF-8",
+   "Last-Modified": "Tue, 29 Sep 2026 17:44:38 GMT",
+   "ETag": "\"1790703878\"",
+   "Age": "0"
+  },
+  "head": " <!DOCTYPE html> <html  lang=\"en\" dir=\"ltr\" prefix=\"content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foa"
+ },
+ {
+  "name": "eia_api_nokey",
+  "url": "https://api.eia.gov/v2/petroleum/stoc/wstk/data/?frequency=weekly&data[0]=value&length=1",
+  "status": 403,
+  "bytes": 163,
+  "receipt": "2026-09-29T18:22:49.015636Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:22:48 GMT",
+   "Content-Type": "application/json"
+  },
+  "head": "{   \"error\": {     \"code\": \"API_KEY_MISSING\",     \"message\": \"No api_key was supplied.  Please register for one at https://www.eia.gov/opendata/register.php\"   "
+ },
+ {
+  "name": "eia_schedule_wpsr",
+  "url": "https://www.eia.gov/petroleum/supply/weekly/schedule.php",
+  "status": 200,
+  "bytes": 52318,
+  "receipt": "2026-09-29T18:22:49.395338Z",
+  "hdr": {
+   "Content-Type": "text/html; charset=UTF-8",
+   "Date": "Tue, 29 Sep 2026 18:22:49 GMT"
+  },
+  "head": "<!doctype html>\r <html>\r \r <head>\r \t<title>Weekly Petroleum Status Report Schedule - U.S. Energy Information Administration (EIA)</title>\r \t<meta property=\"og:t"
+ },
+ {
+  "name": "nyfed_sofr",
+  "url": "https://markets.newyorkfed.org/api/rates/secured/sofr/last/3.json",
+  "status": 200,
+  "bytes": 732,
+  "receipt": "2026-09-29T18:22:49.997092Z",
+  "hdr": {
+   "Content-Type": "application/json;charset=utf-8",
+   "x-request-id": "UNK-f5a02ed0-4eab-4d32-946e-9af98090f8f0",
+   "Date": "Tue, 29 Sep 2026 18:22:50 GMT"
+  },
+  "head": "{ \"refRates\": [ { \"effectiveDate\": \"2026-09-28\", \"type\": \"SOFR\" ,\"percentRate\": 3.90 ,\"percentPercentile1\": 3.83 ,\"percentPercentile25\": 3.89 ,\"percentPercentil"
+ },
+ {
+  "name": "nyfed_sofr_search",
+  "url": "https://markets.newyorkfed.org/api/rates/secured/sofr/search.json?startDate=2026-09-01&endDate=2026-09-10",
+  "status": 200,
+  "bytes": 1684,
+  "receipt": "2026-09-29T18:22:50.513591Z",
+  "hdr": {
+   "Content-Type": "application/json;charset=utf-8",
+   "x-request-id": "UNK-af3644dd-a4fe-4d04-8084-9d8ae16b3b7e",
+   "Date": "Tue, 29 Sep 2026 18:22:50 GMT"
+  },
+  "head": "{ \"refRates\": [ { \"effectiveDate\": \"2026-09-10\", \"type\": \"SOFR\" ,\"percentRate\": 3.62 ,\"percentPercentile1\": 3.58 ,\"percentPercentile25\": 3.60 ,\"percentPercentil"
+ },
+ {
+  "name": "ecb_sdmx_csv",
+  "url": "https://data-api.ecb.europa.eu/service/data/ICP/M.U2.N.000000.4.ANR?lastNObservations=3&format=csvdata",
+  "status": 200,
+  "bytes": 1512,
+  "receipt": "2026-09-29T18:22:51.533272Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:22:51 GMT",
+   "Content-Type": "text/csv",
+   "Last-Modified": "Mon, 19 Jan 2026 10:05:23 GMT"
+  },
+  "head": "KEY,FREQ,REF_AREA,ADJUSTMENT,ICP_ITEM,STS_INSTITUTION,ICP_SUFFIX,TIME_PERIOD,OBS_VALUE,OBS_STATUS,OBS_CONF,OBS_PRE_BREAK,OBS_COM,TIME_FORMAT,BREAKS,COLLECTION,C"
+ },
+ {
+  "name": "ecb_sdmx_updatedAfter",
+  "url": "https://data-api.ecb.europa.eu/service/data/ICP/M.U2.N.000000.4.ANR?updatedAfter=2026-08-01T00:00:00%2B00:00&format=csvdata",
+  "status": 404,
+  "bytes": 462,
+  "receipt": "2026-09-29T18:22:52.877622Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:22:52 GMT",
+   "Content-Type": "application/problem+json",
+   "Last-Modified": "Tue, 29 Sep 2026 18:22:52 GMT"
+  },
+  "head": "{\"type\":\"/service/data/ICP/M.U2.N.000000.4.ANR\",\"title\":\"Not Found\",\"status\":404,\"detail\":\"No Series was returned for the query: <?xml version=\\\"1.0\\\" encoding="
+ },
+ {
+  "name": "ecb_calendar",
+  "url": "https://www.ecb.europa.eu/press/calendars/statscal/html/index.en.html",
+  "status": 200,
+  "bytes": 113323,
+  "receipt": "2026-09-29T18:22:54.056963Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:22:53 GMT",
+   "Content-Type": "text/html; charset=UTF-8",
+   "ETag": "\"myra-1d778003\""
+  },
+  "head": "<!DOCTYPE html> <html lang=\"en\"> <head>         <meta charset=\"utf-8\">                 <link rel=\"preload\" href=\"/shared/dist/fonts/opensans_fixed/OpenSans-Regu"
+ },
+ {
+  "name": "eurostat_hicp",
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_manr?lang=EN&geo=EA&coicop=CP00&sinceTimePeriod=2026-01&format=JSON",
+  "status": 200,
+  "bytes": 3106,
+  "receipt": "2026-09-29T18:22:54.552638Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:22:54 GMT",
+   "Content-Type": "application/json"
+  },
+  "head": "{\"version\":\"2.0\",\"class\":\"dataset\",\"label\":\"HICP - monthly data (annual rate of change)\",\"source\":\"ESTAT\",\"updated\":\"2026-02-06T23:00:00+0100\",\"value\":{},\"id\":["
+ },
+ {
+  "name": "eurostat_release_cal",
+  "url": "https://ec.europa.eu/eurostat/news/release-calendar",
+  "status": 200,
+  "bytes": 203059,
+  "receipt": "2026-09-29T18:22:55.517869Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:22:55 GMT",
+   "Content-Type": "text/html;charset=UTF-8"
+  },
+  "head": "                                \t \t\t \t\t\t<!DOCTYPE html>                                                                  <html dir=\"ltr\" lang=\"en-GB\">  <head>  "
+ },
+ {
+  "name": "boe_iadb",
+  "url": "https://www.bankofengland.co.uk/boeapps/database/fromshowcolumns.asp?csv.x=yes&SeriesCodes=IUDBEDR&CSVF=TN&Datefrom=01/Jan/2026&Dateto=now",
+  "status": 200,
+  "bytes": 18668,
+  "receipt": "2026-09-29T18:22:56.801737Z",
+  "hdr": {
+   "Content-Type": "text/html",
+   "Date": "Tue, 29 Sep 2026 18:22:56 GMT"
+  },
+  "head": "<!DOCTYPE html>\r <html lang=\"en\" class=\"no-js\">\r     <head>\r     <meta charset=\"utf-8\">\r     <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">"
+ },
+ {
+  "name": "boe_iadb_v2",
+  "url": "https://www.bankofengland.co.uk/boeapps/iadb/fromshowcolumns.asp?csv.x=yes&Datefrom=01/Jan/2026&Dateto=now&SeriesCodes=IUDBEDR&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N",
+  "status": 200,
+  "bytes": 3380,
+  "receipt": "2026-09-29T18:22:57.601640Z",
+  "hdr": {
+   "Content-Type": "application/csv",
+   "Date": "Tue, 29 Sep 2026 18:22:57 GMT"
+  },
+  "head": "DATE,IUDBEDR\r 02 Jan 2026,3.75\r 05 Jan 2026,3.75\r 06 Jan 2026,3.75\r 07 Jan 2026,3.75\r 08 Jan 2026,3.75\r 09 Jan 2026,3.75\r 12 Jan 2026,3.75\r 13 Jan 2026,3.75\r 14"
+ },
+ {
+  "name": "boc_valet_cpi",
+  "url": "https://www.bankofcanada.ca/valet/observations/CPI_TRIM/json?recent=3",
+  "status": 200,
+  "bytes": 899,
+  "receipt": "2026-09-29T18:22:58.259095Z",
+  "hdr": {
+   "Content-Type": "application/json; charset=utf-8",
+   "Date": "Tue, 29 Sep 2026 18:22:58 GMT"
+  },
+  "head": "{     \"terms\": {         \"url\": \"https://www.bankofcanada.ca/terms/\"     },     \"seriesDetail\": {         \"CPI_TRIM\": {             \"label\": \"CPI-trim\",        "
+ },
+ {
+  "name": "boc_valet_fx",
+  "url": "https://www.bankofcanada.ca/valet/observations/FXUSDCAD/json?recent=2",
+  "status": 200,
+  "bytes": 637,
+  "receipt": "2026-09-29T18:22:58.540452Z",
+  "hdr": {
+   "Content-Type": "application/json; charset=utf-8",
+   "Date": "Tue, 29 Sep 2026 18:22:58 GMT"
+  },
+  "head": "{     \"terms\": {         \"url\": \"https://www.bankofcanada.ca/terms/\"     },     \"seriesDetail\": {         \"FXUSDCAD\": {             \"label\": \"USD/CAD\",         "
+ },
+ {
+  "name": "boc_schedule",
+  "url": "https://www.bankofcanada.ca/valet/lists/series/json",
+  "status": 200,
+  "bytes": 3629099,
+  "receipt": "2026-09-29T18:22:59.091552Z",
+  "hdr": {
+   "Content-Type": "application/json; charset=utf-8",
+   "Date": "Tue, 29 Sep 2026 18:22:58 GMT"
+  },
+  "head": "{ \"terms\": { \"url\": \"https://www.bankofcanada.ca/terms/\" }, \"series\": {     \"A.AGRI\": {     \"label\": \"Annual BCPI Agriculture\",     \"description\": \"Annual Bank "
+ },
+ {
+  "name": "ust_fiscaldata",
+  "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/avg_interest_rates?page[size]=2&sort=-record_date",
+  "status": 200,
+  "bytes": 2061,
+  "receipt": "2026-09-29T18:22:59.632720Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:22:59 GMT",
+   "Content-Type": "application/json"
+  },
+  "head": "{\"data\":[{\"record_date\":\"2026-08-31\",\"security_type_desc\":\"Marketable\",\"security_desc\":\"Treasury Bills\",\"avg_interest_rate_amt\":\"3.788\",\"src_line_nbr\":\"1\",\"reco"
+ },
+ {
+  "name": "ust_yield_xml",
+  "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value_month=202609",
+  "status": 200,
+  "bytes": 30028,
+  "receipt": "2026-09-29T18:23:19.479058Z",
+  "hdr": {
+   "Content-Type": "text/xml; charset=UTF-8",
+   "x-request-id": "v-d894a9de-bc32-11f1-a632-b77dd2b1ff8d",
+   "Date": "Tue, 29 Sep 2026 18:23:19 GMT"
+  },
+  "head": "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?> <feed xml:base=\"https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml\" x"
+ },
+ {
+  "name": "cftc_cot_legacy",
+  "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json?$limit=2&$order=report_date_as_yyyy_mm_dd%20DESC",
+  "status": 200,
+  "bytes": 9329,
+  "receipt": "2026-09-29T18:23:20.081885Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:23:20 GMT",
+   "Content-Type": "application/json;charset=utf-8",
+   "ETag": "W/\"aG90ZWwuNTEzMDVfM18zOTFibEgxSC00YTZOZmx6UWU4NlFwU1hMel9nNU0---gzipxmTs_gfd6ldyPONbgziUQ7WE3Lw--gzip--gzip\"",
+   "Last-Modified": "Fri, 25 Sep 2026 19:30:08 GMT"
+  },
+  "head": "[{\"id\":\"26092286565AF\",\"market_and_exchange_names\":\"GULF # 6 FUEL OIL CRACK - NEW YORK MERCANTILE EXCHANGE\",\"report_date_as_yyyy_mm_dd\":\"2026-09-22T00:00:00.000"
+ },
+ {
+  "name": "worldbank_gdp",
+  "url": "https://api.worldbank.org/v2/country/US/indicator/NY.GDP.MKTP.CD?format=json&per_page=3",
+  "status": 200,
+  "bytes": 724,
+  "receipt": "2026-09-29T18:23:20.351734Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:23:20 GMT",
+   "Content-Type": "application/json;charset=utf-8",
+   "Age": "19004",
+   "Last-Modified": "Mon, 28 Sep 2026 17:57:40 GMT"
+  },
+  "head": "[{\"page\":1,\"pages\":22,\"per_page\":3,\"total\":66,\"sourceid\":\"2\",\"lastupdated\":\"2026-07-13\"},[{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"coun"
+ },
+ {
+  "name": "worldbank_archive_sources",
+  "url": "https://api.worldbank.org/v2/sources?format=json&per_page=100",
+  "status": 200,
+  "bytes": 13048,
+  "receipt": "2026-09-29T18:23:20.602770Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:23:20 GMT",
+   "Content-Type": "application/json;charset=utf-8",
+   "Age": "58835",
+   "Last-Modified": "Mon, 28 Sep 2026 21:14:59 GMT"
+  },
+  "head": "[{\"page\":\"1\",\"pages\":\"1\",\"per_page\":\"100\",\"total\":\"71\"},[{\"id\":\"1\",\"lastupdated\":\"2021-08-18\",\"name\":\"Doing Business\",\"code\":\"DBS\",\"description\":\"\",\"url\":\"\",\"da"
+ },
+ {
+  "name": "imf_datamapper_weo",
+  "url": "https://www.imf.org/external/datamapper/api/v1/NGDP_RPCH/USA",
+  "status": 200,
+  "bytes": 121723,
+  "receipt": "2026-09-29T18:23:23.593810Z",
+  "hdr": {
+   "Content-Type": "application/json",
+   "Date": "Tue, 29 Sep 2026 18:23:23 GMT"
+  },
+  "head": "{\"values\":{\"NGDP_RPCH\":{\"SDN\":{\"1980\":2.5,\"1981\":6.3,\"1982\":4.1,\"1983\":-1.5,\"1984\":-5.6,\"1985\":-0.6,\"1986\":9.9,\"1987\":6.5,\"1988\":4.3,\"1989\":1.4,\"1990\":0.8,\"1991"
+ },
+ {
+  "name": "imf_datamapper_indicators",
+  "url": "https://www.imf.org/external/datamapper/api/v1/indicators",
+  "status": 200,
+  "bytes": 48340,
+  "receipt": "2026-09-29T18:23:24.496241Z",
+  "hdr": {
+   "Content-Type": "application/json",
+   "Date": "Tue, 29 Sep 2026 18:23:24 GMT"
+  },
+  "head": "{\"indicators\":{\"NGDP_RPCH\":{\"label\":\"Real GDP growth\",\"description\":\"Gross domestic product is the most commonly used single measure of a country's overall econ"
+ },
+ {
+  "name": "oecd_sdmx_cli",
+  "url": "https://sdmx.oecd.org/public/rest/data/OECD.SDD.STES,DSD_STES@DF_CLI/USA.M.LI...AA...H?lastNObservations=2&format=csvfilewithlabels",
+  "status": 200,
+  "bytes": 1001,
+  "receipt": "2026-09-29T18:23:25.574889Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:23:25 GMT",
+   "Content-Type": "application/vnd.sdmx.data+csv; labels=name; version=2; charset=utf-8",
+   "Last-Modified": "2024-03-07"
+  },
+  "head": "STRUCTURE,STRUCTURE_ID,STRUCTURE_NAME,ACTION,REF_AREA,Reference area,FREQ,Frequency of observation,MEASURE,Measure,UNIT_MEASURE,Unit of measure,ACTIVITY,Economi"
+ },
+ {
+  "name": "oecd_dataflow_list",
+  "url": "https://sdmx.oecd.org/public/rest/dataflow/all",
+  "status": 200,
+  "bytes": 8909296,
+  "receipt": "2026-09-29T18:23:26.021480Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:23:25 GMT",
+   "Content-Type": "application/vnd.sdmx.structure+xml; version=2.1; charset=utf-8",
+   "Last-Modified": "2026-09-17",
+   "Age": "25222"
+  },
+  "head": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r <!--NSI Web Service v10.11.8.0-->\r <message:Structure xmlns:message=\"http://www.sdmx.org/resources/sdmxml/schemas/v2_1/m"
+ },
+ {
+  "name": "philly_realtime_dataset",
+  "url": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/real-time-data-set-for-macroeconomists",
+  "status": 200,
+  "bytes": 35920,
+  "receipt": "2026-09-29T18:23:26.813262Z",
+  "hdr": {
+   "Content-Type": "text/html; charset=utf-8",
+   "Date": "Tue, 29 Sep 2026 18:23:26 GMT"
+  },
+  "head": "\r <!DOCTYPE html>\r \r <html lang=\"en\">\r <head>\r     \r \r <meta content=\"The real-time data set consists of vintages, or snapshots, of time series of major macroec"
+ },
+ {
+  "name": "fed_g17_release_page",
+  "url": "https://www.federalreserve.gov/releases/g17/default.htm",
+  "status": 200,
+  "bytes": 331526,
+  "receipt": "2026-09-29T18:23:27.095483Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:23:27 GMT",
+   "Content-Type": "text/html",
+   "Last-Modified": "Fri, 18 Sep 2026 13:15:06 GMT"
+  },
+  "head": "<!DOCTYPE html> <html lang=\"en\" class=\"no-js\">   <head>     <meta charset=\"utf-8\" />     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />     <meta      "
+ },
+ {
+  "name": "fed_g17_calendar",
+  "url": "https://www.federalreserve.gov/releases/g17/release_dates.htm",
+  "status": 200,
+  "bytes": 117098,
+  "receipt": "2026-09-29T18:23:27.362567Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:23:27 GMT",
+   "Content-Type": "text/html",
+   "Last-Modified": "Tue, 18 Aug 2026 13:15:06 GMT"
+  },
+  "head": "<!DOCTYPE html> <html lang=\"en\" class=\"no-js\">   <head>     <meta charset=\"utf-8\" />     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />     <meta      "
+ },
+ {
+  "name": "census_econ_indicators_cal",
+  "url": "https://www.census.gov/economic-indicators/calendar-listview.html",
+  "status": 200,
+  "bytes": 91396,
+  "receipt": "2026-09-29T18:23:27.692429Z",
+  "hdr": {
+   "Date": "Tue, 29 Sep 2026 18:23:27 GMT",
+   "Content-Type": "text/html;charset=UTF-8",
+   "Last-Modified": "Tue, 29 Sep 2026 18:23:27 GMT"
+  },
+  "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r <html xmlns=\"http://www.w3.org/1999/x"
+ },
+ {
+  "name": "bls_ces_flat",
+  "url": "https://download.bls.gov/pub/time.series/ce/ce.data.0.AllCESSeries",
+  "status": -1,
+  "bytes": 36,
+  "receipt": "2026-09-29T18:23:36.879334Z",
+  "hdr": {},
+  "head": "IncompleteRead(350914448 bytes read)"
+ }
+]

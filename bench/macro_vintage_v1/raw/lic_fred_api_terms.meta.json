@@ -1,0 +1,25 @@
+{
+ "url": "https://fred.stlouisfed.org/docs/api/terms_of_use.html",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:35:26.568933Z",
+ "request_time_utc": "2026-09-29T18:35:26.062919Z",
+ "latency_s": 0.506,
+ "headers": {
+  "Content-Type": "text/html",
+  "Server": "Apache",
+  "x-frame-options": "SAMEORIGIN",
+  "x-content-type-options": "nosniff",
+  "x-xss-protection": "1; mode=block",
+  "X-Akamai-Transformed": "0 - 0 -",
+  "Vary": "Accept-Encoding",
+  "Date": "Tue, 29 Sep 2026 18:35:26 GMT",
+  "Content-Length": "48948",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=86400",
+  "X-location": "cfs",
+  "Set-Cookie": "_abck=E55A1A94DC3C67D64BF42F801A8569B7~-1~YAAQElPRF15f7NSgAQAA4UNz7hCe5hzTwVDoio6kL2z3E9xsIbFJm1QMyaKL3QZRcvwaVeasAy/BtAYKYUB1EdvRkpD7xRBbNBX/6bDkN0FFsEuqXf1dtvhCs4jp374AUW3yaGTaHTPHUsuALdDP3V1cSlBeGYGm9NAvkUPXcWERv0sny+fn7JxO1c5dDpYNBBB9+g0g84c/L/Qh+s8QGtKqhU0u+Wrq5oOXG0pRFaMNVy9JB8E6KiR9y0F58sZwAhKOVUer7mmMWknpsGW/n3HaF7ohwA3uQKm/ufbjt4LYYxxuIJ+mUfXAHv2dHkRMLiH0yrqD7H2+9cIVvGvmOoFj9JNeeC7eDMvV9mi6IzeCHSBfLl+SsxUa3+KOzY16tfDAc7AytmXdoGc6GR0/dA8p2jRA26noQraEwTuTxPH555xcSORQD62gUHX/yCYMmQ2og3zsm0QO~-1~-1~-1~-1~-1; Domain=.stlouisfed.org; Path=/; Expires=Wed, 29 Sep 2027 18:35:26 GMT; Max-Age=31536000; Secure"
+ },
+ "bytes": 48948,
+ "sha256": "a6856a1bf2b6ee0b65c23f1ff71403141118a39afd74a789d1834d62f77c955a"
+}

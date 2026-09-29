@@ -1,0 +1,24 @@
+{
+ "url": "https://www.bankofcanada.ca/valet/observations/CPI_TRIM/json?recent=3",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:29:02.105772Z",
+ "request_time_utc": "2026-09-29T18:29:01.678001Z",
+ "latency_s": 0.428,
+ "headers": {
+  "Access-Control-Allow-Origin": "*",
+  "Content-Disposition": "attachment; filename=CPI_TRIM.json",
+  "Content-Type": "application/json; charset=utf-8",
+  "X-Dc": "v",
+  "X-Generated": "2026-09-29 14:29:02",
+  "X-Valet-Mode": "l10",
+  "Vary": "Accept-Encoding",
+  "Cache-Control": "max-age=30",
+  "Expires": "Tue, 29 Sep 2026 18:29:32 GMT",
+  "Date": "Tue, 29 Sep 2026 18:29:02 GMT",
+  "Content-Length": "899",
+  "Connection": "close",
+  "Server": "BoC"
+ },
+ "bytes": 899,
+ "sha256": "a6bfffecdbb301a61a60ff6b2389eade9ffda606ea933aeaa98432de09ed18d5"
+}

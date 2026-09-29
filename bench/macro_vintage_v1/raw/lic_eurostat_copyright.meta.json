@@ -1,0 +1,26 @@
+{
+ "url": "https://ec.europa.eu/eurostat/about-us/policies/copyright",
+ "status": 404,
+ "receipt_time_utc": "2026-09-29T18:35:31.821539Z",
+ "request_time_utc": "2026-09-29T18:35:31.157735Z",
+ "latency_s": 0.664,
+ "headers": {
+  "Date": "Tue, 29 Sep 2026 18:35:31 GMT",
+  "Server": "Apache",
+  "X-OneAgent-JS-Injection": "true",
+  "X-Content-Type-Options": "nosniff",
+  "X-Frame-Options": "SAMEORIGIN",
+  "X-Rate-Limit-Remaining": "4",
+  "Expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "Cache-Control": "private, no-cache, no-store, must-revalidate",
+  "Pragma": "no-cache",
+  "Content-Type": "text/html;charset=UTF-8",
+  "Server-Timing": "dtSInfo;desc=\"0\", dtRpid;desc=\"743340496\"",
+  "Transfer-Encoding": "chunked",
+  "Strict-Transport-Security": "max-age=0;",
+  "Connection": "close",
+  "Set-Cookie": "JSESSIONID=FFA2BB023F2800421D392D68D5062E86; Path=/eurostat; Secure; HttpOnly;Secure"
+ },
+ "bytes": 160005,
+ "sha256": "e2aa5c39d70e14a5ed95e7452036011d74b2fbb5351426bfb360276f3f272413"
+}

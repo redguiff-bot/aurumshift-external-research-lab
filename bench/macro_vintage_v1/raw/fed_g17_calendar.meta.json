@@ -1,0 +1,23 @@
+{
+ "url": "https://www.federalreserve.gov/releases/g17/release_dates.htm",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:23:27.362567Z",
+ "request_time_utc": "2026-09-29T18:23:27.098412Z",
+ "latency_s": 0.264,
+ "headers": {
+  "Date": "Tue, 29 Sep 2026 18:23:27 GMT",
+  "Content-Type": "text/html",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "set-cookie": "__cf_bm=klC67hLb08CUbVNEF_NzlMVwWKLqWAZl092U.zrVcIk-1790706207.323975-1.0.1.1-d19wBsVIr1Q6bhmTGQnhnlP3LMJFF_iGcWHgZOppg3CAAVsiue2GAQO.BDxhDgksbE0DbtLd3WYBlMv6so5stz9VKnM.HZWz4lKmHGhxfi3_6y4gP0puqo7nOwZaKjw2; HttpOnly; SameSite=None; Secure; Path=/; Domain=federalreserve.gov; Expires=Tue, 29 Sep 2026 18:53:27 GMT",
+  "CF-Ray": "a42d04e3cd277a11-IAD",
+  "CF-Cache-Status": "REVALIDATED",
+  "Accept-Ranges": "bytes",
+  "Last-Modified": "Tue, 18 Aug 2026 13:15:06 GMT",
+  "Server": "cloudflare",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload"
+ },
+ "bytes": 117098,
+ "sha256": "beed006b612cb7919821e226a64996ca4543e78392c620e43f975dab97ca6728"
+}

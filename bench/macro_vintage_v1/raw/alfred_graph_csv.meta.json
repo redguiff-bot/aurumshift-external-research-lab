@@ -1,0 +1,24 @@
+{
+ "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1&cosd=2008-07-01&coed=2009-01-01&vintage_date=2009-01-30",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:22:44.244507Z",
+ "request_time_utc": "2026-09-29T18:22:43.712693Z",
+ "latency_s": 0.532,
+ "headers": {
+  "Content-Type": "application/csv",
+  "Server": "Apache",
+  "content-disposition": "attachment; filename=\"GDPC1_20090130.csv\"",
+  "Last-Modified": "Wed, 21 Dec 2016 20:22:17 GMT",
+  "Content-Length": "70",
+  "Cache-Control": "public, max-age=600",
+  "Expires": "Tue, 29 Sep 2026 18:32:44 GMT",
+  "Date": "Tue, 29 Sep 2026 18:22:44 GMT",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=86400",
+  "X-location": "cfs",
+  "Set-Cookie": "_abck=36900CDD3E98917A4C4C8358A3DDD128~-1~YAAQCVPRF8WM8dKgAQAAIKJn7hCibUwIr80oAAzldtCVkyC9wpQYmS0W0U4DDDTwVWptLGgY6duG+Iv1t3/vZyP2M/oZpbeaWe6F8Ni4XzADz7nm+iiUAalrtbZAMgSkxVvv3V6hRAHCDuQh0goCpDfjvemKCB9mQYuZyLFU9Peh667t2dmWCwnCMDbcltgnBXTbssplw1/C/BTWz7OxfBA9HOG4xIPIL4BfZv7rPP9E4vCMsiZEaYQf7emNgBjiMmaO+0w7maDfaWuTWz176WYxW34a+2aSyJVhQN+OSXPa2U/49wVjJRxfh5YCsWA7GZTtJVk0K+7Bn+8DXovLrywYfqKQb1WyGVcTveKXJUjguL6dZtvGjSi1JJjLedZx/ACArZjz+3HfsIhAwdysdauloIxm/8dqeFHL88NrfcwZDYHntRLQk+rBO3Ofc4ygjhYwkQYmy4+2~-1~-1~-1~-1~-1; Domain=.stlouisfed.org; Path=/; Expires=Wed, 29 Sep 2027 18:22:44 GMT; Max-Age=31536000; Secure"
+ },
+ "bytes": 70,
+ "sha256": "051c3940e6479b6a98e653408632477f0b6e74276c9b6f13852a22a4bc3e0260"
+}

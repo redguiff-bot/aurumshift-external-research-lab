@@ -1,0 +1,141 @@
+{
+ "run_utc": "2026-09-29T18:30:55.465472Z",
+ "bea_ics": {
+  "status": 200,
+  "n_events": 119,
+  "sample": [
+   {
+    "dtstart": "20250107T133000Z",
+    "summary": "U.S. International Trade in Goods and Services\\, November 2024",
+    "tz": "VALUE=DATE-TIME"
+   },
+   {
+    "dtstart": "20250130T133000Z",
+    "summary": "Gross Domestic Product\\, 4th Quarter and Year 2024 (Advance Estima",
+    "tz": "VALUE=DATE-TIME"
+   },
+   {
+    "dtstart": "20250131T133000Z",
+    "summary": "Personal Income and Outlays\\, December 2024",
+    "tz": "VALUE=DATE-TIME"
+   },
+   {
+    "dtstart": "20250205T133000Z",
+    "summary": "U.S. International Trade in Goods and Services\\, December and Annu",
+    "tz": "VALUE=DATE-TIME"
+   },
+   {
+    "dtstart": "20250206T150000Z",
+    "summary": "Travel and Tourism Satellite Account\\, 2023",
+    "tz": "VALUE=DATE-TIME"
+   },
+   {
+    "dtstart": "20250227T133000Z",
+    "summary": "Gross Domestic Product\\, 4th Quarter and Year 2024 (Second Estimat",
+    "tz": "VALUE=DATE-TIME"
+   }
+  ],
+  "gdp_events": [
+   {
+    "dtstart": "20250130T133000Z",
+    "summary": "Gross Domestic Product\\, 4th Quarter and Year 2024 (Advance Estima"
+   },
+   {
+    "dtstart": "20250227T133000Z",
+    "summary": "Gross Domestic Product\\, 4th Quarter and Year 2024 (Second Estimat"
+   },
+   {
+    "dtstart": "20250327T123000Z",
+    "summary": "Gross Domestic Product\\, 4th Quarter and Year 2024 (Third Estimate"
+   },
+   {
+    "dtstart": "20250328T140000Z",
+    "summary": "Gross Domestic Product by State and Personal Income by State\\, 4th"
+   },
+   {
+    "dtstart": "20250430T123000Z",
+    "summary": "Gross Domestic Product\\, 1st Quarter 2025 (Advance Estimate)"
+   },
+   {
+    "dtstart": "20250529T123000Z",
+    "summary": "Gross Domestic Product\\, 1st Quarter 2025 (Second Estimate) and Co"
+   },
+   {
+    "dtstart": "20250626T123000Z",
+    "summary": "Gross Domestic Product\\, 1st Quarter 2025 (Third Estimate)\\, GDP b"
+   },
+   {
+    "dtstart": "20250627T140000Z",
+    "summary": "Gross Domestic Product by State and Personal Income by State\\, 1st"
+   }
+  ]
+ },
+ "bls_ics": {
+  "n_events": 313,
+  "fields": [
+   "DTSTART(ET tz)",
+   "SUMMARY",
+   "UID",
+   "SEQUENCE"
+  ],
+  "has_actual_previous_forecast": false
+ },
+ "bls_schedule_html": {
+  "bytes": 7293,
+  "forecast": false,
+  "previous": false,
+  "actual": false,
+  "has_times": 13
+ },
+ "bea_schedule_html": {
+  "bytes": 3707,
+  "forecast": false,
+  "previous": false,
+  "actual": false,
+  "has_times": 16
+ },
+ "eia_schedule_wpsr": {
+  "bytes": 6640,
+  "forecast": true,
+  "previous": false,
+  "actual": false,
+  "has_times": 17
+ },
+ "fred_release_calendar_html": {
+  "bytes": 8533,
+  "forecast": false,
+  "previous": false,
+  "actual": false,
+  "has_times": 11
+ },
+ "ecb_calendar": {
+  "bytes": 23428,
+  "forecast": true,
+  "previous": false,
+  "actual": false,
+  "has_times": 0
+ },
+ "eurostat_release_cal": {
+  "bytes": 3598,
+  "forecast": false,
+  "previous": true,
+  "actual": false,
+  "has_times": 0
+ },
+ "fed_g17_calendar": {
+  "bytes": 34789,
+  "forecast": false,
+  "previous": false,
+  "actual": false,
+  "has_times": 0
+ },
+ "census_econ_indicators_cal": {
+  "bytes": 21322,
+  "forecast": false,
+  "previous": false,
+  "actual": false,
+  "has_times": 178
+ },
+ "eia_wpsr_sample": "Schedule - U.S. Energy Information Administration (EIA) Skip to sub-navigation U.S. Energy Information Administration - EIA - Independent Statistics and Analysis Menu Statistics Analysis Tools Education News Enter Search Term(s): Search Petroleum & Other Liquids Skip to page content Overview Browse Data Summary Prices Crude reserves and production Refining and processing Imports/exports Movements Stocks Consumption/sales Search by Tag Major Topics Find by Most popular Consumption/demand Exports/imports Forecasts/projections Inventories/stocks Prices Production/supply Refining Reserves All repo",
+ "fred_calendar_sample": "Release Calendar | FRED | St. Louis Fed --> Skip to main content Explore Our Apps FRED Tools and resources to find and use economic data worldwide FRASER U.S. financial, economic, and banking history ALFRED Vintages of economic data from specific dates in history CASSIDI View banking market concentrations and perform HHI analysis Release Calendar Tools FRED Add-in for Excel FRED API FRED Mobile Apps News Blog About What is FRED Tutorials Digital Badges Contact Us My Account Explore Our Apps Explore Our Apps FRED Tools and resources to find and use economic data worldwide FRASER U.S. financial, economic, and banking history ALFRED Vintages of economic data from specific dates in history CASSI"
+}

@@ -1,0 +1,22 @@
+{
+ "url": "https://www.eia.gov/about/copyrights_reuse.php",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:35:28.330936Z",
+ "request_time_utc": "2026-09-29T18:35:28.041327Z",
+ "latency_s": 0.29,
+ "headers": {
+  "Content-Type": "text/html; charset=UTF-8",
+  "Server": "Microsoft-IIS/10.0",
+  "X-Powered-By": "ASP.NET",
+  "Strict-Transport-Security": "max-age=31536000",
+  "Content-Length": "52297",
+  "Expires": "Tue, 29 Sep 2026 18:35:28 GMT",
+  "Cache-Control": "max-age=0, no-cache, no-store",
+  "Pragma": "no-cache",
+  "Date": "Tue, 29 Sep 2026 18:35:28 GMT",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600"
+ },
+ "bytes": 52297,
+ "sha256": "f580939a7a19765bd4163702f5d0bf90e10dd563eb0464dac8fa086aa5eb106b"
+}

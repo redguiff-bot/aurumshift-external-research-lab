@@ -1,0 +1,3214 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0 maximum-scale=1.6, user-scalable=1"
+    />
+    <meta
+      name="keywords"
+      content="Board of Governors of the Federal Reserve System, Federal Reserve Board of Governors, Federal Reserve Board, Federal Reserve"
+    />
+    <meta
+      name="description"
+      content="The Federal Reserve Board of Governors in Washington DC."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://www.federalreserve.gov/images/Social_Default_Image.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://www.federalreserve.gov/images/Social_Default_Image.jpg" />
+
+    <title>Federal Reserve Board - Industrial Production and Capacity Utilization -
+      G.17</title>
+
+    <link href="https://www.federalreserve.gov/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.federalreserve.gov/css/bluesteel-theme.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.federalreserve.gov/assets/main.css">
+    <script src="https://www.federalreserve.gov/assets/main.js" defer type="module"></script>
+    <link href="https://www.federalreserve.gov/releases/g17/css/g17.css" rel="stylesheet" type="text/css">
+    <script src="https://www.federalreserve.gov/js/modernizr-latest.js" type="text/javascript"></script>
+    <script src="https://www.federalreserve.gov/js/grunticon.loader.js"></script>
+    <script>
+      grunticon([
+        "https://www.federalreserve.gov/css/icons.data.svg.css",
+        "https://www.federalreserve.gov/css/icons.data.png.css",
+        "https://www.federalreserve.gov/css/icons.fallback.css",
+      ]);
+    </script>
+    <noscript>
+      <link href="https://www.federalreserve.gov/css/icons.fallback.css" rel="stylesheet" />
+    </noscript>
+    <script src="https://www.federalreserve.gov/js/angular.min.js" type="text/javascript"></script>
+    <script src="https://www.federalreserve.gov/js/app.js" type="text/javascript"></script>
+
+    <!-- For Linear Gradients in IE9 or greater -->
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+          filter: none;
+        }
+      </style>
+    <![endif]-->
+  <link rel="stylesheet" href="/assets/main.css" data-injected="worker-mun08ol3"><script src="/assets/main.js" data-injected="worker-mun08ol3" defer type="module"></script></head>
+  <body data-ng-app="pubwebApp">
+    <a href="#content" class="globalskip">Skip to main content</a>
+    <nav class="nav-primary-mobile" id="nav-primary-mobile"></nav>
+    <div id='top-banner' data-hydrate='true'><link rel="preload" as="image" href="/images/icon-us-flag.svg"/><link rel="preload" as="image" href="/images/expand_more.svg"/><link rel="preload" as="image" href="https://designsystem.digital.gov/assets/img/icon-dot-gov.svg"/><link rel="preload" as="image" href="https://designsystem.digital.gov/assets/img/icon-https.svg"/><div class="custom-banner"><div class="custom-banner__header"><div class="custom-banner__left"><img class="custom-banner__flag" src="/images/icon-us-flag.svg" width="20" height="20" alt="US Flag"/><p class="custom-banner__text">An official website of the United States Government</p></div><button type="button" class="custom-banner__button"><span class="custom-banner__button-text">Here&#x27;s how you know</span><img id="banner-caret-_R_0_" class="custom-banner__caret " src="/images/expand_more.svg" alt="Expand More"/></button></div><div class="custom-banner__content " id="banner-content-_R_0_"><div class="custom-banner__info"><div class="info-block"><img src="https://designsystem.digital.gov/assets/img/icon-dot-gov.svg" alt=".gov icon"/><p><strong>Official websites use .gov</strong><br/>A <strong>.gov</strong> website belongs to an official government organization in the United States.</p></div><div class="info-block"><img src="https://designsystem.digital.gov/assets/img/icon-https.svg" alt="HTTPS icon"/><p><strong>Secure .gov websites use HTTPS</strong><br/>A <strong>lock</strong> (<span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" role="img" aria-labelledby="banner-lock-description-_R_0_" focusable="false"><title id="banner-lock-title-_R_0_">Lock</title><desc id="banner-lock-description-_R_0_">Locked padlock icon</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"></path></svg></span>) or <strong>https://</strong> means you&#x27;ve safely connected to the .gov website. Share sensitive information only on official, secure websites.</p></div></div></div></div></div><div
+      class="t1_nav navbar navbar-default navbar-fixed-top"
+      role="navigation"
+    >
+      <div class="t1_container clearfix">
+        <a
+          id="logo"
+          class="btn btn-default icon-FRB_logo-bw visible-xs-table-cell t1__btnlogo"
+          href="https://www.federalreserve.gov/default.htm"
+          role="button"
+          ><span class="sr-only">Back to Home</span></a
+        >
+        <a
+          href="https://www.federalreserve.gov/default.htm"
+          id="banner"
+          class="visible-xs-table-cell t1__banner"
+          title="Link to Home Page"
+          role="button"
+          >Board of Governors of the Federal Reserve System</a
+        >
+        <ul class="nav navbar-nav visible-md visible-lg t1_toplinks">
+          <li class="navbar-text navbar-text__social">
+            <span class="navbar-link" tabindex="0">Stay Connected</span>
+            <ul class="nav navbar-nav t1_social social_nine">
+              <li class="social__item">
+                <a
+                  data-icon="facebook"
+                  href="https://www.facebook.com/federalreserve"
+                  class="noIcon"
+                >
+                  <div class="icon-facebook-color icon icon__sm"></div>
+                  <span class="sr-only">Federal Reserve Facebook Page</span></a
+                >
+              </li>
+              <li class="social__item">
+                <a
+                  data-icon="instagram"
+                  href="https://www.instagram.com/federalreserveboard/"
+                  class="noIcon"
+                >
+                  <div class="icon-instagram icon icon__sm"></div>
+                  <span class="sr-only">Federal Reserve Instagram Page</span></a
+                >
+              </li>
+
+              <li class="social__item">
+                <a
+                  data-icon="youtube"
+                  href="https://www.youtube.com/federalreserve"
+                  class="noIcon"
+                >
+                  <div class="icon-youtube-color icon icon__sm"></div>
+                  <span class="sr-only">Federal Reserve YouTube Page</span></a
+                >
+              </li>
+
+              <li class="social__item">
+                <a
+                  data-icon="flickr"
+                  href="https://www.flickr.com/photos/federalreserve/"
+                  class="noIcon"
+                >
+                  <div class="icon-flickr-color icon icon__sm"></div>
+                  <span class="sr-only">Federal Reserve Flickr Page</span></a
+                >
+              </li>
+
+              <li class="social__item">
+                <a
+                  data-icon="linkedin"
+                  href="https://www.linkedin.com/company/federal-reserve-board"
+                  class="noIcon"
+                >
+                  <div class="icon-linkedin-color icon icon__sm"></div>
+                  <span class="sr-only">Federal Reserve LinkedIn Page</span></a
+                >
+              </li>
+              <li class="social__item">
+                <a
+                  data-icon="threads"
+                  href="https://www.threads.net/@federalreserveboard"
+                  class="noIcon"
+                >
+                  <div class="icon-threads icon icon__sm"></div>
+                  <span class="sr-only">Federal Reserve Threads Page</span></a
+                >
+              </li>
+              <li class="social__item">
+                <a
+                  data-icon="twitter"
+                  href="https://twitter.com/federalreserve"
+                  class="noIcon"
+                >
+                  <div class="icon-twitter-color icon icon__sm"></div>
+                  <span class="sr-only">Federal Reserve Twitter Page</span></a
+                >
+              </li>
+
+              <li class="social__item">
+                <a data-icon="rss" href="https://www.federalreserve.gov/feeds/feeds.htm" class="noIcon">
+                  <div class="icon-rss-color icon icon__sm"></div>
+                  <span class="sr-only">Subscribe to RSS</span></a
+                >
+              </li>
+
+              <li class="social__item">
+                <a data-icon="email" href="https://www.federalreserve.gov/subscribe.htm" class="noIcon">
+                  <div class="icon-email-color icon icon__sm"></div>
+                  <span class="sr-only">Subscribe to Email</span></a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="navbar-text">
+            <a class="navbar-link" href="https://www.federalreserve.gov/recentpostings.htm"
+              >Recent Postings</a
+            >
+          </li>
+
+          <li class="navbar-text">
+            <a class="navbar-link" href="https://www.federalreserve.gov/newsevents/calendar.htm">Calendar</a>
+          </li>
+
+          <li class="navbar-text">
+            <a class="navbar-link" href="https://www.federalreserve.gov/publications.htm">Publications</a>
+          </li>
+
+          <li class="navbar-text">
+            <a class="navbar-link" href="https://www.federalreserve.gov/sitemap.htm">Site Map</a>
+          </li>
+
+          <li class="navbar-text">
+            <a class="navbar-link" href="https://www.federalreserve.gov/azindex.htm">A-Z index</a>
+          </li>
+
+          <li class="navbar-text">
+            <a class="navbar-link" href="https://www.federalreserve.gov/careers.htm">Careers</a>
+          </li>
+
+          <li class="navbar-text">
+            <a class="navbar-link" href="https://www.federalreserve.gov/faqs.htm">FAQs</a>
+          </li>
+
+          <li class="navbar-text">
+            <a class="navbar-link" href="https://www.federalreserve.gov/videos.htm">Videos</a>
+          </li>
+
+          <li class="navbar-text">
+            <a class="navbar-link" href="https://www.federalreserve.gov/aboutthefed/contact-us-topics.htm"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <form
+          class="nav navbar-form hidden-xs nav__search"
+          role="search"
+          action="https://www.fedsearch.org/board_public/search"
+          method="get"
+        >
+          <div class="form-group input-group input-group-sm">
+            <label for="t1search" class="sr-only">Search</label>
+            <input
+              id="t1search"
+              class="nav__input form-control"
+              name="text"
+              placeholder="Search"
+              type="text"
+            />
+            <span class="input-group-btn">
+              <button
+                type="submit"
+                class="nav__button btn btn-default"
+                id="headerTopLinksSearchFormSubmit"
+                name="Search"
+              >
+                <span class="sr-only">Submit Search Button</span>
+                <span
+                  class="icon-magnifying-glass icon icon__xs icon--right"
+                ></span>
+              </button>
+            </span>
+          </div>
+          <div class="nav__advanced">
+            <a class="noIcon" href="https://www.fedsearch.org/board_public/"
+              >Advanced</a
+            >
+          </div>
+        </form>
+        <div
+          class="btn-group visible-xs-table-cell visible-sm-table-cell t1__dropdown"
+        >
+          <span
+            class="icon icon__md icon--right dropdown-toggle icon-options-nav"
+            data-toggle="dropdown"
+          >
+            <span class="sr-only">Toggle Dropdown Menu</span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <header class="jumbotron hidden-xs">
+      <a class="jumbotron__link" href="https://www.federalreserve.gov/default.htm" title="Link to Home Page">
+        <div class="container-fluid">
+          <h1 class="jumbotron__heading">
+            Board of Governors of the Federal Reserve System
+          </h1>
+          <p class="jumbotron__content">
+            <em
+              >The Federal Reserve, the central bank of the United States,
+              provides the nation with a safe, flexible, and stable monetary and
+              financial system.</em
+            >
+          </p>
+        </div>
+      </a>
+    </header>
+    <div class="t2__offcanvas visible-xs-block">
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="offcanvas__toggle icon-offcanvas-nav"
+          data-toggle="offcanvas"
+          data-target="#offcanvasT2Menu"
+          data-canvas="body"
+        >
+          <span class="sr-only">Main Menu Toggle Button</span>
+        </button>
+        <span class="navbar-brand offcanvas__title">Sections</span>
+        <button
+          type="button"
+          class="offcanvas__search icon-search-nav"
+          data-toggle="collapse"
+          data-target="#navbar-collapse"
+        >
+          <span class="sr-only">Search Toggle Button</span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse mobile-form" id="navbar-collapse">
+        <form
+          method="get"
+          class="navbar-form"
+          role="search"
+          action="https://www.fedsearch.org/board_public/search"
+        >
+          <div class="form-group input-group mobileSearch">
+            <label class="sr-only" for="t2search">Search</label>
+            <input
+              id="t2search"
+              name="text"
+              class="form-control"
+              placeholder="Search"
+              type="text"
+            />
+            <span class="input-group-btn">
+              <span class="sr-only">Search Submit Button</span>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <nav
+      class="nav-primary navbar hidden-xs nav-nine"
+      id="nav-primary"
+      role="navigation"
+    >
+      <ul class="nav navbar-nav" role="menubar">
+        <li role="menuitem" class="dropdown nav-about dropdown--3Col">
+          <a
+            href="https://www.federalreserve.gov/aboutthefed.htm"
+            class="sr-only-focusable"
+            aria-haspopup="true"
+            id="aboutMenu"
+            >About<br />the Fed</a
+          >
+          <ul
+            aria-labelledby="aboutMenu"
+            role="menu"
+            class="dropdown-menu sub-nav-group navmenu-nav"
+          >
+            <li>
+              <div class="row">
+                <ul class="col-sm-4 list-unstyled">
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/aboutthefed/fedexplained/who-we-are.htm"
+                      >Structure of the Federal Reserve System</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/aboutthefed/the-fed-explained.htm"
+                      >The Fed Explained</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/aboutthefed/bios/board/default.htm"
+                      >Board Members</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/aboutthefed/advisorydefault.htm"
+                      >Advisory Councils</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/aboutthefed/federal-reserve-system.htm"
+                      >Federal Reserve Banks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/aboutthefed/directors/about.htm"
+                      >Federal Reserve Bank and Branch Directors</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/aboutthefed/fract.htm"
+                      >Federal Reserve Act</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/aboutthefed/currency.htm"
+                      >Currency</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-4 list-unstyled">
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/aboutthefed/boardmeetings/meetingdates.htm"
+                      >Board Meetings</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/aboutthefed/boardvotes.htm"
+                      >Board Votes</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/careers.htm">Careers</a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/aboutthefed/procurement/tips.htm"
+                      >Do Business with the Board</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/aboutthefed/k8.htm"
+                      >Holidays Observed - K.8</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/aboutthefed/ethics-values.htm"
+                      >Ethics & Values</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-4 list-unstyled">
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/aboutthefed/contact-us-topics.htm"
+                      >Contact</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/foia/about_foia.htm"
+                      >Requesting Information (FOIA)</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/faqs.htm">FAQs</a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/aboutthefed/educational-tools/default.htm"
+                      >Economic Education</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/aboutthefed/fed-financial-statements.htm"
+                      >Fed Financial Statements</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/aboutthefed/financial-innovation.htm"
+                      >Financial Innovation</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <li role="menuitem" class="dropdown nav-news dropdown--1Col">
+          <a
+            href="https://www.federalreserve.gov/newsevents.htm"
+            class="sr-only-focusable"
+            aria-haspopup="true"
+            id="newsMenu"
+            >News<br />& Events</a
+          >
+          <ul
+            aria-labelledby="newsMenu"
+            role="menu"
+            class="dropdown-menu sub-nav-group navmenu-nav"
+          >
+            <li>
+              <a class="sr-only-focusable" href="https://www.federalreserve.gov/newsevents/pressreleases.htm"
+                >Press Releases</a
+              >
+            </li>
+
+            <li>
+              <a class="sr-only-focusable" href="https://www.federalreserve.gov/newsevents/speeches.htm"
+                >Speeches</a
+              >
+            </li>
+
+            <li>
+              <a class="sr-only-focusable" href="https://www.federalreserve.gov/newsevents/testimony.htm"
+                >Testimony</a
+              >
+            </li>
+
+            <li>
+              <a class="sr-only-focusable" href="https://www.federalreserve.gov/newsevents/calendar.htm"
+                >Calendar</a
+              >
+            </li>
+
+            <li>
+              <a class="sr-only-focusable" href="https://www.federalreserve.gov/videos.htm">Videos</a>
+            </li>
+
+            <li>
+              <a class="sr-only-focusable" href="https://www.federalreserve.gov/photogallery.htm"
+                >Photo Gallery</a
+              >
+            </li>
+
+            <li>
+              <a class="sr-only-focusable" href="https://www.federalreserve.gov/conferences.htm"
+                >Conferences</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li role="menuitem" class="dropdown nav-monetary dropdown--2Col">
+          <a
+            href="https://www.federalreserve.gov/monetarypolicy.htm"
+            class="sr-only-focusable"
+            aria-haspopup="true"
+            id="monetaryMenu"
+            >Monetary<br />Policy</a
+          >
+          <ul
+            aria-labelledby="monetaryMenu"
+            role="menu"
+            class="dropdown-menu sub-nav-group navmenu-nav"
+          >
+            <li>
+              <div class="row">
+                <ul class="col-sm-6 list-unstyled">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Federal Open Market Committee</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/monetarypolicy/fomc.htm"
+                      >About the FOMC</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+                      >Meeting calendars and information</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/monetarypolicy/fomc_historical.htm"
+                      >Transcripts and other historical materials</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/monetarypolicy/fomc_projectionsfaqs.htm"
+                      >FAQs</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Monetary Policy Principles and Practice</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/monetarypolicy/monetary-policy-principles-and-practice.htm"
+                      >Notes</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-6 list-unstyled">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Policy Implementation</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/monetarypolicy/policy-normalization.htm"
+                      >Policy Normalization</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/monetarypolicy/policytools.htm"
+                      >Policy Tools</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Reports</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/monetarypolicy/publications/mpr_default.htm"
+                      >Monetary Policy Report</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/monetarypolicy/publications/beige-book-default.htm"
+                      >Beige Book</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/monetarypolicy/publications/balance-sheet-developments-report.htm"
+                      >Federal Reserve Balance Sheet Developments</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong
+                        >Review of Monetary Policy Strategy, Tools, and
+                        Communications</strong
+                      >
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/monetarypolicy/review-of-monetary-policy-strategy-tools-and-communications.htm"
+                      >Overview</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <li role="menuitem" class="dropdown nav-supervision dropdown--fw">
+          <a
+            href="https://www.federalreserve.gov/supervisionreg.htm"
+            class="sr-only-focusable"
+            id="supervisionMenu"
+            aria-haspopup="true"
+            >Supervision<br />& Regulation</a
+          >
+          <ul
+            aria-labelledby="supervisionMenu"
+            role="menu"
+            class="dropdown-menu sub-nav-group navmenu-nav"
+          >
+            <li>
+              <div class="row">
+                <ul class="col-sm-3 col-nav list-unstyled">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Institution Supervision</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/novel-activities-supervision-program.htm"
+                      >Novel Activities Supervision Program</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/community-and-regional-financial-institutions.htm"
+                      >Community & Regional Financial Institutions</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/large-financial-institutions.htm"
+                      >Large Financial Institutions</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/foreign-banking-organizations.htm"
+                      >Foreign Banking Organizations</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/financial-market-utility-supervision.htm"
+                      >Financial Market Utilities</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/consumer-compliance.htm"
+                      >Consumer Compliance</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/state-member-banks-supervised-federal-reserve.htm"
+                      >State Member Banks Supervised by the Federal Reserve</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Reports</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/publications/supervision-and-regulation-report.htm"
+                      >Federal Reserve Supervision and Regulation Report</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-3 list-unstyled col-nav">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Reporting Forms</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/apps/reportingforms"
+                      >All Reporting Forms</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/apps/reportingforms/recentupdates"
+                      >Recent Updates</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/apps/reportingforms/home/review"
+                      >Information collections under review</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href='/apps/ReportingForms?reportTypesIdsJson=["1"]'
+                      >Financial Statements</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href='/apps/ReportingForms?reportTypesIdsJson=["2"]'
+                      >Applications/structure change</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href='/apps/ReportingForms?reportTypesIdsJson=["3"]'
+                      >Federal Financial Institutions Examination Council
+                      (FFIEC)</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href='/apps/ReportingForms?reportTypesIdsJson=["8"]'
+                      >Municipal & Government Securities</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-3 list-unstyled col-nav">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Supervision & Regulation Letters</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/srletters/srletters.htm"
+                      >By Year</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/topics/topics.htm"
+                      >By Topic</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Banking Applications & Legal Developments</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/application-process.htm"
+                      >Application Process</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/board-and-reserve-bank-actions.htm"
+                      >Board & Reserve Bank Action</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/legal-developments.htm"
+                      >Enforcement Actions & Legal Developments</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-3 list-unstyled col-nav">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Regulatory Resources</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/reglisting.htm"
+                      >Regulations</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/publications/supmanual.htm"
+                      >Manuals</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/basel/basel-default.htm"
+                      >Basel Regulatory Framework</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/volcker-rule.htm"
+                      >Volcker Rule</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/training-and-assistance-landing.htm"
+                      >Education, Training, and Assistance</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-3 list-unstyled col-nav">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Banking & Data Structure</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/apps/reportforms/insider.aspx"
+                      >Beneficial Ownership reports</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/releases/lbr"
+                      >Large Commercial Banks</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/releases/iba"
+                      >U.S. Offices of Foreign Entities</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/supervisionreg/fhc.htm"
+                      >Financial Holding Companies</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/isb-default.htm"
+                      >Interstate Branching</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/supervisionreg/suds.htm"
+                      >Securities Underwriting & Dealing Subsidiaries</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/minority-depository-institutions.htm"
+                      >Minority Depository Institutions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li role="menuitem" class="dropdown nav-stability dropdown--2Col">
+          <a
+            href="https://www.federalreserve.gov/financial-stability.htm"
+            class="sr-only-focusable"
+            aria-haspopup="true"
+            id="stabilityMenu"
+            >Financial<br />Stability</a
+          >
+          <ul
+            aria-labelledby="stabilityMenu"
+            role="menu"
+            class="dropdown-menu sub-nav-group navmenu-nav"
+          >
+            <div class="row">
+              <ul class="col-sm-6 list-unstyled">
+                <li class="nav__header">
+                  <p>
+                    <strong>Financial Stability Assessments </strong>
+                  </p>
+                </li>
+                <li>
+                  <a
+                    class="sr-only-focusable"
+                    href="https://www.federalreserve.gov/financial-stability/what-is-financial-stability.htm"
+                    >About Financial Stability</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="sr-only-focusable"
+                    href="https://www.federalreserve.gov/financial-stability/types-of-financial-system-vulnerabilities-and-risks.htm"
+                    >Types of Financial System Vulnerabilities & Risks</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="sr-only-focusable"
+                    href="https://www.federalreserve.gov/financial-stability/monitoring-risk-across-the-financial-system.htm"
+                    >Monitoring Risk Across the Financial System</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="sr-only-focusable"
+                    href="https://www.federalreserve.gov/financial-stability/proactive-monitoring-of-markets-and-institutions.htm"
+                    >Proactive Monitoring of Markets & Institutions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="sr-only-focusable"
+                    href="https://www.federalreserve.gov/financial-stability/financial-stability-and-stress-testing.htm"
+                    >Financial Stability & Stress Testing</a
+                  >
+                </li>
+              </ul>
+              <ul class="col-sm-6 list-unstyled">
+                <li class="nav__header">
+                  <p>
+                    <strong>Financial Stability Coordination & Actions</strong>
+                  </p>
+                </li>
+                <li>
+                  <a
+                    class="sr-only-focusable"
+                    href="https://www.federalreserve.gov/financial-stability/responding-to-financial-system-emergencies.htm"
+                    >Responding to Financial System Emergencies</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="sr-only-focusable"
+                    href="https://www.federalreserve.gov/financial-stability/cooperation-on-financial-stability.htm"
+                    >Cooperation on Financial Stability</a
+                  >
+                </li>
+                <li class="nav__header">
+                  <p>
+                    <strong>Reports</strong>
+                  </p>
+                </li>
+
+                <li>
+                  <a
+                    class="sr-only-focusable"
+                    href="https://www.federalreserve.gov/publications/financial-stability-report.htm"
+                    >Financial Stability Report</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </li>
+        <li role="menuitem" class="dropdown nav-payment dropdown--fw">
+          <a
+            href="https://www.federalreserve.gov/paymentsystems.htm"
+            class="sr-only-focusable"
+            id="paymentMenu"
+            aria-haspopup="true"
+            >Payment<br />Systems</a
+          >
+          <ul
+            aria-labelledby="paymentMenu"
+            role="menu"
+            class="dropdown-menu sub-nav-group navmenu-nav"
+          >
+            <li>
+              <div class="row">
+                <ul class="col-sm-3 col-nav list-unstyled">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Regulations & Statutes</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/regcc-about.htm"
+                      >Regulation CC (Availability of Funds and Collection of
+                      Checks)</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/regii-about.htm"
+                      >Regulation II (Debit Card Interchange Fees and
+                      Routing)</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/reghh-about.htm"
+                      >Regulation HH (Financial Market Utilities)</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/other-regulations.htm"
+                      >Other Regulations and Statutes</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-3 list-unstyled col-nav">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Payment Policies</strong>
+                    </p>
+                  </li>
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/pfs_about.htm"
+                      >Federal Reserve's Key Policies for the Provision of
+                      Financial Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/joint_requests.htm"
+                      >Guidelines for Evaluating Joint Account Requests</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/oo_about.htm"
+                      >Overnight Overdrafts</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/psr_about.htm"
+                      >Payment System Risk</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/telecomm.htm"
+                      >Sponsorship for Priority Telecommunication Services</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-3 list-unstyled col-nav">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Reserve Bank Payment Services & Data</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/fedach_about.htm"
+                      >Automated Clearinghouse Services</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/check_about.htm"
+                      >Check Services</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/coin_about.htm"
+                      >Currency and Coin Services</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/psr_data.htm"
+                      >Daylight Overdrafts and Fees</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/fednow_about.htm"
+                      >FedNow<sup>&reg;</sup> Service</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/fedfunds_about.htm"
+                      >Fedwire Funds Services</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/fedsecs_about.htm"
+                      >Fedwire Securities Services</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/fisagy_about.htm"
+                      >Fiscal Agency Services</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/master-account-and-services-database-about.htm"
+                      >Master Account and Services Database</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/natl_about.htm"
+                      >National Settlement Service</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-3 list-unstyled col-nav">
+                  <li class="nav__header">
+                    <p>
+                      <strong
+                        >Financial Market Utilities & Infrastructures</strong
+                      >
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/over_about.htm"
+                      >Supervision & Oversight of Financial Market
+                      Infrastructures</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/designated_fmu_about.htm"
+                      >Designated Financial Market Utilities</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/int_standards.htm"
+                      >International Standards for Financial Market
+                      Infrastructures</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-3 list-unstyled col-nav">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Research, Reports, & Committees</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/fr-payments-study.htm"
+                      >Federal Reserve Payments Study (FRPS)</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/payres_about.htm"
+                      >Payments Research</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/reports.htm"
+                      >Reports</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/paymentsystems/pspa_committee.htm"
+                      >Payments System Policy Advisory Committee</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <li
+          role="menuitem"
+          class="dropdown nav-econ dropdown--right dropdown--2Col"
+        >
+          <a
+            href="https://www.federalreserve.gov/econres.htm"
+            class="sr-only-focusable"
+            aria-haspopup="true"
+            id="econMenu"
+            >Economic<br />Research</a
+          >
+          <ul
+            aria-labelledby="econMenu"
+            role="menu"
+            class="dropdown-menu sub-nav-group navmenu-nav"
+          >
+            <li>
+              <div class="row">
+                <ul class="col-sm-6 list-unstyled">
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/econres/researchers.htm"
+                      >Meet the Researchers</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Working Papers and Notes</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/econres/feds/index.htm"
+                      >Finance and Economics Discussion Series (FEDS)</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/econres/notes/feds-notes/default.htm"
+                      >FEDS Notes</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/econres/ifdp/index.htm"
+                      >International Finance Discussion Papers (IFDP)</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-6 list-unstyled">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Data, Models and Tools</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/econres/economic-research-data.htm"
+                      >Economic Research Data</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/econres/us-models-about.htm"
+                      >FRB/US Model</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/econres/edo-models-about.htm"
+                      >Estimated Dynamic Optimization (EDO) Model</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/econres/scfindex.htm"
+                      >Survey of Consumer Finances (SCF)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <li
+          role="menuitem"
+          class="dropdown nav-data dropdown--right dropdown--fw"
+        >
+          <a
+            href="https://www.federalreserve.gov/data.htm"
+            class="sr-only-focusable"
+            id="dataMenu"
+            aria-haspopup="true"
+            >Data</a
+          >
+          <ul
+            aria-labelledby="dataMenu"
+            role="menu"
+            class="dropdown-menu sub-nav-group navmenu-nav"
+          >
+            <li>
+              <div class="row">
+                <ul class="col-sm-3 col-nav list-unstyled">
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/datadownload"
+                      ><span class="icon icon-ddp icon__sm"></span>Data Download
+                      Program</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Bank Assets and Liabilities</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/releases/h3/current/default.htm"
+                      >Aggregate Reserves of Depository Institutions and the
+                      Monetary Base - H.3</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/releases/h8/current/default.htm"
+                      >Assets and Liabilities of Commercial Banks in the U.S. -
+                      H.8</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/data/assetliab/current.htm"
+                      >Assets and Liabilities of U.S. Branches and Agencies of
+                      Foreign Banks</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/releases/chargeoff"
+                      >Charge-Off and Delinquency Rates on Loans and Leases at
+                      Commercial Banks</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/data/sfos/sfos.htm"
+                      >Senior Financial Officer Survey</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/data/sloos.htm"
+                      >Senior Loan Officer Opinion Survey on Bank Lending
+                      Practices</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-3 list-unstyled col-nav">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Bank Structure Data</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/releases/lbr"
+                      >Large Commercial Banks</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/minority-depository-institutions.htm"
+                      >Minority Depository Institutions</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/releases/iba/default.htm"
+                      >Structure and Share Data for the U.S. Offices of Foreign
+                      Banks</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Business Finance</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/releases/cp"
+                      >Commercial Paper</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/releases/g20/current/default.htm"
+                      >Finance Companies - G.20</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/data/govsecure/current.htm"
+                      >New Security Issues, State and Local Governments</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/data/corpsecure/current.htm"
+                      >New Security Issues, U.S. Corporations</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Dealer Financing Terms</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/data/scoos.htm"
+                      >Senior Credit Officer Opinion Survey on Dealer Financing
+                      Terms</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-3 list-unstyled col-nav">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Exchange Rates and International Data</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/releases/h10/current"
+                      >Foreign Exchange Rates - H.10/G.5</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/data/intlsumm/current.htm"
+                      >International Summary Statistics</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/data/secholdtrans/current.htm"
+                      >Securities Holdings and Transactions</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/data/statbanksus/current.htm"
+                      >Statistics Reported by Banks and Other Financial Firms in
+                      the United States</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/releases/iba/default.htm"
+                      >Structure and Share Data for U.S. Offices of Foreign
+                      Banks</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Financial Accounts</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/releases/z1/default.htm"
+                      >Financial Accounts of the United States - Z.1</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-3 list-unstyled col-nav">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Household Finance</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/releases/g19/current/default.htm"
+                      >Consumer Credit - G.19</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/releases/DSR"
+                      >Household Debt Service Ratios</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/data/mortoutstand/current.htm"
+                      >Mortgage Debt Outstanding</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/econres/scfindex.htm"
+                      >Survey of Consumer Finances (SCF)</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/consumerscommunities/shed.htm"
+                      >Survey of Household Economics and Decisionmaking</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Industrial Activity</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/releases/g17/current/default.htm"
+                      >Industrial Production and Capacity Utilization - G.17</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Interest Rates</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/releases/h15"
+                      >Selected Interest Rates - H.15</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-3 list-unstyled col-nav">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Micro Data Reference Manual (MDRM)</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/data/mdrm.htm"
+                      >Micro and Macro Data Collections</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Money Stock and Reserve Balances</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/releases/h41"
+                      >Factors Affecting Reserve Balances - H.4.1</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/releases/h6/current/default.htm"
+                      >Money Stock Measures - H.6</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Other</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/data/yield-curve-models.htm"
+                      >Yield Curve Models and Data</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <li
+          role="menuitem"
+          class="dropdown nav-consumer dropdown--right dropdown--4Col"
+        >
+          <a
+            href="https://www.federalreserve.gov/consumerscommunities.htm"
+            class="sr-only-focusable"
+            aria-haspopup="true"
+            id="consumerMenu"
+            >Consumers<br />
+            & Communities</a
+          >
+          <ul
+            aria-labelledby="consumerMenu"
+            role="menu"
+            class="dropdown-menu sub-nav-group navmenu-nav"
+          >
+            <li>
+              <div class="row">
+                <ul class="col-sm-3 list-unstyled">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Regulations</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/consumerscommunities/cra_about.htm"
+                      >Community Reinvestment Act (CRA)</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/reglisting.htm"
+                      >All Regulations</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Supervision & Enforcement</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/supervisionreg/caletters/caletters.htm"
+                      >CA Letters</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/apps/enforcementactions/default.aspx"
+                      >Enforcement Actions</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/consumerscommunities/independent-foreclosure-review.htm"
+                      >Independent Foreclosure Review</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-3 list-unstyled">
+                  <li class="nav__header">
+                    <p>
+                      <strong>Community Development</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/consumerscommunities/neighborhood-revitalization.htm"
+                      >Housing and Neighborhood Revitalization</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/consumerscommunities/small-business-and-entrepreneurship.htm"
+                      >Small Business and Entrepreneurship</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/consumerscommunities/workforce.htm"
+                      >Employment and Workforce Development</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/consumerscommunities/cdf.htm"
+                      >Community Development Finance</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/consumerscommunities/rural-community-economic-development.htm"
+                      >Rural Community and Economic Development</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-3 list-unstyled">
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/conferences.htm"
+                      >Conferences</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Research & Analysis</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/consumerscommunities/shed.htm"
+                      >Survey of Household Economics and Decisionmaking</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/consumerscommunities/community-development-publications.htm"
+                      >Research Publications & Data Analysis</a
+                    >
+                  </li>
+                </ul>
+                <ul class="col-sm-3 list-unstyled">
+                  <li>
+                    <a class="sr-only-focusable" href="https://www.federalreserve.gov/aboutthefed/cac.htm"
+                      >Community Advisory Council</a
+                    >
+                  </li>
+
+                  <li class="nav__header">
+                    <p>
+                      <strong>Resources for Consumers</strong>
+                    </p>
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/consumerscommunities/fraud-scams.htm"
+                      >Frauds and Scams</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/consumerscommunities/foreclosure.htm"
+                      >Mortgage and Foreclosure Resources</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="sr-only-focusable"
+                      href="https://www.federalreserve.gov/consumerscommunities/comm-dev-system-map.htm"
+                      >Federal Reserve Community Development Resources</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="content" class="container container__main" role="main">
+      <div class="row">
+        <div class="page-header">
+          <ol id="t3_nav" class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="https://www.federalreserve.gov/default.htm">Home</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="https://www.federalreserve.gov/data.htm">Data</a>
+            </li>
+          </ol>
+          <div class="header-group">
+            <div id="page-title" class="page-title">
+              <h2>Industrial Production and Capacity Utilization - G.17</h2>
+            </div>
+          </div>
+        </div>
+      </div> 
+<!-- END HEADER -->
+      <div id="t4_nav" class="t4_nav t4_nav--horizontal sticky affix-top">
+    <ul class="{{navList.expanded?'expanded':''}} ng-scope" data-ng-controller="t4NavController" data-expandable-t4="">
+        <li><a title="Current Release" class="" href="Current/default.htm">Current Release</a></li>
+        <li><a title="Release Dates" class="active" href="default.htm">Release Dates</a></li>
+        <li><a title="Monthly Supplement" class="" href="Current/default_sup.htm">Monthly Supplement</a></li>
+        <li><a title="Annual Revision" class="" href="Revisions/Current/DefaultRev.htm">Annual Revision</a></li>
+        <li><a title="Data Download" class="" href="download.htm">Data Download</a></li>
+        <li><a title="Other Data" class="" href="other_data.htm">Other Data</a></li>
+        <li><a title="About" class="" href="About.htm">About</a></li>
+        <li><a title="100 Years" class="" href="100_years_of_ip_data.htm">100 Years</a></li>
+        <li><a title="Announcements" class="" href="/feeds/g17.html">Announcements</a></li>
+        <li><a title="Technical Q&amp;As" class="" href="g17_technical_qa.htm">Technical Q&amp;As</a></li>
+    </ul>
+</div>
+        <!-- / End t4 -->
+        <!-- BEGIN DATA HERE -->
+        <div class="row">
+            <div class="col-xs-12">
+
+<h2 class="border"> Release Dates (historical and scheduled)</h2>
+
+<pre> 
+September 1947  27-September-1947
+October 1947    24-October-1947
+November 1947   26-November-1947
+December 1947   24-December-1947
+January 1948    28-January-1948
+February 1948   26-February-1948
+March 1948      25-March-1948
+April 1948      24-April-1948
+May 1948        26-May-1948
+June 1948       25-June-1948
+July 1948       24-July-1948
+August 1948     28-August-1948
+September 1948  28-September-1948
+October 1948    23-October-1948
+November 1948   30-November-1948
+December 1948   30-December-1948
+January 1949    27-January-1949
+February 1949   26-February-1949
+March 1949      25-March-1949
+April 1949      27-April-1949
+May 1949        26-May-1949
+June 1949       28-June-1949
+July 1949       27-July-1949
+August 1949     30-August-1949
+September 1949  30-September-1949
+October 1949    28-October-1949
+November 1949   28-November-1949
+December 1949   30-December-1949
+January 1950    28-January-1950
+February 1950   1-March-1950
+March 1950      30-March-1950
+April 1950      28-April-1950
+May 1950        27-May-1950
+June 1950       28-June-1950
+July 1950       25-July-1950
+August 1950     25-August-1950
+September 1950  28-September-1950
+October 1950    27-October-1950
+November 1950   30-November-1950
+December 1950   30-December-1950
+January 1951    30-January-1951
+February 1951   28-February-1951
+March 1951      29-March-1951
+April 1951      1-May-1951
+May 1951        29-May-1951
+June 1951       29-June-1951
+July 1951       30-July-1951
+August 1951     27-August-1951
+September 1951  1-October-1951
+October 1951    30-October-1951
+November 1951   30-November-1951
+December 1951   27-December-1951
+January 1952    30-January-1952
+February 1952   29-February-1952
+March 1952      31-March-1952
+April 1952      29-April-1952
+May 1952        30-May-1952
+June 1952       27-June-1952
+July 1952       30-July-1952
+August 1952     28-August-1952
+September 1952  30-September-1952
+October 1952    30-October-1952
+November 1952   1-December-1952
+December 1952   2-January-1953
+January 1953    2-February-1953
+February 1953   27-February-1953
+March 1953      30-March-1953
+April 1953      28-April-1953
+May 1953        29-May-1953
+June 1953       26-June-1953
+July 1953       30-July-1953
+August 1953     31-August-1953
+September 1953  30-September-1953
+October 1953    30-October-1953
+November 1953   1-December-1953
+December 1953   31-December-1953
+January 1954    1-February-1954
+February 1954   15-February-1954
+March 1954      15-March-1954
+April 1954      15-April-1954
+May 1954        17-May-1954
+June 1954       14-June-1954
+July 1954       15-July-1954
+August 1954     16-August-1954
+September 1954  15-September-1954
+October 1954    14-October-1954
+November 1954   16-November-1954
+December 1954   15-December-1954
+January 1955    14-January-1955
+February 1955   15-February-1955
+March 1955      15-March-1955
+April 1955      14-April-1955
+May 1955        16-May-1955
+June 1955       15-June-1955
+July 1955       14-July-1955
+August 1955     15-August-1955
+September 1955  15-September-1955
+October 1955    14-October-1955
+November 1955   16-November-1955
+December 1955   14-December-1955
+January 1956    17-January-1956
+February 1956   14-February-1956
+March 1956      15-March-1956
+April 1956      16-April-1956
+May 1956        15-May-1956
+June 1956       15-June-1956
+July 1956       15-July-1956
+August 1956     15-August-1956
+September 1956  14-September-1956
+October 1956    16-October-1956
+November 1956   15-November-1956
+December 1956   14-December-1956
+January 1957    15-January-1957
+February 1957   15-February-1957
+March 1957      15-March-1957
+April 1957      15-April-1957
+May 1957        15-May-1957
+June 1957       17-June-1957
+July 1957       15-July-1957
+August 1957     15-August-1957
+September 1957  16-September-1957
+October 1957    15-October-1957
+November 1957   15-November-1957
+December 1957   16-December-1957
+January 1958    15-January-1958
+February 1958   14-February-1958
+March 1958      17-March-1958
+April 1958      14-April-1958
+May 1958        14-May-1958
+June 1958       13-June-1958
+July 1958       15-July-1958
+August 1958     15-August-1958
+September 1958  12-September-1958
+October 1958    14-October-1958
+November 1958   14-November-1958
+December 1958   12-December-1958
+January 1959    15-January-1959
+February 1959   16-February-1959
+March 1959      16-March-1959
+April 1959      15-April-1959
+May 1959        15-May-1959
+June 1959       15-June-1959
+July 1959       15-July-1959
+August 1959     14-August-1959
+September 1959  15-September-1959
+October 1959    15-October-1959
+November 1959   16-November-1959
+December 1959   15-December-1959
+January 1960    15-January-1960
+February 1960   16-February-1960
+March 1960      16-March-1960
+April 1960      15-April-1960
+May 1960        16-May-1960
+June 1960       15-June-1960
+July 1960       15-July-1960
+August 1960     16-August-1960
+September 1960  16-September-1960
+October 1960    14-October-1960
+November 1960   16-November-1960
+December 1960   16-December-1960
+January 1961    16-January-1961
+February 1961   16-February-1961
+March 1961      16-March-1961
+April 1961      14-April-1961
+May 1961        12-May-1961
+June 1961       15-June-1961
+July 1961       14-July-1961
+August 1961     15-August-1961
+September 1961  14-September-1961
+October 1961    16-October-1961
+November 1961   16-November-1961
+December 1961   15-December-1961
+January 1962    16-January-1962
+February 1962   15-February-1962
+March 1962      15-March-1962
+April 1962      13-April-1962
+May 1962        15-May-1962
+June 1962       15-June-1962
+July 1962       16-July-1962
+August 1962     14-August-1962
+September 1962  14-September-1962
+October 1962    16-October-1962
+November 1962   16-November-1962
+December 1962   14-December-1962
+January 1963    15-January-1963
+February 1963   14-February-1963
+March 1963      15-March-1963
+April 1963      12-April-1963
+May 1963        16-May-1963
+June 1963       14-June-1963
+July 1963       16-July-1963
+August 1963     15-August-1963
+September 1963  16-September-1963
+October 1963    15-October-1963
+November 1963   15-November-1963
+December 1963   16-December-1963
+January 1964    15-January-1964
+February 1964   14-February-1964
+March 1964      16-March-1964
+April 1964      15-April-1964
+May 1964        15-May-1964
+June 1964       16-June-1964
+July 1964       15-July-1964
+August 1964     14-August-1964
+September 1964  16-September-1964
+October 1964    16-October-1964
+November 1964   16-November-1964
+December 1964   16-December-1964
+January 1965    15-January-1965
+February 1965   15-February-1965
+March 1965      16-March-1965
+April 1965      15-April-1965
+May 1965        14-May-1965
+June 1965       16-June-1965
+July 1965       15-July-1965
+August 1965     16-August-1965
+September 1965  15-September-1965
+October 1965    15-October-1965
+November 1965   16-November-1965
+December 1965   15-December-1965
+January 1966    17-January-1966
+February 1966   16-February-1966
+March 1966      16-March-1966
+April 1966      14-April-1966
+May 1966        13-May-1966
+June 1966       16-June-1966
+July 1966       15-July-1966
+August 1966     15-August-1966
+September 1966  16-September-1966
+October 1966    14-October-1966
+November 1966   16-November-1966
+December 1966   14-December-1966
+January 1967    17-January-1967
+February 1967   16-February-1967
+March 1967      16-March-1967
+April 1967      14-April-1967
+May 1967        12-May-1967
+June 1967       16-June-1967
+July 1967       14-July-1967
+August 1967     16-August-1967
+September 1967  15-September-1967
+October 1967    16-October-1967
+November 1967   15-November-1967
+December 1967   15-December-1967
+January 1968    17-January-1968
+February 1968   15-February-1968
+March 1968      15-March-1968
+April 1968      16-April-1968
+May 1968        16-May-1968
+June 1968       14-June-1968
+July 1968       16-July-1968
+August 1968     16-August-1968
+September 1968  16-September-1968
+October 1968    16-October-1968
+November 1968   18-November-1968
+December 1968   17-December-1968
+January 1969    14-January-1969
+February 1969   14-February-1969
+March 1969      17-March-1969
+April 1969      16-April-1969
+May 1969        16-May-1969
+June 1969       16-June-1969
+July 1969       16-July-1969
+August 1969     15-August-1969
+September 1969  16-September-1969
+October 1969    16-October-1969
+November 1969   17-November-1969
+December 1969   15-December-1969
+January 1970    16-January-1970
+February 1970   13-February-1970
+March 1970      16-March-1970
+April 1970      16-April-1970
+May 1970        14-May-1970
+June 1970       12-June-1970
+July 1970       15-July-1970
+August 1970     13-August-1970
+September 1970  14-September-1970
+October 1970    15-October-1970
+November 1970   17-November-1970
+December 1970   15-December-1970
+January 1971    14-January-1971
+February 1971   16-February-1971
+March 1971      15-March-1971
+April 1971      14-April-1971
+May 1971        14-May-1971
+June 1971       14-June-1971
+July 1971       14-July-1971
+August 1971     16-August-1971
+September 1971  15-September-1971
+October 1971    18-October-1971
+November 1971   16-November-1971
+December 1971   15-December-1971
+January 1972    17-January-1972
+February 1972   15-February-1972
+March 1972      15-March-1972
+April 1972      14-April-1972
+May 1972        16-May-1972
+June 1972       14-June-1972
+July 1972       17-July-1972
+August 1972     15-August-1972
+September 1972  18-September-1972
+October 1972    17-October-1972
+November 1972   15-November-1972
+December 1972   15-December-1972
+January 1973    15-January-1973
+February 1973   16-February-1973
+March 1973      16-March-1973
+April 1973      16-April-1973
+May 1973        15-May-1973
+June 1973       15-June-1973
+July 1973       16-July-1973
+August 1973     16-August-1973
+September 1973  14-September-1973
+October 1973    16-October-1973
+November 1973   15-November-1973
+December 1973   14-December-1973
+January 1974    16-January-1974
+February 1974   15-February-1974
+March 1974      15-March-1974
+April 1974      15-April-1974
+May 1974        15-May-1974
+June 1974       14-June-1974
+July 1974       15-July-1974
+August 1974     15-August-1974
+September 1974  13-September-1974
+October 1974    15-October-1974
+November 1974   15-November-1974
+December 1974   13-December-1974
+January 1975    15-January-1975
+February 1975   13-February-1975
+March 1975      14-March-1975
+April 1975      15-April-1975
+May 1975        15-May-1975
+June 1975       16-June-1975
+July 1975       15-July-1975
+August 1975     15-August-1975
+September 1975  15-September-1975
+October 1975    16-October-1975
+November 1975   14-November-1975
+December 1975   15-December-1975
+January 1976    16-January-1976
+February 1976   13-February-1976
+March 1976      16-March-1976
+April 1976      15-April-1976
+May 1976        14-May-1976
+June 1976       16-June-1976
+July 1976       16-July-1976
+August 1976     13-August-1976
+September 1976  16-September-1976
+October 1976    15-October-1976
+November 1976   15-November-1976
+December 1976   15-December-1976
+January 1977    17-January-1977
+February 1977   15-February-1977
+March 1977      15-March-1977
+April 1977      14-April-1977
+May 1977        16-May-1977
+June 1977       15-June-1977
+July 1977       15-July-1977
+August 1977     15-August-1977
+September 1977  16-September-1977
+October 1977    14-October-1977
+November 1977   15-November-1977
+December 1977   14-December-1977
+January 1978    17-January-1978
+February 1978   15-February-1978
+March 1978      16-March-1978
+April 1978      14-April-1978
+May 1978        16-May-1978
+June 1978       15-June-1978
+July 1978       14-July-1978
+August 1978     15-August-1978
+September 1978  15-September-1978
+October 1978    17-October-1978
+November 1978   15-November-1978
+December 1978   15-December-1978
+January 1979    17-January-1979
+February 1979   15-February-1979
+March 1979      16-March-1979
+April 1979      13-April-1979
+May 1979        16-May-1979
+June 1979       15-June-1979
+July 1979       13-July-1979
+August 1979     16-August-1979
+September 1979  14-September-1979
+October 1979    16-October-1979
+November 1979   15-November-1979
+December 1979   14-December-1979
+January 1980    16-January-1980
+February 1980   15-February-1980
+March 1980      14-March-1980
+April 1980      15-April-1980
+May 1980        16-May-1980
+June 1980       13-June-1980
+July 1980       16-July-1980
+August 1980     15-August-1980
+September 1980  16-September-1980
+October 1980    16-October-1980
+November 1980   14-November-1980
+December 1980   16-December-1980
+January 1981    15-January-1981
+February 1981   17-February-1981
+March 1981      17-March-1981
+April 1981      15-April-1981
+May 1981        15-May-1981
+June 1981       16-June-1981
+July 1981       15-July-1981
+August 1981     14-August-1981
+September 1981  16-September-1981
+October 1981    16-October-1981
+November 1981   13-November-1981
+December 1981   16-December-1981
+January 1982    15-January-1982
+February 1982   17-February-1982
+March 1982      16-March-1982
+April 1982      15-April-1982
+May 1982        14-May-1982
+June 1982       15-June-1982
+July 1982       15-July-1982
+August 1982     13-August-1982
+September 1982  15-September-1982
+October 1982    15-October-1982
+November 1982   16-November-1982
+December 1982   15-December-1982
+January 1983    14-January-1983
+February 1983   16-February-1983
+March 1983      15-March-1983
+April 1983      15-April-1983
+May 1983        13-May-1983
+June 1983       15-June-1983
+July 1983       15-July-1983
+August 1983     16-August-1983
+September 1983  15-September-1983
+October 1983    14-October-1983
+November 1983   15-November-1983
+December 1983   15-December-1983
+January 1984    13-January-1984
+February 1984   15-February-1984
+March 1984      15-March-1984
+April 1984      13-April-1984
+May 1984        15-May-1984
+June 1984       15-June-1984
+July 1984       13-July-1984
+August 1984     15-August-1984
+September 1984  14-September-1984
+October 1984    16-October-1984
+November 1984   15-November-1984
+December 1984   14-December-1984
+January 1985    15-January-1985
+February 1985   15-February-1985
+March 1985      15-March-1985
+April 1985      16-April-1985
+May 1985        15-May-1985
+June 1985       14-June-1985
+July 1985       18-July-1985
+August 1985     15-August-1985
+September 1985  13-September-1985
+October 1985    16-October-1985
+November 1985   15-November-1985
+December 1985   13-December-1985
+January 1986    16-January-1986
+February 1986   14-February-1986
+March 1986      14-March-1986
+April 1986      15-April-1986
+May 1986        15-May-1986
+June 1986       16-June-1986
+July 1986       15-July-1986
+August 1986     15-August-1986
+September 1986  16-September-1986
+October 1986    16-October-1986
+November 1986   14-November-1986
+December 1986   15-December-1986
+January 1987    16-January-1987
+February 1987   13-February-1987
+March 1987      13-March-1987
+April 1987      15-April-1987
+May 1987        15-May-1987
+June 1987       16-June-1987
+July 1987       15-July-1987
+August 1987     14-August-1987
+September 1987  15-September-1987
+October 1987    16-October-1987
+November 1987   16-November-1987
+December 1987   14-December-1987
+January 1988    15-January-1988
+February 1988   17-February-1988
+March 1988      16-March-1988
+April 1988      15-April-1988
+May 1988        16-May-1988
+June 1988       15-June-1988
+July 1988       15-July-1988
+August 1988     15-August-1988
+September 1988  14-September-1988
+October 1988    14-October-1988
+November 1988   15-November-1988
+December 1988   14-December-1988
+January 1989    18-January-1989
+February 1989   15-February-1989
+March 1989      16-March-1989
+April 1989      14-April-1989
+May 1989        15-May-1989
+June 1989       15-June-1989
+July 1989       14-July-1989
+August 1989     16-August-1989
+September 1989  15-September-1989
+October 1989    17-October-1989
+November 1989   14-November-1989
+December 1989   15-December-1989
+January 1990    17-January-1990
+February 1990   16-February-1990
+March 1990      16-March-1990
+April 1990      17-April-1990
+May 1990        15-May-1990
+June 1990       15-June-1990
+July 1990       17-July-1990
+August 1990     15-August-1990
+September 1990  14-September-1990
+October 1990    17-October-1990
+November 1990   13-November-1990
+December 1990   14-December-1990
+January 1991    16-January-1991
+February 1991   15-February-1991
+March 1991      15-March-1991
+April 1991      16-April-1991
+May 1991        13-May-1991
+June 1991       14-June-1991
+July 1991       15-July-1991
+August 1991     16-August-1991
+September 1991  17-September-1991
+October 1991    17-October-1991
+November 1991   15-November-1991
+December 1991   16-December-1991
+January 1992    17-January-1992
+February 1992   14-February-1992
+March 1992      17-March-1992
+April 1992      15-April-1992
+May 1992        15-May-1992
+June 1992       16-June-1992
+July 1992       15-July-1992
+August 1992     14-August-1992
+September 1992  16-September-1992
+October 1992    16-October-1992
+November 1992   16-November-1992
+December 1992   16-December-1992
+January 1993    15-January-1993
+February 1993   18-February-1993
+March 1993      17-March-1993
+April 1993      16-April-1993
+May 1993        14-May-1993
+June 1993       16-June-1993
+July 1993       16-July-1993
+August 1993     16-August-1993
+September 1993  16-September-1993
+October 1993    15-October-1993
+November 1993   15-November-1993
+December 1993   15-December-1993
+January 1994    14-January-1994
+February 1994   15-February-1994
+March 1994      15-March-1994
+April 1994      15-April-1994
+May 1994        16-May-1994
+June 1994       15-June-1994
+July 1994       15-July-1994
+August 1994     15-August-1994
+September 1994  16-September-1994
+October 1994    14-October-1994
+November 1994   15-November-1994
+December 1994   14-December-1994
+January 1995    17-January-1995
+February 1995   15-February-1995
+March 1995      15-March-1995
+April 1995      14-April-1995
+May 1995        16-May-1995
+June 1995       15-June-1995
+July 1995       14-July-1995
+August 1995     15-August-1995
+September 1995  15-September-1995
+October 1995    17-October-1995
+November 1995   15-November-1995
+December 1995   14-December-1995
+January 1996    24-January-1996
+February 1996   16-February-1996
+March 1996      15-March-1996
+April 1996      16-April-1996
+May 1996        15-May-1996
+June 1996       14-June-1996
+July 1996       16-July-1996
+August 1996     15-August-1996
+September 1996  17-September-1996
+October 1996    17-October-1996
+November 1996   15-November-1996
+December 1996   16-December-1996
+January 1997    17-January-1997
+February 1997   14-February-1997
+March 1997      14-March-1997
+April 1997      16-April-1997
+May 1997        15-May-1997
+June 1997       17-June-1997
+July 1997       16-July-1997
+August 1997     14-August-1997
+September 1997  16-September-1997
+October 1997    17-October-1997
+November 1997   17-November-1997
+December 1997   15-December-1997
+January 1998    16-January-1998
+February 1998   17-February-1998
+March 1998      17-March-1998
+April 1998      17-April-1998
+May 1998        15-May-1998
+June 1998       16-June-1998
+July 1998       16-July-1998
+August 1998     14-August-1998
+September 1998  16-September-1998
+October 1998    16-October-1998
+November 1998   16-November-1998
+December 1998   16-December-1998
+January 1999    15-January-1999
+February 1999   17-February-1999
+March 1999      16-March-1999
+April 1999      16-April-1999
+May 1999        14-May-1999
+June 1999       16-June-1999
+July 1999       16-July-1999
+August 1999     17-August-1999
+September 1999  16-September-1999
+October 1999    15-October-1999
+November 1999   16-November-1999
+December 1999   15-December-1999
+January 2000    14-January-2000
+February 2000   15-February-2000
+March 2000      15-March-2000
+April 2000      14-April-2000
+May 2000        15-May-2000
+June 2000       15-June-2000
+July 2000       14-July-2000
+August 2000     15-August-2000
+September 2000  15-September-2000
+October 2000    17-October-2000
+November 2000   15-November-2000
+December 2000   15-December-2000
+January 2001    17-January-2001
+February 2001   16-February-2001
+March 2001      16-March-2001
+April 2001      17-April-2001
+May 2001        14-May-2001
+June 2001       15-June-2001
+July 2001       17-July-2001
+August 2001     15-August-2001
+September 2001  14-September-2001
+October 2001    16-October-2001
+November 2001   16-November-2001
+December 2001   14-December-2001
+January 2002    16-January-2002
+February 2002   15-February-2002
+March 2002      15-March-2002
+April 2002      16-April-2002
+May 2002        15-May-2002
+June 2002       14-June-2002
+July 2002       16-July-2002
+August 2002     15-August-2002
+September 2002  17-September-2002
+October 2002    17-October-2002
+November 2002   15-November-2002
+December 2002   17-December-2002
+January 2003    17-January-2003
+February 2003   14-February-2003
+March 2003      14-March-2003
+April 2003      15-April-2003
+May 2003        15-May-2003
+June 2003       17-June-2003
+July 2003       16-July-2003
+August 2003     15-August-2003
+September 2003  15-September-2003
+October 2003    16-October-2003
+November 2003   14-November-2003
+December 2003   16-December-2003
+January 2004    16-January-2004
+February 2004   17-February-2004
+March 2004      15-March-2004
+April 2004      16-April-2004
+May 2004        14-May-2004
+June 2004       16-June-2004
+July 2004       15-July-2004
+August 2004     17-August-2004
+September 2004  15-September-2004
+October 2004    15-October-2004
+November 2004   17-November-2004
+December 2004   14-December-2004
+January 2005    14-January-2005
+February 2005   16-February-2005
+March 2005      16-March-2005
+April 2005      15-April-2005
+May 2005        17-May-2005
+June 2005       15-June-2005
+July 2005       15-July-2005
+August 2005     16-August-2005
+September 2005  14-September-2005
+October 2005    14-October-2005
+November 2005   17-November-2005
+December 2005   15-December-2005
+January 2006    17-January-2006
+February 2006   15-February-2006
+March 2006      17-March-2006
+April 2006      14-April-2006
+May 2006        16-May-2006
+June 2006       15-June-2006
+July 2006       17-July-2006
+August 2006     16-August-2006
+September 2006  15-September-2006
+October 2006    17-October-2006
+November 2006   16-November-2006
+December 2006   15-December-2006
+January 2007    17-January-2007
+February 2007   15-February-2007
+March 2007      16-March-2007
+April 2007      17-April-2007
+May 2007        16-May-2007
+June 2007       15-June-2007
+July 2007       17-July-2007
+August 2007     15-August-2007
+September 2007  14-September-2007
+October 2007    16-October-2007
+November 2007   16-November-2007
+December 2007   14-December-2007
+January 2008    16-January-2008
+February 2008   15-February-2008
+March 2008      17-March-2008
+April 2008      16-April-2008
+May 2008        15-May-2008
+June 2008       17-June-2008
+July 2008       16-July-2008
+August 2008     15-August-2008
+September 2008  15-September-2008
+October 2008    16-October-2008
+November 2008   17-November-2008
+December 2008   15-December-2008
+January 2009    16-January-2009
+February 2009   18-February-2009
+March 2009      16-March-2009
+April 2009      15-April-2009
+May 2009        15-May-2009
+June 2009       16-June-2009
+July 2009       15-July-2009
+August 2009     14-August-2009
+September 2009  16-September-2009
+October 2009    16-October-2009
+November 2009   17-November-2009
+December 2009   15-December-2009
+January 2010    15-January-2010
+February 2010   17-February-2010
+March 2010      15-March-2010
+April 2010      15-April-2010
+May 2010        14-May-2010
+June 2010       16-June-2010
+July 2010       15-July-2010
+August 2010     17-August-2010
+September 2010  15-September-2010
+October 2010    18-October-2010
+November 2010   16-November-2010
+December 2010   15-December-2010
+January 2011    14-January-2011
+February 2011   16-February-2011
+March 2011      17-March-2011
+April 2011      15-April-2011
+May 2011        17-May-2011
+June 2011       15-June-2011
+July 2011       15-July-2011
+August 2011     16-August-2011
+September 2011  15-September-2011
+October 2011    17-October-2011
+November 2011   16-November-2011
+December 2011   15-December-2011
+January 2012    18-January-2012
+February 2012   15-February-2012
+March 2012      16-March-2012
+April 2012      17-April-2012
+May 2012        16-May-2012
+June 2012       15-June-2012
+July 2012       17-July-2012
+August 2012     15-August-2012
+September 2012  14-September-2012
+October 2012    16-October-2012
+November 2012   16-November-2012
+December 2012   14-December-2012
+January 2013    16-January-2013
+February 2013   15-February-2013
+March 2013      15-March-2013
+April 2013      16-April-2013
+May 2013        15-May-2013
+June 2013       14-June-2013
+July 2013       16-July-2013
+August 2013     15-August-2013
+September 2013  16-September-2013
+October 2013    28-October-2013
+November 2013   15-November-2013
+December 2013   16-December-2013
+January 2014    17-January-2014
+February 2014   14-February-2014
+March 2014      17-March-2014
+April 2014      16-April-2014
+May 2014        15-May-2014
+June 2014       16-June-2014
+July 2014       16-July-2014
+August 2014     15-August-2014
+September 2014  15-September-2014
+October 2014    16-October-2014
+November 2014   17-November-2014
+December 2014   15-December-2014
+January 2015    16-January-2015
+February 2015   18-February-2015
+March 2015      16-March-2015
+April 2015      15-April-2015
+May 2015        15-May-2015
+June 2015       15-June-2015
+July 2015       15-July-2015
+August 2015     14-August-2015
+September 2015  15-September-2015
+October 2015    16-October-2015
+November 2015   17-November-2015
+December 2015   16-December-2015
+January 2016    15-January-2016
+February 2016   17-February-2016
+March 2016      16-March-2016
+April 2016      15-April-2016
+May 2016        17-May-2016
+June 2016       15-June-2016
+July 2016       15-July-2016
+August 2016     16-August-2016
+September 2016  15-September-2016
+October 2016    17-October-2016
+November 2016   16-November-2016
+December 2016   14-December-2016
+January 2017    18-January-2017
+February 2017   15-February-2017
+March 2017      17-March-2017
+April 2017      18-April-2017
+May 2017        16-May-2017
+June 2017       15-June-2017
+July 2017       14-July-2017
+August 2017     17-August-2017
+September 2017  15-September-2017
+October 2017    17-October-2017
+November 2017   16-November-2017
+December 2017   15-December-2017
+January 2018    17-January-2018
+February 2018   15-February-2018
+March 2018      16-March-2018
+April 2018      17-April-2018
+May 2018        16-May-2018
+June 2018       15-June-2018
+July 2018       17-July-2018
+August 2018     15-August-2018
+September 2018  14-September-2018
+October 2018    16-October-2018
+November 2018   16-November-2018
+December 2018   14-December-2018
+January 2019    18-January-2019
+February 2019   15-February-2019
+March 2019      15-March-2019
+April 2019      16-April-2019
+May 2019        15-May-2019
+June 2019       14-June-2019
+July 2019       16-July-2019
+August 2019     15-August-2019
+September 2019  17-September-2019
+October 2019    17-October-2019
+November 2019   15-November-2019
+December 2019   17-December-2019
+January 2020    17-January-2020
+February 2020   14-February-2020
+March 2020      17-March-2020
+April 2020      15-April-2020
+May 2020        15-May-2020
+June 2020       16-June-2020
+July 2020       15-July-2020
+August 2020     14-August-2020
+September 2020  15-September-2020
+October 2020    16-October-2020
+November 2020   17-November-2020
+December 2020   15-December-2020
+January 2021    15-January-2021
+February 2021   17-February-2021
+March 2021      16-March-2021
+April 2021      15-April-2021
+May 2021        14-May-2021
+June 2021       15-June-2021
+July 2021       15-July-2021
+August 2021     17-August-2021
+September 2021  15-September-2021
+October 2021    18-October-2021
+November 2021   16-November-2021
+December 2021   16-December-2021
+January 2022    14-January-2022
+February 2022   16-February-2022
+March 2022      17-March-2022
+April 2022      15-April-2022
+May 2022        17-May-2022
+June 2022       17-June-2022
+July 2022       15-July-2022
+August 2022     16-August-2022
+September 2022  15-September-2022
+October 2022    18-October-2022
+November 2022   16-November-2022
+December 2022   15-December-2022
+January 2023    18-January-2023
+February 2023   15-February-2023
+March 2023      17-March-2023
+April 2023      14-April-2023
+May 2023        16-May-2023
+June 2023       15-June-2023
+July 2023       18-July-2023
+August 2023     16-August-2023
+September 2023  15-September-2023
+October 2023    17-October-2023
+November 2023   16-November-2023
+December 2023   15-December-2023
+January 2024    17-January-2024
+February 2024   15-February-2024
+March 2024      15-March-2024
+April 2024      16-April-2024
+May 2024        16-May-2024
+June 2024       18-June-2024
+July 2024       17-July-2024
+August 2024     15-August-2024
+September 2024  17-September-2024
+October 2024    17-October-2024
+November 2024   15-November-2024
+December 2024   17-December-2024
+January 2025    17-January-2025
+February 2025   14-February-2025
+March 2025      18-March-2025
+April 2025      16-April-2025
+May 2025        15-May-2025
+June 2025       17-June-2025
+July 2025       16-July-2025
+August 2025     15-August-2025
+September 2025  16-September-2025
+October 2025    NA
+November 2025   NA
+December 2025   03-December-2025 and 23-December-2025
+January 2026    16-January-2026
+February 2026   18-February-2026
+March 2026      16-March-2026
+April 2026      16-April-2026
+May 2026        15-May-2026
+June 2026       15-June-2026
+July 2026       17-July-2026
+August 2026     18-August-2026
+September 2026  18-September-2026
+October 2026    16-October-2026
+November 2026   17-November-2026
+December 2026   16-December-2026
+January 2027    15-January-2027
+February 2027   17-February-2027
+March 2027      15-March-2027
+April 2027      15-April-2027
+May 2027        17-May-2027
+June 2027       16-June-2027
+July 2027       16-July-2027
+August 2027     17-August-2027
+September 2027  16-September-2027
+October 2027    18-October-2027
+November 2027   17-November-2027
+December 2027   16-December-2027
+
+</pre> 
+
+</div>
+</div>
+
+<!-- START FOOTER -->
+
+﻿
+      <a
+        id="back-top"
+        class="icon__backTop icon-backtop"
+        href="#"
+        title="Scroll To Top"
+        ><span class="sr-only">Back to Top</span></a
+      >
+
+      <div class="row">
+        <div class="lastUpdate" id="lastUpdate">Last Update: August 18, 2026 </div>
+      </div>
+    </div>
+    <footer class="container footer">
+      <div class="row footer__content">
+        <div class="col-xs-12 col-sm-4">
+          <h6 class="footer__heading">
+            <span class="text-uppercase">Board of Governors</span> <em>of the</em>
+            <span class="text-uppercase">Federal Reserve System</span>
+          </h6>
+          <ul class="list-unstyled">
+            <li class="footer__listItem">
+              <a class="footer__link" href="https://www.federalreserve.gov/aboutthefed.htm">About the Fed</a>
+            </li>
+            <li class="footer__listItem">
+              <a class="footer__link" href="https://www.federalreserve.gov/newsevents.htm">News & Events</a>
+            </li>
+            <li class="footer__listItem">
+              <a class="footer__link" href="https://www.federalreserve.gov/monetarypolicy.htm">Monetary Policy</a>
+            </li>
+            <li class="footer__listItem">
+              <a class="footer__link" href="https://www.federalreserve.gov/supervisionreg.htm"
+                >Supervision & Regulation</a
+              >
+            </li>
+            <li class="footer__listItem">
+              <a class="footer__link" href="https://www.federalreserve.gov/financial-stability.htm"
+                >Financial Stability</a
+              >
+            </li>
+            <li class="footer__listItem">
+              <a class="footer__link" href="https://www.federalreserve.gov/paymentsystems.htm">Payment Systems</a>
+            </li>
+            <li class="footer__listItem">
+              <a class="footer__link" href="https://www.federalreserve.gov/econres.htm">Economic Research</a>
+            </li>
+            <li class="footer__listItem">
+              <a class="footer__link" href="https://www.federalreserve.gov/data.htm">Data</a>
+            </li>
+            <li class="footer__listItem">
+              <a class="footer__link" href="https://www.federalreserve.gov/consumerscommunities.htm"
+                >Consumers & Communities</a
+              >
+            </li>
+            <li class="footer__listItem">
+              <a class="footer__link" href="https://www.federalreserve.gov/instagram.htm">Linktree</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <h6 class="text-uppercase footer__heading">Tools and Information</h6>
+          <ul class="list-unstyled">
+            <li class="footer__listItem">
+              <a href="https://www.federalreserve.gov/aboutthefed/contact-us-topics.htm" class="footer__link"
+                >Contact</a
+              >
+            </li>
+            <li class="footer__listItem">
+              <a href="https://www.federalreserve.gov/publications.htm" class="footer__link">Publications</a>
+            </li>
+            <li class="footer__listItem">
+              <a href="https://www.federalreserve.gov/foia/about_foia.htm" class="footer__link"
+                >Freedom of Information (FOIA)</a
+              >
+            </li>
+            <li class="footer__listItem">
+              <a href="https://oig.federalreserve.gov/" class="footer__link"
+                >Office of Inspector General</a
+              >
+            </li>
+            <li class="footer__listItem">
+              <a href="https://www.federalreserve.gov/publications/annual-report.htm" class="footer__link"
+                >Budget &amp; Performance</a
+              >
+              | <a href="https://www.federalreserve.gov/regreform/audit.htm" class="footer__link">Audit</a>
+            </li>
+            <li class="footer__listItem">
+              <a href="https://www.federalreserve.gov/eeo.htm" class="footer__link">No FEAR Act</a>
+            </li>
+            <li class="footer__listItem">
+              <a href="https://www.federalreserve.gov/espanol.htm" class="footer__link">Espa&ntilde;ol</a>
+            </li>
+            <li class="footer__listItem">
+              <a href="https://www.federalreserve.gov/website-linking-policies.htm" class="footer__link"
+                >Website Policies</a
+              >
+              | <a href="https://www.federalreserve.gov/privacy.htm" class="footer__link">Privacy Program</a>
+            </li>
+            <li class="footer__listItem">
+              <a href="https://www.federalreserve.gov/accessibility.htm" class="footer__link">Accessibility</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="footer__social">
+            <h6 class="text-uppercase footer__heading footer__heading--social">
+              Stay Connected
+            </h6>
+
+            <a
+              class="icon__md icon footer__btn icon-facebook-color"
+              href="https://www.facebook.com/federalreserve"
+              ><span class="sr-only">Federal Reserve Facebook Page</span></a
+            >
+            <a
+              class="icon__md icon footer__btn icon-instagram"
+              href="https://www.instagram.com/federalreserveboard/"
+              ><span class="sr-only">Federal Reserve Instagram Page</span></a
+            >
+
+            <a
+              class="icon__md icon footer__btn icon-youtube-color"
+              href="https://www.youtube.com/federalreserve"
+              ><span class="sr-only">Federal Reserve YouTube Page</span></a
+            >
+
+            <a
+              class="icon__md icon footer__btn icon-flickr-color"
+              href="https://www.flickr.com/photos/federalreserve/"
+              ><span class="sr-only">Federal Reserve Flickr Page</span></a
+            >
+
+            <a
+              class="icon__md icon footer__btn icon-linkedin-color"
+              href="https://www.linkedin.com/company/federal-reserve-board"
+              ><span class="sr-only">Federal Reserve LinkedIn Page</span></a
+            >
+
+            <a
+              class="icon__md icon footer__btn icon-threads"
+              href="https://www.threads.net/@federalreserveboard"
+              ><span class="sr-only">Federal Reserve Threads Page</span></a
+            >
+            <a
+              class="icon__md icon footer__btn icon-twitter-color"
+              href="https://twitter.com/federalreserve"
+              ><span class="sr-only">Link to Federal Reserve Twitter Page</span></a
+            >
+
+            <a
+              class="icon__md icon footer__btn icon-rss-color"
+              href="https://www.federalreserve.gov/feeds/feeds.htm"
+              ><span class="sr-only">Subscribe to RSS</span></a
+            >
+
+            <a
+              class="icon__md icon footer__btn icon-email-color"
+              href="https://www.federalreserve.gov/subscribe.htm"
+              ><span class="sr-only">Subscribe to Email</span></a
+            >
+          </div>
+          <a href="https://www.usa.gov/" target="_blank" title="Link to USA.gov">
+            <img
+              class="footer__image"
+              src="https://www.federalreserve.gov/USAGov%402x.png"
+              alt="Link to USA.gov"
+            />
+          </a>
+          <a href="https://www.federalreserve.gov/open/open.htm" target="_blank" title="Link to Open.gov">
+            <img
+              class="footer__image"
+              src="https://www.federalreserve.gov/OpenGov%402x.png"
+              alt="Link to Open.gov"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 footer__footer">
+          <p class="text-uppercase footer__text footer__text--left">
+            Board of Governors <em class="text-lowercase">of the</em> Federal
+            Reserve System
+          </p>
+          <p class="footer__text footer__text--right">
+            20th Street and Constitution Avenue N.W., Washington, DC 20551
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://www.federalreserve.gov/js/jquery.min.js" type="text/javascript"></script>
+    <script src="https://www.federalreserve.gov/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://www.federalreserve.gov/js/scripts.js" type="text/javascript"></script>
+    <script src="https://www.federalreserve.gov/js/modal.js" type="text/javascript"></script>
+    <script src="https://www.federalreserve.gov/js/sticky-tables.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.federalreserve.gov/js/slides/ekko-lightbox.min.js"></script>
+    <script src="https://www.federalreserve.gov/js/t4-nav-controller.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function ($) {
+        // delegate calls to data-toggle="lightbox"
+        $(document).delegate(
+          '*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])',
+          "click",
+          function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+          }
+        );
+        $('a[data-click="false"]').click(function (e) {
+          e.preventDefault();
+          var target = $(this).data("target");
+          $(target).click();
+        });
+      });
+    </script>
+
+    <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a42d04e3cd277a11',t:'MTc5MDcwNjIwNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+<!-- END FOOTER -->
