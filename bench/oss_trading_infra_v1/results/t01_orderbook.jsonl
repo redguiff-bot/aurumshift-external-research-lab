@@ -1,0 +1,3 @@
+{"candidate": "sortedcontainers", "n_events": 200000, "ref_digest": "1562bcb6e7a38941", "ref_levels": [46, 38], "digest": "1562bcb6e7a38941", "seconds": 0.11587981799999625, "match_reference": true, "events_per_s": 1725926}
+{"candidate": "nautilus", "n_events": 200000, "ref_digest": "1562bcb6e7a38941", "ref_levels": [46, 38], "digest": "1562bcb6e7a38941", "seconds": 0.2713831399999833, "integrity": "None", "best_bid": 19999.5, "best_ask": 20000.5, "match_reference": true, "events_per_s": 736965}
+{"candidate": "hftbacktest", "n_events": 200000, "ref_digest": "1562bcb6e7a38941", "ref_levels": [46, 38], "elapse_rc": 1, "digest": "1562bcb6e7a38941", "seconds": 0.10210036200001582, "best_bid": 19999.5, "best_ask": 20000.5, "match_reference": true, "events_per_s": 1958857}

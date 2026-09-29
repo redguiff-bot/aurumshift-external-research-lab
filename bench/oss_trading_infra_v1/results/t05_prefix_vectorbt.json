@@ -1,0 +1,1 @@
+{"lib": "vectorbt", "indicators": {"MA": {"outputs": 1, "leaky": []}, "MSTD": {"outputs": 1, "leaky": []}, "BBANDS": {"outputs": 3, "leaky": []}, "RSI": {"outputs": 1, "leaky": []}, "STOCH": {"outputs": 2, "leaky": []}, "MACD": {"outputs": 2, "leaky": []}, "ATR": {"outputs": 2, "leaky": []}, "OBV": {"outputs": 1, "leaky": []}}}

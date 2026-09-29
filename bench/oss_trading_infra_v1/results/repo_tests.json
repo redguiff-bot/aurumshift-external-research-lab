@@ -1,0 +1,218 @@
+{
+ "PyPortfolioOpt": {
+  "source_files": 40,
+  "test_files": 20,
+  "test_share": 0.5,
+  "ci_files": 2
+ },
+ "abides": {
+  "source_files": 86,
+  "test_files": 22,
+  "test_share": 0.256,
+  "ci_files": 0
+ },
+ "arcticdb": {
+  "source_files": 359,
+  "test_files": 204,
+  "test_share": 0.568,
+  "ci_files": 30
+ },
+ "backtesting.py": {
+  "source_files": 18,
+  "test_files": 3,
+  "test_share": 0.167,
+  "ci_files": 2
+ },
+ "backtrader": {
+  "source_files": 345,
+  "test_files": 83,
+  "test_share": 0.241,
+  "ci_files": 1
+ },
+ "binance-public-data": {
+  "source_files": 8,
+  "test_files": 0,
+  "test_share": 0.0,
+  "ci_files": 0
+ },
+ "bt": {
+  "source_files": 12,
+  "test_files": 6,
+  "test_share": 0.5,
+  "ci_files": 3
+ },
+ "ccxt": {
+  "source_files": 5505,
+  "test_files": 1185,
+  "test_share": 0.215,
+  "ci_files": 16
+ },
+ "cryptofeed": {
+  "source_files": 86,
+  "test_files": 19,
+  "test_share": 0.221,
+  "ci_files": 5
+ },
+ "databento-python": {
+  "source_files": 96,
+  "test_files": 37,
+  "test_share": 0.385,
+  "ci_files": 2
+ },
+ "dukascopy-node": {
+  "source_files": 123,
+  "test_files": 57,
+  "test_share": 0.463,
+  "ci_files": 1
+ },
+ "empyrical-reloaded": {
+  "source_files": 13,
+  "test_files": 4,
+  "test_share": 0.308,
+  "ci_files": 6
+ },
+ "exchange_calendars": {
+  "source_files": 175,
+  "test_files": 76,
+  "test_share": 0.434,
+  "ci_files": 6
+ },
+ "freqtrade": {
+  "source_files": 488,
+  "test_files": 144,
+  "test_share": 0.295,
+  "ci_files": 10
+ },
+ "frictionless": {
+  "source_files": 631,
+  "test_files": 222,
+  "test_share": 0.352,
+  "ci_files": 1
+ },
+ "great_expectations": {
+  "source_files": 1743,
+  "test_files": 569,
+  "test_share": 0.326,
+  "ci_files": 15
+ },
+ "hftbacktest": {
+  "source_files": 129,
+  "test_files": 1,
+  "test_share": 0.008,
+  "ci_files": 3
+ },
+ "lean": {
+  "source_files": 4919,
+  "test_files": 760,
+  "test_share": 0.155,
+  "ci_files": 10
+ },
+ "nautilus_trader": {
+  "source_files": 3188,
+  "test_files": 480,
+  "test_share": 0.151,
+  "ci_files": 11
+ },
+ "pandas_market_calendars": {
+  "source_files": 88,
+  "test_files": 40,
+  "test_share": 0.455,
+  "ci_files": 3
+ },
+ "pandera": {
+  "source_files": 465,
+  "test_files": 204,
+  "test_share": 0.439,
+  "ci_files": 3
+ },
+ "pointblank": {
+  "source_files": 177,
+  "test_files": 83,
+  "test_share": 0.469,
+  "ci_files": 3
+ },
+ "pysystemtrade": {
+  "source_files": 607,
+  "test_files": 38,
+  "test_share": 0.063,
+  "ci_files": 7
+ },
+ "qlib": {
+  "source_files": 337,
+  "test_files": 41,
+  "test_share": 0.122,
+  "ci_files": 6
+ },
+ "quantstats": {
+  "source_files": 21,
+  "test_files": 9,
+  "test_share": 0.429,
+  "ci_files": 2
+ },
+ "riskfolio-lib": {
+  "source_files": 24,
+  "test_files": 1,
+  "test_share": 0.042,
+  "ci_files": 2
+ },
+ "river": {
+  "source_files": 620,
+  "test_files": 143,
+  "test_share": 0.231,
+  "ci_files": 7
+ },
+ "rqalpha": {
+  "source_files": 211,
+  "test_files": 62,
+  "test_share": 0.294,
+  "ci_files": 3
+ },
+ "skfolio": {
+  "source_files": 527,
+  "test_files": 216,
+  "test_share": 0.41,
+  "ci_files": 5
+ },
+ "ta": {
+  "source_files": 20,
+  "test_files": 6,
+  "test_share": 0.3,
+  "ci_files": 1
+ },
+ "hummingbot": {
+  "source_files": 1714,
+  "test_files": 696,
+  "test_share": 0.406,
+  "ci_files": 2
+ },
+ "tsfresh": {
+  "source_files": 71,
+  "test_files": 38,
+  "test_share": 0.535,
+  "ci_files": 5
+ },
+ "vectorbt": {
+  "source_files": 127,
+  "test_files": 16,
+  "test_share": 0.126,
+  "ci_files": 4
+ },
+ "vnpy": {
+  "source_files": 72,
+  "test_files": 4,
+  "test_share": 0.056,
+  "ci_files": 1
+ },
+ "yfinance": {
+  "source_files": 71,
+  "test_files": 22,
+  "test_share": 0.31,
+  "ci_files": 8
+ },
+ "zipline-reloaded": {
+  "source_files": 289,
+  "test_files": 109,
+  "test_share": 0.377,
+  "ci_files": 6
+ }
+}

@@ -1,0 +1,1 @@
+{"lib": "pandas_ta", "seconds_full": 0.785951591000071, "n_columns": 271, "n_causal": 262, "n_leaky": 9, "leaky_columns": ["DPO_20", "ICS_26", "TOS_STDEVALL_LR", "TOS_STDEVALL_L_1", "TOS_STDEVALL_U_1", "TOS_STDEVALL_L_2", "TOS_STDEVALL_U_2", "TOS_STDEVALL_L_3", "TOS_STDEVALL_U_3"], "n_all_nan": 0}

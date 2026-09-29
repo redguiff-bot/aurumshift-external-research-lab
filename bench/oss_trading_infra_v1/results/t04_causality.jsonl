@@ -1,0 +1,5 @@
+{"engine": "vectorbt", "causal_strategy": {"n": 400, "max_abs_diff": 0.0, "n_diff": 0}, "leaky_control": {"n": 400, "max_abs_diff": 2490.8737846872828, "n_diff": 5}}
+{"engine": "vectorbt_native_MA", "causal_strategy": {"n": 400, "max_abs_diff": 0.0, "n_diff": 0}}
+{"engine": "backtesting", "causal_strategy": {"n": 400, "max_abs_diff": 0.0, "n_diff": 0}}
+{"engine": "backtrader", "causal_strategy": {"n": 370, "max_abs_diff": 0.0, "n_diff": 0}}
+{"engine": "bt", "causal_strategy": {"n": 400, "max_abs_diff": 0.0, "n_diff": 0}, "leaky_control": {"n": 400, "max_abs_diff": 609.4654117402097, "n_diff": 4}}

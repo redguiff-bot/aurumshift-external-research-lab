@@ -1,0 +1,1 @@
+{"lib": "ta", "seconds_full": 0.17538144400009514, "n_columns": 91, "n_causal": 86, "n_leaky": 5, "leaky_columns": ["trend_kst", "trend_kst_sig", "trend_kst_diff", "trend_visual_ichimoku_a", "trend_visual_ichimoku_b"], "n_all_nan": 0, "rsi14_max_abs_diff_vs_hand_wilder": 0.0053383027623254975}
