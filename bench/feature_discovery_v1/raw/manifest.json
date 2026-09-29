@@ -1,0 +1,62 @@
+{
+ "BTCUSDT": {
+  "rows": 20000,
+  "first": 1716224400000,
+  "last": 1788220800000,
+  "sha256": "2ddcf25def9d13166a23bcffc3a63bb5f800d88b3c6153dacb1de36944f93f5b"
+ },
+ "ETHUSDT": {
+  "rows": 20000,
+  "first": 1716224400000,
+  "last": 1788220800000,
+  "sha256": "680f2ec4994fee5c2b912cb7008e6d28ff3667e5a6bfa5d33bb0f98d0314c500"
+ },
+ "BNBUSDT": {
+  "rows": 20000,
+  "first": 1716224400000,
+  "last": 1788220800000,
+  "sha256": "41c34fe3e808900c13175345d5c1a9c063dbe1a6ac7b32720feb0609d8e3de8b"
+ },
+ "SOLUSDT": {
+  "rows": 20000,
+  "first": 1716224400000,
+  "last": 1788220800000,
+  "sha256": "397fe34183ce5972de93bca17f2ab6d485f9471104a50a22373fc10819cd375c"
+ },
+ "XRPUSDT": {
+  "rows": 20000,
+  "first": 1716224400000,
+  "last": 1788220800000,
+  "sha256": "1ee8046db21a6eaa0fe0e7a1946c885c5e9ce2b95c1df24e1ce956000d39ced0"
+ },
+ "ADAUSDT": {
+  "rows": 20000,
+  "first": 1716224400000,
+  "last": 1788220800000,
+  "sha256": "a19b8a2736c9e84663bb11385b47b4e441726b9a2571488d54551fec139b466a"
+ },
+ "DOGEUSDT": {
+  "rows": 20000,
+  "first": 1716224400000,
+  "last": 1788220800000,
+  "sha256": "b667cce9d043312fea55fb56e3e672ac05c8d3a3efea3d2f379f4859e363e954"
+ },
+ "LINKUSDT": {
+  "rows": 20000,
+  "first": 1716224400000,
+  "last": 1788220800000,
+  "sha256": "27c45197fa75d82360bb8b7399fec36c831ff72ee23fa932568f0abb133c270d"
+ },
+ "LTCUSDT": {
+  "rows": 20000,
+  "first": 1716224400000,
+  "last": 1788220800000,
+  "sha256": "f6143d988ad484ada74fb00dc7e0d48fc6afc79a92585ec92c2e38834f78fc7f"
+ },
+ "AVAXUSDT": {
+  "rows": 20000,
+  "first": 1716224400000,
+  "last": 1788220800000,
+  "sha256": "7e7478cf7887d1c1b7218e0a61862fe49a5456c3e0ee5b76ab70fda5b8b042bf"
+ }
+}

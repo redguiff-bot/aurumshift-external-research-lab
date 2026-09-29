@@ -1,0 +1,29 @@
+{
+ "id": "feature_discovery_v1",
+ "status": "PRE-REGISTERED before any held-out access (see git history)",
+ "splits": {"discovery_train": [0.0, 0.5], "validation": [0.5, 0.7], "heldout": [0.7, 1.0], "embargo_bars": 24},
+ "markets": {
+   "discovery": ["BTCUSDT","ETHUSDT","BNBUSDT","SOLUSDT","XRPUSDT","ADAUSDT"],
+   "unseen": ["DOGEUSDT","LINKUSDT","LTCUSDT","AVAXUSDT"]},
+ "seeds": {"discovery": [11,12,13,14,15], "null": [901,902,903,904,905,906,907,908], "synthetic": [7001,7002,7003,7004,7005,7006]},
+ "candidate_library": ["primitive","product a*b","gated a*|b|"],
+ "screens": {"stab_select_freq": 0.6, "stab_n_subsamples": 60, "mi_top_k": 30, "cmi_max_steps": 8},
+ "symbolic": {"pop": 300, "gens": 8, "parsimony": [0.001, 0.01, 0.05], "seeds": 5, "max_depth": 4},
+ "heldout_criteria": {
+   "sign_agree_validation_heldout": true,
+   "min_market_sign_agreement": 0.7,
+   "abs_pooled_ic_min": 0.005,
+   "bh_q": 0.10,
+   "bootstrap_block": 48,
+   "nonredundant_max_abs_corr": 0.8,
+   "new_composite_min_incremental_ic": 0.003,
+   "invariance_Q_p_min": 0.05},
+ "complexity_justified_rule": "held-out incremental pooled OOS R2 of discovered set over raw-primitive ridge > 0 with paired block-bootstrap 90% CI lower bound > 0 AND a majority of markets improve",
+ "synthetic_validity": {"min_recall_planted": 0.6, "max_false_discovery_per_run": 1.0},
+ "null_validity": {"max_mean_heldout_stable_under_null": 0.5},
+ "verdict_rules": {
+   "REFERENCE_SUPPORTED": ">=3 nonredundant held-out-stable NEW composites AND complexity justified AND synthetic+null validity pass",
+   "LIMITED_STABLE": ">=1 nonredundant held-out-stable feature (composite or primitive) AND validity pass",
+   "NO_STABLE_NEW": "validity pass AND 0 nonredundant held-out-stable features",
+   "INCONCLUSIVE": "validity fails or data insufficient"}
+}
