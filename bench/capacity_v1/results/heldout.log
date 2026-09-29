@@ -1,0 +1,9 @@
+heldout jobs 450
+/home/user/aurumshift-external-research-lab/bench/capacity_v1/py/policies.py:190: RuntimeWarning: invalid value encountered in divide
+  sd = np.sqrt(np.diag(S)); return S, S / np.outer(sd, sd)
+/home/user/aurumshift-external-research-lab/bench/capacity_v1/py/policies.py:190: RuntimeWarning: invalid value encountered in divide
+  sd = np.sqrt(np.diag(S)); return S, S / np.outer(sd, sd)
+/home/user/aurumshift-external-research-lab/bench/capacity_v1/py/policies.py:190: RuntimeWarning: invalid value encountered in divide
+  sd = np.sqrt(np.diag(S)); return S, S / np.outer(sd, sd)
+/home/user/aurumshift-external-research-lab/bench/capacity_v1/py/policies.py:190: RuntimeWarning: invalid value encountered in divide
+  sd = np.sqrt(np.diag(S)); return S, S / np.outer(sd, sd)
