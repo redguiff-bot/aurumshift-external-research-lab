@@ -1,0 +1,5 @@
+arf_clf.pkl FAIL ModuleNotFoundError No module named 'river.drift.adwin_c'
+ht_clf.pkl LOAD_OK HoeffdingTreeClassifier
+  predict OK
+sgd_lin.pkl FAIL AttributeError Can't get attribute '__pyx_unpickle_VectorDict' on <module 'river.utils.vectordict' from '/usr/local
+sgd_logit.pkl FAIL AttributeError Can't get attribute '__pyx_unpickle_VectorDict' on <module 'river.utils.vectordict' from '/usr/local

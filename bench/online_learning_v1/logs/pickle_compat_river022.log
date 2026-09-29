@@ -1,0 +1,7 @@
+river 0.22.0
+ekf_logit LOAD_OK 0.1965
+river_arf_clf LOAD_FAIL ModuleNotFoundError No module named 'river._river_rust'
+river_hoeffding_clf LOAD_OK 0.2381
+river_hoeffding_reg LOAD_FAIL ModuleNotFoundError No module named 'river._river_rust'
+river_sgd_lin LOAD_FAIL ModuleNotFoundError No module named 'river._river_rust'
+river_sgd_logit LOAD_FAIL ModuleNotFoundError No module named 'river._river_rust'
