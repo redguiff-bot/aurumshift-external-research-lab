@@ -1,0 +1,126 @@
+{
+ "scipy": {
+  "version": "1.18.1",
+  "license": "Copyright (c) 2001-2002 Enthought, Inc. 2003, SciPy Develope",
+  "requires_python": ">=3.12",
+  "upload": "2026-08-21T23:23:44",
+  "summary": "Fundamental algorithms for scientific computing in Python",
+  "n_releases": 108
+ },
+ "ortools": {
+  "version": "9.15.6755",
+  "license": "Apache 2.0",
+  "requires_python": ">=3.9",
+  "upload": "2026-01-14T15:38:48",
+  "summary": "Google OR-Tools python libraries and modules",
+  "n_releases": 15
+ },
+ "pulp": {
+  "version": "4.0.0",
+  "license": "MIT",
+  "requires_python": ">=3.12",
+  "upload": "2026-09-25T08:02:34",
+  "summary": "PuLP is an LP modeler written in python. PuLP can generate MPS or LP files and call GLPK, COIN CLP/CBC, CPLEX, and GUROBI to solve linear problems.",
+  "n_releases": 65
+ },
+ "highspy": {
+  "version": "1.15.1",
+  "license": "MIT",
+  "requires_python": ">=3.9",
+  "upload": "2026-07-02T12:01:22",
+  "summary": "A thin set of pybind11 wrappers to HiGHS",
+  "n_releases": 19
+ },
+ "cvxpy": {
+  "version": "1.9.3",
+  "license": "Apache-2.0",
+  "requires_python": ">=3.11",
+  "upload": "2026-09-19T16:48:12",
+  "summary": "A domain-specific language for modeling convex optimization problems in Python.",
+  "n_releases": 149
+ },
+ "PyPortfolioOpt": {
+  "version": "1.6.0",
+  "license": "MIT License\n        \n        Copyright (c) 2018 Robert Andre",
+  "requires_python": null,
+  "upload": "2026-02-26T23:29:39",
+  "summary": "Financial portfolio optimization in python",
+  "n_releases": 43
+ },
+ "riskfolio-lib": {
+  "version": "7.3.0",
+  "license": "BSD (3-clause)",
+  "requires_python": ">=3.10",
+  "upload": "2026-05-31T07:11:19",
+  "summary": "Portfolio Optimization in Python",
+  "n_releases": 58
+ },
+ "skfolio": {
+  "version": "1.4.9",
+  "license": "BSD 3-Clause License\n        \n        Copyright (c) 2023-202",
+  "requires_python": ">=3.10",
+  "upload": "2026-09-29T08:19:33",
+  "summary": "Portfolio optimization, factor model construction, and risk management built on top of scikit-learn",
+  "n_releases": 89
+ },
+ "mabwiser": {
+  "version": "2.7.4",
+  "license": "",
+  "requires_python": null,
+  "upload": "2024-08-30T23:41:06",
+  "summary": "MABWiser: Parallelizable Contextual Multi-Armed Bandits Library",
+  "n_releases": 19
+ },
+ "vowpalwabbit": {
+  "version": "9.11.9",
+  "license": "BSD 3-Clause License",
+  "requires_python": ">=3.10",
+  "upload": "2026-09-27T23:37:41",
+  "summary": "Vowpal Wabbit Python package",
+  "n_releases": 31
+ },
+ "obp": {
+  "version": "0.5.7",
+  "license": "Apache License",
+  "requires_python": "",
+  "upload": "2023-04-14T21:06:58",
+  "summary": "Open Bandit Pipeline: a python library for bandit algorithms and off-policy evaluation",
+  "n_releases": 18
+ },
+ "river": {
+  "version": "0.26.1",
+  "license": "BSD-3-Clause",
+  "requires_python": ">=3.11",
+  "upload": "2026-08-21T15:16:27",
+  "summary": "Online machine learning in Python",
+  "n_releases": 30
+ },
+ "simpy": {
+  "version": "4.1.2",
+  "license": "MIT",
+  "requires_python": ">=3.8",
+  "upload": "2026-05-24T04:37:11",
+  "summary": "Event discrete, process based simulation for Python.",
+  "n_releases": 25
+ },
+ "ciw": {
+  "version": "3.2.7",
+  "license": "",
+  "requires_python": null,
+  "upload": "2025-12-05T17:19:39",
+  "summary": "A discrete event simulation library for open queueing networks",
+  "n_releases": 64
+ },
+ "contextualbandits": {
+  "version": "0.3.30",
+  "license": "",
+  "requires_python": null,
+  "upload": "2026-02-22T09:18:25",
+  "summary": "Python Implementations of Algorithms for Contextual Bandits",
+  "n_releases": 75
+ },
+ "_assignment_reduction_check": {
+  "trials": 500,
+  "matches": 500
+ }
+}

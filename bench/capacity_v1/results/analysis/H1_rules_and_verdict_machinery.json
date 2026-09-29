@@ -1,0 +1,190 @@
+{
+  "rules": {
+    "0.1": {
+      "FIFO": {
+        "failure": [
+          "S10_spam",
+          "S11_burst",
+          "S12_near_equal",
+          "S3_chronic",
+          "S4_late_hq",
+          "S5_correlated",
+          "S5b_corr_benign",
+          "S6_short_vs_long",
+          "S7_regime_shift",
+          "S8_noisy_rank",
+          "S9_missing"
+        ],
+        "equivalent": [
+          "S1_sparse",
+          "S2_moderate"
+        ]
+      },
+      "FIFO_SCREEN": {
+        "failure": [
+          "S11_burst",
+          "S12_near_equal",
+          "S3_chronic",
+          "S4_late_hq",
+          "S5b_corr_benign",
+          "S6_short_vs_long",
+          "S7_regime_shift",
+          "S8_noisy_rank",
+          "S9_missing"
+        ],
+        "equivalent": [
+          "S10_spam",
+          "S1_sparse",
+          "S2_moderate",
+          "S5_correlated"
+        ]
+      }
+    },
+    "0.25": {
+      "FIFO": {
+        "failure": [
+          "S12_near_equal",
+          "S3_chronic",
+          "S4_late_hq",
+          "S5_correlated",
+          "S5b_corr_benign",
+          "S7_regime_shift",
+          "S8_noisy_rank",
+          "S9_missing"
+        ],
+        "equivalent": [
+          "S10_spam",
+          "S11_burst",
+          "S1_sparse",
+          "S2_moderate",
+          "S6_short_vs_long"
+        ]
+      },
+      "FIFO_SCREEN": {
+        "failure": [
+          "S3_chronic",
+          "S4_late_hq",
+          "S5b_corr_benign",
+          "S7_regime_shift",
+          "S8_noisy_rank",
+          "S9_missing"
+        ],
+        "equivalent": [
+          "S10_spam",
+          "S11_burst",
+          "S12_near_equal",
+          "S1_sparse",
+          "S2_moderate",
+          "S5_correlated",
+          "S6_short_vs_long"
+        ]
+      }
+    },
+    "0.5": {
+      "FIFO": {
+        "failure": [
+          "S3_chronic",
+          "S7_regime_shift",
+          "S8_noisy_rank",
+          "S9_missing"
+        ],
+        "equivalent": [
+          "S10_spam",
+          "S11_burst",
+          "S12_near_equal",
+          "S1_sparse",
+          "S2_moderate",
+          "S4_late_hq",
+          "S5_correlated",
+          "S5b_corr_benign",
+          "S6_short_vs_long"
+        ]
+      },
+      "FIFO_SCREEN": {
+        "failure": [
+          "S3_chronic"
+        ],
+        "equivalent": [
+          "S10_spam",
+          "S11_burst",
+          "S12_near_equal",
+          "S1_sparse",
+          "S2_moderate",
+          "S4_late_hq",
+          "S5_correlated",
+          "S5b_corr_benign",
+          "S6_short_vs_long",
+          "S7_regime_shift",
+          "S8_noisy_rank",
+          "S9_missing"
+        ]
+      }
+    }
+  },
+  "verdict_machinery": {
+    "best_implementable": "UNCERTAINTY_LCB",
+    "B": [
+      "SCORE_RANK",
+      "SLOTHOUR",
+      "SLOTHOUR_SHADOW",
+      "UNCERTAINTY_LCB",
+      "CORR_AWARE",
+      "LINTS"
+    ],
+    "T": [
+      "SCORE_RANK",
+      "SLOTHOUR",
+      "SLOTHOUR_SHADOW",
+      "UNCERTAINTY_LCB",
+      "CORR_AWARE",
+      "LINTS"
+    ],
+    "best_simple": "SLOTHOUR",
+    "best_complex": "UNCERTAINTY_LCB",
+    "complexity": {
+      "SLOTHOUR_SHADOW": {
+        "macro_diff": 0.009017223517203472,
+        "lo": -0.027868628039724112,
+        "hi": 0.04594933472430398,
+        "wins": 5,
+        "justified": false
+      },
+      "UNCERTAINTY_LCB": {
+        "macro_diff": 0.061905352681299354,
+        "lo": 0.0273891240577252,
+        "hi": 0.09695868497517612,
+        "wins": 10,
+        "justified": false
+      },
+      "CORR_AWARE": {
+        "macro_diff": -0.021664259536852255,
+        "lo": -0.050889158923855725,
+        "hi": 0.00987175153405608,
+        "wins": 5,
+        "justified": false
+      },
+      "LINTS": {
+        "macro_diff": -0.019523056485011736,
+        "lo": -0.05665513233434123,
+        "hi": 0.015559291400585788,
+        "wins": 5,
+        "justified": false
+      }
+    },
+    "macro_M1": {
+      "CORR_AWARE": 2.1941266424404127,
+      "EQUAL_QUOTA": 1.7398220139298841,
+      "FIFO": 1.780633999353684,
+      "FIFO_SCREEN": 1.9444401113932537,
+      "LINTS": 2.1962678454922533,
+      "OLDEST_SLOT": 1.9657183140409513,
+      "ORACLE_GREEDY_UB": 5.719047993554096,
+      "RANDOM": 1.7387484072911985,
+      "ROUND_ROBIN": 1.774783124378473,
+      "SCORE_RANK": 2.1454819407587653,
+      "SLOTHOUR": 2.215790901977265,
+      "SLOTHOUR_SHADOW": 2.2248081254944685,
+      "UNCERTAINTY_LCB": 2.277696254658564
+    }
+  }
+}
