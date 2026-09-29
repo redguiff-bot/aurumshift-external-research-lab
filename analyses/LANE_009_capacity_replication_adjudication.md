@@ -358,3 +358,186 @@ Quatre corrections (texte/provenance seulement, aucune sur résultats/code) : (1
 - `adjudication_probe_output.txt` (56 lignes) : sortie correspondante.
 
 **Résultat de ma relance** (extraction des corpus dans un dossier temporaire, `numpy 2.4.6`, `pandas 3.0.6`, 18 s) : `diff` de la sortie relancée contre la sortie livrée = **vide** — sortie reproduite à l'identique, bit à bit (V12). 
+
+---
+
+## 4. Candidats / méthodes évalués un par un
+
+009 n'attribue pas ADOPT/ADAPT/PARK/REJECT (il n'est pas une étude de bibliothèques). Il classe des **familles de méthodes** par leur statut de réplication et propose des **hypothèses locales à falsifier**. Je traduis dans le vocabulaire de `claude.md` pour t'aider à lire, en marquant clairement que la traduction est **la mienne** (INFERENCE) et qu'elle ne vaut **jamais** adoption : « à tester localement » ne signifie pas « compatible avec AurumShift » (UNKNOWN).
+
+### 4.1 Les méthodes d'allocation (dans 009)
+
+| Famille (noms A / B) | Statut 009 | Traduction (mienne) | Justification chiffrée (009, ✔ = vérifié) | Ce qui ferait changer le verdict |
+|---|---|---|---|---|
+| **FIFO** | Référence faible, échoue quand la demande dépasse la capacité | référence de comparaison, pas candidat | B : ranking > FIFO de +0,365 (12/13) ; A : +0,154 dz ✔ | Si l'ordre d'arrivée porte de l'information locale (B, limitation 2) |
+| **Écran net** (`FIFO_NETPOS` / `FIFO_SCREEN`) | H2 répliquée | **ADAPT-candidat de contrôle** (à tester en premier, coût nul) | B +0,164 = 45 % ; A +0,100 = 65 % ✔ | Coût local impossible à estimer → l'écran perd son sens (UNKNOWN_COST ≠ 0) |
+| **Classement net** (`SCORE_RANK` / `RANK_NET`) | H1′ répliquée, « référence » | **référence à tester** | B +0,365 [0,318 ; 0,411] ; A +0,154 [0,140 ; 0,168] ✔ | Scores mal calibrés : l'avantage fond de ≈ 45–70 % (B D2) et s'inverse à pente négative (A) |
+| **Net / durée espérée** (`SLOTHOUR*`) | H3′ partielle | **conditionnel** | B +0,070 (dominé par S6 +0,358 et S3 +0,189) ; A +0,001 ✔ | Forte hétérogénéité locale des durées → utile ; sinon ≈ classement net |
+| **Rétrécissement / pooling** (`UNCERTAINTY_LCB`) | H4 partielle | **secondaire** | B +0,062 (10/13) ; A +0,010 ✔ | Si les émissions se répètent par instrument et sont bruitées (S8 +0,26, S12 +0,14 en B) |
+| **Composite** (`COMPOSED`, A seul) | non testé en B | **PARK pour 009** (effet +0,025 dz, 16 % du gain simple) | ✔ +0,025 [0,017 ; 0,034] | Dépend de la marge d'équivalence choisie (13 % vs 57 % du gain) |
+| **Prix d'ombre / knapsack / fluide / trunk** | « aucun bénéfice répliqué » | **PARK** | B : +0,009 [−0,026 ; 0,043] ; A : +0,020 (`SHADOW_PRICE`) ✔ | Si le held-out de A confirme un gain > marge (c'est le cas, section 13) |
+| **Corrélation** (`CORR_*`, `MARGINAL_RISK`, `CLUSTER_CAP`) | H5 répliquée (« pas de gain de valeur ») | **PARK côté rendement ; question ouverte côté risque** | B −0,022 [−0,052 ; 0,010], drawdown −7 %/−8 % ; A `CORR_PENALTY` 0,000, `MARGINAL_RISK` +0,004 ✔ | Un drawdown local attribuable à des admissions simultanées corrélées |
+| **Bandits** (`LINUCB`, `LIN_TS`, `SLEEPING_HEDGE` / `LINTS`) | H5 répliquée | **REJECT-pour-l'instant** | B −0,020 [−0,058 ; 0,019], ≈ 24× le calcul ; A −0,013 à −0,029 ✔ | Score inversé ou non calibré (voir 13.5) |
+| **Préemption** (`OLDEST_SLOT`, `EVICT_SWAP`) | H6 conditionnelle | **diagnostic seulement** | B +0,185 ; A −0,085 ✔ ; bascule avec coût ×3 ✔ | Mesure locale du rapport edge/coût et du coût d'une fermeture forcée |
+| **Round-robin / quota / aléatoire** | monitoring seulement | **pas des allocateurs** ; indicateurs de famine | coûtent ≈ 0,12–0,13 dz (A) / 0,4–0,5 bps (B) vs le classement | — |
+| **Secrétaire 1/e** (A seul) | non proposé | **REJECT** | dans le held-out de A : +0,014 dz vs FIFO, famine 0,9 instruments (section 13) | — |
+| **Oracles** | non implémentables | jamais dans un verdict | A : bornes non comparables ; B : oracle glouton avec bruit réalisé | — |
+
+### 4.2 Les hypothèses locales (rapport 09)
+
+| Hyp. | Ce qui la rend intéressante | Falsifiée localement si… | Nécessite | Ma remarque |
+|---|---|---|---|---|
+| H1′ | seule hypothèse à effet net répliqué dans les deux études | sur une période où candidats ≥ slots libres, le top-k estimé-net n'a pas un net réalisé supérieur au top-k par ordre d'arrivée (IC apparié incluant 0) | journal des candidats horodaté + estimation du coût + issue | la falsification suppose qu'on sache mesurer un « contre-factuel sûr » (UNKNOWN) |
+| H2 | coût quasi nul | les rejetés n'ont pas un net réalisé plus faible que les admis, ou l'estimation de coût est trop mauvaise pour définir un signe | estimation locale de coût défendable | l'écran est aussi ce qu'une politique FIFO sensée ferait déjà (A : 61 % du gain, section 13) |
+| H5 | évite la complexité | un drawdown concentré attribuable à des admissions simultanées corrélées qu'une pénalité de groupe supprime sans baisser le net | définitions locales de groupes + co-mouvements réalisés | **à reformuler** après le held-out de A (13.5) |
+| H3′ | référence simple | dispersion des durées faible devant celle des valeurs (alors la normalisation est du bruit) | distribution des durées réalisées par instrument | l'explication de l'écart A/B (D5) est fragilisée (13.3) |
+| H4 | gain de qualité si scores répétés bruités | les émissions répétées ne sont pas plus bruitées que la dispersion inter-candidats | historique de scores répétés | — |
+| H6 | signe dépendant du rapport edge/coût | rapport mesuré sous le point de bascule ou coût de fermeture forcée ≠ coût d'entrée | mesures de coûts et d'edge | prudence : une règle de sortie n'est pas un allocateur et peut changer le comportement réalisé |
+
+### 4.3 Les options de disposition de la PR #8
+
+Tableau en 3.11. **Conditions de changement de verdict** (les miennes, INFERENCE) : `REQUIRES_CORRECTION_BEFORE_MERGE` deviendrait `MERGE_AS_INDEPENDENT_REPLICATION` une fois les quatre corrections faites ; il deviendrait un choix d'arbitrage **humain** entre A et B si la même arborescence `reports/008_risk_capacity_turnover/` reçoit deux jeux de fichiers (section 13.7).
+
+---
+
+## 5. Bloc final (reproduit tel quel) et explication ligne par ligne
+
+```
+STUDY_A_SHA=1a449df5239753e39d657fdf14813a8f1995a985 (main, merge of PR #6; content commits 1d676ff, 588dc4b, da2f7c4)  [supplementary: branch tip cb130415d0e4211a5379fb29be5cac3a2749859e]
+STUDY_B_SHA=0ff4f71efe7fd2a3e3014407553f0c3665617d2f (PR #8 head; prereg ad2adda, heldout c64cbb4)
+
+ASSUMPTIONS_IDENTICAL=FALSE
+POLICY_SEMANTICS_COMPARABLE=PARTIAL (8 of 10 families map with caveats; see 03)
+
+R1_FIFO_SCARCITY=PARTIALLY_REPLICATED   (supplementary: REPLICATED)
+R2_NET_SCREEN=NOT_TESTED_IN_ONE_STUDY   (supplementary: REPLICATED)
+R3_SCORE_RANKING=NOT_TESTED_IN_ONE_STUDY   (supplementary: REPLICATED)
+R4_SLOT_HOUR=NOT_TESTED_IN_ONE_STUDY   (supplementary: PARTIALLY_REPLICATED)
+R5_COMPLEXITY=NOT_TESTED_IN_ONE_STUDY   (supplementary: PARTIALLY_REPLICATED)
+R6_CORRELATION=PARTIALLY_REPLICATED   (supplementary: REPLICATED)
+R7_BANDITS=PARTIALLY_REPLICATED   (supplementary: REPLICATED)
+R8_SCORE_QUALITY=NOT_TESTED_IN_ONE_STUDY   (supplementary: NOT_TESTED_IN_ONE_STUDY)
+R9_STARVATION=PARTIALLY_REPLICATED   (supplementary: REPLICATED)
+R10_CAPACITY_SCARCITY=PARTIALLY_REPLICATED   (supplementary: PARTIALLY_REPLICATED)
+
+MATERIAL_CONTRADICTIONS=4 (preemption sign; FIFO-vs-random sign; spam response; K=10 residual value), all attributed to assumptions
+IMPLEMENTATION_BUGS_FOUND=2 confirmed in Study A as merged (run-1 estimator warm-up bias; run-1 normaliser blow-up); 0 in Study B
+
+REPLICATED_LOCAL_HYPOTHESES=H1' (net-value ranking beats arrival order when demand exceeds capacity), H2 (net-edge screen), H5 (bandit/correlation machinery unnecessary without local evidence)
+  partially: H3' (hold-normalised ranking as reference), H4 (uncertainty pooling); conditional: H6 (preemption sign depends on cost/edge)
+
+CAP_CHANGE_AUTHORIZED=FALSE
+LOCAL_INTEGRATION_AUTHORIZED=FALSE
+
+PR8_DISPOSITION=REQUIRES_CORRECTION_BEFORE_MERGE
+
+FINAL_VERDICT=CAPACITY_REPLICATION_INCONCLUSIVE
+```
+
+(Le rapport reproduit ce bloc à la fin de `00_EXECUTIVE_SUMMARY.md`. Je l'ai recopié caractère pour caractère ; les valeurs correspondent à celles du corps du texte de 009, sauf ce que je signale en section 7.)
+
+### Explication clé par clé
+
+| Clé | Ce que ça veut dire | Remarque |
+|---|---|---|
+| `STUDY_A_SHA` | Empreinte du code de l'étude A adjugée. Le niveau *strict* est `main` après la PR #6 (`1a449df`, résultat de trois commits de contenu `1d676ff`, `588dc4b`, `da2f7c4`) ; le niveau *supplémentaire* est la pointe de la branche `cb130415…` | Depuis 009, la branche a avancé jusqu'à `ea3fc74` (PR #10). Le SHA de 009 est donc **périmé** pour A (section 13). |
+| `STUDY_B_SHA` | Tête de la PR #8 `0ff4f71…` ; pré-enregistrement au commit `ad2adda`, held-out au commit `c64cbb4` | Toujours la tête de la PR #8 à l'heure de mon analyse ✔. |
+| `ASSUMPTIONS_IDENTICAL=FALSE` | Les deux simulateurs ne modélisent pas le même monde (26 dimensions, 16 « différentes » purement, cf. 3.3) | Point de départ de « rien n'est poolable ». |
+| `POLICY_SEMANTICS_COMPARABLE=PARTIAL` | 8 familles sur 10 demandées ont un pendant, dont 3 seulement « équivalentes » | Explique la prudence sur R4–R7. |
+| `R1_FIFO_SCARCITY` … `R10_CAPACITY_SCARCITY` | Statut de réplication de chaque question. La valeur *sans* parenthèse est le niveau strict (A tel que fusionné), la parenthèse le niveau supplémentaire | Les « NOT_TESTED_IN_ONE_STUDY » au niveau strict viennent de ce que l'étude A fusionnée ne contient pas les politiques concernées (`RANK_NET`, `FIFO_NETPOS`, `RANK_SCORE_RAW`…) dans sa sortie de tuning. |
+| `MATERIAL_CONTRADICTIONS=4` | Quatre désaccords de signe/réponse jugés « matériels » (préemption, aléatoire vs FIFO, spam, résiduel à K = 10), tous imputés à des hypothèses | Voir 3.8. |
+| `IMPLEMENTATION_BUGS_FOUND=2 … 0` | Deux défauts d'implémentation dans A/`main` (estimateur, normaliseur), auto-déclarés ; zéro dans B | Ces deux défauts sont corrigés dans le run 2 (branche/PR #10), pas dans `main`. |
+| `REPLICATED_LOCAL_HYPOTHESES=H1′, H2, H5` (+ partielles H3′, H4 ; conditionnelle H6) | Les hypothèses à tester un jour sur des données AurumShift, classées par degré de réplication | La clé ne dit pas « à faire », seulement « à juger plus tard ». |
+| `CAP_CHANGE_AUTHORIZED=FALSE` | Rien ici n'autorise à changer le nombre max de positions ouvertes | Cohérent avec `claude.md`. |
+| `LOCAL_INTEGRATION_AUTHORIZED=FALSE` | Rien n'autorise à intégrer quoi que ce soit dans AurumShift | Idem. |
+| `PR8_DISPOSITION=REQUIRES_CORRECTION_BEFORE_MERGE` | La PR #8 est saine mais doit recevoir 4 corrections de texte/provenance avant fusion | À revisiter (13.7). |
+| `FINAL_VERDICT=CAPACITY_REPLICATION_INCONCLUSIVE` | Sur la définition stricte, A ne peut rien répliquer au niveau held-out ; les preuves disponibles sont insuffisantes pour trancher | Le corps du texte ajoute que le niveau supplémentaire pointe vers `CAPACITY_FINDINGS_PARTIALLY_REPLICATED`, mais ce second verdict n'est **pas** dans le bloc. |
+
+---
+
+## 6. Contrôles de validité
+
+### 6.1 Ce que 009 a fait pour se contrôler lui-même
+
+- **Deux niveaux de preuve** : évite de faire dire au niveau supplémentaire (non fusionné, validation) ce qu'il ne peut pas dire.
+- **Rien n'est poolé** : évite l'erreur classique (mélanger des unités).
+- **Sondes causales** (2 sur 4 désaccords) : au lieu de proposer une explication, il la teste en modifiant le simulateur de A.
+- **Bootstrap de vérification** (B) : re-dérive tous les contrastes de B depuis les CSV bruts et signale une différence d'IC (aléatoire − FIFO).
+- **Tests de fuite / anticipation** : 009 *lit* ceux de A (135 runs, 0 échec, canaris détectés 5/5) et de B (métamorphique) ; il **relance** la suite de tests de B (77/77) mais **pas** la suite de fuite de A (déclaré dans 08 « Not verified »).
+- **Déterminisme** : 009 relance rien de tel à part la reproduction ; il rapporte « 300 ré-exécutions de cellules held-out, 0 divergence » de B sans le vérifier (déclaré).
+- **Contrôle négatif / positif** : la sonde D2 (sans décroissance d'attente → effet disparaît) est un contrôle négatif de l'explication ; le fait que le moteur de A retrouve le signe de B avec des paramètres de type B est un contrôle positif de l'explication de D1.
+- **Erreurs corrigées en cours de route / écarts au protocole** : 009 ne consigne aucune correction de sa propre part ; il note l'écart de bootstrap (aléatoire − FIFO) et l'existence d'un avertissement NaN non expliqué. Il se déclare « lecture seule » et affirme n'avoir touché ni A, ni B, ni commenté la PR #8 : conforme à ce que je vois (le commit ne touche que `reports/009…`).
+
+### 6.2 Mon registre de vérifications indépendantes (V1–V25)
+
+Méthode : extraction des corpus (`git archive`) dans le scratchpad, installation de `numpy/pandas/scipy` (absents), recalculs avec le même type de bootstrap que la sonde (4000 rééchantillonnages, `default_rng(1)`).
+
+| # | Chiffre / affirmation de 009 | Verdict | Détail |
+|---|---|---|---|
+| V1 | A run 2 validation : `RANK_NET`−FIFO +0,154 [0,140 ; 0,168] ; `FIFO_NETPOS` +0,100 ; `RANK_SCORE_RAW` +0,134 ; net−brut +0,020 ; net−écran +0,054 ; `SLOTHOUR_DENSITY`−net +0,001 ; `CORR_PENALTY` 0,000 ; `MARGINAL_RISK` +0,004 ; `CLUSTER_CAP` +0,001 ; `LIN_TS` −0,013 ; `LINUCB` −0,029 ; `RANDOM` +0,024 ; RR +0,030 ; quota +0,031 ; `OLDEST_SLOT` −0,085 | ✔ | recalculés sur `validation_raw.csv.gz` (16 704 lignes, 12 familles, 29 politiques) : identiques aux 3 décimales, IC identiques |
+| V2 | FIFO ≈ 0,089 dz, `RANK_NET` ≈ 0,242 | ✔ | moyennes 0,089 / 0,242 |
+| V3 | `COMPOSED`−`RANK_NET` +0,025 [0,017 ; 0,034] ; `UNCERTAINTY_LCB` +0,010 [0,005 ; 0,017] | ✔ | |
+| V4 | δ_equiv 0,02 = 13 % du gain ; δ_B 0,25 = 57 % de 0,435 | ✔ | 0,02/0,154 = 13,0 % ; 0,25/0,435 = 57,5 % |
+| V5 | Strict : `COMPOSED` +0,243, `UNCERTAINTY_LCB` +0,239, `SHADOW_PRICE` +0,232, `MARGINAL_RISK` +0,225, `SLOTHOUR_DENSITY` +0,220, `CORR_PENALTY` +0,216, `LIN_TS` +0,174, `LINUCB` +0,176, `KNAPSACK` +0,172, `OLDEST_SLOT` −0,116 | ✔ | recalculés sur `tuning_raw.csv.gz` (15 552 lignes ; 72 politiques ; 18 bases ; caps 4 et 6) |
+| V6 | S12 = 48 % du poolé ; `SLOTHOUR_DENSITY`−FIFO en S12 = +1,268 ; sans S12 ≈ 0,12 | ✔ | 0,48 ; 1,268 ; 0,125 |
+| V7 | B held-out H1 : `FIFO_SCREEN` +0,164 [0,128 ; 0,200] 11/13 ; `SCORE_RANK` +0,365 12/13 ; `SLOTHOUR` +0,435 13/13 ; `SLOTHOUR`−`SCORE_RANK` +0,070 11/13 ; `LCB`−`SLOTHOUR` +0,062 ; `CORR_AWARE` −0,022 ; `LINTS` −0,020 ; `SHADOW` +0,009 ; `OLDEST_SLOT` +0,185 | ✔ | sur `H1_primary.csv` (13 scénarios × 20 graines) ; le fichier `H1_paired_macro.csv` de B donne les mêmes points (IC légèrement différents : ex. `OLDEST_SLOT` [0,140 ; 0,229] vs [0,149 ; 0,221]) |
+| V8 | B : `RANDOM`−FIFO −0,042, IC B [−0,087 ; 0,001], re-bootstrap 009 [−0,072 ; −0,012] | ✔ | les deux IC existent bien (`H1_paired_macro.csv` et sonde) ; idem `EQUAL_QUOTA` : B [−0,082 ; 0,002], 009 [−0,076 ; −0,007] (non signalé par 009) |
+| V9 | B, effet par K : +0,679 / +0,476 / +0,156 / −0,041 (`SLOTHOUR`−FIFO, 10 graines) | ✔ | `H3_capacity_sweep.csv` ; FIFO macro 1,834/1,814/1,720/1,312 |
+| V10 | B : FIFO « tous slots pleins » 0,84/0,78/0,65/0,12 ; occupation 0,61 à K = 10 | ✔ | `full_frac` 0,839/0,784/0,646/0,123 ; occupation = 3 657,7 / (10 × 600) = 0,61 |
+| V11 | A : `RANK_NET`−FIFO par cap 0,192/0,176/0,148/0,099 ; `NETPOS` 0,117/0,109/0,097/0,076 ; occupation FIFO 0,90/0,88/0,85/0,77 | ✔ | |
+| V12 | Sortie complète de la sonde (4 blocs) | ✔ | relancée : `diff` **vide** vs la sortie livrée (durée 18 s) |
+| V13 | Part de l'écran 33 % (edge/coût de type B) | ✔ | 0,454 / 1,393 = 32,6 % ; 72 % (S3 par défaut) = 0,549/0,759 = 72,3 % |
+| V14 | Confusion d'ingestion B : FIFO 1,81–1,85 ; écart à `SLOTHOUR` 0,44–0,48 | ✔ | FIFO 1,810–1,853 ; écarts 0,449/0,470/0,440/0,480 selon RAW/DEDUP/COOLDOWN/SCORE_UPDATE — j'ai recalculé les écarts : (2,259−1,814)=0,445 ; (2,280−1,845)=0,435 ; (2,195−1,853)=0,342 ; (2,290−1,810)=0,480 → **✘ mineur** : l'écart en mode COOLDOWN est 0,34, pas 0,44–0,48 (le COOLDOWN pénalise les classeurs, ce que B écrit lui-même) |
+| V15 | D3 de B : `OLDEST_SLOT` 3,00 → 1,51 → 0,02, FIFO 2,47 → 1,74 → 1,00 | ✔ (avec précision) | ce sont des **moyennes de S3 et S6** (croyance « connue ») ; 009 ne l'indique pas |
+| V16 | Hors S6, gain macro de `SLOTHOUR`−`SCORE_RANK` = +0,046 ; `LCB`−`SLOTHOUR` gagne 10/13 | ✔ | 0,046 ; 10/13 |
+| V17 | B : famine douce 0,016 (FIFO) → 0,03–0,06 ; déni max 215 → 273–330 h ; part max d'admission 0,144 → 0,155–0,168 ; famine dure ≤ 0,005. A K = 4 : min admit 0,336 → 0,229 ; part max 0,153 → 0,180 ; HHI 0,531 → 0,567 ; famine dure 0 → 0,014 (`LIN_TS` 0,13) ; `MARGINAL_RISK` sd 87 → 77, drawdown 323 → 265 | ✔ | B : 0,0162 → 0,0315–0,0586 ; 214,8 → 272,7–330,5 ; 0,144 → 0,152–0,168 ; max 0,0048. A : 0,336 → 0,229 ; 0,153 → 0,180 ; 0,531 → 0,567 ; 0 → 0,014 ; 0,132 ; 87,2 → 77,0 ; 322,8 → 264,9 |
+| V18 | B D2 : « `SCORE_RANK` (2,24 vs 1,89) reste au-dessus de FIFO avec un gain coupé ≈ 47 % » | ✔ / **✘** | 2,240 vs 1,894 ✔ ; mais le gain de `SCORE_RANK` passe de 1,108 à 0,346 = **−69 %** (pas −47 %) ; −47 % vaut pour `SLOTHOUR` (−47,3 %) et `UNCERTAINTY_LCB` (−47,6 %). B écrit lui-même « 45–70 % » : 009 a repris le bas de la fourchette |
+| V19 | Tuning A : 108 jobs, 72 politiques, 15 552 lignes | ✔ | 15 552 = 108 × 2 caps × 72 |
+| V20 | B : 77 tests passent | ✔ | `77 passed in 17.61s` (dans une copie scratch) |
+| V21 | PR #8 : 75 fichiers, +49 515 | ✔ | `git diff --shortstat origin/main...` : 75 files, 49 515 insertions |
+| V22 | A `main` : Erlang-B 9 lignes toutes `sim_block < erlang_b`, erreur 0,002–0,020 ; fuite : 27 politiques × 5 cas = 135 runs, 0 échec, canaris 5/5 | ✔ | 0,0023–0,0197 ; 135 runs ; `failures: []` |
+| V23 | B : hash des paramètres gelés = hash pré-enregistré ; `determinism_check.json` existe | ✔ | `ebcd46c4…` identique ; `hash_mismatches: 0`, `sampled: 300` (fichier lu ; les 300 ré-exécutions **non relancées** = ?) |
+| V24 | (mon ajout) A branche : pré-enregistrement v2 lié à des empreintes | ✔ | `tuned_params.json` sha `d95c9910…` ; `policies.py` `0fcb4129…` ; `env.py` `e98f3d97…` ; `heldout_verdict.py` `e844d35b…` — toutes égales à celles inscrites dans `PREREGISTRATION.json` ; `policies.py` et `env.py` **identiques** entre `cb13041` et la pointe `ea3fc74` (le code n'a pas changé après les résultats de 009) |
+| V25 | `main` ne contient que les sorties du tour 1 du run 1 (non octet-identique à `superseded_run1/`) | ✔ | `tuned_params.json` de `main` = `tuned_params_round1.json` (empreinte `e7ddf828…`) ; ≠ `tuned_params.json` du dossier `superseded_run1` (round 2) |
+
+**Bilan des vérifications :** 22 des 25 lignes sont ✔ sans réserve ; 2 comportent une imprécision mineure (V14 : mode COOLDOWN ; V18 : 47 % vs 69 % pour `SCORE_RANK`) ; V23 (relance des 300 cellules) reste **?** pour la partie « relance » ; aucun chiffre clé de 009 n'est faux au sens de l'écart matériel.
+
+---
+
+## 7. Critique indépendante
+
+### 7.1 Ce que 009 fait bien
+- Il **refuse de trancher au-delà de ses preuves** (deux niveaux ; un verdict « inconclusif » assumé).
+- Il **teste** deux de ses explications plutôt que de les affirmer ; la sonde est reproductible à l'octet.
+- Il **sépare** les faits de comparaison (signe, ordre, parts) des faits de magnitude.
+- Il ne fait **aucune** affirmation de compatibilité AurumShift ; `CAP_CHANGE_AUTHORIZED=FALSE` est cohérent avec `claude.md`.
+
+### 7.2 Points faibles
+
+1. **Les labels de réplication ne sont pas définis numériquement.** « PARTIALLY_REPLICATED » couvre : « même signe, taille très différente » (R4), « effet répliqué, label différent » (R5), « direction identique, magnitudes différentes » (R10), et « tuning seul » (strict). Quatre situations distinctes sous une seule étiquette ; le décompte « 6 REPLICATED / 3 PARTIALLY » dépend de jugements non écrits.
+2. **La sonde D1 modifie huit paramètres d'un coup** (`mu_mean` 10→22, `fee_lo/hi`, `slip_lo/hi`, `dur_base` 12→7, `tau`→∞, `evict_extra` 3→0 — voir `adjudication_probe.py`, dictionnaire `BL`). Seul l'ajout « coût ×3 » est un levier unique. La conclusion « cause : niveaux de coût et d'edge » est donc **plausible mais pas isolée** : la suppression des 3 bps de frais d'éviction, le raccourcissement de la durée de base ou l'absence de décroissance pourraient à eux seuls peser. Aucune ablation paramètre par paramètre. Et A tue `OLDEST_SLOT` avec ≈ 155 fermetures forcées par run (données A, section 13) : ces 3 bps × 155 sont un candidat sérieux.
+3. **Sondes à faible effectif** : 20 graines, une seule famille (S3), un seul cap (4). D2 rapporte ±0,026 ; D1 ne rapporte pas d'IC du tout (moyennes seulement). Pour un signe qui bascule de −1,4 à +0,4, c'est amplement suffisant ; pour la conclusion « −0,019 n.s. » de D2, c'est à la limite de la puissance.
+4. **Asymétrie de la validation croisée** : 009 transplante le monde de B dans le moteur de A, jamais l'inverse (le moteur de B n'est pas rejoué avec des hypothèses de type A : par exemple avec un edge qui décroît pendant l'attente). Le diagnostic est donc unilatéral.
+5. **Comparer une validation à un held-out** : le niveau supplémentaire met la *validation* de A (sur laquelle les seuils ont été fixés) face au *held-out* de B. C'est le point le plus délicat de la méthode. Le held-out de A (section 13) montre que l'inquiétude était **modérée** : le décalage validation → held-out pour les contrastes cités est ≤ 0,015 dz et ne change aucun signe (13.2).
+6. **Dénominateurs mélangés dans les « parts »** : R2 utilise `SCORE_RANK` comme base (45 %), R5 utilise `SLOTHOUR` (14 %), R4 utilise `SCORE_RANK` (19 %). C'est écrit, mais la colonne « part du gain simple » du rapport 06 laisse penser à une base unique.
+7. **Les blocs du bootstrap de A ne sont pas indépendants** : variantes d'une même famille partagent la structure ; A le dit (limitation 4). 009 le reprend sans le quantifier. Les IC de A sont donc probablement **trop étroits** (A : IC ±0,01 sur 450 blocs) par rapport à l'incertitude « design ».
+8. **Résumé « famine modeste »** : côté B, la famine douce est multipliée par 2 à 3,6 (0,016 → 0,032–0,059) et le déni maximal passe de 215 h à 273–330 h (+27 % à +54 %). C'est un jugement de valeur (« modeste »). B lui-même parle de « 2–7× » (00, point 6).
+9. **Verdict final unique alors que le texte en suggère deux.** Le corps du texte de 00 dit « suppl. → PARTIALLY_REPLICATED », mais `FINAL_VERDICT` est `INCONCLUSIVE`. C'est cohérent avec la règle « strict d'abord » mais **le bloc final est plus pessimiste que la lecture d'ensemble** : un lecteur pressé lira « on ne sait rien » alors que la direction est claire.
+10. **Choix en bord de grille (hérités)** : B a `SHADOW θ = 0` (bord bas) et `UNCERTAINTY_LCB ω = 0,6` (bord haut) ; A a des optima au bord (limitation 5 de A). 009 n'en fait pas un point de sa critique, alors qu'il en dépend pour R5 (le « meilleur complexe » est justement choisi au bord).
+11. **Erreurs/imprécisions locales** (voir V14, V15, V18) : COOLDOWN, moyenne S3/S6 non signalée, 47 % vs 69 %. Aucune ne change de conclusion.
+12. **Un paragraphe de 08 est trop absolu** : « 0 bug dans B » — vrai au sens où 77 tests passent, où le hash est cohérent, et où la lecture du code n'a rien montré ; mais 009 n'a pas relancé le tuning/held-out de B. La formule correcte est « aucun défaut *détecté* », que 009 emploie d'ailleurs ailleurs (« I found no code defect »).
+
+### 7.3 Hypothèses fragiles sur lesquelles repose l'ensemble
+- Deux **générateurs de mondes bricolés** aux hypothèses proches en ce qui concerne le score (calibré par construction, pente 1), le coût (constant par admission) et l'accrual linéaire. Leur accord est en partie un accord **entre deux constructions du même auteur-modèle**, ce que 009 dit (point 12 de 04) mais dont il ne tire pas toutes les conséquences (le mot « replicated » est trompeur : une réplication indépendante suppose des données ou des hypothèses indépendantes).
+- La comparabilité « par parts de gain » suppose que le dénominateur (gain du classement simple) est du même type dans les deux mondes ; or A mesure l'edge *latent* et B le net *réalisé*.
+
+### 7.4 Ce que les chiffres ne prouvent pas
+- Rien sur AurumShift, sur un plafond, sur un allocateur, sur le comportement PAPER.
+- Pas que « le classement net est meilleur en pratique » : seulement qu'il l'est dans deux simulateurs où le score est bon par construction. Si le score réel est mal calibré, l'avantage fond de 45–70 % (B) ou s'inverse (A).
+- Pas que les 4 désaccords sont *dus* aux hypothèses désignées : D1 et D2 sont testés (D2 proprement, D1 avec les réserves ci-dessus) ; D3, D4, D5 ne sont que « lus dans le code ».
+- Pas que « les bandits sont inutiles » : seulement qu'ils n'aident pas quand le score est calibré.
+
+### 7.5 Écarts entre rapports et résultats bruts / contradictions internes
+- **Aucun écart matériel** entre les chiffres clés de 009 et les fichiers bruts (V1–V25).
+- Écarts mineurs : V14 (COOLDOWN), V18 (69 % vs 47 %), V15 (moyenne S3/S6), V8 (quota non signalé).
+- **Contradictions internes légères** : (i) 00 range R6 en « REPLICATED (no) », 05 le compte parmi les 6 REPLICATED : l'étiquette « répliqué » signifie ici « l'absence de gain se réplique » — sémantique ambiguë ; (ii) 09 déclare H5 « répliquée » tout en reconnaissant « modest drawdown/PnL-dispersion reductions in both » ; c'est cohérent si H5 est purement une hypothèse de rendement, mais la formulation de la clé (« machinery unnecessary ») dépasse ce que le rapport 06 montre pour le risque ; (iii) 01 indique la PR #8 « mergeable_state clean », 10 la juge non fusionnable en l'état : deux niveaux de « fusionnable » (technique vs éditorial), sans le dire.
