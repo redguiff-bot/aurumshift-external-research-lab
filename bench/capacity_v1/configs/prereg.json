@@ -1,0 +1,78 @@
+{
+  "study": "AURUMSHIFT_EXTERNAL_RISK_CAPACITY_AND_TURNOVER_ALLOCATION_V1",
+  "status": "PRE-REGISTERED BEFORE ANY HELDOUT EXECUTION (commit order is the evidence)",
+  "splits": {
+    "tuning": "seeds 1000-1005, split=tuning (N=10,G=5,tau=8,cv=0.6)",
+    "validation": "seeds 2000-2007 (selection among tuning top-3); further validation-split experiments use seeds 6000-7999",
+    "heldout": "seeds 3000-3019, split=heldout (N=15,G=5,tau=10,cv=0.7, different edge/vol/duration/cost ranges), scenarios S1..S12 + S5b"
+  },
+  "heldout_runs": {
+    "H1_primary": "13 scenarios x 20 seeds x 12 policies + ORACLE_GREEDY_UB, K=4, primary ingest per frozen_params.json, cost belief known",
+    "H2_ingest_matrix": "13 scenarios x 10 seeds (3000-3009) x all policies x 4 ingest modes, K=4 (descriptive; spam handling)",
+    "H3_capacity_sweep": "13 scenarios x 10 seeds (3000-3009) x all policies, K in {3,4,6,10}, offered load fixed in absolute terms, params NOT retuned per K (descriptive only)"
+  },
+  "non_heldout_diagnostics": "robustness OFAT, score-quality ladder, cost sensitivity, failure-mode battery, parameter-sensitivity grids are run on split=validation with fresh seeds, using frozen params",
+  "primary_metric": "net_per_avail_slot_hour (bps of net outcome per available slot-hour = net_total/(K*W))",
+  "secondary_metrics_reported_separately_no_composite": [
+    "net_total",
+    "net_per_busy_slot_hour",
+    "regret_vs_oracle_ub (oracle M1 - policy M1, paired by scenario/seed)",
+    "turnover_per_slot_hour",
+    "idle_slot_hours",
+    "idle_with_backlog",
+    "hhi_inst",
+    "hhi_group",
+    "top_inst_share",
+    "starve_inst_rate",
+    "starve_soft_rate",
+    "max_denial_hours",
+    "rej_rate_instw",
+    "rej_rate_raw",
+    "hq_capture",
+    "pnl_std",
+    "worst_24h",
+    "max_drawdown",
+    "churn_reentry_frac",
+    "occ_std",
+    "mean_hold",
+    "sel_time_s"
+  ],
+  "aggregation": "per-scenario mean over seeds; macro-average over scenarios with equal weights; paired bootstrap (2000 resamples over seeds, seed-matched) for CIs",
+  "equivalence_margin_delta_bps_per_avail_slot_hour": 0.25,
+  "delta_sensitivity": [
+    0.1,
+    0.5
+  ],
+  "delta_rationale": "INFERENCE: ~10% of typical FIFO M1 (1-3 bps/slot-hour) in this synthetic scale; not derived from any AurumShift quantity",
+  "rules": {
+    "FIFO_FAILURE_SCENARIO_vs_raw_FIFO": "scenario where >=1 of {SCORE_RANK,SLOTHOUR,SLOTHOUR_SHADOW,UNCERTAINTY_LCB,CORR_AWARE,LINTS} has paired CI_lower(M1 diff vs FIFO@RAW) > delta",
+    "FIFO_FAILURE_SCENARIO_vs_FIFO_SCREEN": "same, against FIFO_SCREEN at its frozen ingest (strong simple control)",
+    "FIFO_EQUIVALENT_SCENARIO": "no policy in that set has CI_lower > delta vs the reference FIFO variant (reported for both raw and strong variants)",
+    "SIMPLE_SET": [
+      "FIFO_SCREEN",
+      "SCORE_RANK",
+      "SLOTHOUR",
+      "ROUND_ROBIN"
+    ],
+    "COMPLEX_SET": [
+      "SLOTHOUR_SHADOW",
+      "UNCERTAINTY_LCB",
+      "CORR_AWARE",
+      "LINTS"
+    ],
+    "COMPLEXITY_JUSTIFIED": "TRUE iff some COMPLEX method's macro paired diff vs the best SIMPLE method (by heldout macro M1) is > delta AND bootstrap CI_lower > 0 AND it has point-estimate win in >= 8/13 scenarios",
+    "BEST_*_REFERENCE": "SLOT_HOUR: argmax macro M1 among {SLOTHOUR,SLOTHOUR_SHADOW,SCORE_RANK}; DIVERSIFICATION: reported from S5/S5b/F_corr_collapse portfolio metrics (pnl_std,worst_24h,hhi_group,M1) without composite, choose by macro M1 among {CORR_AWARE vs SLOTHOUR pair} plus lowest worst-24h; TURNOVER: argmax M1 among {SLOTHOUR,SLOTHOUR_SHADOW,OLDEST_SLOT} reported with churn/idle",
+    "VERDICT": [
+      "B = implementable methods beating FIFO@RAW with macro diff > delta and CI_lower > 0",
+      "B empty -> FIFO_REMAINS_SUFFICIENT_REFERENCE",
+      "T = methods whose macro M1 is within delta of the best implementable method; each member must win vs FIFO@RAW in >= 8/13 scenarios by point estimate else removed",
+      "|T|==1 -> CAPACITY_ALLOCATION_REFERENCE_SUPPORTED; |T|>=2 -> MULTIPLE_CAPACITY_METHODS_SUPPORTED",
+      "no method (incl. FIFO) beats RANDOM@RAW by delta -> NO_CAPACITY_METHOD_SUPPORTED",
+      "any scientific invalidation (leak test failure, non-determinism) -> STUDY_INCONCLUSIVE"
+    ]
+  },
+  "no_post_hoc_tuning": "frozen_params.json sha256 recorded; heldout results are written once to results/heldout and never overwritten",
+  "src_sha256": "952d5c02e31a5f67546c83895d4f83f152eb57ad0ecca50d61a759f96b12d43d",
+  "frozen_params_sha256": "ebcd46c4668407ad00e3248d0b92948d30d3605b3fefce093d4d8b4a0c7b1383",
+  "cap_disclaimer": "cap sweep is descriptive synthetic sensitivity; NO production cap recommendation is made or implied"
+}
