@@ -39,12 +39,12 @@ ABL = {
     "EWMA_MISSING_NEG": ("EWMA", dict(missing_neg=True)),
     "SLEEP_INACTIVE_NEG": ("SLEEP_HEDGE", dict(inactive_neg=True)),
     "SLEEP_MISSING_NEG": ("SLEEP_HEDGE", dict(missing_neg=True)),
-    "EG_UNCENTRED": ("EG", dict(centre=False)),
-    "SLEEP_UNCENTRED": ("SLEEP_HEDGE", dict(centre=False)),
+    "EG_NOMASS": ("EG", dict(centre=False, keepmass=False)),
+    "SLEEP_NOMASS": ("SLEEP_HEDGE", dict(centre=False, keepmass=False)),
 }
 FACT = {k: v[0] for k, v in REG.items()}
 FACT.update({"EWMA_INACTIVE_NEG": REG["EWMA"][0], "EWMA_MISSING_NEG": REG["EWMA"][0], "SLEEP_INACTIVE_NEG": REG["SLEEP_HEDGE"][0],
-             "SLEEP_MISSING_NEG": REG["SLEEP_HEDGE"][0], "EG_UNCENTRED": REG["EG"][0], "SLEEP_UNCENTRED": REG["SLEEP_HEDGE"][0]})
+             "SLEEP_MISSING_NEG": REG["SLEEP_HEDGE"][0], "EG_NOMASS": REG["EG"][0], "SLEEP_NOMASS": REG["SLEEP_HEDGE"][0]})
 
 
 def prep(W):

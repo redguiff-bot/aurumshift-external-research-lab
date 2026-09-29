@@ -18,6 +18,15 @@ def _softmax_masked(lw, mask):
     return _norm(np.exp(np.where(mask, lw - m, -np.inf)), mask)
 
 
+def _keep_mass(lw, known, U, m0):
+    """Shift the log-weights of the updated block U by the constant c that restores its posterior mass to m0 (exact specialist normalisation):
+    e^c = m0 (1-m1) / ((1-m0) m1), with m1 the block mass after the raw update. No-op if the block is the whole known set or empty."""
+    v = _softmax_masked(lw, known); m1 = np.where(U, v, 0).sum(1, keepdims=True)
+    ok = U.any(1, keepdims=True) & (m0 > 1e-12) & (m0 < 1 - 1e-12) & (m1 > 1e-12) & (m1 < 1 - 1e-12)
+    c = np.log(np.where(ok, m0, .5) * np.where(ok, 1 - m1, .5)) - np.log(np.where(ok, 1 - m0, .5) * np.where(ok, m1, .5))
+    return np.where(U & ok, lw + c, lw)
+
+
 class Base:
     name = "base"
     def __init__(self, S, K, **kw):
@@ -96,9 +105,9 @@ class SleepHedge(Base):
     Optional: fixed-share alpha, discount gamma (clock vs awake), mixing-past-posteriors, loss 'brier'|'log', centring, neg-ablations."""
     name = "SLEEP_HEDGE"
     def __init__(self, S, K, eta=10., alpha=0., gamma=1., disc="awake", mpp=0., loss="brier", centre=True,
-                 inactive_neg=False, missing_neg=False, kappa=None, floor=0., **kw):
+                 inactive_neg=False, missing_neg=False, kappa=None, floor=0., keepmass=True, **kw):
         super().__init__(S, K, eta=eta, alpha=alpha, gamma=gamma, disc=disc, mpp=mpp, loss=loss, centre=centre,
-                         inactive_neg=inactive_neg, missing_neg=missing_neg, floor=floor)
+                         inactive_neg=inactive_neg, missing_neg=missing_neg, floor=floor, keepmass=keepmass)
         self.lw = np.zeros((S, K)); self.vbar = np.zeros((S, K)); self.nb = 0
         if kappa is not None: self.eta = kappa
     def _enter(self, awake):
@@ -128,8 +137,7 @@ class SleepHedge(Base):
         if self.centre and (self.inactive_neg or self.missing_neg) is False:
             pass
         # keep the updated block's total posterior mass fixed (specialist normalisation)
-        vk2 = _softmax_masked(lw, self.known); m1 = np.where(U, vk2, 0).sum(1, keepdims=True)
-        lw = np.where(U & (m1 > 0) & (m0 > 0), lw + np.log(np.where(m0 > 0, m0, 1) / np.where(m1 > 0, m1, 1)), lw)
+        if self.keepmass: lw = _keep_mass(lw, self.known, U, m0)
         if self.gamma < 1:                                   # decay toward uniform-over-known (log-weights centred)
             kn = self.known; c = (lw * kn).sum(1, keepdims=True) / np.maximum(kn.sum(1, keepdims=True), 1)
             dec = self.known if self.disc == "clock" else U
@@ -146,8 +154,8 @@ class SleepHedge(Base):
 class EG(Base):
     """Exponentiated Gradient on the mixture Brier loss (gradient 2(yhat-y)p_i), sleeping-adapted; centred (default) or raw."""
     name = "EG"
-    def __init__(self, S, K, eta=1., centre=True, **kw):
-        super().__init__(S, K, eta=eta, centre=centre); self.h = SleepHedge(S, K, eta=1.0)
+    def __init__(self, S, K, eta=1., centre=True, keepmass=True, **kw):
+        super().__init__(S, K, eta=eta, centre=centre, keepmass=keepmass); self.h = SleepHedge(S, K, eta=1.0)
     def weights(self, awake, ctx): return self.h.weights(awake, ctx)
     def update(self, p, y, awake, observed, w, ctx):
         h = self.h; h.t += 1; wu = np.where(observed, w, 0.0); sw = wu.sum(1, keepdims=True)
@@ -156,8 +164,7 @@ class EG(Base):
         gbar = np.where(sw > 0, (wu * g).sum(1, keepdims=True) / np.where(sw > 0, sw, 1), 0.0) if self.centre else 0.0
         U = observed; vk = _softmax_masked(h.lw, h.known); m0 = np.where(U, vk, 0).sum(1, keepdims=True)
         lw = np.where(U, h.lw - self.eta * (g - gbar), h.lw)
-        vk2 = _softmax_masked(lw, h.known); m1 = np.where(U, vk2, 0).sum(1, keepdims=True)
-        lw = np.where(U & (m1 > 0) & (m0 > 0), lw + np.log(np.where(m0 > 0, m0, 1) / np.where(m1 > 0, m1, 1)), lw)
+        if self.keepmass: lw = _keep_mass(lw, h.known, U, m0)
         h.lw = lw - np.where(h.known, lw, -np.inf).max(1, keepdims=True).clip(-1e9)
 
 

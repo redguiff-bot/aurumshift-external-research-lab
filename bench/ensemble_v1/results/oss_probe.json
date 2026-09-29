@@ -1,0 +1,60 @@
+{
+ "river_version": "0.26.1",
+ "S0_BASE_CLEAN": {
+  "river_EWA_half": {
+   "lr": 0.3,
+   "mse": 0.030851327829816172
+  },
+  "river_EWA_meanfill": {
+   "lr": 0.3,
+   "mse": 0.022566992432086777
+  },
+  "EQUAL": {
+   "mse": 0.008040846134256291
+  },
+  "SLEEP_HEDGE(tuned)": {
+   "mse": 0.007664319160832256
+  },
+  "ORACLE": {
+   "mse": 0.0037334356682064205
+  }
+ },
+ "S1_SEMANTICS_GAPS": {
+  "river_EWA_half": {
+   "lr": 0.3,
+   "mse": 0.03537150592283428
+  },
+  "river_EWA_meanfill": {
+   "lr": 1.0,
+   "mse": 0.019454782615805508
+  },
+  "EQUAL": {
+   "mse": 0.009400479500859477
+  },
+  "SLEEP_HEDGE(tuned)": {
+   "mse": 0.00912646761992005
+  },
+  "ORACLE": {
+   "mse": 0.004766399402530682
+  }
+ },
+ "S3_RECURRENCE": {
+  "river_EWA_half": {
+   "lr": 0.3,
+   "mse": 0.02922600202538736
+  },
+  "river_EWA_meanfill": {
+   "lr": 0.3,
+   "mse": 0.012900150104615784
+  },
+  "EQUAL": {
+   "mse": 0.008586887137071446
+  },
+  "SLEEP_HEDGE(tuned)": {
+   "mse": 0.00625158603202325
+  },
+  "ORACLE": {
+   "mse": 0.003548157786490534
+  }
+ }
+}

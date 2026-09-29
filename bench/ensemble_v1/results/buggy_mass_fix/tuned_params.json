@@ -33,7 +33,7 @@
   "kappa": 0.01
  },
  "MPP": {
-  "eta": 1.0,
+  "eta": 0.3,
   "mpp": 0.005
  },
  "SLEEP_FLOOR": {

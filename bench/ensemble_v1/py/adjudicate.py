@@ -10,7 +10,7 @@ TRACK = ["FIXED_SHARE", "DISC_AWAKE", "MPP"]                  # sleeping + track
 FAMS = {"core": CORE, "tracking": TRACK, "context": ["CONTEXT_MIX"], "diversity": ["DIVERSITY"]}
 CAND = CORE + TRACK + ["CONTEXT_MIX", "DIVERSITY", "DISC_CLOCK", "HEDGE_CUM"]
 BAND = ["EXP3", "EPS_GREEDY"]
-ABL = ["EWMA_INACTIVE_NEG", "EWMA_MISSING_NEG", "SLEEP_INACTIVE_NEG", "SLEEP_MISSING_NEG", "EG_UNCENTRED", "SLEEP_UNCENTRED"]
+ABL = ["EWMA_INACTIVE_NEG", "EWMA_MISSING_NEG", "SLEEP_INACTIVE_NEG", "SLEEP_MISSING_NEG", "EG_NOMASS", "SLEEP_NOMASS"]
 
 df = pd.read_csv(os.path.join(RES, "heldout_raw.csv.gz")); df = df[df.cfg.isin(["tuned", "tuned+ablation", "{}"])]
 SC = sorted(df.scenario.unique()); NBLK = 100
@@ -71,7 +71,7 @@ GD = pd.DataFrame(G).T; S = S.join(GD)
 # -------- semantic ablations (paired) ---------------------------------------------------------------------------------
 sem = {}
 for a, b in [("EWMA_INACTIVE_NEG", "EWMA"), ("EWMA_MISSING_NEG", "EWMA"), ("SLEEP_INACTIVE_NEG", "SLEEP_HEDGE"), ("SLEEP_MISSING_NEG", "SLEEP_HEDGE"),
-             ("EG_UNCENTRED", "EG"), ("SLEEP_UNCENTRED", "SLEEP_HEDGE")]:
+             ("EG_NOMASS", "EG"), ("SLEEP_NOMASS", "SLEEP_HEDGE")]:
     sem[a] = {s: paired(s, a, b) for s in SC}                      # positive = ablation harms
 out["semantic_ablation_paired_delta_nrm(mean,lo,hi)"] = sem
 # -------- verdict tree --------------------------------------------------------------------------------------------------
