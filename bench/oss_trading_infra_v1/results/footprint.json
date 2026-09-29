@@ -1,0 +1,278 @@
+{
+ "packages": {
+  "backtesting": {
+   "version": "0.6.6",
+   "license": "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+   "hard_requires": 3,
+   "own_files_mb": 0.6,
+   "venv": "bktpy"
+  },
+  "hftbacktest": {
+   "version": "2.4.4",
+   "license": "License :: OSI Approved :: MIT License",
+   "hard_requires": 5,
+   "own_files_mb": 16.0,
+   "venv": "core"
+  },
+  "river": {
+   "version": "0.26.1",
+   "license": "BSD-3-Clause",
+   "hard_requires": 3,
+   "own_files_mb": 5.3,
+   "venv": "core"
+  },
+  "exchange_calendars": {
+   "version": "4.13.2",
+   "license": "Apache-2.0",
+   "hard_requires": 6,
+   "own_files_mb": 0.7,
+   "venv": "core"
+  },
+  "pandas_market_calendars": {
+   "version": "5.4.0",
+   "license": "License :: OSI Approved :: MIT License",
+   "hard_requires": 2,
+   "own_files_mb": 0.5,
+   "venv": "core"
+  },
+  "pandera": {
+   "version": "0.33.1",
+   "license": "License :: OSI Approved :: MIT License",
+   "hard_requires": 5,
+   "own_files_mb": 1.9,
+   "venv": "core"
+  },
+  "duckdb": {
+   "version": "1.5.6",
+   "license": "License :: OSI Approved :: MIT License",
+   "hard_requires": 0,
+   "own_files_mb": 61.0,
+   "venv": "core"
+  },
+  "polars": {
+   "version": "1.44.2",
+   "license": "License :: OSI Approved :: MIT License",
+   "hard_requires": 1,
+   "own_files_mb": 4.3,
+   "venv": "core"
+  },
+  "pyarrow": {
+   "version": "25.0.1",
+   "license": "Apache-2.0",
+   "hard_requires": 0,
+   "own_files_mb": 157.1,
+   "venv": "core"
+  },
+  "sortedcontainers": {
+   "version": "2.4.0",
+   "license": "License :: OSI Approved :: Apache Software License",
+   "hard_requires": 0,
+   "own_files_mb": 0.1,
+   "venv": "core"
+  },
+  "riskfolio-lib": {
+   "version": "7.3.0",
+   "license": "License :: OSI Approved :: BSD License",
+   "hard_requires": 15,
+   "own_files_mb": 1.4,
+   "venv": "core"
+  },
+  "PyPortfolioOpt": {
+   "version": "1.6.0",
+   "license": "License :: OSI Approved :: MIT License",
+   "hard_requires": 6,
+   "own_files_mb": 0.2,
+   "venv": "core"
+  },
+  "skfolio": {
+   "version": "1.4.9",
+   "license": "License :: OSI Approved :: BSD License",
+   "hard_requires": 7,
+   "own_files_mb": 3.8,
+   "venv": "core"
+  },
+  "empyrical-reloaded": {
+   "version": "0.5.12",
+   "license": "License :: OSI Approved :: Apache Software License",
+   "hard_requires": 8,
+   "own_files_mb": 0.1,
+   "venv": "core"
+  },
+  "ta": {
+   "version": "0.11.0",
+   "license": "License :: OSI Approved :: MIT License",
+   "hard_requires": 2,
+   "own_files_mb": 0.2,
+   "venv": "core"
+  },
+  "backtrader": {
+   "version": "1.9.78.123",
+   "license": "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+   "hard_requires": 0,
+   "own_files_mb": 1.3,
+   "venv": "core"
+  },
+  "bt": {
+   "version": "1.2.3",
+   "license": "License :: OSI Approved :: MIT License",
+   "hard_requires": 3,
+   "own_files_mb": 5.6,
+   "venv": "core"
+  },
+  "ccxt": {
+   "version": "4.5.84",
+   "license": "MIT",
+   "hard_requires": 23,
+   "own_files_mb": 38.6,
+   "venv": "core"
+  },
+  "numba": {
+   "version": "0.67.0",
+   "license": "License :: OSI Approved :: BSD License",
+   "hard_requires": 2,
+   "own_files_mb": 15.7,
+   "venv": "core"
+  },
+  "vectorbt": {
+   "version": "1.1.1",
+   "license": "",
+   "hard_requires": 17,
+   "own_files_mb": 2.4,
+   "venv": "vbt"
+  },
+  "great_expectations": {
+   "version": "1.23.2",
+   "license": "License :: OSI Approved :: Apache Software License",
+   "hard_requires": 22,
+   "own_files_mb": 13.7,
+   "venv": "gx"
+  },
+  "zipline-reloaded": {
+   "version": "3.1.1",
+   "license": "Apache-2.0",
+   "hard_requires": 28,
+   "own_files_mb": 57.1,
+   "venv": "zipline"
+  },
+  "arcticdb": {
+   "version": "6.26.0",
+   "license": "Business Source License 1.1 (See LICENSE.txt)",
+   "hard_requires": 8,
+   "own_files_mb": 72.2,
+   "venv": "arctic"
+  },
+  "quantstats": {
+   "version": "0.0.86",
+   "license": "Apache-2.0",
+   "hard_requires": 8,
+   "own_files_mb": 0.5,
+   "venv": "misc"
+  },
+  "pandas-ta": {
+   "version": "0.4.71b0",
+   "license": "",
+   "hard_requires": 4,
+   "own_files_mb": 0.6,
+   "venv": "misc"
+  },
+  "arch": {
+   "version": "8.0.0",
+   "license": "NCSA",
+   "hard_requires": 5,
+   "own_files_mb": 2.6,
+   "venv": "misc"
+  },
+  "tsfresh": {
+   "version": "0.21.2",
+   "license": "MIT",
+   "hard_requires": 12,
+   "own_files_mb": 0.3,
+   "venv": "misc"
+  },
+  "frictionless": {
+   "version": "5.19.1",
+   "license": "MIT",
+   "hard_requires": 20,
+   "own_files_mb": 1.7,
+   "venv": "misc"
+  },
+  "pointblank": {
+   "version": "0.27.0",
+   "license": "License :: OSI Approved :: MIT License",
+   "hard_requires": 10,
+   "own_files_mb": 29.5,
+   "venv": "misc"
+  },
+  "cryptofeed": {
+   "version": "2.5.0",
+   "license": "XFree86-1.1",
+   "hard_requires": 9,
+   "own_files_mb": 7.4,
+   "venv": "misc"
+  },
+  "yfinance": {
+   "version": "1.7.0",
+   "license": "License :: OSI Approved :: Apache Software License",
+   "hard_requires": 12,
+   "own_files_mb": 0.6,
+   "venv": "misc"
+  },
+  "nautilus_trader": {
+   "version": "1.231.0",
+   "license": "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+   "hard_requires": 11,
+   "own_files_mb": 608.8,
+   "venv": "nautilus"
+  }
+ },
+ "venvs": {
+  "core": {
+   "installed_dists": 159,
+   "site_packages_mb": 1836
+  },
+  "nautilus": {
+   "installed_dists": 15,
+   "site_packages_mb": 870
+  },
+  "vbt": {
+   "installed_dists": 59,
+   "site_packages_mb": 678
+  },
+  "zipline": {
+   "installed_dists": 64,
+   "site_packages_mb": 503
+  },
+  "gx": {
+   "installed_dists": 35,
+   "site_packages_mb": 302
+  },
+  "arctic": {
+   "installed_dists": 12,
+   "site_packages_mb": 197
+  },
+  "bktpy": {
+   "installed_dists": 14,
+   "site_packages_mb": 171
+  },
+  "misc": {
+   "installed_dists": 123,
+   "site_packages_mb": 842
+  },
+  "abides": {
+   "installed_dists": 16,
+   "site_packages_mb": 315
+  },
+  "wq13": {
+   "installed_dists": 23,
+   "site_packages_mb": 464
+  },
+  "wq": {
+   "installed_dists": 2,
+   "site_packages_mb": 66
+  },
+  "dbn": {
+   "installed_dists": 22,
+   "site_packages_mb": 306
+  }
+ }
+}

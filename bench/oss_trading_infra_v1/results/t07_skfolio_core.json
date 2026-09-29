@@ -1,0 +1,1 @@
+{"reference_weights": [0.189877, 0.194535, 0.185321, 0.127756, 0.228634, 0.073878], "min_var_unconstrained": {"max_abs_weight_err": 7.55794593695347e-05, "sum_w": 0.9999999999999999, "seconds": 0.0251}, "long_only_min_weight": 0.07377010799745412, "long_only_weights_sum": 0.9999999999999999, "deterministic_2_runs": true, "hrp_sum": 1.0}

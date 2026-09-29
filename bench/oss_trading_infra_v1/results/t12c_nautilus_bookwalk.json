@@ -1,0 +1,1 @@
+{"events": ["OrderInitialized", "OrderSubmitted", "OrderFilled", "PositionOpened", "OrderFilled", "PositionChanged", "OrderFilled", "PositionChanged"], "fills": [[100.5, 1.0], [101.0, 1.0], [101.5, 1.0]], "n_fills": 3, "total_qty": 3.0, "avg_px": 101.0, "expected_fills": [[100.5, 1.0], [101.0, 1.0], [101.5, 1.0]], "expected_avg": 101.0}
