@@ -82,13 +82,34 @@ def evaluate(cfgs, split, pool):
     return res, summ, errs
 
 
+GRIDS = dict(gamma=PROT["search_spaces"]["B"]["gamma"], S=[25, 50, 100], M=[1, 4, 16], fading=[0.05, 0.1, 0.3],
+             delta=[0.1, 0.5, 1.0], lr=[0.01, 0.05, 0.2])
+
+
+def centre_dist(spec):
+    """Distance from the centre of the pre-registered grid (tie-break rule of protocol.json)."""
+    d = 0.0
+    p = dict(spec)
+    if "guard" in p:
+        p["S"], p["M"] = p["guard"]
+    for k, g in GRIDS.items():
+        if k in p:
+            d += abs(g.index(p[k]) - (len(g) - 1) / 2)
+    if p.get("kind") in ("C", "C2") and "eps" in p:
+        d += abs([0.05, 0.1, 0.2].index(p["eps"]) - 1)
+    if p.get("kind") == "D":
+        grid = [5, 20, 100] if p["algo"] == "squarecb" else [0.05, 0.2]
+        d += abs(grid.index(p["expl"]) - (len(grid) - 1) / 2)
+    return d
+
+
 def select(summ_train, summ_val_fn, cfgs, pool):
     top3 = sorted(summ_train, key=lambda k: -summ_train[k])[:3]
     val_res, val_summ, val_err = summ_val_fn({k: cfgs[k] for k in top3})
     best = sorted(top3, key=lambda k: -val_summ.get(k, -9))
-    # ties (|dJ|<0.005) keep the train-ranking order among the tied leaders
+    # pre-registered tie rule: |dJ|<0.005 vs the validation leader -> config nearest the grid centre (then train rank)
     lead = [k for k in best if val_summ.get(k, -9) >= val_summ[best[0]] - 0.005]
-    chosen = sorted(lead, key=lambda k: top3.index(k))[0]
+    chosen = sorted(lead, key=lambda k: (centre_dist(cfgs[k]), top3.index(k)))[0]
     return top3, val_res, val_summ, val_err, chosen
 
 

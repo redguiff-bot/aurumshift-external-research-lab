@@ -73,6 +73,10 @@ def make_policy(spec, seed):
     if kind == "A": return A(seed)
     if kind == "A_altcls": return A(seed, low_to_degrading=False, tag="A_altcls")
     if kind == "A_floor": return A(seed, floor_ratio=p["floor"], tag=f"A_floor{p['floor']}")
+    if kind == "A_w":     # sensitivity only: alternative weights (fixed reference A is unchanged)
+        from policies import EXPL, PROM, PROV, DEGR, RETI
+        w = p["weights"]
+        return A(seed, weights={EXPL: w[0], PROM: w[1], PROV: w[2], DEGR: w[3], RETI: 0.0}, tag=p["tag"])
     if kind == "R": return RoundRobin(seed)
     if kind == "B": return DUCBGuard(seed, **p)
     if kind == "C": return RiverPolicy(seed, **p)

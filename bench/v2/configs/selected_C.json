@@ -1,0 +1,186 @@
+{
+ "policy": "C",
+ "chosen": "C|eps_ew|f0.1|e0.2",
+ "spec": {
+  "kind": "C",
+  "algo": "eps_ew",
+  "fading": 0.1,
+  "eps": 0.2
+ },
+ "train_J": 0.5612177938928042,
+ "validation_J": 0.5142239127240154,
+ "top3_train": [
+  "C|eps_ew|f0.3|e0.2",
+  "C|eps_ew|f0.1|e0.2",
+  "C|eps_ew|f0.05|e0.2"
+ ],
+ "top3_train_J": {
+  "C|eps_ew|f0.3|e0.2": 0.5797075576154527,
+  "C|eps_ew|f0.1|e0.2": 0.5612177938928042,
+  "C|eps_ew|f0.05|e0.2": 0.5300179158152685
+ },
+ "top3_validation_J": {
+  "C|eps_ew|f0.3|e0.2": 0.511221249355732,
+  "C|eps_ew|f0.1|e0.2": 0.5142239127240154,
+  "C|eps_ew|f0.05|e0.2": 0.4915482741098401
+ },
+ "train_J_all": {
+  "C|eps_ew|f0.05|e0.05": 0.17267105470894414,
+  "C|eps_ew|f0.05|e0.1": 0.36007481962882176,
+  "C|eps_ew|f0.05|e0.2": 0.5300179158152685,
+  "C|eps_ew|f0.1|e0.05": 0.2122112936122102,
+  "C|eps_ew|f0.1|e0.1": 0.3920428103072178,
+  "C|eps_ew|f0.1|e0.2": 0.5612177938928042,
+  "C|eps_ew|f0.3|e0.05": 0.24575919764740473,
+  "C|eps_ew|f0.3|e0.1": 0.4020663286744813,
+  "C|eps_ew|f0.3|e0.2": 0.5797075576154527,
+  "C|ucb_ew|f0.05|d0.1": 0.017665096229428495,
+  "C|ucb_ew|f0.05|d0.5": 0.33127983284773954,
+  "C|ucb_ew|f0.05|d1.0": 0.3477087472897701,
+  "C|ucb_ew|f0.1|d0.1": 0.1294429911409662,
+  "C|ucb_ew|f0.1|d0.5": 0.3531662789318667,
+  "C|ucb_ew|f0.1|d1.0": 0.35611049319583576,
+  "C|ucb_ew|f0.3|d0.1": 0.21462448541097306,
+  "C|ucb_ew|f0.3|d0.5": 0.3619432489525662,
+  "C|ucb_ew|f0.3|d1.0": 0.3548365577204922,
+  "C|ucb_mean|d0.1": 0.05639621706921024,
+  "C|ucb_mean|d0.5": 0.3581986444619726,
+  "C|ucb_mean|d1.0": 0.36248656009104574
+ },
+ "all_specs": {
+  "C|eps_ew|f0.05|e0.05": {
+   "kind": "C",
+   "algo": "eps_ew",
+   "fading": 0.05,
+   "eps": 0.05
+  },
+  "C|eps_ew|f0.05|e0.1": {
+   "kind": "C",
+   "algo": "eps_ew",
+   "fading": 0.05,
+   "eps": 0.1
+  },
+  "C|eps_ew|f0.05|e0.2": {
+   "kind": "C",
+   "algo": "eps_ew",
+   "fading": 0.05,
+   "eps": 0.2
+  },
+  "C|eps_ew|f0.1|e0.05": {
+   "kind": "C",
+   "algo": "eps_ew",
+   "fading": 0.1,
+   "eps": 0.05
+  },
+  "C|eps_ew|f0.1|e0.1": {
+   "kind": "C",
+   "algo": "eps_ew",
+   "fading": 0.1,
+   "eps": 0.1
+  },
+  "C|eps_ew|f0.1|e0.2": {
+   "kind": "C",
+   "algo": "eps_ew",
+   "fading": 0.1,
+   "eps": 0.2
+  },
+  "C|eps_ew|f0.3|e0.05": {
+   "kind": "C",
+   "algo": "eps_ew",
+   "fading": 0.3,
+   "eps": 0.05
+  },
+  "C|eps_ew|f0.3|e0.1": {
+   "kind": "C",
+   "algo": "eps_ew",
+   "fading": 0.3,
+   "eps": 0.1
+  },
+  "C|eps_ew|f0.3|e0.2": {
+   "kind": "C",
+   "algo": "eps_ew",
+   "fading": 0.3,
+   "eps": 0.2
+  },
+  "C|ucb_ew|f0.05|d0.1": {
+   "kind": "C",
+   "algo": "ucb_ew",
+   "fading": 0.05,
+   "delta": 0.1
+  },
+  "C|ucb_ew|f0.05|d0.5": {
+   "kind": "C",
+   "algo": "ucb_ew",
+   "fading": 0.05,
+   "delta": 0.5
+  },
+  "C|ucb_ew|f0.05|d1.0": {
+   "kind": "C",
+   "algo": "ucb_ew",
+   "fading": 0.05,
+   "delta": 1.0
+  },
+  "C|ucb_ew|f0.1|d0.1": {
+   "kind": "C",
+   "algo": "ucb_ew",
+   "fading": 0.1,
+   "delta": 0.1
+  },
+  "C|ucb_ew|f0.1|d0.5": {
+   "kind": "C",
+   "algo": "ucb_ew",
+   "fading": 0.1,
+   "delta": 0.5
+  },
+  "C|ucb_ew|f0.1|d1.0": {
+   "kind": "C",
+   "algo": "ucb_ew",
+   "fading": 0.1,
+   "delta": 1.0
+  },
+  "C|ucb_ew|f0.3|d0.1": {
+   "kind": "C",
+   "algo": "ucb_ew",
+   "fading": 0.3,
+   "delta": 0.1
+  },
+  "C|ucb_ew|f0.3|d0.5": {
+   "kind": "C",
+   "algo": "ucb_ew",
+   "fading": 0.3,
+   "delta": 0.5
+  },
+  "C|ucb_ew|f0.3|d1.0": {
+   "kind": "C",
+   "algo": "ucb_ew",
+   "fading": 0.3,
+   "delta": 1.0
+  },
+  "C|ucb_mean|d0.1": {
+   "kind": "C",
+   "algo": "ucb_mean",
+   "delta": 0.1
+  },
+  "C|ucb_mean|d0.5": {
+   "kind": "C",
+   "algo": "ucb_mean",
+   "delta": 0.5
+  },
+  "C|ucb_mean|d1.0": {
+   "kind": "C",
+   "algo": "ucb_mean",
+   "delta": 1.0
+  }
+ },
+ "n_configs": 21,
+ "n_errors": 0,
+ "ref_train_J": {
+  "REF|A": 0.5256539275262233,
+  "REF|R": 0.5272253541511406
+ },
+ "ref_validation_J": {
+  "REF|A": 0.4525965729757814,
+  "REF|R": 0.45808543737133917
+ },
+ "wall_seconds": 22.111624717712402
+}
