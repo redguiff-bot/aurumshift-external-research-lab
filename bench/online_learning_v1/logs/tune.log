@@ -1,1 +1,30 @@
 6688 jobs
+null_reg                   {} 1.0362
+frozen_ridge               {'n0': 250} 1.0929
+periodic_ridge             {'R': 100} 0.5894
+rolling_ridge              {'W': 400} 0.2551
+rolling_ridge_drift        {'delta': 0.1} 0.2910
+rls                        {'lam': 0.995} 0.2270
+kalman_rw                  {'q': 0.0001} 0.2319
+river_sgd_lin              {'lr': 0.005} 0.2975
+river_pa_reg               {'C': 0.01} 0.2866
+river_hoeffding_reg        {'gp': 200} 0.5271
+river_arf_reg              {'gp': 200} 0.6703
+rls_reset_adwin            {'delta': 0.1} 0.4413
+rls_bank_custom            {'delta': 0.1} 0.2899
+null_clf                   {} 0.0689
+frozen_logit               {'n0': 250} 0.0792
+periodic_logit             {'R': 100} 0.0402
+rolling_logit              {'W': 400} 0.0193
+rolling_logit_drift        {'delta': 0.1} 0.0195
+ekf_logit                  {'lam': 0.995} 0.0167
+river_sgd_logit            {'lr': 0.02} 0.0181
+river_pa_clf               {'C': 0.01} 0.0226
+river_hoeffding_clf        {'gp': 200} 0.0526
+river_arf_clf              {'gp': 200} 0.0468
+river_adaboost_clf         {'gp': 200} 0.0374
+ekf_reset_adwin            {'delta': 0.1} 0.0206
+ekf_bank_custom            {'delta': 0.1} 0.0179
+sgd_logit_platt            {'lr': 0.005} 0.0185
+hoeffding_platt            {'lr': 0.02} 0.0408
+done 1111.4578669071198
