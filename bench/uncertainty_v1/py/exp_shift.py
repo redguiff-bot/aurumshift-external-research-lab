@@ -1,5 +1,6 @@
 """Q2 abstention, Q3 calibration under shift, Q4 taxonomy. Synthetic worlds, 20 seeds.
 Splits (chronological, one AR stream/seed): train[0:4000] cal[4000:7000] val[7000:10000] held-out[10000:16000]."""
+import os; os.environ['OMP_NUM_THREADS']='1'
 import json, sys, numpy as np, pandas as pd, warnings; warnings.filterwarnings('ignore')
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import HistGradientBoostingClassifier as HGB
@@ -60,7 +61,7 @@ def run_seed(s):
     for bn, m in dict(HGB=base, LR=lr).items():
         pc = m.predict_proba(x[ca])[:, 1]
         cal[bn] = {cn: C().fit(pc, y[ca]) for cn, C in CALIBRATORS.items() if cn in ('raw', 'platt', 'isotonic', 'bayes_bin')}
-    rows, drows, prow, mrows = [], [], [], []
+    rows, drows, prow, mrows, rc = [], [], [], [], []
     for k in SHIFTS:
         r2 = np.random.default_rng(3000 + s * 10 + SHIFTS.index(k))
         xo, yt, fl = apply_shift(k, x[te], W, r2); xi = prep(xo, mu_tr)
@@ -69,6 +70,11 @@ def run_seed(s):
             for cn, c in cal[bn].items():
                 q = c(ph_raw); r = dict(seed=s, shift=k, base=bn, cal=cn, brier=brier(q, yt), logloss=logloss(q, yt), ece=ece_top(q, yt), ece_pos=ece_pos(q, yt))
                 r.update({kk: v for kk, v in dec_metrics(q, yt, tau=TAU, cost=COST).items()}); rows.append(r)
+        # ---- risk-coverage: ranking by raw confidence, calibrated confidence, calibrated confidence minus 2*ensemble std
+        praw = base.predict_proba(xi)[:, 1]; qq = cal['HGB']['platt'](praw); _, sd0 = ens_stats(ens, xi); wrong = ((qq >= .5) != yt)
+        for rn, sc_ in dict(raw_conf=np.maximum(praw, 1 - praw), cal_conf=np.maximum(qq, 1 - qq), cal_conf_minus_2ens=np.maximum(qq, 1 - qq) - 2 * sd0, random=np.random.default_rng(s).random(len(qq))).items():
+            cum = risk_coverage(sc_, wrong); n_ = len(cum)
+            rc.append(dict(seed=s, shift=k, ranking=rn, aurc=float(cum.mean()), **{f'risk@{c}': float(cum[int(c * n_) - 1]) for c in (0.9, 0.7, 0.5, 0.3)}))
         # ---- abstention policies on HGB + platt (chosen a-priori simple reference), thresholds from cal
         q = cal['HGB']['platt'](base.predict_proba(xi)[:, 1]); _, sd = ens_stats(ens, xi); mm = maha(xi, mu, Si)
         dflag = fl['missing'] | fl['stale']
@@ -100,10 +106,10 @@ def run_seed(s):
         aur.append(dict(seed=s, shift=k, auc_maha=auroc(np.r_[mm0, mmk], lab), auc_ens=auroc(np.r_[sd0, sdk], lab),
                         auc_lowconf=auroc(-np.r_[np.maximum(q0, 1 - q0), np.maximum(qk, 1 - qk)], lab),
                         auc_flag=auroc(np.r_[np.zeros(len(mm0)), (fl['missing'] | fl['stale']).astype(float)], lab)))
-    return rows, prow, drows, mrows, aur
+    return rows, prow, drows, mrows, aur, rc
 
 if __name__ == '__main__':
-    R, P, D, M, A = [], [], [], [], []
+    R, P, D, M, A, RC = [], [], [], [], [], []
     for s in range(SEEDS):
-        r, p, d, m, a = run_seed(s); R += r; P += p; D += [{k: v for k, v in z.items() if not k.startswith('_')} for z in d]; M += m; A += a; print('seed', s, flush=True)
-    for n, v in dict(shift_cal=R, shift_policy=P, shift_detect=D, shift_monitor=M, shift_auroc=A).items(): pd.DataFrame(v).to_csv(f'../results/{n}.csv', index=False)
+        r, p, d, m, a, rcs = run_seed(s); RC += rcs; R += r; P += p; D += [{k: v for k, v in z.items() if not k.startswith('_')} for z in d]; M += m; A += a; print('seed', s, flush=True)
+    for n, v in dict(shift_cal=R, shift_policy=P, shift_detect=D, shift_monitor=M, shift_auroc=A, shift_riskcov=RC).items(): pd.DataFrame(v).to_csv(f'../results/{n}.csv', index=False)

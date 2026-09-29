@@ -2,38 +2,54 @@
 
 Evidence labels (repo doctrine): **PROVEN** (derived/verified in this study), **OBSERVED** (measured here), **DOCUMENTED_CLAIM** (from the literature, recalled from memory — *not re-fetched or re-verified in this session*), **INFERENCE**, **UNKNOWN**.
 
-Literature citations below are DOCUMENTED_CLAIM: I did not open the papers in this run (no paper fetch was performed), so any specific bound or wording must be re-checked against the primary source before being relied on.
+All citations in the "Source" column are DOCUMENTED_CLAIM: no paper was opened in this run, so specific bounds/wording must be checked against the primary source before being relied on.
 
-## Catalogue (13 requested families → 24 concrete methods discovered)
+## Catalogue
 
-| # | Family | Concrete method | Source (DOCUMENTED_CLAIM) | Executed? |
-|---|---|---|---|---|
-| 1 | Platt scaling | logistic on logit(score) (a·z+b) | Platt 1999 | **YES** (`Platt`) |
-| 2 | Isotonic | PAV, monotone, non-parametric | Zadrozny & Elkan 2002 | **YES** (`Iso`, clipped to [0.02,0.98]) |
-| 3 | Beta calibration | logit q = a·ln p − b·ln(1−p) + c | Kull, Silva Filho, Flach 2017 | **YES** (`Beta`, unconstrained a,b) |
-| 4 | Temperature scaling | single T on logits | Guo et al. 2017 | **YES** (`Temp`) |
-| 5 | Bayesian calibration | equal-mass binning with Beta posterior (single-binning BBQ-style; yields credible half-width) | Naeini et al. 2015 (BBQ) | **YES**, *simplified* single binning (`BayesBin`) — full BBQ model averaging NOT implemented |
-| 5b | Bayesian calibration | GP / Dirichlet / full Bayesian NN | Wenger 2020, Kull 2019 | NO (discovered only) |
-| 6 | Ensemble disagreement | bootstrap ensemble of 8 shallow GBMs, std of P(up) | Lakshminarayanan 2017 (deep ensembles) | **YES** |
-| 7 | Prediction intervals | split-conformal absolute-residual intervals (regression) | Lei et al. 2018 | **YES** |
-| 7b | Prediction intervals | quantile regression / CQR | Romano 2019 | NO (discovered only) |
-| 8 | Conformal — split (LAC) | fixed calibration block | Vovk; Angelopoulos & Bates 2021 | **YES** |
-| 8b | Conformal — rolling window | recent scores only, label-delay aware | practitioner heuristic | **YES** |
-| 8c | Conformal — recency-weighted | exponentially weighted quantile (non-exchangeable) | Barber et al. 2023 (weights) | **YES**, fixed λ=0.998, ad-hoc (no TV-distance-based tuning) |
-| 9 | Online conformal | ACI (adaptive α_t) | Gibbs & Candès 2021 | **YES** (h=0 textbook and h=10 delayed-feedback variants) |
-| 9b | Online conformal | AgACI / multi-γ aggregation, SAOCP, EnbPI, conformal PID | Zaffran 2022; Bhatnagar 2023; Xu & Xie 2021; Angelopoulos 2023 | NO (discovered only) |
-| 10 | Selective classification | confidence-threshold reject option, risk–coverage / AURC | Chow 1970; Geifman & El-Yaniv 2017 | **YES** |
-| 11 | Risk-coverage | full curves + AURC per model/calibrator | same | **YES** (AURC computed in `ulib.aurc`; curves derivable from `risk_coverage`) |
-| 12 | Abstention thresholds | fixed τ from cost model (τ*=(1+c)/2 for ±1 payoff, cost c) | INFERENCE (Bayes decision rule) | **YES** (c=0.2 → τ=0.6) |
-| 13 | Shift detection | Mahalanobis on features; ensemble std; confidence drop; missing/stale flags; label-based rolling calibration monitor (binomial z) | Rabanser 2019, Ovadia 2019 | **YES**; PSI implemented but not used in headline tables |
-| 13b | Shift detection | classifier two-sample tests, MMD, KS multivariate | Rabanser 2019 | NO (discovered only) |
-| – | Software found | MAPIE (pip index shows 1.5.0 — OBSERVED); netcal, crepes, puncc, TorchCP | package indexes | NOT used: all methods re-implemented in ~350 lines of numpy/scikit-learn so that delay handling / lookahead is auditable. No cross-check against MAPIE was run (UNKNOWN whether outputs agree bit-for-bit). |
+| # | Family | Method | Source | Executed | Note |
+|---|---|---|---|---|---|
+| 1 | Platt | Platt scaling (a·z+b) | Platt 1999 | **YES** | `Platt` |
+| 2 | Isotonic | Isotonic regression (PAV) | Zadrozny & Elkan 2002 | **YES** | `Iso`, output clipped to [0.02,0.98] |
+| 3 | Beta | Beta calibration | Kull et al. 2017 | **YES** | `Beta`, a,b unconstrained (sign not enforced) |
+| 4 | Temperature | Temperature scaling | Guo et al. 2017 | **YES** | `Temp` |
+| 5 | Bayesian | Bayesian equal-mass binning (single-binning BBQ-style, Beta posterior) | Naeini et al. 2015 | **YES** | `BayesBin`; simplified — no BBQ model averaging |
+| 6 | Bayesian | Full BBQ model averaging / GP / Dirichlet calibration | Naeini 2015; Wenger 2020; Kull 2019 | no | discovered only |
+| 7 | Ensemble | Bootstrap-ensemble disagreement (8 shallow GBMs, std of P) | Lakshminarayanan et al. 2017 | **YES** | used as veto/detector and risk-coverage ranking |
+| 8 | Prediction intervals | Split-conformal prediction intervals (abs. residual) | Lei et al. 2018 | **YES** | regression, synthetic + California housing |
+| 9 | Prediction intervals | Rolling-window conformal intervals | heuristic | **YES** | regression, label-delay aware |
+| 10 | Prediction intervals | ACI intervals (regression) | Gibbs & Candès 2021 | **YES** |  |
+| 11 | Prediction intervals | Quantile regression / CQR | Romano et al. 2019 | no | discovered only |
+| 12 | Conformal | Split conformal, LAC score (classification) | Vovk; Angelopoulos & Bates 2021 | **YES** |  |
+| 13 | Conformal | Rolling-window conformal (classification) | heuristic | **YES** |  |
+| 14 | Conformal | Recency-weighted conformal (λ=0.998) | Barber et al. 2023 | **YES** | fixed ad-hoc weights, no TV-distance tuning |
+| 15 | Online conformal | ACI, textbook immediate feedback (h=0) | Gibbs & Candès 2021 | **YES** | not deployable when labels are delayed |
+| 16 | Online conformal | ACI with delayed feedback (h=10 / ELEC2 h=1) | adaptation of Gibbs & Candès | **YES** | guarantee for delayed feedback NOT proven here |
+| 17 | Online conformal | AgACI, SAOCP, EnbPI, conformal PID / quantile tracking | Zaffran 2022; Bhatnagar 2023; Xu & Xie 2021; Angelopoulos 2023 | no | discovered only |
+| 18 | Selective classification | Confidence-threshold reject option (selective classification) | Chow 1970; Geifman & El-Yaniv 2017 | **YES** |  |
+| 19 | Risk-coverage | Risk-coverage curves / AURC | Geifman & El-Yaniv 2017 | **YES** | risk@{0.9,0.7,0.5,0.3}, AURC |
+| 20 | Abstention thresholds | Cost-model abstention threshold τ*=(1+c)/2 | INFERENCE (Bayes rule for ±1 payoff, cost c) | **YES** | c=0.2 → τ=0.6 |
+| 21 | Abstention thresholds | Veto rules (ensemble std, Mahalanobis, missing/stale flags) | INFERENCE | **YES** | policies P2–P4 |
+| 22 | Shift detection | Mahalanobis feature-distance detector | classic | **YES** |  |
+| 23 | Shift detection | Confidence-drop / ensemble-std shift detector | Ovadia 2019 | **YES** |  |
+| 24 | Shift detection | Missing-value and exact-repeat (stale) flags | engineering | **YES** |  |
+| 25 | Shift detection | Label-based rolling binomial calibration monitor | INFERENCE | **YES** | z<-3 on acted rows, labels delayed h=10 |
+| 26 | Shift detection | PSI feature drift | industry standard | no | implemented in `ulib.psi`, NOT used in any reported result |
+| 27 | Shift detection | Classifier two-sample test, MMD, multivariate KS | Rabanser et al. 2019 | no | discovered only |
+| 28 | Online calibration | Online recalibration: sliding-window Platt | heuristic | **YES** | W=1000/2000, refit every 250 |
+| 29 | Online calibration | Online recalibration: sliding-window isotonic | heuristic | **YES** |  |
+| 30 | Online calibration | Online recalibration: expanding-window Platt | heuristic | **YES** |  |
+| 31 | Online calibration | Online recalibration: SGD Platt (lr=0.02) | heuristic | **YES** |  |
+| 32 | Online calibration | Deliberately leaky variants (block-fit, global-fit) as lookahead audit | this study | **YES** | never a candidate; measures leak inflation |
 
-**METHODS_DISCOVERED = 24, METHODS_EXECUTED = 16** (Platt, isotonic, beta, temperature, Bayes-binning, bootstrap-ensemble disagreement, split-conformal PI, split CP, rolling CP, recency-weighted CP, ACI h=0, ACI h=10, selective-classification/abstention thresholds, Mahalanobis/ensemble/flag/monitor detectors counted as 4 → 16 distinct executed items when detector variants are counted individually; see counting note in `00_EXECUTIVE_SUMMARY.md`).
+**Counting convention:** one row = one method; the last row (leaky lookahead audit variants) is a test device, not a candidate, and is excluded from both counts.
 
-Counting note: numbers are a bookkeeping convention (I count each row of the table with an "Executed = YES" as one, sub-variants merged only where the code path is identical). They are not a quality measure.
+**METHODS_DISCOVERED = 31**, **METHODS_EXECUTED = 26** (5 discovered but not executed).
 
-## Implementation notes (OBSERVED from code in `bench/uncertainty_v1/py/ulib.py`)
-* Calibrators are fit on the **calibration block only**; hyper-parameters (abstention τ) are either derived from a cost model or tuned on the **validation block**; all headline numbers come from the **held-out** block.
-* Online methods only use labels `y_j` with `j + h ≤ t` (h = label delay, 10 steps in synthetic, 1 or 48 half-hours in ELEC2). `run_online` asserts this (`pit_ok`), and two intentionally leaky variants (`leak_block`, `leak_global`) exist solely to measure how much a lookahead bug would flatter results.
-* Top-label ECE uses 15 equal-mass bins (fewer if n is small). Positive-class ECE (`ece_pos`) is also stored.
+## Software found (not used)
+MAPIE — `pip index` lists 1.5.0 (OBSERVED, index metadata only). netcal, crepes, puncc, TorchCP: UNKNOWN (not inspected). Everything was re-implemented in ~350 lines of numpy/scikit-learn (`bench/uncertainty_v1/py/ulib.py`) so label-delay handling and lookahead are auditable. **No cross-check against MAPIE or netcal was run** — agreement with those libraries is UNKNOWN. The Platt/logistic and isotonic calibrators do call scikit-learn's `LogisticRegression` / `IsotonicRegression`.
+
+## Implementation notes (OBSERVED from code)
+* Calibrators are fit on the **calibration block only**; hyper-parameters (τ) are cost-derived or tuned on **validation**; headline numbers are **held-out**.
+* Online methods use only labels `y_j` with `j + h ≤ t` (h = label delay; 10 steps synthetic, 1 or 48 half-hours ELEC2). `run_online` asserts this (`pit_ok`).
+* Top-label ECE: 15 equal-mass bins (fewer if n small); positive-class ECE also stored.
+* A bug found and fixed during the study: the first online run fitted the initial/expanding calibrator on `p[:t0]`, i.e. including the *training* block where the overfit base model is in-sample; static-Platt looked broken (ECE 0.117 stationary). Fixed by a `c0` calibration-block start; all reported online numbers are post-fix (see 08_FAILURE_MODES).

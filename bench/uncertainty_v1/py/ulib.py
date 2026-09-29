@@ -145,12 +145,12 @@ class OnlinePlattSGD:
         z = logit(clip(p)); q = expit(self.a * z + self.b); g = q - y
         self.a -= self.lr * g * z; self.b -= self.lr * g
 
-def run_online(p, y, kind, t0, h=10, refit=250, W=1000, lr=0.02, base=None):
+def run_online(p, y, kind, t0, h=10, refit=250, W=1000, lr=0.02, c0=0):
     """Sequentially calibrate raw scores p[t0:], label y_t revealed at time t+h (PIT-safe).
     kind: static_platt | static_iso | expand_platt | window_platt | window_iso | sgd | leak_block | leak_global
     Returns calibrated q[t0:], per-step Platt slope path (nan if n/a), and an audit max_label_time <= t check."""
     T = len(p); q = np.full(T, np.nan); slope = np.full(T, np.nan)
-    init = Platt().fit(p[:t0], y[:t0]); iso0 = Iso().fit(p[:t0], y[:t0])
+    init = Platt().fit(p[c0:t0], y[c0:t0]); iso0 = Iso().fit(p[c0:t0], y[c0:t0])   # c0 = start of the calibration block (train rows are in-sample for the base model and must never be used)
     cur = init; sgd = OnlinePlattSGD(init.a, init.b, lr); audit_ok = True
     gl = Platt().fit(p[t0:], y[t0:]) if kind == 'leak_global' else None
     for s in range(t0, T, refit):
@@ -159,7 +159,7 @@ def run_online(p, y, kind, t0, h=10, refit=250, W=1000, lr=0.02, base=None):
         if kind == 'static_platt': cur = init
         elif kind == 'static_iso': cur = iso0
         elif kind in ('expand_platt', 'window_platt', 'window_iso'):
-            lo = 0 if kind == 'expand_platt' else max(0, known_end - W)
+            lo = c0 if kind == 'expand_platt' else max(c0, known_end - W)
             hi = known_end; audit_ok &= (hi - 1 + h <= s)
             if hi - lo >= 100 and len(np.unique(y[lo:hi])) == 2:
                 cur = (Iso if kind == 'window_iso' else Platt)().fit(p[lo:hi], y[lo:hi])

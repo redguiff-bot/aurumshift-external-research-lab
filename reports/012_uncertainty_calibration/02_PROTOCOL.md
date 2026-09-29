@@ -6,7 +6,7 @@ External research only. No private AurumShift code, no integration claims. Synth
 ## Data
 | Set | What | Role |
 |---|---|---|
-| **S** synthetic | AR(1)(φ=0.7, φ=0 for exchangeable control) 8-d features; label ~ Bernoulli(σ(w·x[:4] + 0.7·x0·x1)), Bayes accuracy ≈ 0.71; region x7>1 is *pure noise* (true P=0.5). 20 seeds (10 for online, 8 for conformal), each seed a fresh world | Ground-truth probability known → calibration error against truth measurable |
+| **S** synthetic | AR(1)(φ=0.7, φ=0 for exchangeable control) 8-d features; label ~ Bernoulli(σ(w·x[:4] + 0.7·x0·x1)), Bayes accuracy ≈ 0.71; region x7>1 is *pure noise* (true P=0.5). 20 seeds (8 for online, 8 for conformal, 20 for shift/taxonomy), each seed a fresh world | Ground-truth probability known → calibration error against truth measurable |
 | **E** ELEC2 (OpenML `electricity` v1, NSW electricity market, 45,312 half-hourly rows, 1996-98) | real, time-ordered, documented drift. Task rewritten as **forecasting**: past-only features at t → label at t+1 (first attempt predicting y_t from a price-minus-past-mean feature leaked the label definition: Brier 0.004 — discarded, see 10_LIMITATIONS) | real non-stationary check |
 | **B** breast cancer (sklearn) | exchangeable, small-n (569) | small-sample calibration behaviour |
 | **H** California housing (sklearn) | regression, iid vs deliberate covariate shift (MedInc) | conformal PI validity |
@@ -33,7 +33,7 @@ Brier, log-loss, top-label ECE, positive-class ECE, reliability tables, coverage
 Decision mapping: `p ≥ τ → BUY`, `p ≤ 1−τ → SELL`, else `HOLD`. τ = 0.6 (cost-model τ* for c = 0.2). Accuracy alone is never used as a headline.
 
 ## Statistics
-Mean over seeds with 95% t-type interval (1.96·sd/√n). Where seeds are few (online n=10, conformal n=8) intervals are approximate; ELEC2 has a single realisation (no interval).
+Mean over seeds with 95% t-type interval (1.96·sd/√n). Where seeds are few (online n=8, conformal n=8) intervals are approximate; ELEC2 has a single realisation (no interval).
 
 ## Code
 `bench/uncertainty_v1/py/`: `ulib.py` (library), `exp_static.py`, `exp_shift.py`, `exp_taxonomy.py`, `exp_online.py`, `exp_conformal.py`. Raw CSVs in `bench/uncertainty_v1/results/`.

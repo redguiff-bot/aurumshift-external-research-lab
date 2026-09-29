@@ -1,0 +1,13 @@
+# 10 — Limitations
+
+1. **Synthetic worlds are generator-defined.** The "causes" in Q4, the shift types and the true probability are all controlled by me; real markets mix causes and have heavy tails, non-linear interactions across assets, and regimes with unknown structure. Numbers are not trading performance.
+2. **The synthetic world favours simple models.** Labels are logistic-like, so LR is already calibrated; the calibration gains reported are essentially "fix an over-confident GBM".
+3. **Real data is thin:** one drifting real series (ELEC2, electricity price direction — not a financial-asset BUY/SELL problem, single realisation, no CI), one small exchangeable set (breast cancer), one regression set (housing). No crypto/FX/gold data, no order-book features, no costs beyond the stylised c=0.2, no venue-specific microstructure — "venue change" is emulated by an affine+noise transform.
+4. **Payoff proxy.** ±1 payoff with c=0.2 is a stand-in for expected utility; τ=0.6 is only optimal under it.
+5. **Statistical strength.** 8 seeds for online/conformal, 20 for shift/taxonomy; intervals are t-type approximations over seeds, not corrected for multiple comparisons; many comparisons are descriptive. ECE has estimator bias at small n (oracle ECE 0.017 at n=6000).
+6. **Own re-implementations, not cross-validated against MAPIE/netcal/crepes** (UNKNOWN agreement). Bayes-binning is simplified BBQ; beta calibration is unconstrained; ACI with delayed feedback has no theory here.
+7. **Literature statements are recalled, not re-read** (DOCUMENTED_CLAIM). Theorems in 06 should be re-checked against primary sources before being quoted.
+8. **Not tested:** strongly-adaptive/aggregated conformal (AgACI, SAOCP), conformal PID, CQR, non-binary (BUY/SELL/HOLD as a 3-class problem — abstention was studied as HOLD = abstain from a binary up/down call), multi-horizon labels with overlapping outcomes (label-overlap would strengthen the lookahead risk beyond a fixed delay h), online updating of the *base* model, calibration under class imbalance, large-n isotonic.
+9. **Label delay model is fixed and known** (h steps). Real outcome labels (e.g., triple-barrier) have variable, path-dependent resolution times; the PIT assertion here would need per-label resolution timestamps.
+10. **Thresholds were pre-declared but chosen by me** (ECE ≤0.03/0.05, 1.5× FCR, ±0.03 coverage, recall ≥0.7); different reasonable thresholds would flip some YES/NO cells (e.g., ELEC2 rolling CP at α=0.2 misses the criterion with 10.6% of windows below).
+11. **No integration claim.** Nothing here says these methods fit the private AurumShift code; that adjudication is later, against the real repository (PostgreSQL/PIT constraints).

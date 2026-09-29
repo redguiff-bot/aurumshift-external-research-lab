@@ -31,7 +31,7 @@ def one(s, sc):
     base = HGB(max_iter=300, early_stopping=False, random_state=0).fit(xo[:4000], y[:4000]); p = base.predict_proba(xo)[:, 1]
     out = []
     for k in KINDS:
-        q, sl, ok = run_online(p, y, k, T0, h=H)
+        q, sl, ok = run_online(p, y, k, T0, h=H, c0=4000)
         r = metrics(q, y[T0:], p[T0:], sl); r.update(seed=s, scenario=sc, method=k, pit_ok=bool(ok), pit_safe=k in PIT_SAFE); out.append(r)
     return out
 def elec(h):
@@ -43,7 +43,7 @@ def elec(h):
     for bn, mk in dict(HGB=lambda: HGB(max_iter=300, early_stopping=False, random_state=0), LR=lambda: LogisticRegression(max_iter=1000)).items():
         p = mk().fit(X[:9000], y[:9000]).predict_proba(X)[:, 1]; t0 = 13500
         for k in KINDS:
-            q, sl, ok = run_online(p, y, k, t0, h=h, refit=250, W=2000)
+            q, sl, ok = run_online(p, y, k, t0, h=h, refit=250, W=2000, c0=9000)
             r = metrics(q, y[t0:], p[t0:], sl, chunks=3000); r.update(scenario=f'ELEC2_{bn}_h{h}', method=k, pit_ok=bool(ok), pit_safe=k in PIT_SAFE, seed=0); out.append(r)
     return out
 if __name__ == '__main__':
