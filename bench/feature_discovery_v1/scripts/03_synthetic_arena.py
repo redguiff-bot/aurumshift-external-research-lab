@@ -25,7 +25,10 @@ def run_rep(scn, seed):
     bp = {m: rb.predict(ho[m][0]) for m in ho}
     recs = P.evaluate_heldout(frozen, ho, set(un), N, bp, B=500, seed=seed)
     recs = P.decide(recs, family_size=max(len(recs), 1))
-    out = dict(scn=scn, seed=seed, n_val_pass_any_seed=int(sum(len(s["selected"]) for s in sr)), n_frozen=len(frozen), n_stable=0, n_novel=0,
+    mains = info.get("mains", [])
+    out = dict(scn=scn, seed=seed, mains=mains, c1_main_recovered=bool({"f00", "f06"} & set(mains)),
+               false_mains=sorted(set(mains) - {"f00", "f06", "f01", "f02", "f03", "f04", "f05"}),
+               both_duplicates_selected=bool({"f00", "f06"} <= set(mains)), n_val_pass_any_seed=int(sum(len(s["selected"]) for s in sr)), n_frozen=len(frozen), n_stable=0, n_novel=0,
                recovered=[], false_stable=0, nonpersistent_stable=[], stable=[])
     for c, r in zip(frozen, recs):
         if not r["stable"]:
@@ -57,7 +60,9 @@ if __name__ == "__main__":
         print(scn, "reps", len(R), "any_frozen", np.mean([r["n_frozen"] > 0 for r in R]), "FWER(any stable)", np.mean([r["n_stable"] > 0 for r in R]),
               "mean stable", np.mean([r["n_stable"] for r in R]), "false_stable_mean", np.mean([r["false_stable"] for r in R]))
     R = [r for r in res if r["scn"] == "MIXED"]
-    for k in COMPS[:3]:
+    print("power c1_linear (via stable mains f00/f06)", np.mean([r["c1_main_recovered"] for r in R]), "both duplicates selected", np.mean([r["both_duplicates_selected"] for r in R]))
+    print("false mains: NULL", np.mean([len(r["false_mains"]) > 0 for r in res if r["scn"] == "NULL"]), "MIXED", np.mean([len(r["false_mains"]) > 0 for r in R]))
+    for k in COMPS[1:3]:
         print("power", k, np.mean([k in r["recovered"] for r in R]))
     for k in COMPS[3:]:
         print("nonpersistent stable", k, np.mean([k in r["nonpersistent_stable"] for r in R]))

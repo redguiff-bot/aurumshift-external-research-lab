@@ -1,0 +1,290 @@
+[
+ {
+  "scn": "NULL",
+  "seed": 0,
+  "n_val_pass_any_seed": 6,
+  "n_frozen": 0,
+  "n_stable": 0,
+  "n_novel": 0,
+  "recovered": [],
+  "false_stable": 0,
+  "nonpersistent_stable": [],
+  "stable": []
+ },
+ {
+  "scn": "NULL",
+  "seed": 1,
+  "n_val_pass_any_seed": 3,
+  "n_frozen": 0,
+  "n_stable": 0,
+  "n_novel": 0,
+  "recovered": [],
+  "false_stable": 0,
+  "nonpersistent_stable": [],
+  "stable": []
+ },
+ {
+  "scn": "NULL",
+  "seed": 2,
+  "n_val_pass_any_seed": 9,
+  "n_frozen": 0,
+  "n_stable": 0,
+  "n_novel": 0,
+  "recovered": [],
+  "false_stable": 0,
+  "nonpersistent_stable": [],
+  "stable": []
+ },
+ {
+  "scn": "NULL",
+  "seed": 3,
+  "n_val_pass_any_seed": 10,
+  "n_frozen": 0,
+  "n_stable": 0,
+  "n_novel": 0,
+  "recovered": [],
+  "false_stable": 0,
+  "nonpersistent_stable": [],
+  "stable": []
+ },
+ {
+  "scn": "MIXED",
+  "seed": 0,
+  "n_val_pass_any_seed": 25,
+  "n_frozen": 3,
+  "n_stable": 3,
+  "n_novel": 3,
+  "recovered": [
+   "c1_linear",
+   "c2_interaction"
+  ],
+  "false_stable": 0,
+  "nonpersistent_stable": [],
+  "stable": [
+   {
+    "expr": "mul(f01, f02)",
+    "corr": {
+     "c1_linear": 0.07771023954593234,
+     "c2_interaction": 0.9999923167906405,
+     "c3_square": 0.04626630538774073,
+     "c4_market_specific": 0.0028829840242513066,
+     "c5_decaying": 0.0
+    },
+    "best": "c2_interaction"
+   },
+   {
+    "expr": "add(f00, f04)",
+    "corr": {
+     "c1_linear": 0.6954546247474427,
+     "c2_interaction": 0.06338276833880768,
+     "c3_square": 0.05785806320285297,
+     "c4_market_specific": 0.349282150615952,
+     "c5_decaying": 0.0
+    },
+    "best": "c1_linear"
+   },
+   {
+    "expr": "mul(f01, f05)",
+    "corr": {
+     "c1_linear": 0.034970143231384185,
+     "c2_interaction": 0.7524171882630638,
+     "c3_square": 0.05217426037531807,
+     "c4_market_specific": 0.012489686437047592,
+     "c5_decaying": 0.0
+    },
+    "best": "c2_interaction"
+   }
+  ]
+ },
+ {
+  "scn": "MIXED",
+  "seed": 1,
+  "n_val_pass_any_seed": 25,
+  "n_frozen": 5,
+  "n_stable": 5,
+  "n_novel": 5,
+  "recovered": [
+   "c1_linear",
+   "c2_interaction"
+  ],
+  "false_stable": 0,
+  "nonpersistent_stable": [],
+  "stable": [
+   {
+    "expr": "f06",
+    "corr": {
+     "c1_linear": 0.9877360672839247,
+     "c2_interaction": 0.054778583350991686,
+     "c3_square": 0.09013794406997234,
+     "c4_market_specific": 0.024511059238168643,
+     "c5_decaying": 0.0
+    },
+    "best": "c1_linear"
+   },
+   {
+    "expr": "mul(f01, f02)",
+    "corr": {
+     "c1_linear": 0.05511107219507064,
+     "c2_interaction": 0.9999490068347794,
+     "c3_square": 0.020035327347325264,
+     "c4_market_specific": 0.006930878200386248,
+     "c5_decaying": 0.0
+    },
+    "best": "c2_interaction"
+   },
+   {
+    "expr": "mul(f02, f10)",
+    "corr": {
+     "c1_linear": 0.03354264957302746,
+     "c2_interaction": 0.7972359457407268,
+     "c3_square": 0.003022768989692812,
+     "c4_market_specific": 0.0042978846804459445,
+     "c5_decaying": 0.0
+    },
+    "best": "c2_interaction"
+   },
+   {
+    "expr": "mul(f01, f11)",
+    "corr": {
+     "c1_linear": 0.03865895118623916,
+     "c2_interaction": 0.6771957449973605,
+     "c3_square": 0.020123050948666343,
+     "c4_market_specific": 0.0016207105129964461,
+     "c5_decaying": 0.0
+    },
+    "best": "c2_interaction"
+   },
+   {
+    "expr": "mul(f01, f08)",
+    "corr": {
+     "c1_linear": 0.019703501247989974,
+     "c2_interaction": 0.7291345033804989,
+     "c3_square": 0.016633910587690932,
+     "c4_market_specific": 0.002472997742245709,
+     "c5_decaying": 0.0
+    },
+    "best": "c2_interaction"
+   }
+  ]
+ },
+ {
+  "scn": "MIXED",
+  "seed": 2,
+  "n_val_pass_any_seed": 25,
+  "n_frozen": 4,
+  "n_stable": 4,
+  "n_novel": 4,
+  "recovered": [
+   "c1_linear",
+   "c2_interaction"
+  ],
+  "false_stable": 0,
+  "nonpersistent_stable": [],
+  "stable": [
+   {
+    "expr": "f06",
+    "corr": {
+     "c1_linear": 0.9885019812788132,
+     "c2_interaction": 0.027676392245870915,
+     "c3_square": 0.005647757677300727,
+     "c4_market_specific": 0.05904205252978914,
+     "c5_decaying": 0.0
+    },
+    "best": "c1_linear"
+   },
+   {
+    "expr": "mul(f01, f02)",
+    "corr": {
+     "c1_linear": 0.030618985527614634,
+     "c2_interaction": 0.9999773630216449,
+     "c3_square": 0.004633412598841832,
+     "c4_market_specific": 0.023144717945322617,
+     "c5_decaying": 0.0
+    },
+    "best": "c2_interaction"
+   },
+   {
+    "expr": "mul(f01, f08)",
+    "corr": {
+     "c1_linear": 0.031159084989962713,
+     "c2_interaction": 0.7012693707267068,
+     "c3_square": 0.026551296239220062,
+     "c4_market_specific": 0.029212530380528585,
+     "c5_decaying": 0.0
+    },
+    "best": "c2_interaction"
+   },
+   {
+    "expr": "mul(f02, f13)",
+    "corr": {
+     "c1_linear": 0.04524956739978335,
+     "c2_interaction": 0.7707371341595719,
+     "c3_square": 0.004378021313730418,
+     "c4_market_specific": 0.024135073693618475,
+     "c5_decaying": 0.0
+    },
+    "best": "c2_interaction"
+   }
+  ]
+ },
+ {
+  "scn": "MIXED",
+  "seed": 3,
+  "n_val_pass_any_seed": 25,
+  "n_frozen": 4,
+  "n_stable": 4,
+  "n_novel": 3,
+  "recovered": [
+   "c1_linear",
+   "c2_interaction"
+  ],
+  "false_stable": 0,
+  "nonpersistent_stable": [],
+  "stable": [
+   {
+    "expr": "add(f02, f06)",
+    "corr": {
+     "c1_linear": 0.6218065635818519,
+     "c2_interaction": 0.02433029096468989,
+     "c3_square": 0.012902689565851538,
+     "c4_market_specific": 0.045978863286385604,
+     "c5_decaying": 0.0
+    },
+    "best": "c1_linear"
+   },
+   {
+    "expr": "f00",
+    "corr": {
+     "c1_linear": 1.0,
+     "c2_interaction": 0.052001690919593634,
+     "c3_square": 0.045041084950418774,
+     "c4_market_specific": 0.02748852328016521,
+     "c5_decaying": 0.0
+    },
+    "best": "c1_linear"
+   },
+   {
+    "expr": "mul(f01, f02)",
+    "corr": {
+     "c1_linear": 0.05219357239344531,
+     "c2_interaction": 0.9999770118404948,
+     "c3_square": 0.023250354357839953,
+     "c4_market_specific": 0.01154886217668611,
+     "c5_decaying": 0.0
+    },
+    "best": "c2_interaction"
+   },
+   {
+    "expr": "mul(f02, f13)",
+    "corr": {
+     "c1_linear": 0.041816142071381734,
+     "c2_interaction": 0.7372091876710993,
+     "c3_square": 0.03700166361433288,
+     "c4_market_specific": 0.004404822379431227,
+     "c5_decaying": 0.0
+    },
+    "best": "c2_interaction"
+   }
+  ]
+ }
+]

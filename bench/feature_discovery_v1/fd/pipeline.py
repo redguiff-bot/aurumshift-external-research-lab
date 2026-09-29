@@ -75,6 +75,12 @@ def val_gate(ex, tr, va, names, cfg, rng, base):
     nodes, nc = E.size(t), E.consts(t)
     if nodes > cfg.max_nodes:
         return None
+    vs = E.variables(t)
+    if len(vs) == 1:   # univariate: keep only genuinely non-monotone transforms (a monotone transform of one primitive is not new)
+        v = next(iter(vs)); xv = np.concatenate([tr[m][0][:, names.index(v)] for m in tr])
+        ev = E.evaluate(ex, cols(np.vstack([tr[m][0] for m in tr]), names))
+        if abs(spearman(ev, xv)) > 0.9:
+            return None
     ic_tr = np.mean(list(_ic_by_market(tr, names, ex).values()))
     sign = 1.0 if ic_tr >= 0 else -1.0
     vals = {m: sign * E.evaluate(ex, cols(X, names)) for m, (X, y) in va.items()}
