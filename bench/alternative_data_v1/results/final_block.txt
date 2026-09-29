@@ -1,0 +1,11 @@
+SOURCES_DISCOVERED=39
+SOURCES_EXECUTED=29
+FREE_SOURCES=37 (free at point of use incl. 3 needing a free key/account and non-commercial-only terms; 29 executed, none with a key)
+
+PIT_NATIVE=9
+PIT_ADAPTABLE=23   # LOOKAHEAD_RISK for historical rows, PIT-usable via forward capture / release rule
+
+INCREMENTAL_INFORMATION_CANDIDATES=0
+PRICE_DERIVATIVE_ONLY_REJECTS=9
+
+FINAL_VERDICT=STUDY_INCONCLUSIVE
