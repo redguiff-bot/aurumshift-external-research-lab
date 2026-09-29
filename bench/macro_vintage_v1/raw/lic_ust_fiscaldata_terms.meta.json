@@ -1,0 +1,29 @@
+{
+ "url": "https://fiscaldata.treasury.gov/api-documentation/",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:35:33.648060Z",
+ "request_time_utc": "2026-09-29T18:35:32.477605Z",
+ "latency_s": 1.17,
+ "headers": {
+  "Content-Type": "text/html",
+  "x-amzn-RequestId": "3f37e0e2-f34d-4273-a4ca-66258e2a388e",
+  "x-amzn-Remapped-Content-Length": "553587",
+  "x-amz-apigw-id": "EdfP5FM2PHMFRAw=",
+  "Timestamp": "Tue, 29 Sep 2026 12:15:59 GMT",
+  "X-Amzn-Trace-Id": "Root=1-6abbabfe-6401221e300783d91a00996e",
+  "Vary": "Accept-Encoding",
+  "Expires": "Tue, 29 Sep 2026 18:35:33 GMT",
+  "Cache-Control": "max-age=0, no-cache",
+  "Pragma": "no-cache",
+  "Date": "Tue, 29 Sep 2026 18:35:33 GMT",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+  "Content-Security-Policy": "default-src 'self' 'unsafe-inline' fiscaldata.treasury.gov *.fiscaldata.treasury.gov; connect-src 'self' 'unsafe-inline' https://www.google-analytics.com https://fonts.googleapis.com wss://downloads.fiscaldata.treasury.gov wss://downloads.dev.fiscaldata.treasury.gov wss://downloads.uat.fiscaldata.treasury.gov wss://downloads.stg.fiscaldata.treasury.gov wss://temp-downloads.stg.fiscaldata.treasury.gov https://api.fiscaldata.treasury.gov https://api.stg.fiscaldata.treasury.gov *.fiscaldata.treasury.gov fiscaldata.treasury.gov https://analytics.foresee.com https://brain.foresee.com https://cxsurvey.foresee.com https://device.4seeresults.com https://gateway.foresee.com https://record.foresee.com https://survey.answerscloud.com https://survey.foreseeresults.com https://eex-gateway.fr011.ttecfed.com https://eex-gateway.voc.ttecgov.us https://eex-brain.voc.ttecgov.us https://eex-brain.fr011.ttecfed.com https://apps.bea.gov/api/ https://apps.bea.gov/api/*; font-src 'self' 'unsafe-inline' https://fonts.googleapis.com *.gstatic.com https://cxsurvey.foresee.com https://gateway.foresee.com https://eex-gateway.fr011.ttecfed.com https://eex-gateway.voc.ttecgov.us https://eex-brain.voc.ttecgov.us; img-src 'self' 'unsafe-inline' data: https://www.google-analytics.com https://cxsurvey.foresee.com https://gateway.foresee.com https://s.foresee.com https://static.foresee.com https://eex-gateway.fr011.ttecfed.com https://eex-gateway.voc.ttecgov.us https://eex-brain.voc.ttecgov.us; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://dap.digitalgov.gov https://www.google-analytics.com https://ssl.google-analytics.com https://www.google.com *.gstatic.com https://cdn.polyfill.io https://analytics.foresee.com https://brain.foresee.com https://eex-brain.fr011.ttecfed.com https://cxsurvey.foresee.com https://eex-gateway.fr011.ttecfed.com https://eex-gateway.voc.ttecgov.us https://eex-brain.voc.ttecgov.us https://device.4seeresults.com https://gateway.foresee.com https://record.foresee.com https://survey.answerscloud.com https://survey.foreseeresults.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cxsurvey.foresee.com  https://eex-gateway.fr011.ttecfed.com https://eex-gateway.voc.ttecgov.us https://eex-brain.voc.ttecgov.us https://gateway.foresee.com; frame-src *.gstatic.com https://www.google.com fiscaldata.treasury.gov *.fiscaldata.treasury.gov https://www.google-analytics.com https://api.fiscaldata.treasury.gov www.google-analytics.com https://cxsurvey.foresee.com https://eex-gateway.fr011.ttecfed.com https://eex-gateway.voc.ttecgov.us https://eex-brain.voc.ttecgov.us https://gateway.foresee.com",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Set-Cookie": "BIGipServer~fiscaldata.treasury.gov~main~myPool=!ITAHmC0FLdv+gViqlXfilVl8VU3xwpulzAbY9BQCRkcmpIaZ2a5RZEW5qLqf6Q6UCTc9K2V3ytTTxA==; path=/; Httponly; Secure"
+ },
+ "bytes": 553587,
+ "sha256": "7e534a6e673c6f8fd7435c1fbb0d37177e6ea2d3608150a61e1bb5de68b3ed62"
+}

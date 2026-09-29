@@ -1,0 +1,22 @@
+{
+ "url": "https://www.eia.gov/opendata/documentation.php",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:35:28.602321Z",
+ "request_time_utc": "2026-09-29T18:35:28.332910Z",
+ "latency_s": 0.27,
+ "headers": {
+  "Content-Type": "text/html; charset=UTF-8",
+  "Server": "Microsoft-IIS/10.0",
+  "X-Powered-By": "ASP.NET",
+  "Strict-Transport-Security": "max-age=31536000",
+  "Content-Length": "127152",
+  "Expires": "Tue, 29 Sep 2026 18:35:28 GMT",
+  "Cache-Control": "max-age=0, no-cache, no-store",
+  "Pragma": "no-cache",
+  "Date": "Tue, 29 Sep 2026 18:35:28 GMT",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600"
+ },
+ "bytes": 127152,
+ "sha256": "e8bc9189a448508b0a85922fd2f5db0b70ee5c1eb41c4f53db7d39a5a136094e"
+}

@@ -1,0 +1,21 @@
+{
+ "url": "https://www.bankofcanada.ca/terms/",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:35:32.474468Z",
+ "request_time_utc": "2026-09-29T18:35:32.103059Z",
+ "latency_s": 0.371,
+ "headers": {
+  "Content-Type": "text/html; charset=UTF-8",
+  "Link": "<https://www.bankofcanada.ca/?p=38506>; rel=shortlink",
+  "X-Dc": "t",
+  "Vary": "Accept-Encoding",
+  "Cache-Control": "max-age=30",
+  "Expires": "Tue, 29 Sep 2026 18:36:02 GMT",
+  "Date": "Tue, 29 Sep 2026 18:35:32 GMT",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Server": "BoC"
+ },
+ "bytes": 142787,
+ "sha256": "1aea1d73b4534571d97d31ea1d39e595803323b451ffb8fc0d3ebc0e9b2d9757"
+}

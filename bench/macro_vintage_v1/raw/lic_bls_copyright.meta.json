@@ -1,0 +1,24 @@
+{
+ "url": "https://www.bls.gov/opub/copyright-information.htm",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:35:27.150935Z",
+ "request_time_utc": "2026-09-29T18:35:26.826054Z",
+ "latency_s": 0.325,
+ "headers": {
+  "Content-Type": "text/html",
+  "X-XSS-Protection": "1; mode=block",
+  "P3P": "CP=\"NOI DSP COR NID CURaADMa OUR STP\"",
+  "Pool-Info": "WP1",
+  "X-Frame-Options": "ALLOW-FROM https://www.bls.gov",
+  "Content-Security-Policy": "frame-ancestors https://*.bls.gov",
+  "Cross-Origin-Opener-Policy": "same-origin",
+  "Vary": "Accept-Encoding",
+  "Date": "Tue, 29 Sep 2026 18:35:27 GMT",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+ },
+ "bytes": 47310,
+ "sha256": "93b73a7df1d66de966702f1ebe76ad42d3dcf5ca38741b4fcbf610f885021be2"
+}

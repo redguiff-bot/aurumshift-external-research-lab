@@ -1,0 +1,27 @@
+{
+ "url": "https://www.bankofengland.co.uk/legal",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:35:32.099981Z",
+ "request_time_utc": "2026-09-29T18:35:31.824144Z",
+ "latency_s": 0.276,
+ "headers": {
+  "Content-Type": "text/html; charset=utf-8",
+  "Pragma": "no-cache",
+  "Server": "Microsoft-IIS/10.0",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "x-content-type-options": "nosniff",
+  "Request-Context": "appId=cid-v1:91794b7d-16f5-40a2-bc11-021bf853ac50",
+  "Access-Control-Expose-Headers": "Request-Context",
+  "X-Akamai-Transformed": "9 - 0 pmb=mRUM,2",
+  "Vary": "Accept-Encoding",
+  "Cache-Control": "max-age=3600",
+  "Expires": "Tue, 29 Sep 2026 19:35:32 GMT",
+  "Date": "Tue, 29 Sep 2026 18:35:32 GMT",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Server-Timing": "cdn-cache; desc=HIT",
+  "X-Akam-SW-Version": "0.5.0"
+ },
+ "bytes": 80220,
+ "sha256": "a57899ec0dcb2be5d15d1139b01cdf415933b3751c1a45ba537917109a00731f"
+}

@@ -1,0 +1,24 @@
+{
+ "url": "https://www.bls.gov/developers/api_signature_v2.htm",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:35:27.514847Z",
+ "request_time_utc": "2026-09-29T18:35:27.153654Z",
+ "latency_s": 0.361,
+ "headers": {
+  "Content-Type": "text/html",
+  "X-XSS-Protection": "1; mode=block",
+  "P3P": "CP=\"NOI DSP COR NID CURaADMa OUR STP\"",
+  "Pool-Info": "WP1",
+  "X-Frame-Options": "ALLOW-FROM https://www.bls.gov",
+  "Content-Security-Policy": "frame-ancestors https://*.bls.gov",
+  "Cross-Origin-Opener-Policy": "same-origin",
+  "Vary": "Accept-Encoding",
+  "Date": "Tue, 29 Sep 2026 18:35:27 GMT",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+ },
+ "bytes": 73595,
+ "sha256": "9d9df2c1e30ac58edf14fbdf1456cc164a318a99f8a385ed9b836841a7f87286"
+}

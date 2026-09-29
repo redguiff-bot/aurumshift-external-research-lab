@@ -1,0 +1,23 @@
+{
+ "url": "https://apps.bea.gov/API/signup/",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:35:28.039677Z",
+ "request_time_utc": "2026-09-29T18:35:27.517743Z",
+ "latency_s": 0.522,
+ "headers": {
+  "Date": "Tue, 29 Sep 2026 18:35:28 GMT",
+  "Content-Type": "text/html",
+  "Content-Length": "39907",
+  "Connection": "close",
+  "Last-Modified": "Wed, 23 Sep 2026 18:21:35 GMT",
+  "ETag": "\"19a01f5e884bdd1:0\"",
+  "X-Powered-By": "ASP.NET",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+  "x-azure-ref": "20260929T183527Z-16dd9bcdcdb8jpkwhC1DTTqu9w00000010cg000000001y3n",
+  "X-Cache": "CONFIG_NOCACHE",
+  "Accept-Ranges": "bytes"
+ },
+ "bytes": 39907,
+ "sha256": "e0427ba488d2c356f8254de37f697e5b450b907024582f8a0a103239965a502f"
+}

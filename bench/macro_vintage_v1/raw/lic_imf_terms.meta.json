@@ -1,0 +1,23 @@
+{
+ "url": "https://www.imf.org/en/About/copyright-and-terms",
+ "status": 403,
+ "receipt_time_utc": "2026-09-29T18:35:35.463598Z",
+ "request_time_utc": "2026-09-29T18:35:35.271190Z",
+ "latency_s": 0.192,
+ "headers": {
+  "Server": "AkamaiGHost",
+  "Mime-Version": "1.0",
+  "Content-Type": "text/html",
+  "Content-Length": "409",
+  "Expires": "Tue, 29 Sep 2026 18:35:35 GMT",
+  "X-Reference-Error": "18.97623017.1790706935.10b66673",
+  "Date": "Tue, 29 Sep 2026 18:35:35 GMT",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=31536000",
+  "Akamai-GRN": "0.97623017.1790706935.10b66673",
+  "Set-Cookie": "bm_s=YAAQl2IwF4g3UtWgAQAAu2Zz7gaAeK+v5WF91SdwonS6s0BoFJFjL4Kbj9dU4xGPjXE4arWrs7l7M2QszsErdEpBUNYjbHO8MrbYn9fvzgWyWwnPBgDbtGGY9SkLmBqYLqR15Z8URGzEYPmnuJ1yTEHWgjxHEV7/mSsd3jSDuyG+lPwxHe39hHHGnhpPpaP5ZlW18NDQ56W9WhOvVHjjDderMhg+VMRnKVfbdfVdX/+Bts1pnTrLXTVSRhLU5u9IYcb8cwEwdA8b0V/EE7xwThEJIhqDYuSxZlGvpTuT5eIWoSlx6PpBip/oER8rAMD6pXh+/C62T/QpXa2RC2ULb/8UbrIv3GGn3RsjSHIWXy7nJGDl11Oy3sQpsokxFPiORlK3V07RPUTzggI6Hc0SrkqQajiJKFWkyBaRQufry0E/NjHvn8D7Z2eqrKTidrZVavF07Sh94L1p6wqNJLuK24OCZa8WzJRRfpcGTglFTnGAixTvrQHhXrOp8FRXbjeyMuD4WgD+n09PPCNY+Uha5Lc4ZqISMyKfmTdrhdh7k/9rmLVR1Ptsk4dIe7VT1TLFCBFT3BtTNd3eyjrzzqN2Wts=; Domain=.imf.org; Path=/; Expires=Fri, 30 Oct 2026 18:35:35 GMT; Max-Age=2678400; Secure; HttpOnly"
+ },
+ "bytes": 409,
+ "sha256": "7753f3b284badc73c19e831ebce60e2607a089ab4f68c861e8927401e4174b05"
+}

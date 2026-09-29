@@ -1,0 +1,32 @@
+{
+ "url": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/real-time-data-set-for-macroeconomists",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:35:36.352550Z",
+ "request_time_utc": "2026-09-29T18:35:35.727667Z",
+ "latency_s": 0.625,
+ "headers": {
+  "Content-Type": "text/html; charset=utf-8",
+  "Pragma": "no-cache",
+  "X-UA-Compatible": "IE=Edge",
+  "Content-Security-Policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://stats.g.doubleclick.net https://public.tableau.com/ https://code.jquery.com/ https://www.ssa.gov https://*.tile.openstreetmap.org https://tiles.stadiamaps.com *.clarity.ms; style-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://fonts.googleapis.com https://stackpath.bootstrapcdn.com/bootstrap/ https://code.jquery.com/ https://www.ssa.gov https://cdn.jsdelivr.net; font-src 'self' 'unsafe-inline' https://fonts.gstatic.com; frame-src 'self' https://*.youtube.com https://*.youtube-nocookie.com https://public.tableau.com https://policymap.com/ https://www.policymap.com/ https://*.jquery.com/ https://export.highcharts.com/ https://flo.uri.sh/; script-src 'self' 'unsafe-eval' 'unsafe-inline' blob: https://www.google-analytics.com/ https://www.googletagmanager.com https://public.tableau.com/ https://www.ssa.gov https://ajax.googleapis.com https://www.ssa.gov https://cdn.jsdelivr.net; script-src-elem 'self' 'unsafe-inline' https://www.google-analytics.com/ https://www.googletagmanager.com https://public.tableau.com/ https://code.jquery.com/ https://stackpath.bootstrapcdn.com/ https://ajax.googleapis.com https://www.ssa.gov https://cdn.jsdelivr.net https://ajax.aspnetcdn.com *.clarity.ms https://public.flourish.studio; connect-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com/ https://stats.g.doubleclick.net/ https://philadelphiafed.us14.list-manage.com/ https://analytics.google.com *.clarity.ms https://public.tableau.com https://public.flourish.studio; frame-ancestors 'self'; upgrade-insecure-requests; block-all-mixed-content;",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "Request-Context": "appId=cid-v1:f9022a67-4930-4cc0-ba44-662b99235122",
+  "Cross-Origin-Resource-Policy": "same-origin",
+  "Permissions-Policy": "accelerometer=(), autoplay=(), camera=(), cross-origin-isolated=(), display-capture=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(self), usb=(), web-share=(), xr-spatial-tracking=(), clipboard-read=(), clipboard-write=(), gamepad=(), hid=(), idle-detection=(), interest-cohort=(), serial=()",
+  "X-Content-Type-Options": "nosniff",
+  "X-Permitted-Cross-Domain-Policies": "none",
+  "Accept-CH": "Sec-CH-UA-Full-Version-List,Sec-CH-UA-Platform-Version,Sec-CH-UA-Arch,Sec-CH-UA-Model,Sec-CH-UA-Bitness",
+  "X-Akamai-Transformed": "0 - 0 -",
+  "Vary": "Accept-Encoding",
+  "Cache-Control": "no-cache, no-store",
+  "Expires": "Tue, 29 Sep 2026 18:35:36 GMT",
+  "Date": "Tue, 29 Sep 2026 18:35:36 GMT",
+  "Content-Length": "35920",
+  "Connection": "close",
+  "Set-Cookie": "shell#lang=en; path=/; secure; SameSite=None",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains"
+ },
+ "bytes": 35920,
+ "sha256": "9e7e90c3f32a65d551c76023e3afdd776799e033aec0d37c60f521d8f039d5a0"
+}

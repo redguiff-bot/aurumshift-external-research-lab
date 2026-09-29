@@ -1,0 +1,674 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+
+<meta content="The real-time data set consists of vintages, or snapshots, of time series of major macroeconomic variables. The data set may be used by macroeconomic researchers to verify empirical results, to analyze policy, or to forecast. New vintages are added monthly." name="description" /><title>Real-Time Data Set for Macroeconomists</title>
+<link rel="icon" type="image/png" href="/-/media/Project/FRBP/FRBP-Portal/Settings/favicon-196x196.png" sizes="196x196"/>
+<link rel="icon" type="image/png" href="/-/media/Project/FRBP/FRBP-Portal/Settings/favicon-128x128.png" sizes="128x128"/>
+<link rel="icon" type="image/png" href="/-/media/Project/FRBP/FRBP-Portal/Settings/favicon-96x96.png" sizes="96x96"/>
+<link rel="icon" type="image/png" href="/-/media/Project/FRBP/FRBP-Portal/Settings/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="/-/media/Project/FRBP/FRBP-Portal/Settings/favicon-16x16.png" sizes="16x16"/><meta itemprop="url" content="https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/real-time-data-set-for-macroeconomists"  />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8 "/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta content="Real-Time Data Set for Macroeconomists" property="og:title" />
+<meta content="The real-time data set consists of vintages, or snapshots, of time series of major macroeconomic variables. The data set may be used by macroeconomic researchers to verify empirical results, to analyze policy, or to forecast. All data are updated at the end of each month." property="og:description" />
+
+<meta content="Data" property="og:type" />
+<meta content="https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/real-time-data-set-for-macroeconomists" property="og:url" /><script src="/assets/js/init.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="/pages/data-archive/page.css" />
+
+
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KS5HGCQ');</script>
+    <!-- End Google Tag Manager -->
+
+
+    
+    
+<link rel="stylesheet" href="/-/media/scripts/simplelightbox/simpleLightboxminCSS.css">
+
+<style>
+ .article-body h3.regional-charts-data-cards-footer-title {
+    color: #00025b;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    margin-bottom: 6px;
+    font-family: TiemposHeadline-Medium;
+    }
+    @media (min-width: 1236px) {
+    .article-body > .regional-charts-data-cards .card-data, .regional-charts-data-cards .card-data:nth-child(2n), .regional-charts-data-cards .card-data:nth-child(odd) {
+    margin: 0;
+    width: calc(50% - 5px);
+    }
+    }
+</style>
+
+<style>
+
+.data-release-archive-filter-result ul li a[href$=xlsx]:after {
+    content: "";
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+    margin-left: 1px;
+    margin-top: -4px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/svg/icon-utility/xlsx.svg);
+}
+
+</style>
+
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KS5HGCQ"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <div id="wrapper">
+        <header>
+            
+<div class="navigation" data-id="{1AB82ADB-523D-409F-9382-0FD7B6C870D4}" >
+    <div class="nav-logo">
+        <a href="/">Federal Reserve Bank of Philadelphia</a>
+    </div>
+    <div class="skip-links">
+        <a class="sr-only visible-when-focused" href="#content">skip to main content</a>
+        <a class="sr-only visible-when-focused" href="#footer">skip to footer</a>
+    </div>
+    <div class="nav-search">
+        <button type="button">Search</button>
+    </div>
+    <div class="nav-menu">
+        <button type="button"
+                aria-expanded="false"
+                id="nav-control-links"
+                aria-controls="nav-links">
+            Expand Menu
+        </button>
+    </div>
+    <nav id="nav-links" role="region" aria-labelledby="nav-control-links">
+        <ul class="nav-institution">
+                <li class="">
+                    <a class=" institution" href="/about-us">
+                    About Us
+                    </a>
+                </li>
+                <li class="">
+                    <a class=" " href="/our-people">
+                    Our People
+                    </a>
+                </li>
+                <li class="">
+                    <a class=" institution" href="/education">
+                    Education 
+                    </a>
+                </li>
+                <li class="">
+                    <a class=" banking-finance" href="/banking">
+                    Banking
+                    </a>
+                </li>
+                <li class="">
+                    <a class=" " href="/careers">
+                    Careers
+                    </a>
+                </li>
+                <li class="">
+                    <a class=" " href="/calendar-of-events">
+                    Calendar of Events
+                    </a>
+                </li>
+        </ul>
+        <ul class="nav-topic">
+                <li   class=""   data-topic="the-economy">
+                    <a class=" the-economy" id="nav-sub-topic-label-the-economy" href="/the-economy">
+                    The Economy
+                    </a>
+                    <button type="button"
+                            aria-expanded="false"
+                            aria-controls="nav-sub-topic-the-economy">
+                        Expand Sub-Topics
+                    </button>
+                            <ul class="nav-sub-topic" role="region" id="nav-sub-topic-the-economy" aria-labelledby="nav-sub-topic-label-the-economy">
+                                    <li   class=""  >
+                                        <a class=" the-economy" id="nav-sub-topic-label-the-economy" href="/the-economy/monetary-policy">
+                                        Monetary Policy
+                                        </a>
+                                    </li>
+                                    <li   class=""  >
+                                        <a class=" the-economy" id="nav-sub-topic-label-the-economy" href="/the-economy/banking-and-financial-markets">
+                                        Banking &amp; Financial Markets
+                                        </a>
+                                    </li>
+                                    <li   class=""  >
+                                        <a class=" the-economy" id="nav-sub-topic-label-the-economy" href="/the-economy/macroeconomics">
+                                        Macroeconomics
+                                        </a>
+                                    </li>
+                                    <li   class=""  >
+                                        <a class=" the-economy" id="nav-sub-topic-label-the-economy" href="/the-economy/regional-economics">
+                                        Regional Economics
+                                        </a>
+                                    </li>
+                            </ul>
+                </li>
+                <li   class=""   data-topic="consumer-finance">
+                    <a class=" consumer-finance" id="nav-sub-topic-label-consumer-finance" href="/consumer-finance">
+                    Consumer Finance
+                    </a>
+                    <button type="button"
+                            aria-expanded="false"
+                            aria-controls="nav-sub-topic-consumer-finance">
+                        Expand Sub-Topics
+                    </button>
+                            <ul class="nav-sub-topic" role="region" id="nav-sub-topic-consumer-finance" aria-labelledby="nav-sub-topic-label-consumer-finance">
+                                    <li   class=""  >
+                                        <a class=" consumer-finance" id="nav-sub-topic-label-consumer-finance" href="/consumer-finance/payment-systems">
+                                        Payment Systems
+                                        </a>
+                                    </li>
+                                    <li   class=""  >
+                                        <a class=" consumer-finance" id="nav-sub-topic-label-consumer-finance" href="/consumer-finance/consumer-credit">
+                                        Consumer Credit
+                                        </a>
+                                    </li>
+                                    <li   class=""  >
+                                        <a class=" consumer-finance" id="nav-sub-topic-label-consumer-finance" href="/consumer-finance/education-finance">
+                                        Education Finance
+                                        </a>
+                                    </li>
+                                    <li   class=""  >
+                                        <a class=" consumer-finance" id="nav-sub-topic-label-consumer-finance" href="/consumer-finance/mortgage-markets">
+                                        Mortgage Markets
+                                        </a>
+                                    </li>
+                            </ul>
+                </li>
+                <li   class=""   data-topic="community-development">
+                    <a class=" community-development" id="nav-sub-topic-label-community-development" href="/community-development">
+                    Community Development
+                    </a>
+                    <button type="button"
+                            aria-expanded="false"
+                            aria-controls="nav-sub-topic-community-development">
+                        Expand Sub-Topics
+                    </button>
+                            <ul class="nav-sub-topic" role="region" id="nav-sub-topic-community-development" aria-labelledby="nav-sub-topic-label-community-development">
+                                    <li   class=""  >
+                                        <a class=" community-development" id="nav-sub-topic-label-community-development" href="/community-development/inclusive-growth">
+                                        Inclusive Growth
+                                        </a>
+                                    </li>
+                                    <li   class=""  >
+                                        <a class=" community-development" id="nav-sub-topic-label-community-development" href="/community-development/credit-and-capital">
+                                        Credit &amp; Capital
+                                        </a>
+                                    </li>
+                                    <li   class=""  >
+                                        <a class=" community-development" id="nav-sub-topic-label-community-development" href="/community-development/housing-and-neighborhoods">
+                                        Housing &amp; Neighborhoods
+                                        </a>
+                                    </li>
+                                    <li   class=""  >
+                                        <a class=" community-development" id="nav-sub-topic-label-community-development" href="/community-development/workforce-and-economic-development">
+                                        Workforce &amp; Economic Development
+                                        </a>
+                                    </li>
+                            </ul>
+                </li>
+                <li   class="active"   data-topic="data">
+                    <a class="active data" id="nav-sub-topic-label-data" href="/surveys-and-data">
+                    SURVEYS &amp; DATA
+                    </a>
+                    <button type="button"
+                            aria-expanded="false"
+                            aria-controls="nav-sub-topic-data">
+                        Expand Sub-Topics
+                    </button>
+                            <ul class="nav-sub-topic" role="region" id="nav-sub-topic-data" aria-labelledby="nav-sub-topic-label-data">
+                                    <li   class="active"  >
+                                        <a class="active data" id="nav-sub-topic-label-data" href="/surveys-and-data/real-time-data-research">
+                                        REAL-TIME DATA RESEARCH
+                                        </a>
+                                    </li>
+                                    <li   class=""  >
+                                        <a class="active data" id="nav-sub-topic-label-data" href="/surveys-and-data/regional-economic-analysis">
+                                        Regional Economic Analysis
+                                        </a>
+                                    </li>
+                                    <li   class=""  >
+                                        <a class="active data" id="nav-sub-topic-label-data" href="/surveys-and-data/consumer-finance-data">
+                                        CONSUMER FINANCE DATA
+                                        </a>
+                                    </li>
+                                    <li   class=""  >
+                                        <a class="active data" id="nav-sub-topic-label-data" href="/surveys-and-data/community-development-data">
+                                        COMMUNITY DEVELOPMENT DATA
+                                        </a>
+                                    </li>
+                            </ul>
+                </li>
+            <li class="nav-search">
+                <button type="button">Search</button>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<script>
+  FRBP.extend( 'components', {
+    id: '{1AB82ADB-523D-409F-9382-0FD7B6C870D4}',
+    name: 'global-nav',
+    element: document.querySelector( '[data-id="{1AB82ADB-523D-409F-9382-0FD7B6C870D4}"]' ),
+    options: {
+      searchPagePath: '/search-results', //url to search page (everything but the domain)
+      showSearchOverlay: true,
+      endpoint: '/api/suggest'
+    },
+    attributes: {"suggestedSearch":[{"title":"Manufacturing Business Outlook Survey","url":"/search-results?searchQuery=Manufacturing Business Outlook Survey"},{"title":"Housing Improvement","url":"/search-results?searchQuery=Housing Improvement"},{"title":"Workforce Development","url":"/search-results?searchQuery=Workforce Development"},{"title":"Economic Research","url":"/search-results?searchQuery=Economic Research"}]}
+  } );
+</script><nav class="breadcrumbs">
+    <ul>
+                <li>
+                        <a href=/>Federal Reserve Bank of Philadelphia</a>
+                </li>
+                <li>
+                        <a href=/surveys-and-data>Surveys & Data</a>
+                </li>
+                <li>
+                        <a href=/surveys-and-data/real-time-data-research>Real-Time Data Research</a>
+                </li>
+                <li>
+Real-Time Data Set for Macroeconomists                </li>
+    </ul>
+</nav>
+
+
+
+        </header>
+
+        <main id="content" tabindex="-1" class="page page-data-archive">
+
+            <header>
+                
+            </header>
+
+            
+<section class="detail-content-primary">
+    
+
+    <div class="notification">
+
+        <div class="notification-container note">
+
+            <div class="title-container">
+
+                <div class="notification-icon">
+
+                    <img src="/assets/images/svg/icon-utility/Note.svg" alt="note icon">
+
+                </div>
+
+                <div class="notification-title">
+
+                    <strong>Note:</strong> 
+
+                </div>
+
+            </div>
+
+            <p>The Philadelphia Fed&rsquo;s Real-Time Data Set now includes data on gross domestic income (GDI). Nominal GDI represents the income side of the national accounts, while nominal gross domestic product (GDP) measures the expenditure side. Conceptually, GDI and GDP should be the same. As a practical matter, they differ because they use largely independent source data. Although neither measure is perfect, both can be thought of as carrying important information on the production of goods and services in the U.S. economy. To access the 24 GDI variables with monthly and quarterly vintages, click on <a href="/surveys-and-data/real-time-data-research/real-time-data-set-full-time-series-history#GDI">Download: Complete Vintage History and then scroll to NIPA Gross Domestic Income</a>. See <a href="/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/documentation/gen_doc_GDI.pdf">General Notes on the Philadelphia Fed&rsquo;s Real-Time Data Set for Macroeconomists (RTDSM): Gross Domestic Income and Components</a>&nbsp;for more information. </p>
+
+        </div>
+
+    </div>
+
+    <div class="detail-body">
+        <h2>Real-Time Data Set for Macroeconomists</h2><br />
+        <h3></h3>
+        <p><p>The real-time data set consists of vintages, or snapshots, of time series of major macroeconomic variables. The data set may be used by macroeconomic researchers to verify empirical results, to analyze policy, or to forecast. All data are updated at the end of each month.</p>
+<h2>Historical Data</h2>
+<p><a href="/surveys-and-data/real-time-data-research/real-time-data-set-full-time-series-history">Download: Complete vintage history.</a> For each
+variable, you can download the complete time-series history for each
+vintage.&nbsp; Data are for the levels of variables.</p>
+<p><a href="/surveys-and-data/real-time-data-research/first-second-third">Download: Only first-, second-, and third-release values.</a> For selected variables, you can
+download the first-, second-, and third-release values. Data are for
+period-over-period growth rates (variables that trend) or levels
+(variables that do not trend).</p>
+<h2>Background Reading</h2>
+<p>To understand the purposes and structure of the data set, please read one of the following documents. </p>
+<p>  <strong>Background for researchers</strong>: Research economists should read the journal article: "A Real-Time Data Set for Macroeconomists," Dean Croushore and Tom Stark, <em>Journal of Econometrics</em> 105 (November 2001), pp. 111-30. This is the preferred article to cite for technical journal articles. Additional research results not published in the <em>Journal of Econometrics</em> article can be found in <a href="/-/media/FRBP/Assets/working-papers/1999/wp99-4.pdf?sc_lang=en&amp;hash=B960FD40F78C9D7AF96C575EABC34051" rel="external" target="_blank">"A Real-Time Data Set for Macroeconomists,"</a>&nbsp;Dean Croushore and Tom Stark, Working Paper 99-4, June 1999. </p>
+<p><strong>Nontechnical background reading</strong>: Noneconomists will find the following article from the Philadelphia Fed's <em>Business Review</em> more helpful, since it requires less technical knowledge: <a href="/-/media/FRBP/Assets/Economy/Articles/business-review/2000/september-october/brso00dc.pdf">"A Funny Thing Happened on the Way to the Data Bank: A Real-Time Data Set for Macroeconomists,"</a>&nbsp;Dean Croushore and Tom Stark, Federal Reserve Bank of Philadelphia <em>Business Review</em>, September/October 2000. </p>
+<h2>Resources</h2>
+<p><a href="/surveys-and-data/real-time-data-research/changes-to-the-real-time-data-set">Changes</a>: Check the status of the data sets for errata or additional variables.</p>
+<p><a href="/the-economy/macroeconomics/realistic-evaluation-of-real-time-forecasts-in-the-survey-of-professional-forecasters">Realistic Evaluation of Real-Time Forecasts in the Survey   of Professional Forecasters</a>, Research Rap Special Report, June 2010.</p>
+<p><a href="/the-economy/macroeconomics/recession-dating-and-real-time-data">Recession Dating and Real-Time Data</a>, Research Rap Special Report, June 2008.</p>
+<p><a href="/calendar-of-events/international-workshop-on-expectation-formation">2009 Conference on Expectation Formation</a>: View the program and download papers from this February 2009  workshop that brought together researchers in the formation of expectations and macroeconomic forecast surveys.</p>
+<p><a href="/calendar-of-events/real-time-data-analysis-and-methods-in-economics">2007 Conference on Real-Time Data Analysis and Methods in Economics</a>: View the program and download papers&nbsp;from this April 2007 conference that brought together leading researchers in all areas of real-time data analysis. </p>
+<p><a href="/calendar-of-events/conference-on-real-time-data-analysis">2001 Conference on Real-Time Data Analysis</a>: View the program and download papers&nbsp;from this October 2001 conference that brought together researchers doing real-time data analysis on topics related to macroeconomics, forecasting, and monetary policy.
+</p>
+<p><a href="/surveys-and-data/real-time-data-research/data-needed-real-time-data-set">Data needed</a>: We need historical data to fill in some gaps in our data set. </p></p>
+    </div>
+
+
+    <div class="detail-body-components">
+                <div></div>
+    </div>
+    <script>
+        FRBP.extend( 'components', {
+            id: '1',
+            name: 'data-release-archive-filter',
+            element: document.querySelector('[data-id="1"]'),
+            attributes: {
+                data: {"title":null,"filters":null,"results":null}
+        }
+        })
+    </script>
+    <div class="detail-body body-components" style="padding-top:0 !important;"></div>
+</section>
+<aside class="detail-content-secondary">
+        <div class="card card-rte-text">
+            <h3>Questions?</h3>
+            <p><p>Questions, corrections, suggestions? </p>
+<p>Please email John Chew at <a href="mailto:john.chew@phil.frb.org?subject=Real-Time Data Set for Macroeconomists">john.chew@phil.frb.org</a> or Casey Ross at <a href="mailto:casey.ross@phil.frb.org?subject=Real-Time Data Set for Macroeconomists">casey.ross@phil.frb.org</a>.</p> </p>
+        </div>
+        <div class="card card-rte-text">
+            <h3>Acknowledgments</h3>
+            <p><p>Thanks to those who <a href="/surveys-and-data/real-time-data-research/acknowledgements-rtds">helped us with the data</a>.</p> </p>
+        </div>
+</aside>
+    <div class="detail-content-email">
+
+        
+
+<div class="email-notification data-archive" data-id="component-">
+
+    <div class="email-pop-up">
+
+        <div>
+            <div class="email-title">Get Updates</div>
+            <div class="email-body">Receive emails with the latest information about these data from the Federal Reserve Bank of Philadelphia.</div>
+        </div>
+
+                <button id="email-btn" class="email-btn" type="button">Sign Up</button>
+<dialog id="pop-up-form" class="pop-up-form">
+    <button class="pop-up-close close-btn" type="button" aria-label="Close">
+        <img src="/assets/images/svg/icon-utility/close-x-btn.svg" alt="Close X Button" class="close-icon">
+    </button>
+    <form action="https://philadelphiafed.us14.list-manage.com/subscribe/post?u=53cfdb83cc8c20a3a3aca6779&amp;id=49da8c279b&amp;f_id=0079b3e5f0"
+          method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
+
+        <div class="subscription-information">
+    <div class="subscription-title">
+
+            <h2>Subscribe to Real-Time Data Set for Macroeconomists</h2>
+
+        <div class="header-details">
+            <div class="indicates-required"><span class="asterisk">*</span>indicates required</div>
+                <div class="privacy-notice">View our <a href="/about-us/privacy-notice" target="_blank">Privacy Notice</a>.</div>
+        </div>
+
+    </div>
+
+    <div class="mc-field-group" id="required-FNAME">
+        <label for="mce-FNAME"><span class="asterisk">*</span>First Name</label>
+        <input type="text" name="FNAME" class="required text" id="mce-FNAME" value="">
+    </div>
+
+    <div class="mc-field-group" id="required-LNAME">
+        <label for="mce-LNAME"><span class="asterisk">*</span>Last Name</label>
+        <input type="text" name="LNAME" class="required text" id="mce-LNAME" value="">
+    </div>
+
+    <div class="mc-field-group" id="required-EMAIL">
+        <label for="mce-EMAIL"><span class="asterisk">*</span>Email Address</label>
+        <input type="text" name="EMAIL" class="required email" id="mce-EMAIL" value="">
+    </div>
+
+    <div class="mc-field-group">
+
+        <label for="mce-INDUSTRY">Industry </label>
+        <select name="INDUSTRY" class="" id="mce-INDUSTRY">
+            <option value=""></option>
+                <option value="Academia/Economic Research">Academia/Economic Research</option>
+                <option value="Banking/Financial Institutions">Banking/Financial Institutions</option>
+                <option value="Community Development/Non-Profit">Community Development/Non-Profit</option>
+                <option value="Education (Teacher, Student)">Education (Teacher, Student)</option>
+                <option value="Financial Services">Financial Services</option>
+                <option value="Government/Regulation/Central Banking">Government/Regulation/Central Banking</option>
+                <option value="Journalism/Media">Journalism/Media</option>
+                <option value="Other">Other</option>
+        </select>
+    </div>
+
+</div>
+
+        <input type="checkbox" name="group[49889][36028797018963968]"
+               id="mce-group[49889]-49889" value="" hidden checked>
+
+        
+        <input type="hidden" name="tags" value="40211341">
+
+        <button type="submit" name="subscribe" id="subscribe-btn" class="link-blue-btn" value="Subscribe">Subscribe</button>
+
+    </form>
+</dialog><dialog id="pop-up-success" class="pop-up-success">
+    <button class="pop-up-close close-btn" type="button" aria-label="Close">
+        <img src="/assets/images/svg/icon-utility/close-x-btn.svg" alt="Close X Button" class="close-icon">
+    </button>
+    <h2 class="success-title">Your subscription to Real-Time Data Set for Macroeconomists has been confirmed.</h2>
+
+    <img class="checkmark-icon" src="/assets/images/svg/icon-utility/checkmark-circle.svg" alt="checkmark">
+
+    <p>Check out the full <a href="/about-us/subscriptions" target="_blank">subscription list</a> for other offerings from the Federal Reserve Bank of Philadelphia.</p>
+
+    <p class="privacy-notice">View our <a href="/about-us/privacy-notice" target="_blank">Privacy Notice</a>.</p>
+
+    <button type="button" class="pop-up-close link-blue-btn">Close</button>
+
+</dialog>
+    </div>
+
+</div>
+
+    </div>
+<aside class=detail-content-tertiary>
+        <div class="component-row">
+            <div class="group-cards-data">
+
+                    <h2> RELATED CHARTS &amp; DATA</h2>
+                <div class="card-data-wrapper">
+                        <div class="card-data">
+                            <div class="data-image">
+                                <img src="/-/media/FRBP/Assets/Surveys-And-Data/list-images/ads.png?sc_lang=en" alt="Generic line chart" />
+                            </div>
+                            <h3 class="data-title">
+                                <a href="/surveys-and-data/real-time-data-research/ads">Aruoba-Diebold-Scotti Business Conditions Index</a>
+                            </h3>
+                            <p class="data-excerpt">An index designed to track real business conditions at high observation frequency</p>
+                            <p class="data-date">Updated: 24 Sep ’26</p>
+                        </div>
+                        <div class="card-data">
+                            <div class="data-image">
+                                <img src="/-/media/FRBP/Assets/Surveys-And-Data/list-images/Chart4.jpg?sc_lang=en" alt="Generic line chart" />
+                            </div>
+                            <h3 class="data-title">
+                                <a href="/surveys-and-data/real-time-data-research/atsix">Aruoba Term Structure of Inflation Expectations</a>
+                            </h3>
+                            <p class="data-excerpt">A continuous curve of inflation expectations three to 120 months ahead, analogous to a yield curve</p>
+                            <p class="data-date">Updated: 25 Sep ’26</p>
+                        </div>
+                        <div class="card-data">
+                            <div class="data-image">
+                                <img src="/-/media/FRBP/Assets/Surveys-And-Data/list-images/three-line-icon.jpg" alt="Generic line chart with three lines" />
+                            </div>
+                            <h3 class="data-title">
+                                <a href="/surveys-and-data/real-time-data-research/gdpplus">GDPplus</a>
+                            </h3>
+                            <p class="data-excerpt">Measure of the quarter-over-quarter rate of growth of real output in continuously compounded annualized percentage points</p>
+                            <p class="data-date">Updated: 26 Aug ’26</p>
+                        </div>
+                        <div class="card-data">
+                            <div class="data-image">
+                                <img src="/-/media/FRBP/Assets/Surveys-And-Data/list-images/Chart7.jpg?sc_lang=en" alt="Generic bar graph with bars of various lengths" />
+                            </div>
+                            <h3 class="data-title">
+                                <a href="/surveys-and-data/real-time-data-research/livingston-survey">Livingston Survey</a>
+                            </h3>
+                            <p class="data-excerpt">The oldest continuous survey of economists' expectations that summarizes the forecasts of economists from industry, government, banking, and academia</p>
+                            <p class="data-date">Updated: 24 Jun ’26</p>
+                        </div>
+                        <div class="card-data">
+                            <div class="data-image">
+                                <img src="/-/media/FRBP/Assets/Surveys-And-Data/list-images/ads.png?sc_lang=en" alt="Generic line chart" />
+                            </div>
+                            <h3 class="data-title">
+                                <a href="/surveys-and-data/macroeconomic-data/prism-ii">Philadelphia Research Intertemporal Stochastic Model-II (PRISM-II)</a>
+                            </h3>
+                            <p class="data-excerpt">The Philadelphia Research Intertemporal Stochastic Model-II (PRISM-II) is the second-generation dynamic stochastic general equilibrium (DSGE) model that is being developed by the Research Department of the Federal Reserve Bank of Philadelphia.</p>
+                            <p class="data-date">Updated: 25 Sep ’26</p>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+</aside>
+
+
+            <section class="cards"></section>
+
+            
+
+        </main>
+        <footer>
+            
+<div class="footer" id="footer" tabindex="-1">
+    <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <address>
+            <div class="contact-address circle-icon">
+                <p><p>Ten Independence Mall</p>
+<p>Philadelphia, PA 19106</p></p>
+            </div>
+            <p class="contact-phone circle-icon"><a href="tel:(215) 574-6000">(215) 574-6000</a></p>
+        </address>
+
+        <nav class="contact-social">
+            <ul>
+
+                    <li class="share-circle-icon">
+
+                        <a target="_blank" title="linkedin-frbp" rel="noopener noreferrer" href="https://www.linkedin.com/company/philadelphiafed/">
+                        <img src="/-/media/FRBP/Assets/Images/social/linkedin-circle.svg?iar=0&amp;hash=03D1CA336F233706A0AD87B567E3B640" alt="LinkedIn" />
+                        </a>
+
+                    </li>
+                    <li class="share-circle-icon">
+
+                        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/philadelphiafed">
+                        <img src="/-/media/FRBP/Assets/Images/social/x-circle.svg?iar=0&amp;hash=2FE751E6EEC664CF758311B734D37798" alt="Twitter" />
+                        </a>
+
+                    </li>
+                    <li class="share-circle-icon">
+
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/PhillyFed">
+                        <img src="/-/media/FRBP/Assets/Images/social/youtube-circle.svg?iar=0&amp;hash=AF25ECB8538FB9764B3777ACF1E339FA" alt="YouTube" />
+                        </a>
+
+                    </li>
+                    <li class="share-circle-icon">
+
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/philadelphiafed">
+                        <img src="/-/media/FRBP/Assets/Images/social/facebook-circle.svg?iar=0&amp;hash=93E67FCF22A31927339EF159BE9318E4" alt="Facebook" />
+                        </a>
+
+                    </li>
+                    <li class="share-circle-icon">
+
+                        <a target="_blank" title="threads-frbp" rel="noopener noreferrer" href="https://www.threads.net/@philadelphiafed">
+                        <img src="/-/media/FRBP/Assets/Images/social/threads-circle.svg?iar=0&amp;hash=69A1107DD754B37AF5685A446257AA64" alt="Threads" />
+                        </a>
+
+                    </li>
+                    <li class="share-circle-icon">
+
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/philadelphiafed/">
+                        <img src="/-/media/FRBP/Assets/Images/social/instagram-circle.svg?iar=0&amp;hash=95774A86DAEFFDEC06946FDAABC3B050" alt="Instagram" />
+                        </a>
+
+                    </li>
+
+            </ul>
+        </nav>
+    </div>
+	<nav class="footer-pages">
+		<ul>
+				<li>
+
+					<a href="/about-us/privacy-notice">
+					Privacy Notice
+					</a>
+
+				</li>
+				<li>
+
+					<a href="/about-us/newsroom">
+					Newsroom
+					</a>
+
+				</li>
+				<li>
+
+					<a href="/about-us/subscriptions">
+					Subscribe
+					</a>
+
+				</li>
+				<li>
+
+					<a href="/contact-us">
+					Contact
+					</a>
+
+				</li>
+
+		</ul>
+		<p class="copyright">Copyright 2026. All rights reserved. Federal Reserve Bank of Philadelphia</p>
+	</nav>
+
+</div>
+
+        </footer>
+    </div>
+    
+<script src="/-/media/scripts/simplelightbox/simpleLightboxminJS.js"></script>
+
+<script>
+new SimpleLightbox({elements: '.glightbox'});
+</script>
+
+    <script src="/pages/data-archive/page.js"></script>
+
+    <!-- /#wrapper -->
+<script type="text/javascript"  src="/9LzS_ridY/rW/MF/diQAan_qTwQzX4/D3V3kzGt0VJGtSS1/FEF2AQ/bU/svTURjDHQ"></script></body>
+</html>

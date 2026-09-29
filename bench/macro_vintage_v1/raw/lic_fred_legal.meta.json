@@ -1,0 +1,26 @@
+{
+ "url": "https://fred.stlouisfed.org/legal/",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:35:26.817321Z",
+ "request_time_utc": "2026-09-29T18:35:26.573872Z",
+ "latency_s": 0.243,
+ "headers": {
+  "Content-Type": "text/html; charset=UTF-8",
+  "Server": "Apache",
+  "x-frame-options": "SAMEORIGIN",
+  "x-content-type-options": "nosniff",
+  "x-xss-protection": "1; mode=block",
+  "X-Akamai-Transformed": "0 - 0 -",
+  "Vary": "Accept-Encoding",
+  "Expires": "Wed, 30 Sep 2026 11:18:57 GMT",
+  "Date": "Tue, 29 Sep 2026 18:35:26 GMT",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=86400",
+  "X-location": "cfs",
+  "Set-Cookie": "_abck=67476F7129996E7BEF784A9C04C8DAA9~-1~YAAQElPRF21f7NSgAQAAv0Rz7hByDjYcWDbHji92axTFGldIKBsMR9pf1ao8Jvy6qdTrnAdW207FyV5fiWqf0B1Bd78qIdnfS6ZCyz0kBefT2ReS1A5zP6ZxNvSpnmgqhvIS5A2axh3gjyeKPCYrBlh2QT9vKnk+M5pe8VtBMXtKx51UIhbi4qSbaTvYUDtb7SgcDqc1Jtcw7RcKJuxSMMKzj3LpUJMypzctXed/X3WATiXk1c4zU8bcubVXJGqDBJyzHPn5H7gNqsPSaBLAanCAWUi7wQU5t4Muw91nDfJd1x4vIxJHqj55Lp8IgurV47bpoRvPFivmva6L6+e40iVZwgC/n/0MrjVtUasr4Ucj4BmzoG7Cd1NCqGM3p9XB7Y4/OiJH/hvlz4UgoNy8KKdb5wEU/X9cHtTWeCa2ty6lrMGZ54RKKZ2pvxgN/q4UaMecNLTHboC2~-1~-1~-1~-1~-1; Domain=.stlouisfed.org; Path=/; Expires=Wed, 29 Sep 2027 18:35:26 GMT; Max-Age=31536000; Secure"
+ },
+ "bytes": 131701,
+ "sha256": "947dfd15c16c1f1ce57adb2e9b9a7e369ee69eea2c0fc163476956024b40285d"
+}

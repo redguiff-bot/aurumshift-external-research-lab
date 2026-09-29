@@ -1,0 +1,174 @@
+{
+ "fred_api_terms": {
+  "url": "https://fred.stlouisfed.org/docs/api/terms_of_use.html",
+  "status": 200,
+  "receipt": "2026-09-29T18:35:26.568933Z",
+  "quotes": [
+   "Louis Fed Web Services: API Key Skip to main content Explore Our Apps FRED Tools and resources to find and use economic data worldwide FRASER U.S.",
+   "Property Rights Data series available through the FRED&reg; API, may be owned by third parties and subject to copyright restrictions.",
+   "Louis's provision of the FRED&reg; API to you nor your use of the FRED&reg; API override the data series owners' copyrights, requirements and restrictions.",
+   "Copyrighted series contain the word 'Copyright' in their notes."
+  ]
+ },
+ "fred_legal": {
+  "url": "https://fred.stlouisfed.org/legal/",
+  "status": 200,
+  "receipt": "2026-09-29T18:35:26.817321Z",
+  "quotes": [
+   "You can do a lot of things with FRED data, graphs, maps, software, and mobile apps for your own personal, non-commercial use such as...",
+   "Make cool graphs and maps and share them with friends Download data into Excel for homework assignments Support your policy stance on Facebook or your blog Make a sweet app using our FRED through our free API Just be sure to mention FRED as the service from which you retrieved the data and keep any copyright notices that appear with the data on FRED.",
+   "For complete information see the full FRED\u00ae Services Terms of Use 3) Why do some series on FRED have a copyright notice?",
+   "Series with a copyright notice are owned by third parties and have special restrictions."
+  ]
+ },
+ "bls_copyright": {
+  "url": "https://www.bls.gov/opub/copyright-information.htm",
+  "status": 200,
+  "receipt": "2026-09-29T18:35:27.150935Z",
+  "quotes": [
+   "You are free to use our public domain material without specific permission, although we do ask that you cite the Bureau of Labor Statistics as the source.",
+   "The public domain use of our materials includes linking to our website.",
+   "You do not need to obtain special permission from the BLS to link to our site."
+  ]
+ },
+ "bls_api_signature": {
+  "url": "https://www.bls.gov/developers/api_signature_v2.htm",
+  "status": 200,
+  "receipt": "2026-09-29T18:35:27.514847Z",
+  "quotes": [
+   "All requests specifying years must include a four-digit start and end year in numeric format&nbsp;(e.g.",
+   "POST requests (Multiple Series and One or More Series, Specifying Years) have the option to return calculations for Net and Percent Change, using \"calculations\":true .",
+   "Single Series Use this signature to retrieve data for a single time series for the past three years.",
+   "} ] } ] } ] } ] } Multiple Series Use this signature to retrieve data for more than one timeseries for the past three years."
+  ]
+ },
+ "bea_api_terms": {
+  "url": "https://apps.bea.gov/API/signup/",
+  "status": 200,
+  "receipt": "2026-09-29T18:35:28.039677Z",
+  "quotes": [
+   "--> Have questions about our data&nbsp; Contact us at developers@bea.gov &nbsp;BEA on GitHub &nbsp;&nbsp;BEA eu.us.opendata pages Register &times; Please provide your name (or organization name), a valid email address, and agree to the published terms of service.",
+   "Name Email Captcha Reset Captcha --> I agree to the Terms of Service PDF Register &nbsp; Bureau of Economic Analysis 4600 Silver Hill Road &bull; Suitland, MD 20746 Contact Us Working at BEA Frequently Asked Questions Our Policies Privacy Commitment to Scientific Integrity Data Dissemination Practices Open Data USA.gov Business USA No FEAR Act FOIA U.S."
+  ]
+ },
+ "eia_reuse": {
+  "url": "https://www.eia.gov/about/copyrights_reuse.php",
+  "status": 200,
+  "receipt": "2026-09-29T18:35:28.330936Z",
+  "quotes": [
+   "Energy Information Administration - EIA - Independent Statistics and Analysis Menu Statistics Analysis Tools Education News Enter Search Term(s): Search About EIA Copyrights and Reuse Public domain and use of EIA content U.S.",
+   "government publications are in the public domain and are not subject to copyright protection.",
+   "Transmission or reproduction of protected items beyond that allowed by fair use as defined in the copyright laws requires the written permission of the copyright owners.",
+   "For background material on other copyright issues, see Copyright Basics from the U.S."
+  ]
+ },
+ "eia_api_docs": {
+  "url": "https://www.eia.gov/opendata/documentation.php",
+  "status": 200,
+  "receipt": "2026-09-29T18:35:28.602321Z",
+  "quotes": [
+   "Using an API key To call our API, you must use the unique API key assigned to you.",
+   "Visit our Open Data pages ( https://www.eia.gov/opendata/ ) to register for this free key.",
+   "To use an API key, place it as a parameter after the route.",
+   "api_key=xxxxxxx Replace xxxxxx with the API key transmitted in your email."
+  ]
+ },
+ "nyfed_terms": {
+  "url": "https://www.newyorkfed.org/terms-of-use",
+  "status": 200,
+  "receipt": "2026-09-29T18:35:29.584015Z",
+  "quotes": []
+ },
+ "ecb_copyright": {
+  "url": "https://www.ecb.europa.eu/services/disclaimer/html/index.en.html",
+  "status": 200,
+  "receipt": "2026-09-29T18:35:31.154533Z",
+  "quotes": [
+   "Please note that documents or other information available on this website are not guaranteed to exactly reproduce officially adopted texts.",
+   "Copyright Copyright \u00a9 for the entire content of this website: European Central Bank, Frankfurt am Main, Germany.",
+   "Subject to the exception below, users of this website may make free use of the information obtained directly from it subject to the following conditions: When such information is distributed or reproduced, it must appear accurately and the ECB must be cited as the source.",
+   "As an exception to the above, any reproduction, publication or reprint, in whole or in part, of documents that bear the name of their authors, such as ECB Working Papers and ECB Occasional Papers, in the form of a different publication (whether printed or produced electronically) is permitted only with the explicit prior written authorisation of the ECB or the authors."
+  ]
+ },
+ "eurostat_copyright": {
+  "url": "https://ec.europa.eu/eurostat/about-us/policies/copyright",
+  "status": 404,
+  "receipt": "2026-09-29T18:35:31.821539Z",
+  "quotes": []
+ },
+ "boe_terms": {
+  "url": "https://www.bankofengland.co.uk/legal",
+  "status": 200,
+  "receipt": "2026-09-29T18:35:32.099981Z",
+  "quotes": [
+   "Copyright Unless otherwise stated, the copyright and any other rights in the contents of the Resources, including but not limited to images, text and data, are owned by the Governor and Company of the Bank of England.&nbsp; The Bank will endeavour to acknowledge third-party copyright.",
+   "The Bank typically grants permission for non-commercial re-use of the Resources, particularly in an academic or education context.",
+   "Where Bank Resources include or are comprised of third party copyright materials, the copyright of that material remains with the originating organisation and any re-use is subject to the separate approval of the relevant third party.&nbsp;Including LSEG data on our website &nbsp;and not sourcing them is misleading as we do not in fact own the copyright to that data, LSEG do.",
+   "The information made available via the Database is the copyright of the Governor and Company of the Bank, unless otherwise stated."
+  ]
+ },
+ "boc_terms": {
+  "url": "https://www.bankofcanada.ca/terms/",
+  "status": 200,
+  "receipt": "2026-09-29T18:35:32.474468Z",
+  "quotes": [
+   "Copyright / Permission to Reproduce Unless otherwise stated the copyright and any other rights in the contents of the material available through this website, including any images and text, are owned by the Bank of Canada.",
+   "Except as indicated below (section 2, Exceptions to Permission to Reproduce ), the Bank permits you to freely use, copy, distribute and transmit its website content under the following terms: 1.1.",
+   "1.2 Accuracy You must exercise due diligence in ensuring the accuracy of any content you reproduce.",
+   "Exceptions to Permission to Reproduce 2.1."
+  ]
+ },
+ "ust_fiscaldata_terms": {
+  "url": "https://fiscaldata.treasury.gov/api-documentation/",
+  "status": 200,
+  "receipt": "2026-09-29T18:35:33.648060Z",
+  "quotes": [
+   "API Endpoint URL Structure How to Access our API License and Authorization API Versioning Endpoints List of Endpoints Fields by Endpoint Fiscal Service Data Registry Methods Parameters Fields Data Types Fields by Endpoint Filters Sorting Format Pagination Responses and Response...",
+   "The data is offered free, without restriction, and available to copy, adapt, redistribute, or otherwise use for non-commercial or commercial purposes.",
+   "Response Code Description 200 OK - Response to a successful GET request 400 Bad Request - Request was malformed 403 Forbidden - API Key is not valid 404 Not Found - When a non-existent resource is requested 500 Internal Server Error - The server failed to fulfill a request Meta Object The meta object provides metadata about the resulting payload from your API request.",
+   "Table of Contents Help FAQ Contact Us Community Site About Us About Fiscal Data Release Calendar Subscribe to Our Mailing List Our Sites USAspending \u00a9 2026 Data Transparency Accessibility Privacy Policy Freedom of Information Act"
+  ]
+ },
+ "cftc_terms": {
+  "url": "https://www.cftc.gov/PublicReporting/index.htm",
+  "status": 404,
+  "receipt": "2026-09-29T18:35:34.520645Z",
+  "quotes": []
+ },
+ "wb_terms": {
+  "url": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+  "status": 200,
+  "receipt": "2026-09-29T18:35:35.267268Z",
+  "quotes": [
+   "The content available on this platform is provided for informational and non-commercial purposes only, unless otherwise stated.",
+   "Use of the Site siteuse Prohibited uses: You may use the Site only for lawful, personal and non-commercial purposes.",
+   "Provide any investment advice or otherwise violate applicable securities laws, or undertake or promote other commercial activities or sales, such as contests, sweepstakes and other sales promotions, barter or advertising.",
+   "Delete any author attributions, legal notices, or proprietary designations or labels in any file that is uploaded."
+  ]
+ },
+ "imf_terms": {
+  "url": "https://www.imf.org/en/About/copyright-and-terms",
+  "status": 403,
+  "receipt": "2026-09-29T18:35:35.463598Z",
+  "quotes": [
+   "Access Denied Access Denied You don't have permission to access \"http&#58;&#47;&#47;www&#46;imf&#46;org&#47;en&#47;About&#47;copyright&#45;and&#45;terms\" on this server."
+  ]
+ },
+ "oecd_terms": {
+  "url": "https://www.oecd.org/en/about/terms-conditions.html",
+  "status": 403,
+  "receipt": "2026-09-29T18:35:35.726622Z",
+  "quotes": []
+ },
+ "philly_rtds": {
+  "url": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/real-time-data-set-for-macroeconomists",
+  "status": 200,
+  "receipt": "2026-09-29T18:35:36.352550Z",
+  "quotes": [
+   "As a practical matter, they differ because they use largely independent source data.",
+   "The data set may be used by macroeconomic researchers to verify empirical results, to analyze policy, or to forecast.",
+   "This is the preferred article to cite for technical journal articles.",
+   "Updated: 25 Sep \u201926 Contact Us Ten Independence Mall Philadelphia, PA 19106 (215) 574-6000 Privacy Notice Newsroom Subscribe Contact Copyright 2026."
+  ]
+ }
+}

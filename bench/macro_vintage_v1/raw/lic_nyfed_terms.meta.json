@@ -1,0 +1,25 @@
+{
+ "url": "https://www.newyorkfed.org/terms-of-use",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:35:29.584015Z",
+ "request_time_utc": "2026-09-29T18:35:28.607174Z",
+ "latency_s": 0.977,
+ "headers": {
+  "Content-Type": "text/html; charset=utf-8",
+  "Pragma": "no-cache",
+  "Request-Context": "appId=cid-v1:d281620b-6b44-4d2e-86f2-662eb5529a0e",
+  "X-Akamai-Transformed": "9 19316 0 pmb=mRUM,1",
+  "Vary": "Accept-Encoding",
+  "Cache-Control": "no-cache, no-store",
+  "Expires": "Tue, 29 Sep 2026 18:35:29 GMT",
+  "Date": "Tue, 29 Sep 2026 18:35:29 GMT",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Set-Cookie": "shell#lang=en; path=/; secure; SameSite=None",
+  "Server-Timing": "cdn-cache; desc=HIT",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains"
+ },
+ "bytes": 95180,
+ "sha256": "083afb8ec5bb0c5698775d97f38d10f1695353949c9bf8370804f956d3ef5567"
+}
