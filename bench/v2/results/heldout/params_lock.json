@@ -1,0 +1,54 @@
+{
+ "locked_utc": "2026-09-29T08:05:14Z",
+ "policies": {
+  "A": {
+   "kind": "A"
+  },
+  "R": {
+   "kind": "R"
+  },
+  "B": {
+   "kind": "B",
+   "gamma": 0.9995,
+   "S": 25,
+   "M": 4
+  },
+  "C": {
+   "kind": "C",
+   "algo": "eps_ew",
+   "fading": 0.1,
+   "eps": 0.2
+  },
+  "C2": {
+   "kind": "C2",
+   "algo": "eps_ew",
+   "fading": 0.1,
+   "eps": 0.2,
+   "guard": [
+    50,
+    4
+   ]
+  },
+  "D": {
+   "kind": "D",
+   "algo": "eps",
+   "expl": 0.2,
+   "lr": 0.05,
+   "use_group": false
+  }
+ },
+ "selected_file_sha256": {
+  "B": "5cd02ae6659d531df5f1476c436f9f753135b51bff80eb3c7db9a744e39e24fe",
+  "C": "b29a434c6de9b2791cb684e052ef4359e42dea970639d0368051fc8dbfe42744",
+  "C2": "71d6e20f0e2d21fd8391404a237594ec162b11c90a81d8b336f8b24425d8674b",
+  "D": "c29002a481816fb3600ef40eb5922c4d0ee2c8c2f6dbc4213f60d845f30f4185"
+ },
+ "freeze_manifest_sha256": "4fe10b5f1399926a3a04379ceb9a34e6b9eb066d65ac98fd8f8868e17e46955b",
+ "protocol_sha256": "123f3e41d2c323323e165d4f882e1f349dd91195022e9c4feec3e2f3a97c5c63",
+ "heldout_generator_sha256": "3080f43e7a5b3cdd627176c5ca88fdae81504962ea3ebcb3910a3cfaf1ed72a2",
+ "seeds": [
+  3000,
+  3020
+ ],
+ "python": "3.11.15"
+}
