@@ -1,0 +1,200 @@
+{
+ "Equal": {
+  "hp": {},
+  "pooled_tuning_regret": 0.06330640265041598
+ },
+ "Static": {
+  "hp": {
+   "C": 150,
+   "kappa": 400
+  },
+  "pooled_tuning_regret": 0.024673164788237913
+ },
+ "WTA": {
+  "hp": {
+   "a": 0.05
+  },
+  "pooled_tuning_regret": 0.011505902777777766
+ },
+ "EWMA": {
+  "hp": {
+   "a": 0.05,
+   "beta": 400
+  },
+  "pooled_tuning_regret": 0.011656013354831574
+ },
+ "HedgePlain": {
+  "hp": {
+   "eta": 300
+  },
+  "pooled_tuning_regret": 0.01760825880355076
+ },
+ "SleepHedge": {
+  "hp": {
+   "eta": 400
+  },
+  "pooled_tuning_regret": 0.012508344946416006
+ },
+ "SleepEG": {
+  "hp": {
+   "eta": 60
+  },
+  "pooled_tuning_regret": 0.012380548886711834
+ },
+ "FixedShare": {
+  "hp": {
+   "alpha": 0.0005,
+   "eta": 10
+  },
+  "pooled_tuning_regret": 0.01325895195152299
+ },
+ "DiscFreeze": {
+  "hp": {
+   "eta": 100,
+   "gamma": 0.95
+  },
+  "pooled_tuning_regret": 0.0104881298330984
+ },
+ "DiscAmnesty": {
+  "hp": {
+   "eta": 100,
+   "gamma": 0.98
+  },
+  "pooled_tuning_regret": 0.011410737909410029
+ },
+ "SH_bounded": {
+  "hp": {
+   "B": 10.0,
+   "eta": 10,
+   "floor": 0.0
+  },
+  "pooled_tuning_regret": 0.025420814631601386
+ },
+ "EWMA_bounded": {
+  "hp": {
+   "a": 0.05,
+   "beta": 100,
+   "floor": 0.02
+  },
+  "pooled_tuning_regret": 0.023142440643447226
+ },
+ "BMA": {
+  "hp": {
+   "kappa": 600,
+   "lam": 0.95,
+   "opt": 0.1
+  },
+  "pooled_tuning_regret": 0.010811378514351008
+ },
+ "CtxOracle": {
+  "hp": {
+   "eta": 5,
+   "n0": 10
+  },
+  "pooled_tuning_regret": 0.008433345207297842
+ },
+ "CtxLag": {
+  "hp": {
+   "eta": 5,
+   "n0": 10
+  },
+  "pooled_tuning_regret": 0.010597235453593472
+ },
+ "CtxNoisy": {
+  "hp": {
+   "eta": 5,
+   "n0": 10
+  },
+  "pooled_tuning_regret": 0.014516836374899688
+ },
+ "SleepEXP3": {
+  "hp": {
+   "eta": 0.2,
+   "gamma": 0.2
+  },
+  "pooled_tuning_regret": 0.0589097103220887
+ },
+ "DUCB": {
+  "hp": {
+   "c": 0.2,
+   "gamma": 0.98
+  },
+  "pooled_tuning_regret": 0.018124305555555543
+ },
+ "DivEWMA": {
+  "hp": {
+   "tau": 0.1
+  },
+  "pooled_tuning_regret": 0.01156938427622723
+ },
+ "DivSH": {
+  "hp": {
+   "tau": 0.1
+  },
+  "pooled_tuning_regret": 0.01250726998089982
+ },
+ "_base_for_div": {
+  "EWMA": {
+   "a": 0.05,
+   "beta": 400
+  },
+  "SleepHedge": {
+   "eta": 400
+  }
+ },
+ "_grid_edge_flags": {
+  "Equal": [],
+  "Static": [
+   "kappa=400(max)"
+  ],
+  "WTA": [],
+  "EWMA": [
+   "beta=400(max)"
+  ],
+  "HedgePlain": [
+   "eta=300(max)"
+  ],
+  "SleepHedge": [
+   "eta=400(max)"
+  ],
+  "SleepEG": [],
+  "FixedShare": [
+   "alpha=0.0005(min)"
+  ],
+  "DiscFreeze": [
+   "eta=100(max)",
+   "gamma=0.95(min)"
+  ],
+  "DiscAmnesty": [
+   "eta=100(max)"
+  ],
+  "SH_bounded": [
+   "B=10.0(max)",
+   "floor=0.0(min)"
+  ],
+  "EWMA_bounded": [
+   "floor=0.02(min)"
+  ],
+  "BMA": [
+   "kappa=600(max)",
+   "opt=0.1(max)"
+  ],
+  "CtxOracle": [
+   "n0=10(min)"
+  ],
+  "CtxLag": [
+   "n0=10(min)"
+  ],
+  "CtxNoisy": [
+   "n0=10(min)"
+  ],
+  "SleepEXP3": [],
+  "DUCB": [],
+  "DivEWMA": [
+   "tau=0.1(min)"
+  ],
+  "DivSH": [
+   "tau=0.1(min)"
+  ]
+ }
+}

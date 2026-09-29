@@ -250,6 +250,10 @@ class SleepHedge(Base):
         self._post(obs, exist)
 
     def _post(self, obs, exist):
+        # evidence-time: sharing / forgetting only advance when at least one expert was observed,
+        # except the deliberate 'amnesty' variant (wall-clock forgetting of dormant experts)
+        if not obs.any() and self.dorm != "amnesty":
+            return
         seen = self.seen & self.ex
         if self.gamma < 1.0:
             m = self.lp[seen].mean()

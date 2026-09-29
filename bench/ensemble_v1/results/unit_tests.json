@@ -1,0 +1,122 @@
+{
+ "Equal": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "Static": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "WTA": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "EWMA": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "HedgePlain": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "SleepHedge": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "SleepEG": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "FixedShare": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "DiscFreeze": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "DiscAmnesty": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": true
+ },
+ "SH_bounded": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "EWMA_bounded": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "BMA": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "CtxOracle": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "CtxLag": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "CtxNoisy": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "DivEWMA": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "DivSH": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "SleepEXP3": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ },
+ "DUCB": {
+  "simplex": true,
+  "frozen_on_missing": true,
+  "no_lookahead": true,
+  "by_design_unfrozen": false
+ }
+}
