@@ -1,204 +1,414 @@
-# Lane 015 — Découverte de features (deux runs indépendants) : analyse approfondie
+# Lane 017 — Infrastructure OSS pour la recherche en trading : analyse approfondie des deux runs
 
-Auteur de l'analyse : agent de recherche (Claude), pour Jean-François. Date de l'analyse : 2026-09-29.
-Périmètre : `reports/015_feature_discovery/` et `bench/feature_discovery_v1/` sur deux branches. Rien n'a été modifié dans le dépôt (lecture via `git show` / `git archive` vers un dossier temporaire ; recalculs faits dans des copies jetables).
+Analyse rédigée le 2026-09-29 (horloge du bac à sable) pour Jean-François. Elle porte sur deux exécutions indépendantes de la même mission (PR #16 : 54 projets ; PR #18 : 67 projets), toutes deux conclues `MULTIPLE_OSS_COMPONENTS_SUPPORTED`.
 
-**Comment lire ce document.**
-- Les étiquettes du dépôt sont reprises : PROVEN (prouvé par test ou par construction), OBSERVED (chiffre lu ou recalculé), DOCUMENTED_CLAIM (affirmé par un rapport, non vérifié), INFERENCE (mon raisonnement), UNKNOWN (inconnu).
-- « Le rapport affirme » = ce que dit le texte des rapports. « Vérifié » = j'ai retrouvé le chiffre dans un fichier de résultats brut ou je l'ai recalculé moi-même. Marqueurs : ✔ vérifié, ✘ écart, ? non vérifiable.
-- Quand je cite un chiffre, le chemin du fichier source est entre parenthèses. Les chemins sont relatifs à la racine de la branche concernée. `R1` = run 1 (branche `claude/feature-discovery-v1`, PR #13). `R2` = run 2 (branche `claude/feature-discovery-v1-b`, PR #20).
-- Vocabulaire minimal (chaque terme est ré-expliqué à sa première occurrence dans le texte) : **branche** = copie de travail parallèle du dépôt ; **PR (pull request)** = demande d'intégrer une branche dans `main` ; **commit** = un enregistrement daté des modifications ; **hash SHA-256** = empreinte numérique d'un fichier (si le fichier change d'un octet, l'empreinte change).
+**Conventions de lecture.**
+- « Run 1 » = PR #16, branche `origin/claude/oss-trading-research-infra-v1`. « Run 2 » = PR #18, branche `origin/claude/amazing-wozniak-bwjdfp`.
+- Pour chaque chiffre clé, le chemin du fichier est donné entre parenthèses. Les chemins commençant par `reports/` ou `bench/` existent sur les DEUX branches sauf mention contraire (les deux runs écrivent dans les mêmes dossiers, ce qui fait que les deux PR entrent en collision si on fusionne les deux).
+- Marques de vérification : **✔ vérifié** (j'ai recalculé ou relu le fichier de résultat brut et il concorde), **✘ écart** (le rapport et le fichier brut ne concordent pas), **? non vérifiable** (le fichier brut nécessaire n'est pas dans la branche).
+- Les étiquettes du dépôt (`claude.md`) sont conservées : PROVEN (preuve avec vérité indépendante), OBSERVED (constaté en exécutant ou en inspectant), DOCUMENTED_CLAIM (affirmé par une documentation), INFERENCE (déduit), UNKNOWN (inconnu).
+- Je n'ai rien exécuté d'autre que : (a) l'extraction des deux branches dans un dossier temporaire (sans checkout ni modification de branche), (b) un recalcul en pandas des défauts injectés du test qualité de données du run 2, (c) le téléchargement du code source de la bibliothèque `ta` 0.11.0 pour vérifier un mécanisme de fuite (voir 7.1). Rien n'a été poussé.
+
+**Petit lexique dès maintenant (les autres termes sont expliqués à leur première occurrence).**
+- **OSS** (open source software) : logiciel dont le code est publié et réutilisable selon une licence.
+- **Microtest** : petit essai ciblé et reproductible d'une bibliothèque (une question, un résultat attendu connu).
+- **Oracle** : une réponse de référence, calculée autrement (à la main, avec numpy, etc.), à laquelle on compare la bibliothèque testée.
+- **Lookahead / fuite du futur** : un calcul qui utilise, sans le dire, une information qui n'était pas encore connue à la date simulée (ex. la moyenne de toute la série pour remplir le début). Cela rend un backtest trop beau pour être vrai.
+- **PIT (point-in-time)** : donnée « telle qu'on la connaissait à cette date-là », sans révisions ultérieures.
+- **Backtest** : rejouer une stratégie sur des données passées pour voir ce qu'elle aurait fait.
+- **Carnet d'ordres (order book, L2)** : la liste des offres d'achat et de vente par niveau de prix ; « L2 » = agrégé par prix.
+- **Bus factor** : nombre de personnes dont le départ bloquerait le projet ; ici approximé par le nombre d'auteurs nécessaires pour couvrir 50 % des commits (modifications) des 12 derniers mois.
 
 ---
 
 ## 0. Fiche d'identité
 
-| | Run 1 (R1) | Run 2 (R2) |
+| | Run 1 | Run 2 |
 |---|---|---|
-| Branche | `origin/claude/feature-discovery-v1` | `origin/claude/feature-discovery-v1-b` |
-| PR | #13, brouillon (draft), ouverte le 2026-09-29 18:12 UTC | #20, brouillon (draft), ouverte le 2026-09-29 18:57 UTC |
-| Titre PR | « Feature discovery V1 (symbolic / sparse / interactions / causal boundaries) — LIMITED_STABLE_FEATURES_SUPPORTED » | « 015 feature discovery v1 (independent run): NO_STABLE_NEW_FEATURES » |
-| Commit de tête | `fa00dcc5bda8e1714384d9500af113e7f08ebd3c` (18:11:57 UTC) | `4a585703818234a3bd4bb90170e883cdb5b21fb7` (18:57:14 UTC) |
-| Nombre de commits propres à la branche | 8 (`c50e99c` → `fa00dcc`) | 7 (`829579c` → `4a58570`) |
-| Base commune | `1a449df` (fusion de la PR #6, `main`) | idem |
-| Fichiers ajoutés (PR) | 81 fichiers, +11 226 lignes | 101 fichiers, +1 871 lignes |
-| Dont fichiers de la lane | 81 (17,49 Mo dont 17,11 Mo de données brutes compressées) | 93 (8,65 Mo) + 8 fichiers `.whl` hors-sujet (62,45 Mo) |
-| Rapports | 11 fichiers `reports/015_feature_discovery/00` à `10` | idem, 11 fichiers, beaucoup plus courts (voir §12) |
-| Verdict final | `LIMITED_STABLE_FEATURES_SUPPORTED` | `NO_STABLE_NEW_FEATURES` |
-| Force du verdict (selon le run) | Le rapport le qualifie lui-même de « faible » et donne une « lecture pratique » = rien à ajouter aux primitives brutes (`reports/015_feature_discovery/00_EXECUTIVE_SUMMARY.md`, `09_ADJUDICATION.md`) | « MODERATE-LOW » (`00_EXECUTIVE_SUMMARY.md`) |
-| Ma lecture de la force | Le label est **mécanique et fragile** : il repose sur une seule formule, redondante, sur une cible facile (voir §7 et §8). | Le négatif est **crédible mais peu puissant** : fenêtre courte, une seule cible (voir §7 et §8). |
+| PR | #16, brouillon (draft), ouverte, titre « research(017): OSS trading research infra discovery (54 projects, 32 executed) » | #18, brouillon, ouverte, titre « research(017): external OSS trading-research infra discovery V1 (67 screened, 41 executed) » |
+| Branche | `claude/oss-trading-research-infra-v1` | `claude/amazing-wozniak-bwjdfp` |
+| Commit unique | `bb1371a78d4b25caf573f9887898adad321aebff`, 2026-09-29 18:21:10 UTC | `930e880bc64ff374a500cf483d41c6d60a1272fc`, 2026-09-29 18:52:03 UTC |
+| Base | `1a449df` (main) | `1a449df` (main) |
+| Session Claude | `session_01TE71zBiokn6WbeP18D2xfy` | `session_01Az3ce41PxQDY1woZ9hhCPg` |
+| Fichiers de la lane | 87 fichiers dans `reports/017_oss_trading_infra` + `bench/oss_trading_infra_v1` ; 206 359 octets (git ls-tree) ; PR : 87 fichiers, +2 449 lignes | 78 fichiers ; 333 948 octets ; PR : 78 fichiers, +7 687 lignes |
+| Rapports | 10 rapports `00` à `09` (43 630 octets) | 10 rapports `00` à `09` (78 473 octets) |
+| Projets découverts / exécutés | 54 / 32 (31 microtests complets + 1 partiel : databento-dbn) | 67 / 41 (+ 3 installés/importés seulement, 23 sur métadonnées seulement) |
+| Microtests | 16 (T01 à T16), 12 environnements virtuels isolés, 3 versions de Python (3.9, 3.12, 3.13) | 18 scripts de microtest dans `py/mt/` (+ `common.py`, `naut_lib.py`) et 2 fichiers SQL ; registre T1 à T21 dans le rapport 06 ; 1 instance PostgreSQL 16 + TimescaleDB 2.30.2 + pg_partman 5.0.1 ; empreinte d'installation isolée pour 33 candidats ; Python 3.9/3.11/3.12 |
+| Verdict final | `FINAL_VERDICT=MULTIPLE_OSS_COMPONENTS_SUPPORTED` | `FINAL_VERDICT=MULTIPLE_OSS_COMPONENTS_SUPPORTED` |
+| Répartition | ADOPT_REFERENCE 9 · ADAPT_CANDIDATE 5 · PARK 32 · REJECT 8 | ADOPT_REFERENCE 14 · ADAPT_CANDIDATE 10 · PARK 36 · REJECT 7 |
+| Deuxième service / datastore | 5 / 7 (aucun exécuté) | 5 / 8 |
+| Composant « drop-in » | OUI (niveau bibliothèque : exchange_calendars, pandas_market_calendars) | OUI (étroit : exchange_calendars, river, hdrhistogram/ddsketch, TA-Lib, pyarrow, DuckDB/polars en calcul seul) |
 
-Blocs finaux côte à côte (reproduits tels quels de `reports/015_feature_discovery/09_ADJUDICATION.md` de chaque branche) :
+**Force du verdict.** Le verdict `MULTIPLE_OSS_COMPONENTS_SUPPORTED` signifie « plusieurs composants open source sont soutenus par des preuves » ; il ne désigne pas une « meilleure plateforme » (les deux runs le disent explicitement : `reports/017_oss_trading_infra/08_ADJUDICATION.md`). Force réelle : **modérée**. Elle repose sur des données synthétiques (générées par ordinateur, avec graine fixe), une configuration par test et des oracles écrits par le testeur lui-même (voir sections 6 et 7). Pour les petites bibliothèques pures (calendriers, statistiques en ligne, optimiseurs de portefeuille), la preuve est solide sur ce qui a été testé. Pour les moteurs de rejeu/backtest, elle est solide sur l'arithmétique mais ne dit rien sur des marchés réels. La compatibilité avec AurumShift est **UNKNOWN par construction** (frontière de `claude.md` : aucun code privé lu).
 
-```
-# R1
-FEATURES_DISCOVERED=2
-FEATURES_HELDOUT_STABLE=1
-SYMBOLIC_EXPRESSIONS_STABLE=0
-NONREDUNDANT_FEATURES=0
-CAUSAL_IDENTIFIED_COUNT=0
-COMPLEXITY_JUSTIFIED=NO
-FINAL_VERDICT=LIMITED_STABLE_FEATURES_SUPPORTED
-
-# R2
-FEATURES_DISCOVERED=80 distinct pre-validation candidates over 5 seeds (18/20/19/22/20 per seed)
-FEATURES_HELDOUT_STABLE=0
-SYMBOLIC_EXPRESSIONS_STABLE=0
-NONREDUNDANT_FEATURES=0
-CAUSAL_IDENTIFIED_COUNT=0
-COMPLEXITY_JUSTIFIED=NO
-FINAL_VERDICT=NO_STABLE_NEW_FEATURES
-```
-
-**Fichiers `.whl` hors-sujet dans R2 (à la racine de la branche).** Un `.whl` est un paquet Python précompilé (un « installeur » de bibliothèque), sans rapport avec la recherche. Ils ont été ajoutés par erreur dans le commit `2b03487` (2026-09-29 18:35:36 UTC, « decile profiles, analysis script, README ») (OBSERVED, `git log --diff-filter=A`). Liste exacte (OBSERVED, `git ls-tree -r -l`) :
-
-| Fichier | Octets |
-|---|---|
-| `cloudpickle-3.1.2-py3-none-any.whl` | 22 228 |
-| `gplearn-0.4.3-py3-none-any.whl` | 40 300 |
-| `joblib-1.6.0-py3-none-any.whl` | 306 115 |
-| `narwhals-2.26.0-py3-none-any.whl` | 474 034 |
-| `numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl` | 16 918 164 |
-| `scikit_learn-1.9.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl` | 9 315 422 |
-| `scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl` | 35 349 300 |
-| `threadpoolctl-3.7.0-py3-none-any.whl` | 26 362 |
-| **Total (8 fichiers)** | **62 451 925 octets (≈ 62,5 Mo, ≈ 59,6 Mio)** |
-
-Ils gonflent la PR #20 et ne sont pas référencés par le code. Détail utile : ils m'ont servi à installer, sans internet, exactement les mêmes versions que R2 pour rejouer les calculs (voir §9). La synthèse `SYNTHESE_LANES.md` recommande déjà de les retirer si la PR #20 était retenue.
-
-Autres éléments d'identité :
-- Mission (citée par R1) : `AURUMSHIFT_EXTERNAL_FEATURE_DISCOVERY_SYMBOLIC_CAUSAL_V1`, mode `EXTERNAL_RESEARCH_ONLY / NO_PRIVATE_AURUMSHIFT_CODE / NO_INTEGRATION` (`reports/015_feature_discovery/00_EXECUTIVE_SUMMARY.md`, R1).
-- Sessions Claude distinctes (les deux PR citent deux identifiants de session différents) : le run 2 dit explicitement ne pas avoir lu le run 1 (`R2 00_EXECUTIVE_SUMMARY.md` § « Note on a pre-existing branch » ; PR #20 : « I did not read it »). Donc **deux études indépendantes**, ce qui rend leur comparaison informative (§8).
-- Données : klines (bougies) 1 heure du marché « spot » Binance, via l'API publique `data-api.binance.vision`. Les deux runs sont **hors AurumShift** : aucun code privé.
+Sur GitHub : la description de la PR #18 précise que les deux runs écrivent dans les mêmes chemins et qu'« un seul doit être fusionné ». Cette analyse les compare ; la décision de fusion t'appartient (sections 8 et 11).
 
 ---
 
 ## 1. Mission et question posée
 
-### 1.1 La question, en langage simple
+**Mission (identifiant repris des deux runs) :** `AURUMSHIFT_EXTERNAL_OSS_TRADING_RESEARCH_INFRA_DISCOVERY_V1` (`reports/017_oss_trading_infra/00_EXECUTIVE_SUMMARY.md`, les deux branches).
 
-Imagine que tu donnes à un ordinateur une vingtaine de « mesures » simples calculées sur les prix (rendement sur 24 h, volatilité récente, volume, etc.). On appelle ces mesures des **primitives** ou **features** (« variables explicatives » : des chiffres calculés à l'instant t pour prédire quelque chose sur le futur). La question :
+**Question reformulée simplement.** Avant de recoder soi-même la « plomberie » d'un laboratoire de trading (récupérer des données de marché, connaître les jours ouvrés des bourses, contrôler la qualité des données, rejouer un carnet d'ordres, simuler des exécutions avec des frais réalistes, calculer des indicateurs et des mesures de risque), existe-t-il des projets open source déjà écrits, fiables et faciles à maintenir, qu'on pourrait réutiliser ? Et lesquels ont vraiment été **vérifiés en les faisant tourner**, plutôt que jugés sur leur page de présentation ou leur nombre d'étoiles GitHub ?
 
-> Un programme automatique peut-il **inventer** de nouvelles features (combinaisons de primitives, formules) qui (a) prédisent vraiment quelque chose sur des données jamais vues, (b) sont courtes et lisibles, (c) apportent quelque chose que les primitives brutes ne donnent pas déjà, et tout cela **sans se raconter d'histoires** (sans « surajustement silencieux », c'est-à-dire sans trouver par hasard une formule qui marche sur le passé et pas ailleurs) ?
+**Treize classes de composants** ciblées (rapport `01_LANDSCAPE.md` du run 2, tableau « Component classes ») : collecteurs de données de marché, téléchargeurs d'historique, bibliothèques de carnet d'ordres, moteurs de rejeu / simulateurs d'événements, modèles de coûts de transaction, calcul de caractéristiques (features, indicateurs), statistiques en ligne, portefeuille/risque, moteurs de backtest, calendriers de marché, cadres de qualité de données, stockage de séries temporelles.
 
-Méthodes mises à l'épreuve (les deux runs, avec des variantes) :
-- **Information mutuelle (MI) / information mutuelle conditionnelle (CMI)** : mesures de « combien deux quantités se renseignent l'une l'autre » ; la conditionnelle demande « combien en plus, une fois qu'on connaît déjà d'autres variables ».
-- **Stability selection** (sélection de stabilité) : on refait une régression parcimonieuse (lasso, qui met à zéro les coefficients inutiles) sur de nombreux sous-échantillons et on ne garde que les variables choisies presque à chaque fois.
-- **Recherche d'interactions** : tester des produits de deux variables (a×b).
-- **Régression symbolique par programmation génétique (GP)** : un algorithme évolutionniste qui « fait évoluer » des formules mathématiques (bibliothèque `gplearn`).
-- **Orthogonalisation** : enlever d'une feature ce que les autres features expliquent déjà, pour tester la nouveauté.
-- **Invariance / causalité** (ICP, test Q de Cochran) : tester si une relation reste la même d'un environnement à l'autre, sans jamais conclure « cause » sans expérience.
-- **Baselines** (références à battre) : régression ridge sur toutes les primitives, lasso, sélection par importance d'arbre, par importance de permutation, et un GBM (arbres boostés, plafond non parcimonieux).
-
-Deux mesures reviennent partout :
-- **IC (coefficient de corrélation d'information)** : corrélation de rang (Spearman) entre la valeur de la feature et le résultat futur. IC = 0 : aucune information ; IC = 0,05 en finance est déjà « intéressant » ; IC = 0,5 est énorme (et en général suspect, voir §3 et §7).
-- **R² hors échantillon (OOS R²)** : part de la variance du futur expliquée par un modèle sur des données jamais utilisées pour l'ajuster. Négatif = pire que de prédire une constante (ou zéro).
-
-### 1.2 Contraintes du dépôt (`claude.md`)
-
-Le fichier `claude.md` (identique sur les deux branches, 2 162 octets) impose :
-- Doctrine **REUSE → ADAPT → WRAP → COMPOSE → CUSTOM LAST** : d'abord réutiliser l'existant, puis l'adapter, l'encapsuler, le composer ; ne fabriquer soi-même qu'en dernier.
-- Étiquettes de preuve PROVEN / OBSERVED / DOCUMENTED_CLAIM / INFERENCE / UNKNOWN pour toute conclusion ; pas de benchmark fabriqué ; sources primaires ; ne pas se fier aux README.
-- Verdicts par candidat : ADOPT / ADAPT / PARK / REJECT ; « rejeter ou parquer une technologie qui exige beaucoup de réglages sauf bénéfice exceptionnel ».
-- Contraintes AurumShift à ne pas oublier : recherche seulement (paper-only, pas de capital réel), PostgreSQL d'abord, PIT (point-in-time : n'utiliser que ce qui était connu à l'instant t) / provenance / pas de regard vers le futur (« lookahead »), intraday événementiel (pas HFT), coûts de marché réalistes, complexité d'infrastructure justifiée.
-- Frontière : ne jamais affirmer qu'un candidat est compatible avec AurumShift à partir de ce dépôt ; l'adjudication d'intégration se fait plus tard contre le vrai dépôt local (`claude.md`).
-
-Application dans cette lane (OBSERVED) : R1 réutilise `gplearn` (bibliothèque existante) et `scikit-learn`, écrit lui-même les modules de screening/interactions (CUSTOM, faute d'existant équivalent) ; PySR (régression symbolique en Julia) est cité mais **non exécuté** dans les deux runs. Aucun des deux ne teste de code AurumShift.
+**Contraintes de `claude.md` (dépôt racine) appliquées :**
+- Doctrine **REUSE → ADAPT → WRAP → COMPOSE → CUSTOM LAST** : d'abord réutiliser tel quel, puis adapter, puis envelopper, puis composer, et écrire du code sur mesure seulement en dernier. Ne pas classer un projet d'après ses étoiles GitHub. Ne pas fabriquer de résultats de benchmark.
+- Étiquettes de preuve : PROVEN / OBSERVED / DOCUMENTED_CLAIM / INFERENCE / UNKNOWN.
+- Verdicts possibles : ADOPT / ADAPT / PARK / REJECT. Ici ils sont déclinés en ADOPT_REFERENCE (utilisable comme bibliothèque, oracle ou spécification, avec peu de couplage), ADAPT_CANDIDATE (utile mais demande enveloppe/adaptation/version figée), PARK (à revoir si une condition change), REJECT (pas pour cet usage).
+- **Frontière** : ne jamais affirmer qu'un candidat est compatible avec AurumShift à partir de ce seul dépôt ; l'adjudication finale se fait plus tard, contre le vrai dépôt local d'AurumShift.
+- Contraintes AurumShift à garder en tête : recherche seule / papier seul (pas de capital réel), PostgreSQL d'abord, PIT/provenance/absence de lookahead critiques, événementiel/intrajournalier plutôt que haute fréquence, **une seule source d'autorité par sujet** (donc éviter un second datastore ou service), l'absence de preuve n'est pas une preuve négative, coûts de marché réalistes, faible charge pour l'opérateur, reproductibilité scientifique.
 
 ---
 
 ## 2. Méthode
 
-### 2.1 Données, univers, primitives, cibles
+### 2.1 Découverte et criblage
 
-| | R1 | R2 |
+| | Run 1 | Run 2 |
 |---|---|---|
-| Source | Binance spot 1 h, `data-api.binance.vision`, fenêtre figée 2021-01-01 → 2026-09-01 (exclu) (`bench/feature_discovery_v1/fd/data.py`) | Idem source ; 20 000 dernières barres/marché avant 2026-09-01 (`src/data.py`) |
-| Période brute | 2021-01-01 00:00 → 2026-08-31 23:00, **49 642 lignes/marché**, 7 trous d'1 h par marché (`data/MANIFEST.json`) | 2024-05-20 17:00 → 2026-09-01 00:00, **20 000 lignes/marché**, 0 trou pour BTC (`raw/manifest.json` ; recalcul) |
-| Empreintes SHA-256 des données | dans `data/MANIFEST.json` | dans `raw/manifest.json` |
-| Vérification des empreintes | ✔ 9/9 fichiers concordent (recalcul par moi) | ✔ 10/10 concordent (recalcul par moi) |
-| Marchés « découverte » | BTC, ETH, BNB, SOL (4) | BTC, ETH, BNB, SOL, XRP, ADA (6) |
-| Marchés « jamais vus » (unseen) | XRP, ADA, DOGE, LINK, **PAXG** (or tokenisé) (5) | DOGE, LINK, LTC, AVAX (4) |
-| Nombre total de marchés | 9 | 10 |
-| Primitives | 26 (rendements 1/4/24/72/168 h, log-vol réalisée 6/24/168 h, Parkinson 24 h, amplitude, CLV, volumes, taker-buy, nb de trades, taille moyenne de trade, distance haut/bas 72 h, écarts aux moyennes 24/168 h, Amihud, heure sin/cos, week-end) (`fd/features.py`) | 20 (rendements 1/4/12/24/72 h, vol 24/72 h, amplitude, log-volume relatifs, taker-buy, CLV, distances 24 h, MA24/MA72, Amihud) (`src/features.py`) |
-| Standardisation | z-score glissant sur 720 barres passées, borné à ±5 (sauf calendrier) | z-score glissant sur 500 barres, borné à ±6 |
-| Cibles | **deux** : `y_ret` (rendement futur 4 h ÷ (vol 168 h × √4), borné ±5) et `y_vol` (log du rapport « vol réalisée future 24 h / vol réalisée passée 24 h », borné ±3) | **une seule** : `y` = rendement futur 4 h ÷ (σ24 × √4), borné ±6 |
+| Sources de découverte | Écosystème connu + métadonnées PyPI + 3 recherches web ; l'API de recherche GitHub était bloquée (« sessions are bound to their configured repositories ») (`reports/017_oss_trading_infra/01_LANDSCAPE.md`) | Catalogue écrit à la main (`bench/oss_trading_infra_v1/py/catalog.py`, 67 entrées) « INFERENCE from prior knowledge » puis contrôlé sur l'état amont réel ; l'API REST de GitHub a répondu 403 (`01_LANDSCAPE.md`) |
+| Historique git | Clones « nus sans blobs » (bare blobless) de 36 dépôts (`results/repo_health.json` contient 36 entrées ; le rapport dit 35 : voir 7.1), calcul sur les 12 derniers mois depuis 2025-09-29 (`py/repo_health.py`) | Clones nus sans blobs, `--shallow-since=2025-09-29` (`py/screen.py`) ; 67 lignes dans `results/screen.json` (ClickHouse et pandas-ta sans statistiques : clone trop long / dépôt inaccessible) |
+| Indicateurs de maintenance | Dernier commit, commits sur 12 mois, auteurs distincts sur 12 mois, part du premier auteur, bus factor (auteurs pour 50 % des commits) | Les mêmes + releases PyPI sur 12 mois, présence de CI, `requires_dist`, en-tête du fichier de licence |
+| Fichiers de tests | Comptage par arbre git (`results/repo_tests.json`, 30+ dépôts) | Comptage par expression régulière de chemins (dans `screen.py`) |
+| Étoiles GitHub | Non utilisées | Non utilisées |
 
-Explications :
-- Un **marché « jamais vu »** est un actif dont aucune donnée n'entre dans l'entraînement ni la sélection ; il ne sert qu'à l'évaluation finale. C'est le test « est-ce que ça généralise à un autre actif ? ».
-- Un **rendement vol-scalé** est le rendement futur divisé par une mesure de la volatilité passée : on le rend comparable entre actifs et périodes.
-- `y_vol` est décrite par R1 comme cible « facile » servant de contrôle de puissance (`02_PROTOCOL.md §3`). **Point crucial pour la suite** : la volatilité future ÷ volatilité passée a une relation *mécanique* avec la volatilité passée elle-même (voir §7.2 et §8).
+**Note importante** : les indicateurs de maintenance des deux runs proviennent du même type de calcul sur les mêmes dépôts et concordent presque à l'identique (voir 8.5) ; les comptes de fichiers de tests, eux, divergent fortement (les deux expressions régulières ne sont pas les mêmes).
 
-### 2.2 Découpages temporels (tuning / validation / held-out)
+### 2.2 Univers d'essai et données
 
-Le **held-out** est le bloc de données mis de côté, regardé une seule fois à la fin. La **validation** sert à choisir/filtrer. L'**entraînement (train)** sert à ajuster. Un **embargo** est un trou entre deux blocs pour éviter que des étiquettes qui regardent 4 ou 24 heures en avant ne « débordent » d'un bloc sur l'autre.
+Tous les essais de moteurs, carnets, indicateurs, portefeuilles et qualité de données utilisent des **données synthétiques à graine fixe** (une graine = point de départ du générateur aléatoire, qui rend l'essai identique à chaque exécution). Exceptions réseau : les essais de collecte (ccxt, cryptofeed, yfinance, tardis-python, binance-public-data) touchent des serveurs réels (`results/t11_*` du run 1, `results/coll_microtest.json` du run 2) et leur résultat dépend de l'horloge et de la sortie réseau du bac à sable.
 
-| Bloc | R1 (`fd/panel.py`, `02_PROTOCOL.md §2`) | R2 (`src/pipeline.py::Panel`, `configs/protocol.json`) |
+Générateurs de données principaux :
+- Run 1 : `py/common.py` (600 barres journalières, `make_bars(n=600, seed=3)`, avec écart entre clôture et ouverture suivante) ; `py/dq_data.py` (200 000 barres d'une minute, graine 11, 12 variantes à un défaut chacune) ; flux de 200 000 événements de carnet pour T01 (graine 7, tick 0,5, milieu 20 000).
+- Run 2 : `py/mt/common.py` (`synth(n=5000, seed=7)`, barres d'une minute) ; flux L2 écrit à la main pour le rejeu ; 3 millions de ticks, 20 symboles pour PostgreSQL (`sql/tss_microtest.sql`) ; 50 000 trades × 200 000 cotations pour les jointures « ASOF » (`py/mt/store_microtest.py`).
+
+### 2.3 Simulateur ou protocole
+
+Il n'y a pas de simulateur de stratégie de trading ici : le protocole est celui d'une **batterie de microtests avec oracle** :
+1. On fixe une situation dont on connaît la bonne réponse (réponse calculée à la main, par formule fermée, par numpy/scipy, ou par une autre bibliothèque).
+2. On lance la bibliothèque dans un environnement virtuel isolé.
+3. On compare, on note l'écart, on classe.
+
+Les tests du run 1 portent les identifiants T01 à T16 (`06_COMPONENT_TESTS.md`). Ceux du run 2 T1 à T21. La table des correspondances de sujets est en 3.0.
+
+### 2.4 Splits tuning / validation / held-out, pré-enregistrement, gel des paramètres
+
+**Non applicable au sens quantitatif habituel** : il n'y a aucun paramètre appris ni sélection de modèle sur données ; donc pas de découpage entraînement/validation/test « held-out » (jeu réservé, jamais regardé pendant le réglage). Points de vigilance à noter :
+- **Pas de préenregistrement** (préenregistrement = fixer par écrit, avant de lancer, les critères et seuils) : aucun des deux runs n'en mentionne. Les seuils sont implicites (« égalité à 1e-9 », « 12/12 défauts détectés »), et les classes ADOPT/ADAPT/PARK/REJECT sont attribuées après coup par jugement. Le run 2 formule quatre règles d'adjudication dans `08_ADJUDICATION.md` (voir 2.5) ; le run 1 ne formule pas de règles explicites (seulement des définitions de classes).
+- **Gel** : les versions de bibliothèques sont figées dans `bench/oss_trading_infra_v1/env/freeze_*.txt` (run 2 : 15 fichiers + `system.txt`) ; le run 1 n'en publie pas (il a `setup_envs.sh` qui installe « la dernière version », donc non figé). Conséquence : reproduire le run 1 plus tard peut donner d'autres versions (voir 9).
+- **Graines** : toutes fixes (listées en 2.2). Le rapport 09 du run 1 insiste : « results in bench/.../results are from the final versions of the scripts ».
+
+### 2.5 Critères de décision (seuils exacts)
+
+**Run 1** (`reports/017_oss_trading_infra/08_ADJUDICATION.md`) : définitions de classes seulement :
+- ADOPT_REFERENCE = « safe to use as library/oracle/spec with little coupling » ;
+- ADAPT_CANDIDATE = « useful, needs wrapping/adaptation/data conversion or a pinned version » ;
+- PARK = « revisit on trigger » ; REJECT = « not for this purpose ».
+- Aucun seuil chiffré. « Drop-in » (final block) = « library-level only, no wrapper beyond `pip install`, known-answer pass, permissive licence, no service ».
+
+**Run 2** (même fichier), quatre règles explicites :
+1. ADOPT/ADAPT seulement si un microtest a reproduit le comportement central ; un candidat non exécuté ne peut pas dépasser PARK.
+2. Un datastore ou serveur séparé sans lacune testée qu'il est seul à combler → PARK (doctrine).
+3. Amont gelé, dépendances non déclarées ou releases cassées font descendre d'un cran mais ne provoquent pas à eux seuls un REJECT.
+4. Licences copyleft/non-OSI = **drapeaux** visibles qui ne changent pas la classe, sauf non-OSI + orienté cloud (soda-core) → REJECT pour une mission « OSS seulement ».
+
+Étiquette PROVEN : réservée (run 2) aux cas où existe un oracle indépendant (numpy/scipy, formule fermée, dérivation manuelle, égalité entre bibliothèques, dates connues). Le run 1 emploie surtout OBSERVED et n'utilise pas PROVEN dans ses tableaux.
+
+**Seuils de test typiques** (implicites, à retenir pour la lecture) : égalité « exacte » ≤ 1e-9 à 1e-15 pour les moteurs de backtest, journée de test = « 100 % » pour les calendriers, « N/N défauts détectés » pour la qualité de données, « identique d'une exécution à l'autre » (hash identique) pour le déterminisme.
+
+---
+
+## 3. Résultats détaillés
+
+### 3.0 Correspondance des expériences entre les deux runs
+
+| Sujet | Run 1 | Run 2 |
 |---|---|---|
-| Train | départ + 800 barres d'échauffement → 2023-06-30 : 21 050 h/marché (2021-02-03 08:00 → 2023-06-30 23:00) | 0–50 % des lignes communes : 2024-06-03 02:00 → 2025-07-16 22:00 (9 813 h) |
-| Embargo | 7 jours | 24 barres |
-| Validation | 2023-07-08 → 2024-12-31 : 13 032 h/marché | 50–70 % : 2025-07-18 23:00 → 2025-12-27 21:00 (3 887 h) |
-| Embargo | 7 jours | 24 barres |
-| Held-out | 2025-01-08 → 2026-08-31 : 14 400 h (y_vol) / 14 420 h (y_ret) par marché, 9 marchés | 70–100 % : 2025-12-29 22:00 → 2026-08-31 20:00 (5 879 h), 10 marchés |
-| Durée approx. du held-out | ≈ 20 mois | ≈ 8 mois |
+| Carnet L2 exact | T01 (200 000 événements) | inclus dans hft/naut (pas de test de carnet aléatoire séparé) |
+| Rejeu déterministe, latence, remplissage | T02, T02b, T12c (nautilus) ; T12a (hftbacktest) | `hft_microtest.py`, `naut_microtest.py` (+ probes) |
+| Moteurs de backtest vs calcul manuel | T03 (6 moteurs, ordres fixes, frais et glissement) | `bt_engines.py` (5 moteurs, règle SMA 20/50, zéro frais) |
+| Causalité des moteurs | T04 (invariance au préfixe + témoin qui fuit) | `leak_probe.py` (sonde d'accès au futur) |
+| Causalité des indicateurs | T05 (toutes les colonnes de ta, pandas-ta, vectorbt, tsfresh) | `feat_microtest.py` (RSI/ATR/EMA seulement) |
+| Statistiques en ligne | T06 river | `stats_microtest.py` (river, tdigest, ddsketch, hdrhistogram, talipp) |
+| Portefeuille / métriques | T07 (6 actifs, 1 500 obs) | `port_microtest.py` (5 actifs, 1 000 jours, long seulement) |
+| Calendriers | T08 | `cal_microtest.py` |
+| Qualité de données | T09 (200 000 lignes, 12 défauts) | `dq_microtest.py` (3 000 lignes, 8 familles de défauts) |
+| Stockage | T10 (ArcticDB, DuckDB/Parquet) | `store_microtest.py`, `sql/tss_microtest.sql`, `sql/clickhouse_local_asof.sql` |
+| Collecte | T11 | `coll_microtest.py`, `misc_microtest.py`, binance-public-data |
+| Simulateur agents (ABIDES) | T13 | `abides_microtest.py` |
+| Format DBN | T14 (partiel) | — (databento non exécuté) |
+| Almgren–Chriss | T15 | — |
+| Moteur d'appariement | T16 nanobook | `orderbook_microtest.py` (dyn4mik3) |
+| Modèle de coûts (impact) | T12b zipline ; T15 | `tcm_microtest.py` (cvxportfolio) |
 
-(OBSERVED : R1 `results/discovery_train_val.json`, `results/heldout_results.json` ; R2 : bornes calculées par moi à partir de `results/real/run_11.json › extra` = `t0=1717380000000, t1=1788206400000, T=19675`, en supposant des lignes horaires contiguës, ce qui est cohérent avec `T = (t1−t0)/1 h + 1 = 19 675`.)
+### 3.1 Run 1 — résultats par expérience
 
-Trois faits à retenir :
-1. La **fenêtre de R2 est 2,3 ans, celle de R1 5,7 ans**. R1 a 3,4 fois plus de validation et 2,5 fois plus de held-out (en heures par marché) que R2.
-2. **Chevauchement temporel** : la période d'entraînement + validation de R2 (2024-06 → 2025-12) recouvre la validation finale et presque toute la première moitié du held-out de R1 (2025-01 → 2025-12). Le held-out de R2 (2025-12-29 → 2026-08-31) est entièrement *à l'intérieur* du held-out de R1. Les deux études ne sont donc pas indépendantes dans le temps, même si leurs pipelines sont indépendants (INFERENCE).
-3. Dans R2, XRP et ADA sont des marchés de découverte ; dans R1, ce sont des marchés « jamais vus ». Les univers ne sont pas superposables.
+Toutes les valeurs ci-dessous viennent des fichiers `bench/oss_trading_infra_v1/results/` de la branche du run 1 ; la marque ✔/✘ est ma vérification contre ces fichiers.
 
-### 2.3 Pré-enregistrement, gel, verrous
+#### T01 — exactitude du carnet L2 (`results/t01_orderbook.jsonl`)
 
-Le **pré-enregistrement** consiste à écrire les règles de décision *avant* de voir les résultats, dans un commit daté (un commit est horodaté et son empreinte fait foi de l'ordre).
+200 000 événements « fixer/supprimer un niveau de prix » (graine 7). Empreinte SHA-256 du carnet complet comparée à un dictionnaire de référence (`ref_digest 1562bcb6e7a38941`, 46 niveaux acheteurs, 38 vendeurs).
 
-**R1** :
-- Protocole `reports/015_feature_discovery/02_PROTOCOL.md` + code du pipeline committés dans `c50e99c` (2026-09-29 17:54:01 UTC), « before any real-data discovery run ». Comparaison que j'ai faite : entre `c50e99c` et la version finale du protocole, **seule la section 12 (déviations) diffère** (OBSERVED, `git diff`). Les règles de décision (§6 à §10) n'ont donc pas bougé.
-- Formules gelées : `results/FROZEN.json` avec un **digest** (empreinte SHA-256 du contenu) `9f32094f0d93b292055750e18b7fd449910fd7129173ddcb47c116c1ce2d0666`, committées dans `9bd0b5b` (17:58:54 UTC) « BEFORE held-out and final arena ». Le script `scripts/05_heldout_once.py` recalcule le digest (`assert dg == P.digest(fro)`) et refuse de tourner si `results/heldout_lock.json` existe. Le verrou porte l'heure `2026-09-29T18:09:08Z` (OBSERVED, `results/heldout_lock.json`) : le held-out a donc été lu 10 minutes après le gel.
-- Ordre des commits (OBSERVED, `git log`) : protocole 17:54 → scripts 17:56 → données complètes 17:57 → **gel 17:58:54** → arène 17:59–18:04 → **held-out + adjudication 18:10:08** → rapports 18:11:57.
+| Candidat | Empreinte identique | Événements/s (avec surcoût Python) |
+|---|---|---|
+| sortedcontainers (ligne de base) | oui | 1 725 926 ✔ (rapport « 1,73 M ») |
+| nautilus_trader `OrderBook` L2_MBP | oui | 736 965 ✔ (« 0,74 M ») |
+| hftbacktest `HashMapMarketDepthBacktest` | oui | 1 958 857 ✔ (« 1,96 M ») |
 
-**R2** :
-- Pré-enregistrement `bench/feature_discovery_v1/configs/protocol.json` dans `829579c` (18:27:37 UTC). Il n'a **jamais été modifié depuis** (`git log` sur ce chemin = un seul commit) (OBSERVED). `src/pipeline.py` n'a plus bougé après `77627a9` (18:35:00), c'est-à-dire avant tout résultat synthétique, nul ou réel (OBSERVED).
-- Gel : à chaque run, la liste finale (+ orientation, moyenne, écart-type) est hachée en SHA-256 et écrite dans `results/<mode>/lock_<seed>.json` **avant** l'accès au bloc held-out ; l'ordre d'accès est enregistré (`access_order` = `train, val, train, val, train, LOCK, test…`) et testé (`tests/test_isolation.py::test_heldout_untouched_before_lock`) (PROVEN par test ; ✔ `access_order` relu dans les 5 fichiers `real/run_*.json`).
-- **Particularité qui compte** : pour les 5 runs réels, la liste gelée est **vide**, donc l'empreinte est celle d'une liste vide et identique partout : `8c7a94b0202c598545c6363886b45d8da993a9b7ce05b2720f19a030fefef102` (✔ lu dans `results/summary.json › real.lock_sha` et `results/real/lock_11.json`). Le « gel avant held-out » est donc, sur les données réelles, une garantie sans objet : il n'y avait aucune formule à protéger (INFERENCE).
+Sens en langage simple : les trois structures reconstruisent exactement le même carnet final. Les débits ne sont pas comparables entre eux (hftbacktest avale un tableau numpy déjà préparé, nautilus reçoit des objets Python un par un) ; le rapport le dit lui-même. Le rapport avoue aussi qu'un premier passage hftbacktest avait échoué à cause de la boucle de lecture du testeur, pas de la bibliothèque (`06_COMPONENT_TESTS.md`).
 
-### 2.4 Graines (seeds)
+#### T02 / T02b — rejeu nautilus_trader (`results/t02_nautilus_run1.json`, `run2.json`, `t02b_*`)
 
-Une **graine** fixe le hasard d'un calcul pour qu'il soit rejouable.
-- R1 : 5 graines de découverte `{11, 23, 37, 41, 59}` par cible (`fd/pipeline.py::Cfg.seeds`) ; arène synthétique : graines 0–9 pour le développement (4 réplications 0–3 conservées dans `synthetic_arena_dev.json`) puis graines **1000–1039** pour les chiffres finaux (40 NULL + 40 MIXED).
-- R2 : découverte `11–15`, nulles `901–908`, synthétiques `7001–7006` (`configs/protocol.json`) ; graines de fumée/débogage (1, 3–6) déclarées non rapportées.
+100 000 cotations (quotes), un ordre au marché toutes les 50 cotations, deux processus distincts.
+- Empreinte des exécutions **identique** `0cfe9174d9e0352c` dans les deux processus, 2 000 exécutions, commission totale 425,478672 ✔ ; 19 216 et 18 926 cotations/s ✔ (« 19 k »).
+- Sémantique par défaut : 2 000/2 000 ordres exécutés **sur la même cotation** que celle où l'ordre a été soumis, au prix du meilleur côté (ask/bid) ✔ (`fills_at_submit_ts 2000`, `fill_px_equals_touch_at_submit 2000`). Traduction : par défaut, nautilus suppose une exécution instantanée au prix affiché, ce qui est optimiste.
+- Avec un `LatencyModel` de 250 ms et des cotations espacées de 1 s (20 000 cotations, 399 exécutions) : délai moyen d'exécution 1 000 ms ✔, prix égal au meilleur prix à la soumission dans 4 cas sur 399 ✔ (`fill_px_equals_touch_at_submit 4`). La latence n'est donc pas active par défaut.
+- Frais : « `MakerTakerFeeModel` : 0,2000 sur 2 000 de notionnel » (rapport 04). Le fichier montre une commission de 0,200081 sur un ordre de 2 000,81 ✔ (l'arrondi du rapport est acceptable).
 
-### 2.5 Simulateur / arène de vérité connue
+#### T12c — nautilus parcourt un carnet L2 (`results/t12c_nautilus_bookwalk.json`)
 
-Une **arène synthétique** est un jeu de données fabriqué où l'on sait exactement ce qui est planté. On y lance le pipeline pour vérifier qu'il (a) retrouve ce qui existe et (b) ne trouve rien quand il n'y a rien.
-- R1 (`fd/synth.py`) : 14 features AR(1) persistantes, 3 marchés de découverte + 3 jamais vus ; scénario NULL (aucun signal) et MIXED (5 composantes de R² ≈ 0,6 % chacune : linéaire, interaction pure, non-linéaire pure `(z³²−1)`, spécifique à 2 marchés, décroissante ; + quasi-doublon de la composante linéaire) ; bruit hétéroscédastique.
-- R2 (`src/panels.py::synth_panel`) : 16 features corrélées (t de Student à 6 degrés de liberté, AR(1)), 10 marchés ; y = b·f0 + b·f1·f2 + b·f3·|f4| + s_m·b·f5 + bruit (f5 change de signe selon le marché = « piège » ; f6 ≈ f0 + bruit = doublon) ; β = 0,06 ; T = 19 000.
-- Ordre de grandeur de la force planquée (INFERENCE, mon arithmétique) : R1, R² = 0,006 par composante ⇒ corrélation ≈ √0,006 ≈ 0,077 ; R2 avec β = 0,06 ⇒ ≈ 0,06. Or les IC réels observés sur `y_ret`/`y` sont de l'ordre de 0,005 à 0,02. **Les deux arènes démontrent une puissance pour des signaux 4 à 10 fois plus forts que ce qu'on cherche réellement** (voir §7).
+Un ordre d'achat au marché de 3 lots exécute 1 lot à 100,50, 1 à 101,00, 1 à 101,50 ; prix moyen 101,00 ✔ (identique à l'attendu). Piège relevé : des `OrderBookDelta` isolés donnent « no market » ; enveloppés dans `OrderBookDeltas` ils fonctionnent (rapport 03 ; non observable dans le JSON, qui ne contient que le résultat final : **?**).
 
-### 2.6 Critères de décision, seuils exacts
+#### T12a — hftbacktest, position dans la file (`results/t12a_hft_queue.json`, `py/t12a_hft_queue.py`)
 
-**R1** (`02_PROTOCOL.md` §6–§10, code `fd/pipeline.py`) :
-- Score de validation = IC_val moyen − 0,0005 × (nb de nœuds) − 0,001 × (nb de constantes ajustées) ; nœuds ≤ 15 (`lam_node=0.0005`, `lam_const=0.001`, `max_nodes=15`).
-- **Gate de découverte** (validation) : IC_val > 0 (signe fixé sur train) sur ≥ 75 % des 4 marchés de découverte (`val_sign_frac=0.75`), p bootstrap par blocs de 48 barres < 0,10 (`val_p`, 300 tirages), score pénalisé > 0 ; puis consolidation : famille (corrélation de rang ≥ 0,85, `cluster_corr`) retrouvée dans ≥ 60 % des graines (`min_seed_freq=0.6`, soit 3 sur 5), non redondante (|ρ| < 0,80, `redundancy_corr`). Filtre « primitive triviale » : expression à une seule variable dont le rang est corrélé à > 0,9 avec la primitive → rejetée.
-- **STABLE** (held-out, 9 marchés) ⇔ p_Holm < 0,05 (bootstrap circulaire par blocs de 48 barres, B = 2 000, temps partagé entre marchés, correction de Holm sur toute la famille gelée des deux cibles) **et** IC > 0 sur ≥ 75 % des marchés **et** IC > 0 sur la majorité des 5 marchés jamais vus.
-  (La **correction de Holm** est une procédure qui rend les seuils plus stricts quand on teste plusieurs choses à la fois, pour limiter les faux positifs.)
-- **NON-REDONDANTE** ⇔ STABLE **et** corrélation partielle avec y, contrôlant la prédiction du ridge sur les 26 primitives brutes, significative (Holm 0,05) **et** |ρ| < 0,80 avec les autres formules stables. (La **corrélation partielle** mesure ce qui reste de lien entre deux quantités une fois qu'on a retiré l'effet d'autres variables.)
-- **COMPLEXITY_JUSTIFIED** : `YES` si le modèle découvert bat toutes les baselines non-plafond en IC held-out poolé avec la borne basse (quantile 10 % de la différence appariée, `q10`) > 0 **et** ≥ 1 formule non redondante ; `PARTIAL` si `q10 > −0,005` avec ≤ la moitié des paramètres de la meilleure baseline ; sinon `NO` ; agrégat = YES si YES sur une cible, sinon PARTIAL si PARTIAL sur une cible, sinon NO.
-- **Validité de l'arène (condition préalable)** : FWER (probabilité d'au moins un faux positif stable sous H0) ≤ 0,10 sur 40 réplications ET puissance sur la composante linéaire ≥ 0,80 ; sinon le verdict est `STUDY_INCONCLUSIVE` quoi qu'il arrive.
-- **Verdict (règle mécanique, §10)** : arène invalide → `STUDY_INCONCLUSIVE` ; sinon NON-REDONDANTES ≥ 3 (sur ≥ 2 familles) et COMPLEXITY_JUSTIFIED = YES → `FEATURE_DISCOVERY_REFERENCE_SUPPORTED` ; sinon **≥ 1 formule STABLE** → `LIMITED_STABLE_FEATURES_SUPPORTED` ; sinon `NO_STABLE_NEW_FEATURES`. Le code (`scripts/06_adjudicate.py`) applique exactement cela (✔ relu).
+Situation : file d'attente de 10 lots devant nous au meilleur prix acheteur 100,0 ; on dépose un achat de 1 lot ; ventes agressives de 4 lots (t = 10 000), puis 7 (t = 20 000), puis 1 (t = 30 000). Attendu (FIFO prudent) : pas d'exécution après les 4 premiers lots, exécution une fois cumul > 10.
+- Aux instants 5 000 et 12 000 : statut 1 (NEW) ; à 22 000 et 40 000 : statut 3 (FILLED), position 1, frais −0,01 ✔ pour les **quatre** modèles (risk-adverse, power-prob 2, power-prob 3, log-prob).
+- Frais : `trading_value_fee_model(-0.0001, 0.0004)` ⇒ −1 point de base × 100 × 1 = −0,01 ✔ (rebate du preneur passif).
+- Limite avouée : la situation ne départage pas les modèles probabilistes. Je le confirme : les quatre traces sont identiques.
 
-**R2** (`configs/protocol.json`, `src/pipeline.py`, `src/analyze.py`) :
-- **Gate de validation** : IC poolé > 0, accord de signe ≥ 70 % des marchés de découverte (`min_market_sign_agreement=0.7`, donc ≥ 5 marchés sur 6), p < 0,10 (**bilatérale**, approximation normale sur l'écart-type d'un bootstrap par blocs de 48 barres, 200 tirages).
-- Sélection finale sur validation : glouton avec pénalité BIC (`k_new = 1 + nœuds/4`, ≤ 8 features, n effectif = n/4 sur données réelles).
-- **STABLE** (held-out) : IC poolé > 0 de même signe que la validation, |IC| ≥ 0,005, BH q ≤ 0,10 (procédure de Benjamini-Hochberg, contrôle du taux de fausses découvertes) sur la liste gelée, ≥ 70 % des 10 marchés de même signe, IC poolé sur marchés « jamais vus » > 0.
-- **Nouveau** = composite/symbolique ET IC partiel vs primitives brutes ≥ 0,003 (p < 0,10). **Non redondant** = |corr| < 0,8 sur validation avec les features déjà retenues. **Invariant** = STABLE et Q de Cochran p ≥ 0,05 et les deux moitiés de la période positives.
-- **Consensus entre graines** : une feature doit être choisie dans ≥ 3 graines sur 5 et stable dans la majorité de ses apparitions (`analyze.py::consensus`).
-- Validité : rappel des composites plantés ≥ 0,6 et ≤ 1 fausse découverte par run ; sous la nulle, moyenne de features stables ≤ 0,5.
-- **Règles de verdict** : REFERENCE_SUPPORTED si ≥ 3 features **nouvelles, non redondantes**, stables, et complexité justifiée ; **LIMITED_STABLE si ≥ 1 feature non redondante stable (composite ou primitive)** ; NO_STABLE_NEW si 0 ; INCONCLUSIVE si validité échoue.
-- **Complexité justifiée** : gain de R² OOS de l'ensemble découvert sur le ridge brut > 0 avec borne basse de l'IC 90 % du bootstrap apparié > 0 ET amélioration sur une majorité de marchés.
+#### T03 / T03z — moteurs de backtest contre le calcul manuel (`results/t03_*.json`, `py/common.py`)
 
-> Remarque essentielle déjà visible ici : **les deux règles de verdict ne mesurent pas la même chose**. R1 déclenche `LIMITED_STABLE` dès qu'**une** formule est *stable* (même si elle est redondante et inutile). R2 ne le déclenche que si la formule est *stable ET non redondante*. Appliquée à la même formule, la règle de R2 donnerait `NO_STABLE_NEW_FEATURES`. R1 le reconnaît (`09_ADJUDICATION.md` : « Une lecture stricte … donnerait NO_STABLE_NEW_FEATURES »). Voir §8.
+Ordres fixes : ACHAT 100 titres à la décision barre 100, VENTE 100 à la barre 200 ; frais 10 points de base par côté (`FEE = 0.001`) ; glissement adverse 5 points de base (`SLIP = 0.0005`). PnL analytique : **1 793,77** (exécution à la clôture de la barre de décision), **1 802,22** (à l'ouverture de la barre suivante). Le rapport ajoute 1 796,46 pour « clôture de la barre suivante » (résultat zipline).
+
+| Moteur | Convention d'exécution | PnL du fichier | Écart vs analytique | Vérif. |
+|---|---|---|---|---|
+| vectorbt (`price=Close`) | clôture même barre | 1 793,769867567793 | ≈ 1e-12 | ✔ |
+| vectorbt (`price=Open`, ordres décalés +1) | ouverture suivante | 1 802,2202439016128 | ≈ 1e-12 | ✔ |
+| backtrader | ouverture suivante | 1 802,2202438116074 | 9e-8 | ✔ (le rapport écrit « exact ») |
+| zipline-reloaded (quotidien) | clôture suivante | 1 796,463713645935 (prix 94,034 et 112,205 ; commission 20,6239) | — | ✔ |
+| backtesting.py `trade_on_close=False` | ouverture suivante | 1 807,8155 | **+5,5953** | ✔ (« +5,6 ») |
+| backtesting.py `trade_on_close=True` | clôture même barre | 1 799,3622 | +5,5923 (vs 1 793,7699) | ✔ |
+| bt | clôture, sans paramètre de glissement, 99 titres au lieu de 100 | 1 786,0120 (vs 1 804,0525 analytique sans glissement) | non comparable | ✔ |
+
+Le rapport dit « ≤ 1e-9 » pour vectorbt/backtrader/zipline dans son résumé exécutif : sur backtrader l'écart réel est de 9,0e-8 en valeur absolue (≈ 5e-11 en relatif). Cela reste « exact » pour l'usage mais la borne « 1e-9 » écrite en absolu est légèrement fausse (**écart mineur**).
+
+Explication de backtesting.py (écart +5,6) : l'entrée est exacte (93,7334), mais le prix de sortie 112,017 est l'ouverture brute ; le paramètre `spread` n'a pas été appliqué à la sortie. Le rapport 04 précise que cela peut dépendre du chemin d'ordre (`position.close()`) et que ce n'est pas prouvé pour d'autres chemins ; le rapport 06 admet aussi qu'un premier essai avait mal traduit le glissement (`spread = 2·slip`). Je ne peux pas départager « défaut de la bibliothèque » et « mauvaise configuration par le testeur » sans exécuter (**?**).
+
+#### T04 — causalité des moteurs (`results/t04_causality.jsonl`)
+
+Règle : moyenne mobile 10/30, frais 10 pb. L'équité calculée sur `data[:400]` doit égaler l'équité du calcul complet restreint à `[:400]`.
+- vectorbt, vectorbt (MA native), backtesting.py, bt : écart max 0,0, 0 barre différente ✔. backtrader : `n=370`, écart 0,0 ✔ (le rapport ne précise pas la taille 370).
+- Témoins qui fuient volontairement (signal = clôture 5 barres plus loin) : vectorbt **5** barres différentes, écart max 2 490,87 ✔ (« 2 491 ») ; bt **4** barres, écart max 609,47 ✔ (« 609 »).
+- Puissance du test : le premier essai avec `shift(-1)` (fuite d'une seule barre) ne différait que sur la dernière barre, donc invisible ; d'où le témoin de 5 barres (rapport 06, point 3).
+
+#### T05 — causalité des indicateurs (résultat phare du run 1)
+
+Principe : la valeur d'un indicateur à la ligne t, calculée sur les 400 premières lignes, doit être égale à celle calculée sur 600 lignes (invariance au préfixe).
+
+| Bibliothèque | Colonnes | Causales | Fuyantes | Colonnes fuyantes | Vérif. |
+|---|---|---|---|---|---|
+| ta 0.11.0 (`add_all_ta_features`) | 91 | 86 | **5** | `trend_kst`, `trend_kst_sig`, `trend_kst_diff`, `trend_visual_ichimoku_a`, `trend_visual_ichimoku_b` | ✔ (`results/t05_prefix_ta.json`) |
+| pandas-ta 0.4.71b0 (`AllStudy`) | 271 | 262 | **9** | `DPO_20`, `ICS_26`, `TOS_STDEVALL_LR`, `_L_1`, `_U_1`, `_L_2`, `_U_2`, `_L_3`, `_U_3` | ✔ (`results/t05_prefix_pandas_ta.json`) |
+| vectorbt 1.1.1 (MA, MSTD, BBANDS, RSI, STOCH, MACD, ATR, OBV) | 8 indicateurs | tous | 0 | — | ✔ |
+| tsfresh 0.21.2 (fenêtres roulantes 19) | 10 | 10 | 0 | — | ✔ |
+
+- Sens : ces colonnes changent quand on ajoute du futur. Pour `ta`, la fuite concerne le tout début de la série (lignes 0-25 pour Ichimoku, 14-43 pour KST ; ces plages viennent du rapport, non présentes dans le JSON : **?**). **Mécanisme (que j'ai vérifié dans le code source de ta 0.11.0)** : le début est rempli avec `fill_value = moyenne de toute la série` (`series.mean()`), donc une valeur qui dépend du futur. Le rapport dit à tort « back-filled with the first valid (future) value » (voir 7.1).
+- Comparaison à la main du RSI(14) de Wilder : écart max 5,34e-3 (`rsi14_max_abs_diff_vs_hand_wilder`) ✔ (rapport « ≤ 5,3e-3 »).
+- Durées : tsfresh 0,66 s dans le rapport vs **0,694 s** dans le fichier (✘ mineur) ; pandas-ta « ~10 s pour 600 lignes » dans le rapport vs **0,786 s** dans `seconds_full` (✘ écart réel, facteur 12 ; peut venir d'un autre passage, non traçable).
+
+#### T06 — river, statistiques en ligne (`results/t06_river.json`)
+
+200 000 points décalés de 1e9, σ = 0,01. Le décalage énorme est un test dur : la formule naïve Σx² s'y effondre.
+- Erreur relative de la moyenne 5,0e-15 ✔ ; variance 6,9e-6 ✔ ; covariance 2,7e-6 ✔ ; formule naïve de la variance : **2,57e6** ✔ (catastrophique).
+- Variance glissante (fenêtre 100) : erreur relative max 3,19e-4 vs variance exacte de la fenêtre ✔ ; **identique à celle de pandas** (`pandas_rolling_var_max_rel_err_vs_exact_window_for_comparison` = même valeur) ✔. Sens : ni river ni pandas ne sont précis quand les valeurs sont grandes devant leur dispersion (niveaux de prix, pas rendements).
+- Instantané pickle (sérialisation Python) : reprise identique, 248 octets ✔ ; deux exécutions identiques ✔ ; 560 668 mises à jour/s ✔.
+- Détecteurs de dérive (changement de moyenne de 1,5σ à t = 2000) : ADWIN détecte à t = 2015 (+15), 0 fausse alarme ✔ ; PageHinkley t = 2019 (+19), 1 fausse alarme ✔ ; KSWIN t = 2161 (+161), 3 fausses alarmes ✔. Un seul scénario synthétique.
+- `EWMean` : écart max vs pandas `ewm(adjust=False)` 0,0376 à niveau 1e9 ✔ (rapport « 0,038 ») : transitoire d'initialisation (~4e-11 relatif selon le rapport, **?** non recalculé).
+
+#### T07 — portefeuille et métriques (`results/t07_*.json`)
+
+6 actifs, 1 500 observations, variance minimale sans contrainte (formule fermée sur la covariance de l'échantillon).
+
+| Bibliothèque | Erreur max sur les poids | Vérif. | Remarque |
+|---|---|---|---|
+| PyPortfolioOpt 1.6.0 | 3,38e-10 | ✔ | `HRPOpt` plante : `AttributeError ... '_LINKAGE_METHODS'` avec le SciPy installé ✔ |
+| riskfolio-lib 7.3.0 | 3,04e-6 | ✔ | CVaR min-risque OK ✔ |
+| skfolio 1.4.9 | 7,56e-5 | ✔ | HRP OK ✔ |
+
+Métriques : empyrical-reloaded égal au calcul manuel (Sharpe 1,0693213484575252 vs 1,0693213484575246, écart 6e-16 ✔). quantstats : VaR 0,017558 et CVaR 0,022209 (paramétriques) contre historiques 0,017926 et 0,022408 ✔ (rapport 0,01756/0,02221 vs 0,01793/0,02241). VaR = perte maximale « normale » à 95 % ; CVaR = perte moyenne au-delà.
+Note : les deux fichiers `t07_metrics_core.json` et `t07_metrics_misc.json` contiennent chacun une erreur d'import (`quantstats` absent du premier, `empyrical` absent du second) ; les deux blocs utiles sont dans des fichiers différents, sans incohérence.
+
+#### T08 — calendriers (`results/t08_calendars.json`)
+
+Jeu de référence NYSE 2024-2025 : 21 jours fériés (10 + 11), 6 fermetures anticipées, 4 dates d'heure d'été (changement d'heure US). Les deux bibliothèques : 21/21 jours fériés retrouvés ✔, 0 fermeture en trop ✔, 6/6 fermetures anticipées ✔ (`2024-07-03`, `2024-11-29`, `2024-12-24`, `2025-07-03`, `2025-11-28`, `2025-12-24`), ouvertures UTC identiques : 14:30 le 2024-03-08 (heure d'hiver) puis 13:30 le 2024-03-11 (heure d'été) ✔. Noms de calendriers : 71 (exchange_calendars) et 211 (pandas_market_calendars) ✔ ; fenêtre par défaut 2006-09-29 → 2027-09-29 ✔.
+Attention : la liste attendue a été « compilée par le testeur d'après les calendriers NYSE publiés, non re-téléchargés » (rapport 02), et **les deux bibliothèques ne sont pas indépendantes** (voir 7.1 et 8).
+
+#### T09 — cadres de qualité de données (`results/t09_dq_*.json`, `py/dq_data.py`)
+
+200 000 barres d'une minute (graine 11), une barre propre + 12 variantes, chacune avec un seul défaut : timestamp dupliqué, timestamps non monotones, high < low, close > high, volume négatif, close nul, changement d'unité ms → µs à partir de la ligne 150 000, 10 minutes manquantes, série plate à volume nul (60 barres), pic ×10, timestamp dans le futur (2035), barres répétées « périmées » (30 barres).
+
+| Cadre | Barre propre passe | Défauts détectés | Durée sur 200 k lignes (rapport / fichier) | Vérif. |
+|---|---|---|---|---|
+| pandera 0.33.1 | oui | 12/12 | 0,11 s / 0,08 s | détection ✔ ; durée ✘ mineur |
+| great_expectations 1.23.2 | oui | 12/12 | 0,23 s / 0,29 s | ✔ / ✘ mineur |
+| pointblank 0.27.0 | oui | 12/12 | 1,33 s / 1,41 s | ✔ / ✘ mineur |
+| frictionless 5.19.1 | oui | **5/12** (null, unicité, plages ; manqués : non monotone, high<low, close>high, minutes manquantes, série plate, pic, barre périmée) | 4,76 s / 4,51 s | ✔ / ✘ mineur |
+
+Point clé : les colonnes dérivées (écart de temps, |rendement|, longueurs de séries plates) sont calculées **une fois hors de tous les cadres** (rapport 02). Donc le « 12/12 » mesure la capacité à exprimer des règles sur des colonnes déjà préparées, pas la détection « prête à l'emploi » de continuité temporelle.
+
+#### T10 — stockage (`results/t10_arcticdb.json`, `t10_duckdb_parquet.json`)
+
+1 million de lignes × 5 colonnes.
+- ArcticDB 6.26.0 (LMDB) : écriture 0,105 s (rapport 0,114 ✘ mineur), lecture 0,013 s (rapport 0,014 ✘ mineur), 41,8 Mo ✔. `roundtrip_equal_strict: false`, égal en ignorant l'attribut `freq` de l'index ✔. Versionnage : 2 versions après mise à jour ; lecture `as_of=0` ou horodatage avant la correction renvoie l'original ; horodatage après renvoie la correction ✔. Points négatifs vérifiés dans le JSON : `prune_previous_versions_removes_history: true`, `delete_is_available_to_any_writer: true`, `write_has_timestamp_param: false`, LMDB « single writer (documented) ». `version_timestamp_source` est étiqueté INFERENCE dans le fichier même.
+- DuckDB + Parquet : écriture 0,134 s ✔, lecture 0,223 s ✔, 34,7 Mo ✔, pas de versionnage natif.
+
+#### T11 — collecte réseau (`results/t11_*.json`, horloge du bac à sable 2026-09-29)
+
+- **ccxt REST** (4.5.84), `fetch_ohlcv('1m', limit=60)` : succès sur 6/8 places (Kraken, Coinbase, OKX, Bitstamp, Gate, KuCoin) ✔ ; 60 lignes, 6 colonnes, 0 doublon, pas de 60 000 ms ✔ ; **la dernière barre est toujours en cours de formation** (âge d'ouverture entre 9,7 s et 58,6 s) ✔ (rapport « 10–58 s ») ; aucun horodatage de réception (`has_receipt_ts false`) ✔. Binance : HTTP 451 ; Bybit : 403 (blocage de sortie réseau, pas un verdict sur la bibliothèque) ✔.
+- **ccxt WebSocket** : Kraken 27 trades/12 s ✔, Coinbase 171 ✔, OKX délai dépassé ✔.
+- **cryptofeed 2.5.0** : le rapport dit « 25 trades et 3 991 mises à jour L2, trade timestamp 4,1 ms avant la réception ». Le fichier dit **26 trades, 3 438 mises à jour de carnet, retard de 28,4 ms et 24,6 ms** sur les deux échantillons, et `stopped_by: KeyboardInterrupt` ✘ (écart réel ; probablement un autre passage que celui archivé).
+- **yfinance 1.7.0** : BTC-USD 1 081 lignes ✔, SPY 5 lignes ✔.
+
+#### T13 — ABIDES-JPM (`results/t13_abides.json`)
+
+Python 3.9 obligatoire (numpy 1.22, pandas 1.2.4, pomegranate 0.14.5). Configuration `rmsc04`, 1 117 agents. Graine 1 deux fois : même empreinte `b3c88046989f2e9a`, 3,53 s et 3,83 s ✔ (rapport « ≈ 3,5–4 s ») ; graine 2 : empreinte différente `4278e89145dab97b` ✔. Dépôt inactif depuis 2023-12-13 (18 commits au total).
+
+#### T14 — databento-dbn (`results/t14_dbn.json`)
+
+Champs de `MBOMsg` observés : `ts_event`, `ts_recv`, `ts_in_delta`, `ts_out`, `sequence`, `flags` ✔. Aller-retour d'encodage/décodage non terminé : `TypeError: Metadata.__new__() got an unexpected keyword argument 'stop'` ✔ (donc PARTIEL, comme dit).
+
+#### T15 — Almgren–Chriss via wraquant (`results/t15_almgren_chriss.json`)
+
+(Almgren–Chriss = modèle classique de découpage d'un gros ordre pour équilibrer coût d'impact et risque de prix.) λ = 0 : calendrier linéaire exact (écart 0,0) ✔ ; λ > 0 : trajectoires égales à la formule continue en sinh (écart 0,0) ✔ ; premier lot 524,42 → 722,45 → 1 814,04 → 4 687,14 sur 10 000 pour λ = 0,001 ; 0,01 ; 0,1 ; 1 ✔. La bibliothèque n'offre aucune calibration des coefficients d'impact (rapport).
+
+#### T16 — nanobook (`results/t16_nanobook.json`)
+
+20 000 ordres GTC (valables jusqu'à annulation) : 15 149 transactions identiques à la référence FIFO (prix et quantités) ✔, meilleurs bid/ask 10 001 / 10 005 ✔, rejeu du journal d'événements identique ✔, 1 194 407 ordres/s ✔.
+
+#### T12b — zipline VolumeShareSlippage (`results/t12b_zipline_volshare.json`)
+
+Ordre de 500 titres, `volume_limit = 0,025`, `price_impact = 0,1`. Les remplissages s'étalent sur 8 barres : 106, 32, 74, 37, 68, 58, 117, 8 = 500 ✔ ; quantités identiques à l'attendu sur les 8 ✔ ; écart de prix maximal **1,42e-14** ✔ (rapport « 1,4e-14 »), à condition d'arrondir la clôture à 3 décimales (stockage des bundles par défaut). Attention : le commentaire du script dit que l'arrondi a été introduit après avoir vu un résidu de 4,5e-4 (« OBSERVED: 4.5e-4 residual disappears »), alors que le rapport 06 (point 6) dit « pas ajusté après coup » : voir 7.1.
+
+#### Maintenance et santé des dépôts (`results/repo_health.json`, `repo_tests.json`, `footprint.json`)
+
+- Vérifié sur `repo_health.json` : parmi les 26 projets exécutés avec historique cloné (les 27 clés exécutées moins databento), 16 ont un bus factor de 1 et 3 n'ont aucun commit en 12 mois (backtrader, empyrical-reloaded, ABIDES) ✔. Le rapport dit « 35 dépôts » mais le fichier en contient **36** (✘ mineur).
+- Chiffres du tableau de `01_LANDSCAPE.md` échantillonnés : nautilus 5 529 commits/127 auteurs/85 % ✔ ; hftbacktest 24/5/63 % ✔ (0,625 → « 63 % ») ; zipline 4/1/100 % ✔ ; ta 1/1/100 % ✔.
+
+### 3.2 Run 2 — résultats par expérience
+
+Valeurs vérifiées dans `bench/oss_trading_infra_v1/results/` de la branche du run 2.
+
+#### Rejeu hftbacktest 2.4.4 (`results/hft_microtest.json`, `py/mt/hft_microtest.py`)
+
+Scénario écrit à la main : carnet acheteur 100,0 × 10, vendeur 100,5 × 10 à t = 1 s ; notre achat passif de 1 lot à 100,0 arrive à t = 5 s (10 lots devant) ; ventes agressives de 4 lots à 6 s, 6 lots à 8 s, 6 lots à 9 s ; la quantité affichée à 100,0 passe de 10 à 4 à t = 7 s.
+- Modèle « risk-adverse » (prudent : la file devant nous ne diminue que par baisse de la quantité affichée puis par les transactions) : dérivation manuelle ⇒ exécution à 8,0 s. Résultat : `fill_t_s 8.0`, position 1,0, solde −100,0 ✔.
+- power-prob ×2, ×3 et log-prob : tous 8,0 s ✔ (le scénario ne les départage pas, dit le rapport).
+- Latence d'ordre : 0 s → exécuté à 8,0 s ✔ ; 1,5 s → position 1,0 en fin de flux **sans exécution visible** (`fill_t_s null`) ✔ ; 4 s → aucune exécution, position 0 ✔. L'explication du rapport (la latence de réponse retarde la visibilité) est étiquetée INFERENCE.
+- Frais : `trading_value_fee_model(-0.0001, 0.0005)` → frais −0,01 sur une exécution maker de 100,0 ✔.
+- Déterminisme : 3 exécutions identiques ✔. Débit : 2 millions d'événements en 0,184 s à chaud, **10 884 616 événements/s** ✔ (rapport « ~11 M » ; l'adjudication écrit « 10,9-11,8 M », seule la valeur 10,9 est dans le fichier : 11,8 **?**).
+
+#### Rejeu nautilus_trader 1.221.0 (`results/naut_microtest.json`)
+
+Même scénario en deltas L2_MBP. Six variantes L2 : trade_execution par défaut, `trade_execution` désactivé, trade à travers la limite à 99,90, `FillModel(prob_fill_on_limit=1.0)` (dans le JSON : `fill_model_prob_touch_1.0` et `_0.0`), latence 1,5 s : **aucune exécution** dans chacune (`fills: []`) ✔. Sonde de croisement de carnet (ask ajouté à 99,90 au-dessous de notre bid 100,00) : `OrderFilled + PositionOpened` ✔. Trois variantes L1 (cotations + trades) : pas d'exécution avec `trade_execution=True` ; exécution à 6,0 s avec `trade_execution=False` (le tick de trade met à jour le carnet L1 ; pas de notion de file) ✔ (texte des sondes dans le JSON). Total 9 configurations sans exécution passive pilotée par les transactions et sensible à la file : ✔ (comptage du rapport). Déterminisme : identique sur 2 exécutions ✔. Débit : 1 M cotations en 2,78 s, 359 906/s ✔ (rapport « 349–360 k » : la borne basse 349 k n'est pas dans le fichier **?**).
+Observation à moi : cinq des six configurations L2 renvoient **le même hash** `c3259fa446c1` : les réglages testés n'ont pas changé la trace du tout ; cela peut vouloir dire que ces réglages ne s'appliquent pas à ce type de flux (voir 7.2).
+
+#### ABIDES (`results/abides_microtest.json`)
+
+Python 3.9 + numpy 1.22 + pandas 1.2.4 + pomegranate 0.14.5 + scipy 1.10. `rmsc04`, 1 117 agents, fin 09:45 : graine 1 → hash `1fd2bfa47da1` deux fois (1,8 s et 2,0 s) ✔, graine 2 → `62cfdbb2e89f` (1,6 s) ✔. Rapport « 1,6 s ».
+
+#### Bibliothèque dyn4mik3/OrderBook (`results/orderbook_microtest.json`)
+
+Vente de 12 lots contre A (10) puis B (2) : trades `[A 10, B 2]` ✔ ; `get_volume_at_price` lève `AttributeError` ✔ ; 121 296 ordres/s ✔ (rapport « 121–150 k » : la borne haute vient d'ailleurs **?**). Paquet PyPI 0.1.2 : import cassé (dépendance circulaire) — non retrouvé dans un fichier de résultat (affirmé dans le rapport 03 ; **?**).
+
+#### Moteurs de backtest (`results/bt_engines.json`, `py/mt/bt_engines.py`)
+
+Règle : long quand SMA20 > SMA50, exécution à l'ouverture de la barre suivante, frais 0, 5 000 barres d'une minute. Oracle = boucle numpy de 20 lignes : 57 transactions, équité finale **0,97741** (rendement composé par transaction).
+
+| Moteur | Transactions | Résultat | Durée rapport / fichier | Vérif. |
+|---|---|---|---|---|
+| backtesting.py 0.6.6 | 57 | équité 0,977346 (Δ 6,4e-5 vs oracle) | 0,65 s / **0,4396 s** | résultat ✔ ; durée ✘ |
+| backtrader 1.9.78.123 | 57 | valeur finale 997 776,116329 (mise fixe 1 000 unités) | 0,74 s / 0,7354 s | ✔ |
+| vectorbt 1.1.1 | 57 | valeur finale 997 776,1163293 (Δ 7e-9 vs backtrader) | 22,2 s (1er appel) / **6,6171 s** | résultat ✔ ; durée ✘ |
+| bt 1.2.3 | — | rebalance clôture-à-clôture, non comparable | 0,85 s / 0,7905 s | ✔ |
+| zipline-reloaded | 271 jours | déterministe | 1,1 s / 1,09 s | ✔ (voir plus bas) |
+| qstrader | non exécuté (import seul) | — | — | ✔ |
+
+**Écart d'interprétation** : le rapport 03 écrit « Three independent implementations agree with the oracle on trade count and P&L to ≤ 6e-5 ». Or l'oracle donne un rendement composé (0,97741) tandis que backtrader et vectorbt sont comparés en valeur finale d'un portefeuille à mise fixe (997 776) ; `pnl_1000_units` de l'oracle vaut `null` dans le JSON. Donc pour backtrader et vectorbt, l'accord avec l'oracle est vérifié sur le **nombre de transactions** (57), et sur le PnL seulement **entre eux** (7e-9). Voir 7.2.
+
+#### Sonde de lookahead (`results/leak_probe.json`, `py/mt/leak_probe.py`)
+
+(A) Peut-on lire la barre t+1 par l'interface normale ? backtesting.py : non (`IndexError`) ✔ ; backtrader : **oui sur données préchargées** (`["IndexError","leak"]`) ✔ — l'index `close[1]` renvoie la barre suivante partout sauf sur la dernière ; vectorbt : interface par tableaux entiers, futur accessible par construction ✔.
+(B) Un signal « à prescience parfaite » fourni comme tableau est-il repéré ? Non par aucun moteur : backtesting.py **+115,8 %** ✔ ; vectorbt valeur finale **1 075 087** pour 1 000 000 de départ, soit **+7,5 %** à zéro frais ✔.
+Sens : aucun moteur ne détecte une fuite qui entre comme donnée ; la protection doit venir de la couche de données (jointures « as-of », horodatages de réception).
+
+#### Modèle de coûts cvxportfolio 1.5.1 (`results/tcm_microtest.json`)
+
+Simulation d'un pas depuis la trésorerie vers `Uniform()` sur 4 actifs, volumes constants. Spread seul (a = 0,001) : coût **1 000,0** pour 1 M (= 10 points de base du notionnel échangé) ✔, **4 000,0** pour 4 M (rapport ×4,000) ✔. Impact seul (b = 1, exposant 1,5) : 2 042,447 et 16 339,577, rapport **8,000000000000227** = 4^1,5 ✔. Déterminisme sur 2 exécutions (fichier `port_microtest.json`, `deterministic: true`) ✔. Licence GPL-3.0, un seul auteur (375 commits sur 12 mois, 100 %).
+
+#### Zipline (`results/zl_microtest.json`)
+
+Ingestion csvdir + algorithme quotidien déterministes (2 exécutions égales) ; `ingest_seconds 0,48`, `run_seconds 1,09`, 271 jours, valeur finale 1 007 095,556 ✔. Porte de calendrier : l'ingestion **rejette** les barres de week-end (`AssertionError: Got 30 rows ... expected 21 rows ... Extra sessions`) ✔. Constantes par défaut lues dans le code (commission 0,001 par action, `VolumeShareSlippage(0.025, 0.1)`) : citation du script ; le code source de zipline n'est pas dans la branche (**?**).
+
+#### Statistiques en ligne (`results/stats_microtest.json`)
+
+199 999 log-rendements : river moyenne erreur abs 8,9e-21, variance relative 8,4e-15, 0,72 µs/mise à jour ✔ ; `Rolling(Mean,100)` 5,6e-19 ✔ ; `EWMean(0.05)` vs pandas 1,1e-19 ✔ ; P² p99 estimé 9,217e-4 vs exact 9,227e-4 ⇒ erreur relative 9,8e-4 ✔ ; tdigest p99 9,247e-4 vs 9,245e-4 mais 1,29 s pour 50 000 mises à jour ✔ ; ddsketch (α = 1 %) erreur relative **0,9916 %** ✔ ≤ 1 % annoncé, fusion de deux moitiés donne la même erreur ✔ ; hdrhistogram 5,6e-6 ✔ ; talipp EMA20 vs ta max 2,38e-3 ✔ (graine de l'EMA par une moyenne simple), 7,17e-7 vs pandas après 100 barres ✔ ; RSI14 talipp vs ta 2,84e-6 ✔ ; ATR14 0,0 ✔ ; préfixe RSI de `ta` 0,0 ✔.
+(Sketch = résumé compact d'une distribution permettant d'estimer des quantiles avec une erreur bornée.)
+
+#### Indicateurs (`results/feat_microtest_*.json`)
+
+TA-Lib 0.8.1 : cohérence de préfixe 0,0 ✔, RSI 20 000 barres 0,165–0,188 ms ✔. pandas-ta 0.4.71b0 (Python 3.12) sans TA-Lib : RSI moyen 48,787754266123784 (identique à TA-Lib), ATR 0,05013326663026827 (écart 3e-17), cohérence de préfixe 0,0 ✔ ; avec TA-Lib installé il **délègue** à TA-Lib (donc test non indépendant) ✔ (écart 0,0). **Ce test ne regarde que RSI/ATR/EMA** : il ne contredit donc pas les 9 colonnes fuyantes de pandas-ta du run 1, il ne les teste pas (voir 8).
+
+#### Portefeuille (`results/port_microtest.json`)
+
+5 actifs × 1 000 jours, variance minimale long seulement, oracle SLSQP sur la covariance de l'échantillon : PyPortfolioOpt écart 2,6e-9 ✔ ; Riskfolio-Lib 5,14e-7 ✔ ; skfolio 2,98e-5 ✔ ; empyrical-reloaded Sharpe Δ 1,0e-15, drawdown max Δ 0 ✔ ; quantstats Δ 0 ✔ ; cvxportfolio a tourné, valeur finale 986 900,19, rotation 0,003677 ✔.
+
+#### Calendriers (`results/cal_microtest.json`)
+
+NYSE 2020-01-02 à 2026-12-30 : **1 758 sessions** identiques dans les deux bibliothèques, aucune différence ✔ ; 14 fermetures anticipées 2020-2026 identiques ✔ (liste complète dans le fichier) ; 2025-01-09 (journée de deuil national), 2025-04-18 et 2026-07-03 : pas de session ✔ ; clôtures de 17:00, 18:00, 18:00 UTC pour 2024-07-03, 2024-11-29, 2024-12-24 ✔ ; clôture 21:00 UTC (2024-03-08, heure d'hiver) puis 20:00 UTC (2024-03-11) ✔. Autres calendriers : CMES 255 sessions, XLON 250, XTKS 244 (pause déjeuner), XHKG 242, IEPA 255 ✔. `requires_pmc = ["exchange-calendars>=3.3","pandas>=1.1"]` ✔ : pandas_market_calendars **dépend** d'exchange_calendars.
+
+#### Qualité de données (`results/dq_microtest.json`)
+
+3 000 barres d'une minute, défauts injectés : 5 high<low, 3 prix négatifs, 3 NaN, 20 barres plates à volume nul, 2 pics +30 %, 10 minutes manquantes, 4 lignes dupliquées, 1 permutation.
+- pandera : 105 « cas d'échec » = unicité 8 + `>0` 3 + non-nul 3 + monotone 1 + `high_is_max` **42** + `low_is_min` **48** ✔ (somme 105). Durée 0,067 s (rapport 0,085 s ✘ mineur).
+- great_expectations : unicité 8, `close>0` 3, non nul 3, `high>=low` 5, volume ≥ 0 réussi ; `ExpectColumnValuesToBeIncreasing` en échec **sans compte** (`unexpected_count null`) ✔ ; 0,113 s ✔.
+- frictionless : `duplicate-row` 4, `deviated-value` 5 (3σ) ✔ ; 0,206 s ✔.
+- pointblank : 3 étapes, 2/1/1 échecs (`misc_microtest.json`) ✔.
+- **Ce que j'ai recalculé** : les nombres 42 et 48 semblent énormes face à 5 défauts high<low. En rejouant le même jeu de défauts (mêmes graines, script `dq_microtest.py`) avec du pandas simple, j'obtiens 7 lignes en défaut pour `high_is_max` et 8 pour `low_is_min`. Or 7 × 6 = 42 et 8 × 6 = 48 : pandera compte **une entrée par colonne (6 colonnes) et par ligne en défaut** pour une vérification qui porte sur tout le DataFrame. Donc « 105 cas » n'est pas « 105 défauts » (voir 7.2). Réserve : mon recalcul a tourné avec pandas 3.0.6 alors que le run 2 utilisait pandas 2.3.3 ; les tirages aléatoires numpy sont identiques mais je ne peux pas exclure un écart marginal.
+
+#### Stockage (`results/tss_microtest.txt`, `store_microtest.json`, `clickhouse_local_asof.txt`)
+
+PostgreSQL 16.15, TimescaleDB 2.30.2, pg_partman 5.0.1. 3 millions de ticks, 20 symboles :
+
+| | table simple | partitions natives (sans extension) | hypertable TimescaleDB |
+|---|---|---|---|
+| Taille non compressée | 275,4 Mo | 276,5 Mo | **397,7 Mo** |
+| Agrégat OHLC 1 minute, 1 symbole, 1 jour (EXPLAIN ANALYZE) | 10,091 ms | 10,179 ms | **5,624 ms** |
+| Barres identiques aux partitions natives ? | — | — | oui (`bars_equal t`) |
+| Après `compress_chunk` (18 chunks) | — | — | **29,4 Mo** |
+| Agrégat continu | — | — | 500 001 lignes |
+
+✔ tous ces nombres sont dans `tss_microtest.txt`. `timescaledb.license = timescale` ✔ (donc licence Timescale, pas Apache-2, pour la compression). `pg_partman create_parent(... p_premake := 4)` a créé **10** tables filles ✔. Facteurs : 397,7 / 29,4 = **13,5 ×** ✔ (par rapport à l'hypertable non compressée) ; par rapport à la table simple, 275,4 / 29,4 ≈ **9,4 ×** (mon calcul).
+ASOF (jointure « à la dernière valeur connue ») 50 000 trades × 200 000 cotations dont 100 égalités exactes de timestamp : pandas, polars, DuckDB égaux en mode inclusif (≥) et strict (>) ✔ ; 0 violation d'invariant dans DuckDB ✔ ; 21 ms / 5 ms / 61 ms ✔ ; Parquet pyarrow zstd : deux écritures de hash identique ✔, 1,85 Mo ✔ ; DuckDB sur Parquet 4,6 ms ✔ ; DuckDB attaché en lecture seule à PostgreSQL : 3 000 000 lignes vues, 500 001 groupes-minute, 1,95 s ✔ ; ArcticDB lectures `as_of` version / horodatage avant la restatement renvoient l'original ✔. ClickHouse (clickhouse-local) : une ligne à gauche sans correspondance renvoie **0** (`2023-12-31 23:59:59 → 0`) en inclusif comme en strict ✔ ; « exige au moins une colonne d'égalité » : affirmé, non visible dans le fichier (**?**).
+Pour polars en mode strict, le test **émule** le strict par un décalage de +1 µs des cotations (script `store_microtest.py`), il ne teste pas une option native.
+
+#### Collecte (`results/coll_microtest.json`, `misc_microtest.json`)
+
+ccxt 4.5.84, 104 échanges dans le registre ✔ ; `fetch_ohlcv` 100 × 1 m : Kraken, Coinbase, OKX, Bitstamp OK ✔ (0,73 à 2,36 s) ; Binance 451, Bybit 403 ✔ ; dernière barre toujours en formation ✔ ; pas d'horodatage de réception dans les trades ✔. cryptofeed 2.4.1, 20 s : Kraken 38 trades ✔, Bitstamp 24 ✔ ; premier trade Kraken : réception locale **34,6 ms avant** l'horodatage échange (1790707225,9131 vs ...,9477) ✔, premier trade Bitstamp : réception **4,84 s après** ✔ ; Coinbase : `401 Unauthorized` ✔. tardis-python : 131 910 lignes, colonnes `exchange, symbol, timestamp, local_timestamp, id, side, price, amount` ✔. yfinance : 5 lignes en 0,7 s ✔ (le 429 sur l'appel direct n'est pas dans un fichier, **?**).
+
+#### Criblage et empreintes
+
+- `results/screen.json` : 67 lignes ✔ ; le tableau du rapport 01 est généré par `py/gen_reports.py` à partir de ce fichier (donc cohérent) ; j'ai comparé les métriques git avec celles du run 1 : voir 8.5.
+- Comptes de l'adjudication : j'ai relu le tableau de `08_ADJUDICATION.md` (67 lignes) : ADOPT_REFERENCE 14, ADAPT_CANDIDATE 10, PARK 36, REJECT 7 ✔ ; EXEC 41, INSTALL 3, NO 23 ✔ ; 5 « Y » dans la colonne second service, 8 dans second datastore ✔. Croisement : les 41 EXEC = 14 ADOPT + 10 ADAPT + 15 PARK + 2 REJECT ; les 23 NO = 18 PARK + 5 REJECT ; les 3 INSTALL = 3 PARK.
+- Empreinte d'installation isolée (`results/footprint.json`, 33 entrées) : hftbacktest 735 Mo/43 distributions, nautilus_trader 574 Mo/15, ccxt 83 Mo/23, vectorbt 622 Mo/59, Riskfolio-Lib 963 Mo/85, pandera 11 Mo/10 (rapport 07 identique, généré) ✔. PyPortfolioOpt (`packaging`) et empyrical-reloaded (`pytz`) : import impossible en isolement ✔.
+
+### 3.3 Ce que chaque groupe de chiffres signifie, en une phrase
+
+- Les carnets d'ordres (sortedcontainers, nautilus, hftbacktest, nanobook) et les moteurs de backtest « font juste » quand on leur donne des données synthétiques propres ; le vrai risque n'est pas l'arithmétique mais les conventions (à quel prix l'ordre est exécuté) et l'entrée de données.
+- Les moteurs de backtest ne repèrent pas un futur qui s'infiltre par les données (run 2), et certaines bibliothèques d'indicateurs en contiennent (run 1).
+- Les petites bibliothèques pures (calendriers, river, optimiseurs de portefeuille, pandera) sont précises jusqu'aux erreurs d'arrondi.
+- Les choses qui manquent dans l'open source testé : un magasin append-only PIT avec horodatage de réception côté serveur ; une estimation de coûts calibrée sur données ; des indicateurs causaux par construction ; un collecteur temps réel sans licence copyleft pour un Python récent.
 
 ---
 
