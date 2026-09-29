@@ -1,0 +1,45 @@
+{
+ "FEATURES_DISCOVERED": 2,
+ "FEATURES_HELDOUT_STABLE": 1,
+ "SYMBOLIC_EXPRESSIONS_STABLE": 0,
+ "NONREDUNDANT_FEATURES": 0,
+ "CAUSAL_IDENTIFIED_COUNT": 0,
+ "COMPLEXITY_JUSTIFIED": "NO",
+ "COMPLEXITY_PER_TARGET": {
+  "y_ret": "NO",
+  "y_vol": "NO"
+ },
+ "FINAL_VERDICT": "LIMITED_STABLE_FEATURES_SUPPORTED",
+ "arena": {
+  "reps_null": 40,
+  "reps_mixed": 40,
+  "fwer_null": 0.0,
+  "frozen_any_null": 0.0,
+  "false_mains_null": 0.15,
+  "power_c1_main": 1.0,
+  "power_c2_interaction": 1.0,
+  "power_c3_square": 0.275,
+  "c4_market_specific_stable": 0.0,
+  "c5_decaying_stable": 0.0,
+  "false_stable_per_rep_mixed": 0.025,
+  "frozen_per_rep_mixed": 3.2,
+  "stable_per_rep_mixed": 3.2,
+  "valid": true
+ },
+ "classification": {
+  "C01_y_ret": {
+   "label": "NONE",
+   "inv_p_trainval": 0.5027520135799526,
+   "inv_p_heldout": 0.8373638486950391,
+   "sign_agree": 0.5555555555555556,
+   "icp_includes": false
+  },
+  "C01_y_vol": {
+   "label": "PREDICTIVE",
+   "inv_p_trainval": 0.000417548988460692,
+   "inv_p_heldout": 0.8607944037186515,
+   "sign_agree": 1.0,
+   "icp_includes": false
+  }
+ }
+}

@@ -108,4 +108,11 @@ instrument valide). Aucune donnée réelle de ce dépôt n'offre un tel design :
 
 ## 12. Déviations
 
-(aucune à la date de rédaction — les déviations éventuelles sont ajoutées ci-dessous avec le commit fautif)
+Aucune donnée held-out n'a été lue avant la ligne « FROZEN » (commit `feature_discovery_v1: FROZEN formulas…`). Déviations, toutes **avant** le held-out :
+
+1. **Ordre de lancement** : un premier processus de découverte (train/val uniquement) a démarré ~1 min avant que le commit du protocole n'aboutisse (le `git add` initial avait échoué sur un chemin). Aucun résultat n'était disponible ni consulté à ce moment ; le commit `c50e99c` précède tout fichier de résultat.
+2. **Filtre « primitive triviale »** ajouté après ce premier passage (train/val seulement) : il avait « découvert » `ret_1h` (une primitive brute, IC de renversement 1 h stable, ≈ −0.03 train / −0.05 val) comme expression symbolique. Une expression univariée dont le rang est corrélé à > 0.9 avec la primitive n'est pas une nouvelle feature → rejetée (`fd/pipeline.py::val_gate`). La découverte a été relancée entièrement ; c'est ce second passage qui est gelé.
+3. **Arène** : après ce filtre, la composante linéaire plantée (une primitive brute) ne peut plus être « découverte » comme formule ; sa puissance est donc mesurée par la sélection des *mains stables* (f00 ou son quasi-doublon f06), pas par les candidats (§9 modifié en conséquence ; seuil inchangé ≥ 0.80).
+4. **Démo causale** (07) : la règle « design identifié » a été durcie (p < 0.01 **et** réplication ≥ 7/8 environnements) après que la première exécution eut produit un faux positif à 5 % dans un cas sans effet. Ce durcissement concerne la démonstration, pas le protocole réel (qui ne contient aucun design identifié).
+5. **Gate de nouveauté non implémenté** : le §6 ne prévoyait pas de gate de non-redondance vis-à-vis des mains ; la corrélation partielle à la validation est seulement *rapportée*. Conséquence visible dans le résultat : C01/y_vol passe la validation avec une corrélation partielle négative (−0.067).
+6. Résultats de développement de l'arène (4 réplications, graines 0–3) conservés dans `results/synthetic_arena_dev.json` ; le numéro final utilise les graines 1000–1039.
