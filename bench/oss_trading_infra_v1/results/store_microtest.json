@@ -1,0 +1,56 @@
+{
+ "versions": {
+  "duckdb": "1.5.6",
+  "polars": "1.44.2",
+  "pyarrow": "25.0.1",
+  "pandas": "2.3.3"
+ },
+ "asof_join_50k_trades_x_200k_quotes": {
+  "inclusive": {
+   "pandas_vs_polars_equal": true,
+   "pandas_vs_duckdb_equal": true,
+   "polars_vs_duckdb_equal": true
+  },
+  "strict": {
+   "pandas_vs_polars_equal": true,
+   "pandas_vs_duckdb_equal": true,
+   "polars_vs_duckdb_equal": true
+  },
+  "duckdb_asof_invariant_violations_inclusive": 0,
+  "duckdb_asof_invariant_violations_strict": 0
+ },
+ "asof_seconds": {
+  "pandas": 0.021,
+  "polars": 0.005,
+  "duckdb": 0.061
+ },
+ "parquet_pyarrow_bytes_identical_2_writes": true,
+ "parquet_size_MB": 1.85,
+ "duckdb_over_parquet": {
+  "rows": 200000,
+  "seconds": 0.0046
+ },
+ "duckdb_postgres_scanner": {
+  "attached_read_only": true,
+  "rows_seen": 3000000,
+  "minute_groups": 500001,
+  "seconds": 1.95
+ },
+ "arcticdb": {
+  "version": "6.26.0",
+  "read_as_of_v0_px": [
+   1.0,
+   2.0
+  ],
+  "read_as_of_v1_px": [
+   1.0,
+   2.5
+  ],
+  "read_as_of_timestamp_before_restatement_px": [
+   1.0,
+   2.0
+  ],
+  "versions": 2,
+  "storage": "LMDB local dir (or S3/Azure); a separate datastore"
+ }
+}

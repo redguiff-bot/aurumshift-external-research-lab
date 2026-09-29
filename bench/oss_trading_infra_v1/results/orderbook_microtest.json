@@ -1,0 +1,22 @@
+{
+ "expected_FIFO": "C(12) sells against A first (10) then B (2): trades [A 10, B 2], B keeps 3",
+ "trades": [
+  [
+   "A",
+   "C",
+   "10",
+   "100"
+  ],
+  [
+   "B",
+   "C",
+   "2",
+   "100"
+  ]
+ ],
+ "remaining_incoming": null,
+ "best_bid": "100",
+ "get_volume_at_price": "AttributeError: 'OrderTree' object has no attribute 'get_price'",
+ "orders_per_s": 121296,
+ "features_absent": "no L2/L3 feed ingestion, no queue-position for a passive order, no latency, no replay clock (matching engine only)"
+}

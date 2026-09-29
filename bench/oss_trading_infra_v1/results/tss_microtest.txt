@@ -1,0 +1,119 @@
+psql:sql/tss_microtest.sql:3: NOTICE:  extension "timescaledb" already exists, skipping
+psql:sql/tss_microtest.sql:4: NOTICE:  extension "pg_partman" already exists, skipping
+   extname   | extversion 
+-------------+------------
+ pg_partman  | 5.0.1
+ plpgsql     | 1.0
+ timescaledb | 2.30.2
+(3 rows)
+
+psql:sql/tss_microtest.sql:7: NOTICE:  drop cascades to 4 other objects
+DETAIL:  drop cascades to table t.ticks_plain
+drop cascades to table t.ticks_native
+drop cascades to table t.ticks_hyper
+drop cascades to table t.ev
+  create_hypertable  
+---------------------
+ (1,t,ticks_hyper,t)
+(1 row)
+
+  k   |  plain  | native  |  hyper  
+------+---------+---------+---------
+ rows | 3000000 | 3000000 | 3000000
+(1 row)
+
+          k           |        plain         |        native        |        hyper         
+----------------------+----------------------+----------------------+----------------------
+ size_MB_uncompressed | 275.4314240000000000 | 276.5291520000000000 | 397.7052160000000000
+(1 row)
+
+== 1-min OHLC one symbol one day: plain / native / hyper (EXPLAIN ANALYZE execution time)
+                                                                                QUERY PLAN                                                                                
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate (actual rows=1440 loops=1)
+   Group Key: (date_trunc('minute'::text, ts))
+   ->  Sort (actual rows=8640 loops=1)
+         Sort Key: (date_trunc('minute'::text, ts)), ts
+         Sort Method: quicksort  Memory: 857kB
+         ->  Bitmap Heap Scan on ticks_plain (actual rows=8640 loops=1)
+               Recheck Cond: ((sym = 3) AND (ts >= '2024-01-05 00:00:00+00'::timestamp with time zone) AND (ts < '2024-01-06 00:00:00+00'::timestamp with time zone))
+               Heap Blocks: exact=1271
+               ->  Bitmap Index Scan on ticks_plain_sym_ts_idx (actual rows=8640 loops=1)
+                     Index Cond: ((sym = 3) AND (ts >= '2024-01-05 00:00:00+00'::timestamp with time zone) AND (ts < '2024-01-06 00:00:00+00'::timestamp with time zone))
+ Planning Time: 0.232 ms
+ Execution Time: 10.091 ms
+(12 rows)
+
+                                                                                QUERY PLAN                                                                                
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate (actual rows=1440 loops=1)
+   Group Key: (date_trunc('minute'::text, ticks_native.ts))
+   ->  Sort (actual rows=8640 loops=1)
+         Sort Key: (date_trunc('minute'::text, ticks_native.ts)), ticks_native.ts
+         Sort Method: quicksort  Memory: 857kB
+         ->  Bitmap Heap Scan on ticks_native_20240105 ticks_native (actual rows=8640 loops=1)
+               Recheck Cond: ((sym = 3) AND (ts >= '2024-01-05 00:00:00+00'::timestamp with time zone) AND (ts < '2024-01-06 00:00:00+00'::timestamp with time zone))
+               Heap Blocks: exact=1271
+               ->  Bitmap Index Scan on ticks_native_20240105_sym_ts_idx (actual rows=8640 loops=1)
+                     Index Cond: ((sym = 3) AND (ts >= '2024-01-05 00:00:00+00'::timestamp with time zone) AND (ts < '2024-01-06 00:00:00+00'::timestamp with time zone))
+ Planning Time: 0.207 ms
+ Execution Time: 10.179 ms
+(12 rows)
+
+                                                   QUERY PLAN                                                    
+-----------------------------------------------------------------------------------------------------------------
+ GroupAggregate (actual rows=1440 loops=1)
+   Group Key: (time_bucket('00:01:00'::interval, _hyper_1_5_chunk.ts))
+   ->  Sort (actual rows=8640 loops=1)
+         Sort Key: (time_bucket('00:01:00'::interval, _hyper_1_5_chunk.ts))
+         Sort Method: quicksort  Memory: 857kB
+         ->  Result (actual rows=8640 loops=1)
+               ->  Bitmap Heap Scan on _hyper_1_5_chunk (actual rows=8640 loops=1)
+                     Recheck Cond: (sym = 3)
+                     Heap Blocks: exact=1271
+                     ->  Bitmap Index Scan on _hyper_1_5_chunk_ticks_hyper_sym_ts_idx (actual rows=8640 loops=1)
+                           Index Cond: (sym = 3)
+ Planning Time: 0.295 ms
+ Execution Time: 5.624 ms
+(13 rows)
+
+     k      | native_eq_hyper 
+------------+-----------------
+ bars_equal | t
+(1 row)
+
+ compressed_chunks 
+-------------------
+                18
+(1 row)
+
+         k          |     hyper_after     
+--------------------+---------------------
+ size_MB_compressed | 29.4174720000000000
+(1 row)
+
+          k          |  count  
+---------------------+---------
+ rows_after_compress | 3000000
+(1 row)
+
+ timescaledb.license 
+---------------------
+ timescale
+(1 row)
+
+   k   | count  
+-------+--------
+ caggs | 500001
+(1 row)
+
+ create_parent 
+---------------
+ t
+(1 row)
+
+ partman_children 
+------------------
+               10
+(1 row)
+

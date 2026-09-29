@@ -1,0 +1,38 @@
+{
+ "oracle": {
+  "n_trades": 57,
+  "final_equity": 0.97741,
+  "pnl_1000_units": null
+ },
+ "backtesting.py": {
+  "n_trades": 57,
+  "final_equity": 0.977346,
+  "runtime_s": 0.4396,
+  "deterministic_2runs": true
+ },
+ "backtrader": {
+  "n_trades": 57,
+  "final_value": 997776.11632932,
+  "note": "fixed stake 1000 units; SMA warm-up differs (min period)",
+  "runtime_s": 0.7354,
+  "deterministic_2runs": true
+ },
+ "vectorbt": {
+  "n_trades": 57,
+  "final_value": 997776.1163293193,
+  "runtime_s": 6.6171,
+  "deterministic_2runs": true
+ },
+ "bt": {
+  "total_return": 0.007183663052873435,
+  "note": "runs; close-to-close rebalance, no next-open fill; result not comparable to oracle",
+  "runtime_s": 0.7905,
+  "deterministic_2runs": true
+ },
+ "qstrader": {
+  "version": "?",
+  "note": "import ok; needs own DataHandler/SimulationEngine + daily calendar; not run",
+  "runtime_s": 0.0003,
+  "deterministic_2runs": true
+ }
+}

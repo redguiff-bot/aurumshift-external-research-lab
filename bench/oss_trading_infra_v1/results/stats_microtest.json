@@ -1,0 +1,45 @@
+{
+ "river_mean_var": {
+  "n": 199999,
+  "abs_err_mean": 8.893845946170154e-21,
+  "abs_err_var_rel": 8.446517827083209e-15,
+  "us_per_update": 0.72
+ },
+ "river_rolling_mean_w100_maxabs_err_after_warmup": 5.55653613398821e-19,
+ "river_ewmean_vs_pandas_adjust_False_maxabs": 1.0842021724855044e-19,
+ "quantile_p99_exact": 0.000922650481153244,
+ "river_P2_p99": {
+  "est": 0.0009217466436950076,
+  "rel_err": 0.0009796098053367031
+ },
+ "tdigest_p99_50k": {
+  "est": 0.0009247279652884815,
+  "exact": 0.000924504747054478,
+  "sec": 1.29
+ },
+ "ddsketch_abs_ret_p99": {
+  "est": 0.0010176291876599613,
+  "exact": 0.0010278213573224248,
+  "rel_err": 0.00991628514999451,
+  "claimed_rel_accuracy": 0.01
+ },
+ "ddsketch_merge_p99_rel_err_vs_exact": 0.00991628514999451,
+ "hdrhistogram_p99_rel_err": 5.642988365325765e-06,
+ "river_deterministic": true,
+ "talipp_ema20_stream_sec_20k": 0.02,
+ "ema20_talipp_vs_ta": {
+  "n_compared": 19981,
+  "maxabs": 0.002378732599140676
+ },
+ "ema20_ta_vs_pandas_ewm_adjustFalse_maxabs_after_100": 0.0,
+ "ema20_talipp_vs_pandas_ewm_adjustFalse_maxabs_after_100": 7.171738189981625e-07,
+ "rsi14_talipp_vs_ta": {
+  "n_compared": 19986,
+  "maxabs_after_200": 2.8361301716017806e-06
+ },
+ "atr14_talipp_vs_ta": {
+  "n_compared": 19987,
+  "maxabs_after_200": 0.0
+ },
+ "ta_rsi_prefix_consistency_maxabs": 0.0
+}

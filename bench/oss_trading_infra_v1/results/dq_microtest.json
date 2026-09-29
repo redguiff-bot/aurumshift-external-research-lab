@@ -1,0 +1,79 @@
+{
+ "truth": {
+  "F1_high_lt_low": 5,
+  "F2_negative": 3,
+  "F6_zero_vol": 20,
+  "F7_spike": 2,
+  "F8_nan": 3,
+  "F5_gap_minutes": 10,
+  "F3_dup_rows": 4,
+  "F4_non_monotonic_pairs": 1
+ },
+ "pandera": {
+  "raised": true,
+  "n_failure_cases": 105,
+  "by_check": {
+   "field_uniqueness": 8,
+   "greater_than(0)": 3,
+   "high_is_max": 42,
+   "low_is_min": 48,
+   "monotonic": 1,
+   "not_nullable": 3
+  },
+  "seconds": 0.067,
+  "version": "0.33.1"
+ },
+ "great_expectations": {
+  "results": {
+   "ExpectColumnValuesToBeUnique(ts)": {
+    "success": false,
+    "unexpected_count": 8
+   },
+   "ExpectColumnValuesToBeBetween(close)": {
+    "success": false,
+    "unexpected_count": 3
+   },
+   "ExpectColumnValuesToNotBeNull(close)": {
+    "success": false,
+    "unexpected_count": 3
+   },
+   "ExpectColumnValuesToBeIncreasing(ts)": {
+    "success": false,
+    "unexpected_count": null
+   },
+   "ExpectColumnPairValuesAToBeGreaterThanB(high)": {
+    "success": false,
+    "unexpected_count": 5
+   },
+   "ExpectColumnValuesToBeBetween(volume)": {
+    "success": true,
+    "unexpected_count": 0
+   }
+  },
+  "seconds": 0.113,
+  "version": "1.23.2"
+ },
+ "frictionless": {
+  "valid": false,
+  "error_types": {
+   "deviated-value": 5,
+   "duplicate-row": 4
+  },
+  "seconds": 0.206,
+  "version": "5.19.1"
+ },
+ "plain_pandas_reference": {
+  "high_lt_low": 5,
+  "nonpos": 3,
+  "dups": 4,
+  "nonmono": 2,
+  "nan": 3,
+  "zero_vol": 20,
+  "gap_minutes_missing": 10
+ },
+ "own_size_MB": {
+  "pandera": 1.9,
+  "great-expectations": 13.7,
+  "frictionless": 1.7
+ }
+}

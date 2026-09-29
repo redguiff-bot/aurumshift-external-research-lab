@@ -1,0 +1,18 @@
+{
+ "backtesting.py": {
+  "B_foresight_return_pct": 115.8,
+  "A_direct_future_index": [
+   "IndexError"
+  ]
+ },
+ "backtrader": {
+  "A_direct_future_index": [
+   "IndexError",
+   "leak"
+  ]
+ },
+ "vectorbt": {
+  "B_foresight_final_value": 1075087.0,
+  "A": "whole-array API: future is addressable by construction (no per-bar boundary)"
+ }
+}

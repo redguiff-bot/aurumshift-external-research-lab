@@ -1,0 +1,24 @@
+{
+ "run_seed1": {
+  "seconds": 1.8,
+  "last_trade": 99968,
+  "n_agents": 1117,
+  "hash": "1fd2bfa47da1"
+ },
+ "run_seed1_again": {
+  "seconds": 2.0,
+  "last_trade": 99968,
+  "n_agents": 1117,
+  "hash": "1fd2bfa47da1"
+ },
+ "run_seed2": {
+  "seconds": 1.6,
+  "last_trade": 100006,
+  "n_agents": 1117,
+  "hash": "62cfdbb2e89f"
+ },
+ "deterministic": true,
+ "seed_sensitive": true,
+ "environment": "Python 3.9 venv (uv-managed) with numpy==1.22.0 pandas==1.2.4 pomegranate==0.14.5 scipy==1.10.0; on Python 3.11 pomegranate==0.14.5 has no wheel (cp37-cp39 only) -> import fails",
+ "config": "rmsc04 build_config(seed, end_time='09:45:00'), 1117 agents"
+}

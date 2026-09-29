@@ -1,0 +1,14 @@
+{
+ "python": "3.12.3",
+ "libs": {
+  "TA-Lib": {
+   "error": "ModuleNotFoundError: No module named 'talib'"
+  },
+  "pandas-ta": {
+   "version": "0.4.71b0",
+   "mean_rsi_last1000": 48.787754266123784,
+   "mean_atr_last1000": 0.05013326663026827,
+   "prefix_consistency_maxabs": 0.0
+  }
+ }
+}

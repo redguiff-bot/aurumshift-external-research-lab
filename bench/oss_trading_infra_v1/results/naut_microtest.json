@@ -1,0 +1,70 @@
+{
+ "version": "1.221.0",
+ "import_seconds": 0.67,
+ "default_trade_execution": {
+  "events": [
+   "OrderInitialized",
+   "OrderSubmitted",
+   "OrderAccepted"
+  ],
+  "fills": [],
+  "hash": "c3259fa446c1"
+ },
+ "trade_execution_off": {
+  "events": [
+   "OrderInitialized",
+   "OrderSubmitted",
+   "OrderAccepted"
+  ],
+  "fills": [],
+  "hash": "c3259fa446c1"
+ },
+ "trade_through_limit_99.90": {
+  "events": [
+   "OrderInitialized",
+   "OrderSubmitted",
+   "OrderAccepted"
+  ],
+  "fills": [],
+  "hash": "c3259fa446c1"
+ },
+ "fill_model_prob_touch_1.0": {
+  "events": [
+   "OrderInitialized",
+   "OrderSubmitted",
+   "OrderAccepted"
+  ],
+  "fills": [],
+  "hash": "c3259fa446c1"
+ },
+ "fill_model_prob_touch_0.0": {
+  "events": [
+   "OrderInitialized",
+   "OrderSubmitted",
+   "OrderAccepted"
+  ],
+  "fills": [],
+  "hash": "c3259fa446c1"
+ },
+ "latency_1.5s": {
+  "events": [
+   "OrderInitialized",
+   "OrderSubmitted",
+   "OrderAccepted"
+  ],
+  "fills": [],
+  "hash": "14a21a7072ca"
+ },
+ "determinism_2runs_identical": true,
+ "throughput_quotes": {
+  "n": 1000000,
+  "run_seconds": 2.78,
+  "events_per_s": 359906
+ },
+ "extra_probes": {
+  "L2_book_cross_(ask added at 99.90 vs our bid 100.00)": "OrderFilled + PositionOpened (fill works when the simulated book crosses)",
+  "L1_MBP quotes+trades, trade_execution=True: 3 sell prints @100.00 or one print @99.90": "no fill in either case",
+  "L1_MBP through-print, trade_execution=False": "OrderFilled at 6.0s (fill caused by L1 book being updated from the trade tick; not queue-aware)",
+  "note": "a print-driven passive fill with queue position was NOT reproduced in 9 configurations; whether a supported config exists is UNKNOWN (my setup may be incomplete)"
+ }
+}

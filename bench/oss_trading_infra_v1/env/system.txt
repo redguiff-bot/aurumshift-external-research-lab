@@ -1,0 +1,7 @@
+python: Python 3.11.15
+uv: uv 0.8.17
+postgres: psql (PostgreSQL) 16.15 (Ubuntu 16.15-0ubuntu0.24.04.1)
+postgresql-16-partman 5.0.1-1
+timescaledb-2-postgresql-16 2.30.2~ubuntu24.04-1615
+clickhouse-local: 26.10.1.1022 (binary from builds.clickhouse.com, not committed)
+Linux 6.18.44-fc-v37
