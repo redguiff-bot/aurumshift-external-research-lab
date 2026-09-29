@@ -1,0 +1,56 @@
+== [1] Study A run 2 (UNMERGED branch cb13041) validation split, dz units, block bootstrap over (family,variant,seed), caps pooled
+  RANK_NET - FIFO: mean, lo, hi = (np.float64(0.154), np.float64(0.14), np.float64(0.168))
+  FIFO_NETPOS - FIFO: mean, lo, hi = (np.float64(0.1), np.float64(0.091), np.float64(0.109))
+  RANK_SCORE_RAW - FIFO: mean, lo, hi = (np.float64(0.134), np.float64(0.12), np.float64(0.148))
+  RANK_NET - RANK_SCORE_RAW: mean, lo, hi = (np.float64(0.02), np.float64(0.018), np.float64(0.023))
+  RANK_NET - FIFO_NETPOS: mean, lo, hi = (np.float64(0.054), np.float64(0.045), np.float64(0.064))
+  SLOTHOUR_DENSITY - RANK_NET: mean, lo, hi = (np.float64(0.001), np.float64(0.0), np.float64(0.003))
+  CORR_PENALTY - RANK_NET: mean, lo, hi = (np.float64(-0.0), np.float64(-0.001), np.float64(0.001))
+  MARGINAL_RISK - RANK_NET: mean, lo, hi = (np.float64(0.004), np.float64(0.002), np.float64(0.006))
+  CLUSTER_CAP - RANK_NET: mean, lo, hi = (np.float64(0.001), np.float64(-0.0), np.float64(0.002))
+  LIN_TS - RANK_NET: mean, lo, hi = (np.float64(-0.013), np.float64(-0.021), np.float64(-0.004))
+  LINUCB - RANK_NET: mean, lo, hi = (np.float64(-0.029), np.float64(-0.035), np.float64(-0.022))
+  UNCERTAINTY_LCB - RANK_NET: mean, lo, hi = (np.float64(0.01), np.float64(0.005), np.float64(0.017))
+  COMPOSED - RANK_NET: mean, lo, hi = (np.float64(0.025), np.float64(0.017), np.float64(0.034))
+  RANDOM_SEEDED - FIFO: mean, lo, hi = (np.float64(0.024), np.float64(0.016), np.float64(0.032))
+  ROUND_ROBIN - FIFO: mean, lo, hi = (np.float64(0.03), np.float64(0.023), np.float64(0.037))
+  EQUAL_QUOTA - FIFO: mean, lo, hi = (np.float64(0.031), np.float64(0.024), np.float64(0.038))
+  OLDEST_SLOT - FIFO: mean, lo, hi = (np.float64(-0.085), np.float64(-0.101), np.float64(-0.071))
+  cap 3: RANK_NET-FIFO 0.192  NETPOS-FIFO 0.117
+  cap 4: RANK_NET-FIFO 0.176  NETPOS-FIFO 0.109
+  cap 6: RANK_NET-FIFO 0.148  NETPOS-FIFO 0.097
+  cap 10: RANK_NET-FIFO 0.099  NETPOS-FIFO 0.076
+  FIFO utilisation by cap: {3: 0.897, 4: 0.88, 6: 0.845, 10: 0.771}
+
+== [2] Study A as merged (main, run 1) tuning split: tuned method minus FIFO in dens0_sd units, per family (S12 normaliser blow-up)
+  SLOTHOUR_DENSITY - FIFO by family: {'S10_spam': 0.125, 'S11_burst': 0.12, 'S12_all_equal': 1.268, 'S1_sparse': 0.011, 'S2_moderate': 0.074, 'S3_chronic': 0.285, 'S4_late_quality': 0.075, 'S5_correlated': 0.199, 'S6_short_vs_long': 0.076, 'S7_regime_shift': 0.154, 'S8_noisy_ranking': 0.128, 'S9_missing_quality': 0.129}
+  share of pooled mean contributed by S12: 0.48
+
+== [3] Study B heldout H1 (PR #8 head), M1 = net per available slot-hour, paired by (scenario, seed), macro over 13 scenarios
+  FIFO_SCREEN - FIFO: 0.164 [0.128, 0.200] wins 11/13
+  SCORE_RANK - FIFO: 0.365 [0.318, 0.411] wins 12/13
+  SLOTHOUR - FIFO: 0.435 [0.390, 0.482] wins 13/13
+  SCORE_RANK - FIFO_SCREEN: 0.201 [0.157, 0.245] wins 12/13
+  SLOTHOUR - SCORE_RANK: 0.070 [0.033, 0.110] wins 11/13
+  UNCERTAINTY_LCB - SLOTHOUR: 0.062 [0.022, 0.098] wins 10/13
+  CORR_AWARE - SLOTHOUR: -0.022 [-0.052, 0.010] wins 5/13
+  LINTS - SLOTHOUR: -0.020 [-0.058, 0.019] wins 5/13
+  SLOTHOUR_SHADOW - SLOTHOUR: 0.009 [-0.026, 0.043] wins 5/13
+  OLDEST_SLOT - FIFO: 0.185 [0.149, 0.221] wins 10/13
+  RANDOM - FIFO: -0.042 [-0.072, -0.012] wins 6/13
+  ROUND_ROBIN - FIFO: -0.006 [-0.049, 0.037] wins 8/13
+  EQUAL_QUOTA - FIFO: -0.041 [-0.076, -0.007] wins 5/13
+  ingest confound check (macro M1, seeds 3000-3009):
+ingest      COOLDOWN  DEDUP_LATEST    RAW  SCORE_UPDATE
+policy                                                 
+FIFO           1.853         1.845  1.814         1.810
+SCORE_RANK     2.127         2.197  2.174         2.211
+SLOTHOUR       2.195         2.280  2.259         2.290
+
+== [4] Probes: run Study A run-2 simulator (scratch copy) under altered assumptions; 20 seeds x cap 4, family S3_chronic; latent bps per slot-hour
+  A default (waiting decay tau=8)        {'FIFO': -0.06, 'RANDOM': -0.003, 'NETPOS': 0.489, 'RANK_NET': 0.699} | diff vs FIFO {'RANDOM': '+0.057', 'NETPOS': '+0.549', 'RANK_NET': '+0.759'}
+  A, no waiting-age decay                {'FIFO': 0.119, 'RANDOM': 0.099, 'NETPOS': 0.726, 'RANK_NET': 0.909} | diff vs FIFO {'RANDOM': '-0.019', 'NETPOS': '+0.607', 'RANK_NET': '+0.791'}
+  A transplanted to B-like edge/cost     {'FIFO': 2.222, 'RANDOM': 2.202, 'NETPOS': 2.675, 'RANK_NET': 3.615} | diff vs FIFO {'RANDOM': '-0.020', 'NETPOS': '+0.454', 'RANK_NET': '+1.393'}
+  A default (evict penalty 3)            {'FIFO': -0.06, 'OLD4': -1.465, 'OLD12': -0.314} | diff vs FIFO {'OLD4': '-1.404', 'OLD12': '-0.254'}
+  A transplanted to B-like               {'FIFO': 2.222, 'OLD4': 2.657, 'OLD12': 2.452} | diff vs FIFO {'OLD4': '+0.435', 'OLD12': '+0.231'}
+  A transplanted, cost x3                {'FIFO': 0.85, 'OLD4': -0.206, 'OLD12': 0.854} | diff vs FIFO {'OLD4': '-1.057', 'OLD12': '+0.004'}
