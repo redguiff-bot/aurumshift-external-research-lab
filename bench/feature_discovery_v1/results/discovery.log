@@ -1,3 +1,5 @@
 y_ret seconds 61 families 11 kept 1 frozen [('C01', 'mul(ret_24h, wknd)', 0.0301, 0.6)] mains ['lrv_24']
-y_vol seconds 62 families 9 kept 1 frozen [('C01', 'mul(ret_72h, sgn(mag_168))', 0.1227, 1.0)] mains ['lrv_24', 'lrv_168', 'lvol_1']
-FROZEN digest 9f32094f0d93b292055750e18b7fd449910fd7129173ddcb47c116c1ce2d0666
+y_vol seconds 62 families 9 kept/usr/local/lib/python3.11/dist-packages/joblib/externals/loky/backend/resource_tracker.py:444: UserWarning: resource_tracker: There appear to be 10 leaked semlock objects to clean up at shutdown: {'/loky-919-ce06y5al': 1, '/loky-919-gnjrvp8l': 1, '/loky-919-h_696sjp': 1, '/loky-919-awetxvde': 1, '/loky-919-l54twzu9': 1, '/loky-919-numeiu1z': 1, '/loky-919-zief0al4': 1, '/loky-919-uyou759q': 1, '/loky-919-bw27xrsu': 1, '/loky-919-05gzr3ea': 1}
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/joblib/externals/loky/backend/resource_tracker.py:444: UserWarning: resource_tracker: There appear to be 3 leaked folder objects to clean up at shutdown: {'/dev/shm/joblib_memmapping_folder_919_10e866f5b3674a0ab310afac04a765ba_71dd234ba07546219f025ab8aec5ab4f': 1, '/dev/shm/joblib_memmapping_folder_919_eca610728cf0409bb54bb72b92147c02_32f7bf3870dc4719a7d3e55d09cef3f9': 1, '/dev/shm/joblib_memmapping_folder_919_10e866f5b3674a0ab310afac04a765ba_50fd2ff4da0b44d9a7509268fa444677': 1}
+  warnings.warn(
