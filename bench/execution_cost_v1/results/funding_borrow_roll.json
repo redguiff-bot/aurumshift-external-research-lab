@@ -1,0 +1,238 @@
+{
+ "binance_vision_BTCUSDT": {
+  "n": 369,
+  "t0": "2026-05-01 00:00:00",
+  "t1": "2026-08-31 16:00:00.001000",
+  "interval_hours_values": [
+   8
+  ],
+  "mean_bps_per_8h": 0.4385655826558265,
+  "sd": 0.3998002960588268,
+  "frac_positive": 0.8672086720867209,
+  "annualised_mean_pct": 4.8022931300813,
+  "hold": {
+   "1d_long_pays_bps": {
+    "mean": 1.3172269754768393,
+    "p05": -0.63389,
+    "p50": 1.5065999999999997,
+    "p95": 2.78404,
+    "min": -2.3543000000000003,
+    "max": 3.0
+   },
+   "7d_long_pays_bps": {
+    "mean": 9.348787679083095,
+    "p05": -0.7826399999999999,
+    "p50": 10.4925,
+    "p95": 17.2599,
+    "min": -6.3989,
+    "max": 18.933400000000002
+   },
+   "30d_long_pays_bps": {
+    "mean": 40.5050975,
+    "p05": 20.27238,
+    "p50": 44.1237,
+    "p95": 57.747575000000005,
+    "min": 19.1545,
+    "max": 60.7457
+   }
+  },
+  "gaps_not_8h": 0
+ },
+ "binance_vision_ETHUSDT": {
+  "n": 369,
+  "t0": "2026-05-01 00:00:00",
+  "t1": "2026-08-31 16:00:00.001000",
+  "interval_hours_values": [
+   8
+  ],
+  "mean_bps_per_8h": 0.31686639566395663,
+  "sd": 0.4135123147870021,
+  "frac_positive": 0.8075880758807588,
+  "annualised_mean_pct": 3.469687032520325,
+  "hold": {
+   "1d_long_pays_bps": {
+    "mean": 0.9533138964577655,
+    "p05": -1.1652500000000001,
+    "p50": 1.0324999999999998,
+    "p95": 2.5936299999999997,
+    "min": -2.3692,
+    "max": 3.0
+   },
+   "7d_long_pays_bps": {
+    "mean": 6.822698567335244,
+    "p05": -3.76364,
+    "p50": 7.663,
+    "p95": 14.965079999999993,
+    "min": -9.2676,
+    "max": 19.5611
+   },
+   "30d_long_pays_bps": {
+    "mean": 26.903746428571427,
+    "p05": 4.965330000000001,
+    "p50": 29.0511,
+    "p95": 45.995785,
+    "min": 2.8850000000000002,
+    "max": 47.2967
+   }
+  },
+  "gaps_not_8h": 0
+ },
+ "okx_BTC-USDT-SWAP": {
+  "n": 277,
+  "t0": "2026-06-29 08:00:00",
+  "t1": "2026-09-29 08:00:00",
+  "mean_realized_bps": 0.5282630917319423,
+  "realized_vs_announced_maxabs_diff_bps": 0.0,
+  "n_overlap_binance": 191,
+  "corr_okx_binance": 0.4329715827065031,
+  "mean_abs_diff_bps": 0.27114216286998427,
+  "binance_minus_okx_mean_bps": 0.09337794133785865
+ },
+ "okx_ETH-USDT-SWAP": {
+  "n": 277,
+  "t0": "2026-06-29 08:00:00",
+  "t1": "2026-09-29 08:00:00",
+  "mean_realized_bps": 0.39889728818709386,
+  "realized_vs_announced_maxabs_diff_bps": 0.0,
+  "n_overlap_binance": 191,
+  "corr_okx_binance": 0.49453742801631895,
+  "mean_abs_diff_bps": 0.284029950607733,
+  "binance_minus_okx_mean_bps": 0.06669726293524082
+ },
+ "okx_current_fields": {
+  "formulaType": "withRate",
+  "fundingRate": "0.0000042227072274",
+  "interestRate": "0.0001000000000000",
+  "maxFundingRate": "0.00375",
+  "method": "current_period",
+  "minFundingRate": "-0.00375",
+  "nextFundingRate": "",
+  "premium": "-0.0005198329903304",
+  "settFundingRate": "0.0000254900915325",
+  "settState": "settled"
+ },
+ "okx_public_borrow_basic": {
+  "USDT": {
+   "rate": "0.000096",
+   "quota": "5000000"
+  },
+  "BTC": {
+   "rate": "0.00001392",
+   "quota": "175"
+  },
+  "ETH": {
+   "rate": "0.0000276",
+   "quota": "7000"
+  },
+  "USDC": {
+   "rate": "0.000096",
+   "quota": "1000000"
+  },
+  "SOL": {
+   "rate": "0.00010968",
+   "quota": "40000"
+  }
+ },
+ "okx_public_borrow_note": "rate unit (per hour vs per day) is a DOCUMENTED_CLAIM to verify; endpoint gives venue-quoted base rate, tier/VIP and realised interest not observable",
+ "okx_btcusd_dated_curve": {
+  "index": 84398.1,
+  "curve": [
+   {
+    "inst": "BTC-USD-261030",
+    "dte": 30.784153113425926,
+    "mid": 84687.7,
+    "spread_bps": 6.022125999407233,
+    "basis_bps": 34.31356867038326,
+    "annualised_basis_pct": 4.068473970533751,
+    "vol24h_ct": "10755.2"
+   },
+   {
+    "inst": "BTC-USD-261127",
+    "dte": 58.78415311342592,
+    "mid": 85066.0,
+    "spread_bps": 1.8103590153521005,
+    "basis_bps": 79.13685260687143,
+    "annualised_basis_pct": 4.9137309413599315,
+    "vol24h_ct": "19716.9"
+   },
+   {
+    "inst": "BTC-USD-261225",
+    "dte": 86.78415311342593,
+    "mid": 85339.75,
+    "spread_bps": 1.4412978711548088,
+    "basis_bps": 111.57241691459818,
+    "annualised_basis_pct": 4.692553964385941,
+    "vol24h_ct": "48943.8"
+   },
+   {
+    "inst": "BTC-USD-270326",
+    "dte": 177.78415311342593,
+    "mid": 86427.5,
+    "spread_bps": 8.74721587457763,
+    "basis_bps": 240.45565006795,
+    "annualised_basis_pct": 4.936678029948317,
+    "vol24h_ct": "18172.7"
+   },
+   {
+    "inst": "BTC-USD-270625",
+    "dte": 268.78415311342593,
+    "mid": 87552.05,
+    "spread_bps": 3.02677093226258,
+    "basis_bps": 373.6991709528992,
+    "annualised_basis_pct": 5.074711281071984,
+    "vol24h_ct": "456"
+   },
+   {
+    "inst": "BTC-USD-270924",
+    "dte": 359.78415311342593,
+    "mid": 88693.15,
+    "spread_bps": 36.947610948534034,
+    "basis_bps": 508.9036364562705,
+    "annualised_basis_pct": 5.162812917109749,
+    "vol24h_ct": "487.1"
+   }
+  ],
+  "rolls": [
+   {
+    "frm": "BTC-USD-261030",
+    "to": "BTC-USD-261127",
+    "calendar_spread_bps": 44.67000520736786,
+    "leg_half_spreads_bps": 3.9162425073796667,
+    "roll_all_in_bps_long": 48.58624771474753,
+    "days_between": 27.999999999999996
+   },
+   {
+    "frm": "BTC-USD-261127",
+    "to": "BTC-USD-261225",
+    "calendar_spread_bps": 32.18089483459919,
+    "leg_half_spreads_bps": 1.6258284432534547,
+    "roll_all_in_bps_long": 33.80672327785264,
+    "days_between": 28.000000000000007
+   },
+   {
+    "frm": "BTC-USD-261225",
+    "to": "BTC-USD-270326",
+    "calendar_spread_bps": 127.46111864635256,
+    "leg_half_spreads_bps": 5.09425687286622,
+    "roll_all_in_bps_long": 132.55537551921879,
+    "days_between": 91.0
+   },
+   {
+    "frm": "BTC-USD-270326",
+    "to": "BTC-USD-270625",
+    "calendar_spread_bps": 130.11483613433182,
+    "leg_half_spreads_bps": 5.886993403420105,
+    "roll_all_in_bps_long": 136.00182953775195,
+    "days_between": 91.0
+   },
+   {
+    "frm": "BTC-USD-270625",
+    "to": "BTC-USD-270924",
+    "calendar_spread_bps": 130.3338985209357,
+    "leg_half_spreads_bps": 19.987190940398307,
+    "roll_all_in_bps_long": 150.321089461334,
+    "days_between": 91.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "params": {
+  "fixed_bps": {
+   "c": 1.6470003610502235
+  },
+  "fixed_5bps_default": {
+   "c": 5.0
+  },
+  "spread_prop": {
+   "k": 3.294000731069214
+  },
+  "vol_scaled": {
+   "a": 0.6498794716498999
+  },
+  "size_depth": {
+   "b": 0.2059156576341392
+  },
+  "sqrt": {
+   "Y": 0.11683122254064679,
+   "hs_fallback": 0.5
+  },
+  "sqrt_ohlcv": {
+   "Y": 0.11683122254064679,
+   "hs_fallback": 0.5
+  },
+  "walk": {},
+  "walk_fallback": {
+   "Y": 0.11683122254064679,
+   "hs_fallback": 0.5
+  },
+  "mid_fill": {},
+  "half_spread": {}
+ },
+ "timing_us_per_pred": {
+  "E1_mid_fill": 0.8117698487781343,
+  "fixed_bps_calibrated": 0.8471239180791945,
+  "fixed_5bps_default": 0.8128484090169271,
+  "half_spread_only(E3)": 2.520754223778134,
+  "spread_prop": 2.660808109101795,
+  "vol_scaled": 2.602395557221912,
+  "size_depth(L1+D1bp)": 2.5758629753476097,
+  "sqrt_law(L1 spread)": 3.8528669448125927,
+  "sqrt_law(OHLCV-only)": 1.9085066659109933,
+  "book_walk_L2(100bps)": 14.676343827020554,
+  "book_walk_L2_top20(20bps)": 10.228690646943592,
+  "book_walk_L2_top20+sqrt_fallback": 11.184067953200566
+ },
+ "sizes": [
+  1000.0,
+  10000.0,
+  100000.0,
+  1000000.0,
+  10000000.0
+ ],
+ "n_trials": 300
+}

@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+data/vision/aggTrades_*.zip
+data/vision/klines_*.zip

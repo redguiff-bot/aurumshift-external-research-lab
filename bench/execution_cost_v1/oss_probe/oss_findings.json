@@ -1,0 +1,579 @@
+[
+ {
+  "name": "zipline-reloaded slippage models",
+  "repo": "stefan-jansen/zipline-reloaded",
+  "license_spdx": "Apache-2.0",
+  "last_commit": "2025-11-13",
+  "latest_tag_approx": "v1.3.0 (tag sort approx)",
+  "activity": "Moderate: community fork, last commit ~10 months before probe date (2026-09-29)",
+  "dependencies": "pandas, numpy, bcolz-zipline-era stack, exchange-calendars; heavy install",
+  "asset_class_assumptions": "US equities + futures (AllowedAssetMarker EquitySlippageModel/FutureSlippageModel); minute bars",
+  "required_data": "Minute OHLCV incl. volume; 20-day ADV and volatility window for VolatilityVolumeShare",
+  "online_offline": "Offline backtest simulator; classes usable standalone only via mock BarData/Order",
+  "fit_non_hft_intraday": "Good reference for bar-level slippage: VolumeShareSlippage (quadratic in volume share), FixedBasisPointsSlippage (default 5bp, 10% vol cap), VolatilityVolumeShare (eta*sigma*sqrt(psi), futures)",
+  "failure_modes": "Bar-close price as reference (no spread/queue); quadratic-in-share law is ad hoc (price_impact=0.1 default, not calibrated); volume_limit caps fills (LiquidityExceeded); ROOT_SYMBOL_TO_ETA calibrated for US futures; needs full zipline calendar/asset infra to use in-situ",
+  "source_paths": [
+   "/tmp/oss_clones/zipline-reloaded/src/zipline/finance/slippage.py:241 VolumeShareSlippage.process_order (l.288-331)",
+   "/tmp/oss_clones/zipline-reloaded/src/zipline/finance/slippage.py:603 FixedBasisPointsSlippage.process_order (l.663-681)",
+   "/tmp/oss_clones/zipline-reloaded/src/zipline/finance/slippage.py:368 MarketImpactBase.process_order (l.421)",
+   "/tmp/oss_clones/zipline-reloaded/src/zipline/finance/slippage.py:520 VolatilityVolumeShare.get_simulated_impact (l.~56 of class; MI=eta*sigma*sqrt(psi))"
+  ],
+  "smoke_executed": true,
+  "smoke_result": "Imported classes, called process_order with mock data (vol 10000, close 50, order 200): VolumeShareSlippage -> (50.002, 200) matching 50*(1+0.1*0.02^2)=50.002; FixedBasisPoints(5bp) -> (50.025, 200). Executed in /tmp/venvs/zipline-reloaded.",
+  "adjudication": "ADOPT_REFERENCE",
+  "adjudication_reason": "Cleanest small, Apache-2.0 formulas for bar-level slippage baselines; use as reference/oracle not as dependency.",
+  "claim_labels": {
+   "formula_matches_docstring": "PROVEN (smoke output)",
+   "default_eta_calibration": "DOCUMENTED_CLAIM",
+   "fit_non_hft": "INFERENCE"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "zipline (Quantopian, original)",
+  "repo": "quantopian/zipline",
+  "license_spdx": "Apache-2.0",
+  "last_commit": "2020-10-14",
+  "latest_tag_approx": "v1.3.0",
+  "activity": "Dead/archived-equivalent: no commits since 2020-10",
+  "dependencies": "legacy pandas/numpy pins",
+  "asset_class_assumptions": "US equities/futures",
+  "required_data": "Minute OHLCV",
+  "online_offline": "Offline",
+  "fit_non_hft_intraday": "Superseded by zipline-reloaded; same slippage classes",
+  "failure_modes": "Does not install on modern Python/pandas (INFERENCE, not attempted)",
+  "source_paths": [
+   "/tmp/oss_clones/zipline/zipline/finance/slippage.py"
+  ],
+  "smoke_executed": false,
+  "smoke_result": "Not installed; cloned and file present (superseded by zipline-reloaded which was executed).",
+  "adjudication": "REJECT",
+  "adjudication_reason": "Unmaintained since 2020; use zipline-reloaded as reference instead.",
+  "claim_labels": {
+   "dead": "OBSERVED (git log)"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "hftbacktest",
+  "repo": "nkaz001/hftbacktest",
+  "license_spdx": "MIT",
+  "last_commit": "2025-12-23",
+  "latest_tag_approx": "v1.8.4 (repo tag) / PyPI 2.4.4",
+  "activity": "Active through 2025 (last commit ~9 months before probe date); single main maintainer (INFERENCE from repo/email in LICENSE)",
+  "dependencies": "Rust core + numba, numpy, pandas, polars (PyPI 2.4.4 wheel)",
+  "asset_class_assumptions": "Crypto perp/spot L2/L3 tick data (linear & inverse assets, tick_size/lot_size); no equity calendar concept",
+  "required_data": "Tick-by-tick depth + trade events (event_dtype: ev, exch_ts, local_ts, px, qty ...), optional order-latency data",
+  "online_offline": "Offline event-driven backtest; live via connector crate (separate)",
+  "fit_non_hft_intraday": "Low direct fit: models queue position, latency, maker/taker fees at tick level; irrelevant to minute-bar non-HFT execution unless you have L2 data. Useful as a fee/latency/queue reference.",
+  "failure_modes": "Needs full L2 event feed (expensive to collect/store); numba-jit'd user loop; queue models (risk-adverse, prob power/log) are heuristics; results sensitive to latency assumption; partial-fill exchange models differ",
+  "source_paths": [
+   "/tmp/oss_clones/hftbacktest/hftbacktest/src/backtest/models/queue.rs: RiskAdverseQueueModel l.44, ProbQueueModel l.139, PowerProbQueueFunc l.221, L3FIFOQueueModel l.481",
+   "/tmp/oss_clones/hftbacktest/hftbacktest/src/backtest/models/fee.rs: TradingValueFeeModel/TradingQtyFeeModel l.55-93",
+   "/tmp/oss_clones/hftbacktest/hftbacktest/src/backtest/models/latency.rs: ConstantLatency l.28, IntpOrderLatency l.98"
+  ],
+  "smoke_executed": true,
+  "smoke_result": "Built 7-event synthetic npz (snapshot + 5 sell trades at bid), ROIVector/HashMapMarketDepthBacktest with risk_adverse_queue_model, constant latency, trading_value_fee_model(maker 2bp,taker 7bp), buy limit 99.9 x1. Output (position, balance, fee) = (1.0, -99.9, 0.01998): filled as maker, fee=2bp*99.9. Deprecation warning: constant_latency -> constant_order_latency.",
+  "adjudication": "PARK",
+  "adjudication_reason": "Correct and mature, but tick/LOB-centric; park as reference for maker fee/queue modelling if L2 data ever exists.",
+  "claim_labels": {
+   "fill_and_fee_behaviour": "PROVEN (smoke)",
+   "queue_model_realism": "UNKNOWN (not validated against real data)",
+   "fit_non_hft": "INFERENCE"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "nautilus_trader FillModel",
+  "repo": "nautechsystems/nautilus_trader",
+  "license_spdx": "LGPL-3.0-or-later",
+  "last_commit": "2026-09-29",
+  "latest_tag_approx": "v2.0.0rc5 (repo); PyPI installed 1.221.0",
+  "activity": "Very active (daily commits), commercial-backed team",
+  "dependencies": "Rust core, Python/Cython; large",
+  "asset_class_assumptions": "Multi-asset (FX, equities, crypto, futures); L1/L2/L3 book-based matching",
+  "required_data": "Quotes/trades/bars/order book deltas",
+  "online_offline": "Offline backtest engine + live engine",
+  "fit_non_hft_intraday": "Fill model is coarse: prob_fill_on_limit, prob_slippage (1 tick) plus book-based matching in v2; no volume-impact law. Good architecture reference for order state machine, not for cost calibration.",
+  "failure_modes": "Slippage is a random 1-tick event not volume-dependent; bar-only data gives crude fills; LGPL constraint if linked; huge dependency; repo is v2.0 rc while PyPI wheel is 1.221 (API skew)",
+  "source_paths": [
+   "/tmp/oss_clones/nautilus_trader/crates/execution/src/models/fill.rs: ProbabilisticFillState l.166 (is_limit_filled l.198, is_slipped l.202), DefaultFillModel l.265",
+   "/tmp/oss_clones/nautilus_trader/crates/execution/src/python/fill.rs"
+  ],
+  "smoke_executed": true,
+  "smoke_result": "pip 1.221.0: FillModel(prob_fill_on_limit=0.3, prob_slippage=0.5, random_seed=42) -> is_limit_filled x10 = [F,T,T,T,F,F,F,T,F,T], is_slipped x10 = [T,F,T,T,F,F,T,F,F,T]. Confirms Bernoulli behaviour only. Source inspected is v2 Rust, executed is v1 PyPI (different code).",
+  "adjudication": "PARK",
+  "adjudication_reason": "Structure reference only; cost model is probability toggles. LGPL + weight not justified.",
+  "claim_labels": {
+   "bernoulli_fill_slip": "PROVEN (smoke, on 1.221) + OBSERVED (v2 source)",
+   "cost_realism": "INFERENCE"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "QuantConnect LEAN slippage/fill/fee models",
+  "repo": "QuantConnect/Lean",
+  "license_spdx": "Apache-2.0",
+  "last_commit": "2026-09-28",
+  "latest_tag_approx": "v2.4.0.1 (approx)",
+  "activity": "Very active, commercial",
+  "dependencies": "C# .NET (Python via pythonnet); huge repo (503MB shallow)",
+  "asset_class_assumptions": "Equity, futures, options, FX, crypto; venue-specific fee models (IB, Binance, Kraken, Coinbase, Bybit, dYdX...)",
+  "required_data": "Trade/quote bars incl. volume; fundamentals SharesOutstanding for liquidity adj.",
+  "online_offline": "Offline backtest engine; live engine",
+  "fit_non_hft_intraday": "Best breadth of fee schedules + two slippage models. MarketImpactSlippageModel implements Almgren-style permanent (G) + temporary (H) impact; VolumeShare is quadratic. Formulas portable to Python.",
+  "failure_modes": "Not executed (needs .NET SDK). MarketImpact model rejects Forex/CFD (needs volume); uses random Gaussian noise (seeded); default constants (alpha .891, beta .6, gamma .314, eta .142, delta .267) provenance = DOCUMENTED_CLAIM; ConstantSlippage ignores size; VolumeShare requires bar volume",
+  "source_paths": [
+   "/tmp/oss_clones/Lean/Common/Orders/Slippage/MarketImpactSlippageModel.cs: GetSlippageApproximation l.~85-130, G() l.142, H() l.152",
+   "/tmp/oss_clones/Lean/Common/Orders/Slippage/VolumeShareSlippageModel.cs l.46-75 (slippage = volumeLimit^2 * priceImpact)",
+   "/tmp/oss_clones/Lean/Common/Orders/Fees/*FeeModel.cs (35 files)",
+   "/tmp/oss_clones/Lean/Common/Orders/Fills/FillModel.cs (Market/Limit/Stop fills)"
+  ],
+  "smoke_executed": false,
+  "smoke_result": "Not executed: .NET SDK build out of scope for probe; formulas read from source only.",
+  "adjudication": "ADOPT_REFERENCE",
+  "adjudication_reason": "Apache-2.0, richest fee-schedule catalogue and an explicit permanent/temporary impact model to port and validate.",
+  "claim_labels": {
+   "formula_text": "OBSERVED (source)",
+   "constants_provenance": "DOCUMENTED_CLAIM",
+   "runtime_behaviour": "UNKNOWN (not run)"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "vectorbt (open-source)",
+  "repo": "polakowo/vectorbt",
+  "license_spdx": "Apache-2.0 with Commons Clause (non-SPDX; Commons Clause forbids selling)",
+  "last_commit": "2026-09-26",
+  "latest_tag_approx": "v1.1.1",
+  "activity": "Active",
+  "dependencies": "numpy, pandas, numba, scipy, plotly",
+  "asset_class_assumptions": "Any OHLC series; no market microstructure",
+  "required_data": "Close/OHLC price arrays; fees, fixed_fees, slippage as scalars/arrays",
+  "online_offline": "Offline vectorised",
+  "fit_non_hft_intraday": "Very fast parametric sweeps; costs are flat proportional fees + slippage only. Useful as sweep harness, not as cost model.",
+  "failure_modes": "Slippage is a constant fraction, no size or volatility dependence; Commons Clause license restricts commercial redistribution; numba warm-up",
+  "source_paths": [
+   "/tmp/oss_clones/vectorbt/vectorbt/portfolio/nb.py: execute_order_nb l.~77-160 (adj_price = price*(1+slippage), req_fees = req_cash*fees + fixed_fees l.149)"
+  ],
+  "smoke_executed": true,
+  "smoke_result": "Portfolio.from_signals(fees=0.001, slippage=0.001) 10 shares: Buy price 100.100 fee 1.001; Sell price 103.896 fee 1.03896 (=104*(1-0.001)). Correct symmetric treatment.",
+  "adjudication": "PARK",
+  "adjudication_reason": "Constant costs only and Commons Clause license; not a cost model.",
+  "claim_labels": {
+   "flat_cost_behaviour": "PROVEN (smoke)",
+   "license_restriction": "DOCUMENTED_CLAIM (license text read)"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "backtesting.py",
+  "repo": "kernc/backtesting.py",
+  "license_spdx": "AGPL-3.0",
+  "last_commit": "2026-08-05",
+  "latest_tag_approx": "0.6.6",
+  "activity": "Moderate/active",
+  "dependencies": "numpy, pandas, bokeh",
+  "asset_class_assumptions": "Any OHLC",
+  "required_data": "OHLCV; spread & commission (float, (fixed,rel) tuple, or callable)",
+  "online_offline": "Offline",
+  "fit_non_hft_intraday": "Simple: single 'spread' param applied per side plus commission callable.",
+  "failure_modes": "AGPL copyleft; spread applied fully on each side (so it is effectively half-spread; naming trap); no volume/size dependence; fills at next open",
+  "source_paths": [
+   "/tmp/oss_clones/backtesting.py/backtesting/backtesting.py: _Broker.__init__ l.727-741; adjusted_price in _Broker"
+  ],
+  "smoke_executed": true,
+  "smoke_result": "Backtest(spread=0.002,commission=0.0005): entry 102.204 vs 102.0 at spread 0 => spread is applied as price*(1+spread) per side (i.e. spread = half-spread); exit at finalize (149) had no spread applied. Confirms naming trap and that finalize_trades exits skip spread.",
+  "adjudication": "REJECT",
+  "adjudication_reason": "AGPL and trivial cost model; only lesson is the per-side spread semantics.",
+  "claim_labels": {
+   "per_side_spread": "PROVEN (smoke)",
+   "license": "OBSERVED"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "backtrader broker slippage",
+  "repo": "mementum/backtrader",
+  "license_spdx": "GPL-3.0",
+  "last_commit": "2023-04-19",
+  "latest_tag_approx": "1.94.15.104 (approx tag)",
+  "activity": "Effectively unmaintained since 2023",
+  "dependencies": "pure Python",
+  "asset_class_assumptions": "Any",
+  "required_data": "Bars; slip_perc/slip_fixed/slip_open/slip_match/slip_limit/slip_out",
+  "online_offline": "Offline",
+  "fit_non_hft_intraday": "Constant slippage with match/limit semantic flags",
+  "failure_modes": "GPL; abandoned; constant slippage only; edge cases with slip_limit/slip_match",
+  "source_paths": [
+   "/tmp/oss_clones/backtrader/backtrader/brokers/bbroker.py: params l.230-240, _slip_up l.994, _slip_down l.1017, _execute l.687"
+  ],
+  "smoke_executed": false,
+  "smoke_result": "Not executed (deprecated, GPL).",
+  "adjudication": "REJECT",
+  "adjudication_reason": "GPL + abandoned + constant slippage.",
+  "claim_labels": {
+   "maintenance": "OBSERVED"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "bidask (EDGE spread estimator)",
+  "repo": "eguidotti/bidask",
+  "license_spdx": "MIT",
+  "last_commit": "2025-10-13",
+  "latest_tag_approx": "python pkg 2.1.0",
+  "activity": "Active; academic (Ardia, Guidotti, Kroencke JFE 2024)",
+  "dependencies": "numpy, pandas only",
+  "asset_class_assumptions": "Any asset with OHLC (equities, crypto, FX)",
+  "required_data": "Open/High/Low/Close arrays, >=3 obs",
+  "online_offline": "Offline/rolling; edge_rolling/edge_expanding for streaming windows",
+  "fit_non_hft_intraday": "Strong fit: cheap spread proxy from bars when no quotes (non-HFT). Handles missing values.",
+  "failure_modes": "Spread is a statistical estimate needing many bars (noise at short windows); assumes mid-price random walk and close/open quote independence; degrades in trending or illiquid/discrete-tick data; only implements EDGE (no CS/AR/Roll in this repo, OBSERVED: only edge*.py). ",
+  "source_paths": [
+   "/tmp/oss_clones/bidask/python/bidask/edge.py: edge() l.5; edge_rolling.py; edge_expanding.py; multi-language ports c++/julia/matlab/r/sas"
+  ],
+  "smoke_executed": true,
+  "smoke_result": "Synthetic 500-bar series with true 40bp spread built with my own crude OHLC generator: edge() = 0.00269 (27bp). Underestimate reflects my non-realistic synthetic data (highs/lows not built per model); NOT a validation of the estimator. Function runs correctly.",
+  "adjudication": "ADOPT_REFERENCE",
+  "adjudication_reason": "MIT, tiny, numpy-only; strongest spread-from-OHLC candidate. Must be validated on real bars vs quotes before use.",
+  "claim_labels": {
+   "runs": "PROVEN (smoke)",
+   "accuracy": "UNKNOWN (smoke data was synthetic and crude)",
+   "paper_claims": "DOCUMENTED_CLAIM"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "Almgren-Chriss notebook (joshuapjacob)",
+  "repo": "joshuapjacob/almgren-chriss-optimal-execution",
+  "license_spdx": "MIT",
+  "last_commit": "2022-02-02",
+  "latest_tag_approx": "none",
+  "activity": "Dead (last commit 2022), single-author notebook",
+  "dependencies": "numpy, scipy (sqrtm), matplotlib",
+  "asset_class_assumptions": "Any; model-agnostic (single/multi asset)",
+  "required_data": "Parameters: lambda, sigma, epsilon, eta, gamma, tau, X, T",
+  "online_offline": "Offline planning; closed form so can run online",
+  "fit_non_hft_intraday": "Trajectory/trade-list generator; direct fit for parent-order schedules (intraday slices)",
+  "failure_modes": "Logic lives only inside .ipynb (no package, no tests); trajectory cast to int (rounding drift); requires eta_tilde=eta-0.5*gamma*tau>0; parameters (eta, gamma) must be calibrated separately or output is meaningless; linear impact assumed",
+  "source_paths": [
+   "/tmp/oss_clones/almgren-chriss-optimal-execution/Almgren-Chriss Optimal Execution Model.ipynb: class AlmgrenChriss1D (kappa=arccosh(0.5*kappa~^2*tau^2+1)/tau; trajectory=sinh(kappa(T-t))/sinh(kappa T)*X), class AlmgrenChriss (multi-asset)"
+  ],
+  "smoke_executed": true,
+  "smoke_result": "Extracted AlmgrenChriss1D from notebook and ran X=1e6,T=10: trajectory front-loaded [1000000,815173,...,0]; with lambda=1e-12 trade list ~ -100000 per slice (TWAP), as theory predicts.",
+  "adjudication": "ADAPT_CANDIDATE",
+  "adjudication_reason": "MIT, formula correct, but must be re-implemented as tested module with calibrated eta/gamma; use as oracle test.",
+  "claim_labels": {
+   "closed_form_correct": "PROVEN (smoke, twap limit)",
+   "parameter_calibration": "UNKNOWN"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "mbt_gym",
+  "repo": "JJJerome/mbt_gym",
+  "license_spdx": "BSD-3-Clause",
+  "last_commit": "2024-01-08",
+  "latest_tag_approx": "none",
+  "activity": "Stale (>2y)",
+  "dependencies": "gym==0.21 (pinned; setuptools==65.5.0), stable_baselines3, torch, stochastic",
+  "asset_class_assumptions": "Simulated model-based trading (Avellaneda-Stoikov/Cartea-Jaimungal style), synthetic midprice",
+  "required_data": "None (simulation): impact coefficients",
+  "online_offline": "Offline simulation for RL/optimal control",
+  "fit_non_hft_intraday": "Research reference for temporary/permanent/transient impact processes (Cartea-Jaimungal). Not data driven.",
+  "failure_modes": "Old pinned gym breaks installs; models are stylised continuous-time, not empirical; bare copy of a few classes would be needed",
+  "source_paths": [
+   "/tmp/oss_clones/mbt_gym/mbt_gym/stochastic_processes/price_impact_models.py: TemporaryPowerPriceImpact l.34, TemporaryAndPermanentPriceImpact l.64, TemporaryAndTransientPriceImpact l.99"
+  ],
+  "smoke_executed": false,
+  "smoke_result": "Attempted to exec the module with stubbed base class: FAILED (TypeError unexpected kwarg 'step_size' - my stub signature mismatch, not a library defect). Not pip-installed (torch/gym pins). Source-inspected only.",
+  "adjudication": "PARK",
+  "adjudication_reason": "Theory reference for transient impact; too stale/heavy to adopt.",
+  "claim_labels": {
+   "impact_forms": "OBSERVED (source)",
+   "runtime": "UNKNOWN"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "tick (Hawkes / point processes)",
+  "repo": "X-DataInitiative/tick",
+  "license_spdx": "BSD-3-Clause",
+  "last_commit": "2026-05-04",
+  "latest_tag_approx": "v0.8.0.2",
+  "activity": "Low-moderate; maintenance mode",
+  "dependencies": "numpy, scipy, C++ extension (swig)",
+  "asset_class_assumptions": "Any event stream (order flow, trades)",
+  "required_data": "Event timestamps (multi-dim)",
+  "online_offline": "Offline fitting",
+  "fit_non_hft_intraday": "Marginal fit: Hawkes for order-flow/self-excitation modelling; not a cost model. Propagator-style impact would need to be built on it.",
+  "failure_modes": "Recent numpy (2.4.6) incompatibility observed; compiled ext; not a propagator library despite the label",
+  "source_paths": [
+   "/tmp/oss_clones/tick/tick/hawkes/model/model_hawkes_expkern_loglik.py l.12; tick/hawkes/simulation/simu_hawkes_exp_kernels.py l.126; tick/hawkes/inference"
+  ],
+  "smoke_executed": true,
+  "smoke_result": "PARTIAL. pip 0.8.0.2 installs; SimuHawkesExpKernels(adjacency=[[0.3]],decays=[[2.0]],baseline=[0.5],end_time=2000) simulated 1368 events OK. HawkesExpKern.fit(timestamps) FAILED: AttributeError: 'HawkesExpKern' object has no settable attribute 'events' (likely numpy 2.x / tick base __setattr__ incompat; cause INFERENCE).",
+  "adjudication": "REJECT",
+  "adjudication_reason": "Not an impact/cost library; fit path broken on numpy 2.x.",
+  "claim_labels": {
+   "sim_runs": "PROVEN",
+   "fit_failure": "PROVEN (cause INFERENCE)"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "ABIDES original (execution agents)",
+  "repo": "abides-sim/abides",
+  "license_spdx": "BSD-3-Clause",
+  "last_commit": "2020-11-19",
+  "latest_tag_approx": "v1.1",
+  "activity": "Dead since 2020",
+  "dependencies": "numpy 1.16.3, pandas 0.25.1 (pinned, ancient)",
+  "asset_class_assumptions": "Simulated equities LOB (NASDAQ ITCH-like), Python 3.7 era",
+  "required_data": "Synthetic agents; oracle fundamental value",
+  "online_offline": "Offline multi-agent simulation",
+  "fit_non_hft_intraday": "Provides TWAP/VWAP/POV execution agents and OrderBookImbalanceAgent as readable schedule logic; simulation-centric, not calibrated",
+  "failure_modes": "Cannot install on modern stack; VWAP uses a synthetic volume profile (INFERENCE from function name synthetic_volume_profile); simulation results depend on agent population",
+  "source_paths": [
+   "/tmp/oss_clones/abides/agent/execution/TWAPExecutionAgent.py (37 lines)",
+   "/tmp/oss_clones/abides/agent/execution/VWAPExecutionAgent.py: generate_schedule l.25, synthetic_volume_profile l.43",
+   "/tmp/oss_clones/abides/agent/execution/POVExecutionAgent.py: wakeup l.40, receiveMessage l.53"
+  ],
+  "smoke_executed": false,
+  "smoke_result": "Not executed (pins numpy 1.16/pandas 0.25 incompatible with py3.11).",
+  "adjudication": "PARK",
+  "adjudication_reason": "Schedule logic readable as reference for TWAP/VWAP/POV; nothing to adopt.",
+  "claim_labels": {
+   "schedule_logic": "OBSERVED (source read at function level, not line by line)"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "ABIDES-JPMC-public (abides-markets/gym)",
+  "repo": "jpmorganchase/abides-jpmc-public",
+  "license_spdx": "BSD-3-Clause",
+  "last_commit": "2023-12-13",
+  "latest_tag_approx": "none",
+  "activity": "Dormant (last commit 2023-12)",
+  "dependencies": "numpy==1.22.0, pandas==1.2.4 pinned, gym",
+  "asset_class_assumptions": "Simulated equities LOB",
+  "required_data": "Simulation config; agent populations",
+  "online_offline": "Offline simulation; abides-gym for RL execution env",
+  "fit_non_hft_intraday": "Has LOB implementation (order_book.py) and execution env in abides-gym; research sandbox, not cost estimation",
+  "failure_modes": "Pinned old deps; no execution agents in abides-markets (TWAP/VWAP live only in original abides, OBSERVED by ls); simulated only",
+  "source_paths": [
+   "/tmp/oss_clones/abides-jpmc-public/abides-markets/abides_markets/order_book.py",
+   "/tmp/oss_clones/abides-jpmc-public/abides-markets/abides_markets/agents/"
+  ],
+  "smoke_executed": false,
+  "smoke_result": "Not executed (old pins).",
+  "adjudication": "PARK",
+  "adjudication_reason": "Simulation sandbox; no direct use.",
+  "claim_labels": {
+   "agent_inventory": "OBSERVED (ls)"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "Corwin-Schultz / Abdi-Ranaldo / Roll in pyfolio-reloaded & quantstats",
+  "repo": "stefan-jansen/pyfolio-reloaded ; ranaroussi/quantstats",
+  "license_spdx": "Apache-2.0 (both)",
+  "last_commit": "2025-06-02 (pyfolio) / 2026-09-27 (quantstats)",
+  "latest_tag_approx": "v0.8.0 / v0.0.86",
+  "activity": "pyfolio dormant, quantstats active",
+  "dependencies": "pandas, numpy, scipy",
+  "asset_class_assumptions": "Equity returns analytics",
+  "required_data": "Returns/transactions",
+  "online_offline": "Offline analytics",
+  "fit_non_hft_intraday": "No spread estimators found. pyfolio txn.py has adjust_returns_for_slippage (flat bps * turnover) and get_turnover only; quantstats grep for slippage/spread yielded nothing in quantstats/*.py",
+  "failure_modes": "Negative result: the user-hypothesised Corwin-Schultz/AR/Roll are not in these libs",
+  "source_paths": [
+   "/tmp/oss_clones/pyfolio-reloaded/src/pyfolio/txn.py: adjust_returns_for_slippage l.113, get_turnover l.148"
+  ],
+  "smoke_executed": false,
+  "smoke_result": "Not executed; negative finding from grep.",
+  "adjudication": "REJECT",
+  "adjudication_reason": "Not sources of spread estimators; only post-hoc flat-bps slippage adjustment.",
+  "claim_labels": {
+   "absence_of_CS_AR_Roll": "OBSERVED (grep of these repos; not an exhaustive claim about the internet)"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "freqtrade funding-fee handling",
+  "repo": "freqtrade/freqtrade",
+  "license_spdx": "GPL-3.0",
+  "last_commit": "2026-09-29",
+  "latest_tag_approx": "stable releases yearly-tagged; tag sort unreliable",
+  "activity": "Very active",
+  "dependencies": "pandas, ccxt, TA-Lib etc.",
+  "asset_class_assumptions": "Crypto futures (Binance, Bybit, OKX, etc.)",
+  "required_data": "Funding-rate candles and mark-price candles (candle_type funding_rate/mark)",
+  "online_offline": "Offline backtest + live",
+  "fit_non_hft_intraday": "Good reference for funding cost accrual: sum(funding_rate*mark_price*amount) over funding timestamps between open and close; sign negated for longs",
+  "failure_modes": "GPL-3.0 (copyleft; read as reference only); funding timeframe per exchange (8h default 'funding_fee_timeframe' 1h in ft_has); missing candles yield zero fees (isnan -> 0.0) silently",
+  "source_paths": [
+   "/tmp/oss_clones/freqtrade/freqtrade/exchange/exchange.py: calculate_funding_fees l.4166-4202, get_funding_fees l.4204, _fetch_funding_rate_history l.3225, funding_fee_timeframe l.165/2856"
+  ],
+  "smoke_executed": false,
+  "smoke_result": "Not executed: full freqtrade install heavy; source read only.",
+  "adjudication": "ADOPT_REFERENCE",
+  "adjudication_reason": "Concept reference only (GPL - do not copy code). Note the silent NaN->0 failure mode.",
+  "claim_labels": {
+   "funding_accrual_logic": "OBSERVED (source)",
+   "nan_to_zero": "OBSERVED"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "ccxt fee & funding-rate history",
+  "repo": "ccxt/ccxt",
+  "license_spdx": "MIT",
+  "last_commit": "2026-09-29",
+  "latest_tag_approx": "v4.5.84",
+  "activity": "Very active",
+  "dependencies": "requests, aiohttp, cryptography; ~570MB clone",
+  "asset_class_assumptions": "Crypto spot/perp across 100+ exchanges",
+  "required_data": "Live exchange API keys for some endpoints; public for funding history",
+  "online_offline": "Online (network) - offline parsing possible",
+  "fit_non_hft_intraday": "Standardised fetchFundingRateHistory / fetchTradingFee / parse_funding_rate_history. Data-collection adapter, not a model.",
+  "failure_modes": "Per-exchange inconsistencies (has flags 'emulated' vs true); rate limits; pagination limits on history; fees may be static defaults vs account tier",
+  "source_paths": [
+   "/tmp/oss_clones/ccxt/python/ccxt/binance.py: fetch_funding_rate_history l.10326, parse_funding_rate l.10426, fetch_trading_fee l.10008",
+   "/tmp/oss_clones/ccxt/python/ccxt/base/exchange.py: fetch_funding_rate_history l.6406 (NotSupported default), parse_funding_rate l.6824"
+  ],
+  "smoke_executed": true,
+  "smoke_result": "Offline (no network): ccxt.binanceusdm().has -> fetchFundingRateHistory True, fetchTradingFee True, fetchFundingRate True; parse_funding_rate_history on a hand-made raw row returned fundingRate 0.0001, timestamp 1700000000000 ISO 2023-11-14T22:13:20Z. No live call made.",
+  "adjudication": "ADOPT_REFERENCE",
+  "adjudication_reason": "MIT; standard adapter for fee/funding data schemas. Live behaviour UNKNOWN (no network calls made).",
+  "claim_labels": {
+   "offline_parse": "PROVEN (smoke)",
+   "live_endpoint_behaviour": "UNKNOWN"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "hummingbot executors (TWAP etc.)",
+  "repo": "hummingbot/hummingbot",
+  "license_spdx": "Apache-2.0",
+  "last_commit": "2026-09-22",
+  "latest_tag_approx": "v2.17.0",
+  "activity": "Very active",
+  "dependencies": "Cython, pandas, many connectors",
+  "asset_class_assumptions": "Crypto CEX/DEX",
+  "required_data": "Live connector order books",
+  "online_offline": "Online live executors",
+  "fit_non_hft_intraday": "TWAPExecutor in strategy_v2 is an execution scheduler reference (create_order_plan, evaluate_create_order); slippage handled via slippage_pct retries for gateway",
+  "failure_modes": "Live-only architecture, heavy; TWAP is time-sliced without volume profile (INFERENCE from file listing/short read)",
+  "source_paths": [
+   "/tmp/oss_clones/hummingbot/hummingbot/strategy_v2/executors/twap_executor/twap_executor.py: TWAPExecutor l.24, create_order_plan l.50, evaluate_create_order l.98",
+   "/tmp/oss_clones/hummingbot/hummingbot/strategy_v2/executors/gateway_utils.py (is_slippage_failure, next_slippage_pct)"
+  ],
+  "smoke_executed": false,
+  "smoke_result": "Not executed (live-only stack).",
+  "adjudication": "PARK",
+  "adjudication_reason": "Executor design reference; no cost model.",
+  "claim_labels": {
+   "twap_structure": "OBSERVED (signatures only)"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "PyLOB",
+  "repo": "DrAshBooth/PyLOB",
+  "license_spdx": "MIT",
+  "last_commit": "2026-08-14",
+  "latest_tag_approx": "v1.0.0",
+  "activity": "Recently touched (AGENTS.md/CLAUDE.md present, suggests AI-assisted refresh, INFERENCE)",
+  "dependencies": "pure Python",
+  "asset_class_assumptions": "Generic LOB",
+  "required_data": "Order messages",
+  "online_offline": "Offline LOB",
+  "fit_non_hft_intraday": "Educational limit order book matching engine; useful for unit-testing fill logic, not for costs",
+  "failure_modes": "Not performance oriented; not calibrated; no market impact",
+  "source_paths": [
+   "/tmp/oss_clones/PyLOB/src/PyLOB/engine.py, replay.py, events.py"
+  ],
+  "smoke_executed": false,
+  "smoke_result": "Not executed.",
+  "adjudication": "PARK",
+  "adjudication_reason": "Toy matching engine; could serve as a test oracle for sweep-the-book cost.",
+  "claim_labels": {
+   "scope": "OBSERVED (ls)"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "bmoscon orderbook (order-book on PyPI)",
+  "repo": "bmoscon/orderbook",
+  "license_spdx": "GPL-3.0",
+  "last_commit": "2026-09-02",
+  "latest_tag_approx": "v1.1.0",
+  "activity": "Active",
+  "dependencies": "C extension, requires Python 3.13+ (README)",
+  "asset_class_assumptions": "Generic L2/L3 book",
+  "required_data": "Book updates",
+  "online_offline": "Online/offline",
+  "fit_non_hft_intraday": "High-performance book data structure; not a cost model. Useful for computing walk-the-book cost.",
+  "failure_modes": "GPL-3.0; needs Python 3.13+; PyPI name is 'order-book' - I installed 'orderbook' (a different, broken package)",
+  "source_paths": [
+   "/tmp/oss_clones/orderbook/orderbook/orderbook.c, orderbook.h, sorteddict.c"
+  ],
+  "smoke_executed": false,
+  "smoke_result": "FAILED: pip install orderbook (wrong PyPI package 0.1.2) -> ImportError circular import; source install on Python 3.11 also import-failed (repo needs 3.13+). executed=false.",
+  "adjudication": "REJECT",
+  "adjudication_reason": "GPL and data-structure only.",
+  "claim_labels": {
+   "import_failure": "PROVEN",
+   "python_requirement": "DOCUMENTED_CLAIM (README)"
+  },
+  "cloned": true,
+  "source_inspected": true
+ },
+ {
+  "name": "vnpy",
+  "repo": "vnpy/vnpy",
+  "license_spdx": "MIT",
+  "last_commit": "2026-08-06",
+  "latest_tag_approx": "v2.1.7 (tag sort unreliable)",
+  "activity": "Active",
+  "dependencies": "many modules",
+  "asset_class_assumptions": "China futures/equities + crypto gateways",
+  "required_data": "Bars/ticks",
+  "online_offline": "Offline+live",
+  "fit_non_hft_intraday": "Slippage in vnpy is in the separate vnpy_ctastrategy package (not in this repo core); only notebooks/README mention slippage in core repo (grep)",
+  "failure_modes": "Not covering slippage model source here; UNKNOWN in separate package",
+  "source_paths": [
+   "/tmp/oss_clones/vnpy (grep for slippage: README_ENG.md, examples/*/backtesting.ipynb only)"
+  ],
+  "smoke_executed": false,
+  "smoke_result": "Not executed.",
+  "adjudication": "PARK",
+  "adjudication_reason": "Relevant code lives in a package not cloned; revisit if needed.",
+  "claim_labels": {
+   "slippage_location": "OBSERVED (grep negative in core repo)"
+  },
+  "cloned": true,
+  "source_inspected": true
+ }
+]
