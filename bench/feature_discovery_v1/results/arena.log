@@ -1,0 +1,9 @@
+NULL reps 40 any_frozen 0.0 FWER(any stable) 0.0 mean stable 0.0 false_stable_mean 0.0
+MIXED reps 40 any_frozen 1.0 FWER(any stable) 1.0 mean stable 3.2 false_stable_mean 0.025
+power c1_linear (via stable mains f00/f06) 1.0 both duplicates selected 0.025
+false mains: NULL 0.15 MIXED 0.1
+power c2_interaction 1.0
+power c3_square 0.275
+nonpersistent stable c4_market_specific 0.0
+nonpersistent stable c5_decaying 0.0
+time 315.61722803115845
