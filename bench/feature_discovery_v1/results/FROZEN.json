@@ -1,0 +1,37 @@
+{
+ "y_ret": [
+  {
+   "id": "C01",
+   "kind": "interaction",
+   "expr": "mul(ret_24h, wknd)",
+   "sign": -1.0,
+   "mu": -0.002577298781007932,
+   "sd": 0.47565029023278405,
+   "nodes": 3,
+   "consts": 0
+  }
+ ],
+ "y_vol": [
+  {
+   "id": "C01",
+   "kind": "interaction",
+   "expr": "mul(ret_72h, sgn(mag_168))",
+   "sign": -1.0,
+   "mu": -0.7414748251530677,
+   "sd": 0.8145138043413479,
+   "nodes": 4,
+   "consts": 0
+  }
+ ],
+ "mains": {
+  "y_ret": [
+   "lrv_24"
+  ],
+  "y_vol": [
+   "lrv_24",
+   "lrv_168",
+   "lvol_1"
+  ]
+ },
+ "digest": "9f32094f0d93b292055750e18b7fd449910fd7129173ddcb47c116c1ce2d0666"
+}
