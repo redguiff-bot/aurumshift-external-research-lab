@@ -1,0 +1,26 @@
+scalegenius/pg_bitemporal	BSD-3-Clause	2022-04-20T04:29:38Z	false	163	PLpgSQL
+arkhipov/temporal_tables	BSD-2-Clause	2026-01-12T09:37:16Z	false	1052	C
+nearform/temporal_tables	NOASSERTION	2025-11-24T07:03:15Z	false	766	PLpgSQL
+pgMemento/pgMemento	LGPL-3.0	2026-04-27T09:03:18Z	false	412	PLpgSQL
+xocolatl/periods	PostgreSQL	2025-10-08T18:08:14Z	false	320	PLpgSQL
+timescale/timescaledb	NOASSERTION	2026-09-29T09:41:58Z	false	23617	C
+feast-dev/feast	Apache-2.0	2026-09-29T09:10:19Z	false	7313	Python
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}hopsworks/hopsworks NOTFOUND
+duckdb/duckdb	MIT	2026-09-29T09:35:15Z	false	41783	C++
+pola-rs/polars	MIT	2026-09-29T09:39:04Z	false	39883	Rust
+pandas-dev/pandas	BSD-3-Clause	2026-09-29T04:05:42Z	false	49872	Python
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}pythoneer/eventsourcing NOTFOUND
+pyeventsourcing/eventsourcing	BSD-3-Clause	2026-08-23T11:41:46Z	false	1687	Python
+xtdb/xtdb	MPL-2.0	2026-09-28T15:14:43Z	false	3077	Clojure
+dolthub/dolt	Apache-2.0	2026-09-29T06:12:40Z	false	24538	Go
+terminusdb/terminusdb	Apache-2.0	2026-09-13T05:00:14Z	false	3428	Prolog
+treeverse/lakeFS	NOASSERTION	2026-09-25T16:49:12Z	false	5545	Go
+apache/iceberg	Apache-2.0	2026-09-29T07:17:43Z	false	9283	Java
+delta-io/delta	Apache-2.0	2026-09-29T02:55:09Z	false	9029	Scala
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}tembo-io/pg_bitemporal NOTFOUND
+xocolatl/periods	PostgreSQL	2025-10-08T18:08:14Z	false	320	PLpgSQL
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}hettie-d/pg_bitemporal_temporal_tables NOTFOUND
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}cybertec-postgresql/pg_timetravel NOTFOUND
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}fenrirunbound/pgtemporal NOTFOUND
+darold/pgtt	ISC	2026-07-23T17:28:33Z	false	99	C
+mlflow/mlflow	Apache-2.0	2026-09-29T09:38:31Z	false	28177	Python

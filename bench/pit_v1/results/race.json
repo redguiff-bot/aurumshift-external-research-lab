@@ -1,0 +1,37 @@
+[
+  {
+    "regime": "NONE",
+    "T": "2026-09-29 11:42:24.937462+02:00",
+    "decision_saw": [
+      "b"
+    ],
+    "replay_sees": [
+      "a",
+      "b"
+    ],
+    "REPLAY_STABLE": false,
+    "verdict": "LOOKAHEAD_DETECTED"
+  },
+  {
+    "regime": "LOCK_W",
+    "T": "2026-09-29 11:42:28.279589+02:00",
+    "decision_saw": [],
+    "replay_sees": [
+      "a"
+    ],
+    "REPLAY_STABLE": false,
+    "verdict": "LOOKAHEAD_DETECTED"
+  },
+  {
+    "regime": "LOCK_RW",
+    "T": "2026-09-29 11:42:29.124534+02:00",
+    "decision_saw": [
+      "a"
+    ],
+    "replay_sees": [
+      "a"
+    ],
+    "REPLAY_STABLE": true,
+    "verdict": "LOOKAHEAD_PREVENTED"
+  }
+]

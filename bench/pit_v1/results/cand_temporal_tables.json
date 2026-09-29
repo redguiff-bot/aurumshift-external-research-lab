@@ -1,0 +1,17 @@
+{
+  "T1_backfill_invisible_at_decision_time": true,
+  "T2_caller_supplied_sys_period": "ACCEPTED_BUT_TRIGGER_OVERWRITES=False",
+  "T3_as_of_before_correction": "100",
+  "T3_as_of_after_correction": "101",
+  "T4_out_of_order_revision_current_value": 100.0,
+  "T5_two_providers_same_key": "REJECTED_UNIQUE (un seul fournisseur/fait sans modification du schéma)",
+  "T6_delete_moves_to_history": 2,
+  "T7_race_decision_saw": [
+    "R2"
+  ],
+  "T7_race_replay_sees": [
+    "R1",
+    "R2"
+  ],
+  "T7_verdict": "LOOKAHEAD_DETECTED"
+}

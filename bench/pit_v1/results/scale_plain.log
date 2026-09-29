@@ -1,0 +1,48 @@
+{
+ "kind": "plain",
+ "rows_submitted": 1123580,
+ "pg_version": "18.6",
+ "insert_seconds": 171.2,
+ "insert_rows_per_s_function_path": 6561,
+ "obs_rows": 1102621,
+ "receipt_rows": 1123580,
+ "heap_bytes": 225910784,
+ "index_bytes": 328155136,
+ "receipt_total_bytes": 144998400,
+ "bytes_per_obs_total": 502,
+ "index_detail": {
+  "obs_pkey": 24788992,
+  "obs_identity": 109527040,
+  "obs_pit_ing": 96919552,
+  "obs_pit_col": 96919552
+ },
+ "latency_ms": {
+  "asof_one_instrument": {
+   "n": 60,
+   "p50": 1.7,
+   "p95": 2.45,
+   "max": 2.64
+  },
+  "latest_known": {
+   "n": 60,
+   "p50": 0.14,
+   "p95": 0.34,
+   "max": 0.63
+  },
+  "asof_collector_one": {
+   "n": 60,
+   "p50": 1.65,
+   "p95": 2.41,
+   "max": 2.49
+  },
+  "fleet_asof_250_instr": {
+   "n": 3,
+   "p50": 491.83,
+   "p95": 508.64,
+   "max": 508.64
+  }
+ },
+ "oracle_samples": 60,
+ "oracle_mismatches": 0,
+ "append_only_update": "BLOCKED: pit: table obs is append-only (UPDATE refused)"
+}

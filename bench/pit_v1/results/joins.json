@@ -1,0 +1,210 @@
+{
+  "feast_default(event_timestamp<=T)": {
+    "pairs": 23,
+    "leaks": 10,
+    "wrong_no_leak": 1,
+    "verdict": "LOOKAHEAD_DETECTED",
+    "leak_examples": [
+      {
+        "instrument": "S1",
+        "T": "2026-03-02 10:00:01+00:00",
+        "leaked": "S1.a"
+      },
+      {
+        "instrument": "S10",
+        "T": "2026-03-02 17:10:00+00:00",
+        "leaked": "S10.v3"
+      },
+      {
+        "instrument": "S10",
+        "T": "2026-03-02 17:40:00+00:00",
+        "leaked": "S10.v3"
+      },
+      {
+        "instrument": "S2",
+        "T": "2026-03-02 10:06:00+00:00",
+        "leaked": "S2.a"
+      }
+    ],
+    "wrong_examples": [
+      {
+        "instrument": "S4b",
+        "T": "2026-03-02 11:30:00+00:00",
+        "got": "S4b.r1",
+        "expected": "S4b.r2"
+      }
+    ]
+  },
+  "feast_filter_by_created_timestamp": {
+    "pairs": 23,
+    "leaks": 0,
+    "wrong_no_leak": 1,
+    "verdict": "WRONG_RESULT_NO_LEAK",
+    "leak_examples": [],
+    "wrong_examples": [
+      {
+        "instrument": "S4b",
+        "T": "2026-03-02 11:30:00+00:00",
+        "got": "S4b.r1",
+        "expected": "S4b.r2"
+      }
+    ]
+  },
+  "duckdb_ASOF_on_event_time": {
+    "pairs": 23,
+    "leaks": 5,
+    "wrong_no_leak": 5,
+    "verdict": "LOOKAHEAD_DETECTED",
+    "leak_examples": [
+      {
+        "instrument": "S1",
+        "T": "2026-03-02 10:00:01+00:00",
+        "leaked": "S1.a"
+      },
+      {
+        "instrument": "S2",
+        "T": "2026-03-02 10:06:00+00:00",
+        "leaked": "S2.a"
+      },
+      {
+        "instrument": "S3",
+        "T": "2026-03-02 10:05:00+00:00",
+        "leaked": "S3.a"
+      },
+      {
+        "instrument": "S3b",
+        "T": "2026-03-02 10:05:00+00:00",
+        "leaked": "S3b.a"
+      }
+    ],
+    "wrong_examples": [
+      {
+        "instrument": "S10",
+        "T": "2026-03-02 18:05:00+00:00",
+        "got": "S10.v1",
+        "expected": "S10.v3"
+      },
+      {
+        "instrument": "S4",
+        "T": "2026-03-02 11:30:00+00:00",
+        "got": "S4.r1",
+        "expected": "S4.r2"
+      },
+      {
+        "instrument": "S5b",
+        "T": "2026-03-02 12:30:00+00:00",
+        "got": "S5b.A",
+        "expected": "S5b.B"
+      },
+      {
+        "instrument": "S7",
+        "T": "2026-03-02 14:06:00+00:00",
+        "got": "S7.p",
+        "expected": "S7.f"
+      }
+    ]
+  },
+  "duckdb_ASOF_on_ingested_at": {
+    "pairs": 23,
+    "leaks": 0,
+    "wrong_no_leak": 1,
+    "verdict": "WRONG_RESULT_NO_LEAK",
+    "leak_examples": [],
+    "wrong_examples": [
+      {
+        "instrument": "S4b",
+        "T": "2026-03-02 11:30:00+00:00",
+        "got": "S4b.r1",
+        "expected": "S4b.r2"
+      }
+    ]
+  },
+  "duckdb_range_join_QUALIFY": {
+    "pairs": 23,
+    "leaks": 0,
+    "wrong_no_leak": 0,
+    "verdict": "LOOKAHEAD_PREVENTED_AND_EQUAL_TO_REFERENCE",
+    "leak_examples": [],
+    "wrong_examples": []
+  },
+  "polars_join_asof_on_event_time": {
+    "pairs": 23,
+    "leaks": 10,
+    "wrong_no_leak": 1,
+    "verdict": "LOOKAHEAD_DETECTED",
+    "leak_examples": [
+      {
+        "instrument": "S1",
+        "T": "2026-03-02 10:00:01+00:00",
+        "leaked": "S1.a"
+      },
+      {
+        "instrument": "S10",
+        "T": "2026-03-02 17:10:00+00:00",
+        "leaked": "S10.v3"
+      },
+      {
+        "instrument": "S10",
+        "T": "2026-03-02 17:40:00+00:00",
+        "leaked": "S10.v3"
+      },
+      {
+        "instrument": "S2",
+        "T": "2026-03-02 10:06:00+00:00",
+        "leaked": "S2.a"
+      }
+    ],
+    "wrong_examples": [
+      {
+        "instrument": "S4b",
+        "T": "2026-03-02 11:30:00+00:00",
+        "got": "S4b.r1",
+        "expected": "S4b.r2"
+      }
+    ]
+  },
+  "polars_filter_then_group_first": {
+    "pairs": 23,
+    "leaks": 0,
+    "wrong_no_leak": 0,
+    "verdict": "LOOKAHEAD_PREVENTED_AND_EQUAL_TO_REFERENCE",
+    "leak_examples": [],
+    "wrong_examples": []
+  },
+  "pandas_merge_asof_on_event_time": {
+    "pairs": 23,
+    "leaks": 10,
+    "wrong_no_leak": 1,
+    "verdict": "LOOKAHEAD_DETECTED",
+    "leak_examples": [
+      {
+        "instrument": "S1",
+        "T": "2026-03-02 10:00:01+00:00",
+        "leaked": "S1.a"
+      },
+      {
+        "instrument": "S10",
+        "T": "2026-03-02 17:10:00+00:00",
+        "leaked": "S10.v3"
+      },
+      {
+        "instrument": "S10",
+        "T": "2026-03-02 17:40:00+00:00",
+        "leaked": "S10.v3"
+      },
+      {
+        "instrument": "S2",
+        "T": "2026-03-02 10:06:00+00:00",
+        "leaked": "S2.a"
+      }
+    ],
+    "wrong_examples": [
+      {
+        "instrument": "S4b",
+        "T": "2026-03-02 11:30:00+00:00",
+        "got": "S4b.r1",
+        "expected": "S4b.r2"
+      }
+    ]
+  }
+}
