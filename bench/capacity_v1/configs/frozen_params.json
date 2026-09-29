@@ -1,0 +1,91 @@
+{
+  "CORR_AWARE": {
+    "ingest_primary": "SCORE_UPDATE",
+    "ingest_tuned": "SCORE_UPDATE",
+    "params": {
+      "gamma": 0.1
+    },
+    "validation_objective": 2.4473200712740066
+  },
+  "EQUAL_QUOTA": {
+    "ingest_primary": "RAW",
+    "ingest_tuned": "SCORE_UPDATE",
+    "params": {},
+    "validation_objective": 2.005671900334281
+  },
+  "FIFO": {
+    "ingest_primary": "RAW",
+    "ingest_tuned": "RAW",
+    "params": {},
+    "validation_objective": 2.052019558675066
+  },
+  "FIFO_SCREEN": {
+    "ingest_primary": "SCORE_UPDATE",
+    "ingest_tuned": "SCORE_UPDATE",
+    "params": {},
+    "validation_objective": 2.206048911483379
+  },
+  "LINTS": {
+    "ingest_primary": "SCORE_UPDATE",
+    "ingest_tuned": "SCORE_UPDATE",
+    "params": {
+      "alpha": 0.1
+    },
+    "validation_objective": 2.471681873760606
+  },
+  "OLDEST_SLOT": {
+    "ingest_primary": "RAW",
+    "ingest_tuned": "RAW",
+    "params": {
+      "min_hold": 4
+    },
+    "validation_objective": 2.3873599451949286
+  },
+  "ORACLE_GREEDY_UB": {
+    "ingest_primary": "RAW",
+    "ingest_tuned": "RAW",
+    "note": "not implementable; upper reference",
+    "params": {}
+  },
+  "RANDOM": {
+    "ingest_primary": "RAW",
+    "ingest_tuned": "SCORE_UPDATE",
+    "params": {},
+    "validation_objective": 2.0372127357803618
+  },
+  "ROUND_ROBIN": {
+    "ingest_primary": "RAW",
+    "ingest_tuned": "DEDUP_LATEST",
+    "params": {},
+    "validation_objective": 2.0044255021968764
+  },
+  "SCORE_RANK": {
+    "ingest_primary": "SCORE_UPDATE",
+    "ingest_tuned": "SCORE_UPDATE",
+    "params": {},
+    "validation_objective": 2.398972135763232
+  },
+  "SLOTHOUR": {
+    "ingest_primary": "SCORE_UPDATE",
+    "ingest_tuned": "SCORE_UPDATE",
+    "params": {},
+    "validation_objective": 2.44920304032734
+  },
+  "SLOTHOUR_SHADOW": {
+    "ingest_primary": "SCORE_UPDATE",
+    "ingest_tuned": "SCORE_UPDATE",
+    "params": {
+      "theta": 0.25
+    },
+    "validation_objective": 2.4513182381078265
+  },
+  "UNCERTAINTY_LCB": {
+    "ingest_primary": "SCORE_UPDATE",
+    "ingest_tuned": "SCORE_UPDATE",
+    "params": {
+      "kappa": 0.0,
+      "omega": 0.6
+    },
+    "validation_objective": 2.5052108607280057
+  }
+}
