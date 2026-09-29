@@ -105,7 +105,7 @@ def main():
         b2 = d.groupby(["variant", "seed"]).dz.mean().values; l2, h2 = ci(b2, 1500)
         fam_rows.append(dict(family=fam, best_method=best["method"], dz_vs_FIFO=best["dz"], lo=best["lo"], hi=best["hi"],
                              dz_vs_FIFO_NETPOS=float(b2.mean()), lo_np=l2, hi_np=h2,
-                             FIFO_FAIL=bool(best["dz"] >= D_MAT and best["lo"] > 0), FIFO_EQUIV=bool(best["hi"] < D_EQ + 0.02)))
+                             FIFO_FAIL=bool(best["dz"] >= D_MAT and best["lo"] > 0), FIFO_EQUIV=bool(best["hi"] < PRE["thresholds"]["fifo_equiv_upper"])))
     out["family_fifo_table"] = fam_rows
     out["FIFO_FAILURE_SCENARIOS"] = [r["family"] for r in fam_rows if r["FIFO_FAIL"]]
     out["FIFO_EQUIVALENT_SCENARIOS"] = [r["family"] for r in fam_rows if r["FIFO_EQUIV"]]

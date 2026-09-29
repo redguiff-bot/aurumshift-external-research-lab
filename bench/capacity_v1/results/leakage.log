@@ -1,2 +1,8 @@
 Erlang-B max abs err: 0.019663828838739905
 greedy==MILP 200 200  LSA==topk 200 200
+/home/user/aurumshift-external-research-lab/bench/capacity_v1/py/policies.py:190: RuntimeWarning: invalid value encountered in divide
+  sd = np.sqrt(np.diag(S)); return S, S / np.outer(sd, sd)
+leak failures: []
+canary: [{'case': 'S3_chronic', 'detected_by_future_test': True, 'detected_by_counterfactual_test': True}, {'case': 'S5_correlated', 'detected_by_future_test': True, 'detected_by_counterfactual_test': True}, {'case': 'S9_missing_quality', 'detected_by_future_test': True, 'detected_by_counterfactual_test': True}, {'case': 'S7_regime_shift', 'detected_by_future_test': True, 'detected_by_counterfactual_test': True}, {'case': 'S10_spam', 'detected_by_future_test': True, 'detected_by_counterfactual_test': True}]
+static audit {'\\bW\\.edge\\b': 0, '\\bW\\.dur\\b': 0, '\\bcost_true\\b': 0, '\\.CR\\b': 0, 'needs_world\\s*=\\s*True': 0, '\\battach\\(': 0, '\\bworld\\b': 0} ['cid', 'inst', 'cluster', 'side', 'age', 'score', 'score_age', 'cost', 'dur_hat']
+NO_LOOKAHEAD_PROVEN: True
