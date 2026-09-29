@@ -1,0 +1,27 @@
+{
+ "frozen_before_heldout": true,
+ "selected_on": "tuning seeds 100-103, shift magnitude 0.6 (held-out uses seeds 0-11, magnitude 1.0)",
+ "online": {
+  "H_label_maturity": 10,
+  "R_refit_period": 50,
+  "window_W": 600,
+  "decay_halflife": 400
+ },
+ "best_simple_static": "temperature",
+ "best_online": "temperature+sliding_window(W=600)",
+ "abstention": "tau chosen per calibrator on VAL (in-distribution) by maximising utility; frozen and applied unchanged to held-out",
+ "conformal": {
+  "alpha_reg": 0.1,
+  "alpha_clf": 0.2,
+  "window_W": 300,
+  "decay_halflife": 150,
+  "aci_gamma": 0.01,
+  "selected_on": "tuning seeds 100-103 mag 0.6: lowest |coverage gap| of rolling/weighted at W300/HL150; gamma 0.01 chosen as compromise (0.02 lowers gap slightly but raises infinite-interval rate 4%->9% for aci_split)"
+ },
+ "diagnosis": {
+  "q_ood_mahalanobis_percentile_of_cal": 0.99,
+  "q_mi_ensemble_MI_percentile_of_cal": 0.95,
+  "tau_no_signal_conf": 0.5,
+  "selected_on": "tuning seeds 100-103 mag 0.6, macro-F1 over 5 classes (best 0.516); cascade order: DATA_GAP(NaN/repeat flag) > OOD > MODEL_UNCERTAINTY > NO_SIGNAL > NORMAL"
+ }
+}
