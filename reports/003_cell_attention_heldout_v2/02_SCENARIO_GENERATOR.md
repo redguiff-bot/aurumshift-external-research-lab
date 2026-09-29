@@ -29,7 +29,7 @@ Structural facts asserted by tests: S1 has 90/60 cells born at 80/200; S5's sile
 
 ## 4. Isolation evidence
 
-* `tests/test_semantics.py::test_tuning_code_never_references_heldout` (AST-level import check), `::test_dev_generator_refuses_heldout_split`, `::test_seed_ranges_disjoint` — all pass (18/18 tests, see 11 for the final count).
+* `tests/test_semantics.py::test_tuning_code_never_references_heldout` (AST-level import check), `::test_dev_generator_refuses_heldout_split`, `::test_seed_ranges_disjoint` — all pass (18/18 tests; plus `src/verify_isolation.py` → `results/isolation_report.json`, 17 checks, `HELDOUT_ISOLATION = PASS`).
 * `results/heldout/params_lock.json` is written (exclusive-create) **before** the held-out run and records the sha256 of the selected parameter files, the protocol, the freeze manifest and the held-out generator.
 * Held-out raw results are written with exclusive-create (`open(...,'x')`); a second run cannot silently overwrite them.
 

@@ -48,4 +48,12 @@ Least-recently-attempted first, ties by id. Included to give every metric a fram
 
 ## Selected parameters (frozen before held-out; see 04 for the full search)
 
-PLACEHOLDER_SELECTED
+| Policy | Frozen parameters | TRAIN J | VALIDATION J |
+|---|---|---|---|
+| A | fixed operator constants (weights 1.50/1.00/0.75/0.50/0.00; floor 0.05) — **not tuned** | — | — |
+| B | `{"kind": "B", "gamma": 0.9995, "S": 25, "M": 4}` | 0.692 | 0.632 |
+| C | `{"kind": "C", "algo": "eps_ew", "fading": 0.1, "eps": 0.2}` | 0.561 | 0.514 |
+| C2 | `{"kind": "C2", "algo": "eps_ew", "fading": 0.1, "eps": 0.2, "guard": [50, 4]}` | 0.742 | 0.750 |
+| D | `{"kind": "D", "algo": "eps", "expl": 0.2, "lr": 0.05, "use_group": false}` | 0.645 | 0.573 |
+
+Caveat (04): B, C (and the River part of C2) and D were selected at or next to a border of the pre-registered grid (B: γ = 0.9995 max, S = 25 min; ε = 0.2 max for C/C2/D).

@@ -17,7 +17,7 @@ ALL = ["S1_MASSIVE_COLD_START", "S2_ABRUPT_REGIME_CHANGE", "S3_SLOW_DRIFT", "S4_
 CORE = {  # metric -> scenarios where it is a meaningful core metric
     "info_ratio": ALL, "starvation_rate": ALL, "stale_rate": ALL, "coverage_W": ALL, "max_starvation_duration": ALL,
     "silent_excess": [ALL[3], ALL[4], ALL[8]], "adapt_delay": [ALL[1], ALL[2], ALL[8]],
-    "degraded_excess_post": [ALL[1], ALL[2]], "new_ttfa_median": [ALL[0], ALL[9]], "new_never_attempted": [ALL[0], ALL[9]],
+    "degraded_excess_post": [ALL[1], ALL[2]], "new_ttfa_median": [ALL[0], ALL[9]],
     "lowinfo_excess": [ALL[6]], "rare_discovery_rate": [ALL[7]],
 }
 KEY = ["info_ratio", "coverage_W", "starvation_rate", "max_starvation_duration", "stale_rate", "silent_excess",

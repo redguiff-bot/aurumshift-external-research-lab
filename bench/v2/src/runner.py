@@ -61,6 +61,9 @@ def make_scenario(split, name, seed):
     if split in ("train", "validation"):
         from scenarios_dev import make_dev_scenario
         return make_dev_scenario(split, name, seed)
+    if split == "adversarial":
+        from scenarios_adv import make_adv_scenario
+        return make_adv_scenario(name, seed)
     from scenarios_heldout import make_heldout_scenario
     return make_heldout_scenario(name, seed, split)
 
