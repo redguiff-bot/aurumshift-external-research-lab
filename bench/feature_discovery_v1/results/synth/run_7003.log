@@ -1,3 +1,6 @@
 [7s] library 376 candidates, train rows 56856
 [24s] MI top30, CMI-selected 8
 [74s] stability selection alpha=0.0161: 3 features with freq>=0.6
+[135s] symbolic: 30 programs, 5 clusters, 3 stable (>=3 seeds)
+[136s] discovered (pre-validation, deduplicated): 22
+[142s] passed validation gate: 20/22
