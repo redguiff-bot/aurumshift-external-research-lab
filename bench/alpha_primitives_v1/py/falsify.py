@@ -60,4 +60,13 @@ for i in range(150):
     sim = lib.simulate(P, S, "TS", 24); s = lib.summarize(sim, 24, "FULL"); pl.append((s["gross"]["t_nw"], s["net"]["t_nw"], s["gross"]["sharpe"]))
 pl = np.array(pl); R["_placebo"] = dict(n=len(pl), gross_t_sd=float(pl[:, 0].std()), gross_t_p95=float(np.percentile(pl[:, 0], 95)), gross_t_p99=float(np.percentile(pl[:, 0], 99)), net_t_p95=float(np.percentile(pl[:, 1], 95)), sharpe_sd=float(pl[:, 2].std()))
 print(R["_placebo"])
+# controls: (i) planted-future signal must be detected (validates timing alignment of the simulator), (ii) same signal 3H-misaligned must be ~0
+ctl = {}
+for H in (4, 24):
+    F0 = lib.fwd_ret(P, H); sd = F0.std()
+    noise = pd.DataFrame(rng.standard_normal(F0.shape), index=F0.index, columns=F0.columns)
+    for lab, S in ((f"planted_future_H{H}", F0 + 3 * sd * noise), (f"misaligned_3H_H{H}", (F0 + 3 * sd * noise).shift(3 * H))):
+        for dl in (0, 1):
+            sim = lib.simulate(P, S, "TS", H, delay=dl); s = lib.summarize(sim, H, "FULL"); ctl[f"{lab}_delay{dl}"] = dict(gross_sharpe=s["gross"]["sharpe"], gross_t=s["gross"]["t_nw"], net_sharpe=s["net"]["sharpe"])
+R["_controls"] = ctl; print(json.dumps(ctl, indent=1))
 json.dump(R, open("../results/falsification.json", "w"), indent=1, default=float)

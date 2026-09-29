@@ -6,11 +6,12 @@ from scipy.cluster.hierarchy import linkage, fcluster
 from scipy.spatial.distance import squareform
 R = "../results/"; T = R + "tables/"; os.makedirs(T, exist_ok=True)
 M = json.load(open(R + "main_results.json")); res = M["results"]; F = json.load(open(R + "falsification.json")); LA = json.load(open(R + "lookahead_test.json"))
-pnl = pd.read_parquet(R + "pnl_primary.parquet"); sig = pd.read_parquet(R + "signals_daily.parquet")
+pnl = pd.read_parquet(R + "pnl_primary.parquet").loc[lib.SPLITS["FULL"][0]:lib.SPLITS["FULL"][1]]; sig = pd.read_parquet(R + "signals_daily.parquet")
 names = list(pr.REG.keys())
+pnl.resample("1D").sum().astype("float32").to_parquet(R + "pnl_primary_daily.parquet")
 def primary(n): fn, fam, mode, H, sH, note, needs = pr.REG[n]; return res.get(f"{n}|{mode}|H{H}")
 def md(df, fmt="{:+.2f}"): 
-    cols = list(df.columns); out = "| " + df.index.name + " | " + " | ".join(cols) + " |\n|" + "---|" * (len(cols) + 1) + "\n"
+    cols = list(df.columns); out = "| " + (df.index.name or "") + " | " + " | ".join(cols) + " |\n|" + "---|" * (len(cols) + 1) + "\n"
     for i, r in df.iterrows(): out += f"| {i} | " + " | ".join(fmt.format(v) if isinstance(v, (int, float, np.floating)) and v == v else str(v) for v in r) + " |\n"
     return out
 def w(fn, s): open(T + fn, "w").write(s)
@@ -38,6 +39,13 @@ for k, r in res.items():
     if r["meta"]["primary"]: continue
     alt.append(dict(spec=k, gross_S=r["FULL"]["gross"]["sharpe"], gross_t=r["FULL"]["gross"]["t_nw"], net_S=r["FULL"]["net"]["sharpe"], net_t=r["FULL"]["net"]["t_nw"], turn_day=r["FULL"]["turn_per_day"]))
 alt = pd.DataFrame(alt).set_index("spec"); alt.index.name = "spec (non-primary)"; w("05_alt.md", md(alt))
+# all-spec gross/cost table (exploratory, NOT used for adjudication; 60 specs => multiple-testing caveat)
+allr = []
+for k, r in res.items():
+    f = r["FULL"]; c = f["cost_ann"]
+    allr.append(dict(spec=k, gross_t=f["gross"]["t_nw"], gross_S_DEV=r["DEV"]["gross"]["sharpe"], gross_S_TEST=r["TEST"]["gross"]["sharpe"], gross_ann_pct=100 * f["gross"]["ann_ret"], cost_ann_pct=100 * c, fund_ann_pct=100 * f["fund_ann"], breakeven_x=(f["gross"]["ann_ret"] - f["fund_ann"]) / c if c > 0 else np.nan, net_S=f["net"]["sharpe"], turn_day=f["turn_per_day"]))
+AL = pd.DataFrame(allr).set_index("spec"); AL.index.name = "spec"; AL.to_json(R + "all_specs_table.json", indent=1)
+w("05_allspecs_top.md", md(AL.sort_values("gross_t", ascending=False).head(12)))
 # ---- 06 orthogonality
 sp = sig.copy(); sp.columns = [c for c in sp.columns]
 rk = sp.rank(); C_sig = rk.corr()
@@ -51,7 +59,7 @@ ev_s = np.linalg.eigvalsh(C_sig.fillna(0).values)[::-1]; effN_s = float(ev_s.sum
 D = 1 - C_sig.abs().fillna(0).values; np.fill_diagonal(D, 0); Z = linkage(squareform(D, checks=False), "average"); cl = fcluster(Z, 0.7, criterion="distance")   # |rho|>0.3 avg link
 clusters = pd.Series(cl, index=C_sig.index)
 inc = {}
-Y = Nd.dropna(how="all").fillna(0)
+Y = Gd.dropna(how="all").fillna(0)   # incremental information measured on GROSS daily P&L (net would mix in cost drag)
 for n in Y.columns:
     X = Y.drop(columns=n); X = np.c_[np.ones(len(X)), X.values]; yv = Y[n].values
     beta, *_ = np.linalg.lstsq(X, yv, rcond=None); e = yv - X @ beta; s2 = e @ e / (len(yv) - X.shape[1]); se = np.sqrt(s2 * np.linalg.inv(X.T @ X)[0, 0])
@@ -73,10 +81,13 @@ for n in names:
                 rr[f"{g}_{kind}_S"] = float(x.mean() * 8760 / (x.std() * np.sqrt(8760))) if len(x) > 500 else np.nan
                 rr[f"{g}_{kind}_t"] = float(lib.nw_t(x.values, max(2 * H, 24))) if len(x) > 500 else np.nan
             rr[f"{g}_share"] = float((ser == g).mean())
+    lo, hi = G[n][vol == "LOWVOL"].dropna(), G[n][vol == "HIGHVOL"].dropna(); se = lambda x: lib.nw_se(x.values, max(2 * H, 24))
+    rr["gross_low_minus_high_t"] = float((lo.mean() - hi.mean()) / np.sqrt(se(lo) ** 2 + se(hi) ** 2)) if len(lo) > 500 and len(hi) > 500 else np.nan
     rg[n] = rr
 RG = pd.DataFrame(rg).T; RG.index.name = "primitive"; RG.to_json(R + "regime_table.json", indent=1)
 regs = ["LOWVOL","MIDVOL","HIGHVOL","UPTREND","DOWNTREND"]
 w("07_regime_net_S.md", md(RG[[f"{g}_net_S" for g in regs]].rename(columns=lambda c: c.replace("_net_S", "")))); w("07_regime_net_t.md", md(RG[[f"{g}_net_t" for g in regs]].rename(columns=lambda c: c.replace("_net_t", ""))))
+w("07_regime_lowhigh.md", md(RG[["LOWVOL_gross_S","HIGHVOL_gross_S","gross_low_minus_high_t"]]))
 w("07_regime_gross_S.md", md(RG[[f"{g}_gross_S" for g in regs]].rename(columns=lambda c: c.replace("_gross_S", ""))))
 # ---- 08 costs
 cost = {}

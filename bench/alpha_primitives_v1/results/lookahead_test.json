@@ -1,67 +1,67 @@
 {
  "P01_TSMOM": {
   "max_abs_diff": 0.0,
-  "cells_compared": 5418,
+  "cells_compared": 18060,
   "verdict": "PASS"
  },
  "P02_XS_RS7D": {
   "max_abs_diff": 0.0,
-  "cells_compared": 5418,
+  "cells_compared": 18060,
   "verdict": "PASS"
  },
  "P03_REV4H": {
   "max_abs_diff": 0.0,
-  "cells_compared": 5418,
+  "cells_compared": 18060,
   "verdict": "PASS"
  },
  "P04_VOLCOMP_BRK": {
   "max_abs_diff": 0.0,
-  "cells_compared": 5418,
+  "cells_compared": 18060,
   "verdict": "PASS"
  },
  "P05_BRK_PERSIST": {
   "max_abs_diff": 0.0,
-  "cells_compared": 5418,
+  "cells_compared": 18060,
   "verdict": "PASS"
  },
  "P06_FUND_CARRY": {
   "max_abs_diff": 0.0,
-  "cells_compared": 5418,
+  "cells_compared": 18060,
   "verdict": "PASS"
  },
  "P07_PREMIUM": {
   "max_abs_diff": 0.0,
-  "cells_compared": 5418,
+  "cells_compared": 18060,
   "verdict": "PASS"
  },
  "P08_OI_PRICE": {
   "max_abs_diff": 0.0,
-  "cells_compared": 5418,
+  "cells_compared": 18060,
   "verdict": "PASS"
  },
  "P09_OI_FLUSH": {
   "max_abs_diff": 0.0,
-  "cells_compared": 5418,
+  "cells_compared": 18060,
   "verdict": "PASS"
  },
  "P10_TAKER_IMB": {
   "max_abs_diff": 0.0,
-  "cells_compared": 5418,
+  "cells_compared": 18060,
   "verdict": "PASS"
  },
  "P11_LIQ_SHOCK": {
   "max_abs_diff": 0.0,
-  "cells_compared": 5415,
+  "cells_compared": 18050,
   "verdict": "PASS"
  },
  "P12_LEADLAG_BTC": {
   "max_abs_diff": 0.0,
-  "cells_compared": 3612,
+  "cells_compared": 16254,
   "verdict": "PASS"
  },
  "P13_SEASON_HOD": {
   "max_abs_diff": 0.0,
-  "cells_compared": 10836,
+  "cells_compared": 36120,
   "verdict": "PASS"
  },
  "P14_VRP_DVOL": {
@@ -71,7 +71,11 @@
  },
  "P15_FUND_DIV": {
   "max_abs_diff": 0.0,
-  "cells_compared": 5418,
+  "cells_compared": 18060,
   "verdict": "PASS"
+ },
+ "CONTROL_LEAK_shift(-1)": {
+  "max_abs_diff": 1.0,
+  "verdict": "FAIL (expected: test detects lookahead)"
  }
 }

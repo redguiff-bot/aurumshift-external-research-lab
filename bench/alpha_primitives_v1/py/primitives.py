@@ -53,7 +53,7 @@ def p13_season_hod(P, k=1.0, H=4):
     return sum(lr.shift(24 * i - j) for j in range(1, H + 1) for i in range(1, J + 1)) / J
 
 def p14_vrp_dvol(P, k=1.0, H=None):
-    rv = _lr(P).rolling(_n(168, k), min_periods=100).std() * np.sqrt(8760) * 100
+    rv = _lr(P).rolling(_n(168, k), min_periods=min(100, _n(168, k))).std() * np.sqrt(8760) * 100
     s = P["dvol"] - rv; return s - s.rolling(2160, min_periods=500).mean()
 def p15_fund_div(P, k=1.0, H=None):
     n = _n(24, k); bn = P["fund_ph"].rolling(n, min_periods=8).mean(); hl = P["hlf"].rolling(n, min_periods=8).mean()

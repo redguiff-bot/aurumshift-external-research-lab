@@ -1,0 +1,19 @@
+{
+ "PRIMITIVES_EXECUTED": 15,
+ "FORWARD_SAFE_COUNT": 15,
+ "SUPPORTED": [],
+ "ROBUST": [],
+ "NONREDUNDANT": [],
+ "REGIME_DEPENDENT": [],
+ "GROSS_ONLY": [],
+ "effN_signals": 10.351341867103965,
+ "effN_pnl": 9.926455484972195,
+ "placebo": {
+  "n": 150,
+  "gross_t_sd": 0.9384800091506873,
+  "gross_t_p95": 1.5796235974991462,
+  "gross_t_p99": 2.0530767249903885,
+  "net_t_p95": -1.6212958835177613,
+  "sharpe_sd": 0.47756475543699045
+ }
+}

@@ -17,4 +17,12 @@ for n in pr.REG:
             if mism: worst = max(worst, 1.0)
     res[n] = dict(max_abs_diff=worst, cells_compared=nchk, verdict="PASS" if worst < 1e-9 else "FAIL")
     print(n, res[n], flush=True)
+# negative control: a deliberately leaky signal MUST fail
+leak = lambda P_: np.log(P_["c"].shift(-1) / P_["c"])
+full = leak(P); worst = 0.0
+for T in cuts:
+    Pt = {k: v.iloc[:T + 1] for k, v in P.items()}; a = full.iloc[T - 300:T + 1]; b = leak(Pt).iloc[T - 300:T + 1]
+    worst = max(worst, float(((a - b).abs().where(a.notna() & b.notna())).max().max()), 1.0 if (a.notna() != b.notna()).values.any() else 0.0)
+res["CONTROL_LEAK_shift(-1)"] = dict(max_abs_diff=worst, verdict="FAIL (expected: test detects lookahead)" if worst >= 1e-9 else "PASS (test is BLIND - bug)")
+print(res["CONTROL_LEAK_shift(-1)"])
 json.dump(res, open("../results/lookahead_test.json", "w"), indent=1)

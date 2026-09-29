@@ -97,6 +97,13 @@ def nw_t(x, lags):
         w = 1 - l / (lags + 1); v += 2 * w * (xm[l:] * xm[:-l]).sum() / n
     return x.mean() / np.sqrt(v / n)
 
+def nw_se(x, lags):
+    x = np.asarray(x, float); x = x[~np.isnan(x)]; n = len(x)
+    if n < 100: return np.nan
+    xm = x - x.mean(); v = (xm * xm).sum() / n
+    for l_ in range(1, lags + 1): v += 2 * (1 - l_ / (lags + 1)) * (xm[l_:] * xm[:-l_]).sum() / n
+    return float(np.sqrt(max(v, 0) / n))
+
 def stats(r, H, split="FULL", scale=1.0):
     a, b = SPLITS[split]; x = r.loc[a:b]
     n = len(x)
