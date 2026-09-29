@@ -1,0 +1,3629 @@
+{
+ "params": {
+  "prop_true_shape": {
+   "lam": 0.46554339318380267,
+   "phi": 0.4,
+   "tau0": 30.0,
+   "gamma": 0.5
+  },
+  "prop_wrong_shape": {
+   "lam": 0.46554339318380267,
+   "phi": 1.0,
+   "tau0": 30.0,
+   "gamma": 0.5
+  },
+  "ac": {
+   "g": 0.8669279126052383,
+   "eta": 0.8523900772251115
+  },
+  "sqrt": {
+   "Y": 0.15272200435651284,
+   "hs_fallback": 0.5
+  },
+  "none": {}
+ },
+ "rows": [
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "independent_walks(no memory)",
+   "truth": 1.2429301237575408,
+   "truth_ex_drift": 1.2332691110830318,
+   "truth_se": 0.04762462301434982,
+   "pred": 1.251075855607241,
+   "bias": 0.01780674452420916,
+   "truth_walk": 0.7332691110830319,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 1.2429301237575408,
+   "truth_ex_drift": 1.2332691110830318,
+   "truth_se": 0.04762462301434982,
+   "pred": 1.251075855607241,
+   "bias": 0.01780674452420916,
+   "truth_walk": 0.7332691110830319,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 1.2429301237575408,
+   "truth_ex_drift": 1.2332691110830318,
+   "truth_se": 0.04762462301434982,
+   "pred": 1.251075855607241,
+   "bias": 0.01780674452420916,
+   "truth_walk": 0.7332691110830319,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "almgren_chriss_linear",
+   "truth": 1.2429301237575408,
+   "truth_ex_drift": 1.2332691110830318,
+   "truth_se": 0.04762462301434982,
+   "pred": 0.757170806705546,
+   "bias": -0.4760983043774858,
+   "truth_walk": 0.7332691110830319,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 1.2429301237575408,
+   "truth_ex_drift": 1.2332691110830318,
+   "truth_se": 0.04762462301434982,
+   "pred": 1.1597590588201356,
+   "bias": -0.0735100522628962,
+   "truth_walk": 0.7332691110830319,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "independent_walks(no memory)",
+   "truth": 0.6279228778811397,
+   "truth_ex_drift": 0.7795907017061378,
+   "truth_se": 0.8514118530505584,
+   "pred": 0.7588757720373696,
+   "bias": -0.0207149296687682,
+   "truth_walk": 0.2599053526298622,
+   "truth_impact": 0.019685349076275484
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 0.6279228778811397,
+   "truth_ex_drift": 0.7795907017061378,
+   "truth_se": 0.8514118530505584,
+   "pred": 0.7817866675064009,
+   "bias": 0.0021959658002631555,
+   "truth_walk": 0.2599053526298622,
+   "truth_impact": 0.019685349076275484
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 0.6279228778811397,
+   "truth_ex_drift": 0.7795907017061378,
+   "truth_se": 0.8514118530505584,
+   "pred": 0.7961192434920739,
+   "bias": 0.0165285417859361,
+   "truth_walk": 0.2599053526298622,
+   "truth_impact": 0.019685349076275484
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "almgren_chriss_linear",
+   "truth": 0.6279228778811397,
+   "truth_ex_drift": 0.7795907017061378,
+   "truth_se": 0.8514118530505584,
+   "pred": 0.5869769212862654,
+   "bias": -0.19261378041987232,
+   "truth_walk": 0.2599053526298622,
+   "truth_impact": 0.019685349076275484
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 0.6279228778811397,
+   "truth_ex_drift": 0.7795907017061378,
+   "truth_se": 0.8514118530505584,
+   "pred": 1.1597590588201356,
+   "bias": 0.3801683571139979,
+   "truth_walk": 0.2599053526298622,
+   "truth_impact": 0.019685349076275484
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "independent_walks(no memory)",
+   "truth": -1.3733618628176227,
+   "truth_ex_drift": 0.6571545690571939,
+   "truth_se": 0.8197051178662276,
+   "pred": 0.625,
+   "bias": -0.03215456905719394,
+   "truth_walk": 0.13261434543236375,
+   "truth_impact": 0.024540223624830198
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": -1.3733618628176227,
+   "truth_ex_drift": 0.6571545690571939,
+   "truth_se": 0.8197051178662276,
+   "pred": 0.6535612330339735,
+   "bias": -0.003593336023220428,
+   "truth_walk": 0.13261434543236375,
+   "truth_impact": 0.024540223624830198
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "propagator(permanent-only kernel)",
+   "truth": -1.3733618628176227,
+   "truth_ex_drift": 0.6571545690571939,
+   "truth_se": 0.8197051178662276,
+   "pred": 0.6692266223524612,
+   "bias": 0.012072053295267282,
+   "truth_walk": 0.13261434543236375,
+   "truth_impact": 0.024540223624830198
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "almgren_chriss_linear",
+   "truth": -1.3733618628176227,
+   "truth_ex_drift": 0.6571545690571939,
+   "truth_se": 0.8197051178662276,
+   "pred": 0.5869769212862654,
+   "bias": -0.0701776477709285,
+   "truth_walk": 0.13261434543236375,
+   "truth_impact": 0.024540223624830198
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "sqrt_total(no schedule info)",
+   "truth": -1.3733618628176227,
+   "truth_ex_drift": 0.6571545690571939,
+   "truth_se": 0.8197051178662276,
+   "pred": 1.1597590588201356,
+   "bias": 0.5026044897629417,
+   "truth_walk": 0.13261434543236375,
+   "truth_impact": 0.024540223624830198
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "independent_walks(no memory)",
+   "truth": 2.669479698186013,
+   "truth_ex_drift": 2.653422251925674,
+   "truth_se": 0.042057150761489234,
+   "pred": 2.6468802738370556,
+   "bias": -0.00654197808861845,
+   "truth_walk": 2.153422251925674,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 2.669479698186013,
+   "truth_ex_drift": 2.653422251925674,
+   "truth_se": 0.042057150761489234,
+   "pred": 2.6468802738370556,
+   "bias": -0.00654197808861845,
+   "truth_walk": 2.153422251925674,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 2.669479698186013,
+   "truth_ex_drift": 2.653422251925674,
+   "truth_se": 0.042057150761489234,
+   "pred": 2.6468802738370556,
+   "bias": -0.00654197808861845,
+   "truth_walk": 2.153422251925674,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "almgren_chriss_linear",
+   "truth": 2.669479698186013,
+   "truth_ex_drift": 2.653422251925674,
+   "truth_se": 0.042057150761489234,
+   "pred": 1.7858540335277306,
+   "bias": -0.8675682183979434,
+   "truth_walk": 2.153422251925674,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 2.669479698186013,
+   "truth_ex_drift": 2.653422251925674,
+   "truth_se": 0.042057150761489234,
+   "pred": 1.975266104293106,
+   "bias": -0.6781561476325682,
+   "truth_walk": 2.153422251925674,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "independent_walks(no memory)",
+   "truth": 0.9188950402843266,
+   "truth_ex_drift": 1.3432343304504035,
+   "truth_se": 0.7264257836122214,
+   "pred": 1.220734144192714,
+   "bias": -0.12250018625768955,
+   "truth_walk": 0.744808203345193,
+   "truth_impact": 0.09842612710521025
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 0.9188950402843266,
+   "truth_ex_drift": 1.3432343304504035,
+   "truth_se": 0.7264257836122214,
+   "pred": 1.3352886215378705,
+   "bias": -0.00794570891253299,
+   "truth_walk": 0.744808203345193,
+   "truth_impact": 0.09842612710521025
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 0.9188950402843266,
+   "truth_ex_drift": 1.3432343304504035,
+   "truth_se": 0.7264257836122214,
+   "pred": 1.4069515014662353,
+   "bias": 0.06371717101583174,
+   "truth_walk": 0.744808203345193,
+   "truth_impact": 0.09842612710521025
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "almgren_chriss_linear",
+   "truth": 0.9188950402843266,
+   "truth_ex_drift": 1.3432343304504035,
+   "truth_se": 0.7264257836122214,
+   "pred": 0.9348846064313275,
+   "bias": -0.408349724019076,
+   "truth_walk": 0.744808203345193,
+   "truth_impact": 0.09842612710521025
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 0.9188950402843266,
+   "truth_ex_drift": 1.3432343304504035,
+   "truth_se": 0.7264257836122214,
+   "pred": 1.975266104293106,
+   "bias": 0.6320317738427024,
+   "truth_walk": 0.744808203345193,
+   "truth_impact": 0.09842612710521025
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "independent_walks(no memory)",
+   "truth": 1.0213191731101305,
+   "truth_ex_drift": 0.9733399337593531,
+   "truth_se": 0.9038955706891857,
+   "pred": 0.8002661335203147,
+   "bias": -0.1730738002390384,
+   "truth_walk": 0.35063943917829105,
+   "truth_impact": 0.12270049458106197
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 1.0213191731101305,
+   "truth_ex_drift": 0.9733399337593531,
+   "truth_se": 0.9038955706891857,
+   "pred": 0.9430722986901822,
+   "bias": -0.03026763506917096,
+   "truth_walk": 0.35063943917829105,
+   "truth_impact": 0.12270049458106197
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 1.0213191731101305,
+   "truth_ex_drift": 0.9733399337593531,
+   "truth_se": 0.9038955706891857,
+   "pred": 1.021399245282621,
+   "bias": 0.04805931152326792,
+   "truth_walk": 0.35063943917829105,
+   "truth_impact": 0.12270049458106197
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "almgren_chriss_linear",
+   "truth": 1.0213191731101305,
+   "truth_ex_drift": 0.9733399337593531,
+   "truth_se": 0.9038955706891857,
+   "pred": 0.9348846064313275,
+   "bias": -0.03845532732802559,
+   "truth_walk": 0.35063943917829105,
+   "truth_impact": 0.12270049458106197
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 1.0213191731101305,
+   "truth_ex_drift": 0.9733399337593531,
+   "truth_se": 0.9038955706891857,
+   "pred": 1.975266104293106,
+   "bias": 1.0019261705337528,
+   "truth_walk": 0.35063943917829105,
+   "truth_impact": 0.12270049458106197
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "independent_walks(no memory)",
+   "truth": 6.752770037215661,
+   "truth_ex_drift": 6.736712590955322,
+   "truth_se": 0.04465897896036081,
+   "pred": 6.745732336601882,
+   "bias": 0.00901974564655994,
+   "truth_walk": 6.236712590955322,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 6.752770037215661,
+   "truth_ex_drift": 6.736712590955322,
+   "truth_se": 0.04465897896036081,
+   "pred": 6.745732336601882,
+   "bias": 0.00901974564655994,
+   "truth_walk": 6.236712590955322,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 6.752770037215661,
+   "truth_ex_drift": 6.736712590955322,
+   "truth_se": 0.04465897896036081,
+   "pred": 6.745732336601882,
+   "bias": 0.00901974564655994,
+   "truth_walk": 6.236712590955322,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "almgren_chriss_linear",
+   "truth": 6.752770037215661,
+   "truth_ex_drift": 6.736712590955322,
+   "truth_se": 0.04465897896036081,
+   "pred": 6.929270167638654,
+   "bias": 0.19255757668333207,
+   "truth_walk": 6.236712590955322,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 6.752770037215661,
+   "truth_ex_drift": 6.736712590955322,
+   "truth_se": 0.04465897896036081,
+   "pred": 3.7987952941006777,
+   "bias": -2.937917296854644,
+   "truth_walk": 6.236712590955322,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "independent_walks(no memory)",
+   "truth": 2.710298788363531,
+   "truth_ex_drift": 3.1346380785296084,
+   "truth_se": 0.7261103295827257,
+   "pred": 2.5957800075012494,
+   "bias": -0.538858071028359,
+   "truth_walk": 2.142507443003557,
+   "truth_impact": 0.4921306355260512
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 2.710298788363531,
+   "truth_ex_drift": 3.1346380785296084,
+   "truth_se": 0.7261103295827257,
+   "pred": 3.1685523942270324,
+   "bias": 0.03391431569742398,
+   "truth_walk": 2.142507443003557,
+   "truth_impact": 0.4921306355260512
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 2.710298788363531,
+   "truth_ex_drift": 3.1346380785296084,
+   "truth_se": 0.7261103295827257,
+   "pred": 3.5268667938688547,
+   "bias": 0.3922287153392463,
+   "truth_walk": 2.142507443003557,
+   "truth_impact": 0.4921306355260512
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "almgren_chriss_linear",
+   "truth": 2.710298788363531,
+   "truth_ex_drift": 3.1346380785296084,
+   "truth_se": 0.7261103295827257,
+   "pred": 2.674423032156638,
+   "bias": -0.4602150463729706,
+   "truth_walk": 2.142507443003557,
+   "truth_impact": 0.4921306355260512
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 2.710298788363531,
+   "truth_ex_drift": 3.1346380785296084,
+   "truth_se": 0.7261103295827257,
+   "pred": 3.7987952941006777,
+   "bias": 0.6641572155710693,
+   "truth_walk": 2.142507443003557,
+   "truth_impact": 0.4921306355260512
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "independent_walks(no memory)",
+   "truth": 2.1623145656599285,
+   "truth_ex_drift": 2.1143353263091513,
+   "truth_se": 0.9041235002598788,
+   "pred": 1.3356453636192438,
+   "bias": -0.7786899626899075,
+   "truth_walk": 1.0008328534038415,
+   "truth_impact": 0.6135024729053097
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 2.1623145656599285,
+   "truth_ex_drift": 2.1143353263091513,
+   "truth_se": 0.9041235002598788,
+   "pred": 2.049676189468582,
+   "bias": -0.06465913684056934,
+   "truth_walk": 1.0008328534038415,
+   "truth_impact": 0.6135024729053097
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 2.1623145656599285,
+   "truth_ex_drift": 2.1143353263091513,
+   "truth_se": 0.9041235002598788,
+   "pred": 2.441310922430775,
+   "bias": 0.32697559612162364,
+   "truth_walk": 1.0008328534038415,
+   "truth_impact": 0.6135024729053097
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "almgren_chriss_linear",
+   "truth": 2.1623145656599285,
+   "truth_ex_drift": 2.1143353263091513,
+   "truth_se": 0.9041235002598788,
+   "pred": 2.674423032156638,
+   "bias": 0.5600877058474865,
+   "truth_walk": 1.0008328534038415,
+   "truth_impact": 0.6135024729053097
+  },
+  {
+   "scenario": "sl_base",
+   "split": "train",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 2.1623145656599285,
+   "truth_ex_drift": 2.1143353263091513,
+   "truth_se": 0.9041235002598788,
+   "pred": 3.7987952941006777,
+   "bias": 1.6844599677915264,
+   "truth_walk": 1.0008328534038415,
+   "truth_impact": 0.6135024729053097
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "independent_walks(no memory)",
+   "truth": 1.2429301237575408,
+   "truth_ex_drift": 1.2332691110830318,
+   "truth_se": 0.04762462301434982,
+   "pred": 1.251075855607241,
+   "bias": 0.01780674452420916,
+   "truth_walk": 0.7332691110830319,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 1.2429301237575408,
+   "truth_ex_drift": 1.2332691110830318,
+   "truth_se": 0.04762462301434982,
+   "pred": 1.251075855607241,
+   "bias": 0.01780674452420916,
+   "truth_walk": 0.7332691110830319,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 1.2429301237575408,
+   "truth_ex_drift": 1.2332691110830318,
+   "truth_se": 0.04762462301434982,
+   "pred": 1.251075855607241,
+   "bias": 0.01780674452420916,
+   "truth_walk": 0.7332691110830319,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "almgren_chriss_linear",
+   "truth": 1.2429301237575408,
+   "truth_ex_drift": 1.2332691110830318,
+   "truth_se": 0.04762462301434982,
+   "pred": 0.757170806705546,
+   "bias": -0.4760983043774858,
+   "truth_walk": 0.7332691110830319,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 1.2429301237575408,
+   "truth_ex_drift": 1.2332691110830318,
+   "truth_se": 0.04762462301434982,
+   "pred": 1.1597590588201356,
+   "bias": -0.0735100522628962,
+   "truth_walk": 0.7332691110830319,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "independent_walks(no memory)",
+   "truth": 0.6874822448116804,
+   "truth_ex_drift": 0.8391500686366783,
+   "truth_se": 0.8514118552116604,
+   "pred": 0.7588757720373696,
+   "bias": -0.08027429659930874,
+   "truth_walk": 0.2599053526298622,
+   "truth_impact": 0.07924471600681617
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 0.6874822448116804,
+   "truth_ex_drift": 0.8391500686366783,
+   "truth_se": 0.8514118552116604,
+   "pred": 0.7817866675064009,
+   "bias": -0.05736340113027738,
+   "truth_walk": 0.2599053526298622,
+   "truth_impact": 0.07924471600681617
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 0.6874822448116804,
+   "truth_ex_drift": 0.8391500686366783,
+   "truth_se": 0.8514118552116604,
+   "pred": 0.7961192434920739,
+   "bias": -0.043030825144604434,
+   "truth_walk": 0.2599053526298622,
+   "truth_impact": 0.07924471600681617
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "almgren_chriss_linear",
+   "truth": 0.6874822448116804,
+   "truth_ex_drift": 0.8391500686366783,
+   "truth_se": 0.8514118552116604,
+   "pred": 0.5869769212862654,
+   "bias": -0.25217314735041285,
+   "truth_walk": 0.2599053526298622,
+   "truth_impact": 0.07924471600681617
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 0.6874822448116804,
+   "truth_ex_drift": 0.8391500686366783,
+   "truth_se": 0.8514118552116604,
+   "pred": 1.1597590588201356,
+   "bias": 0.32060899018345734,
+   "truth_walk": 0.2599053526298622,
+   "truth_impact": 0.07924471600681617
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "independent_walks(no memory)",
+   "truth": -1.3016107075549308,
+   "truth_ex_drift": 0.7289057243198858,
+   "truth_se": 0.8197051155461096,
+   "pred": 0.625,
+   "bias": -0.10390572431988576,
+   "truth_walk": 0.13261434543236375,
+   "truth_impact": 0.09629137888752208
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": -1.3016107075549308,
+   "truth_ex_drift": 0.7289057243198858,
+   "truth_se": 0.8197051155461096,
+   "pred": 0.6535612330339735,
+   "bias": -0.07534449128591225,
+   "truth_walk": 0.13261434543236375,
+   "truth_impact": 0.09629137888752208
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "propagator(permanent-only kernel)",
+   "truth": -1.3016107075549308,
+   "truth_ex_drift": 0.7289057243198858,
+   "truth_se": 0.8197051155461096,
+   "pred": 0.6692266223524612,
+   "bias": -0.05967910196742454,
+   "truth_walk": 0.13261434543236375,
+   "truth_impact": 0.09629137888752208
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "almgren_chriss_linear",
+   "truth": -1.3016107075549308,
+   "truth_ex_drift": 0.7289057243198858,
+   "truth_se": 0.8197051155461096,
+   "pred": 0.5869769212862654,
+   "bias": -0.14192880303362032,
+   "truth_walk": 0.13261434543236375,
+   "truth_impact": 0.09629137888752208
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "sqrt_total(no schedule info)",
+   "truth": -1.3016107075549308,
+   "truth_ex_drift": 0.7289057243198858,
+   "truth_se": 0.8197051155461096,
+   "pred": 1.1597590588201356,
+   "bias": 0.4308533345002499,
+   "truth_walk": 0.13261434543236375,
+   "truth_impact": 0.09629137888752208
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "independent_walks(no memory)",
+   "truth": 2.669479698186013,
+   "truth_ex_drift": 2.653422251925674,
+   "truth_se": 0.042057150761489234,
+   "pred": 2.6468802738370556,
+   "bias": -0.00654197808861845,
+   "truth_walk": 2.153422251925674,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 2.669479698186013,
+   "truth_ex_drift": 2.653422251925674,
+   "truth_se": 0.042057150761489234,
+   "pred": 2.6468802738370556,
+   "bias": -0.00654197808861845,
+   "truth_walk": 2.153422251925674,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 2.669479698186013,
+   "truth_ex_drift": 2.653422251925674,
+   "truth_se": 0.042057150761489234,
+   "pred": 2.6468802738370556,
+   "bias": -0.00654197808861845,
+   "truth_walk": 2.153422251925674,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "almgren_chriss_linear",
+   "truth": 2.669479698186013,
+   "truth_ex_drift": 2.653422251925674,
+   "truth_se": 0.042057150761489234,
+   "pred": 1.7858540335277306,
+   "bias": -0.8675682183979434,
+   "truth_walk": 2.153422251925674,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 2.669479698186013,
+   "truth_ex_drift": 2.653422251925674,
+   "truth_se": 0.042057150761489234,
+   "pred": 1.975266104293106,
+   "bias": -0.6781561476325682,
+   "truth_walk": 2.153422251925674,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "independent_walks(no memory)",
+   "truth": 1.216690777031913,
+   "truth_ex_drift": 1.64103006719799,
+   "truth_se": 0.726425677625933,
+   "pred": 1.220734144192714,
+   "bias": -0.4202959230052761,
+   "truth_walk": 0.744808203345193,
+   "truth_impact": 0.3962218638527969
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 1.216690777031913,
+   "truth_ex_drift": 1.64103006719799,
+   "truth_se": 0.726425677625933,
+   "pred": 1.3352886215378705,
+   "bias": -0.3057414456601195,
+   "truth_walk": 0.744808203345193,
+   "truth_impact": 0.3962218638527969
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 1.216690777031913,
+   "truth_ex_drift": 1.64103006719799,
+   "truth_se": 0.726425677625933,
+   "pred": 1.4069515014662353,
+   "bias": -0.23407856573175478,
+   "truth_walk": 0.744808203345193,
+   "truth_impact": 0.3962218638527969
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "almgren_chriss_linear",
+   "truth": 1.216690777031913,
+   "truth_ex_drift": 1.64103006719799,
+   "truth_se": 0.726425677625933,
+   "pred": 0.9348846064313275,
+   "bias": -0.7061454607666625,
+   "truth_walk": 0.744808203345193,
+   "truth_impact": 0.3962218638527969
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 1.216690777031913,
+   "truth_ex_drift": 1.64103006719799,
+   "truth_se": 0.726425677625933,
+   "pred": 1.975266104293106,
+   "bias": 0.33423603709511585,
+   "truth_walk": 0.744808203345193,
+   "truth_impact": 0.3962218638527969
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "independent_walks(no memory)",
+   "truth": 1.380074278718822,
+   "truth_ex_drift": 1.3320950393680449,
+   "truth_se": 0.903895587371826,
+   "pred": 0.8002661335203147,
+   "bias": -0.5318289058477301,
+   "truth_walk": 0.35063943917829105,
+   "truth_impact": 0.48145560018975364
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 1.380074278718822,
+   "truth_ex_drift": 1.3320950393680449,
+   "truth_se": 0.903895587371826,
+   "pred": 0.9430722986901822,
+   "bias": -0.3890227406778627,
+   "truth_walk": 0.35063943917829105,
+   "truth_impact": 0.48145560018975364
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 1.380074278718822,
+   "truth_ex_drift": 1.3320950393680449,
+   "truth_se": 0.903895587371826,
+   "pred": 1.021399245282621,
+   "bias": -0.3106957940854238,
+   "truth_walk": 0.35063943917829105,
+   "truth_impact": 0.48145560018975364
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "almgren_chriss_linear",
+   "truth": 1.380074278718822,
+   "truth_ex_drift": 1.3320950393680449,
+   "truth_se": 0.903895587371826,
+   "pred": 0.9348846064313275,
+   "bias": -0.3972104329367173,
+   "truth_walk": 0.35063943917829105,
+   "truth_impact": 0.48145560018975364
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 1.380074278718822,
+   "truth_ex_drift": 1.3320950393680449,
+   "truth_se": 0.903895587371826,
+   "pred": 1.975266104293106,
+   "bias": 0.643171064925061,
+   "truth_walk": 0.35063943917829105,
+   "truth_impact": 0.48145560018975364
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "independent_walks(no memory)",
+   "truth": 6.752770037215661,
+   "truth_ex_drift": 6.736712590955322,
+   "truth_se": 0.04465897896036081,
+   "pred": 6.745732336601882,
+   "bias": 0.00901974564655994,
+   "truth_walk": 6.236712590955322,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 6.752770037215661,
+   "truth_ex_drift": 6.736712590955322,
+   "truth_se": 0.04465897896036081,
+   "pred": 6.745732336601882,
+   "bias": 0.00901974564655994,
+   "truth_walk": 6.236712590955322,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 6.752770037215661,
+   "truth_ex_drift": 6.736712590955322,
+   "truth_se": 0.04465897896036081,
+   "pred": 6.745732336601882,
+   "bias": 0.00901974564655994,
+   "truth_walk": 6.236712590955322,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "almgren_chriss_linear",
+   "truth": 6.752770037215661,
+   "truth_ex_drift": 6.736712590955322,
+   "truth_se": 0.04465897896036081,
+   "pred": 6.929270167638654,
+   "bias": 0.19255757668333207,
+   "truth_walk": 6.236712590955322,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 6.752770037215661,
+   "truth_ex_drift": 6.736712590955322,
+   "truth_se": 0.04465897896036081,
+   "pred": 3.7987952941006777,
+   "bias": -2.937917296854644,
+   "truth_walk": 6.236712590955322,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "independent_walks(no memory)",
+   "truth": 4.199277472101464,
+   "truth_ex_drift": 4.623616762267542,
+   "truth_se": 0.7261097991545667,
+   "pred": 2.5957800075012494,
+   "bias": -2.0278367547662923,
+   "truth_walk": 2.142507443003557,
+   "truth_impact": 1.9811093192639846
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 4.199277472101464,
+   "truth_ex_drift": 4.623616762267542,
+   "truth_se": 0.7261097991545667,
+   "pred": 3.1685523942270324,
+   "bias": -1.4550643680405093,
+   "truth_walk": 2.142507443003557,
+   "truth_impact": 1.9811093192639846
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 4.199277472101464,
+   "truth_ex_drift": 4.623616762267542,
+   "truth_se": 0.7261097991545667,
+   "pred": 3.5268667938688547,
+   "bias": -1.096749968398687,
+   "truth_walk": 2.142507443003557,
+   "truth_impact": 1.9811093192639846
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "almgren_chriss_linear",
+   "truth": 4.199277472101464,
+   "truth_ex_drift": 4.623616762267542,
+   "truth_se": 0.7261097991545667,
+   "pred": 2.674423032156638,
+   "bias": -1.949193730110904,
+   "truth_walk": 2.142507443003557,
+   "truth_impact": 1.9811093192639846
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 4.199277472101464,
+   "truth_ex_drift": 4.623616762267542,
+   "truth_se": 0.7261097991545667,
+   "pred": 3.7987952941006777,
+   "bias": -0.824821468166864,
+   "truth_walk": 2.142507443003557,
+   "truth_impact": 1.9811093192639846
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "independent_walks(no memory)",
+   "truth": 3.9560900937033874,
+   "truth_ex_drift": 3.90811085435261,
+   "truth_se": 0.9041235828005089,
+   "pred": 1.3356453636192438,
+   "bias": -2.572465490733366,
+   "truth_walk": 1.0008328534038415,
+   "truth_impact": 2.4072780009487684
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 3.9560900937033874,
+   "truth_ex_drift": 3.90811085435261,
+   "truth_se": 0.9041235828005089,
+   "pred": 2.049676189468582,
+   "bias": -1.8584346648840282,
+   "truth_walk": 1.0008328534038415,
+   "truth_impact": 2.4072780009487684
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 3.9560900937033874,
+   "truth_ex_drift": 3.90811085435261,
+   "truth_se": 0.9041235828005089,
+   "pred": 2.441310922430775,
+   "bias": -1.4667999319218352,
+   "truth_walk": 1.0008328534038415,
+   "truth_impact": 2.4072780009487684
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "almgren_chriss_linear",
+   "truth": 3.9560900937033874,
+   "truth_ex_drift": 3.90811085435261,
+   "truth_se": 0.9041235828005089,
+   "pred": 2.674423032156638,
+   "bias": -1.2336878221959724,
+   "truth_walk": 1.0008328534038415,
+   "truth_impact": 2.4072780009487684
+  },
+  {
+   "scenario": "sl_highimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 3.9560900937033874,
+   "truth_ex_drift": 3.90811085435261,
+   "truth_se": 0.9041235828005089,
+   "pred": 3.7987952941006777,
+   "bias": -0.10931556025193245,
+   "truth_walk": 1.0008328534038415,
+   "truth_impact": 2.4072780009487684
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "independent_walks(no memory)",
+   "truth": 3.2825850300985597,
+   "truth_ex_drift": 3.2729240174240513,
+   "truth_se": 0.048105020618769145,
+   "pred": 3.2724732627834645,
+   "bias": -0.00045075464058674797,
+   "truth_walk": 1.7729240174240513,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 3.2825850300985597,
+   "truth_ex_drift": 3.2729240174240513,
+   "truth_se": 0.048105020618769145,
+   "pred": 3.2724732627834645,
+   "bias": -0.00045075464058674797,
+   "truth_walk": 1.7729240174240513,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 3.2825850300985597,
+   "truth_ex_drift": 3.2729240174240513,
+   "truth_se": 0.048105020618769145,
+   "pred": 3.2724732627834645,
+   "bias": -0.00045075464058674797,
+   "truth_walk": 1.7729240174240513,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "almgren_chriss_linear",
+   "truth": 3.2825850300985597,
+   "truth_ex_drift": 3.2729240174240513,
+   "truth_se": 0.048105020618769145,
+   "pred": 1.757170806705546,
+   "bias": -1.5157532107185052,
+   "truth_walk": 1.7729240174240513,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 3.2825850300985597,
+   "truth_ex_drift": 3.2729240174240513,
+   "truth_se": 0.048105020618769145,
+   "pred": 2.7776179236599323,
+   "bias": -0.49530609376411894,
+   "truth_walk": 1.7729240174240513,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "independent_walks(no memory)",
+   "truth": 1.9773679820580217,
+   "truth_ex_drift": 2.1290358058830194,
+   "truth_se": 0.8512710889681183,
+   "pred": 2.110007293784798,
+   "bias": -0.01902851209822165,
+   "truth_walk": 0.6093504568067438,
+   "truth_impact": 0.019685349076275484
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 1.9773679820580217,
+   "truth_ex_drift": 2.1290358058830194,
+   "truth_se": 0.8512710889681183,
+   "pred": 2.132918189253829,
+   "bias": 0.0038823833708097055,
+   "truth_walk": 0.6093504568067438,
+   "truth_impact": 0.019685349076275484
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 1.9773679820580217,
+   "truth_ex_drift": 2.1290358058830194,
+   "truth_se": 0.8512710889681183,
+   "pred": 2.147250765239502,
+   "bias": 0.018214959356482652,
+   "truth_walk": 0.6093504568067438,
+   "truth_impact": 0.019685349076275484
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "almgren_chriss_linear",
+   "truth": 1.9773679820580217,
+   "truth_ex_drift": 2.1290358058830194,
+   "truth_se": 0.8512710889681183,
+   "pred": 1.5869769212862652,
+   "bias": -0.5420588845967542,
+   "truth_walk": 0.6093504568067438,
+   "truth_impact": 0.019685349076275484
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 1.9773679820580217,
+   "truth_ex_drift": 2.1290358058830194,
+   "truth_se": 0.8512710889681183,
+   "pred": 2.7776179236599323,
+   "bias": 0.6485821177769129,
+   "truth_walk": 0.6093504568067438,
+   "truth_impact": 0.019685349076275484
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "independent_walks(no memory)",
+   "truth": -0.2140911919541334,
+   "truth_ex_drift": 1.8164252399206833,
+   "truth_se": 0.8196681494370013,
+   "pred": 1.7438083263126618,
+   "bias": -0.07261691360802147,
+   "truth_walk": 0.29188501629585323,
+   "truth_impact": 0.024540223624830198
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": -0.2140911919541334,
+   "truth_ex_drift": 1.8164252399206833,
+   "truth_se": 0.8196681494370013,
+   "pred": 1.772369559346635,
+   "bias": -0.044055680574048184,
+   "truth_walk": 0.29188501629585323,
+   "truth_impact": 0.024540223624830198
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "propagator(permanent-only kernel)",
+   "truth": -0.2140911919541334,
+   "truth_ex_drift": 1.8164252399206833,
+   "truth_se": 0.8196681494370013,
+   "pred": 1.7880349486651226,
+   "bias": -0.028390291255560696,
+   "truth_walk": 0.29188501629585323,
+   "truth_impact": 0.024540223624830198
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "almgren_chriss_linear",
+   "truth": -0.2140911919541334,
+   "truth_ex_drift": 1.8164252399206833,
+   "truth_se": 0.8196681494370013,
+   "pred": 1.5869769212862652,
+   "bias": -0.22944831863441806,
+   "truth_walk": 0.29188501629585323,
+   "truth_impact": 0.024540223624830198
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "sqrt_total(no schedule info)",
+   "truth": -0.2140911919541334,
+   "truth_ex_drift": 1.8164252399206833,
+   "truth_se": 0.8196681494370013,
+   "pred": 2.7776179236599323,
+   "bias": 0.961192683739249,
+   "truth_walk": 0.29188501629585323,
+   "truth_impact": 0.024540223624830198
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "independent_walks(no memory)",
+   "truth": 6.67063338165791,
+   "truth_ex_drift": 6.654575935397572,
+   "truth_se": 0.04420484773676545,
+   "pred": 6.66341498371776,
+   "bias": 0.008839048320187892,
+   "truth_walk": 5.154575935397572,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 6.67063338165791,
+   "truth_ex_drift": 6.654575935397572,
+   "truth_se": 0.04420484773676545,
+   "pred": 6.66341498371776,
+   "bias": 0.008839048320187892,
+   "truth_walk": 5.154575935397572,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 6.67063338165791,
+   "truth_ex_drift": 6.654575935397572,
+   "truth_se": 0.04420484773676545,
+   "pred": 6.66341498371776,
+   "bias": 0.008839048320187892,
+   "truth_walk": 5.154575935397572,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "almgren_chriss_linear",
+   "truth": 6.67063338165791,
+   "truth_ex_drift": 6.654575935397572,
+   "truth_se": 0.04420484773676545,
+   "pred": 2.7858540335277304,
+   "bias": -3.8687219018698418,
+   "truth_walk": 5.154575935397572,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 6.67063338165791,
+   "truth_ex_drift": 6.654575935397572,
+   "truth_se": 0.04420484773676545,
+   "pred": 4.356840526575746,
+   "bias": -2.2977354088218265,
+   "truth_walk": 5.154575935397572,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "independent_walks(no memory)",
+   "truth": 2.9469145178513134,
+   "truth_ex_drift": 3.3712538080173897,
+   "truth_se": 0.7263667822883745,
+   "pred": 3.2338957664960013,
+   "bias": -0.13735804152138842,
+   "truth_walk": 1.7728276809121797,
+   "truth_impact": 0.09842612710521025
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 2.9469145178513134,
+   "truth_ex_drift": 3.3712538080173897,
+   "truth_se": 0.7263667822883745,
+   "pred": 3.3484502438411585,
+   "bias": -0.022803564176231195,
+   "truth_walk": 1.7728276809121797,
+   "truth_impact": 0.09842612710521025
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 2.9469145178513134,
+   "truth_ex_drift": 3.3712538080173897,
+   "truth_se": 0.7263667822883745,
+   "pred": 3.4201131237695233,
+   "bias": 0.048859315752133536,
+   "truth_walk": 1.7728276809121797,
+   "truth_impact": 0.09842612710521025
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "almgren_chriss_linear",
+   "truth": 2.9469145178513134,
+   "truth_ex_drift": 3.3712538080173897,
+   "truth_se": 0.7263667822883745,
+   "pred": 1.9348846064313279,
+   "bias": -1.4363692015860619,
+   "truth_walk": 1.7728276809121797,
+   "truth_impact": 0.09842612710521025
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 2.9469145178513134,
+   "truth_ex_drift": 3.3712538080173897,
+   "truth_se": 0.7263667822883745,
+   "pred": 4.356840526575746,
+   "bias": 0.985586718558356,
+   "truth_walk": 1.7728276809121797,
+   "truth_impact": 0.09842612710521025
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "independent_walks(no memory)",
+   "truth": 2.498057977415884,
+   "truth_ex_drift": 2.4500787380651063,
+   "truth_se": 0.9039977425880341,
+   "pred": 2.188323143678503,
+   "bias": -0.26175559438660345,
+   "truth_walk": 0.827378243484044,
+   "truth_impact": 0.12270049458106197
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 2.498057977415884,
+   "truth_ex_drift": 2.4500787380651063,
+   "truth_se": 0.9039977425880341,
+   "pred": 2.33112930884837,
+   "bias": -0.11894942921673612,
+   "truth_walk": 0.827378243484044,
+   "truth_impact": 0.12270049458106197
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 2.498057977415884,
+   "truth_ex_drift": 2.4500787380651063,
+   "truth_se": 0.9039977425880341,
+   "pred": 2.409456255440809,
+   "bias": -0.04062248262429735,
+   "truth_walk": 0.827378243484044,
+   "truth_impact": 0.12270049458106197
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "almgren_chriss_linear",
+   "truth": 2.498057977415884,
+   "truth_ex_drift": 2.4500787380651063,
+   "truth_se": 0.9039977425880341,
+   "pred": 1.9348846064313279,
+   "bias": -0.5151941316337785,
+   "truth_walk": 0.827378243484044,
+   "truth_impact": 0.12270049458106197
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 2.498057977415884,
+   "truth_ex_drift": 2.4500787380651063,
+   "truth_se": 0.9039977425880341,
+   "pred": 4.356840526575746,
+   "bias": 1.9067617885106394,
+   "truth_walk": 0.827378243484044,
+   "truth_impact": 0.12270049458106197
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "independent_walks(no memory)",
+   "truth": 16.546067735295,
+   "truth_ex_drift": 16.530010289034664,
+   "truth_se": 0.049078582096779316,
+   "pred": 16.50558514644869,
+   "bias": -0.02442514258597228,
+   "truth_walk": 15.030010289034662,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 16.546067735295,
+   "truth_ex_drift": 16.530010289034664,
+   "truth_se": 0.049078582096779316,
+   "pred": 16.50558514644869,
+   "bias": -0.02442514258597228,
+   "truth_walk": 15.030010289034662,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 16.546067735295,
+   "truth_ex_drift": 16.530010289034664,
+   "truth_se": 0.049078582096779316,
+   "pred": 16.50558514644869,
+   "bias": -0.02442514258597228,
+   "truth_walk": 15.030010289034662,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "almgren_chriss_linear",
+   "truth": 16.546067735295,
+   "truth_ex_drift": 16.530010289034664,
+   "truth_se": 0.049078582096779316,
+   "pred": 7.929270167638654,
+   "bias": -8.60074012139601,
+   "truth_walk": 15.030010289034662,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 16.546067735295,
+   "truth_ex_drift": 16.530010289034664,
+   "truth_se": 0.049078582096779316,
+   "pred": 7.888089618299662,
+   "bias": -8.641920670735,
+   "truth_walk": 15.030010289034662,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "independent_walks(no memory)",
+   "truth": 6.7138247403887386,
+   "truth_ex_drift": 7.138164030554815,
+   "truth_se": 0.7267573286021719,
+   "pred": 6.592297401177055,
+   "bias": -0.5458666293777599,
+   "truth_walk": 5.1460333950287644,
+   "truth_impact": 0.4921306355260512
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 6.7138247403887386,
+   "truth_ex_drift": 7.138164030554815,
+   "truth_se": 0.7267573286021719,
+   "pred": 7.165069787902841,
+   "bias": 0.02690575734802536,
+   "truth_walk": 5.1460333950287644,
+   "truth_impact": 0.4921306355260512
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 6.7138247403887386,
+   "truth_ex_drift": 7.138164030554815,
+   "truth_se": 0.7267573286021719,
+   "pred": 7.523384187544663,
+   "bias": 0.38522015698984813,
+   "truth_walk": 5.1460333950287644,
+   "truth_impact": 0.4921306355260512
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "almgren_chriss_linear",
+   "truth": 6.7138247403887386,
+   "truth_ex_drift": 7.138164030554815,
+   "truth_se": 0.7267573286021719,
+   "pred": 3.674423032156638,
+   "bias": -3.4637409983981775,
+   "truth_walk": 5.1460333950287644,
+   "truth_impact": 0.4921306355260512
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 6.7138247403887386,
+   "truth_ex_drift": 7.138164030554815,
+   "truth_se": 0.7267573286021719,
+   "pred": 7.888089618299662,
+   "bias": 0.7499255877448467,
+   "truth_walk": 5.1460333950287644,
+   "truth_impact": 0.4921306355260512
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "independent_walks(no memory)",
+   "truth": 4.555154094286947,
+   "truth_ex_drift": 4.507174854936171,
+   "truth_se": 0.9046464465405388,
+   "pred": 3.507646555610445,
+   "bias": -0.9995282993257257,
+   "truth_walk": 2.393672382030861,
+   "truth_impact": 0.6135024729053097
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 4.555154094286947,
+   "truth_ex_drift": 4.507174854936171,
+   "truth_se": 0.9046464465405388,
+   "pred": 4.221677381459783,
+   "bias": -0.2854974734763873,
+   "truth_walk": 2.393672382030861,
+   "truth_impact": 0.6135024729053097
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 4.555154094286947,
+   "truth_ex_drift": 4.507174854936171,
+   "truth_se": 0.9046464465405388,
+   "pred": 4.613312114421976,
+   "bias": 0.10613725948580566,
+   "truth_walk": 2.393672382030861,
+   "truth_impact": 0.6135024729053097
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "almgren_chriss_linear",
+   "truth": 4.555154094286947,
+   "truth_ex_drift": 4.507174854936171,
+   "truth_se": 0.9046464465405388,
+   "pred": 3.674423032156638,
+   "bias": -0.832751822779533,
+   "truth_walk": 2.393672382030861,
+   "truth_impact": 0.6135024729053097
+  },
+  {
+   "scenario": "sl_thin",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 4.555154094286947,
+   "truth_ex_drift": 4.507174854936171,
+   "truth_se": 0.9046464465405388,
+   "pred": 7.888089618299662,
+   "bias": 3.3809147633634913,
+   "truth_walk": 2.393672382030861,
+   "truth_impact": 0.6135024729053097
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "independent_walks(no memory)",
+   "truth": 1.2429301237575408,
+   "truth_ex_drift": 1.2332691110830318,
+   "truth_se": 0.04762462301434982,
+   "pred": 1.251075855607241,
+   "bias": 0.01780674452420916,
+   "truth_walk": 0.7332691110830319,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 1.2429301237575408,
+   "truth_ex_drift": 1.2332691110830318,
+   "truth_se": 0.04762462301434982,
+   "pred": 1.251075855607241,
+   "bias": 0.01780674452420916,
+   "truth_walk": 0.7332691110830319,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 1.2429301237575408,
+   "truth_ex_drift": 1.2332691110830318,
+   "truth_se": 0.04762462301434982,
+   "pred": 1.251075855607241,
+   "bias": 0.01780674452420916,
+   "truth_walk": 0.7332691110830319,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "almgren_chriss_linear",
+   "truth": 1.2429301237575408,
+   "truth_ex_drift": 1.2332691110830318,
+   "truth_se": 0.04762462301434982,
+   "pred": 0.757170806705546,
+   "bias": -0.4760983043774858,
+   "truth_walk": 0.7332691110830319,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 1,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 1.2429301237575408,
+   "truth_ex_drift": 1.2332691110830318,
+   "truth_se": 0.04762462301434982,
+   "pred": 1.1597590588201356,
+   "bias": -0.0735100522628962,
+   "truth_walk": 0.7332691110830319,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "independent_walks(no memory)",
+   "truth": 0.6146981974393982,
+   "truth_ex_drift": 0.7663660212643966,
+   "truth_se": 0.8514118515140714,
+   "pred": 0.7588757720373696,
+   "bias": -0.007490249227027013,
+   "truth_walk": 0.2599053526298622,
+   "truth_impact": 0.0064606686345344356
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 0.6146981974393982,
+   "truth_ex_drift": 0.7663660212643966,
+   "truth_se": 0.8514118515140714,
+   "pred": 0.7817866675064009,
+   "bias": 0.015420646242004343,
+   "truth_walk": 0.2599053526298622,
+   "truth_impact": 0.0064606686345344356
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 0.6146981974393982,
+   "truth_ex_drift": 0.7663660212643966,
+   "truth_se": 0.8514118515140714,
+   "pred": 0.7961192434920739,
+   "bias": 0.02975322222767729,
+   "truth_walk": 0.2599053526298622,
+   "truth_impact": 0.0064606686345344356
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "almgren_chriss_linear",
+   "truth": 0.6146981974393982,
+   "truth_ex_drift": 0.7663660212643966,
+   "truth_se": 0.8514118515140714,
+   "pred": 0.5869769212862654,
+   "bias": -0.17938909997813113,
+   "truth_walk": 0.2599053526298622,
+   "truth_impact": 0.0064606686345344356
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 5,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 0.6146981974393982,
+   "truth_ex_drift": 0.7663660212643966,
+   "truth_se": 0.8514118515140714,
+   "pred": 1.1597590588201356,
+   "bias": 0.39339303755573907,
+   "truth_walk": 0.2599053526298622,
+   "truth_impact": 0.0064606686345344356
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "independent_walks(no memory)",
+   "truth": -1.3900845584893489,
+   "truth_ex_drift": 0.6404318733854676,
+   "truth_se": 0.8197051190982759,
+   "pred": 0.625,
+   "bias": -0.015431873385467587,
+   "truth_walk": 0.13261434543236375,
+   "truth_impact": 0.007817527953103774
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": -1.3900845584893489,
+   "truth_ex_drift": 0.6404318733854676,
+   "truth_se": 0.8197051190982759,
+   "pred": 0.6535612330339735,
+   "bias": 0.013129359648505923,
+   "truth_walk": 0.13261434543236375,
+   "truth_impact": 0.007817527953103774
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "propagator(permanent-only kernel)",
+   "truth": -1.3900845584893489,
+   "truth_ex_drift": 0.6404318733854676,
+   "truth_se": 0.8197051190982759,
+   "pred": 0.6692266223524612,
+   "bias": 0.028794748966993633,
+   "truth_walk": 0.13261434543236375,
+   "truth_impact": 0.007817527953103774
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "almgren_chriss_linear",
+   "truth": -1.3900845584893489,
+   "truth_ex_drift": 0.6404318733854676,
+   "truth_se": 0.8197051190982759,
+   "pred": 0.5869769212862654,
+   "bias": -0.053454952099202147,
+   "truth_walk": 0.13261434543236375,
+   "truth_impact": 0.007817527953103774
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 200000.0,
+   "slices": 20,
+   "model": "sqrt_total(no schedule info)",
+   "truth": -1.3900845584893489,
+   "truth_ex_drift": 0.6404318733854676,
+   "truth_se": 0.8197051190982759,
+   "pred": 1.1597590588201356,
+   "bias": 0.519327185434668,
+   "truth_walk": 0.13261434543236375,
+   "truth_impact": 0.007817527953103774
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "independent_walks(no memory)",
+   "truth": 2.669479698186013,
+   "truth_ex_drift": 2.653422251925674,
+   "truth_se": 0.042057150761489234,
+   "pred": 2.6468802738370556,
+   "bias": -0.00654197808861845,
+   "truth_walk": 2.153422251925674,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 2.669479698186013,
+   "truth_ex_drift": 2.653422251925674,
+   "truth_se": 0.042057150761489234,
+   "pred": 2.6468802738370556,
+   "bias": -0.00654197808861845,
+   "truth_walk": 2.153422251925674,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 2.669479698186013,
+   "truth_ex_drift": 2.653422251925674,
+   "truth_se": 0.042057150761489234,
+   "pred": 2.6468802738370556,
+   "bias": -0.00654197808861845,
+   "truth_walk": 2.153422251925674,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "almgren_chriss_linear",
+   "truth": 2.669479698186013,
+   "truth_ex_drift": 2.653422251925674,
+   "truth_se": 0.042057150761489234,
+   "pred": 1.7858540335277306,
+   "bias": -0.8675682183979434,
+   "truth_walk": 2.153422251925674,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 1,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 2.669479698186013,
+   "truth_ex_drift": 2.653422251925674,
+   "truth_se": 0.042057150761489234,
+   "pred": 1.975266104293106,
+   "bias": -0.6781561476325682,
+   "truth_walk": 2.153422251925674,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "independent_walks(no memory)",
+   "truth": 0.8527721790672677,
+   "truth_ex_drift": 1.2771114692333443,
+   "truth_se": 0.726425833937596,
+   "pred": 1.220734144192714,
+   "bias": -0.05637732504063031,
+   "truth_walk": 0.744808203345193,
+   "truth_impact": 0.03230326588815128
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 0.8527721790672677,
+   "truth_ex_drift": 1.2771114692333443,
+   "truth_se": 0.726425833937596,
+   "pred": 1.3352886215378705,
+   "bias": 0.05817715230452625,
+   "truth_walk": 0.744808203345193,
+   "truth_impact": 0.03230326588815128
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 0.8527721790672677,
+   "truth_ex_drift": 1.2771114692333443,
+   "truth_se": 0.726425833937596,
+   "pred": 1.4069515014662353,
+   "bias": 0.12984003223289098,
+   "truth_walk": 0.744808203345193,
+   "truth_impact": 0.03230326588815128
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "almgren_chriss_linear",
+   "truth": 0.8527721790672677,
+   "truth_ex_drift": 1.2771114692333443,
+   "truth_se": 0.726425833937596,
+   "pred": 0.9348846064313275,
+   "bias": -0.34222686280201675,
+   "truth_walk": 0.744808203345193,
+   "truth_impact": 0.03230326588815128
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 5,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 0.8527721790672677,
+   "truth_ex_drift": 1.2771114692333443,
+   "truth_se": 0.726425833937596,
+   "pred": 1.975266104293106,
+   "bias": 0.6981546350597616,
+   "truth_walk": 0.744808203345193,
+   "truth_impact": 0.03230326588815128
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "independent_walks(no memory)",
+   "truth": 0.9377062403517011,
+   "truth_ex_drift": 0.8897270010009238,
+   "truth_se": 0.9038955617901736,
+   "pred": 0.8002661335203147,
+   "bias": -0.08946086748060911,
+   "truth_walk": 0.35063943917829105,
+   "truth_impact": 0.039087561822632746
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 0.9377062403517011,
+   "truth_ex_drift": 0.8897270010009238,
+   "truth_se": 0.9038955617901736,
+   "pred": 0.9430722986901822,
+   "bias": 0.05334529768925833,
+   "truth_walk": 0.35063943917829105,
+   "truth_impact": 0.039087561822632746
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 0.9377062403517011,
+   "truth_ex_drift": 0.8897270010009238,
+   "truth_se": 0.9038955617901736,
+   "pred": 1.021399245282621,
+   "bias": 0.13167224428169721,
+   "truth_walk": 0.35063943917829105,
+   "truth_impact": 0.039087561822632746
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "almgren_chriss_linear",
+   "truth": 0.9377062403517011,
+   "truth_ex_drift": 0.8897270010009238,
+   "truth_se": 0.9038955617901736,
+   "pred": 0.9348846064313275,
+   "bias": 0.0451576054304037,
+   "truth_walk": 0.35063943917829105,
+   "truth_impact": 0.039087561822632746
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 1000000.0,
+   "slices": 20,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 0.9377062403517011,
+   "truth_ex_drift": 0.8897270010009238,
+   "truth_se": 0.9038955617901736,
+   "pred": 1.975266104293106,
+   "bias": 1.0855391032921822,
+   "truth_walk": 0.35063943917829105,
+   "truth_impact": 0.039087561822632746
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "independent_walks(no memory)",
+   "truth": 6.752770037215661,
+   "truth_ex_drift": 6.736712590955322,
+   "truth_se": 0.04465897896036081,
+   "pred": 6.745732336601882,
+   "bias": 0.00901974564655994,
+   "truth_walk": 6.236712590955322,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 6.752770037215661,
+   "truth_ex_drift": 6.736712590955322,
+   "truth_se": 0.04465897896036081,
+   "pred": 6.745732336601882,
+   "bias": 0.00901974564655994,
+   "truth_walk": 6.236712590955322,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 6.752770037215661,
+   "truth_ex_drift": 6.736712590955322,
+   "truth_se": 0.04465897896036081,
+   "pred": 6.745732336601882,
+   "bias": 0.00901974564655994,
+   "truth_walk": 6.236712590955322,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "almgren_chriss_linear",
+   "truth": 6.752770037215661,
+   "truth_ex_drift": 6.736712590955322,
+   "truth_se": 0.04465897896036081,
+   "pred": 6.929270167638654,
+   "bias": 0.19255757668333207,
+   "truth_walk": 6.236712590955322,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 1,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 6.752770037215661,
+   "truth_ex_drift": 6.736712590955322,
+   "truth_se": 0.04465897896036081,
+   "pred": 3.7987952941006777,
+   "bias": -2.937917296854644,
+   "truth_walk": 6.236712590955322,
+   "truth_impact": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "independent_walks(no memory)",
+   "truth": 2.3796844822782366,
+   "truth_ex_drift": 2.8040237724443138,
+   "truth_se": 0.7261105813959361,
+   "pred": 2.5957800075012494,
+   "bias": -0.2082437649430644,
+   "truth_walk": 2.142507443003557,
+   "truth_impact": 0.16151632944075645
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 2.3796844822782366,
+   "truth_ex_drift": 2.8040237724443138,
+   "truth_se": 0.7261105813959361,
+   "pred": 3.1685523942270324,
+   "bias": 0.3645286217827186,
+   "truth_walk": 2.142507443003557,
+   "truth_impact": 0.16151632944075645
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 2.3796844822782366,
+   "truth_ex_drift": 2.8040237724443138,
+   "truth_se": 0.7261105813959361,
+   "pred": 3.5268667938688547,
+   "bias": 0.7228430214245409,
+   "truth_walk": 2.142507443003557,
+   "truth_impact": 0.16151632944075645
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "almgren_chriss_linear",
+   "truth": 2.3796844822782366,
+   "truth_ex_drift": 2.8040237724443138,
+   "truth_se": 0.7261105813959361,
+   "pred": 2.674423032156638,
+   "bias": -0.129600740287676,
+   "truth_walk": 2.142507443003557,
+   "truth_impact": 0.16151632944075645
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 5,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 2.3796844822782366,
+   "truth_ex_drift": 2.8040237724443138,
+   "truth_se": 0.7261105813959361,
+   "pred": 3.7987952941006777,
+   "bias": 0.994771521656364,
+   "truth_walk": 2.142507443003557,
+   "truth_impact": 0.16151632944075645
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "independent_walks(no memory)",
+   "truth": 1.7442499018677824,
+   "truth_ex_drift": 1.6962706625170054,
+   "truth_se": 0.9041234563593489,
+   "pred": 1.3356453636192438,
+   "bias": -0.3606252988977616,
+   "truth_walk": 1.0008328534038415,
+   "truth_impact": 0.19543780911316372
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth": 1.7442499018677824,
+   "truth_ex_drift": 1.6962706625170054,
+   "truth_se": 0.9041234563593489,
+   "pred": 2.049676189468582,
+   "bias": 0.35340552695157657,
+   "truth_walk": 1.0008328534038415,
+   "truth_impact": 0.19543780911316372
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "propagator(permanent-only kernel)",
+   "truth": 1.7442499018677824,
+   "truth_ex_drift": 1.6962706625170054,
+   "truth_se": 0.9041234563593489,
+   "pred": 2.441310922430775,
+   "bias": 0.7450402599137695,
+   "truth_walk": 1.0008328534038415,
+   "truth_impact": 0.19543780911316372
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "almgren_chriss_linear",
+   "truth": 1.7442499018677824,
+   "truth_ex_drift": 1.6962706625170054,
+   "truth_se": 0.9041234563593489,
+   "pred": 2.674423032156638,
+   "bias": 0.9781523696396324,
+   "truth_walk": 1.0008328534038415,
+   "truth_impact": 0.19543780911316372
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "split": "test",
+   "N": 5000000.0,
+   "slices": 20,
+   "model": "sqrt_total(no schedule info)",
+   "truth": 1.7442499018677824,
+   "truth_ex_drift": 1.6962706625170054,
+   "truth_se": 0.9041234563593489,
+   "pred": 3.7987952941006777,
+   "bias": 2.1025246315836723,
+   "truth_walk": 1.0008328534038415,
+   "truth_impact": 0.19543780911316372
+  }
+ ],
+ "ranking": [
+  {
+   "scenario": "sl_base",
+   "N": 200000.0,
+   "model": "independent_walks(no memory)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    1.233,
+    0.78,
+    0.657
+   ],
+   "model_costs": [
+    1.25,
+    0.785,
+    0.625
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "N": 200000.0,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    1.233,
+    0.78,
+    0.657
+   ],
+   "model_costs": [
+    1.25,
+    0.808,
+    0.654
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "N": 200000.0,
+   "model": "propagator(permanent-only kernel)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    1.233,
+    0.78,
+    0.657
+   ],
+   "model_costs": [
+    1.25,
+    0.822,
+    0.669
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "N": 200000.0,
+   "model": "almgren_chriss_linear",
+   "truth_best_slices": 20,
+   "model_best_slices": 5,
+   "truth_costs": [
+    1.233,
+    0.78,
+    0.657
+   ],
+   "model_costs": [
+    0.757,
+    0.587,
+    0.587
+   ],
+   "regret_bps": 0.12243613264894371
+  },
+  {
+   "scenario": "sl_base",
+   "N": 200000.0,
+   "model": "sqrt_total(no schedule info)",
+   "truth_best_slices": 20,
+   "model_best_slices": 1,
+   "truth_costs": [
+    1.233,
+    0.78,
+    0.657
+   ],
+   "model_costs": [
+    1.16,
+    1.16,
+    1.16
+   ],
+   "regret_bps": 0.5761145420258378
+  },
+  {
+   "scenario": "sl_base",
+   "N": 1000000.0,
+   "model": "independent_walks(no memory)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    2.653,
+    1.343,
+    0.973
+   ],
+   "model_costs": [
+    2.654,
+    1.21,
+    0.809
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "N": 1000000.0,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    2.653,
+    1.343,
+    0.973
+   ],
+   "model_costs": [
+    2.654,
+    1.325,
+    0.952
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "N": 1000000.0,
+   "model": "propagator(permanent-only kernel)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    2.653,
+    1.343,
+    0.973
+   ],
+   "model_costs": [
+    2.654,
+    1.396,
+    1.03
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "N": 1000000.0,
+   "model": "almgren_chriss_linear",
+   "truth_best_slices": 20,
+   "model_best_slices": 5,
+   "truth_costs": [
+    2.653,
+    1.343,
+    0.973
+   ],
+   "model_costs": [
+    1.786,
+    0.935,
+    0.935
+   ],
+   "regret_bps": 0.36989439669105006
+  },
+  {
+   "scenario": "sl_base",
+   "N": 1000000.0,
+   "model": "sqrt_total(no schedule info)",
+   "truth_best_slices": 20,
+   "model_best_slices": 1,
+   "truth_costs": [
+    2.653,
+    1.343,
+    0.973
+   ],
+   "model_costs": [
+    1.975,
+    1.975,
+    1.975
+   ],
+   "regret_bps": 1.6800823181663214
+  },
+  {
+   "scenario": "sl_base",
+   "N": 5000000.0,
+   "model": "independent_walks(no memory)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    6.737,
+    3.135,
+    2.114
+   ],
+   "model_costs": [
+    6.827,
+    2.59,
+    1.384
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "N": 5000000.0,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    6.737,
+    3.135,
+    2.114
+   ],
+   "model_costs": [
+    6.827,
+    3.163,
+    2.098
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "N": 5000000.0,
+   "model": "propagator(permanent-only kernel)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    6.737,
+    3.135,
+    2.114
+   ],
+   "model_costs": [
+    6.827,
+    3.522,
+    2.489
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_base",
+   "N": 5000000.0,
+   "model": "almgren_chriss_linear",
+   "truth_best_slices": 20,
+   "model_best_slices": 5,
+   "truth_costs": [
+    6.737,
+    3.135,
+    2.114
+   ],
+   "model_costs": [
+    6.929,
+    2.674,
+    2.674
+   ],
+   "regret_bps": 1.0203027522204566
+  },
+  {
+   "scenario": "sl_base",
+   "N": 5000000.0,
+   "model": "sqrt_total(no schedule info)",
+   "truth_best_slices": 20,
+   "model_best_slices": 1,
+   "truth_costs": [
+    6.737,
+    3.135,
+    2.114
+   ],
+   "model_costs": [
+    3.799,
+    3.799,
+    3.799
+   ],
+   "regret_bps": 4.62237726464617
+  },
+  {
+   "scenario": "sl_highimpact",
+   "N": 200000.0,
+   "model": "independent_walks(no memory)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    1.233,
+    0.839,
+    0.729
+   ],
+   "model_costs": [
+    1.25,
+    0.785,
+    0.625
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "N": 200000.0,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    1.233,
+    0.839,
+    0.729
+   ],
+   "model_costs": [
+    1.25,
+    0.808,
+    0.654
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "N": 200000.0,
+   "model": "propagator(permanent-only kernel)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    1.233,
+    0.839,
+    0.729
+   ],
+   "model_costs": [
+    1.25,
+    0.822,
+    0.669
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "N": 200000.0,
+   "model": "almgren_chriss_linear",
+   "truth_best_slices": 20,
+   "model_best_slices": 5,
+   "truth_costs": [
+    1.233,
+    0.839,
+    0.729
+   ],
+   "model_costs": [
+    0.757,
+    0.587,
+    0.587
+   ],
+   "regret_bps": 0.11024434431679253
+  },
+  {
+   "scenario": "sl_highimpact",
+   "N": 200000.0,
+   "model": "sqrt_total(no schedule info)",
+   "truth_best_slices": 20,
+   "model_best_slices": 1,
+   "truth_costs": [
+    1.233,
+    0.839,
+    0.729
+   ],
+   "model_costs": [
+    1.16,
+    1.16,
+    1.16
+   ],
+   "regret_bps": 0.5043633867631458
+  },
+  {
+   "scenario": "sl_highimpact",
+   "N": 1000000.0,
+   "model": "independent_walks(no memory)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    2.653,
+    1.641,
+    1.332
+   ],
+   "model_costs": [
+    2.654,
+    1.21,
+    0.809
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "N": 1000000.0,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    2.653,
+    1.641,
+    1.332
+   ],
+   "model_costs": [
+    2.654,
+    1.325,
+    0.952
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "N": 1000000.0,
+   "model": "propagator(permanent-only kernel)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    2.653,
+    1.641,
+    1.332
+   ],
+   "model_costs": [
+    2.654,
+    1.396,
+    1.03
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "N": 1000000.0,
+   "model": "almgren_chriss_linear",
+   "truth_best_slices": 20,
+   "model_best_slices": 5,
+   "truth_costs": [
+    2.653,
+    1.641,
+    1.332
+   ],
+   "model_costs": [
+    1.786,
+    0.935,
+    0.935
+   ],
+   "regret_bps": 0.3089350278299452
+  },
+  {
+   "scenario": "sl_highimpact",
+   "N": 1000000.0,
+   "model": "sqrt_total(no schedule info)",
+   "truth_best_slices": 20,
+   "model_best_slices": 1,
+   "truth_costs": [
+    2.653,
+    1.641,
+    1.332
+   ],
+   "model_costs": [
+    1.975,
+    1.975,
+    1.975
+   ],
+   "regret_bps": 1.3213272125576299
+  },
+  {
+   "scenario": "sl_highimpact",
+   "N": 5000000.0,
+   "model": "independent_walks(no memory)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    6.737,
+    4.624,
+    3.908
+   ],
+   "model_costs": [
+    6.827,
+    2.59,
+    1.384
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "N": 5000000.0,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    6.737,
+    4.624,
+    3.908
+   ],
+   "model_costs": [
+    6.827,
+    3.163,
+    2.098
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "N": 5000000.0,
+   "model": "propagator(permanent-only kernel)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    6.737,
+    4.624,
+    3.908
+   ],
+   "model_costs": [
+    6.827,
+    3.522,
+    2.489
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_highimpact",
+   "N": 5000000.0,
+   "model": "almgren_chriss_linear",
+   "truth_best_slices": 20,
+   "model_best_slices": 5,
+   "truth_costs": [
+    6.737,
+    4.624,
+    3.908
+   ],
+   "model_costs": [
+    6.929,
+    2.674,
+    2.674
+   ],
+   "regret_bps": 0.7155059079149306
+  },
+  {
+   "scenario": "sl_highimpact",
+   "N": 5000000.0,
+   "model": "sqrt_total(no schedule info)",
+   "truth_best_slices": 20,
+   "model_best_slices": 1,
+   "truth_costs": [
+    6.737,
+    4.624,
+    3.908
+   ],
+   "model_costs": [
+    3.799,
+    3.799,
+    3.799
+   ],
+   "regret_bps": 2.8286017366027116
+  },
+  {
+   "scenario": "sl_thin",
+   "N": 200000.0,
+   "model": "independent_walks(no memory)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    3.273,
+    2.129,
+    1.816
+   ],
+   "model_costs": [
+    3.255,
+    2.11,
+    1.736
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "N": 200000.0,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    3.273,
+    2.129,
+    1.816
+   ],
+   "model_costs": [
+    3.255,
+    2.133,
+    1.765
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "N": 200000.0,
+   "model": "propagator(permanent-only kernel)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    3.273,
+    2.129,
+    1.816
+   ],
+   "model_costs": [
+    3.255,
+    2.147,
+    1.781
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "N": 200000.0,
+   "model": "almgren_chriss_linear",
+   "truth_best_slices": 20,
+   "model_best_slices": 5,
+   "truth_costs": [
+    3.273,
+    2.129,
+    1.816
+   ],
+   "model_costs": [
+    1.757,
+    1.587,
+    1.587
+   ],
+   "regret_bps": 0.3126105659623364
+  },
+  {
+   "scenario": "sl_thin",
+   "N": 200000.0,
+   "model": "sqrt_total(no schedule info)",
+   "truth_best_slices": 20,
+   "model_best_slices": 1,
+   "truth_costs": [
+    3.273,
+    2.129,
+    1.816
+   ],
+   "model_costs": [
+    2.778,
+    2.778,
+    2.778
+   ],
+   "regret_bps": 1.4564987775033673
+  },
+  {
+   "scenario": "sl_thin",
+   "N": 1000000.0,
+   "model": "independent_walks(no memory)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    6.655,
+    3.371,
+    2.45
+   ],
+   "model_costs": [
+    6.744,
+    3.235,
+    2.229
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "N": 1000000.0,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    6.655,
+    3.371,
+    2.45
+   ],
+   "model_costs": [
+    6.744,
+    3.35,
+    2.372
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "N": 1000000.0,
+   "model": "propagator(permanent-only kernel)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    6.655,
+    3.371,
+    2.45
+   ],
+   "model_costs": [
+    6.744,
+    3.421,
+    2.45
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "N": 1000000.0,
+   "model": "almgren_chriss_linear",
+   "truth_best_slices": 20,
+   "model_best_slices": 5,
+   "truth_costs": [
+    6.655,
+    3.371,
+    2.45
+   ],
+   "model_costs": [
+    2.786,
+    1.935,
+    1.935
+   ],
+   "regret_bps": 0.9211750699522834
+  },
+  {
+   "scenario": "sl_thin",
+   "N": 1000000.0,
+   "model": "sqrt_total(no schedule info)",
+   "truth_best_slices": 20,
+   "model_best_slices": 1,
+   "truth_costs": [
+    6.655,
+    3.371,
+    2.45
+   ],
+   "model_costs": [
+    4.357,
+    4.357,
+    4.357
+   ],
+   "regret_bps": 4.204497197332465
+  },
+  {
+   "scenario": "sl_thin",
+   "N": 5000000.0,
+   "model": "independent_walks(no memory)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    16.53,
+    7.138,
+    4.507
+   ],
+   "model_costs": [
+    16.595,
+    6.567,
+    3.577
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "N": 5000000.0,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    16.53,
+    7.138,
+    4.507
+   ],
+   "model_costs": [
+    16.595,
+    7.14,
+    4.291
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "N": 5000000.0,
+   "model": "propagator(permanent-only kernel)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    16.53,
+    7.138,
+    4.507
+   ],
+   "model_costs": [
+    16.595,
+    7.499,
+    4.683
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_thin",
+   "N": 5000000.0,
+   "model": "almgren_chriss_linear",
+   "truth_best_slices": 20,
+   "model_best_slices": 5,
+   "truth_costs": [
+    16.53,
+    7.138,
+    4.507
+   ],
+   "model_costs": [
+    7.929,
+    3.674,
+    3.674
+   ],
+   "regret_bps": 2.6309891756186454
+  },
+  {
+   "scenario": "sl_thin",
+   "N": 5000000.0,
+   "model": "sqrt_total(no schedule info)",
+   "truth_best_slices": 20,
+   "model_best_slices": 1,
+   "truth_costs": [
+    16.53,
+    7.138,
+    4.507
+   ],
+   "model_costs": [
+    7.888,
+    7.888,
+    7.888
+   ],
+   "regret_bps": 12.022835434098493
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "N": 200000.0,
+   "model": "independent_walks(no memory)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    1.233,
+    0.766,
+    0.64
+   ],
+   "model_costs": [
+    1.25,
+    0.785,
+    0.625
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "N": 200000.0,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    1.233,
+    0.766,
+    0.64
+   ],
+   "model_costs": [
+    1.25,
+    0.808,
+    0.654
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "N": 200000.0,
+   "model": "propagator(permanent-only kernel)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    1.233,
+    0.766,
+    0.64
+   ],
+   "model_costs": [
+    1.25,
+    0.822,
+    0.669
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "N": 200000.0,
+   "model": "almgren_chriss_linear",
+   "truth_best_slices": 20,
+   "model_best_slices": 5,
+   "truth_costs": [
+    1.233,
+    0.766,
+    0.64
+   ],
+   "model_costs": [
+    0.757,
+    0.587,
+    0.587
+   ],
+   "regret_bps": 0.12593414787892843
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "N": 200000.0,
+   "model": "sqrt_total(no schedule info)",
+   "truth_best_slices": 20,
+   "model_best_slices": 1,
+   "truth_costs": [
+    1.233,
+    0.766,
+    0.64
+   ],
+   "model_costs": [
+    1.16,
+    1.16,
+    1.16
+   ],
+   "regret_bps": 0.5928372376975639
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "N": 1000000.0,
+   "model": "independent_walks(no memory)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    2.653,
+    1.277,
+    0.89
+   ],
+   "model_costs": [
+    2.654,
+    1.21,
+    0.809
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "N": 1000000.0,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    2.653,
+    1.277,
+    0.89
+   ],
+   "model_costs": [
+    2.654,
+    1.325,
+    0.952
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "N": 1000000.0,
+   "model": "propagator(permanent-only kernel)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    2.653,
+    1.277,
+    0.89
+   ],
+   "model_costs": [
+    2.654,
+    1.396,
+    1.03
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "N": 1000000.0,
+   "model": "almgren_chriss_linear",
+   "truth_best_slices": 20,
+   "model_best_slices": 5,
+   "truth_costs": [
+    2.653,
+    1.277,
+    0.89
+   ],
+   "model_costs": [
+    1.786,
+    0.935,
+    0.935
+   ],
+   "regret_bps": 0.3873844682324207
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "N": 1000000.0,
+   "model": "sqrt_total(no schedule info)",
+   "truth_best_slices": 20,
+   "model_best_slices": 1,
+   "truth_costs": [
+    2.653,
+    1.277,
+    0.89
+   ],
+   "model_costs": [
+    1.975,
+    1.975,
+    1.975
+   ],
+   "regret_bps": 1.7636952509247505
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "N": 5000000.0,
+   "model": "independent_walks(no memory)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    6.737,
+    2.804,
+    1.696
+   ],
+   "model_costs": [
+    6.827,
+    2.59,
+    1.384
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "N": 5000000.0,
+   "model": "propagator(true shape, lambda fitted)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    6.737,
+    2.804,
+    1.696
+   ],
+   "model_costs": [
+    6.827,
+    3.163,
+    2.098
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "N": 5000000.0,
+   "model": "propagator(permanent-only kernel)",
+   "truth_best_slices": 20,
+   "model_best_slices": 20,
+   "truth_costs": [
+    6.737,
+    2.804,
+    1.696
+   ],
+   "model_costs": [
+    6.827,
+    3.522,
+    2.489
+   ],
+   "regret_bps": 0.0
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "N": 5000000.0,
+   "model": "almgren_chriss_linear",
+   "truth_best_slices": 20,
+   "model_best_slices": 5,
+   "truth_costs": [
+    6.737,
+    2.804,
+    1.696
+   ],
+   "model_costs": [
+    6.929,
+    2.674,
+    2.674
+   ],
+   "regret_bps": 1.1077531099273081
+  },
+  {
+   "scenario": "sl_lowimpact",
+   "N": 5000000.0,
+   "model": "sqrt_total(no schedule info)",
+   "truth_best_slices": 20,
+   "model_best_slices": 1,
+   "truth_costs": [
+    6.737,
+    2.804,
+    1.696
+   ],
+   "model_costs": [
+    3.799,
+    3.799,
+    3.799
+   ],
+   "regret_bps": 5.040441928438317
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+[
+ {
+  "kind": "E14_simultaneous",
+  "k": 1,
+  "N": 100000.0,
+  "truth_avg_cost_per_order": 1.1212089024433178,
+  "naive_independent": 1.1212089024433178
+ },
+ {
+  "kind": "E14_simultaneous",
+  "k": 1,
+  "N": 500000.0,
+  "truth_avg_cost_per_order": 2.2754297717737146,
+  "naive_independent": 2.2754297717737146
+ },
+ {
+  "kind": "E14_simultaneous",
+  "k": 2,
+  "N": 100000.0,
+  "truth_avg_cost_per_order": 1.476315854457913,
+  "naive_independent": 1.1212089024433178
+ },
+ {
+  "kind": "E14_simultaneous",
+  "k": 2,
+  "N": 500000.0,
+  "truth_avg_cost_per_order": 3.3089955304138545,
+  "naive_independent": 2.2754297717737146
+ },
+ {
+  "kind": "E14_simultaneous",
+  "k": 5,
+  "N": 100000.0,
+  "truth_avg_cost_per_order": 2.2754297717737146,
+  "naive_independent": 1.1212089024433178
+ },
+ {
+  "kind": "E14_simultaneous",
+  "k": 5,
+  "N": 500000.0,
+  "truth_avg_cost_per_order": 5.646130745752082,
+  "naive_independent": 2.2754297717737146
+ },
+ {
+  "kind": "E14_simultaneous",
+  "k": 10,
+  "N": 100000.0,
+  "truth_avg_cost_per_order": 3.3089955304138545,
+  "naive_independent": 1.1212089024433178
+ },
+ {
+  "kind": "E14_simultaneous",
+  "k": 10,
+  "N": 500000.0,
+  "truth_avg_cost_per_order": 8.652618329456608,
+  "naive_independent": 2.2754297717737146
+ },
+ {
+  "kind": "E15_sequential_recovery",
+  "gap_s": 1.0,
+  "k": 5,
+  "N": 500000.0,
+  "truth_avg_cost_per_order": 5.101098560584308,
+  "naive_independent": 2.276319730061865
+ },
+ {
+  "kind": "E15_sequential_recovery",
+  "gap_s": 10.0,
+  "k": 5,
+  "N": 500000.0,
+  "truth_avg_cost_per_order": 3.6724372018169698,
+  "naive_independent": 2.276319730061865
+ },
+ {
+  "kind": "E15_sequential_recovery",
+  "gap_s": 60.0,
+  "k": 5,
+  "N": 500000.0,
+  "truth_avg_cost_per_order": 2.59281220281219,
+  "naive_independent": 2.276319730061865
+ },
+ {
+  "kind": "E15_sequential_recovery",
+  "gap_s": 600.0,
+  "k": 5,
+  "N": 500000.0,
+  "truth_avg_cost_per_order": 2.470918772550734,
+  "naive_independent": 2.276319730061865
+ }
+]

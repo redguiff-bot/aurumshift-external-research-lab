@@ -1,0 +1,216 @@
+{
+ "contract_tests": {
+  "ladder_identity_max_abs_residual_bps": 0.0,
+  "basis_no_double_count": {
+   "MID": {
+    "embedded_in_fill": 0.0,
+    "contract_extra": 1.6134885861328108,
+    "total": 1.6134885861328108,
+    "truth": 1.6134885861328108,
+    "abs_err": 0.0
+   },
+   "TOUCH": {
+    "embedded_in_fill": 0.5,
+    "contract_extra": 1.1134885861328108,
+    "total": 1.6134885861328108,
+    "truth": 1.6134885861328108,
+    "abs_err": 0.0
+   },
+   "BOOK_VWAP": {
+    "embedded_in_fill": 1.6134885861328108,
+    "contract_extra": 0.0,
+    "total": 1.6134885861328108,
+    "truth": 1.6134885861328108,
+    "abs_err": 0.0
+   },
+   "overcharge_refused": true,
+   "naive_stack_bps": 3.192102223663528,
+   "truth_bps": 1.6134885861328108,
+   "overcharge_ratio": 1.9783853763194685
+  },
+  "unknown_not_zero": {
+   "unknown_listed": true,
+   "net_withheld": true,
+   "complete_when_all_resolved": true,
+   "zero_proof_needs_source": true
+  }
+ },
+ "threats": [
+  {
+   "id": "E1",
+   "name": "mid-price fill fantasy",
+   "naive": 0.0,
+   "correct": 0.810827789372815,
+   "error": -0.810827789372815,
+   "unit": "bps",
+   "expected_behavior": "charge at least half-spread + walk at executable price",
+   "contract_state": "spread/slippage: ESTIMATED or EMBEDDED_BY_BASIS, never absent",
+   "note": ""
+  },
+  {
+   "id": "E2",
+   "name": "zero spread",
+   "naive": 0.0,
+   "correct": 0.5,
+   "error": -0.5,
+   "unit": "bps",
+   "expected_behavior": "spread line must exist; unknown spread => UNKNOWN not 0",
+   "contract_state": "spread: UNKNOWN when no quote",
+   "note": ""
+  },
+  {
+   "id": "E3",
+   "name": "zero slippage (spread only)",
+   "naive": 0.5,
+   "correct": 1.681711482337468,
+   "error": -1.181711482337468,
+   "unit": "bps",
+   "expected_behavior": "size-dependent walk charged (1M USD)",
+   "contract_state": "slippage: ESTIMATED(book_walk) / UNKNOWN(OHLCV)",
+   "note": ""
+  },
+  {
+   "id": "E4",
+   "name": "infinite liquidity (fill at touch)",
+   "naive": 0.5,
+   "correct": 360.5638234932534,
+   "error": -360.0638234932534,
+   "unit": "bps",
+   "expected_behavior": "walk beyond depth, cap fill",
+   "contract_state": "fill fraction reported",
+   "note": "filled=0.88"
+  },
+  {
+   "id": "E5",
+   "name": "fill at stale quote (trend, lat 3s)",
+   "naive": 0.0,
+   "correct": 1.6290170773327814,
+   "error": -1.6290170773327814,
+   "unit": "bps",
+   "expected_behavior": "price at arrival time, not at observation time",
+   "contract_state": "timing: ESTIMATED with latency model",
+   "note": ""
+  },
+  {
+   "id": "E5b",
+   "name": "stale quote across gap",
+   "naive": 0.0,
+   "correct": 13.582728948553449,
+   "error": -13.582728948553449,
+   "unit": "bps",
+   "expected_behavior": "gap risk is a tail; cannot be ex-ante estimated",
+   "contract_state": "timing: UNKNOWN/tail flag",
+   "note": "no ex-ante model recovers this (see single_orders.csv gap)"
+  },
+  {
+   "id": "E6",
+   "name": "full fill though depth insufficient",
+   "naive": 1.0,
+   "correct": 0.8822830351404976,
+   "error": 0.11771696485950245,
+   "unit": "filled_fraction",
+   "expected_behavior": "partial fill / reject; unfilled not charged as cost but reported as opportunity",
+   "contract_state": "filled_fraction < 1 propagated",
+   "note": ""
+  },
+  {
+   "id": "E7",
+   "name": "no adverse selection (passive always fills at touch)",
+   "naive": 1.5,
+   "correct": 4.2375774567375375,
+   "error": -2.7375774567375375,
+   "unit": "bps",
+   "expected_behavior": "fill prob<1 and chase cost on misses; markout of fills",
+   "contract_state": "slippage/timing ESTIMATED; fill_prob reported",
+   "note": "truth ff=0.85, adverse markout=-2.01bps"
+  },
+  {
+   "id": "E8",
+   "name": "funding omitted (perp long held 7d, BTC, May-Aug 2026 rolling windows)",
+   "naive": 0.0,
+   "correct": 9.348787679083095,
+   "error": -9.348787679083095,
+   "unit": "bps",
+   "expected_behavior": "accrue funding at settlement times; p05/p95 shown",
+   "contract_state": "funding: MEASURED (settled) / ESTIMATED (forward)",
+   "note": "p05=-0.8 p95=17.3 min=-6.4 max=18.9"
+  },
+  {
+   "id": "E9",
+   "name": "borrow unknown treated as zero",
+   "naive": 0.0,
+   "correct": null,
+   "error": null,
+   "unit": "bps",
+   "expected_behavior": "UNKNOWN_COST; net outcome withheld or bounded; never 0",
+   "contract_state": "borrow: UNKNOWN (public venue base rate exists but realised/tier not observable)",
+   "note": "OKX public base rate BTC=0.00001392 (unit to verify); inference only"
+  },
+  {
+   "id": "E10",
+   "name": "roll ignored (OKX BTC-USD 261127->261225, long)",
+   "naive": 0.0,
+   "correct": 33.80672327785264,
+   "error": -33.80672327785264,
+   "unit": "bps",
+   "expected_behavior": "calendar spread + 2 leg half-spreads at roll",
+   "contract_state": "roll: MEASURED at roll, ESTIMATED forward",
+   "note": "cal spread=32.2bps legs=1.6bps"
+  },
+  {
+   "id": "E11",
+   "name": "latency ignored (random walk, lat 5s)",
+   "naive": 0.0,
+   "correct": 2.013906491209814,
+   "error": -2.013906491209814,
+   "unit": "bps (1 sd of drift; mean~0)",
+   "expected_behavior": "add zero-mean noise / band, not a bias, unless drift/adverse flow",
+   "contract_state": "timing: ESTIMATED band",
+   "note": "mean=-0.04"
+  },
+  {
+   "id": "E12",
+   "name": "quote disappears before execution (depth x0.15, spread x3)",
+   "naive": 1.681711482337468,
+   "correct": 5.506750628615185,
+   "error": -3.8250391462777174,
+   "unit": "bps",
+   "expected_behavior": "stale-snapshot risk: widen with stress band",
+   "contract_state": "slippage: ESTIMATED + band",
+   "note": ""
+  },
+  {
+   "id": "E13",
+   "name": "market order crosses many levels (10M USD)",
+   "naive": 0.5,
+   "correct": 5.716321235718647,
+   "error": -5.216321235718647,
+   "unit": "bps",
+   "expected_behavior": "walk all crossed levels",
+   "contract_state": "slippage: ESTIMATED(book_walk)",
+   "note": ""
+  },
+  {
+   "id": "E14",
+   "name": "5 correlated simultaneous orders (500k each) priced independently",
+   "naive": 2.2754297717737146,
+   "correct": 5.646130745752082,
+   "error": -3.370700973978367,
+   "unit": "bps/order",
+   "expected_behavior": "aggregate flow walks one book",
+   "contract_state": "impact/slippage on netted aggregate",
+   "note": ""
+  },
+  {
+   "id": "E15",
+   "name": "5 repeated orders 1s apart (depletion, rho=0.05/s)",
+   "naive": 2.276319730061865,
+   "correct": 5.101098560584308,
+   "error": -2.824778830522443,
+   "unit": "bps/order",
+   "expected_behavior": "book depletion + recovery memory",
+   "contract_state": "impact: ESTIMATED with memory",
+   "note": ""
+  }
+ ]
+}

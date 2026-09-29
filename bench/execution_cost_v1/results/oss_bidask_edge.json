@@ -1,0 +1,287 @@
+{
+ "synthetic": [
+  {
+   "spread": 0.2,
+   "sigma": 0.3,
+   "tick": 0.0,
+   "eff_truth": 0.20000000000000112,
+   "edge_bps": 0.5314167727927136
+  },
+  {
+   "spread": 0.2,
+   "sigma": 0.3,
+   "tick": 1.0,
+   "eff_truth": 0.5236818098689845,
+   "edge_bps": 0.9590970006179792
+  },
+  {
+   "spread": 0.2,
+   "sigma": 0.9,
+   "tick": 0.0,
+   "eff_truth": 0.1999999999999983,
+   "edge_bps": 1.1036128878841898
+  },
+  {
+   "spread": 0.2,
+   "sigma": 0.9,
+   "tick": 1.0,
+   "eff_truth": 0.5315172394044021,
+   "edge_bps": 1.3307751835367203
+  },
+  {
+   "spread": 0.2,
+   "sigma": 2.7,
+   "tick": 0.0,
+   "eff_truth": 0.2000000000000038,
+   "edge_bps": 2.2714306336993393
+  },
+  {
+   "spread": 0.2,
+   "sigma": 2.7,
+   "tick": 1.0,
+   "eff_truth": 0.5198394591232691,
+   "edge_bps": 2.693216603784403
+  },
+  {
+   "spread": 1.0,
+   "sigma": 0.3,
+   "tick": 0.0,
+   "eff_truth": 1.0,
+   "edge_bps": 1.0076085172887135
+  },
+  {
+   "spread": 1.0,
+   "sigma": 0.3,
+   "tick": 1.0,
+   "eff_truth": 0.9964430479562991,
+   "edge_bps": 1.2813148493767343
+  },
+  {
+   "spread": 1.0,
+   "sigma": 0.9,
+   "tick": 0.0,
+   "eff_truth": 1.0,
+   "edge_bps": 1.3685100066903324
+  },
+  {
+   "spread": 1.0,
+   "sigma": 0.9,
+   "tick": 1.0,
+   "eff_truth": 0.9924917812146768,
+   "edge_bps": 1.4370495494394084
+  },
+  {
+   "spread": 1.0,
+   "sigma": 2.7,
+   "tick": 0.0,
+   "eff_truth": 1.0,
+   "edge_bps": 2.878596041836419
+  },
+  {
+   "spread": 1.0,
+   "sigma": 2.7,
+   "tick": 1.0,
+   "eff_truth": 1.0028805449066263,
+   "edge_bps": 3.082456671985393
+  },
+  {
+   "spread": 5.0,
+   "sigma": 0.3,
+   "tick": 0.0,
+   "eff_truth": 5.0,
+   "edge_bps": 5.01559740036839
+  },
+  {
+   "spread": 5.0,
+   "sigma": 0.3,
+   "tick": 1.0,
+   "eff_truth": 4.9964451248492265,
+   "edge_bps": 5.157986136342196
+  },
+  {
+   "spread": 5.0,
+   "sigma": 0.9,
+   "tick": 0.0,
+   "eff_truth": 5.0,
+   "edge_bps": 4.970714692759999
+  },
+  {
+   "spread": 5.0,
+   "sigma": 0.9,
+   "tick": 1.0,
+   "eff_truth": 4.994380516416255,
+   "edge_bps": 5.03592048476684
+  },
+  {
+   "spread": 5.0,
+   "sigma": 2.7,
+   "tick": 0.0,
+   "eff_truth": 5.0,
+   "edge_bps": 5.908274231270677
+  },
+  {
+   "spread": 5.0,
+   "sigma": 2.7,
+   "tick": 1.0,
+   "eff_truth": 5.005353275369306,
+   "edge_bps": 5.988149694169245
+  },
+  {
+   "spread": 20.0,
+   "sigma": 0.3,
+   "tick": 0.0,
+   "eff_truth": 20.0,
+   "edge_bps": 20.934504094802133
+  },
+  {
+   "spread": 20.0,
+   "sigma": 0.3,
+   "tick": 1.0,
+   "eff_truth": 20.005621010643353,
+   "edge_bps": 21.853778021963098
+  },
+  {
+   "spread": 20.0,
+   "sigma": 0.9,
+   "tick": 0.0,
+   "eff_truth": 20.0,
+   "edge_bps": 20.49534429066455
+  },
+  {
+   "spread": 20.0,
+   "sigma": 0.9,
+   "tick": 1.0,
+   "eff_truth": 19.999209170111467,
+   "edge_bps": 20.86665722593082
+  },
+  {
+   "spread": 20.0,
+   "sigma": 2.7,
+   "tick": 0.0,
+   "eff_truth": 20.0,
+   "edge_bps": 21.837845489136757
+  },
+  {
+   "spread": 20.0,
+   "sigma": 2.7,
+   "tick": 1.0,
+   "eff_truth": 19.98949673717824,
+   "edge_bps": 21.919072332632172
+  }
+ ],
+ "real_binance_klines": {
+  "klines_BTCUSDT_1m_2026-06.zip": {
+   "days": 30,
+   "edge_bps_mean": 0.09749750876013526,
+   "nan_days": 0
+  },
+  "klines_BTCUSDT_1m_2026-07.zip": {
+   "days": 31,
+   "edge_bps_mean": 0.05671327726534807,
+   "nan_days": 0
+  },
+  "klines_BTCUSDT_1m_2026-08.zip": {
+   "days": 31,
+   "edge_bps_mean": 0.06932932136483835,
+   "nan_days": 0
+  },
+  "klines_ETHUSDT_1m_2026-08.zip": {
+   "days": 31,
+   "edge_bps_mean": 0.17997654386433445,
+   "nan_days": 0
+  }
+ },
+ "live_trade_bars": {
+  "okx-BTC-60s": {
+   "n_bars": 51,
+   "edge_bps": 0.9805708553557132,
+   "quoted_spread_mean_bps": 0.01186261556258242
+  },
+  "okx-BTC-30s": {
+   "n_bars": 101,
+   "edge_bps": 0.39340874759482686,
+   "quoted_spread_mean_bps": 0.01186261556258242
+  },
+  "okx-ETH-60s": {
+   "n_bars": 51,
+   "edge_bps": 1.0563049709906043,
+   "quoted_spread_mean_bps": 0.036596557297193945
+  },
+  "okx-ETH-30s": {
+   "n_bars": 101,
+   "edge_bps": 0.4536756046784032,
+   "quoted_spread_mean_bps": 0.036596557297193945
+  },
+  "okx-SOL-60s": {
+   "n_bars": 51,
+   "edge_bps": 1.2979337284357448,
+   "quoted_spread_mean_bps": 0.8258691194230382
+  },
+  "okx-SOL-30s": {
+   "n_bars": 101,
+   "edge_bps": 0.43840990967065135,
+   "quoted_spread_mean_bps": 0.8258691194230382
+  },
+  "coinbase-BTC-60s": {
+   "n_bars": 51,
+   "edge_bps": 0.09246568806994804,
+   "quoted_spread_mean_bps": 0.06881284751951494
+  },
+  "coinbase-BTC-30s": {
+   "n_bars": 101,
+   "edge_bps": 0.47305946499645923,
+   "quoted_spread_mean_bps": 0.06881284751951494
+  },
+  "coinbase-ETH-60s": {
+   "n_bars": 52,
+   "edge_bps": 1.4364710870174902,
+   "quoted_spread_mean_bps": 0.28650101598193956
+  },
+  "coinbase-ETH-30s": {
+   "n_bars": 103,
+   "edge_bps": 0.7135637416316816,
+   "quoted_spread_mean_bps": 0.28650101598193956
+  },
+  "coinbase-SOL-60s": {
+   "n_bars": 51,
+   "edge_bps": 1.0282048706325835,
+   "quoted_spread_mean_bps": 1.1514031476497932
+  },
+  "coinbase-SOL-30s": {
+   "n_bars": 102,
+   "edge_bps": 0.916283435054366,
+   "quoted_spread_mean_bps": 1.1514031476497932
+  },
+  "kraken-BTC-60s": {
+   "n_bars": 60,
+   "edge_bps": 0.6158793148062403,
+   "quoted_spread_mean_bps": 0.03787531734562428
+  },
+  "kraken-BTC-30s": {
+   "n_bars": 119,
+   "edge_bps": 0.6452071943429019,
+   "quoted_spread_mean_bps": 0.03787531734562428
+  },
+  "kraken-ETH-60s": {
+   "n_bars": 70,
+   "edge_bps": 0.18000975134281255,
+   "quoted_spread_mean_bps": 0.19107832779196082
+  },
+  "kraken-ETH-30s": {
+   "n_bars": 140,
+   "edge_bps": 1.3618871479679429,
+   "quoted_spread_mean_bps": 0.19107832779196082
+  },
+  "kraken-SOL-60s": {
+   "n_bars": 75,
+   "edge_bps": 2.6689545047484566,
+   "quoted_spread_mean_bps": 0.9419087970063922
+  },
+  "kraken-SOL-30s": {
+   "n_bars": 150,
+   "edge_bps": 1.1379705927738994,
+   "quoted_spread_mean_bps": 0.9419087970063922
+  }
+ },
+ "bidask_version": "?"
+}
