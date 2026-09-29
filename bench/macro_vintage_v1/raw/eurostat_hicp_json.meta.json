@@ -1,0 +1,20 @@
+{
+ "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_manr?lang=EN&geo=EA&coicop=CP00&sinceTimePeriod=2025-09&format=JSON",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:28:59.211673Z",
+ "request_time_utc": "2026-09-29T18:28:58.765413Z",
+ "latency_s": 0.446,
+ "headers": {
+  "Date": "Tue, 29 Sep 2026 18:28:59 GMT",
+  "Content-Length": "3259",
+  "Content-Type": "application/json",
+  "X-ORACLE-DMS-ECID": "5f2776dd-6631-49ac-aa29-541ad0cff189-00aed2f0",
+  "Access-Control-Allow-Headers": "Content-Type, Accept, X-Requested-With",
+  "Access-Control-Allow-Methods": "GET",
+  "X-ORACLE-DMS-RID": "0",
+  "Access-Control-Allow-Origin": "*",
+  "Connection": "close"
+ },
+ "bytes": 3259,
+ "sha256": "683c966c0aa12e71eda4742c01bb021c0fad4763dcfd3a83b3191cdef6fbbce8"
+}

@@ -1,0 +1,20 @@
+{
+ "url": "https://api.stlouisfed.org/fred/series/observations?series_id=GDPC1&realtime_start=2009-01-30&realtime_end=2009-01-30&file_type=json",
+ "status": 400,
+ "receipt_time_utc": "2026-09-29T18:22:43.237892Z",
+ "request_time_utc": "2026-09-29T18:22:42.609891Z",
+ "latency_s": 0.628,
+ "headers": {
+  "Content-Type": "application/json; charset=UTF-8",
+  "Server": "Apache",
+  "Content-Length": "162",
+  "Date": "Tue, 29 Sep 2026 18:22:43 GMT",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=86400",
+  "X-location": "cfs",
+  "X-N": "S"
+ },
+ "bytes": 162,
+ "sha256": "da3c632f9a98b4c8f641de2b0763d513b4642316fe56d52d883002e011a892ff"
+}

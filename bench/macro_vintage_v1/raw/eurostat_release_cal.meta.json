@@ -1,0 +1,25 @@
+{
+ "url": "https://ec.europa.eu/eurostat/news/release-calendar",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:22:55.517869Z",
+ "request_time_utc": "2026-09-29T18:22:54.553385Z",
+ "latency_s": 0.965,
+ "headers": {
+  "Date": "Tue, 29 Sep 2026 18:22:55 GMT",
+  "Server": "Apache",
+  "X-OneAgent-JS-Injection": "true",
+  "X-Content-Type-Options": "nosniff",
+  "X-Frame-Options": "SAMEORIGIN",
+  "X-Rate-Limit-Remaining": "4",
+  "Expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+  "Cache-Control": "private, no-cache, no-store, must-revalidate",
+  "Pragma": "no-cache",
+  "Content-Type": "text/html;charset=UTF-8",
+  "Server-Timing": "dtSInfo;desc=\"0\", dtRpid;desc=\"-1954004907\"",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Set-Cookie": "JSESSIONID=7C949241AA66710301896934A1F3E781; Path=/eurostat; Secure; HttpOnly;Secure"
+ },
+ "bytes": 203059,
+ "sha256": "75ca33e8e497bfc8ddc71e75a5aae59e950047bb13b9ae147b08f0c786c3c428"
+}

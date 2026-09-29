@@ -1,0 +1,241 @@
+{
+ "run_utc": "2026-09-29T18:28:50.735406Z",
+ "bls_v1": {
+  "status": 200,
+  "n": 32,
+  "keys": [
+   "footnotes",
+   "latest",
+   "period",
+   "periodName",
+   "value",
+   "year"
+  ],
+  "footnote_codes": [
+   "",
+   "P"
+  ],
+  "has_latest_flag": true,
+  "has_release_timestamp": false,
+  "has_vintage_param": false,
+  "bls_vs_alfred_latest_equal": 20,
+  "compared": 20,
+  "v1_recall_message": [
+   "Request could not be serviced, as the daily threshold for total number of requests allocated to the user with registration key  has been reached."
+  ],
+  "api_v2_nokey": [
+   "Request could not be serviced, as the daily threshold for total number of requests allocated to the user with registration key  has been reached."
+  ]
+ },
+ "bls_archive_vs_alfred_initial": {
+  "status": 200,
+  "bytes": 251756,
+  "bls_text": "Nonfarm payroll employment declined sharply in December, and the unemployment rate rose from 6.",
+  "alfred_vintage_2009-01-09": {
+   "2008-10-01": 136597.0,
+   "2008-11-01": 136013.0,
+   "2008-12-01": 135489.0
+  },
+  "alfred_dec_minus_nov": -524.0
+ },
+ "ecb": {
+  "obs_status_values": [
+   "A",
+   "E"
+  ],
+  "n": 24,
+  "columns_with_time_semantics": [
+   "TIME_PERIOD",
+   "OBS_STATUS",
+   "OBS_CONF",
+   "COLLECTION"
+  ],
+  "upd_z": {
+   "status": 200,
+   "head": "KEY,FREQ,CURRENCY,CURRENCY_DENOM,EXR_TYPE,EXR_SUFFIX,TIME_PERIOD,OBS_VALUE,OBS_STATUS,OBS_CONF,OBS_PRE_BREAK,OBS_COM,TIME_FORMAT,BREAKS,COLLECTION,COMPILING_ORG,DISS_ORG,DOM_SER_IDS,PUBL_ECB,PUBL_MU,P"
+  },
+  "upd_plus": {
+   "status": 200,
+   "head": "KEY,FREQ,CURRENCY,CURRENCY_DENOM,EXR_TYPE,EXR_SUFFIX,TIME_PERIOD,OBS_VALUE,OBS_STATUS,OBS_CONF,OBS_PRE_BREAK,OBS_COM,TIME_FORMAT,BREAKS,COLLECTION,COMPILING_ORG,DISS_ORG,DOM_SER_IDS,PUBL_ECB,PUBL_MU,P"
+  },
+  "hist": {
+   "status": 200,
+   "head": "KEY,FREQ,CURRENCY,CURRENCY_DENOM,EXR_TYPE,EXR_SUFFIX,TIME_PERIOD,OBS_VALUE,OBS_STATUS,OBS_CONF,OBS_PRE_BREAK,OBS_COM,TIME_FORMAT,BREAKS,COLLECTION,COMPILING_ORG,DISS_ORG,DOM_SER_IDS,PUBL_ECB,PUBL_MU,P"
+  },
+  "upd_and_hist": {
+   "status": 200,
+   "head": "KEY,FREQ,CURRENCY,CURRENCY_DENOM,EXR_TYPE,EXR_SUFFIX,TIME_PERIOD,OBS_VALUE,OBS_STATUS,OBS_CONF,OBS_PRE_BREAK,OBS_COM,TIME_FORMAT,BREAKS,COLLECTION,COMPILING_ORG,DISS_ORG,DOM_SER_IDS,PUBL_ECB,PUBL_MU,P"
+  }
+ },
+ "eurostat": {
+  "updated_field": "2026-02-06T23:00:00+0100",
+  "status_flags": null,
+  "n_values": 4,
+  "extension_keys": [
+   "lang",
+   "description",
+   "id",
+   "agencyId",
+   "version",
+   "datastructure",
+   "annotation",
+   "positions-with-no-data"
+  ],
+  "sdmx_updatedAfter": {
+   "status": 200,
+   "head": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><m:GenericData xmlns:m=\"http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message\" xmlns:s=\"http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure\" xmlns:c=\"http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common\" xmlns:g=\"http://www.sdmx.org/resources/sdm"
+  }
+ },
+ "nyfed": {
+  "n": 250,
+  "fields": [
+   "effectiveDate",
+   "percentPercentile1",
+   "percentPercentile25",
+   "percentPercentile75",
+   "percentPercentile99",
+   "percentRate",
+   "revisionIndicator",
+   "type",
+   "volumeInBillions"
+  ],
+  "revisionIndicator_values": [
+   ""
+  ],
+  "first_rows_with_revision": [],
+  "all_latest_head": "{ \"refRates\": [ { \"effectiveDate\": \"2026-09-29\", \"type\": \"SOFRAI\" ,\"average30day\": 3.73909 ,\"average90day\": 3.67933 ,\"average180day\": 3.67385 ,\"index\": 1.26072094 ,\"revisionIndicator\": \"\" }, { \"effectiveDate\": \"2026-09-28\", \"type\": \"EFFR\" ,\"percentRate\": 3.88 ,\"percentPercentile1\": 3.85 ,\"percentPer"
+ },
+ "boe": {
+  "status": 200,
+  "headers": {
+   "Content-Type": "application/csv",
+   "Date": "Tue, 29 Sep 2026 18:29:01 GMT"
+  },
+  "head": "DATE,IUDBEDR\r\n02 Jan 2026,3.75\r\n05 Jan 2026,3.75\r\n06 Jan 2026,3.75\r\n07 Jan 2026,3.75\r\n08 Jan 2026,3.75\r\n09 Jan 2026,3.75"
+ },
+ "boc": {
+  "headers": {
+   "Content-Type": "application/json; charset=utf-8",
+   "Date": "Tue, 29 Sep 2026 18:29:02 GMT"
+  },
+  "top_keys": [
+   "terms",
+   "seriesDetail",
+   "observations"
+  ]
+ },
+ "treasury": {
+  "feed_updated": [
+   "2026-09-29T02:38:00Z",
+   "2026-09-29T02:38:00Z"
+  ],
+  "n_entries": 19,
+  "entry_updated_times": [
+   "2026-09-29T02:38:00Z",
+   "2026-09-29T02:38:00Z",
+   "2026-09-29T02:38:00Z"
+  ],
+  "fiscaldata_fields": [
+   "record_date",
+   "country",
+   "currency",
+   "country_currency_desc",
+   "exchange_rate",
+   "effective_date",
+   "src_line_nbr",
+   "record_fiscal_year",
+   "record_fiscal_quarter",
+   "record_calendar_year",
+   "record_calendar_quarter",
+   "record_calendar_month",
+   "record_calendar_day"
+  ]
+ },
+ "cftc": {
+  "status": 200,
+  "rows": [
+   {
+    "report_date_as_yyyy_mm_dd": "2026-09-22T00:00:00.000",
+    ":updated_at": "2026-09-25T19:30:08.958Z",
+    ":created_at": "2026-09-25T19:30:08.958Z",
+    ":id": "row-ukrh_eq7c-d56k"
+   },
+   {
+    "report_date_as_yyyy_mm_dd": "2026-09-22T00:00:00.000",
+    ":updated_at": "2026-09-25T19:30:08.958Z",
+    ":created_at": "2026-09-25T19:30:08.958Z",
+    ":id": "row-ka2w_4qr9-8nr4"
+   },
+   {
+    "report_date_as_yyyy_mm_dd": "2026-09-22T00:00:00.000",
+    ":updated_at": "2026-09-25T19:30:08.958Z",
+    ":created_at": "2026-09-25T19:30:08.958Z",
+    ":id": "row-j4ra_fanu.kuv3"
+   }
+  ]
+ },
+ "worldbank": {
+  "n_sources": 71,
+  "archive_like": [
+   [
+    "57",
+    "WDI Database Archives",
+    "2025-10-29"
+   ],
+   [
+    "93",
+    "FPN Datahub Archive",
+    "2026-07-21"
+   ]
+  ],
+  "wdi_lastupdated": [
+   "2026-07-13"
+  ],
+  "meta_page": {
+   "page": 1,
+   "pages": 3,
+   "per_page": 2,
+   "total": 6,
+   "sourceid": "2",
+   "lastupdated": "2026-07-13"
+  },
+  "row_fields": [
+   "indicator",
+   "country",
+   "countryiso3code",
+   "date",
+   "value",
+   "unit",
+   "obs_status",
+   "decimal"
+  ]
+ },
+ "imf": {
+  "api_imf_org_dataflow_status": 200,
+  "head": "<?xml version='1.0' encoding='UTF-8'?> <mes:Structure xmlns:mes=\"http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message\" xmlns:str=\"http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure\" xmln",
+  "weo_2026_april_page": {
+   "status": 403,
+   "bytes": 432
+  },
+  "datamapper_keys": [
+   "values",
+   "api"
+  ],
+  "datamapper_vintage_param": false
+ },
+ "oecd": {
+  "n_dataflows": 0,
+  "revision_related": []
+ },
+ "philly": {
+  "data_links": []
+ },
+ "eia": {
+  "demo_key_status": 200,
+  "head": "{\"warnings\":[{\"warning\":\"incomplete return\",\"description\":\"The API can only return 5000 rows in JSON format.  Please consider constraining your request with facet, start, or end, or using offset to pa"
+ },
+ "bea": {
+  "status": 200,
+  "body": "{\"BEAAPI\":{\"Request\":{\"RequestParam\":[{\"ParameterName\":\"USERID\",\"ParameterValue\":\"\"},{\"ParameterName\":\"METHOD\",\"ParameterValue\":\"GETDATASETLIST\"},{\"ParameterName\":\"RESULTFORMAT\",\"ParameterValue\":\"JSON\"}]},\"Results\":{\"Error\":{\"APIErrorCode\":\"1\",\"APIErrorDescription\":\"Invalid Request - Invalid API Use"
+ }
+}

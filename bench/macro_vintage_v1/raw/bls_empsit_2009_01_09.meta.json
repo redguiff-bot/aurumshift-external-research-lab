@@ -1,0 +1,24 @@
+{
+ "url": "https://www.bls.gov/news.release/archives/empsit_01092009.htm",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:28:52.839744Z",
+ "request_time_utc": "2026-09-29T18:28:52.320472Z",
+ "latency_s": 0.519,
+ "headers": {
+  "Content-Type": "text/html",
+  "X-XSS-Protection": "1; mode=block",
+  "P3P": "CP=\"NOI DSP COR NID CURaADMa OUR STP\"",
+  "Pool-Info": "WP2",
+  "X-Frame-Options": "ALLOW-FROM https://www.bls.gov",
+  "Content-Security-Policy": "frame-ancestors https://*.bls.gov",
+  "Cross-Origin-Opener-Policy": "same-origin",
+  "Vary": "Accept-Encoding",
+  "Date": "Tue, 29 Sep 2026 18:28:52 GMT",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+ },
+ "bytes": 251756,
+ "sha256": "6cd6c639a1ae6dd401f6284118b8316b188ad76bb21dda267d9e848e4fc0ba0b"
+}

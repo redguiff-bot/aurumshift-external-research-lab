@@ -1,0 +1,24 @@
+{
+ "url": "https://www.bankofcanada.ca/valet/observations/FXUSDCAD/json?recent=2",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:22:58.540452Z",
+ "request_time_utc": "2026-09-29T18:22:58.260085Z",
+ "latency_s": 0.281,
+ "headers": {
+  "Access-Control-Allow-Origin": "*",
+  "Content-Disposition": "attachment; filename=FXUSDCAD.json",
+  "Content-Type": "application/json; charset=utf-8",
+  "X-Dc": "t",
+  "X-Generated": "2026-09-29 12:36:15",
+  "X-Valet-Mode": "l10",
+  "Vary": "Accept-Encoding",
+  "Cache-Control": "max-age=30",
+  "Expires": "Tue, 29 Sep 2026 18:23:28 GMT",
+  "Date": "Tue, 29 Sep 2026 18:22:58 GMT",
+  "Content-Length": "637",
+  "Connection": "close",
+  "Server": "BoC"
+ },
+ "bytes": 637,
+ "sha256": "a59c805b1aa1dd14f905fb153dc4dc60347159592a84a08998dd222342f0c6bd"
+}

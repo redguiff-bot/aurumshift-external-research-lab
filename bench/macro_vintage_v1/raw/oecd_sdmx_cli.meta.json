@@ -1,0 +1,28 @@
+{
+ "url": "https://sdmx.oecd.org/public/rest/data/OECD.SDD.STES,DSD_STES@DF_CLI/USA.M.LI...AA...H?lastNObservations=2&format=csvfilewithlabels",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:23:25.574889Z",
+ "request_time_utc": "2026-09-29T18:23:24.497059Z",
+ "latency_s": 1.078,
+ "headers": {
+  "Date": "Tue, 29 Sep 2026 18:23:25 GMT",
+  "Content-Type": "application/vnd.sdmx.data+csv; labels=name; version=2; charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Cache-Control": "public,max-age=7200",
+  "Content-Language": "en,en-US",
+  "Last-Modified": "2024-03-07",
+  "Vary": "X-Range, Accept, Accept-Language, Accept-Encoding, Accept-Charset,Accept,Accept-Encoding,Accept-Encoding",
+  "Strict-Transport-Security": "max-age=2592000",
+  "Content-Disposition": "attachment; filename=\"OECD.SDD.STES,DSD_STES@DF_CLI,filtered,2026-09-29 20-23-25.csv\"",
+  "api-supported-versions": "1",
+  "X-Server-Node": "Server 2",
+  "set-cookie": "__cf_bm=hcGU5fZKzoxg36SCJowAOMEqyQrHaoqOvun46HfAGy8-1790706204.7683623-1.0.1.1-PPEXvCfety8Zf4_yCRbJUyb6Y68dF5t_WBhAq3UYJz6AUbQGZQ_..kDEywwyYdYTM8EEy25EAxNSBH8_fFVr05cjXmxfKbMKhqkv11yGhic4WOEFT6_w8UHLvwI5gHKl; HttpOnly; SameSite=None; Secure; Path=/; Domain=oecd.org; Expires=Tue, 29 Sep 2026 18:53:25 GMT",
+  "cf-cache-status": "MISS",
+  "Server": "cloudflare",
+  "CF-RAY": "a42d04d3cbd778b1-IAD",
+  "alt-svc": "h3=\":443\"; ma=86400"
+ },
+ "bytes": 1001,
+ "sha256": "d76c08d652ebabd6ed55a9f29b3d6df6899c1a6e89d4cd6ea8eedfe8330bdf49"
+}

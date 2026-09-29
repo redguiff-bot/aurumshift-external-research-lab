@@ -1,0 +1,31 @@
+{
+ "url": "https://www.census.gov/economic-indicators/calendar-listview.html",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:23:27.692429Z",
+ "request_time_utc": "2026-09-29T18:23:27.363822Z",
+ "latency_s": 0.329,
+ "headers": {
+  "Date": "Tue, 29 Sep 2026 18:23:27 GMT",
+  "Content-Type": "text/html;charset=UTF-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "x-content-type-options": "nosniff",
+  "X-XSS-Protection": "1; mode=block",
+  "x-frame-options": "SAMEORIGIN",
+  "Last-Modified": "Tue, 29 Sep 2026 18:23:27 GMT",
+  "Expires": "Tue, 29 Sep 2026 19:00:00 GMT",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "Vary": "accept-encoding",
+  "expect-ct": "max-age=86400, enforce",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+  "cf-cache-status": "BYPASS",
+  "Set-Cookie": "PHPSESSID=ors1dh7obqt0p0mpq9hdgt11gh; path=/; httpOnly; secure",
+  "set-cookie": "PHPSESSID=ors1dh7obqt0p0mpq9hdgt11gh; path=/; httpOnly; secure",
+  "Speculation-Rules": "\"/cdn-cgi/speculation\"",
+  "publisher": "econ",
+  "Server": "cloudflare",
+  "CF-RAY": "a42d04e5c88fd64d-IAD"
+ },
+ "bytes": 91396,
+ "sha256": "c1cd24c6de22b7c48aad4aa7d25b91f89a75bc496135f77497eaac3d34d32b4b"
+}

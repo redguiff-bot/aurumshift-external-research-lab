@@ -1,0 +1,21 @@
+{
+ "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/prc_hicp_manr/M.RCH_A.CP00.EA?updatedAfter=2026-01-01T00:00:00Z&lastNObservations=2",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:28:59.660679Z",
+ "request_time_utc": "2026-09-29T18:28:59.212328Z",
+ "latency_s": 0.448,
+ "headers": {
+  "Date": "Tue, 29 Sep 2026 18:28:59 GMT",
+  "Content-Length": "1274",
+  "Content-Type": "application/vnd.sdmx.genericdata+xml;version=2.1",
+  "Content-Disposition": "attachment; filename=\"estat_prc_hicp_manr_filtered.xml\"",
+  "X-ORACLE-DMS-ECID": "4a7d46cb-966b-4ee4-ba6b-8ae252fbf249-008d05af",
+  "Access-Control-Allow-Headers": "Content-Type, Accept, X-Requested-With",
+  "Access-Control-Allow-Methods": "GET",
+  "X-ORACLE-DMS-RID": "0",
+  "Access-Control-Allow-Origin": "*",
+  "Connection": "close"
+ },
+ "bytes": 1274,
+ "sha256": "697d17bbbebd999a6bc959e62b924d8a2e4152cde26e93beaa49443c77681edb"
+}

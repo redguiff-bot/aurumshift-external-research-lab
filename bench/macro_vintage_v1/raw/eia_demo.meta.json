@@ -1,0 +1,30 @@
+{
+ "url": "https://api.eia.gov/v2/petroleum/stoc/wstk/data/?api_key=DEMO_KEY&frequency=weekly&data[0]=value&length=1",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:29:42.588524Z",
+ "request_time_utc": "2026-09-29T18:29:41.674326Z",
+ "latency_s": 0.915,
+ "headers": {
+  "Date": "Tue, 29 Sep 2026 18:29:42 GMT",
+  "Content-Type": "application/json",
+  "Content-Length": "792",
+  "Connection": "close",
+  "Vary": "Accept-Encoding",
+  "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization, X-Params",
+  "Access-Control-Allow-Methods": "GET,POST,PATCH,PUT,DELETE,OPTIONS",
+  "Access-Control-Allow-Origin": "*",
+  "Age": "0",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+  "Via": "https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])",
+  "X-Api-Umbrella-Request-Id": "d0tpn05krl67jcei0tgg",
+  "X-Cache": "MISS",
+  "X-Content-Type-Options": "nosniff",
+  "X-Ratelimit-Limit": "10",
+  "X-Ratelimit-Remaining": "2",
+  "X-Vcap-Request-Id": "ada1ac51-db4c-4eef-5b0f-28ec5521bb1b",
+  "X-Frame-Options": "SAMEORIGIN"
+ },
+ "bytes": 792,
+ "sha256": "ae9a170af23ab4f51f0784e319f15265c0b51cdb6c524b450aec5d7c460a8d4e"
+}

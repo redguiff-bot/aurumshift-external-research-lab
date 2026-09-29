@@ -1,0 +1,842 @@
+{
+ "run_utc": "2026-09-29T18:25:46.151475Z",
+ "series": {
+  "GDPC1": {
+   "label": "Real GDP",
+   "n_vintages": 418,
+   "first_vintage": "1991-12-04",
+   "last_vintage": "2026-08-26",
+   "vintage_list_receipt": "2026-09-29T18:25:46.606315Z",
+   "latest_receipt": "2026-09-29T18:25:46.791927Z",
+   "lookahead_tests": [
+    {
+     "growth_pct_known_at_T": -0.964789453912096,
+     "growth_pct_latest": -2.189026595298116,
+     "T": "2009-02-15",
+     "asof_vintage_used": "2009-01-30",
+     "last_obs_known_at_T": "2008-10-01",
+     "value_known_at_T": 11599.4,
+     "latest_value_same_obs": 16485.35,
+     "abs_diff": 4885.95,
+     "n_obs_in_2y_window": 8,
+     "n_obs_revised_vs_latest": 8,
+     "first_3_revised": [
+      [
+       "2007-01-01",
+       11357.8,
+       16611.69
+      ],
+      [
+       "2007-04-01",
+       11491.4,
+       16713.314
+      ],
+      [
+       "2007-07-01",
+       11625.7,
+       16809.587
+      ]
+     ],
+     "col": "GDPC1_20090215",
+     "receipt": "2026-09-29T18:25:46.970681Z"
+    },
+    {
+     "growth_pct_known_at_T": 0.31902267177708055,
+     "growth_pct_latest": 0.6765822931436682,
+     "T": "2011-08-15",
+     "asof_vintage_used": "2011-07-29",
+     "last_obs_known_at_T": "2011-04-01",
+     "value_known_at_T": 13270.1,
+     "latest_value_same_obs": 17035.114,
+     "abs_diff": 3765.014,
+     "n_obs_in_2y_window": 10,
+     "n_obs_revised_vs_latest": 10,
+     "first_3_revised": [
+      [
+       "2009-01-01",
+       12663.2,
+       16298.262
+      ],
+      [
+       "2009-04-01",
+       12641.3,
+       16269.145
+      ],
+      [
+       "2009-07-01",
+       12694.5,
+       16326.281
+      ]
+     ],
+     "col": "GDPC1_20110815",
+     "receipt": "2026-09-29T18:25:47.479398Z"
+    },
+    {
+     "growth_pct_known_at_T": 0.4158137565051234,
+     "growth_pct_latest": 0.26763633481292626,
+     "T": "2013-08-15",
+     "asof_vintage_used": "2013-07-31",
+     "last_obs_known_at_T": "2013-04-01",
+     "value_known_at_T": 15648.7,
+     "latest_value_same_obs": 17709.671,
+     "abs_diff": 2060.971,
+     "n_obs_in_2y_window": 10,
+     "n_obs_revised_vs_latest": 10,
+     "first_3_revised": [
+      [
+       "2011-01-01",
+       14894.0,
+       16920.632
+      ],
+      [
+       "2011-04-01",
+       15011.3,
+       17035.114
+      ],
+      [
+       "2011-07-01",
+       15062.1,
+       17031.313
+      ]
+     ],
+     "col": "GDPC1_20130815",
+     "receipt": "2026-09-29T18:25:48.205074Z"
+    },
+    {
+     "growth_pct_known_at_T": 0.9999856472096225,
+     "growth_pct_latest": 0.5308251410129694,
+     "T": "2018-08-15",
+     "asof_vintage_used": "2018-07-27",
+     "last_obs_known_at_T": "2018-04-01",
+     "value_known_at_T": 18507.2,
+     "latest_value_same_obs": 20150.476,
+     "abs_diff": 1643.276,
+     "n_obs_in_2y_window": 10,
+     "n_obs_revised_vs_latest": 10,
+     "first_3_revised": [
+      [
+       "2016-01-01",
+       17523.374,
+       19001.69
+      ],
+      [
+       "2016-04-01",
+       17622.486,
+       19062.709
+      ],
+      [
+       "2016-07-01",
+       17706.705,
+       19197.938
+      ]
+     ],
+     "col": "GDPC1_20180815",
+     "receipt": "2026-09-29T18:25:48.564915Z"
+    }
+   ]
+  },
+  "PAYEMS": {
+   "label": "Nonfarm payrolls",
+   "n_vintages": 859,
+   "first_vintage": "1955-05-06",
+   "last_vintage": "2026-09-04",
+   "vintage_list_receipt": "2026-09-29T18:25:49.052929Z",
+   "latest_receipt": "2026-09-29T18:25:49.246029Z",
+   "lookahead_tests": [
+    {
+     "growth_pct_known_at_T": -0.3852572915824193,
+     "growth_pct_latest": -0.5120221925469015,
+     "T": "2009-01-12",
+     "asof_vintage_used": "2009-01-09",
+     "last_obs_known_at_T": "2008-12-01",
+     "value_known_at_T": 135489.0,
+     "latest_value_same_obs": 134847.0,
+     "abs_diff": -642.0,
+     "n_obs_in_2y_window": 24,
+     "n_obs_revised_vs_latest": 24,
+     "first_3_revised": [
+      [
+       "2007-01-01",
+       137108.0,
+       137472.0
+      ],
+      [
+       "2007-02-01",
+       137133.0,
+       137560.0
+      ],
+      [
+       "2007-03-01",
+       137310.0,
+       137784.0
+      ]
+     ],
+     "col": "PAYEMS_20090112",
+     "receipt": "2026-09-29T18:25:49.467283Z"
+    },
+    {
+     "growth_pct_known_at_T": -0.48430653404653023,
+     "growth_pct_latest": -0.567575832158651,
+     "T": "2009-03-12",
+     "asof_vintage_used": "2009-03-06",
+     "last_obs_known_at_T": "2009-02-01",
+     "value_known_at_T": 133768.0,
+     "latest_value_same_obs": 133318.0,
+     "abs_diff": -450.0,
+     "n_obs_in_2y_window": 26,
+     "n_obs_revised_vs_latest": 26,
+     "first_3_revised": [
+      [
+       "2007-01-01",
+       137180.0,
+       137472.0
+      ],
+      [
+       "2007-02-01",
+       137216.0,
+       137560.0
+      ],
+      [
+       "2007-03-01",
+       137400.0,
+       137784.0
+      ]
+     ],
+     "col": "PAYEMS_20090312",
+     "receipt": "2026-09-29T18:25:49.922960Z"
+    },
+    {
+     "growth_pct_known_at_T": 0.1781775596858992,
+     "growth_pct_latest": 0.21110225534757276,
+     "T": "2014-10-10",
+     "asof_vintage_used": "2014-10-03",
+     "last_obs_known_at_T": "2014-09-01",
+     "value_known_at_T": 139435.0,
+     "latest_value_same_obs": 139563.0,
+     "abs_diff": 128.0,
+     "n_obs_in_2y_window": 33,
+     "n_obs_revised_vs_latest": 33,
+     "first_3_revised": [
+      [
+       "2012-01-01",
+       133188.0,
+       133246.0
+      ],
+      [
+       "2012-02-01",
+       133414.0,
+       133509.0
+      ],
+      [
+       "2012-03-01",
+       133657.0,
+       133748.0
+      ]
+     ],
+     "col": "PAYEMS_20141010",
+     "receipt": "2026-09-29T18:25:50.341834Z"
+    },
+    {
+     "growth_pct_known_at_T": -13.548442427201124,
+     "growth_pct_latest": -13.56506179793896,
+     "T": "2020-05-11",
+     "asof_vintage_used": "2020-05-11",
+     "last_obs_known_at_T": "2020-04-01",
+     "value_known_at_T": 131045.0,
+     "latest_value_same_obs": 130426.0,
+     "abs_diff": -619.0,
+     "n_obs_in_2y_window": 28,
+     "n_obs_revised_vs_latest": 28,
+     "first_3_revised": [
+      [
+       "2018-01-01",
+       147672.0,
+       147660.0
+      ],
+      [
+       "2018-02-01",
+       148078.0,
+       148054.0
+      ],
+      [
+       "2018-03-01",
+       148254.0,
+       148280.0
+      ]
+     ],
+     "col": "PAYEMS_20200511",
+     "receipt": "2026-09-29T18:25:50.733921Z"
+    }
+   ]
+  },
+  "CPIAUCSL": {
+   "label": "CPI SA",
+   "n_vintages": 669,
+   "first_vintage": "1972-07-21",
+   "last_vintage": "2026-09-11",
+   "vintage_list_receipt": "2026-09-29T18:25:51.160007Z",
+   "latest_receipt": "2026-09-29T18:25:51.373517Z",
+   "lookahead_tests": [
+    {
+     "growth_pct_known_at_T": -0.7368816295879044,
+     "growth_pct_latest": -0.8233522399403226,
+     "T": "2009-01-20",
+     "asof_vintage_used": "2009-01-16",
+     "last_obs_known_at_T": "2008-12-01",
+     "value_known_at_T": 211.49,
+     "latest_value_same_obs": 211.398,
+     "abs_diff": -0.092,
+     "n_obs_in_2y_window": 24,
+     "n_obs_revised_vs_latest": 24,
+     "first_3_revised": [
+      [
+       "2007-01-01",
+       203.552,
+       203.437
+      ],
+      [
+       "2007-02-01",
+       204.158,
+       204.226
+      ],
+      [
+       "2007-03-01",
+       205.098,
+       205.288
+      ]
+     ],
+     "col": "CPIAUCSL_20090120",
+     "receipt": "2026-09-29T18:25:51.569238Z"
+    },
+    {
+     "growth_pct_known_at_T": -0.6801137614057651,
+     "growth_pct_latest": -0.6370316441765556,
+     "T": "2015-03-01",
+     "asof_vintage_used": "2015-02-26",
+     "last_obs_known_at_T": "2015-01-01",
+     "value_known_at_T": 234.677,
+     "latest_value_same_obs": 234.747,
+     "abs_diff": 0.07,
+     "n_obs_in_2y_window": 25,
+     "n_obs_revised_vs_latest": 25,
+     "first_3_revised": [
+      [
+       "2013-01-01",
+       231.444,
+       231.679
+      ],
+      [
+       "2013-02-01",
+       232.803,
+       232.937
+      ],
+      [
+       "2013-03-01",
+       232.245,
+       232.282
+      ]
+     ],
+     "col": "CPIAUCSL_20150301",
+     "receipt": "2026-09-29T18:25:52.084404Z"
+    },
+    {
+     "growth_pct_known_at_T": 1.3222448657513208,
+     "growth_pct_latest": 1.2561019986405686,
+     "T": "2022-07-15",
+     "asof_vintage_used": "2022-07-13",
+     "last_obs_known_at_T": "2022-06-01",
+     "value_known_at_T": 295.328,
+     "latest_value_same_obs": 294.957,
+     "abs_diff": -0.371,
+     "n_obs_in_2y_window": 30,
+     "n_obs_revised_vs_latest": 30,
+     "first_3_revised": [
+      [
+       "2020-01-01",
+       258.682,
+       259.127
+      ],
+      [
+       "2020-02-01",
+       259.007,
+       259.25
+      ],
+      [
+       "2020-03-01",
+       258.165,
+       258.076
+      ]
+     ],
+     "col": "CPIAUCSL_20220715",
+     "receipt": "2026-09-29T18:25:52.818694Z"
+    },
+    {
+     "growth_pct_known_at_T": 0.4420620953549559,
+     "growth_pct_latest": 0.40975401843086345,
+     "T": "2024-03-15",
+     "asof_vintage_used": "2024-03-12",
+     "last_obs_known_at_T": "2024-02-01",
+     "value_known_at_T": 311.054,
+     "latest_value_same_obs": 310.967,
+     "abs_diff": -0.087,
+     "n_obs_in_2y_window": 26,
+     "n_obs_revised_vs_latest": 26,
+     "first_3_revised": [
+      [
+       "2022-01-01",
+       282.39,
+       282.543
+      ],
+      [
+       "2022-02-01",
+       284.535,
+       284.5
+      ],
+      [
+       "2022-03-01",
+       287.553,
+       287.674
+      ]
+     ],
+     "col": "CPIAUCSL_20240315",
+     "receipt": "2026-09-29T18:25:53.206924Z"
+    }
+   ]
+  },
+  "CPIAUCNS": {
+   "label": "CPI NSA (never-revised control)",
+   "n_vintages": 931,
+   "first_vintage": "1949-03-24",
+   "last_vintage": "2026-09-11",
+   "vintage_list_receipt": "2026-09-29T18:25:53.676402Z",
+   "latest_receipt": "2026-09-29T18:25:53.907019Z",
+   "lookahead_tests": [
+    {
+     "growth_pct_known_at_T": -1.0342473814287434,
+     "growth_pct_latest": -1.0342473814287434,
+     "T": "2009-01-20",
+     "asof_vintage_used": "2009-01-16",
+     "last_obs_known_at_T": "2008-12-01",
+     "value_known_at_T": 210.228,
+     "latest_value_same_obs": 210.228,
+     "abs_diff": 0.0,
+     "n_obs_in_2y_window": 24,
+     "n_obs_revised_vs_latest": 0,
+     "first_3_revised": [],
+     "col": "CPIAUCNS_20090120",
+     "receipt": "2026-09-29T18:25:54.107555Z"
+    },
+    {
+     "growth_pct_known_at_T": 1.3736075758819855,
+     "growth_pct_latest": 1.3736075758819855,
+     "T": "2022-07-15",
+     "asof_vintage_used": "2022-07-13",
+     "last_obs_known_at_T": "2022-06-01",
+     "value_known_at_T": 296.311,
+     "latest_value_same_obs": 296.311,
+     "abs_diff": 0.0,
+     "n_obs_in_2y_window": 30,
+     "n_obs_revised_vs_latest": 0,
+     "first_3_revised": [],
+     "col": "CPIAUCNS_20220715",
+     "receipt": "2026-09-29T18:25:54.482055Z"
+    }
+   ]
+  },
+  "INDPRO": {
+   "label": "Industrial production",
+   "n_vintages": 1223,
+   "first_vintage": "1927-01-26",
+   "last_vintage": "2026-09-18",
+   "vintage_list_receipt": "2026-09-29T18:25:54.958409Z",
+   "latest_receipt": "2026-09-29T18:25:55.246016Z",
+   "lookahead_tests": [
+    {
+     "growth_pct_known_at_T": -2.0013754312412146,
+     "growth_pct_latest": -2.819896973943936,
+     "T": "2009-01-20",
+     "asof_vintage_used": "2009-01-16",
+     "last_obs_known_at_T": "2008-12-01",
+     "value_known_at_T": 103.5966,
+     "latest_value_same_obs": 90.8357,
+     "abs_diff": -12.7609,
+     "n_obs_in_2y_window": 24,
+     "n_obs_revised_vs_latest": 24,
+     "first_3_revised": [
+      [
+       "2007-01-01",
+       109.7791,
+       99.8346
+      ],
+      [
+       "2007-02-01",
+       110.5181,
+       100.7753
+      ],
+      [
+       "2007-03-01",
+       110.4036,
+       100.9547
+      ]
+     ],
+     "col": "INDPRO_20090120",
+     "receipt": "2026-09-29T18:25:55.492018Z"
+    },
+    {
+     "growth_pct_known_at_T": -0.004763231168924964,
+     "growth_pct_latest": -0.5177723960984593,
+     "T": "2012-05-01",
+     "asof_vintage_used": "2012-04-17",
+     "last_obs_known_at_T": "2012-03-01",
+     "value_known_at_T": 96.5685,
+     "latest_value_same_obs": 96.74,
+     "abs_diff": 0.1715,
+     "n_obs_in_2y_window": 27,
+     "n_obs_revised_vs_latest": 27,
+     "first_3_revised": [
+      [
+       "2010-01-01",
+       87.4142,
+       89.3426
+      ],
+      [
+       "2010-02-01",
+       87.7686,
+       89.6779
+      ],
+      [
+       "2010-03-01",
+       88.3369,
+       90.2928
+      ]
+     ],
+     "col": "INDPRO_20120501",
+     "receipt": "2026-09-29T18:25:55.879889Z"
+    },
+    {
+     "growth_pct_known_at_T": -0.5114672357533157,
+     "growth_pct_latest": -0.584880588904857,
+     "T": "2019-06-10",
+     "asof_vintage_used": "2019-05-15",
+     "last_obs_known_at_T": "2019-04-01",
+     "value_known_at_T": 109.1818,
+     "latest_value_same_obs": 102.274,
+     "abs_diff": -6.9078,
+     "n_obs_in_2y_window": 28,
+     "n_obs_revised_vs_latest": 28,
+     "first_3_revised": [
+      [
+       "2017-01-01",
+       103.0366,
+       98.7611
+      ],
+      [
+       "2017-02-01",
+       102.6479,
+       98.3646
+      ],
+      [
+       "2017-03-01",
+       103.343,
+       99.0137
+      ]
+     ],
+     "col": "INDPRO_20190610",
+     "receipt": "2026-09-29T18:25:56.311246Z"
+    },
+    {
+     "growth_pct_known_at_T": -0.19899993210478195,
+     "growth_pct_latest": -0.31134817212471466,
+     "T": "2022-08-01",
+     "asof_vintage_used": "2022-07-15",
+     "last_obs_known_at_T": "2022-06-01",
+     "value_known_at_T": 104.3648,
+     "latest_value_same_obs": 101.018,
+     "abs_diff": -3.3468,
+     "n_obs_in_2y_window": 30,
+     "n_obs_revised_vs_latest": 30,
+     "first_3_revised": [
+      [
+       "2020-01-01",
+       101.303,
+       101.0338
+      ],
+      [
+       "2020-02-01",
+       101.7038,
+       101.3735
+      ],
+      [
+       "2020-03-01",
+       97.8746,
+       97.4078
+      ]
+     ],
+     "col": "INDPRO_20220801",
+     "receipt": "2026-09-29T18:25:56.722912Z"
+    }
+   ]
+  },
+  "UNRATE": {
+   "label": "Unemployment rate",
+   "n_vintages": 799,
+   "first_vintage": "1960-03-15",
+   "last_vintage": "2026-09-04",
+   "vintage_list_receipt": "2026-09-29T18:25:58.265591Z",
+   "latest_receipt": "2026-09-29T18:25:58.453467Z",
+   "lookahead_tests": [
+    {
+     "growth_pct_known_at_T": 5.882352941176472,
+     "growth_pct_latest": 7.352941176470584,
+     "T": "2009-01-12",
+     "asof_vintage_used": "2009-01-09",
+     "last_obs_known_at_T": "2008-12-01",
+     "value_known_at_T": 7.2,
+     "latest_value_same_obs": 7.3,
+     "abs_diff": 0.1,
+     "n_obs_in_2y_window": 24,
+     "n_obs_revised_vs_latest": 11,
+     "first_3_revised": [
+      [
+       "2007-05-01",
+       4.5,
+       4.4
+      ],
+      [
+       "2007-08-01",
+       4.7,
+       4.6
+      ],
+      [
+       "2007-10-01",
+       4.8,
+       4.7
+      ]
+     ],
+     "col": "UNRATE_20090112",
+     "receipt": "2026-09-29T18:25:58.690447Z"
+    },
+    {
+     "growth_pct_known_at_T": -3.0000000000000027,
+     "growth_pct_latest": -1.0101010101010055,
+     "T": "2010-03-01",
+     "asof_vintage_used": "2010-02-05",
+     "last_obs_known_at_T": "2010-01-01",
+     "value_known_at_T": 9.7,
+     "latest_value_same_obs": 9.8,
+     "abs_diff": 0.1,
+     "n_obs_in_2y_window": 25,
+     "n_obs_revised_vs_latest": 16,
+     "first_3_revised": [
+      [
+       "2008-02-01",
+       4.8,
+       4.9
+      ],
+      [
+       "2008-06-01",
+       5.5,
+       5.6
+      ],
+      [
+       "2008-09-01",
+       6.2,
+       6.1
+      ]
+     ],
+     "col": "UNRATE_20100301",
+     "receipt": "2026-09-29T18:25:59.090373Z"
+    },
+    {
+     "growth_pct_known_at_T": 234.09090909090904,
+     "growth_pct_latest": 236.36363636363632,
+     "T": "2020-05-11",
+     "asof_vintage_used": "2020-05-08",
+     "last_obs_known_at_T": "2020-04-01",
+     "value_known_at_T": 14.7,
+     "latest_value_same_obs": 14.8,
+     "abs_diff": 0.1,
+     "n_obs_in_2y_window": 28,
+     "n_obs_revised_vs_latest": 8,
+     "first_3_revised": [
+      [
+       "2018-01-01",
+       4.1,
+       4.0
+      ],
+      [
+       "2018-11-01",
+       3.7,
+       3.8
+      ],
+      [
+       "2019-04-01",
+       3.6,
+       3.7
+      ]
+     ],
+     "col": "UNRATE_20200511",
+     "receipt": "2026-09-29T18:25:59.779788Z"
+    }
+   ]
+  },
+  "WCESTUS1": {
+   "label": "Weekly US crude stocks (EIA) - NOT on FRED/ALFRED (HTML error page returned)",
+   "unavailable": true,
+   "n_vintages": 0,
+   "latest_receipt": "2026-09-29T18:26:00.771180Z"
+  },
+  "DCOILWTICO": {
+   "label": "WTI spot daily (EIA-sourced)",
+   "n_vintages": 799,
+   "first_vintage": "2011-04-06",
+   "last_vintage": "2026-09-23",
+   "vintage_list_receipt": "2026-09-29T18:26:01.004201Z",
+   "latest_receipt": "2026-09-29T18:26:01.244414Z",
+   "lookahead_tests": [
+    {
+     "growth_pct_known_at_T": -4.736297828335056,
+     "growth_pct_latest": -4.736297828335056,
+     "T": "2015-01-15",
+     "asof_vintage_used": "2015-01-14",
+     "last_obs_known_at_T": "2015-01-12",
+     "value_known_at_T": 46.06,
+     "latest_value_same_obs": 46.06,
+     "abs_diff": 0.0,
+     "n_obs_in_2y_window": 511,
+     "n_obs_revised_vs_latest": 0,
+     "first_3_revised": [],
+     "col": "DCOILWTICO_20150115",
+     "receipt": "2026-09-29T18:26:01.483081Z"
+    },
+    {
+     "growth_pct_known_at_T": -0.6461884247986438,
+     "growth_pct_latest": -0.6461884247986438,
+     "T": "2022-07-15",
+     "asof_vintage_used": "2022-07-13",
+     "last_obs_known_at_T": "2022-07-11",
+     "value_known_at_T": 106.09,
+     "latest_value_same_obs": 106.09,
+     "abs_diff": 0.0,
+     "n_obs_in_2y_window": 633,
+     "n_obs_revised_vs_latest": 0,
+     "first_3_revised": [],
+     "col": "DCOILWTICO_20220715",
+     "receipt": "2026-09-29T18:26:01.859577Z"
+    }
+   ]
+  },
+  "PCEPI": {
+   "label": "PCE price index",
+   "n_vintages": 315,
+   "first_vintage": "2000-08-01",
+   "last_vintage": "2026-08-26",
+   "vintage_list_receipt": "2026-09-29T18:26:02.325107Z",
+   "latest_receipt": "2026-09-29T18:26:02.558423Z",
+   "lookahead_tests": [
+    {
+     "growth_pct_known_at_T": 0.2080083203328309,
+     "growth_pct_latest": 0.19127773527161107,
+     "T": "2012-05-01",
+     "asof_vintage_used": "2012-04-30",
+     "last_obs_known_at_T": "2012-03-01",
+     "value_known_at_T": 115.62,
+     "latest_value_same_obs": 94.284,
+     "abs_diff": -21.336,
+     "n_obs_in_2y_window": 27,
+     "n_obs_revised_vs_latest": 27,
+     "first_3_revised": [
+      [
+       "2010-01-01",
+       110.654,
+       90.136
+      ],
+      [
+       "2010-02-01",
+       110.747,
+       90.134
+      ],
+      [
+       "2010-03-01",
+       110.921,
+       90.261
+      ]
+     ],
+     "col": "PCEPI_20120501",
+     "receipt": "2026-09-29T18:26:03.000400Z"
+    },
+    {
+     "growth_pct_known_at_T": 0.587609919316967,
+     "growth_pct_latest": 0.6210152248893985,
+     "T": "2022-07-15",
+     "asof_vintage_used": "2022-06-30",
+     "last_obs_known_at_T": "2022-05-01",
+     "value_known_at_T": 122.052,
+     "latest_value_same_obs": 115.525,
+     "abs_diff": -6.527,
+     "n_obs_in_2y_window": 29,
+     "n_obs_revised_vs_latest": 29,
+     "first_3_revised": [
+      [
+       "2020-01-01",
+       111.002,
+       104.49
+      ],
+      [
+       "2020-02-01",
+       111.071,
+       104.573
+      ],
+      [
+       "2020-03-01",
+       110.802,
+       104.271
+      ]
+     ],
+     "col": "PCEPI_20220715",
+     "receipt": "2026-09-29T18:26:03.685488Z"
+    }
+   ]
+  },
+  "DFF": {
+   "label": "Fed funds effective (control)",
+   "n_vintages": 5133,
+   "first_vintage": "2005-06-28",
+   "last_vintage": "2026-09-28",
+   "vintage_list_receipt": "2026-09-29T18:26:04.880197Z",
+   "latest_receipt": "2026-09-29T18:26:05.156988Z",
+   "lookahead_tests": [
+    {
+     "growth_pct_known_at_T": 0.0,
+     "growth_pct_latest": 0.0,
+     "T": "2015-01-15",
+     "asof_vintage_used": "2015-01-15",
+     "last_obs_known_at_T": "2015-01-14",
+     "value_known_at_T": 0.12,
+     "latest_value_same_obs": 0.12,
+     "abs_diff": 0.0,
+     "n_obs_in_2y_window": 744,
+     "n_obs_revised_vs_latest": 0,
+     "first_3_revised": [],
+     "col": "DFF_20150115",
+     "receipt": "2026-09-29T18:26:05.775044Z"
+    },
+    {
+     "growth_pct_known_at_T": 0.0,
+     "growth_pct_latest": 0.0,
+     "T": "2022-07-15",
+     "asof_vintage_used": "2022-07-15",
+     "last_obs_known_at_T": "2022-07-14",
+     "value_known_at_T": 1.58,
+     "latest_value_same_obs": 1.58,
+     "abs_diff": 0.0,
+     "n_obs_in_2y_window": 926,
+     "n_obs_revised_vs_latest": 0,
+     "first_3_revised": [],
+     "col": "DFF_20220715",
+     "receipt": "2026-09-29T18:26:06.633466Z"
+    }
+   ]
+  }
+ }
+}

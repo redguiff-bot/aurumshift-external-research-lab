@@ -1,0 +1,24 @@
+{
+ "url": "https://www.bankofengland.co.uk/boeapps/database/fromshowcolumns.asp?csv.x=yes&SeriesCodes=IUDBEDR&CSVF=TN&Datefrom=01/Jan/2026&Dateto=now",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:22:56.801737Z",
+ "request_time_utc": "2026-09-29T18:22:55.518699Z",
+ "latency_s": 1.283,
+ "headers": {
+  "Content-Type": "text/html",
+  "Server": "Microsoft-IIS/10.0",
+  "X-Powered-By": "ASP.NET",
+  "X-Akamai-Transformed": "9 4404 0 pmb=mRUM,2",
+  "Vary": "Accept-Encoding",
+  "Cache-Control": "private, max-age=60",
+  "Expires": "Tue, 29 Sep 2026 18:23:56 GMT",
+  "Date": "Tue, 29 Sep 2026 18:22:56 GMT",
+  "Content-Length": "18668",
+  "Connection": "close",
+  "Set-Cookie": "ASPSESSIONIDQGQSCATA=PMJLCGHBBOLADHDMOOFFJMFN; secure; path=/",
+  "Server-Timing": "cdn-cache; desc=REVALIDATE",
+  "X-Akam-SW-Version": "0.5.0"
+ },
+ "bytes": 18668,
+ "sha256": "910af2b4b82a30ad495a15e3e575b32b31b201591b21c6febb451ba1a365fcdf"
+}

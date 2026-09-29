@@ -1,0 +1,29 @@
+{
+ "url": "https://api.worldbank.org/v2/sources?format=json&per_page=100",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:29:22.401985Z",
+ "request_time_utc": "2026-09-29T18:29:22.171884Z",
+ "latency_s": 0.23,
+ "headers": {
+  "Date": "Tue, 29 Sep 2026 18:29:22 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "set-cookie": "__cf_bm=vAdvJm4VJ75hgfWs4Z5MHs8nUuS9zgG.W2.8vs8iEoU-1790706562.3742986-1.0.1.1-hCfUh00p8NwtsPke2YT0oKvRLh85pHu92leh940GMaD2UM6Jf016nJ3WwFGue9h8AGfTPV9_bY2XQXpRH452KPZ_aomaxfP2_p1hO0TA46V0hLyTdqUSc_aFfGymkrIE; HttpOnly; SameSite=None; Secure; Path=/; Domain=worldbank.org; Expires=Tue, 29 Sep 2026 18:59:22 GMT",
+  "CF-Ray": "a42d0d8ede42d6c3-IAD",
+  "CF-Cache-Status": "HIT",
+  "Access-Control-Allow-Origin": "*",
+  "Age": "59197",
+  "Cache-Control": "public, max-age=69134",
+  "Expires": "Wed, 30 Sep 2026 13:41:36 GMT",
+  "Last-Modified": "Mon, 28 Sep 2026 21:14:59 GMT",
+  "Server": "cloudflare",
+  "Vary": "accept-encoding",
+  "Access-Control-Allow-Headers": "X-Requested-With",
+  "Access-Control-Allow-Methods": "GET",
+  "Request-Context": "appId=cid-v1:da002513-bd8b-4441-9f30-737944134422",
+  "X-Powered-By": "ASP.NET"
+ },
+ "bytes": 13048,
+ "sha256": "2ec6136601037418d4c5f8a1218066f283de739e5387dff703ce53d5b6db3c34"
+}

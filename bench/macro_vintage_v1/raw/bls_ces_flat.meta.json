@@ -1,0 +1,10 @@
+{
+ "url": "https://download.bls.gov/pub/time.series/ce/ce.data.0.AllCESSeries",
+ "status": -1,
+ "receipt_time_utc": "2026-09-29T18:23:36.879334Z",
+ "request_time_utc": "2026-09-29T18:23:27.693592Z",
+ "latency_s": 9.186,
+ "headers": {},
+ "bytes": 36,
+ "sha256": "d8fb4a2d48a0c31dce7a1dd9bddb3b9684caad3af72adb2b5c8fef18da93fa7c"
+}

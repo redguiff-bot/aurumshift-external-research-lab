@@ -1,0 +1,24 @@
+{
+ "url": "https://alfred.stlouisfed.org/series/downloaddata?seid=GDPC1",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:22:44.639409Z",
+ "request_time_utc": "2026-09-29T18:22:44.245307Z",
+ "latency_s": 0.394,
+ "headers": {
+  "Content-Type": "text/html; charset=UTF-8",
+  "Server": "Apache",
+  "x-frame-options": "SAMEORIGIN",
+  "X-Akamai-Transformed": "0 - 0 -",
+  "Vary": "Accept-Encoding",
+  "Expires": "Tue, 29 Sep 2026 18:31:31 GMT",
+  "Date": "Tue, 29 Sep 2026 18:22:44 GMT",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=86400",
+  "X-location": "cfs",
+  "Set-Cookie": "_abck=9C5D82DCB683D979EA78599DA7AED7D6~-1~YAAQ5QwDFx57StigAQAAgqNn7hD4QguWCevWnYTE6QXFUVbVZyVYovJC7QHnJAYI3A1RWsjSXkQMcsR5Ic2U/wt51J5lxai2mLDrK/HFPx/rjy1AKSqlvKV9SCowC4v3rDnDATkCaJVycI6IKoZ/GIXQ3x7MY/N0EmFUhTgjF/LHZbIqz8LsOhA3urA4AWYkrV67DJOnUa18AUWa20gLOv+iGqPJllI52jJAl74GyaMIY4dX380k2jsndWZY7VYFWxR15pTpFDspWOtG8iZNho7FHirYpNMSChx6jLUsoaly8yvUeTW3XeLEbKT9St1t4K1Ob2IcfM9KZz5MoH7QspZHEOISqSN4gOvNXtJTFwOS+EmavYfZhVwCtB75a2U9HsbWnncyuirMEidbw58+zbtYBhp895VRWo5HfP39nLRWuBVgTvZCQ3akJJyWI/U0GZN/Q+/WZGPO~-1~-1~-1~-1~-1; Domain=.stlouisfed.org; Path=/; Expires=Wed, 29 Sep 2027 18:22:44 GMT; Max-Age=31536000; Secure"
+ },
+ "bytes": 64878,
+ "sha256": "b1f4a699b9f486248ad799688bdf26fd901b218ff0f9c431f2c70d00ccf5544f"
+}

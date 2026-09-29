@@ -1,0 +1,28 @@
+{
+ "url": "https://markets.newyorkfed.org/api/rates/secured/sofr/last/3.json",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:22:49.997092Z",
+ "request_time_utc": "2026-09-29T18:22:49.396479Z",
+ "latency_s": 0.601,
+ "headers": {
+  "Content-Type": "application/json;charset=utf-8",
+  "x-request-id": "UNK-f5a02ed0-4eab-4d32-946e-9af98090f8f0",
+  "strict-transport-security": "max-age=31536000; includeSubDomains",
+  "Access-Control-Expose-Headers": "Content-Disposition",
+  "x-xss-protection": "1; mode=block",
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "OPTIONS,GET",
+  "x-frame-options": "SAMEORIGIN",
+  "Pragma": "no-cache",
+  "Access-Control-Allow-Headers": "Content-Type,Content-Disposition",
+  "x-content-type-options": "nosniff",
+  "x-correlation-id": "c6be1a10-bc32-11f1-ad3d-02ffe5fae649",
+  "Vary": "Accept-Encoding",
+  "Cache-Control": "no-store",
+  "Date": "Tue, 29 Sep 2026 18:22:50 GMT",
+  "Content-Length": "732",
+  "Connection": "close"
+ },
+ "bytes": 732,
+ "sha256": "dff2ec13c3256d2f2796fb6c204a94ec6c18de48a86efefe2657bcc23bf2b5d0"
+}

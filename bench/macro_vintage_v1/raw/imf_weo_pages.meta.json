@@ -1,0 +1,23 @@
+{
+ "url": "https://www.imf.org/en/Publications/WEO/weo-database/2026/April",
+ "status": 403,
+ "receipt_time_utc": "2026-09-29T18:29:23.548065Z",
+ "request_time_utc": "2026-09-29T18:29:23.258502Z",
+ "latency_s": 0.29,
+ "headers": {
+  "Server": "AkamaiGHost",
+  "Mime-Version": "1.0",
+  "Content-Type": "text/html",
+  "Content-Length": "432",
+  "Expires": "Tue, 29 Sep 2026 18:29:23 GMT",
+  "X-Reference-Error": "18.97623017.1790706563.10ac3a13",
+  "Date": "Tue, 29 Sep 2026 18:29:23 GMT",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=31536000",
+  "Akamai-GRN": "0.97623017.1790706563.10ac3a13",
+  "Set-Cookie": "bm_s=YAAQl2IwF1NfUdWgAQAA8blt7gY6o5ci1ehKaLAuE48iVc8PqH17wT9A4CV5tmSf3V7vcsETXdVQhWcttPcFjjplXcbsFJi2dhOeVsa9gg+vOEx9Bgj3Gr6z1CEM27FsptweiQbBakLz+LRy1TzniYWVLmey3oe+WxMWOG2PnHfeTvKQijunWDMJXJ3QMTu4kYFmC7Uje1a04HUz6NmhXZ++TmFiyUFoPlh4IHJrUqsjub+oBagwM1tCt/ASdOeEzGEndx9HdPTvipE6wjV+4kUERj9hJNryrDDDrSMuvcWdkYBgr4IkxAFaUDHKHGpxOyL4u7zgfVFDTSFJLqmS4SCUleRHksG6T7izpZGWNJmH3+g0RwQsON3Lq8iBDDpIG87AXNVA7bwuHa+8o4hELl6KMJYVpL3YBUS9KGKr4Ba/Rq5h1TIvDitieySIoUsUFq/b16omEE+GO/2ObNnsQ915biG5aUyDnNNgElPwuscTok7WfMNKdpIIp9qBoUzzmwYbb6r0lgc4hDeJWuP43fShZ/ojTrbOm/FWOu4MuGRV/JJ6q822OJV3n3Ejb47T6N/ZJVEbB27X2dlmatQu2hs=; Domain=.imf.org; Path=/; Expires=Fri, 30 Oct 2026 18:29:23 GMT; Max-Age=2678400; Secure; HttpOnly"
+ },
+ "bytes": 432,
+ "sha256": "5dd656920000559529b50cdf1101045e0989f72e3850653cf3b4ecbeab44d954"
+}

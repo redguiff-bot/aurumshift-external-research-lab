@@ -1,0 +1,24 @@
+{
+ "url": "https://www.imf.org/external/datamapper/api/v1/NGDP_RPCH/USA",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:29:41.614685Z",
+ "request_time_utc": "2026-09-29T18:29:23.549283Z",
+ "latency_s": 18.066,
+ "headers": {
+  "Content-Type": "application/json",
+  "X-Content-Type-Options": "nosniff",
+  "X-Frame-Options": "SAMEORIGIN",
+  "X-Permitted-Cross-Domain-Policies": "none",
+  "X-XSS-Protection": "1; mode=block",
+  "Content-Security-Policy": "upgrade-insecure-requests",
+  "Content-Length": "121723",
+  "Date": "Tue, 29 Sep 2026 18:29:41 GMT",
+  "Connection": "close",
+  "Set-Cookie": "cookie_persistence=!aX/4UU1FxrtzYpMunoUVdMrVwevRwqVWqYhYOtcxii1eXxvVB7GddnyEk3YeXKiuI70okEwdW6/wIg==; path=/; Httponly; Secure",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=31536000",
+  "Akamai-GRN": "0.97623017.1790706563.10ac3c32"
+ },
+ "bytes": 121723,
+ "sha256": "89d085de2b676f1d612d53633b6c2d5aaeb6233b1f42094c6c7a5b23078f880f"
+}

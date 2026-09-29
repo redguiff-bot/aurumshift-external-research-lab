@@ -1,0 +1,22 @@
+{
+ "url": "https://www.eia.gov/petroleum/supply/weekly/schedule.php",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:22:49.395338Z",
+ "request_time_utc": "2026-09-29T18:22:49.016622Z",
+ "latency_s": 0.379,
+ "headers": {
+  "Content-Type": "text/html; charset=UTF-8",
+  "Server": "Microsoft-IIS/10.0",
+  "X-Powered-By": "ASP.NET",
+  "Strict-Transport-Security": "max-age=31536000",
+  "Content-Length": "52318",
+  "Expires": "Tue, 29 Sep 2026 18:22:49 GMT",
+  "Cache-Control": "max-age=0, no-cache, no-store",
+  "Pragma": "no-cache",
+  "Date": "Tue, 29 Sep 2026 18:22:49 GMT",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600"
+ },
+ "bytes": 52318,
+ "sha256": "49e403abf2421712804d84f109c11ca1a898cc97d1b2adc0d4814abb8264d455"
+}

@@ -1,0 +1,26 @@
+{
+ "url": "https://fred.stlouisfed.org/releases/calendar",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:22:44.911330Z",
+ "request_time_utc": "2026-09-29T18:22:44.639902Z",
+ "latency_s": 0.271,
+ "headers": {
+  "Content-Type": "text/html; charset=UTF-8",
+  "Server": "Apache",
+  "x-frame-options": "SAMEORIGIN",
+  "x-content-type-options": "nosniff",
+  "x-xss-protection": "1; mode=block",
+  "X-Akamai-Transformed": "0 - 0 -",
+  "Vary": "Accept-Encoding",
+  "Expires": "Tue, 29 Sep 2026 18:31:55 GMT",
+  "Date": "Tue, 29 Sep 2026 18:22:44 GMT",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=86400",
+  "X-location": "cfs",
+  "Set-Cookie": "_abck=E2BBA2E2E489ADD8BC3D6E956ABF8A32~-1~YAAQCVPRFwyN8dKgAQAAmaRn7hBba5/zllVgYdl9oTfmr7hvPCZ3OrvvXw7yBXxwPkOZvVKtOeFgfluB1HN8f8ahTTdp3IlVnQP0BhqfW14awwAoL34wrpLp9P8xMQzPsZV3WB08CNcrn5RpbBxl3e36L+ttO3kIAqKgol/JaWPSUUuiuFt+VwQwYBy3JVMgWmOCvkZmtkszep/lBtgfzshs6xpuQmrNzacfgAeb9fdrwbj9fgXkaAk7ypbIhe+uukFoOrU0EYqGpBP+5dOFdRUI6fCknxQ8p3RA8k4iCuKwZqbYxkfoy/irBJ33w8F8ITRq+1Cw9BaxnLXHvEe3zetWYbS+Ll6SOtut8Kv7qtw5FPgsr7uP3S4fcbPe1c/icVL33y3LqyE1jBi82KlSi85l4tkP8a3UY9TqS5Xv6WBYU1TgfbzICm7MM1oHIBbfO5O3uSW4ZEpb~-1~-1~-1~-1~-1; Domain=.stlouisfed.org; Path=/; Expires=Wed, 29 Sep 2027 18:22:44 GMT; Max-Age=31536000; Secure"
+ },
+ "bytes": 77114,
+ "sha256": "d1e76a50b36871d9d3b48bac6f2b8ee034dcd4d5fd1d9261d8869c3b0816b903"
+}

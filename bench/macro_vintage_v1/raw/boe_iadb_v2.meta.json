@@ -1,0 +1,22 @@
+{
+ "url": "https://www.bankofengland.co.uk/boeapps/iadb/fromshowcolumns.asp?csv.x=yes&Datefrom=01/Jan/2026&Dateto=now&SeriesCodes=IUDBEDR&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:22:57.601640Z",
+ "request_time_utc": "2026-09-29T18:22:56.802485Z",
+ "latency_s": 0.799,
+ "headers": {
+  "Content-Type": "application/csv",
+  "Server": "Microsoft-IIS/10.0",
+  "content-disposition": "attachment;filename=results.csv",
+  "X-Powered-By": "ASP.NET",
+  "Vary": "Accept-Encoding",
+  "Cache-Control": "private, max-age=14",
+  "Expires": "Tue, 29 Sep 2026 18:23:11 GMT",
+  "Date": "Tue, 29 Sep 2026 18:22:57 GMT",
+  "Content-Length": "3380",
+  "Connection": "close",
+  "Server-Timing": "cdn-cache; desc=HIT"
+ },
+ "bytes": 3380,
+ "sha256": "2b900cd0307a5aa766b8d882474272c6f106393c367b87da90175755129c266f"
+}

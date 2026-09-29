@@ -1,0 +1,24 @@
+{
+ "url": "https://data-api.ecb.europa.eu/service/data/ICP/M.U2.N.000000.4.ANR?updatedAfter=2026-08-01T00:00:00%2B00:00&format=csvdata",
+ "status": 404,
+ "receipt_time_utc": "2026-09-29T18:22:52.877622Z",
+ "request_time_utc": "2026-09-29T18:22:51.533882Z",
+ "latency_s": 1.344,
+ "headers": {
+  "Server": "myracloud",
+  "Date": "Tue, 29 Sep 2026 18:22:52 GMT",
+  "Content-Type": "application/problem+json",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Cache-Control": "max-age=60, proxy-revalidate, no-transform",
+  "Content-Disposition": "",
+  "Last-Modified": "Tue, 29 Sep 2026 18:22:52 GMT",
+  "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+  "Vary": "accept",
+  "X-Content-Type-Options": "nosniff",
+  "X-Frame-Options": "DENY",
+  "X-Xss-Protection": "0"
+ },
+ "bytes": 462,
+ "sha256": "31508977055148ad8f3d538c6918f9826d239bd44783cd7d5d322856c904592f"
+}

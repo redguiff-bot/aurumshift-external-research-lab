@@ -1,0 +1,21 @@
+{
+ "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?page[size]=1&sort=-record_date",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:29:21.619088Z",
+ "request_time_utc": "2026-09-29T18:29:20.854953Z",
+ "latency_s": 0.764,
+ "headers": {
+  "Date": "Tue, 29 Sep 2026 18:29:21 GMT",
+  "Content-Type": "application/json",
+  "Content-Length": "1880",
+  "Connection": "close",
+  "Server": "nginx",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+  "X-Frame-Options": "SAMEORIGIN",
+  "X-XSS-Protection": "1; mode=block",
+  "Access-Control-Allow-Origin": "*",
+  "Set-Cookie": "cookiesession1=678A3E0FA3242D1843AFDA3426F6965C;Expires=Wed, 29 Sep 2027 18:29:21 GMT;Path=/;HttpOnly"
+ },
+ "bytes": 1880,
+ "sha256": "b66f28f353568993cf53141d9ac53ea5f6c2eccfa549f6c5b8f1ceaa87ab99f0"
+}

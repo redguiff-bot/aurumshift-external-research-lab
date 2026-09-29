@@ -1,0 +1,27 @@
+{
+ "url": "https://api.imf.org/external/sdmx/2.1/dataflow",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:29:23.255875Z",
+ "request_time_utc": "2026-09-29T18:29:22.821319Z",
+ "latency_s": 0.435,
+ "headers": {
+  "Date": "Tue, 29 Sep 2026 18:29:23 GMT",
+  "Content-Type": "application/vnd.sdmx.structure+xml;version=2.1",
+  "Content-Length": "444173",
+  "Connection": "close",
+  "Set-Cookie": "ApplicationGatewayAffinityCORS=dca9138616203b0df55300d07b8e6a61; Path=/; SameSite=None; Secure",
+  "x-correlation-id": "f4a5988473931ac1b2ea9c94b73e0498",
+  "x-content-type-options": "nosniff",
+  "x-xss-protection": "0",
+  "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+  "pragma": "no-cache",
+  "expires": "0",
+  "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+  "x-frame-options": "DENY",
+  "x-envoy-upstream-service-time": "109",
+  "server": "istio-envoy",
+  "Request-Context": "appId=cid-v1:e4518baf-f7f4-42d7-900e-7dd820548dc8"
+ },
+ "bytes": 444173,
+ "sha256": "4136a0ba269d9ec371e22120b70a2781a8c59a7e865941c683bdf5b945249c75"
+}

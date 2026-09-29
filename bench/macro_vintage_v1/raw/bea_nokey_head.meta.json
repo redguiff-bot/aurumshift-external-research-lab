@@ -1,0 +1,21 @@
+{
+ "url": "https://apps.bea.gov/api/data?UserID=&method=GETDATASETLIST&ResultFormat=JSON",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:29:43.098435Z",
+ "request_time_utc": "2026-09-29T18:29:42.589570Z",
+ "latency_s": 0.509,
+ "headers": {
+  "Date": "Tue, 29 Sep 2026 18:29:43 GMT",
+  "Content-Type": "application/json",
+  "Content-Length": "309",
+  "Connection": "close",
+  "Strict-Transport-Security": "max-age=2592000",
+  "X-Powered-By": "ASP.NET",
+  "X-Frame-Options": "SAMEORIGIN",
+  "x-azure-ref": "20260929T182942Z-16dd9bcdcdb9fhn8hC1DTT47fs0000001050000000008t3q",
+  "X-Cache": "CONFIG_NOCACHE",
+  "Accept-Ranges": "bytes"
+ },
+ "bytes": 309,
+ "sha256": "c7b50db238902dbff1423876c9e1bee0ab40f5962eb1bffe9aaa525152bfc839"
+}

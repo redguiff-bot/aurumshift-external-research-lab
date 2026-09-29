@@ -1,0 +1,27 @@
+{
+ "url": "https://sdmx.oecd.org/public/rest/dataflow/all",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:23:26.021480Z",
+ "request_time_utc": "2026-09-29T18:23:25.575474Z",
+ "latency_s": 0.446,
+ "headers": {
+  "Date": "Tue, 29 Sep 2026 18:23:25 GMT",
+  "Content-Type": "application/vnd.sdmx.structure+xml; version=2.1; charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Cache-Control": "public,max-age=86400",
+  "Last-Modified": "2026-09-17",
+  "Vary": "Accept, Accept-Language, Accept-Encoding, Accept-Charset,Accept,Accept-Encoding,Accept-Encoding",
+  "Strict-Transport-Security": "max-age=2592000",
+  "api-supported-versions": "1",
+  "X-Server-Node": "Server 3",
+  "set-cookie": "__cf_bm=6V6kv6EVQvkm0DlMCO.cSGkzP0PNl6ZrC_MzyBGqJyQ-1790706205.7651808-1.0.1.1-dFtPV93ksmRYmoWMDn0Y2VmJteel3VHZ7vjU05OQNNkjibNxqCvYmrmeme4j0VaOzk.shEV1VueDudUWP5vgxXS4aMpCv1PKCU6jCUMzgVUtfUv7GpQEk4Y5RopjpQP7; HttpOnly; SameSite=None; Secure; Path=/; Domain=oecd.org; Expires=Tue, 29 Sep 2026 18:53:25 GMT",
+  "Age": "25222",
+  "cf-cache-status": "HIT",
+  "Server": "cloudflare",
+  "CF-RAY": "a42d04da0ec74a43-IAD",
+  "alt-svc": "h3=\":443\"; ma=86400"
+ },
+ "bytes": 8909296,
+ "sha256": "a1247e5f2a8f11a91c2f08a4a4c7453a1b14661916c628da9a64ae0dc8ee5b53"
+}

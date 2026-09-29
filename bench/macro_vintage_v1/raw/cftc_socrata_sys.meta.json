@@ -1,0 +1,28 @@
+{
+ "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json?$select=report_date_as_yyyy_mm_dd,:updated_at,:created_at,:id&$limit=3&$order=report_date_as_yyyy_mm_dd%20DESC",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:29:22.171165Z",
+ "request_time_utc": "2026-09-29T18:29:21.619865Z",
+ "latency_s": 0.552,
+ "headers": {
+  "Server": "nginx",
+  "Date": "Tue, 29 Sep 2026 18:29:22 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Access-Control-Allow-Origin": "*",
+  "ETag": "W/\"aG90ZWwuNTEzMDVfM18zOTF2U2UyWS1FSkJZdnBDUGNnV3VMQTFaeER4dTg---gzipLoX8_a_LBy7TD1aCDWjFfN_t2Ug--gzip--gzip\"",
+  "X-SODA2-Fields": "[\"report_date_as_yyyy_mm_dd\",\":updated_at\",\":created_at\",\":id\"]",
+  "X-SODA2-Types": "[\"floating_timestamp\",\"fixed_timestamp\",\"fixed_timestamp\",\"row_identifier\"]",
+  "X-SODA2-Data-Out-Of-Date": "false",
+  "X-SODA2-Truth-Last-Modified": "Fri, 25 Sep 2026 19:30:08 GMT",
+  "X-SODA2-Secondary-Last-Modified": "Fri, 25 Sep 2026 19:30:08 GMT",
+  "Last-Modified": "Fri, 25 Sep 2026 19:30:08 GMT",
+  "Vary": "Accept-Encoding",
+  "X-Socrata-Region": "aws-us-east-1-fedramp-prod",
+  "X-Socrata-RequestId": "16fab82ce7fdc56d983aec244045b38f",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+ },
+ "bytes": 499,
+ "sha256": "fae8a70ac70cf617a937c54b676bcffbe4799db0f223636874549d6e4dbd3071"
+}

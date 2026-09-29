@@ -1,0 +1,5 @@
+{"note":"UNOFFICIAL aggregator, executed only as comparator via MCP tool get_economic_calendar (daysBack=14, daysForward=2, US, High/Medium, limit 8), receipt 2026-09-29",
+ "fields_observed":["event","country","impact","time (ISO, no tz suffix)","actual","estimate","prev","unit"],
+ "absent":["provider event id","revision timestamp","vintage/as-of","publication vs receipt timestamp","source attribution"],
+ "anomaly":"'API Crude Oil Stock Change' appears twice (2026-09-15T20:30:00 and T21:00:00) with identical values",
+ "sample":[{"event":"Retail Sales MoM","time":"2026-09-16T12:30:00","actual":1.2,"estimate":0.8,"prev":-0.6},{"event":"NY Empire State Manufacturing Index","time":"2026-09-15T12:30:00","actual":7.6,"estimate":14.75,"prev":20.6}]}

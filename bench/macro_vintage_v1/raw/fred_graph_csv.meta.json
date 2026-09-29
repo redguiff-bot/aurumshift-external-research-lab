@@ -1,0 +1,26 @@
+{
+ "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPC1&cosd=2025-01-01",
+ "status": 200,
+ "receipt_time_utc": "2026-09-29T18:22:43.711649Z",
+ "request_time_utc": "2026-09-29T18:22:43.238696Z",
+ "latency_s": 0.473,
+ "headers": {
+  "Last-Modified": "Wed, 26 Aug 2026 12:49:02 GMT",
+  "Server": "Apache",
+  "x-content-type-options": "nosniff",
+  "x-xss-protection": "1; mode=block",
+  "Content-Type": "application/csv",
+  "content-disposition": "attachment; filename=\"GDPC1.csv\"",
+  "Content-Length": "149",
+  "Cache-Control": "public, max-age=600",
+  "Expires": "Tue, 29 Sep 2026 18:32:43 GMT",
+  "Date": "Tue, 29 Sep 2026 18:22:43 GMT",
+  "Connection": "close",
+  "Alt-Svc": "h3=\":443\"; ma=93600",
+  "Strict-Transport-Security": "max-age=86400",
+  "X-location": "cfs",
+  "Set-Cookie": "_abck=288A187A878F08400EE8B7B215FAF41F~-1~YAAQCVPRF4mM8dKgAQAACaBn7hBbfB1JiLYev4kKB4DnaIANqmoj7hWP4dEzat3GceSZ6iBMsxAB+i10QIQtbEHYRgpStsbTTZrax+Drkura/kBp/awyrck/RLXF0CWQ9UaASFL0JSuQPlaqY+4lcZcmp47iiii7oAE1ThOgAt9L6I4zEtVZnb51epgQNOuhbQ5pkkQuXptGczDOerdzEiSz7AnsOkAU723JfNT8qbYylmVn73zQU6uPo3gWyCCmrLm6aVbxMv7s7QAX+cPGMD1wZO0jU+0RbWxDiFpMEJ3a2QG4UPE5K7pozBF4ecYXEJdJTMzOa+B3iJY6WMFfjaeLqzixCd12qTT4Uy9/AEVowfoSInF4Zc5+PezINviQe1yPtEGttU8neKIw+1Gb4mxbodMYiLlc4AlL/TZJe1JecKxtBKrmj7JdZrZrmkbR3bYOyvb2edU2~-1~-1~-1~-1~-1; Domain=.stlouisfed.org; Path=/; Expires=Wed, 29 Sep 2027 18:22:43 GMT; Max-Age=31536000; Secure"
+ },
+ "bytes": 149,
+ "sha256": "ca7d8af00667efdc856595b92e3a9cdac693de1c60446e236c4edf520fc47a46"
+}

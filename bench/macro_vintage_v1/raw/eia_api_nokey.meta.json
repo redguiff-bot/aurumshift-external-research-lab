@@ -1,0 +1,24 @@
+{
+ "url": "https://api.eia.gov/v2/petroleum/stoc/wstk/data/?frequency=weekly&data[0]=value&length=1",
+ "status": 403,
+ "receipt_time_utc": "2026-09-29T18:22:49.015636Z",
+ "request_time_utc": "2026-09-29T18:22:48.376966Z",
+ "latency_s": 0.639,
+ "headers": {
+  "Date": "Tue, 29 Sep 2026 18:22:48 GMT",
+  "Content-Type": "application/json",
+  "Transfer-Encoding": "chunked",
+  "Connection": "close",
+  "Vary": "Accept-Encoding",
+  "Access-Control-Allow-Origin": "*",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+  "X-Api-Umbrella-Request-Id": "d0tpjr99gj25n8t06mcg",
+  "X-Cache": "MISS",
+  "X-Content-Type-Options": "nosniff",
+  "X-Vcap-Request-Id": "db6b9b16-a737-4183-69b8-057cc4daa6f1",
+  "X-Xss-Protection": "1; mode=block",
+  "X-Frame-Options": "DENY"
+ },
+ "bytes": 163,
+ "sha256": "b71fb384d31b5e7ccc66d279785c9e6cd51fa51f07820a3363c849034b9608bd"
+}
