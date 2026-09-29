@@ -1,0 +1,10 @@
+{
+ "eta0_equals_equal": true,
+ "centring_invariant_with_mass_preservation": true,
+ "idle_experts_relative_weights_frozen": true,
+ "updated_block_mass_conserved": true,
+ "all_learners_weights_valid": true,
+ "invalid_learners": [],
+ "no_lookahead_by_construction": true,
+ "oracle_better_than_equal": true
+}

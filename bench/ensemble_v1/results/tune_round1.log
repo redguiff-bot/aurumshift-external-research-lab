@@ -1,0 +1,20 @@
+tuning done 294 s
+                                       cfg      mean       max
+method                                                        
+BMA                        {"kappa": 0.03}  1.176603  1.897102
+CONTEXT_MIX   {"eta_c": 1.0, "eta_g": 0.1}  0.950245  2.058907
+DISC_AWAKE     {"eta": 1.0, "gamma": 0.97}  0.581670  0.832738
+DISC_CLOCK     {"eta": 1.0, "gamma": 0.97}  0.651519  0.864356
+DIVERSITY       {"eta": 1.0, "theta": 1.0}  0.676948  0.816593
+EG                            {"eta": 0.1}  0.498753  0.759896
+EPS_GREEDY    {"alpha": 0.03, "eps": 0.05}  3.386363  4.453311
+EQUAL                                   {}  1.000000  1.000000
+EWMA         {"alpha": 0.01, "beta": 20.0}  0.573814  0.764657
+EXP3           {"eta": 1.0, "gamma": 0.02}  3.824834  7.734928
+FIXED_SHARE    {"alpha": 0.01, "eta": 0.3}  0.543336  0.774104
+HEDGE_CUM                    {"eta": 0.01}  0.719825  1.649694
+MPP              {"eta": 1.0, "mpp": 0.02}  0.630465  0.824142
+SLEEP_FLOOR     {"eta": 0.3, "floor": 0.2}  1.202451  1.779063
+SLEEP_HEDGE                  {"eta": 0.03}  0.701691  0.956285
+STATIC                     {"kappa": 10.0}  0.920457  1.213089
+WTA                                     {}  2.399505  3.492640
