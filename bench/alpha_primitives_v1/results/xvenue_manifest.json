@@ -1,0 +1,194 @@
+{
+ "coinbase_BTC": {
+  "rows": 23367,
+  "first_ms": 1704067200000,
+  "last_ms": 1788220800000,
+  "sha256": "1427372f0662e00678a37984dcbcf49eeef3b94aa107b2ac81c63557ad609bec"
+ },
+ "coinbase_DOGE": {
+  "rows": 23367,
+  "first_ms": 1704067200000,
+  "last_ms": 1788220800000,
+  "sha256": "d1756ac98a433b7b62097cd085bf2992868f31b28330e8300739cd1469f5b6fb"
+ },
+ "coinbase_ETH": {
+  "rows": 23367,
+  "first_ms": 1704067200000,
+  "last_ms": 1788220800000,
+  "sha256": "bb29745cd76eced24bc20803385533c882466570b8f540b0e61cf5710a2bd65b"
+ },
+ "coinbase_SOL": {
+  "rows": 23367,
+  "first_ms": 1704067200000,
+  "last_ms": 1788220800000,
+  "sha256": "9fa228a8e4d7d329ffead6feb5c93ae1d9d716a2f80d0ceb1290b468341b43f2"
+ },
+ "coinbase_XRP": {
+  "rows": 23367,
+  "first_ms": 1704067200000,
+  "last_ms": 1788220800000,
+  "sha256": "9fdd1bb773aac6365acadb35597f57f66927a02c9472c34f34ad22bd66ac50bd"
+ },
+ "dvol_BTC": {
+  "rows": 23377,
+  "first_ms": 1704067200000,
+  "last_ms": 1788220800000,
+  "sha256": "b2dd9e996952fd52f59dc0e0fc3a79ec4fb82479e0136a482cb9ab087a59653b"
+ },
+ "dvol_ETH": {
+  "rows": 23377,
+  "first_ms": 1704067200000,
+  "last_ms": 1788220800000,
+  "sha256": "cb6b3856041852116269c287d9971a47f5801899f106b00ec2412bfb6416a567"
+ },
+ "gate_BTC": {
+  "rows": 8527,
+  "first_ms": 1757527200000,
+  "last_ms": 1788220800000,
+  "sha256": "7e6b64c22c283a362734a0d89e353ab7a434774d38c8d619a9197105379a31a5"
+ },
+ "gate_DOGE": {
+  "rows": 8527,
+  "first_ms": 1757527200000,
+  "last_ms": 1788220800000,
+  "sha256": "8cfd96e4f57ab1375d9c88de3551527a7ce98db1756277e73c1e2f0b894dd1c2"
+ },
+ "gate_ETH": {
+  "rows": 8527,
+  "first_ms": 1757527200000,
+  "last_ms": 1788220800000,
+  "sha256": "2fa75ca695eb2b3a996d998d208ffdaedbfc6a09e74519895861c878c35ae95a"
+ },
+ "gate_SOL": {
+  "rows": 8527,
+  "first_ms": 1757527200000,
+  "last_ms": 1788220800000,
+  "sha256": "5cca4f3acc6b29ec6743dd4b6ece715d21fa8b1b1dce3acef023f37284e4c7f8"
+ },
+ "gate_XRP": {
+  "rows": 8527,
+  "first_ms": 1757527200000,
+  "last_ms": 1788220800000,
+  "sha256": "d550ca27bf41167f0914f335f183cfd743d6d7ba23251beea8b85f711aa82ddb"
+ },
+ "hl_c_BTC": {
+  "rows": 4314,
+  "first_ms": 1772694000000,
+  "last_ms": 1788220800000,
+  "sha256": "936a633e183bfa7a296ce8bcf81541368d9c02b0cfee3928f23ad3b6d2898bbf"
+ },
+ "hl_c_DOGE": {
+  "rows": 4313,
+  "first_ms": 1772697600000,
+  "last_ms": 1788220800000,
+  "sha256": "9a4b2fbcb6878110e6b9d5e0e144f4996d2504490b84c4c64ec0237341aafbc9"
+ },
+ "hl_c_ETH": {
+  "rows": 4314,
+  "first_ms": 1772694000000,
+  "last_ms": 1788220800000,
+  "sha256": "ee2d081706721cb6ff444fe3e1befceafe7851a3d69a847d0669e6214f85abc5"
+ },
+ "hl_c_SOL": {
+  "rows": 4313,
+  "first_ms": 1772697600000,
+  "last_ms": 1788220800000,
+  "sha256": "ddcff7a7a898ea2a9435f5351224daf3fcd8dabd62593a899deb7e56dfa8d092"
+ },
+ "hl_c_XRP": {
+  "rows": 4313,
+  "first_ms": 1772697600000,
+  "last_ms": 1788220800000,
+  "sha256": "04bc9b07e71032277d5b0cef25b09f071953dca488661fc70bedd1a15d164294"
+ },
+ "hl_f_BTC": {
+  "rows": 23500,
+  "first_ms": 1704067200151,
+  "last_ms": 1788667200036,
+  "sha256": "a272fd90289682140021171b64dce3ec0e962d6da02ba43de5644bbbc3113655"
+ },
+ "hl_f_DOGE": {
+  "rows": 23500,
+  "first_ms": 1704067200151,
+  "last_ms": 1788667200036,
+  "sha256": "2bc02f2e7d7d995eaaae336568a00dc8574fff3a8cc94442a5c1c80d521ce3c5"
+ },
+ "hl_f_ETH": {
+  "rows": 23500,
+  "first_ms": 1704067200151,
+  "last_ms": 1788667200036,
+  "sha256": "e4ef140e3345c4e045317682ebd1966dffd43d237064155c0f4a60f16c061b21"
+ },
+ "hl_f_SOL": {
+  "rows": 23500,
+  "first_ms": 1704067200151,
+  "last_ms": 1788667200036,
+  "sha256": "211e956eb87e9676057807634c782a315b5633c3ea1bb9d4ca80add8f1e5219d"
+ },
+ "hl_f_XRP": {
+  "rows": 23500,
+  "first_ms": 1704067200151,
+  "last_ms": 1788667200036,
+  "sha256": "20138f8e5327186b3f7e71a5ee72ba1ee913fdd92453bbcda819076caf98e2b8"
+ },
+ "kraken_BTC": {
+  "rows": 721,
+  "first_ms": 1788112800000,
+  "last_ms": 1790704800000,
+  "sha256": "130d4d1970d2f920669df9c49ab73eae554c6dfc16496e3aa13a505b82fafe41"
+ },
+ "kraken_DOGE": {
+  "rows": 721,
+  "first_ms": 1788112800000,
+  "last_ms": 1790704800000,
+  "sha256": "6f778c85254da9df680682d278b2b15d7a47af917eef59b7b0db48c90d3c0c59"
+ },
+ "kraken_ETH": {
+  "rows": 721,
+  "first_ms": 1788112800000,
+  "last_ms": 1790704800000,
+  "sha256": "87dba8bec516ff9cbd93aece0fde86d9b6aae302f7ce9cc0ec7f9755d45dd6f2"
+ },
+ "kraken_SOL": {
+  "rows": 721,
+  "first_ms": 1788112800000,
+  "last_ms": 1790704800000,
+  "sha256": "5d22ab6be47631d02d6fb4c89d7a7b3e7d8ae706f71a4a09710b58e0dd4725f2"
+ },
+ "kraken_XRP": {
+  "rows": 721,
+  "first_ms": 1788112800000,
+  "last_ms": 1790704800000,
+  "sha256": "706a612c397b6765b4f22ef1ac6a333c47b2f43d9ce5ec4f61e8e32e473b0f83"
+ },
+ "okx_BTC": {
+  "rows": 23376,
+  "first_ms": 1704067200000,
+  "last_ms": 1788217200000,
+  "sha256": "bc87ac9ac8ed15409fb8548c43e8002f1d02c2e0e385bdd343100d33bfb774d4"
+ },
+ "okx_DOGE": {
+  "rows": 23376,
+  "first_ms": 1704067200000,
+  "last_ms": 1788217200000,
+  "sha256": "f9720a069bef7ffc610110db8947bf06cfb43af7d9a40db4124cfe5e264bdf2b"
+ },
+ "okx_ETH": {
+  "rows": 23376,
+  "first_ms": 1704067200000,
+  "last_ms": 1788217200000,
+  "sha256": "27cb39e422599cf8269f8aaba6f4bcbd5ea191b2683ef97efbf6bb16a3b11a20"
+ },
+ "okx_SOL": {
+  "rows": 23376,
+  "first_ms": 1704067200000,
+  "last_ms": 1788217200000,
+  "sha256": "30952412d130b3d30565c842073a82cf2021d139e467506d43b132a8c735cf3f"
+ },
+ "okx_XRP": {
+  "rows": 23376,
+  "first_ms": 1704067200000,
+  "last_ms": 1788217200000,
+  "sha256": "25b7e10785fc2fbecd25049dd542ab7c6cc45ba2d1f971e09e811ac71d960d83"
+ }
+}
