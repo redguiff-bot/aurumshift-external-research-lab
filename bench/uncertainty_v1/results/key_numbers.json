@@ -1,0 +1,36 @@
+{
+ "n_heldout_seeds": 12,
+ "static_ece_drift_temp_gbm": {
+  "feature_shift": 0.126,
+  "missing_features": 0.04,
+  "none": -0.003,
+  "rare_cluster": 0.005,
+  "regime_transition": 0.15,
+  "stale_features": 0.108,
+  "venue_change": 0.066,
+  "vol_jump": 0.053
+ },
+ "static_ece_drift_temp_lr": {
+  "feature_shift": 0.179,
+  "missing_features": 0.001,
+  "none": -0.005,
+  "rare_cluster": 0.011,
+  "regime_transition": 0.188,
+  "stale_features": 0.124,
+  "venue_change": 0.089,
+  "vol_jump": 0.051
+ },
+ "online_shift_only_temp": "{('gbm', 'decay'): {'ece': 0.0289, 'brier': 0.6416, 'cwm': 0.0283, 'turnover': 0.4716}, ('gbm', 'expanding'): {'ece': 0.0799, 'brier': 0.6566, 'cwm': 0.0854, 'turnover': 0.4882}, ('gbm', 'leak_h0'): {'ece': 0.0246, 'brier': 0.6412, 'cwm': 0.0241, 'turnover': 0.4665}, ('gbm', 'leak_peek'): {'ece': 0.0255, 'brier': 0.6394, 'cwm': 0.0216, 'turnover': 0.466}, ('gbm', 'static'): {'ece': 0.1066, 'brier': 0.6697, 'cwm': 0.1269, 'turnover': 0.487}, ('gbm', 'window'): {'ece': 0.0249, 'brier': 0.6413, 'cwm': 0.0246, 'turnover': 0.4669}, ('lr', 'decay'): {'ece': 0.0355, 'brier': 0.6172, 'cwm': 0.06, 'turnover': 0.3462}, ('lr', 'expanding'): {'ece': 0.0838, 'brier': 0.6378, 'cwm': 0.1397, 'turnover': 0.3641}, ('lr', 'leak_h0'): {'ece': 0.0352, 'brier': 0.6166, 'cwm': 0.0521, 'turnover': 0.3407}, ('lr', 'leak_peek'): {'ece': 0.0329, 'brier': 0.6146, 'cwm': 0.0486, 'turnover': 0.3407}, ('lr', 'static'): {'ece': 0.1167, 'brier': 0.6573, 'cwm': 0.1853, 'turnover': 0.3566}, ('lr', 'window'): {'ece': 0.0354, 'brier': 0.6168, 'cwm': 0.0525, 'turnover': 0.3406}}",
+ "lookahead_ece_beta": {
+  "window": 0.04704475859307884,
+  "leak_h0": 0.046849814843123866,
+  "leak_peek": 0.045315202127149554,
+  "static": 0.11891717879230479
+ },
+ "split_cov_iid_control": "0.902 \u00b1 0.006",
+ "split_cov_none_pre": "0.904 \u00b1 0.015",
+ "gaussian_cov_none_pre": "0.751 \u00b1 0.028",
+ "diag_macro_f1_full": 0.6039663341564292,
+ "diag_macro_f1_seed_ci": "0.604 \u00b1 0.003",
+ "diag_false_flag_rate_in_dist": 0.058833333333333335
+}
