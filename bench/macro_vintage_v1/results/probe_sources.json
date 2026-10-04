@@ -1,0 +1,330 @@
+[
+ {
+  "source": "FRED_API",
+  "name": "fred_api_nokey.json",
+  "url": "https://api.stlouisfed.org/fred/series/observations?series_id=GDPC1&file_type=json",
+  "status": 400,
+  "bytes": 162,
+  "head": "{\"error_code\":400,\"error_message\":\"Bad Request.  Variable api_key is not set.  Read https:\\/\\/fred.stlouisfed.org\\/docs\\/api\\/api_key.html for more information.\"}"
+ },
+ {
+  "source": "FRED_API",
+  "name": "fred_api_badkey.json",
+  "url": "https://api.stlouisfed.org/fred/series/observations?series_id=GDPC1&file_type=json&api_key=00000000000000000000000000000000",
+  "status": 400,
+  "bytes": 183,
+  "head": "{\"error_code\":400,\"error_message\":\"Bad Request.  The value for variable api_key is not registered.  Read https:\\/\\/fred.stlouisfed.org\\/docs\\/api\\/api_key.html for more information.\"}"
+ },
+ {
+  "source": "FRED_CSV",
+  "name": "fredgraph_GDPC1_latest.csv",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPC1&cosd=2014-01-01&coed=2015-12-31",
+  "status": 200,
+  "bytes": 191,
+  "head": "observation_date,GDPC1 2014-01-01,17953.974 2014-04-01,18185.911 2014-07-01,18406.941 2014-10-01,18500.031 2015-01-01,18666.621 2015-04-01,18782.243 2015-07-01,18857.418 2015-10-01,18892.206 "
+ },
+ {
+  "source": "FRED_CSV",
+  "name": "fredgraph_GDPC1_vintageparam.csv",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPC1&cosd=2014-01-01&coed=2015-12-31&vintage_date=2015-01-01",
+  "status": 200,
+  "bytes": 191,
+  "head": "observation_date,GDPC1 2014-01-01,17953.974 2014-04-01,18185.911 2014-07-01,18406.941 2014-10-01,18500.031 2015-01-01,18666.621 2015-04-01,18782.243 2015-07-01,18857.418 2015-10-01,18892.206 "
+ },
+ {
+  "source": "FRED_CSV",
+  "name": "fredgraph_GDPC1_realtime.csv",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPC1&cosd=2014-01-01&coed=2015-12-31&realtime_start=2015-01-01&realtime_end=2015-01-01",
+  "status": 200,
+  "bytes": 191,
+  "head": "observation_date,GDPC1 2014-01-01,17953.974 2014-04-01,18185.911 2014-07-01,18406.941 2014-10-01,18500.031 2015-01-01,18666.621 2015-04-01,18782.243 2015-07-01,18857.418 2015-10-01,18892.206 "
+ },
+ {
+  "source": "ALFRED",
+  "name": "alfredgraph_GDPC1_20150101.csv",
+  "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1&cosd=2014-01-01&coed=2015-12-31&vintage_date=2015-01-01",
+  "status": 200,
+  "bytes": 89,
+  "head": "observation_date,GDPC1_20150101 2014-01-01,15831.7 2014-04-01,16010.4 2014-07-01,16205.6 "
+ },
+ {
+  "source": "BLS",
+  "name": "bls_v2_nokey_CES.json",
+  "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/CES0000000001?startyear=2025&endyear=2026",
+  "status": 200,
+  "bytes": 224,
+  "head": "{\"status\":\"REQUEST_NOT_PROCESSED\",\"responseTime\":0,\"message\":[\"Request could not be serviced, as the daily threshold for total number of requests allocated to the user with registration key  has been reached.\"],\"Results\":{}}"
+ },
+ {
+  "source": "BLS",
+  "name": "bls_v2_nokey_CES_post.json",
+  "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
+  "status": 415,
+  "bytes": 727,
+  "head": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 415 \u2013 Unsupported Media Type</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {c"
+ },
+ {
+  "source": "BLS",
+  "name": "bls_schedule_ces.html",
+  "url": "https://www.bls.gov/schedule/news_release/ces.htm",
+  "status": 403,
+  "bytes": 1325,
+  "head": "<!DOCTYPE HTML> <html lang=\"en-us\">                      <head>  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /> <title>Access Denied</title> </head>   <style type=\"text/css\">     .centerDiv     {       width: 60%;       height:200px;       margin: 0 auto;       background-colo"
+ },
+ {
+  "source": "BLS",
+  "name": "bls_schedule_ics.ics",
+  "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+  "status": 403,
+  "bytes": 1325,
+  "head": "<!DOCTYPE HTML> <html lang=\"en-us\">                      <head>  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /> <title>Access Denied</title> </head>   <style type=\"text/css\">     .centerDiv     {       width: 60%;       height:200px;       margin: 0 auto;       background-colo"
+ },
+ {
+  "source": "BEA",
+  "name": "bea_api_nokey.json",
+  "url": "https://apps.bea.gov/api/data?method=GETDATASETLIST&ResultFormat=JSON",
+  "status": 200,
+  "bytes": 0,
+  "head": ""
+ },
+ {
+  "source": "BEA",
+  "name": "bea_schedule.html",
+  "url": "https://www.bea.gov/news/schedule",
+  "status": 200,
+  "bytes": 74360,
+  "head": " <!DOCTYPE html> <html  lang=\"en\" dir=\"ltr\" prefix=\"content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioc"
+ },
+ {
+  "source": "BEA",
+  "name": "bea_schedule_ics.ics",
+  "url": "https://www.bea.gov/news/schedule/ical",
+  "status": 200,
+  "bytes": 61290,
+  "head": " <!DOCTYPE html> <html  lang=\"en\" dir=\"ltr\" prefix=\"content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioc"
+ },
+ {
+  "source": "EIA",
+  "name": "eia_v2_nokey.json",
+  "url": "https://api.eia.gov/v2/petroleum/stoc/wstk/data/?frequency=weekly&data[0]=value&length=1",
+  "status": 403,
+  "bytes": 163,
+  "head": "{   \"error\": {     \"code\": \"API_KEY_MISSING\",     \"message\": \"No api_key was supplied.  Please register for one at https://www.eia.gov/opendata/register.php\"   } }"
+ },
+ {
+  "source": "EIA",
+  "name": "eia_v2_demokey.json",
+  "url": "https://api.eia.gov/v2/petroleum/stoc/wstk/data/?api_key=DEMO_KEY&frequency=weekly&data[0]=value&length=1",
+  "status": 200,
+  "bytes": 792,
+  "head": "{\"warnings\":[{\"warning\":\"incomplete return\",\"description\":\"The API can only return 5000 rows in JSON format.  Please consider constraining your request with facet, start, or end, or using offset to paginate results.\"}],\"response\":{\"total\":\"270228\",\"dateFormat\":\"YYYY-MM-DD\",\"frequency\":\"weekly\",\"data"
+ },
+ {
+  "source": "EIA",
+  "name": "eia_schedule.html",
+  "url": "https://www.eia.gov/petroleum/supply/weekly/schedule.php",
+  "status": 200,
+  "bytes": 52318,
+  "head": "<!doctype html>\r <html>\r \r <head>\r \t<title>Weekly Petroleum Status Report Schedule - U.S. Energy Information Administration (EIA)</title>\r \t<meta property=\"og:title\" content=\"Weekly Petroleum Status Report Schedule - U.S. Energy Information Administration (EIA)\">\r \t<meta property=\"og:url\" content=\"h"
+ },
+ {
+  "source": "NYFED",
+  "name": "nyfed_sofr_last5.json",
+  "url": "https://markets.newyorkfed.org/api/rates/secured/sofr/last/5.json",
+  "status": 200,
+  "bytes": 1208,
+  "head": "{ \"refRates\": [ { \"effectiveDate\": \"2026-09-28\", \"type\": \"SOFR\" ,\"percentRate\": 3.90 ,\"percentPercentile1\": 3.83 ,\"percentPercentile25\": 3.89 ,\"percentPercentile75\": 3.95 ,\"percentPercentile99\": 3.98 ,\"volumeInBillions\": 2964 ,\"revisionIndicator\": \"\" }, { \"effectiveDate\": \"2026-09-25\", \"type\": \"SOFR"
+ },
+ {
+  "source": "NYFED",
+  "name": "nyfed_sofr_search.json",
+  "url": "https://markets.newyorkfed.org/api/rates/secured/sofr/search.json?startDate=2026-09-01&endDate=2026-09-10",
+  "status": 200,
+  "bytes": 1684,
+  "head": "{ \"refRates\": [ { \"effectiveDate\": \"2026-09-10\", \"type\": \"SOFR\" ,\"percentRate\": 3.62 ,\"percentPercentile1\": 3.58 ,\"percentPercentile25\": 3.60 ,\"percentPercentile75\": 3.67 ,\"percentPercentile99\": 3.70 ,\"volumeInBillions\": 2921 ,\"revisionIndicator\": \"\" }, { \"effectiveDate\": \"2026-09-09\", \"type\": \"SOFR"
+ },
+ {
+  "source": "ECB",
+  "name": "ecb_exr_last3.csv",
+  "url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?lastNObservations=3&format=csvdata",
+  "status": 200,
+  "bytes": 950,
+  "head": "KEY,FREQ,CURRENCY,CURRENCY_DENOM,EXR_TYPE,EXR_SUFFIX,TIME_PERIOD,OBS_VALUE,OBS_STATUS,OBS_CONF,OBS_PRE_BREAK,OBS_COM,TIME_FORMAT,BREAKS,COLLECTION,COMPILING_ORG,DISS_ORG,DOM_SER_IDS,PUBL_ECB,PUBL_MU,PUBL_PUBLIC,UNIT_INDEX_BASE,COMPILATION,COVERAGE,DECIMALS,NAT_TITLE,SOURCE_AGENCY,SOURCE_PUB,TITLE,TI"
+ },
+ {
+  "source": "ECB",
+  "name": "ecb_hicp_updatedafter.csv",
+  "url": "https://data-api.ecb.europa.eu/service/data/ICP/M.U2.N.000000.4.ANR?lastNObservations=3&format=csvdata&detail=full",
+  "status": 200,
+  "bytes": 1512,
+  "head": "KEY,FREQ,REF_AREA,ADJUSTMENT,ICP_ITEM,STS_INSTITUTION,ICP_SUFFIX,TIME_PERIOD,OBS_VALUE,OBS_STATUS,OBS_CONF,OBS_PRE_BREAK,OBS_COM,TIME_FORMAT,BREAKS,COLLECTION,COMPILING_ORG,DATA_COMP,DISS_ORG,DOM_SER_IDS,PUBL_ECB,PUBL_MU,PUBL_PUBLIC,UNIT_INDEX_BASE,COMPILATION,COVERAGE,DECIMALS,SOURCE_AGENCY,TITLE,T"
+ },
+ {
+  "source": "ECB",
+  "name": "ecb_updatedafter.csv",
+  "url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?updatedAfter=2026-09-25T00:00:00%2B00:00&format=csvdata",
+  "status": 200,
+  "bytes": 981,
+  "head": "KEY,FREQ,CURRENCY,CURRENCY_DENOM,EXR_TYPE,EXR_SUFFIX,TIME_PERIOD,OBS_VALUE,OBS_STATUS,OBS_CONF,OBS_PRE_BREAK,OBS_COM,TIME_FORMAT,BREAKS,COLLECTION,COMPILING_ORG,DISS_ORG,DOM_SER_IDS,PUBL_ECB,PUBL_MU,PUBL_PUBLIC,UNIT_INDEX_BASE,COMPILATION,COVERAGE,DECIMALS,NAT_TITLE,SOURCE_AGENCY,SOURCE_PUB,TITLE,TI"
+ },
+ {
+  "source": "EUROSTAT",
+  "name": "eurostat_une_rt_m.json",
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?geo=EA20&s_adj=SA&age=TOTAL&sex=T&unit=PC_ACT&lastTimePeriod=3",
+  "status": 200,
+  "bytes": 3649,
+  "head": "{\"version\":\"2.0\",\"class\":\"dataset\",\"label\":\"Unemployment by sex and age - monthly data\",\"source\":\"ESTAT\",\"updated\":\"2026-09-22T11:00:00+0200\",\"value\":{},\"id\":[\"freq\",\"s_adj\",\"age\",\"unit\",\"sex\",\"geo\",\"time\"],\"size\":[1,1,1,1,1,0,3],\"dimension\":{\"freq\":{\"label\":\"Time frequency\",\"category\":{\"index\":{\"M\""
+ },
+ {
+  "source": "EUROSTAT",
+  "name": "eurostat_prc_hicp_manr.json",
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_manr?geo=EA&coicop=CP00&lastTimePeriod=3",
+  "status": 200,
+  "bytes": 3219,
+  "head": "{\"version\":\"2.0\",\"class\":\"dataset\",\"label\":\"HICP - monthly data (annual rate of change)\",\"source\":\"ESTAT\",\"updated\":\"2026-02-06T23:00:00+0100\",\"value\":{\"0\":2.1,\"1\":2.1,\"2\":2.0},\"id\":[\"freq\",\"unit\",\"coicop\",\"geo\",\"time\"],\"size\":[1,1,1,1,3],\"dimension\":{\"freq\":{\"label\":\"Time frequency\",\"category\":{\"in"
+ },
+ {
+  "source": "EUROSTAT",
+  "name": "eurostat_calendar.html",
+  "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar",
+  "status": 200,
+  "bytes": 203241,
+  "head": "                                \t \t\t \t\t\t<!DOCTYPE html>                                                                  <html dir=\"ltr\" lang=\"en-GB\">  <head>        <title>Release calendar - Eurostat</title>      <meta content=\"initial-scale=1.0, width=device-width\" name=\"viewport\" />     <link rel"
+ },
+ {
+  "source": "BOE",
+  "name": "boe_iadb.csv",
+  "url": "https://www.bankofengland.co.uk/boeapps/database/fromshowcolumns.asp?csv.x=yes&SeriesCodes=IUDBEDR&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N&Datefrom=01/Sep/2026&Dateto=now",
+  "status": 403,
+  "bytes": 434,
+  "head": "<HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access \"http&#58;&#47;&#47;www&#46;bankofengland&#46;co&#46;uk&#47;boeapps&#47;database&#47;fromshowcolumns&#46;asp&#63;\" on this server.<P> Reference&#32;&#35;18&#46;6a55c817&#46;1790704223"
+ },
+ {
+  "source": "BOE",
+  "name": "boe_calendar.html",
+  "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+  "status": 403,
+  "bytes": 431,
+  "head": "<HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1>   You don't have permission to access \"http&#58;&#47;&#47;www&#46;bankofengland&#46;co&#46;uk&#47;monetary&#45;policy&#47;upcoming&#45;mpc&#45;dates\" on this server.<P> Reference&#32;&#35;18&#46;ed18d017&#46;1790704224&#4"
+ },
+ {
+  "source": "BOC",
+  "name": "boc_fx.json",
+  "url": "https://www.bankofcanada.ca/valet/observations/FXUSDCAD/json?recent=3",
+  "status": 200,
+  "bytes": 759,
+  "head": "{     \"terms\": {         \"url\": \"https://www.bankofcanada.ca/terms/\"     },     \"seriesDetail\": {         \"FXUSDCAD\": {             \"label\": \"USD/CAD\",             \"description\": \"Daily average exchange rate of the US dollar in Canadian dollars.\",             \"dimension\": {                 \"key\": \"d"
+ },
+ {
+  "source": "BOC",
+  "name": "boc_lists.json",
+  "url": "https://www.bankofcanada.ca/valet/lists/series/json",
+  "status": 200,
+  "bytes": 3629099,
+  "head": "{ \"terms\": { \"url\": \"https://www.bankofcanada.ca/terms/\" }, \"series\": {     \"A.AGRI\": {     \"label\": \"Annual BCPI Agriculture\",     \"description\": \"Annual Bank of Canada commodity price index - Agriculture\",     \"link\": \"https://www.bankofcanada.ca/valet/series/A.AGRI\"     },     \"A.BCNE\": {     \"la"
+ },
+ {
+  "source": "TREASURY",
+  "name": "treasury_debt.json",
+  "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/debt_to_penny?page[size]=3&sort=-record_date",
+  "status": 404,
+  "bytes": 743,
+  "head": "<!DOCTYPE html> <html lang=\"en\"> <head>     <base href=\"/\"> </head> <body>  <h1>404 Error: The requested page could not be found</h1> <p>We are sorry, but the page you are looking for may not exist, may have been removed, had its name changed, or is temporarily unavailable.</p> <p>To help you find w"
+ },
+ {
+  "source": "TREASURY",
+  "name": "treasury_yields.csv",
+  "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+  "status": 200,
+  "bytes": 15176,
+  "head": "Date,\"1 Mo\",\"1.5 Month\",\"2 Mo\",\"3 Mo\",\"4 Mo\",\"6 Mo\",\"1 Yr\",\"2 Yr\",\"3 Yr\",\"5 Yr\",\"7 Yr\",\"10 Yr\",\"20 Yr\",\"30 Yr\" 09/28/2026,4.04,4.14,4.20,4.28,4.33,4.41,4.59,4.92,5.01,5.06,5.15,5.24,5.60,5.56 09/25/2026,4.04,4.14,4.20,4.24,4.32,4.33,4.50,4.81,4.94,4.98,5.06,5.17,5.54,5.49 09/24/2026,4.01,4.10,4.18,4"
+ },
+ {
+  "source": "CFTC",
+  "name": "cftc_legacy_last.json",
+  "url": "https://publicreporting.cftc.gov/resource/6dca-aqww.json?$limit=2&$order=report_date_as_yyyy_mm_dd%20DESC",
+  "status": 200,
+  "bytes": 9329,
+  "head": "[{\"id\":\"26092286565AF\",\"market_and_exchange_names\":\"GULF # 6 FUEL OIL CRACK - NEW YORK MERCANTILE EXCHANGE\",\"report_date_as_yyyy_mm_dd\":\"2026-09-22T00:00:00.000\",\"yyyy_report_week_ww\":\"2026 Report Week 38\",\"contract_market_name\":\"GULF # 6 FUEL OIL CRACK\",\"cftc_contract_market_code\":\"86565A\",\"cftc_ma"
+ },
+ {
+  "source": "CFTC",
+  "name": "cftc_meta.json",
+  "url": "https://publicreporting.cftc.gov/api/views/6dca-aqww.json",
+  "status": 200,
+  "bytes": 227044,
+  "head": "{   \"id\" : \"6dca-aqww\",   \"name\" : \"Legacy - Futures Only\",   \"assetType\" : \"filter\",   \"averageRating\" : 0,   \"category\" : \"Commitments of Traders\",   \"createdAt\" : 1662987562,   \"description\" : \"This is a report of futures only positions. The Legacy report is broken down by exchange with reported "
+ },
+ {
+  "source": "CFTC",
+  "name": "cftc_schedule.html",
+  "url": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/ReleaseSchedule/index.htm",
+  "status": 200,
+  "bytes": 48314,
+  "head": "<!DOCTYPE html> <html  lang=\"en\" dir=\"ltr\" prefix=\"content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct"
+ },
+ {
+  "source": "WORLDBANK",
+  "name": "wb_gdp.json",
+  "url": "https://api.worldbank.org/v2/country/US/indicator/NY.GDP.MKTP.CD?format=json&per_page=3",
+  "status": 200,
+  "bytes": 724,
+  "head": "[{\"page\":1,\"pages\":22,\"per_page\":3,\"total\":66,\"sourceid\":\"2\",\"lastupdated\":\"2026-07-13\"},[{\"indicator\":{\"id\":\"NY.GDP.MKTP.CD\",\"value\":\"GDP (current US$)\"},\"country\":{\"id\":\"US\",\"value\":\"United States\"},\"countryiso3code\":\"USA\",\"date\":\"2025\",\"value\":30769700000000,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":0}"
+ },
+ {
+  "source": "WORLDBANK",
+  "name": "wb_sources.json",
+  "url": "https://api.worldbank.org/v2/sources?format=json&per_page=100",
+  "status": 200,
+  "bytes": 13048,
+  "head": "[{\"page\":\"1\",\"pages\":\"1\",\"per_page\":\"100\",\"total\":\"71\"},[{\"id\":\"1\",\"lastupdated\":\"2021-08-18\",\"name\":\"Doing Business\",\"code\":\"DBS\",\"description\":\"\",\"url\":\"\",\"dataavailability\":\"Y\",\"metadataavailability\":\"Y\",\"concepts\":\"3\"},{\"id\":\"2\",\"lastupdated\":\"2026-07-13\",\"name\":\"World Development Indicators\",\"c"
+ },
+ {
+  "source": "IMF",
+  "name": "imf_datamapper_ngdp.json",
+  "url": "https://www.imf.org/external/datamapper/api/v1/NGDP_RPCH/USA",
+  "status": 200,
+  "bytes": 121723,
+  "head": "{\"values\":{\"NGDP_RPCH\":{\"SDN\":{\"1980\":2.5,\"1981\":6.3,\"1982\":4.1,\"1983\":-1.5,\"1984\":-5.6,\"1985\":-0.6,\"1986\":9.9,\"1987\":6.5,\"1988\":4.3,\"1989\":1.4,\"1990\":0.8,\"1991\":7,\"1992\":5.5,\"1993\":2.8,\"1994\":3.5,\"1995\":8.9,\"1996\":5.5,\"1997\":6.1,\"1998\":8.2,\"1999\":4.2,\"2000\":8.4,\"2001\":10.9,\"2002\":5.9,\"2003\":6.3,\"20"
+ },
+ {
+  "source": "IMF",
+  "name": "imf_weo_apr2024.ashx",
+  "url": "https://www.imf.org/-/media/Files/Publications/WEO/WEO-Database/2024/April/WEOApr2024all.ashx",
+  "status": 200,
+  "bytes": 215,
+  "head": "\ufeff<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist. RequestId:bbf2e3a5-401e-0001-0d2e-fdc4e0000000 Time:2026-06-16T01:19:24.2117492Z</Message></Error>"
+ },
+ {
+  "source": "IMF",
+  "name": "imf_weo_oct2025.ashx",
+  "url": "https://www.imf.org/-/media/Files/Publications/WEO/WEO-Database/2025/October/WEOOct2025all.ashx",
+  "status": 200,
+  "bytes": 215,
+  "head": "\ufeff<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist. RequestId:08d1419c-601e-0018-7f26-fe17da000000 Time:2026-06-17T06:59:18.8363649Z</Message></Error>"
+ },
+ {
+  "source": "OECD",
+  "name": "oecd_dataflows.xml",
+  "url": "https://sdmx.oecd.org/public/rest/dataflow/all",
+  "status": 200,
+  "bytes": 8909296,
+  "head": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r <!--NSI Web Service v10.11.8.0-->\r <message:Structure xmlns:message=\"http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message\" xmlns:structure=\"http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure\" xmlns:common=\"http://www.sdmx.org/resources/sdmxml/sch"
+ },
+ {
+  "source": "FRED",
+  "name": "fred_release_calendar.html",
+  "url": "https://fred.stlouisfed.org/releases/calendar",
+  "status": 200,
+  "bytes": 76781,
+  "head": "<!DOCTYPE html> <html lang=\"en\"> <head>     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">     <meta charset=\"utf-8\">                 <title>Economic Release Calendar | FRED | St. Louis Fed</title>               <script>       dataLayer = []     </script>      <!-- Google Tag Manager -->     "
+ },
+ {
+  "source": "ALFRED",
+  "name": "alfred_release_dates_50.txt",
+  "url": "https://alfred.stlouisfed.org/release/downloaddates?rid=50&ff=txt",
+  "status": 200,
+  "bytes": 11210,
+  "head": "------------------------------------------------------------------------- Release: Employment Situation Archival Federal Reserve Economic Data, Federal Reserve Bank of St. Louis Link: https://alfred.stlouisfed.org Help: https://alfred.stlouisfed.org/help This data may be copyrighted. Please refer to"
+ }
+]

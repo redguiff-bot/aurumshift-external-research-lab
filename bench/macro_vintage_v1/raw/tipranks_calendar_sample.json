@@ -1,0 +1,4 @@
+{"_note":"NON-OFFICIAL aggregator (TipRanks MCP get_economic_calendar), fromDate=2026-09-01 toDate=2026-09-10 limit=8, retrieved 2026-09-29 in-session; first 3 of 8 rows kept as sample","rows":[
+{"actual":53.9,"estimate":53.2,"event":"S&P Global Manufacturing PMI","prev":53.9,"time":"2026-09-01T13:45:00"},
+{"actual":7.271,"estimate":7.3,"event":"JOLTs Job Openings","prev":7.359,"time":"2026-09-01T14:00:00"},
+{"actual":54.6,"estimate":55.2,"event":"ISM Manufacturing PMI","prev":55.6,"time":"2026-09-01T14:00:00"}]}
