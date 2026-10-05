@@ -53,7 +53,7 @@ probabilités) ; (4) GDELT bulk exécuté (DATEADDED vs Last-Modified) ; (5) smo
 
 Scripts : `fetch_calendars.py <tag> [sources]` (snapshots bruts + meta : receipt_time_utc, status, Last-Modified, ETag,
 sha256), `analyze_calendars.py` → `results/calendar_compare.json`. Snapshots : s1 11:05:38Z (tout), s2 11:12:50Z
-(FF, BEA, Fed), s3 11:22:08Z (FF JSON), s4 ~11:48Z (FF JSON+XML, après la régénération horaire attendue).
+(FF, BEA, Fed), s3 11:22:08Z (FF JSON), s4 11:47:16Z (FF JSON+XML, après la régénération horaire de 11:42:18Z).
 
 ### I01 ForexFactory export (nfs.faireconomy.media) — SHADOW (forward capture forecast/previous) — L2
 * Champs JSON (MEASURED) : `title, country, date, impact, forecast, previous`. XML : + `time`, `url`. **Pas de champ
@@ -73,6 +73,11 @@ sha256), `analyze_calendars.py` → `results/calendar_compare.json`. Snapshots :
   for Calendar Export requests. Please wait five minutes before trying again. The Calendar export file is only updated
   once per hour. Requesting it more than that is unnecessary and can result in being blocked. » → contrat de fraîcheur
   = horaire, polling ≤ 1/h, et un fichier horaire **ne peut pas servir d'horodatage PIT de l'actual**.
+* s4 (11:47:16Z, MEASURED) : XML **régénéré** (Last-Modified 11:42:18Z, nouvel ETag `6ac38d1a-6a64`) mais contenu
+  identique champ à champ (79/79, 0 ajout/retrait/modif) ; JSON **de nouveau 429** alors que la requête JSON précédente
+  datait de 25 min → le compteur est partagé par l'egress (autres agents/utilisateurs derrière la même IP, INFERENCE) :
+  en production il faut une IP dédiée ou accepter des trous. JSON et XML ont des compteurs distincts (XML 200 au même
+  instant).
 * Couverture banques centrales cette semaine : FOMC Minutes (High), ECB Accounts (Low), BOJ Ueda (High), orateurs FOMC
   (Low), BoE Credit Conditions. Cohérence : FOMC Minutes 07/10 14:00 ET = 18:00Z, conforme à la convention Fed (le RSS
   Fed date le statement du 16/09 à 18:00:00 GMT — VERIFIED dans `s1_fed_press_rss.xml`).

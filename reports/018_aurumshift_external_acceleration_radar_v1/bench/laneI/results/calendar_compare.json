@@ -294,6 +294,13 @@
     "sha": "d790a7602372",
     "last_modified": "Mon, 05 Oct 2026 10:42:15 GMT",
     "receipt": "2026-10-05T11:22:08.992553+00:00"
+   },
+   {
+    "tag": "s4",
+    "status": 429,
+    "sha": "2d2b88c30346",
+    "last_modified": null,
+    "receipt": "2026-10-05T11:47:15.610109+00:00"
    }
   ],
   "ff_xml": [
@@ -310,6 +317,13 @@
     "sha": "23c98747da93",
     "last_modified": "Mon, 05 Oct 2026 10:42:15 GMT",
     "receipt": "2026-10-05T11:12:51.248688+00:00"
+   },
+   {
+    "tag": "s4",
+    "status": 200,
+    "sha": "23c98747da93",
+    "last_modified": "Mon, 05 Oct 2026 11:42:18 GMT",
+    "receipt": "2026-10-05T11:47:16.108589+00:00"
    }
   ],
   "bea_ics": [
@@ -364,6 +378,17 @@
  "ff_field_diff": {
   "first": "s1",
   "last": "s3",
+  "added": [],
+  "removed": [],
+  "changed": []
+ },
+ "ff_xml_field_diff": {
+  "first": "s1",
+  "last": "s4",
+  "n": [
+   79,
+   79
+  ],
   "added": [],
   "removed": [],
   "changed": []

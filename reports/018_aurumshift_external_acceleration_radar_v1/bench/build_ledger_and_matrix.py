@@ -80,5 +80,5 @@ for k in ("PAPER", "PRICING", "OFFICIAL_API_OR_DATA", "CODE_REPO", "PACKAGE_REGI
     lines += [f"## {k} ({len(us)})", "", "| URL | lanes |", "|---|---|"]
     lines += [f"| {u} | {', '.join(sorted(by_url[u]))} |" for u in us]
     lines.append("")
-open("SOURCE_LEDGER_URLS.md", "w").write("\n".join(lines))
+open("bench/source_ledger_urls.generated.md", "w").write("\n".join(lines))
 print("urls", len(by_url))

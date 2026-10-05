@@ -142,3 +142,15 @@ if len(ok) >= 2:
                                 changed=[(str(k), ka[k], kb[k]) for k in ka.keys() & kb.keys() if ka[k] != kb[k]])
 (pathlib.Path(__file__).parent / "results" / "calendar_compare.json").write_text(json.dumps(out, indent=1, default=str))
 print(json.dumps(out, indent=1, default=str)[:9000])
+
+# field-level diff of FF XML between first and last successful snapshot (added after s4)
+okx = [r["tag"] for r in out["snapshot_hashes"]["ff_xml"] if r["status"] == 200]
+if len(okx) >= 2:
+    a, b = ff_xml(okx[0]), ff_xml(okx[-1])
+    ka = {(x["title"], x["country"], str(x["utc"])): (x["forecast"], x["previous"], x["impact"]) for x in a}
+    kb = {(x["title"], x["country"], str(x["utc"])): (x["forecast"], x["previous"], x["impact"]) for x in b}
+    out["ff_xml_field_diff"] = dict(first=okx[0], last=okx[-1], n=(len(a), len(b)),
+                                    added=[str(k) for k in kb.keys() - ka.keys()], removed=[str(k) for k in ka.keys() - kb.keys()],
+                                    changed=[(str(k), ka[k], kb[k]) for k in ka.keys() & kb.keys() if ka[k] != kb[k]])
+    (pathlib.Path(__file__).parent / "results" / "calendar_compare.json").write_text(json.dumps(out, indent=1, default=str))
+    print(json.dumps(out["ff_xml_field_diff"], indent=1, default=str))

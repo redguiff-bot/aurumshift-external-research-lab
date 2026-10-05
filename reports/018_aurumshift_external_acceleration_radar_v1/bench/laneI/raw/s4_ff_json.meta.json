@@ -1,0 +1,15 @@
+{
+ "name": "ff_json",
+ "url": "https://nfs.faireconomy.media/ff_calendar_thisweek.json",
+ "receipt_time_utc": "2026-10-05T11:47:15.610109+00:00",
+ "status": 429,
+ "latency_ms": 498,
+ "bytes": 3390,
+ "sha256": "2d2b88c3034617d61cf7cf2bcf4ad6d841a25ed6a090309d4eda3e1a818d3180",
+ "headers": {
+  "Date": "Mon, 05 Oct 2026 11:47:16 GMT",
+  "Content-Type": "text/html",
+  "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+  "Expires": "Thu, 01 Jan 1970 00:00:01 GMT"
+ }
+}
