@@ -1,0 +1,9 @@
+{"mlflow": "3.16.1",
+ "install_footprint": {"mlflow_full": {"dists": 89, "site_packages_MB": 630, "note": "inclut psycopg[binary] ajouté pour le backend PG"},
+                       "mlflow_skinny": {"dists": 43, "site_packages_MB": 87, "note": "pas de sqlalchemy/alembic ni numpy : ne peut pas servir de backend DB seul"}},
+ "sqlite": {"t_first_connect_and_migrate_s": 9.65, "t_log_3_runs_s": 1.0, "params_roundtrip_ok": true, "tag_overwrite_allowed": true,
+            "metric_latest_after_relog": 999.0, "metric_history_len": 2, "deleted_run_lifecycle": "deleted", "param_overwrite_allowed": false, "db_size": "860K"},
+ "postgres16": {"t_first_connect_and_migrate_s": 2.35, "t_log_3_runs_s": 0.4, "params_roundtrip_ok": true, "tag_overwrite_allowed": true,
+                "metric_latest_after_relog": 999.0, "metric_history_len": 2, "deleted_run_lifecycle": "deleted", "param_overwrite_allowed": false,
+                "tables_created_in_public": 59},
+ "artifact_store": "répertoire fichier séparé (artifact_location), 1 .npy par run ; aucune vérification de hash par MLflow (sha256 posé en tag, réécrivable)"}

@@ -1,0 +1,15 @@
+{
+ "name": "bea_json",
+ "url": "https://apps.bea.gov/API/signup/release_dates.json",
+ "receipt_time_utc": "2026-10-05T11:05:41.567085+00:00",
+ "status": 200,
+ "latency_ms": 2004,
+ "bytes": 9053,
+ "sha256": "a6541c6003af77ce6d151d97f1503475bf63caccc305bad7a9300f934a95c752",
+ "headers": {
+  "Date": "Mon, 05 Oct 2026 11:05:43 GMT",
+  "Content-Type": "application/json",
+  "Last-Modified": "Tue, 14 Jul 2026 10:33:20 GMT",
+  "ETag": "\"96926b307c13dd1:0\""
+ }
+}

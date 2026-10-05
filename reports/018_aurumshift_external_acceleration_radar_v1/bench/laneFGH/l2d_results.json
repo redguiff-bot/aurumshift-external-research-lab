@@ -1,0 +1,29 @@
+{
+ "LEAD": {
+  "granger_a->b": 1.0,
+  "granger_b->a": 0.0,
+  "pcmci_a->b": 1.0,
+  "pcmci_b->a": 0.16
+ },
+ "NULL": {
+  "granger_a->b": 0.08,
+  "granger_b->a": 0.02,
+  "pcmci_a->b": 0.3,
+  "pcmci_b->a": 0.08
+ },
+ "CONF": {
+  "granger_a->b": 0.02,
+  "granger_b->a": 1.0,
+  "pcmci_a->b": 0.08,
+  "pcmci_b->a": 1.0
+ },
+ "COINT": {
+  "engle_granger_reject": 1.0,
+  "johansen_trace_r0_reject": 1.0
+ },
+ "RW": {
+  "engle_granger_reject": 0.02,
+  "johansen_trace_r0_reject": 0.0
+ },
+ "wall_sec": 347.7
+}

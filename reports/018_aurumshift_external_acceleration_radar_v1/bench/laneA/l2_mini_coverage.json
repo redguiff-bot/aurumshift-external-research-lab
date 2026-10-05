@@ -1,0 +1,52 @@
+{
+ "R": 200,
+ "mu": 0.0,
+ "phi": 0.3,
+ "results": {
+  "60": {
+   "naive_t": {
+    "coverage": 0.885,
+    "median_width": 0.4872754928221327
+   },
+   "hac_nw": {
+    "coverage": 0.93,
+    "median_width": 0.5812585950181
+   },
+   "sb_opt": {
+    "coverage": 0.885,
+    "median_width": 0.5236657001689256
+   },
+   "cs_betting": {
+    "coverage": 1.0,
+    "median_width": 1.8560000000000008
+   },
+   "cs_betting_bm": {
+    "coverage": 1.0,
+    "median_width": 3.3919999999999995
+   }
+  },
+  "200": {
+   "naive_t": {
+    "coverage": 0.845,
+    "median_width": 0.26825914009939283
+   },
+   "hac_nw": {
+    "coverage": 0.93,
+    "median_width": 0.33753594492872385
+   },
+   "sb_opt": {
+    "coverage": 0.915,
+    "median_width": 0.3212639122762248
+   },
+   "cs_betting": {
+    "coverage": 1.0,
+    "median_width": 0.6240000000000006
+   },
+   "cs_betting_bm": {
+    "coverage": 1.0,
+    "median_width": 2.160000000000001
+   }
+  }
+ },
+ "seconds": 179.8
+}

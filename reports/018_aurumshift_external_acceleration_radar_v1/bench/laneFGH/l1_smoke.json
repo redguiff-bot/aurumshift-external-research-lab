@@ -1,0 +1,119 @@
+{
+ "river": {
+  "ok": true,
+  "sec": 0.988,
+  "out": {
+   "version": "0.26.1",
+   "adwin_hits": [
+    319
+   ]
+  }
+ },
+ "ruptures": {
+  "ok": true,
+  "sec": 0.144,
+  "out": {
+   "version": "v1.1.10",
+   "pelt_bkps": [
+    300,
+    600
+   ]
+  }
+ },
+ "mapie": {
+  "ok": true,
+  "sec": 0.078,
+  "out": {
+   "version": "1.5.0",
+   "has_TimeSeriesRegressor": true
+  }
+ },
+ "crepes": {
+  "ok": true,
+  "sec": 0.019,
+  "out": {
+   "version": "0.9.1",
+   "interval0": [
+    -1.7199106806581999,
+    1.7199106806581999
+   ]
+  }
+ },
+ "skfolio": {
+  "ok": true,
+  "sec": 0.606,
+  "out": {
+   "version": "1.4.11",
+   "w": [
+    0.2263,
+    0.2835,
+    0.2409,
+    0.2493
+   ]
+  }
+ },
+ "riskfolio": {
+  "ok": true,
+  "sec": 1.655,
+  "out": {
+   "version": "7.4.0",
+   "w": [
+    0.292,
+    0.263,
+    0.2177,
+    0.2273
+   ]
+  }
+ },
+ "tigramite": {
+  "ok": true,
+  "sec": 0.032,
+  "out": {
+   "version": "5.2.10.1",
+   "p_a_lag1_to_b": 1.921061321158125e-30
+  }
+ },
+ "statsmodels": {
+  "ok": true,
+  "sec": 0.248,
+  "out": {
+   "version": "0.15.0",
+   "filtered_p_last": 0.9951913174046143
+  }
+ },
+ "arch": {
+  "ok": true,
+  "sec": 0.017,
+  "out": {
+   "version": "8.0.0",
+   "params": {
+    "mu": -0.0362,
+    "omega": 0.0125,
+    "alpha[1]": 0.0313,
+    "beta[1]": 0.9687
+   }
+  }
+ },
+ "skchange": {
+  "ok": true,
+  "sec": 0.47,
+  "out": {
+   "version": "0.18.0",
+   "pelt_out": "[300]"
+  }
+ },
+ "hmmlearn": {
+  "ok": true,
+  "sec": 1.868,
+  "out": {
+   "version": "0.3.3"
+  }
+ },
+ "venn_abers": {
+  "ok": true,
+  "sec": 0.002,
+  "out": {
+   "ok": true
+  }
+ }
+}

@@ -1,0 +1,371 @@
+{
+ "ff_json_fields": [
+  "country",
+  "date",
+  "forecast",
+  "impact",
+  "previous",
+  "title"
+ ],
+ "ff_xml_fields": [
+  "country",
+  "date",
+  "forecast",
+  "impact",
+  "previous",
+  "time",
+  "title",
+  "url"
+ ],
+ "ff_n_events": {
+  "json": 79,
+  "xml": 79
+ },
+ "ff_json_offsets": {
+  "-04:00": 79
+ },
+ "ff_json_vs_xml_time_mismatch": [],
+ "ff_xml_untimed": [],
+ "ff_xml_is_utc": true,
+ "ff_exact_duplicates": [],
+ "ff_near_duplicates": [
+  [
+   "ADP Weekly Employment Change",
+   "2026-10-06T08:15:00-04:00",
+   "2026-10-06T08:16:00-04:00",
+   "",
+   "20.0K"
+  ]
+ ],
+ "ff_impact_counts": {
+  "Medium": 6,
+  "Holiday": 4,
+  "Low": 65,
+  "High": 4
+ },
+ "ff_has_actual_field": false,
+ "ff_past_events_with_actual": 0,
+ "ff_series_id_unique_titles": 76,
+ "ff_series_id_shared": {},
+ "ff_series_ids_n": 76,
+ "ff_occurrence_id_present": false,
+ "bea_ics_n": 119,
+ "bea_ics_range": [
+  "2025-01-07 13:30:00+00:00",
+  "2026-12-23 13:30:00+00:00"
+ ],
+ "bea_ics_uid_unique": true,
+ "bea_json_releases": 30,
+ "bea_json_file_last_updated": "2026-07-13T08:00:42.402013",
+ "bea_json_dates": 142,
+ "bea_json_duplicate_dates": 6,
+ "bea_events_this_week": [
+  [
+   "U.S. International Trade in Goods and Services, August 2026",
+   "2026-10-06T12:30:00+00:00"
+  ],
+  [
+   "Services Supplied Through Affiliates, 2024",
+   "2026-10-06T14:00:00+00:00"
+  ]
+ ],
+ "bea_json_events_this_week": [
+  [
+   "U.S. International Trade in Goods and Services",
+   "2026-10-06T12:30:00+00:00"
+  ],
+  [
+   "Services Supplied Through Affiliates",
+   "2026-10-06T14:00:00+00:00"
+  ]
+ ],
+ "ff_vs_bea_this_week": [
+  {
+   "bea": "U.S. International Trade in Goods and Services, August 2026",
+   "bea_utc": "2026-10-06T12:30:00+00:00",
+   "ff_same_instant": [
+    [
+     "Trade Balance",
+     "Low"
+    ]
+   ]
+  },
+  {
+   "bea": "Services Supplied Through Affiliates, 2024",
+   "bea_utc": "2026-10-06T14:00:00+00:00",
+   "ff_same_instant": []
+  }
+ ],
+ "fed_2026_meetings": [
+  [
+   "January",
+   "27-28"
+  ],
+  [
+   "March",
+   "17-18"
+  ],
+  [
+   "April",
+   "28-29"
+  ],
+  [
+   "June",
+   "16-17"
+  ],
+  [
+   "July",
+   "28-29"
+  ],
+  [
+   "September",
+   "15-16"
+  ],
+  [
+   "October",
+   "27-28"
+  ],
+  [
+   "December",
+   "8-9"
+  ],
+  [
+   "January",
+   "28-29"
+  ],
+  [
+   "March",
+   "18-19"
+  ],
+  [
+   "June",
+   "17-18"
+  ],
+  [
+   "July",
+   "29-30"
+  ],
+  [
+   "September",
+   "16-17"
+  ],
+  [
+   "October",
+   "28-29"
+  ],
+  [
+   "December",
+   "9-10"
+  ],
+  [
+   "January",
+   "30-31"
+  ],
+  [
+   "March",
+   "19-20"
+  ],
+  [
+   "June",
+   "11-12"
+  ],
+  [
+   "July",
+   "30-31"
+  ],
+  [
+   "September",
+   "17-18"
+  ]
+ ],
+ "fed_page_has_time_of_day": false,
+ "ecb_2026_mp_meetings": [
+  "16/12/2026",
+  "17/12/2026",
+  "28/10/2026",
+  "29/10/2026"
+ ],
+ "boe_2026_dates": [
+  "5 February",
+  "19 March",
+  "30 April",
+  "18 June",
+  "30 July",
+  "17 September",
+  "5 November",
+  "17 December",
+  "4 February",
+  "18 March"
+ ],
+ "boj_2026_snippet": "Table : 2026 Date of MPM Release Schedule Outlook Report (The Bank's View) Summary of Opinions MPM Minutes Jan. 22 (Thurs.), 23 (Fri.) [PDF 171KB] Jan. 23 (Fri.) [PDF 1,117KB] Feb. 2 (Mon.) [PDF 205KB] Mar. 25 (Wed.) [PDF 292KB] Mar. 18 (Wed.), 19 (Thurs.) [PDF 134KB] - Mar. 30 (Mon.) [PDF 210KB] May 7 (Thurs.) [PDF 266KB] Apr. 27 (Mon.), 28 (Tues.) [PDF 92KB] Apr. 28 (Tues.) [PDF 1,407KB] May 12 ",
+ "ff_central_bank_events_this_week": [
+  [
+   "German Buba President Nagel Speaks",
+   "EUR",
+   "Low",
+   "2026-10-05T07:45:00+00:00"
+  ],
+  [
+   "BOJ Gov Ueda Speaks",
+   "JPY",
+   "High",
+   "2026-10-06T06:35:00+00:00"
+  ],
+  [
+   "French Gov Budget Balance",
+   "EUR",
+   "Low",
+   "2026-10-06T06:45:00+00:00"
+  ],
+  [
+   "Unemployment Rate",
+   "CHF",
+   "Low",
+   "2026-10-06T07:00:00+00:00"
+  ],
+  [
+   "FOMC Member Bowman Speaks",
+   "USD",
+   "Low",
+   "2026-10-06T14:45:00+00:00"
+  ],
+  [
+   "FOMC Meeting Minutes",
+   "USD",
+   "High",
+   "2026-10-07T18:00:00+00:00"
+  ],
+  [
+   "Gov Board Member Martin Speaks",
+   "CHF",
+   "Low",
+   "2026-10-08T08:05:00+00:00"
+  ],
+  [
+   "BOE Credit Conditions Survey",
+   "GBP",
+   "Low",
+   "2026-10-08T08:30:00+00:00"
+  ],
+  [
+   "ECB Monetary Policy Meeting Accounts",
+   "EUR",
+   "Low",
+   "2026-10-08T11:30:00+00:00"
+  ],
+  [
+   "FOMC Member Musalem Speaks",
+   "USD",
+   "Low",
+   "2026-10-08T17:40:00+00:00"
+  ],
+  [
+   "Unemployment Rate",
+   "CAD",
+   "High",
+   "2026-10-09T12:30:00+00:00"
+  ],
+  [
+   "FOMC Member Collins Speaks",
+   "USD",
+   "Low",
+   "2026-10-09T20:00:00+00:00"
+  ]
+ ],
+ "snapshot_hashes": {
+  "ff_json": [
+   {
+    "tag": "s1",
+    "status": 200,
+    "sha": "d790a7602372",
+    "last_modified": "Mon, 05 Oct 2026 10:42:15 GMT",
+    "receipt": "2026-10-05T11:05:38.997672+00:00"
+   },
+   {
+    "tag": "s2",
+    "status": 429,
+    "sha": "2d2b88c30346",
+    "last_modified": null,
+    "receipt": "2026-10-05T11:12:50.916997+00:00"
+   },
+   {
+    "tag": "s3",
+    "status": 200,
+    "sha": "d790a7602372",
+    "last_modified": "Mon, 05 Oct 2026 10:42:15 GMT",
+    "receipt": "2026-10-05T11:22:08.992553+00:00"
+   }
+  ],
+  "ff_xml": [
+   {
+    "tag": "s1",
+    "status": 200,
+    "sha": "23c98747da93",
+    "last_modified": "Mon, 05 Oct 2026 10:42:15 GMT",
+    "receipt": "2026-10-05T11:05:39.200298+00:00"
+   },
+   {
+    "tag": "s2",
+    "status": 200,
+    "sha": "23c98747da93",
+    "last_modified": "Mon, 05 Oct 2026 10:42:15 GMT",
+    "receipt": "2026-10-05T11:12:51.248688+00:00"
+   }
+  ],
+  "bea_ics": [
+   {
+    "tag": "s1",
+    "status": 200,
+    "sha": "dbb86bc80b5b",
+    "last_modified": "Mon, 13 Jul 2026 12:09:32 GMT",
+    "receipt": "2026-10-05T11:05:39.675309+00:00"
+   },
+   {
+    "tag": "s2",
+    "status": 200,
+    "sha": "dbb86bc80b5b",
+    "last_modified": "Mon, 13 Jul 2026 12:09:32 GMT",
+    "receipt": "2026-10-05T11:12:51.757484+00:00"
+   }
+  ],
+  "bea_json": [
+   {
+    "tag": "s1",
+    "status": 200,
+    "sha": "a6541c6003af",
+    "last_modified": "Tue, 14 Jul 2026 10:33:20 GMT",
+    "receipt": "2026-10-05T11:05:41.567085+00:00"
+   },
+   {
+    "tag": "s2",
+    "status": 200,
+    "sha": "a6541c6003af",
+    "last_modified": "Tue, 14 Jul 2026 10:33:20 GMT",
+    "receipt": "2026-10-05T11:12:52.954287+00:00"
+   }
+  ],
+  "fed_fomc": [
+   {
+    "tag": "s1",
+    "status": 200,
+    "sha": "50bd4fc8fdbd",
+    "last_modified": "Wed, 16 Sep 2026 19:37:22 GMT",
+    "receipt": "2026-10-05T11:05:43.868291+00:00"
+   },
+   {
+    "tag": "s2",
+    "status": 200,
+    "sha": "353b0aa21459",
+    "last_modified": "Wed, 16 Sep 2026 19:37:22 GMT",
+    "receipt": "2026-10-05T11:12:54.608408+00:00"
+   }
+  ]
+ },
+ "ff_field_diff": {
+  "first": "s1",
+  "last": "s3",
+  "added": [],
+  "removed": [],
+  "changed": []
+ }
+}

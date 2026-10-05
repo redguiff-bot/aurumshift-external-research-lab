@@ -1,0 +1,48 @@
+diff --git a/pyproject.toml b/pyproject.toml
+index 87f36c6..3361cff 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -2,7 +2,7 @@
+ requires = [
+     "setuptools>=42",
+     "wheel",
+-    "pybind11~=2.6.0",
++    "pybind11>=2.11",
+     "cmake",
+     "scikit-build",
+ ]
+diff --git a/src/confseq/misc.py b/src/confseq/misc.py
+index a99395a..339338b 100644
+--- a/src/confseq/misc.py
++++ b/src/confseq/misc.py
+@@ -5,8 +5,8 @@ import multiprocess
+ 
+ 
+ def get_running_intersection(
+-    l: NDArray[np.float_], u: NDArray[np.float_]
+-) -> Tuple[NDArray[np.float_], NDArray[np.float_]]:
++    l: NDArray[np.float64], u: NDArray[np.float64]
++) -> Tuple[NDArray[np.float64], NDArray[np.float64]]:
+     return np.maximum.accumulate(l), np.minimum.accumulate(u)
+ 
+ 
+@@ -59,8 +59,8 @@ def get_ci_seq(x, ci_fn, times, parallel=False):
+ 
+ 
+ def superMG_crossing_fraction(
+-    mart_fn: Callable[[NDArray[np.float_]], NDArray[np.float_]],
+-    dist_fn: Callable[[], NDArray[np.float_]],
++    mart_fn: Callable[[NDArray[np.float64]], NDArray[np.float64]],
++    dist_fn: Callable[[], NDArray[np.float64]],
+     alpha: float,
+     repeats: int,
+ ) -> float:
+diff --git a/src/confseq/types.py b/src/confseq/types.py
+index e773aab..f4d94a7 100644
+--- a/src/confseq/types.py
++++ b/src/confseq/types.py
+@@ -1,3 +1,3 @@
+ import numpy as np
+ from numpy.typing import NDArray
+-RealArray = NDArray[np.float_]
++RealArray = NDArray[np.float64]

@@ -1,0 +1,44 @@
+[
+ {
+  "venue": "okx",
+  "method": "fetch_ohlcv",
+  "symbol": "BTC/USDT:USDT",
+  "exchange_ts": 1791199440000,
+  "receipt_send_ms": 1791199519391,
+  "receipt_recv_ms": 1791199519753,
+  "lib": "ccxt 4.5.85",
+  "raw_sha256": "74234e98afe7498f",
+  "payload": {
+   "n_raw": 30,
+   "n_closed": 29,
+   "gaps": []
+  }
+ },
+ {
+  "venue": "okx",
+  "method": "fetch_funding_rate",
+  "symbol": "BTC/USDT:USDT",
+  "exchange_ts": 1791199513932,
+  "receipt_send_ms": 1791199519753,
+  "receipt_recv_ms": 1791199520038,
+  "lib": "ccxt 4.5.85",
+  "raw_sha256": "75ed00bf2c2ba9eb",
+  "payload": {
+   "fundingRate": 8.10981829767e-05
+  }
+ },
+ {
+  "venue": "okx",
+  "method": "fetch_open_interest",
+  "symbol": "BTC/USDT:USDT",
+  "exchange_ts": 1791199520394,
+  "receipt_send_ms": 1791199520038,
+  "receipt_recv_ms": 1791199520476,
+  "lib": "ccxt 4.5.85",
+  "raw_sha256": "09642a4d16394b67",
+  "payload": {
+   "oi_contracts": 2897996.9900000105,
+   "oi_base": 28979.969900000106
+  }
+ }
+]

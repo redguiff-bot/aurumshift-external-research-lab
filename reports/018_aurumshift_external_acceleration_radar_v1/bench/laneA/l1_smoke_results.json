@@ -1,0 +1,106 @@
+{
+ "arch": {
+  "rc": 0,
+  "first_import_stmt_s": 1.964,
+  "stdout_tail": [
+   "[{'stationary': 1.4171088161130259, 'circular': 1.6221846450524713}]"
+  ],
+  "stderr_tail": []
+ },
+ "statsmodels": {
+  "rc": 0,
+  "first_import_stmt_s": 1.61,
+  "stdout_tail": [
+   "0.10605574637057345 [True, False, False]"
+  ],
+  "stderr_tail": []
+ },
+ "confseq": {
+  "rc": 0,
+  "first_import_stmt_s": 0.142,
+  "stdout_tail": [
+   "0.396 0.645"
+  ],
+  "stderr_tail": []
+ },
+ "pingouin": {
+  "rc": 0,
+  "first_import_stmt_s": 1.67,
+  "stdout_tail": [
+   "[{'bound': 0.5, 'dof': 49, 'pval': 0.026748108168118682}]"
+  ],
+  "stderr_tail": []
+ },
+ "arviz": {
+  "rc": 0,
+  "first_import_stmt_s": 2.643,
+  "stdout_tail": [
+   "147.34174978940925"
+  ],
+  "stderr_tail": []
+ },
+ "tsbootstrap": {
+  "rc": 0,
+  "first_import_stmt_s": 1.238,
+  "stdout_tail": [
+   "tsbootstrap"
+  ],
+  "stderr_tail": []
+ },
+ "recombinator": {
+  "rc": 0,
+  "first_import_stmt_s": 0.368,
+  "stdout_tail": [
+   "ok"
+  ],
+  "stderr_tail": []
+ },
+ "doubleml": {
+  "rc": 0,
+  "first_import_stmt_s": 2.38,
+  "stdout_tail": [
+   "0.11.4"
+  ],
+  "stderr_tail": []
+ },
+ "econml": {
+  "rc": 0,
+  "first_import_stmt_s": 3.097,
+  "stdout_tail": [
+   "ok"
+  ],
+  "stderr_tail": []
+ },
+ "dowhy": {
+  "rc": 0,
+  "first_import_stmt_s": 2.827,
+  "stdout_tail": [
+   "0.14"
+  ],
+  "stderr_tail": []
+ },
+ "causalml": {
+  "rc": 0,
+  "first_import_stmt_s": 3.28,
+  "stdout_tail": [
+   "ok"
+  ],
+  "stderr_tail": []
+ },
+ "spotify_confidence": {
+  "rc": 0,
+  "first_import_stmt_s": 1.528,
+  "stdout_tail": [
+   "ok"
+  ],
+  "stderr_tail": []
+ },
+ "quantstats": {
+  "rc": 0,
+  "first_import_stmt_s": 1.706,
+  "stdout_tail": [
+   "0.8620159790957721"
+  ],
+  "stderr_tail": []
+ }
+}

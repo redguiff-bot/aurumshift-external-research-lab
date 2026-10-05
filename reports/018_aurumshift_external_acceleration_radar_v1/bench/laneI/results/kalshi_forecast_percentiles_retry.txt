@@ -1,0 +1,6 @@
+https://api.elections.kalshi.com KXCPI-26OCT: {"error":{"code":"bad_request","message":"bad request"}}
+https://api.elections.kalshi.com KXFED-26OCT: {"error":{"code":"bad_request","message":"bad request"}}
+https://api.elections.kalshi.com KXPAYROLLS-26OCT: {"error":{"code":"bad_request","message":"bad request"}}
+https://external-api.kalshi.com KXCPI-26OCT: {"error":{"code":"bad_request","message":"bad request"}}
+https://external-api.kalshi.com KXFED-26OCT: {"error":{"code":"bad_request","message":"bad request"}}
+https://external-api.kalshi.com KXPAYROLLS-26OCT: {"error":{"code":"bad_request","message":"bad request"}}

@@ -1,0 +1,15 @@
+{
+ "name": "boe_mpc",
+ "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+ "receipt_time_utc": "2026-10-05T11:05:45.285869+00:00",
+ "status": 200,
+ "latency_ms": 868,
+ "bytes": 79168,
+ "sha256": "b53f09940fc275ba959d315c24e98623501c3e13775ecabcf495073fed1aba51",
+ "headers": {
+  "Content-Type": "text/html; charset=utf-8",
+  "Cache-Control": "max-age=10",
+  "Expires": "Mon, 05 Oct 2026 11:05:56 GMT",
+  "Date": "Mon, 05 Oct 2026 11:05:46 GMT"
+ }
+}

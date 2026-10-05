@@ -1,0 +1,251 @@
+{
+ "convert_seconds": 14.7,
+ "nopartial": {
+  "replay_seconds": 1.2,
+  "rows_sha256": "bfb8a8332cab3dc34cd4b7abc7d5c8acb460b4ed9a4376b779a972fd41538fa5",
+  "summary": {
+   "100": {
+    "engine_cost_bps_p50_p90": [
+     0.5283,
+     0.5316
+    ],
+    "engine_minus_own_bps_maxabs": 1.583393,
+    "fill_ratio_min": 1.0,
+    "fullbook_minus_snap25_bps_maxabs": 0.000135,
+    "max_ticks_walked": 2,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.5284,
+     0.5319
+    ],
+    "share_FILLED_but_local_position_short": 0.0,
+    "share_own_walk_gt_100_ticks": 0.0,
+    "share_snap25_insufficient": 0.0,
+    "share_status_EXPIRED": 0.0,
+    "share_status_FILLED": 1.0,
+    "snap25_walk_bps_p50_p90": [
+     0.5284,
+     0.5319
+    ]
+   },
+   "1000": {
+    "engine_cost_bps_p50_p90": [
+     0.5283,
+     0.5316
+    ],
+    "engine_minus_own_bps_maxabs": 2.072329,
+    "fill_ratio_min": 1.0,
+    "fullbook_minus_snap25_bps_maxabs": 5.4e-05,
+    "max_ticks_walked": 2,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.5285,
+     0.5325
+    ],
+    "share_FILLED_but_local_position_short": 0.0,
+    "share_own_walk_gt_100_ticks": 0.0,
+    "share_snap25_insufficient": 0.0,
+    "share_status_EXPIRED": 0.0,
+    "share_status_FILLED": 1.0,
+    "snap25_walk_bps_p50_p90": [
+     0.5285,
+     0.5325
+    ]
+   },
+   "10000": {
+    "engine_cost_bps_p50_p90": [
+     0.5283,
+     0.5316
+    ],
+    "engine_minus_own_bps_maxabs": 3.679182,
+    "fill_ratio_min": 1.0,
+    "fullbook_minus_snap25_bps_maxabs": 1.2e-05,
+    "max_ticks_walked": 5,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.714,
+     1.8006
+    ],
+    "share_FILLED_but_local_position_short": 0.0,
+    "share_own_walk_gt_100_ticks": 0.0,
+    "share_snap25_insufficient": 0.0,
+    "share_status_EXPIRED": 0.0,
+    "share_status_FILLED": 1.0,
+    "snap25_walk_bps_p50_p90": [
+     0.714,
+     1.8006
+    ]
+   },
+   "100000": {
+    "engine_cost_bps_p50_p90": [
+     0.5283,
+     0.5316
+    ],
+    "engine_minus_own_bps_maxabs": 6.715351,
+    "fill_ratio_min": 1.0,
+    "fullbook_minus_snap25_bps_maxabs": 2e-06,
+    "max_ticks_walked": 10,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     4.1803,
+     6.11
+    ],
+    "share_FILLED_but_local_position_short": 0.0,
+    "share_own_walk_gt_100_ticks": 0.0,
+    "share_snap25_insufficient": 0.0,
+    "share_status_EXPIRED": 0.0,
+    "share_status_FILLED": 1.0,
+    "snap25_walk_bps_p50_p90": [
+     4.1803,
+     6.11
+    ]
+   },
+   "1000000": {
+    "engine_cost_bps_p50_p90": [
+     0.5283,
+     0.5316
+    ],
+    "engine_minus_own_bps_maxabs": 76.257003,
+    "fill_ratio_min": 1.0,
+    "fullbook_minus_snap25_bps_maxabs": null,
+    "max_ticks_walked": 253,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     26.0025,
+     34.2069
+    ],
+    "share_FILLED_but_local_position_short": 0.0,
+    "share_own_walk_gt_100_ticks": 0.0761,
+    "share_snap25_insufficient": 1.0,
+    "share_status_EXPIRED": 0.0,
+    "share_status_FILLED": 1.0,
+    "snap25_walk_bps_p50_p90": null
+   }
+  }
+ },
+ "npz_bytes": 38402485,
+ "npz_sha256": "ac322e03fb3c4a3c4fbd61dc2e19fd45b0d33e433e4166b07c858e1e804a8f61",
+ "partial": {
+  "replay_seconds": 9.1,
+  "rows_sha256": "dd68f50316062d71bf5bce40f2e380d68acb77da795a68d982b22132c9dc8669",
+  "summary": {
+   "100": {
+    "engine_cost_bps_p50_p90": [
+     0.5284,
+     0.5319
+    ],
+    "engine_minus_own_bps_maxabs": 0.54325,
+    "fill_ratio_min": 0.523048,
+    "fullbook_minus_snap25_bps_maxabs": 0.000135,
+    "max_ticks_walked": 2,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.5284,
+     0.5319
+    ],
+    "share_FILLED_but_local_position_short": 0.0254,
+    "share_own_walk_gt_100_ticks": 0.0,
+    "share_snap25_insufficient": 0.0,
+    "share_status_EXPIRED": 0.0,
+    "share_status_FILLED": 1.0,
+    "snap25_walk_bps_p50_p90": [
+     0.5284,
+     0.5319
+    ]
+   },
+   "1000": {
+    "engine_cost_bps_p50_p90": [
+     0.5285,
+     0.5325
+    ],
+    "engine_minus_own_bps_maxabs": 1.582012,
+    "fill_ratio_min": 0.050133,
+    "fullbook_minus_snap25_bps_maxabs": 5.4e-05,
+    "max_ticks_walked": 2,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.5285,
+     0.5325
+    ],
+    "share_FILLED_but_local_position_short": 0.0797,
+    "share_own_walk_gt_100_ticks": 0.0,
+    "share_snap25_insufficient": 0.0,
+    "share_status_EXPIRED": 0.0,
+    "share_status_FILLED": 1.0,
+    "snap25_walk_bps_p50_p90": [
+     0.5285,
+     0.5325
+    ]
+   },
+   "10000": {
+    "engine_cost_bps_p50_p90": [
+     1.579,
+     2.6541
+    ],
+    "engine_minus_own_bps_maxabs": 2.55739,
+    "fill_ratio_min": 0.005767,
+    "fullbook_minus_snap25_bps_maxabs": 1.2e-05,
+    "max_ticks_walked": 5,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.714,
+     1.8006
+    ],
+    "share_FILLED_but_local_position_short": 0.6341,
+    "share_own_walk_gt_100_ticks": 0.0,
+    "share_snap25_insufficient": 0.0,
+    "share_status_EXPIRED": 0.0,
+    "share_status_FILLED": 1.0,
+    "snap25_walk_bps_p50_p90": [
+     0.714,
+     1.8006
+    ]
+   },
+   "100000": {
+    "engine_cost_bps_p50_p90": [
+     6.8696,
+     9.0181
+    ],
+    "engine_minus_own_bps_maxabs": 4.871609,
+    "fill_ratio_min": 0.000137,
+    "fullbook_minus_snap25_bps_maxabs": 2e-06,
+    "max_ticks_walked": 10,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     4.1803,
+     6.11
+    ],
+    "share_FILLED_but_local_position_short": 1.0,
+    "share_own_walk_gt_100_ticks": 0.0,
+    "share_snap25_insufficient": 0.0,
+    "share_status_EXPIRED": 0.0,
+    "share_status_FILLED": 1.0,
+    "snap25_walk_bps_p50_p90": [
+     4.1803,
+     6.11
+    ]
+   },
+   "1000000": {
+    "engine_cost_bps_p50_p90": [
+     62.1382,
+     76.611
+    ],
+    "engine_minus_own_bps_maxabs": 65.925651,
+    "fill_ratio_min": 0.0,
+    "fullbook_minus_snap25_bps_maxabs": null,
+    "max_ticks_walked": 253,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     26.0025,
+     34.2069
+    ],
+    "share_FILLED_but_local_position_short": 0.9239,
+    "share_own_walk_gt_100_ticks": 0.0761,
+    "share_snap25_insufficient": 1.0,
+    "share_status_EXPIRED": 0.0761,
+    "share_status_FILLED": 0.9239,
+    "snap25_walk_bps_p50_p90": null
+   }
+  }
+ }
+}

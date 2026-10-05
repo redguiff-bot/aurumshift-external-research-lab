@@ -1,0 +1,257 @@
+{
+ "convert_seconds": 78.4,
+ "nopartial": {
+  "replay_seconds": 9.3,
+  "rows_sha256": "e1785ccdc1122d1b56f00ec1e037d47a8d2a33f8e1c582c9966721054d737cfd",
+  "summary": {
+   "100": {
+    "engine_cost_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ],
+    "engine_minus_own_bps_maxabs": 0.048267,
+    "fill_ratio_min": 1.0,
+    "fullbook_minus_snap25_bps_maxabs": 0.000336,
+    "max_ticks_walked": 371,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ],
+    "share_FILLED_but_local_position_short": 0.0,
+    "share_own_walk_gt_100_ticks": 0.0036,
+    "share_snap25_insufficient": 0.0,
+    "share_status_EXPIRED": 0.0,
+    "share_status_FILLED": 1.0,
+    "snap25_walk_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ]
+   },
+   "1000": {
+    "engine_cost_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ],
+    "engine_minus_own_bps_maxabs": 0.673697,
+    "fill_ratio_min": 1.0,
+    "fullbook_minus_snap25_bps_maxabs": 5e-06,
+    "max_ticks_walked": 634,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ],
+    "share_FILLED_but_local_position_short": 0.0,
+    "share_own_walk_gt_100_ticks": 0.0109,
+    "share_snap25_insufficient": 0.0,
+    "share_status_EXPIRED": 0.0,
+    "share_status_FILLED": 1.0,
+    "snap25_walk_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ]
+   },
+   "10000": {
+    "engine_cost_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ],
+    "engine_minus_own_bps_maxabs": 0.843958,
+    "fill_ratio_min": 1.0,
+    "fullbook_minus_snap25_bps_maxabs": 1.5e-05,
+    "max_ticks_walked": 953,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ],
+    "share_FILLED_but_local_position_short": 0.0,
+    "share_own_walk_gt_100_ticks": 0.0435,
+    "share_snap25_insufficient": 0.0072,
+    "share_status_EXPIRED": 0.0,
+    "share_status_FILLED": 1.0,
+    "snap25_walk_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ]
+   },
+   "100000": {
+    "engine_cost_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ],
+    "engine_minus_own_bps_maxabs": 1.907584,
+    "fill_ratio_min": 1.0,
+    "fullbook_minus_snap25_bps_maxabs": 2e-06,
+    "max_ticks_walked": 1784,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.0006,
+     0.5872
+    ],
+    "share_FILLED_but_local_position_short": 0.0,
+    "share_own_walk_gt_100_ticks": 0.2609,
+    "share_snap25_insufficient": 0.2029,
+    "share_status_EXPIRED": 0.0,
+    "share_status_FILLED": 1.0,
+    "snap25_walk_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ]
+   },
+   "1000000": {
+    "engine_cost_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ],
+    "engine_minus_own_bps_maxabs": 2.768,
+    "fill_ratio_min": 1.0,
+    "fullbook_minus_snap25_bps_maxabs": 0.0,
+    "max_ticks_walked": 5618,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.9408,
+     2.0044
+    ],
+    "share_FILLED_but_local_position_short": 0.0,
+    "share_own_walk_gt_100_ticks": 0.9457,
+    "share_snap25_insufficient": 0.8587,
+    "share_status_EXPIRED": 0.0,
+    "share_status_FILLED": 1.0,
+    "snap25_walk_bps_p50_p90": [
+     0.0303,
+     0.1368
+    ]
+   }
+  }
+ },
+ "npz_bytes": 223422236,
+ "npz_sha256": "a524271c8c27d3de2b5a021d76572a5e89760cc5dcd3b61dd989366932299c6e",
+ "partial": {
+  "replay_seconds": 15.0,
+  "rows_sha256": "431cd0dd5706d61a05d1e1012413557614603ef722bc4aa3d8719a14cdddb534",
+  "summary": {
+   "100": {
+    "engine_cost_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ],
+    "engine_minus_own_bps_maxabs": 0.0,
+    "fill_ratio_min": 0.0,
+    "fullbook_minus_snap25_bps_maxabs": 0.000336,
+    "max_ticks_walked": 371,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ],
+    "share_FILLED_but_local_position_short": 0.0,
+    "share_own_walk_gt_100_ticks": 0.0036,
+    "share_snap25_insufficient": 0.0,
+    "share_status_EXPIRED": 0.0036,
+    "share_status_FILLED": 0.9964,
+    "snap25_walk_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ]
+   },
+   "1000": {
+    "engine_cost_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ],
+    "engine_minus_own_bps_maxabs": 0.033809,
+    "fill_ratio_min": 0.0,
+    "fullbook_minus_snap25_bps_maxabs": 5e-06,
+    "max_ticks_walked": 634,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ],
+    "share_FILLED_but_local_position_short": 0.0109,
+    "share_own_walk_gt_100_ticks": 0.0109,
+    "share_snap25_insufficient": 0.0,
+    "share_status_EXPIRED": 0.0109,
+    "share_status_FILLED": 0.9891,
+    "snap25_walk_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ]
+   },
+   "10000": {
+    "engine_cost_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ],
+    "engine_minus_own_bps_maxabs": 0.0,
+    "fill_ratio_min": 0.0,
+    "fullbook_minus_snap25_bps_maxabs": 1.5e-05,
+    "max_ticks_walked": 953,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ],
+    "share_FILLED_but_local_position_short": 0.0,
+    "share_own_walk_gt_100_ticks": 0.0435,
+    "share_snap25_insufficient": 0.0072,
+    "share_status_EXPIRED": 0.0471,
+    "share_status_FILLED": 0.9529,
+    "snap25_walk_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ]
+   },
+   "100000": {
+    "engine_cost_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ],
+    "engine_minus_own_bps_maxabs": 0.058685,
+    "fill_ratio_min": 0.0,
+    "fullbook_minus_snap25_bps_maxabs": 2e-06,
+    "max_ticks_walked": 1784,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.0006,
+     0.5872
+    ],
+    "share_FILLED_but_local_position_short": 0.0109,
+    "share_own_walk_gt_100_ticks": 0.2609,
+    "share_snap25_insufficient": 0.2029,
+    "share_status_EXPIRED": 0.2609,
+    "share_status_FILLED": 0.7391,
+    "snap25_walk_bps_p50_p90": [
+     0.0006,
+     0.0006
+    ]
+   },
+   "1000000": {
+    "engine_cost_bps_p50_p90": [
+     0.0161,
+     0.0857
+    ],
+    "engine_minus_own_bps_maxabs": 0.094203,
+    "fill_ratio_min": 0.0,
+    "fullbook_minus_snap25_bps_maxabs": 0.0,
+    "max_ticks_walked": 5618,
+    "n": 276,
+    "own_walk_fulldepth_bps_p50_p90": [
+     0.9408,
+     2.0044
+    ],
+    "share_FILLED_but_local_position_short": 0.0471,
+    "share_own_walk_gt_100_ticks": 0.9457,
+    "share_snap25_insufficient": 0.8587,
+    "share_status_EXPIRED": 0.9457,
+    "share_status_FILLED": 0.0543,
+    "snap25_walk_bps_p50_p90": [
+     0.0303,
+     0.1368
+    ]
+   }
+  }
+ }
+}

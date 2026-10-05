@@ -1,0 +1,13 @@
+surface,method,binance(spot+usdm),okx,bybit,pit_loss_or_note
+bars_1m,fetchOHLCV,PARTIAL,PARTIAL,PARTIAL,barre en formation renvoyée ; flag natif confirm (OKX) / x (Binance kline WS) non exposé
+bbo,watchBidsAsks,UNIFIED_UNMEASURED,UNIFIED,UNIFIED_UNMEASURED,
+depth_snapshot,fetchOrderBook,UNIFIED_UNMEASURED,PARTIAL,PARTIAL,"{""okx"": ""REST : nonce=None alors que OKX renvoie seqId (mesuré) ; nb d'ordres (4e champ) perdu"", ""bybit"": ""REST : nonce non renseigné (u/seq Bybit ignorés, lecture code)""}"
+depth_stream,watchOrderBook,UNIFIED_UNMEASURED,UNIFIED,UNIFIED_UNMEASURED,
+trades,watchTrades,UNIFIED_UNMEASURED,UNIFIED,UNIFIED_UNMEASURED,
+funding_current,fetchFundingRate,UNIFIED_UNMEASURED,PARTIAL,EMULATED_UNMEASURED,"{""okx"": ""timestamp=None (ts natif OKX seulement dans info) — Binance(time)/Bybit(ts) le remplissent (lecture code)""}"
+funding_history,fetchFundingRateHistory,UNIFIED_UNMEASURED,UNIFIED,UNIFIED_UNMEASURED,
+oi_current,fetchOpenInterest,PARTIAL,PARTIAL,PARTIAL,openInterestAmount en contrats ; contractSize hétérogène (OKX 0.01 BTC / 1000 DOGE mesuré) ; champ baseVolume déprécié → normalisation d'unités custom
+oi_history,fetchOpenInterestHistory,UNIFIED_UNMEASURED,UNIFIED,UNIFIED_UNMEASURED,
+mark_index_basis,fetchMarkPrice,UNIFIED_UNMEASURED,PARTIAL,MISSING,"{""okx"": ""indexPrice=None dans fetchMarkPrice → fetchIndexOHLCV ou appel natif"", ""bybit"": ""fetchMarkPrice absent → fetchTicker (markPrice/indexPrice) ou fetchMark/IndexOHLCV""}"
+liquidations,watchLiquidations,UNIFIED_UNMEASURED,EMULATED,UNIFIED_UNMEASURED,
+receipt_timestamp,-,MISSING,MISSING,MISSING,aucune méthode : ccxt n'ajoute jamais d'horodatage de réception

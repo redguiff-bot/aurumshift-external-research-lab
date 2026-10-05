@@ -1,0 +1,48 @@
+{
+ "run_utc": "2026-10-05T11:10:51.423868+00:00",
+ "KXCPI-26SEP": {
+  "status": 400,
+  "title": "CPI in September",
+  "sub_title": "In Sep 2026",
+  "strike_date": null,
+  "n_points": 0,
+  "first": [],
+  "last": [],
+  "err": {
+   "error": {
+    "code": "bad_request",
+    "message": "bad request"
+   }
+  }
+ },
+ "KXPAYROLLS-26OCT": {
+  "status": 400,
+  "title": "Jobs numbers in October 2026?",
+  "sub_title": "In Oct 2026",
+  "strike_date": null,
+  "n_points": 0,
+  "first": [],
+  "last": [],
+  "err": {
+   "error": {
+    "code": "bad_request",
+    "message": "bad request"
+   }
+  }
+ },
+ "KXU3-26OCT": {
+  "status": 400,
+  "title": "Unemployment in October",
+  "sub_title": "In Oct 2026",
+  "strike_date": null,
+  "n_points": 0,
+  "first": [],
+  "last": [],
+  "err": {
+   "error": {
+    "code": "bad_request",
+    "message": "bad request"
+   }
+  }
+ }
+}

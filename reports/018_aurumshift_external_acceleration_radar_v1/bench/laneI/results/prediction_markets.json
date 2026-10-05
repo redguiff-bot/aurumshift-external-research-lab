@@ -1,0 +1,475 @@
+{
+ "run_utc": "2026-10-05T11:06:38.424090+00:00",
+ "polymarket": {
+  "search_latency_ms": 502,
+  "event": {
+   "id": "606422",
+   "slug": "fed-decision-in-october-20260617190323537",
+   "title": "Fed Decision in October?",
+   "startDate": "2026-06-17T23:34:28.470106Z",
+   "endDate": "2026-10-29T03:59:00Z",
+   "createdAt": "2026-06-17T23:05:56.720885Z",
+   "updatedAt": "2026-10-05T11:02:23.756176Z",
+   "closed": false,
+   "resolutionSource": ""
+  },
+  "event_latency_ms": 59,
+  "markets": [
+   {
+    "id": "2589810",
+    "question": "Will the Fed decrease interest rates by 50+ bps after the October 2026 meeting?",
+    "conditionId": "0xa69ef420d8b4075ad8ba8611d02c63cb2ece46f5c8c643af223c272689b0c96f",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.0025\", \"0.9975\"]",
+    "volume": "4036715.0088790013",
+    "lastTradePrice": 0.003,
+    "bestBid": 0.002,
+    "bestAsk": 0.003,
+    "updatedAt": "2026-10-05T11:02:12.00245Z",
+    "umaResolutionStatus": null,
+    "yes_token": "17010377994663817312158123655937348199252960045746746128731746451645055725586"
+   },
+   {
+    "id": "2589811",
+    "question": "Will the Fed decrease interest rates by 25 bps after the October 2026 meeting?",
+    "conditionId": "0x9cf563d7b55aa9aa876d5d7e55126347eee473f0ae56d799e325fdef2bf25297",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.0045\", \"0.9955\"]",
+    "volume": "4371917.613966998",
+    "lastTradePrice": 0.005,
+    "bestBid": 0.004,
+    "bestAsk": 0.005,
+    "updatedAt": "2026-10-05T11:00:13.890516Z",
+    "umaResolutionStatus": null,
+    "yes_token": "33268510350568915228897273528353467773422190590579607471427765079749830445947"
+   },
+   {
+    "id": "2589812",
+    "question": "Will there be no change in Fed interest rates after the October 2026 meeting?",
+    "conditionId": "0xdf9bf27ee5757c55b44b8b9826ddc9ec3a8809aa3278634c45edbb7fc8f1a3e3",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.835\", \"0.165\"]",
+    "volume": "7269804.441158998",
+    "lastTradePrice": 0.84,
+    "bestBid": 0.83,
+    "bestAsk": 0.84,
+    "updatedAt": "2026-10-05T11:04:12.866035Z",
+    "umaResolutionStatus": null,
+    "yes_token": "111061902544814266207267295505639408607400625795891618462682726460921782993748"
+   },
+   {
+    "id": "2589813",
+    "question": "Will the Fed increase interest rates by 25 bps after the October 2026 meeting?",
+    "conditionId": "0x12aa13b3da17ceae1b0a59b5d5b77121e91bb79b4bb0b52bf6543ed3f8d0953b",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.165\", \"0.835\"]",
+    "volume": "6205271.511178987",
+    "lastTradePrice": 0.17,
+    "bestBid": 0.16,
+    "bestAsk": 0.17,
+    "updatedAt": "2026-10-05T11:02:12.00245Z",
+    "umaResolutionStatus": null,
+    "yes_token": "55159722761418013044126414276680602270318000841690689684819994448621694923050"
+   },
+   {
+    "id": "2589814",
+    "question": "Will the Fed increase interest rates by 50+ bps after the October 2026 meeting?",
+    "conditionId": "0xde5d75ab7702875623ba509bc923241e1211da74a113521b3b70ddac930d7316",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.0045\", \"0.9955\"]",
+    "volume": "3457094.1741100005",
+    "lastTradePrice": 0.005,
+    "bestBid": 0.004,
+    "bestAsk": 0.005,
+    "updatedAt": "2026-10-05T10:58:14.238389Z",
+    "umaResolutionStatus": null,
+    "yes_token": "18246296022868501258060085368606280205967114341141276439803424448463050819498"
+   }
+  ],
+  "history": {
+   "interval_max_fidelity_60": {
+    "status": 200,
+    "latency_ms": 327,
+    "body_head": null,
+    "n": 721,
+    "first": 1788609619,
+    "last": 1791198312,
+    "median_step_s": 3600.0,
+    "min_step_s": 279,
+    "max_step_s": 3644,
+    "sample": [
+     {
+      "t": 1788609619,
+      "p": 0.675
+     },
+     {
+      "t": 1788613215,
+      "p": 0.675
+     },
+     {
+      "t": 1791198033,
+      "p": 0.835
+     },
+     {
+      "t": 1791198312,
+      "p": 0.835
+     }
+    ]
+   },
+   "interval_1d_fidelity_1": {
+    "status": 200,
+    "latency_ms": 143,
+    "body_head": null,
+    "n": 1441,
+    "first": 1791111975,
+    "last": 1791198312,
+    "median_step_s": 60.0,
+    "min_step_s": 0,
+    "max_step_s": 85,
+    "sample": [
+     {
+      "t": 1791111975,
+      "p": 0.825
+     },
+     {
+      "t": 1791112031,
+      "p": 0.825
+     },
+     {
+      "t": 1791198312,
+      "p": 0.835
+     },
+     {
+      "t": 1791198312,
+      "p": 0.835
+     }
+    ]
+   },
+   "startTs_7d_fidelity_1": {
+    "status": 200,
+    "latency_ms": 301,
+    "body_head": null,
+    "n": 10080,
+    "first": 1790593630,
+    "last": 1791198376,
+    "median_step_s": 60,
+    "min_step_s": 0,
+    "max_step_s": 173,
+    "sample": [
+     {
+      "t": 1790593630,
+      "p": 0.325
+     },
+     {
+      "t": 1790593694,
+      "p": 0.325
+     },
+     {
+      "t": 1791198376,
+      "p": 0.835
+     },
+     {
+      "t": 1791198376,
+      "p": 0.835
+     }
+    ]
+   }
+  },
+  "book": {
+   "status": 200,
+   "latency_ms": 141,
+   "timestamp": "1791198400158",
+   "hash": "4e9fd4acf43e14628556c2c85c11d663632925e4",
+   "n_bids": 65,
+   "n_asks": 16
+  },
+  "trades": {
+   "status": 200,
+   "latency_ms": 272,
+   "sample": [
+    {
+     "proxyWallet": "0x93d9abab0c34a57418d3b2a3dc5a01685264ff6f",
+     "side": "SELL",
+     "asset": "42038775866198212615491650114881818219665139981763207699110491615333273795415",
+     "conditionId": "0xdf9bf27ee5757c55b44b8b9826ddc9ec3a8809aa3278634c45edbb7fc8f1a3e3",
+     "size": 5.88,
+     "price": 0.16,
+     "timestamp": 1791197582,
+     "title": "Will there be no change in Fed interest rates after the October 2026 meeting?",
+     "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-october-2026-meeting-20260617190324031",
+     "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/fed-decision-in-september-762-c4RyWuxRPo1L.jpg",
+     "eventSlug": "fed-decision-in-october-20260617190323537",
+     "outcome": "No",
+     "outcomeIndex": 1,
+     "name": "God775",
+     "pseudonym": "Well-Informed-Carpet-Export",
+     "bio": "",
+     "profileImage": "",
+     "profileImageOptimized": "",
+     "transactionHash": "0x4ee21e19ef6abcd79025a94d19dbb35ae3f830e3da64dd2bc2a5cda9405e3a40"
+    },
+    {
+     "proxyWallet": "0x93d9abab0c34a57418d3b2a3dc5a01685264ff6f",
+     "side": "BUY",
+     "asset": "42038775866198212615491650114881818219665139981763207699110491615333273795415",
+     "conditionId": "0xdf9bf27ee5757c55b44b8b9826ddc9ec3a8809aa3278634c45edbb7fc8f1a3e3",
+     "size": 5.882353,
+     "price": 0.1699999983,
+     "timestamp": 1791197467,
+     "title": "Will there be no change in Fed interest rates after the October 2026 meeting?",
+     "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-october-2026-meeting-20260617190324031",
+     "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/fed-decision-in-september-762-c4RyWuxRPo1L.jpg",
+     "eventSlug": "fed-decision-in-october-20260617190323537",
+     "outcome": "No",
+     "outcomeIndex": 1,
+     "name": "God775",
+     "pseudonym": "Well-Informed-Carpet-Export",
+     "bio": "",
+     "profileImage": "",
+     "profileImageOptimized": "",
+     "transactionHash": "0xfd32a0ec43734ec299a24c5a43178ccdf22309f55e421655645a1cc4cc985cb8"
+    }
+   ]
+  }
+ },
+ "kalshi": {
+  "series": {
+   "status": 200,
+   "latency_ms": 172,
+   "body": {
+    "series": {
+     "additional_prohibitions": [
+      "Persons who are employed by any of the Source Agencies are not permitted to trade on the Contract.",
+      "Persons who hold any material, non-public information on the Underlying are not permitted to trade on the Contract."
+     ],
+     "categories": [
+      "Economics"
+     ],
+     "category": "Economics",
+     "contract_terms_url": "https://assets.kalshi.com/contract_terms/FED.pdf",
+     "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/FED.pdf",
+     "exchange_index": 0,
+     "fee_multiplier": 1,
+     "fee_type": "quadratic_with_maker_fees",
+     "frequency": "custom",
+     "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+     "product_metadata": {
+      "scope": "Fed Rate After Meeting"
+     },
+     "settlement_sources": [
+      {
+       "name": "Federal Reserve Board of Governors",
+       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+     ],
+     "tags": [
+      "Fed"
+     ],
+     "ticker": "KXFED",
+     "title": "Fed funds rate"
+    }
+   }
+  },
+  "open_events": [
+   {
+    "event_ticker": "KXFED-26OCT",
+    "title": "Fed funds rate after Oct 2026 meeting?",
+    "n_markets": 11
+   },
+   {
+    "event_ticker": "KXFED-26DEC",
+    "title": "Fed funds rate after Dec 2026 meeting?",
+    "n_markets": 11
+   },
+   {
+    "event_ticker": "KXFED-27JAN",
+    "title": "Fed funds rate after Jan 2027 meeting?",
+    "n_markets": 25
+   },
+   {
+    "event_ticker": "KXFED-27MAR",
+    "title": "Fed funds rate after Mar 2027 meeting?",
+    "n_markets": 25
+   },
+   {
+    "event_ticker": "KXFED-27APR",
+    "title": "Fed funds rate after Apr 2027 meeting?",
+    "n_markets": 25
+   }
+  ],
+  "event_used": "KXFED-26DEC",
+  "markets_sample": [
+   {
+    "ticker": "KXFED-26DEC-T2.75",
+    "subtitle": "2.75%",
+    "yes_sub_title": "Above 2.75%",
+    "open_time": "2025-08-06T14:30:00Z",
+    "close_time": "2026-12-09T18:55:00Z",
+    "last_price": null,
+    "yes_bid": null,
+    "yes_ask": null,
+    "volume": null,
+    "open_interest": null,
+    "status": "active",
+    "rules_primary": "If the upper bound of the target federal funds rate published on the Federal Reserve's official website is greater than 2.75% following the Federal Reserve's Dec 9, 2026 meeting, then the market resolves to Yes."
+   },
+   {
+    "ticker": "KXFED-26DEC-T3.00",
+    "subtitle": "3.00%",
+    "yes_sub_title": "Above 3.00%",
+    "open_time": "2025-08-06T14:30:00Z",
+    "close_time": "2026-12-09T18:55:00Z",
+    "last_price": null,
+    "yes_bid": null,
+    "yes_ask": null,
+    "volume": null,
+    "open_interest": null,
+    "status": "active",
+    "rules_primary": "If the upper bound of the target federal funds rate published on the Federal Reserve's official website is greater than 3.00% following the Federal Reserve's Dec 9, 2026 meeting, then the market resolves to Yes."
+   },
+   {
+    "ticker": "KXFED-26DEC-T3.25",
+    "subtitle": "3.25%",
+    "yes_sub_title": "Above 3.25%",
+    "open_time": "2025-08-06T14:30:00Z",
+    "close_time": "2026-12-09T18:55:00Z",
+    "last_price": null,
+    "yes_bid": null,
+    "yes_ask": null,
+    "volume": null,
+    "open_interest": null,
+    "status": "active",
+    "rules_primary": "If the upper bound of the target federal funds rate published on the Federal Reserve's official website is greater than 3.25% following the Federal Reserve's Dec 9, 2026 meeting, then the market resolves to Yes."
+   }
+  ],
+  "candles": {
+   "period_1m": {
+    "status": 400,
+    "latency_ms": 68,
+    "body_head": "{\"error\":{\"code\":\"bad_request\",\"message\":\"bad request\",\"details\":\"requested time range with candlesticks: 10080.000000, max candlesticks: 5000\"}}",
+    "n": 0,
+    "first": null,
+    "last": null,
+    "median_step_s": null,
+    "min_step_s": null,
+    "max_step_s": null,
+    "sample": []
+   },
+   "period_60m": {
+    "status": 200,
+    "latency_ms": 67,
+    "body_head": null,
+    "n": 50,
+    "first": 1790611200,
+    "last": 1790953200,
+    "median_step_s": 3600,
+    "min_step_s": 3600,
+    "max_step_s": 133200,
+    "sample": [
+     {
+      "end_period_ts": 1790953200,
+      "open_interest_fp": "6582.63",
+      "price": {
+       "close_dollars": "0.9900",
+       "high_dollars": "0.9900",
+       "low_dollars": "0.9900",
+       "mean_dollars": "0.9900",
+       "open_dollars": "0.9900",
+       "previous_dollars": "0.9900"
+      },
+      "volume_fp": "905.40",
+      "yes_ask": {
+       "close_dollars": "1.0000",
+       "high_dollars": "1.0000",
+       "low_dollars": "0.9900",
+       "open_dollars": "0.9900"
+      },
+      "yes_bid": {
+       "close_dollars": "0.9800",
+       "high_dollars": "0.9800",
+       "low_dollars": "0.9800",
+       "open_dollars": "0.9800"
+      }
+     }
+    ]
+   },
+   "period_1440m": {
+    "status": 200,
+    "latency_ms": 68,
+    "body_head": null,
+    "n": 4,
+    "first": 1790654400,
+    "last": 1791000000,
+    "median_step_s": 86400,
+    "min_step_s": 86400,
+    "max_step_s": 172800,
+    "sample": [
+     {
+      "end_period_ts": 1791000000,
+      "open_interest_fp": "6582.63",
+      "price": {
+       "close_dollars": "0.9900",
+       "high_dollars": "0.9900",
+       "low_dollars": "0.9900",
+       "mean_dollars": "0.9900",
+       "open_dollars": "0.9900",
+       "previous_dollars": "0.9900"
+      },
+      "volume_fp": "905.40",
+      "yes_ask": {
+       "close_dollars": "1.0000",
+       "high_dollars": "1.0000",
+       "low_dollars": "0.9900",
+       "open_dollars": "0.9900"
+      },
+      "yes_bid": {
+       "close_dollars": "0.9800",
+       "high_dollars": "0.9800",
+       "low_dollars": "0.9800",
+       "open_dollars": "0.9800"
+      }
+     }
+    ]
+   }
+  },
+  "trades": {
+   "status": 200,
+   "latency_ms": 74,
+   "sample": [
+    {
+     "count_fp": "905.40",
+     "created_time": "2026-10-02T14:23:14.251506Z",
+     "is_block_trade": false,
+     "no_price_dollars": "0.0100",
+     "taker_book_side": "bid",
+     "taker_outcome_side": "yes",
+     "taker_side": "yes",
+     "ticker": "KXFED-26DEC-T2.75",
+     "trade_id": "07233cbc-cdb1-9302-c13f-57d5b97fe30f",
+     "yes_price_dollars": "0.9900"
+    },
+    {
+     "count_fp": "1000.00",
+     "created_time": "2026-09-23T19:15:27.140927Z",
+     "is_block_trade": false,
+     "no_price_dollars": "0.0100",
+     "taker_book_side": "bid",
+     "taker_outcome_side": "yes",
+     "taker_side": "yes",
+     "ticker": "KXFED-26DEC-T2.75",
+     "trade_id": "0723f187-fe91-9b1e-735c-cf088bc689df",
+     "yes_price_dollars": "0.9900"
+    }
+   ]
+  },
+  "orderbook": {
+   "status": 200,
+   "latency_ms": 65,
+   "head": "{\"orderbook_fp\":{\"no_dollars\":[],\"yes_dollars\":[[\"0.0100\",\"766140.00\"],[\"0.0200\",\"8660.00\"],[\"0.0300\",\"7685.00\"],[\"0.1200\",\"125493.00\"],[\"0.2400\",\"24624.00\"],[\"0.2500\",\"550.00\"],[\"0.3500\",\"9926.00\"],[\"0.4700\",\"3220.00\"],[\"0.4800\",\"16891.00\"],[\"0.5100\",\"100.00\"],[\"0.5200\",\"127.00\"],[\"0.5900\",\"936.00\""
+  },
+  "historical_cutoff": {
+   "status": 200,
+   "body": "{\"market_positions_last_updated_ts\":\"2026-08-06T00:00:00Z\",\"market_settled_ts\":\"2026-08-06T00:00:00Z\",\"orders_updated_ts\":\"2026-09-21T00:00:00Z\",\"trades_created_ts\":\"2026-08-06T00:00:00Z\"}"
+  }
+ }
+}

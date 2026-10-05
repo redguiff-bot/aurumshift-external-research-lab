@@ -1,0 +1,8 @@
+Mon Oct  5 11:08:06 UTC 2026
+69755 0121b4697eaae06deb72a34fcfe458de http://data.gdeltproject.org/gdeltv2/20261005111500.export.CSV.zip
+94351 5a7edc9c717603305bb8e59842f19380 http://data.gdeltproject.org/gdeltv2/20261005111500.mentions.CSV.zip
+4187543 52d81cd31919791b3fcac7d17d6041ec http://data.gdeltproject.org/gdeltv2/20261005111500.gkg.csv.zip
+
+HTTP 200 0.194792s
+{}
+HTTP 200 24.310113s

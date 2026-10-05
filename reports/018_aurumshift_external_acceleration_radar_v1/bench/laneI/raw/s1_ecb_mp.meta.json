@@ -1,0 +1,16 @@
+{
+ "name": "ecb_mp",
+ "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+ "receipt_time_utc": "2026-10-05T11:05:44.305876+00:00",
+ "status": 200,
+ "latency_ms": 978,
+ "bytes": 106266,
+ "sha256": "2031544973ddbdbd5dd6080731a9740ed81c9b25439f1ae0e4c1b491406ead44",
+ "headers": {
+  "Date": "Mon, 05 Oct 2026 11:05:45 GMT",
+  "Content-Type": "text/html; charset=UTF-8",
+  "Expires": "Mon, 05 Oct 2026 11:06:04 GMT",
+  "cache-control": "max-age=60",
+  "ETag": "\"myra-fbd9f3c7\""
+ }
+}

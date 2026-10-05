@@ -1,0 +1,309 @@
+{
+ "ccxt_version": "4.5.85",
+ "matrix": {
+  "binance": {
+   "bars": {
+    "fetchOHLCV": true,
+    "watchOHLCV": true
+   },
+   "bbo": {
+    "fetchTicker": true,
+    "fetchBidsAsks": true,
+    "watchTicker": true,
+    "watchBidsAsks": true
+   },
+   "depth": {
+    "fetchOrderBook": true,
+    "watchOrderBook": true
+   },
+   "trades": {
+    "fetchTrades": true,
+    "watchTrades": true
+   },
+   "funding": {
+    "fetchFundingRate": true,
+    "fetchFundingRates": true,
+    "fetchFundingRateHistory": true,
+    "watchFundingRate": null
+   },
+   "funding_interval": {
+    "fetchFundingInterval": "emulated",
+    "fetchFundingIntervals": true
+   },
+   "open_interest": {
+    "fetchOpenInterest": true,
+    "fetchOpenInterestHistory": true,
+    "fetchOpenInterests": null
+   },
+   "mark_index": {
+    "fetchMarkPrice": true,
+    "fetchMarkPrices": true,
+    "watchMarkPrice": true,
+    "fetchMarkOHLCV": true,
+    "fetchIndexOHLCV": true,
+    "fetchPremiumIndexOHLCV": true
+   },
+   "basis_inputs": {
+    "fetchMarkOHLCV": true,
+    "fetchIndexOHLCV": true
+   },
+   "liquidations": {
+    "fetchLiquidations": false,
+    "watchLiquidations": true,
+    "watchLiquidationsForSymbols": true
+   },
+   "long_short": {
+    "fetchLongShortRatio": false,
+    "fetchLongShortRatioHistory": true
+   },
+   "status_time": {
+    "fetchStatus": true,
+    "fetchTime": true
+   }
+  },
+  "binanceusdm": {
+   "bars": {
+    "fetchOHLCV": true,
+    "watchOHLCV": true
+   },
+   "bbo": {
+    "fetchTicker": true,
+    "fetchBidsAsks": true,
+    "watchTicker": true,
+    "watchBidsAsks": true
+   },
+   "depth": {
+    "fetchOrderBook": true,
+    "watchOrderBook": true
+   },
+   "trades": {
+    "fetchTrades": true,
+    "watchTrades": true
+   },
+   "funding": {
+    "fetchFundingRate": true,
+    "fetchFundingRates": true,
+    "fetchFundingRateHistory": true,
+    "watchFundingRate": null
+   },
+   "funding_interval": {
+    "fetchFundingInterval": "emulated",
+    "fetchFundingIntervals": true
+   },
+   "open_interest": {
+    "fetchOpenInterest": true,
+    "fetchOpenInterestHistory": true,
+    "fetchOpenInterests": null
+   },
+   "mark_index": {
+    "fetchMarkPrice": true,
+    "fetchMarkPrices": true,
+    "watchMarkPrice": true,
+    "fetchMarkOHLCV": true,
+    "fetchIndexOHLCV": true,
+    "fetchPremiumIndexOHLCV": true
+   },
+   "basis_inputs": {
+    "fetchMarkOHLCV": true,
+    "fetchIndexOHLCV": true
+   },
+   "liquidations": {
+    "fetchLiquidations": false,
+    "watchLiquidations": true,
+    "watchLiquidationsForSymbols": true
+   },
+   "long_short": {
+    "fetchLongShortRatio": false,
+    "fetchLongShortRatioHistory": true
+   },
+   "status_time": {
+    "fetchStatus": true,
+    "fetchTime": true
+   }
+  },
+  "okx": {
+   "bars": {
+    "fetchOHLCV": true,
+    "watchOHLCV": true
+   },
+   "bbo": {
+    "fetchTicker": true,
+    "fetchBidsAsks": null,
+    "watchTicker": true,
+    "watchBidsAsks": true
+   },
+   "depth": {
+    "fetchOrderBook": true,
+    "watchOrderBook": true
+   },
+   "trades": {
+    "fetchTrades": true,
+    "watchTrades": true
+   },
+   "funding": {
+    "fetchFundingRate": true,
+    "fetchFundingRates": true,
+    "fetchFundingRateHistory": true,
+    "watchFundingRate": true
+   },
+   "funding_interval": {
+    "fetchFundingInterval": true,
+    "fetchFundingIntervals": false
+   },
+   "open_interest": {
+    "fetchOpenInterest": true,
+    "fetchOpenInterestHistory": true,
+    "fetchOpenInterests": true
+   },
+   "mark_index": {
+    "fetchMarkPrice": true,
+    "fetchMarkPrices": true,
+    "watchMarkPrice": true,
+    "fetchMarkOHLCV": true,
+    "fetchIndexOHLCV": true,
+    "fetchPremiumIndexOHLCV": false
+   },
+   "basis_inputs": {
+    "fetchMarkOHLCV": true,
+    "fetchIndexOHLCV": true
+   },
+   "liquidations": {
+    "fetchLiquidations": null,
+    "watchLiquidations": "emulated",
+    "watchLiquidationsForSymbols": true
+   },
+   "long_short": {
+    "fetchLongShortRatio": false,
+    "fetchLongShortRatioHistory": true
+   },
+   "status_time": {
+    "fetchStatus": true,
+    "fetchTime": true
+   }
+  },
+  "bybit": {
+   "bars": {
+    "fetchOHLCV": true,
+    "watchOHLCV": true
+   },
+   "bbo": {
+    "fetchTicker": true,
+    "fetchBidsAsks": "emulated",
+    "watchTicker": true,
+    "watchBidsAsks": true
+   },
+   "depth": {
+    "fetchOrderBook": true,
+    "watchOrderBook": true
+   },
+   "trades": {
+    "fetchTrades": true,
+    "watchTrades": true
+   },
+   "funding": {
+    "fetchFundingRate": "emulated",
+    "fetchFundingRates": true,
+    "fetchFundingRateHistory": true,
+    "watchFundingRate": null
+   },
+   "funding_interval": {
+    "fetchFundingInterval": null,
+    "fetchFundingIntervals": null
+   },
+   "open_interest": {
+    "fetchOpenInterest": true,
+    "fetchOpenInterestHistory": true,
+    "fetchOpenInterests": null
+   },
+   "mark_index": {
+    "fetchMarkPrice": null,
+    "fetchMarkPrices": null,
+    "watchMarkPrice": null,
+    "fetchMarkOHLCV": true,
+    "fetchIndexOHLCV": true,
+    "fetchPremiumIndexOHLCV": true
+   },
+   "basis_inputs": {
+    "fetchMarkOHLCV": true,
+    "fetchIndexOHLCV": true
+   },
+   "liquidations": {
+    "fetchLiquidations": null,
+    "watchLiquidations": true,
+    "watchLiquidationsForSymbols": false
+   },
+   "long_short": {
+    "fetchLongShortRatio": false,
+    "fetchLongShortRatioHistory": true
+   },
+   "status_time": {
+    "fetchStatus": true,
+    "fetchTime": true
+   }
+  }
+ },
+ "rateLimit_ms": {
+  "binance": 50,
+  "binanceusdm": 50,
+  "okx": 110.00000000000001,
+  "bybit": 20
+ },
+ "surface_covered": {
+  "binance": {
+   "bars": true,
+   "bbo": true,
+   "depth": true,
+   "trades": true,
+   "funding": true,
+   "funding_interval": true,
+   "open_interest": true,
+   "mark_index": true,
+   "basis_inputs": true,
+   "liquidations": true,
+   "long_short": true,
+   "status_time": true
+  },
+  "binanceusdm": {
+   "bars": true,
+   "bbo": true,
+   "depth": true,
+   "trades": true,
+   "funding": true,
+   "funding_interval": true,
+   "open_interest": true,
+   "mark_index": true,
+   "basis_inputs": true,
+   "liquidations": true,
+   "long_short": true,
+   "status_time": true
+  },
+  "okx": {
+   "bars": true,
+   "bbo": true,
+   "depth": true,
+   "trades": true,
+   "funding": true,
+   "funding_interval": true,
+   "open_interest": true,
+   "mark_index": true,
+   "basis_inputs": true,
+   "liquidations": true,
+   "long_short": true,
+   "status_time": true
+  },
+  "bybit": {
+   "bars": true,
+   "bbo": true,
+   "depth": true,
+   "trades": true,
+   "funding": true,
+   "funding_interval": false,
+   "open_interest": true,
+   "mark_index": true,
+   "basis_inputs": true,
+   "liquidations": true,
+   "long_short": true,
+   "status_time": true
+  }
+ }
+}

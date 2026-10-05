@@ -1,0 +1,108 @@
+{
+ "run_utc": "2026-10-05T11:07:58.327870+00:00",
+ "polymarket": {
+  "Will the Fed decrease interest rates by 50+ bps after the October 2026 meeting?": {
+   "bid": 0.002,
+   "ask": 0.003,
+   "last": 0.003,
+   "updatedAt": "2026-10-05T11:02:12.00245Z"
+  },
+  "Will the Fed decrease interest rates by 25 bps after the October 2026 meeting?": {
+   "bid": 0.004,
+   "ask": 0.005,
+   "last": 0.005,
+   "updatedAt": "2026-10-05T11:00:13.890516Z"
+  },
+  "Will there be no change in Fed interest rates after the October 2026 meeting?": {
+   "bid": 0.83,
+   "ask": 0.84,
+   "last": 0.84,
+   "updatedAt": "2026-10-05T11:04:12.866035Z"
+  },
+  "Will the Fed increase interest rates by 25 bps after the October 2026 meeting?": {
+   "bid": 0.16,
+   "ask": 0.17,
+   "last": 0.17,
+   "updatedAt": "2026-10-05T11:02:12.00245Z"
+  },
+  "Will the Fed increase interest rates by 50+ bps after the October 2026 meeting?": {
+   "bid": 0.004,
+   "ask": 0.005,
+   "last": 0.005,
+   "updatedAt": "2026-10-05T10:58:14.238389Z"
+  }
+ },
+ "kalshi": {
+  "KXFED-26OCT-T2.75": {
+   "bid": "0.9900",
+   "ask": "1.0000",
+   "last": "0.9900",
+   "updated_time": "2026-09-30T18:52:10.746156Z"
+  },
+  "KXFED-26OCT-T3.00": {
+   "bid": "0.9900",
+   "ask": "1.0000",
+   "last": "0.9900",
+   "updated_time": "2026-09-30T18:52:10.746156Z"
+  },
+  "KXFED-26OCT-T3.25": {
+   "bid": "0.9900",
+   "ask": "1.0000",
+   "last": "0.9800",
+   "updated_time": "2026-09-30T18:52:10.746156Z"
+  },
+  "KXFED-26OCT-T3.50": {
+   "bid": "0.9900",
+   "ask": "1.0000",
+   "last": "0.9800",
+   "updated_time": "2026-09-30T18:52:10.746156Z"
+  },
+  "KXFED-26OCT-T3.75": {
+   "bid": "0.9900",
+   "ask": "1.0000",
+   "last": "0.9900",
+   "updated_time": "2026-09-30T18:52:10.746156Z"
+  },
+  "KXFED-26OCT-T4.00": {
+   "bid": "0.1800",
+   "ask": "0.2000",
+   "last": "0.2400",
+   "updated_time": "2026-09-30T18:52:10.746156Z"
+  },
+  "KXFED-26OCT-T4.25": {
+   "bid": "0.0000",
+   "ask": "0.0200",
+   "last": "0.0200",
+   "updated_time": "2026-09-30T18:52:10.746156Z"
+  },
+  "KXFED-26OCT-T4.50": {
+   "bid": "0.0000",
+   "ask": "0.0100",
+   "last": "0.0100",
+   "updated_time": "2026-09-30T18:52:10.746156Z"
+  },
+  "KXFED-26OCT-T4.75": {
+   "bid": "0.0000",
+   "ask": "0.0100",
+   "last": "0.0100",
+   "updated_time": "2026-09-30T18:52:10.746156Z"
+  },
+  "KXFED-26OCT-T5.00": {
+   "bid": "0.0000",
+   "ask": "0.0100",
+   "last": "0.0100",
+   "updated_time": "2026-09-30T18:52:10.746156Z"
+  },
+  "KXFED-26OCT-T5.25": {
+   "bid": "0.0000",
+   "ask": "0.0100",
+   "last": "0.0100",
+   "updated_time": "2026-09-30T18:52:10.746156Z"
+  }
+ },
+ "prices_history_window_status_by_days": {
+  "15": 200,
+  "18": 400,
+  "21": 400
+ }
+}

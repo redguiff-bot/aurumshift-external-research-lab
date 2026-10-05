@@ -1,0 +1,4 @@
+CREATE EXTENSION
+1|10188.9|CREATE INDEX ON mem_item USING hnsw (emb vector_l2_ops) WITH
+1|3254.8|COPY mem_item(id, emb) FROM STDIN
+2|2230.8|COPY c0_copy FROM STDIN (FORMAT BINARY)
