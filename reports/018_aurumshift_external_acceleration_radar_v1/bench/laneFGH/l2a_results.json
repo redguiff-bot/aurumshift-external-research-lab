@@ -1,0 +1,289 @@
+{
+ "protocol": "L2a \u2014 d\u00e9tection causale d'un saut de volatilit\u00e9 (laneFGH, mission 018).",
+ "detectors": {
+  "river_ADWIN_absret": {
+   "gauss": {
+    "knob": 0.2,
+    "FA_calib": 0.05,
+    "k=3.0": {
+     "FA_rate_pre": 0.1,
+     "miss_rate": 0.0,
+     "delay_median": 23.0,
+     "delay_p90": 23.0
+    },
+    "k=1.5": {
+     "FA_rate_pre": 0.1,
+     "miss_rate": 0.0,
+     "delay_median": 55.0,
+     "delay_p90": 87.0
+    }
+   },
+   "t4": {
+    "knob": 0.2,
+    "FA_calib": 0.0,
+    "k=3.0": {
+     "FA_rate_pre": 0.2,
+     "miss_rate": 0.0,
+     "delay_median": 23.0,
+     "delay_p90": 23.0
+    },
+    "k=1.5": {
+     "FA_rate_pre": 0.2,
+     "miss_rate": 0.05,
+     "delay_median": 55.0,
+     "delay_p90": 138.19999999999993
+    }
+   },
+   "FA_gauss_knob_on_t4_null": 0.15,
+   "deterministic_replay": true,
+   "wall_sec_total": 1.0,
+   "ms_per_obs": 0.0003
+  },
+  "river_PageHinkley_sq": {
+   "gauss": {
+    "knob": 80,
+    "FA_calib": 0.05,
+    "k=3.0": {
+     "FA_rate_pre": 0.1,
+     "miss_rate": 0.0,
+     "delay_median": 8.0,
+     "delay_p90": 11.100000000000001
+    },
+    "k=1.5": {
+     "FA_rate_pre": 0.1,
+     "miss_rate": 0.0,
+     "delay_median": 40.5,
+     "delay_p90": 76.1
+    }
+   },
+   "t4": {
+    "knob": 160,
+    "FA_calib": 0.0,
+    "k=3.0": {
+     "FA_rate_pre": 0.2,
+     "miss_rate": 0.0,
+     "delay_median": 14.0,
+     "delay_p90": 24.200000000000003
+    },
+    "k=1.5": {
+     "FA_rate_pre": 0.2,
+     "miss_rate": 0.0,
+     "delay_median": 88.0,
+     "delay_p90": 228.50000000000014
+    }
+   },
+   "FA_gauss_knob_on_t4_null": 0.5,
+   "deterministic_replay": true,
+   "wall_sec_total": 1.6,
+   "ms_per_obs": 0.003
+  },
+  "focus_gamma_sq(changepoint_online)": {
+   "gauss": {
+    "knob": 10,
+    "FA_calib": 0.0,
+    "k=3.0": {
+     "FA_rate_pre": 0.0,
+     "miss_rate": 0.0,
+     "delay_median": 4.0,
+     "delay_p90": 8.0
+    },
+    "k=1.5": {
+     "FA_rate_pre": 0.0,
+     "miss_rate": 0.0,
+     "delay_median": 43.5,
+     "delay_p90": 73.5
+    }
+   },
+   "t4": {
+    "knob": 50,
+    "FA_calib": 0.1,
+    "k=3.0": {
+     "FA_rate_pre": 0.1,
+     "miss_rate": 0.0,
+     "delay_median": 16.5,
+     "delay_p90": 30.0
+    },
+    "k=1.5": {
+     "FA_rate_pre": 0.1,
+     "miss_rate": 0.0,
+     "delay_median": 230.5,
+     "delay_p90": 576.6000000000005
+    }
+   },
+   "FA_gauss_knob_on_t4_null": 0.9,
+   "deterministic_replay": true,
+   "wall_sec_total": 5.1,
+   "ms_per_obs": 0.0072
+  },
+  "bocpd_custom_numpy": {
+   "gauss": {
+    "knob": 0.7,
+    "FA_calib": 0.1,
+    "k=3.0": {
+     "FA_rate_pre": 0.0,
+     "miss_rate": 0.25,
+     "delay_median": 3.0,
+     "delay_p90": 298.79999999999984
+    },
+    "k=1.5": {
+     "FA_rate_pre": 0.0,
+     "miss_rate": 0.75,
+     "delay_median": 27.0,
+     "delay_p90": 596.6000000000001
+    }
+   },
+   "t4": {
+    "knob": 0.99,
+    "FA_calib": 0.7,
+    "k=3.0": {
+     "FA_rate_pre": 0.7,
+     "miss_rate": 0.0,
+     "delay_median": 88.5,
+     "delay_p90": 803.4000000000001
+    },
+    "k=1.5": {
+     "FA_rate_pre": 0.7,
+     "miss_rate": 0.05,
+     "delay_median": 360.0,
+     "delay_p90": 767.1999999999999
+    }
+   },
+   "FA_gauss_knob_on_t4_null": 0.95,
+   "deterministic_replay": true,
+   "wall_sec_total": 103.0,
+   "ms_per_obs": 0.5529
+  },
+  "bocd_pkg_studentT": {
+   "gauss": {
+    "knob": 0.2,
+    "FA_calib": 0.1,
+    "k=3.0": {
+     "FA_rate_pre": 0.05,
+     "miss_rate": 0.0,
+     "delay_median": 4.0,
+     "delay_p90": 19.400000000000006
+    },
+    "k=1.5": {
+     "FA_rate_pre": 0.05,
+     "miss_rate": 0.0,
+     "delay_median": 168.5,
+     "delay_p90": 464.6000000000003
+    }
+   },
+   "t4": {
+    "knob": 0.99,
+    "FA_calib": 0.15,
+    "k=3.0": {
+     "FA_rate_pre": 0.25,
+     "miss_rate": 0.0,
+     "delay_median": 49.0,
+     "delay_p90": 178.30000000000018
+    },
+    "k=1.5": {
+     "FA_rate_pre": 0.25,
+     "miss_rate": 0.15,
+     "delay_median": 436.0,
+     "delay_p90": 774.4
+    }
+   },
+   "FA_gauss_knob_on_t4_null": 0.85,
+   "deterministic_replay": true,
+   "wall_sec_total": 325.5,
+   "ms_per_obs": 1.4924
+  },
+  "river_KSWIN_absret": {
+   "gauss": {
+    "knob": 0.0001,
+    "FA_calib": 0.05,
+    "k=3.0": {
+     "FA_rate_pre": 0.05,
+     "miss_rate": 0.1,
+     "delay_median": 27.0,
+     "delay_p90": 48.60000000000001
+    },
+    "k=1.5": {
+     "FA_rate_pre": 0.05,
+     "miss_rate": 0.75,
+     "delay_median": 59.0,
+     "delay_p90": 155.4
+    }
+   },
+   "t4": {
+    "knob": 0.0001,
+    "FA_calib": 0.0,
+    "k=3.0": {
+     "FA_rate_pre": 0.05,
+     "miss_rate": 0.25,
+     "delay_median": 28.0,
+     "delay_p90": 40.0
+    },
+    "k=1.5": {
+     "FA_rate_pre": 0.05,
+     "miss_rate": 0.9,
+     "delay_median": 438.5,
+     "delay_p90": 770.1
+    }
+   },
+   "FA_gauss_knob_on_t4_null": 0.05,
+   "deterministic_replay": true,
+   "wall_sec_total": 382.6,
+   "ms_per_obs": 0.9419
+  },
+  "ruptures_pelt_expanding_causal": {
+   "gauss": {
+    "knob": 20,
+    "FA_calib": 0.0,
+    "k=3.0": {
+     "FA_rate_pre": 0.0,
+     "miss_rate": 0.0,
+     "delay_median": 24.0,
+     "delay_p90": 24.0
+    },
+    "k=1.5": {
+     "FA_rate_pre": 0.0,
+     "miss_rate": 0.05,
+     "delay_median": 49.0,
+     "delay_p90": 124.0
+    }
+   },
+   "t4": {
+    "knob": 80,
+    "FA_calib": 0.05,
+    "k=3.0": {
+     "FA_rate_pre": 0.1,
+     "miss_rate": 0.0,
+     "delay_median": 24.0,
+     "delay_p90": 49.0
+    },
+    "k=1.5": {
+     "FA_rate_pre": 0.1,
+     "miss_rate": 0.65,
+     "delay_median": 124.0,
+     "delay_p90": 829.0
+    }
+   },
+   "FA_gauss_knob_on_t4_null": 0.8,
+   "deterministic_replay": true,
+   "wall_sec_total": 800.0,
+   "ms_per_obs": 1.7182
+  }
+ },
+ "ruptures_offline_REF_LOOKAHEAD": {
+  "gauss_k=3.0": {
+   "n_found": 20,
+   "median_abs_loc_err": 0.0
+  },
+  "gauss_k=1.5": {
+   "n_found": 20,
+   "median_abs_loc_err": 12.5
+  },
+  "t4_k=3.0": {
+   "n_found": 20,
+   "median_abs_loc_err": 0.0
+  },
+  "t4_k=1.5": {
+   "n_found": 20,
+   "median_abs_loc_err": 10.0
+  }
+ }
+}

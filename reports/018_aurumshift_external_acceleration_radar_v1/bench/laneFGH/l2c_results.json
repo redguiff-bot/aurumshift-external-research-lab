@@ -1,0 +1,126 @@
+{
+ "A5": {
+  "EW": {
+   "vol_ann": 0.6032,
+   "maxdd_sum": 1.4317,
+   "turnover": 0.0,
+   "fit_ms": 0.0327,
+   "w_mean_seed0": [
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2
+   ],
+   "vol_ratio_vs_EW_mean": 1.0
+  },
+  "InvVol_skfolio": {
+   "vol_ann": 0.3588,
+   "maxdd_sum": 0.8102,
+   "turnover": 0.0204,
+   "fit_ms": 8.2138,
+   "w_mean_seed0": [
+    0.168,
+    0.166,
+    0.086,
+    0.086,
+    0.493
+   ],
+   "vol_ratio_vs_EW_mean": 0.595
+  },
+  "HRP_skfolio": {
+   "vol_ann": 0.2011,
+   "maxdd_sum": 0.4565,
+   "turnover": 0.044,
+   "fit_ms": 17.4905,
+   "w_mean_seed0": [
+    0.072,
+    0.059,
+    0.015,
+    0.013,
+    0.84
+   ],
+   "vol_ratio_vs_EW_mean": 0.334
+  },
+  "HRP_riskfolio": {
+   "vol_ann": 0.2011,
+   "maxdd_sum": 0.4559,
+   "turnover": 0.0442,
+   "fit_ms": 27.5772,
+   "w_mean_seed0": [
+    0.072,
+    0.059,
+    0.015,
+    0.013,
+    0.84
+   ],
+   "vol_ratio_vs_EW_mean": 0.334
+  },
+  "MinVar_LW_skfolio": {
+   "vol_ann": 0.1956,
+   "maxdd_sum": 0.4096,
+   "turnover": 0.0327,
+   "fit_ms": 26.3803,
+   "w_mean_seed0": [
+    0.077,
+    0.056,
+    0.0,
+    0.0,
+    0.867
+   ],
+   "vol_ratio_vs_EW_mean": 0.325
+  }
+ },
+ "B2_btc_doge_like": {
+  "HRP_skfolio": {
+   "ERROR": "ValueError: attempt to get argmax of an empty sequence"
+  },
+  "EW": {
+   "vol_ann": 0.8126,
+   "maxdd_sum": 2.1957,
+   "turnover": 0.0,
+   "fit_ms": 0.0357,
+   "w_mean_seed0": [
+    0.5,
+    0.5
+   ],
+   "vol_ratio_vs_EW_mean": 1.0
+  },
+  "InvVol_skfolio": {
+   "vol_ann": 0.7173,
+   "maxdd_sum": 1.9559,
+   "turnover": 0.0095,
+   "fit_ms": 4.4162,
+   "w_mean_seed0": [
+    0.67,
+    0.33
+   ],
+   "vol_ratio_vs_EW_mean": 0.883
+  },
+  "HRP_riskfolio": {
+   "vol_ann": 0.6538,
+   "maxdd_sum": 1.7791,
+   "turnover": 0.0137,
+   "fit_ms": 9.34,
+   "w_mean_seed0": [
+    0.804,
+    0.196
+   ],
+   "vol_ratio_vs_EW_mean": 0.804
+  },
+  "MinVar_LW_skfolio": {
+   "vol_ann": 0.5922,
+   "maxdd_sum": 1.6371,
+   "turnover": 0.0078,
+   "fit_ms": 20.6053,
+   "w_mean_seed0": [
+    1.0,
+    0.0
+   ],
+   "vol_ratio_vs_EW_mean": 0.728
+  }
+ },
+ "deterministic_HRP_skfolio": true,
+ "deterministic_MinVar_LW_skfolio": true,
+ "HRP_skfolio_vs_riskfolio_maxabsdiff_seed0": 1.734723475976807e-18
+}

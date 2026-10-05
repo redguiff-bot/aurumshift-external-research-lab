@@ -1,0 +1,5 @@
+{
+ "NULL_pcmci_a->b_raw": 0.16,
+ "NULL_pcmci_a->b_fdr_bh": 0.02,
+ "sec_per_run": 0.03
+}

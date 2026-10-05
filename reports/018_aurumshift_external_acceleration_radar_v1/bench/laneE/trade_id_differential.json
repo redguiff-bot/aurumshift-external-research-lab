@@ -1,0 +1,75 @@
+{
+ "tardis_trades": 119,
+ "per_symbol": {
+  "BTC-USDT-SWAP": {
+   "joined": 108,
+   "price_eq": 108,
+   "ts_eq_native": 108,
+   "ts_eq_ccxt": 108,
+   "side_eq": 108,
+   "amount_tardis_eq_native_sz": 108,
+   "amount_ccxt_eq_native_sz": 108,
+   "amount_tardis_eq_ccxt": 108,
+   "example": {
+    "tardis": {
+     "type": "trade",
+     "symbol": "BTC-USDT-SWAP",
+     "exchange": "okex-swap",
+     "id": "2974184847",
+     "price": 85973.9,
+     "amount": 0.5,
+     "side": "buy",
+     "timestamp": "2026-10-05T11:22:58.694Z",
+     "localTimestamp": "2026-10-05T11:22:58.908Z"
+    },
+    "native": {
+     "instId": "BTC-USDT-SWAP",
+     "tradeId": "2974184847",
+     "px": "85973.9",
+     "sz": "0.5",
+     "side": "buy",
+     "ts": "1791199378694",
+     "source": "0"
+    },
+    "ccxt_amount": 0.5,
+    "contractSize": 0.01
+   },
+   "receipt_lag_ms_p50": 71.0
+  },
+  "BTC-USDT": {
+   "joined": 11,
+   "price_eq": 11,
+   "ts_eq_native": 11,
+   "ts_eq_ccxt": 11,
+   "side_eq": 11,
+   "amount_tardis_eq_native_sz": 11,
+   "amount_ccxt_eq_native_sz": 11,
+   "amount_tardis_eq_ccxt": 11,
+   "example": {
+    "tardis": {
+     "type": "trade",
+     "symbol": "BTC-USDT",
+     "exchange": "okex",
+     "id": "1066652731",
+     "price": 86021.1,
+     "amount": 1.1e-05,
+     "side": "buy",
+     "timestamp": "2026-10-05T11:23:00.707Z",
+     "localTimestamp": "2026-10-05T11:23:00.769Z"
+    },
+    "native": {
+     "instId": "BTC-USDT",
+     "tradeId": "1066652731",
+     "px": "86021.1",
+     "sz": "0.000011",
+     "side": "buy",
+     "ts": "1791199380707",
+     "source": "0"
+    },
+    "ccxt_amount": 1.1e-05,
+    "contractSize": null
+   },
+   "receipt_lag_ms_p50": 62.0
+  }
+ }
+}

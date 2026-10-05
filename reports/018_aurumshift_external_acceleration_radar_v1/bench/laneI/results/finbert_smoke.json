@@ -1,0 +1,53 @@
+{
+ "transformers": "5.18.0",
+ "torch": "2.14.1+cu130",
+ "load_s": 1.0,
+ "ms_per_headline": [
+  1454.1,
+  1102.4
+ ],
+ "deterministic_bitwise": true,
+ "hash": "64cd48ca543d5aeb",
+ "preds": [
+  [
+   "Fed holds rates steady, signals no cuts this year",
+   "neutral",
+   0.673
+  ],
+  [
+   "Bitcoin ETF sees record outflows as investors flee risk assets",
+   "negative",
+   0.68
+  ],
+  [
+   "US payrolls beat expectations, unemployment falls to 3.9%",
+   "negative",
+   0.956
+  ],
+  [
+   "ECB cuts deposit rate by 25 basis points",
+   "negative",
+   0.593
+  ],
+  [
+   "Dogecoin rallies 12% after exchange listing announcement",
+   "positive",
+   0.884
+  ],
+  [
+   "Inflation came in hotter than expected in September",
+   "negative",
+   0.674
+  ],
+  [
+   "Crypto exchange hacked, $200 million drained",
+   "neutral",
+   0.94
+  ],
+  [
+   "Treasury yields unchanged ahead of FOMC minutes",
+   "negative",
+   0.662
+  ]
+ ]
+}

@@ -1,0 +1,140 @@
+{
+ "cryptofeed": "3.0.x",
+ "duration_s": 25.3,
+ "channels": {
+  "ticker": {
+   "n": 300,
+   "first": {
+    "type": "Ticker",
+    "symbol": "BTC-USDT-PERP",
+    "exchange_ts": 1791198734.763,
+    "receipt_ts": 1791198735.0543945,
+    "fields": [
+     "ask",
+     "bid",
+     "exchange",
+     "from_dict",
+     "raw",
+     "symbol",
+     "timestamp",
+     "to_dict"
+    ]
+   },
+   "lag_ms_p50": 178.2,
+   "lag_ms_min": 88.4
+  },
+  "funding": {
+   "n": 4,
+   "first": {
+    "type": "Funding",
+    "symbol": "BTC-USDT-PERP",
+    "exchange_ts": 1791198678.935,
+    "receipt_ts": 1791198735.0703595,
+    "fields": [
+     "exchange",
+     "from_dict",
+     "mark_price",
+     "next_funding_time",
+     "predicted_rate",
+     "rate",
+     "raw",
+     "symbol",
+     "timestamp",
+     "to_dict"
+    ]
+   },
+   "lag_ms_p50": 55478.5,
+   "lag_ms_min": 113.4
+  },
+  "oi": {
+   "n": 8,
+   "first": {
+    "type": "OpenInterest",
+    "symbol": "BTC-USDT-PERP",
+    "exchange_ts": 1791198729.781,
+    "receipt_ts": 1791198735.0704558,
+    "fields": [
+     "exchange",
+     "open_interest",
+     "raw",
+     "symbol",
+     "timestamp",
+     "to_dict"
+    ]
+   },
+   "lag_ms_p50": 115.6,
+   "lag_ms_min": 106.1
+  },
+  "liq": {
+   "n": 200,
+   "first": {
+    "type": "Liquidation",
+    "symbol": "BTC-USDT-PERP",
+    "exchange_ts": 1791191836.863,
+    "receipt_ts": 1791198735.0708716,
+    "fields": [
+     "exchange",
+     "from_dict",
+     "id",
+     "price",
+     "quantity",
+     "raw",
+     "side",
+     "status",
+     "symbol",
+     "timestamp",
+     "to_dict"
+    ]
+   },
+   "lag_ms_p50": 14118664.9,
+   "lag_ms_min": 2322436.4
+  },
+  "l2": {
+   "n": 446,
+   "first": {
+    "type": "OrderBook",
+    "symbol": "BTC-USDT",
+    "exchange_ts": 1791198735.002,
+    "receipt_ts": 1791198735.2582307,
+    "fields": [
+     "book",
+     "checksum",
+     "delta",
+     "exchange",
+     "from_dict",
+     "raw",
+     "sequence_number",
+     "symbol",
+     "timestamp",
+     "to_dict"
+    ]
+   },
+   "lag_ms_p50": 88.1,
+   "lag_ms_min": 84.1
+  },
+  "trades": {
+   "n": 252,
+   "first": {
+    "type": "Trade",
+    "symbol": "BTC-USDT",
+    "exchange_ts": 1791198735.08,
+    "receipt_ts": 1791198735.3733044,
+    "fields": [
+     "amount",
+     "exchange",
+     "from_dict",
+     "id",
+     "price",
+     "raw",
+     "side",
+     "symbol",
+     "timestamp",
+     "to_dict",
+     "type"
+    ]
+   },
+   "lag_ms_p50": 86.5,
+   "lag_ms_min": 84.1
+  }
+ }
+}

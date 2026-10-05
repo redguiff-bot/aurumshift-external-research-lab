@@ -1,0 +1,191 @@
+{
+ "ccxt_version": "4.5.85",
+ "duration_s": 30.0,
+ "forced_close_at_ms": 1791198560213.2695,
+ "closed_clients": [
+  "wss://ws.okx.com/ws/v5/public"
+ ],
+ "errors": [
+  {
+   "fn": "watch_trades",
+   "sym": "BTC/USDT",
+   "t": 1791198560213.3828,
+   "err": "CancelledError: "
+  },
+  {
+   "fn": "watch_trades",
+   "sym": "BTC/USDT:USDT",
+   "t": 1791198560213.41,
+   "err": "CancelledError: "
+  },
+  {
+   "fn": "watch_bids_asks",
+   "sym": [
+    "BTC/USDT"
+   ],
+   "t": 1791198560213.4214,
+   "err": "CancelledError: "
+  },
+  {
+   "fn": "watch_order_book",
+   "sym": "BTC/USDT",
+   "t": 1791198560213.432,
+   "err": "CancelledError: "
+  },
+  {
+   "fn": "watch_order_book",
+   "sym": "BTC/USDT:USDT",
+   "t": 1791198560213.4392,
+   "err": "CancelledError: "
+  },
+  {
+   "fn": "watch_bids_asks",
+   "sym": [
+    "BTC/USDT:USDT"
+   ],
+   "t": 1791198560213.4468,
+   "err": "CancelledError: "
+  }
+ ],
+ "n_errors": 6,
+ "per_stream": {
+  "watch_order_book:BTC/USDT": {
+   "updates": 226,
+   "first_update_after_kill_ms": 1755,
+   "nonce_present": true,
+   "ts_present": true
+  },
+  "watch_trades:BTC/USDT": {
+   "updates": 32,
+   "first_update_after_kill_ms": 3688,
+   "trades_total": 54,
+   "dup_ids_in_cache_views": 0,
+   "receipt_stamp_in_trade": false,
+   "lag_ms_p50": 66.7,
+   "lag_ms_p95": 70.3
+  },
+  "watch_bids_asks:BTC/USDT": {
+   "updates": 256,
+   "first_update_after_kill_ms": 1453,
+   "sample_keys": [
+    "ask",
+    "askVolume",
+    "average",
+    "baseVolume",
+    "bid",
+    "bidVolume",
+    "change",
+    "close",
+    "datetime",
+    "high",
+    "indexPrice",
+    "last",
+    "low",
+    "markPrice",
+    "open",
+    "percentage",
+    "previousClose",
+    "quoteVolume",
+    "symbol",
+    "timestamp",
+    "vwap"
+   ],
+   "timestamp_none_count": 0,
+   "lag_ms_p50": 66.1
+  },
+  "watch_order_book:BTC/USDT:USDT": {
+   "updates": 272,
+   "first_update_after_kill_ms": 1827,
+   "nonce_present": true,
+   "ts_present": true
+  },
+  "watch_trades:BTC/USDT:USDT": {
+   "updates": 93,
+   "first_update_after_kill_ms": 1827,
+   "trades_total": 153,
+   "dup_ids_in_cache_views": 0,
+   "receipt_stamp_in_trade": false,
+   "lag_ms_p50": 66.8,
+   "lag_ms_p95": 70.7
+  },
+  "watch_bids_asks:BTC/USDT:USDT": {
+   "updates": 850,
+   "first_update_after_kill_ms": 1754,
+   "sample_keys": [
+    "ask",
+    "askVolume",
+    "average",
+    "baseVolume",
+    "bid",
+    "bidVolume",
+    "change",
+    "close",
+    "datetime",
+    "high",
+    "indexPrice",
+    "last",
+    "low",
+    "markPrice",
+    "open",
+    "percentage",
+    "previousClose",
+    "quoteVolume",
+    "symbol",
+    "timestamp",
+    "vwap"
+   ],
+   "timestamp_none_count": 0,
+   "lag_ms_p50": 66.2
+  }
+ },
+ "orderbook_hook": {
+  "ob_msgs": {
+   "BTC-USDT": 263,
+   "BTC-USDT-SWAP": 335
+  },
+  "crc_ok": {
+   "BTC-USDT": 0,
+   "BTC-USDT-SWAP": 0
+  },
+  "crc_fail": {
+   "BTC-USDT": 0,
+   "BTC-USDT-SWAP": 0
+  },
+  "crc_missing": {
+   "BTC-USDT": 0,
+   "BTC-USDT-SWAP": 0
+  },
+  "ccxt_vs_ref_top25_equal": {
+   "BTC-USDT": 263,
+   "BTC-USDT-SWAP": 335
+  },
+  "ccxt_vs_ref_checked": {
+   "BTC-USDT": 263,
+   "BTC-USDT-SWAP": 335
+  },
+  "snapshots": {
+   "BTC-USDT": 2,
+   "BTC-USDT-SWAP": 2
+  },
+  "seq_gap": {
+   "BTC-USDT": 0,
+   "BTC-USDT-SWAP": 0
+  },
+  "crc_zero": {
+   "BTC-USDT": 263,
+   "BTC-USDT-SWAP": 335
+  }
+ },
+ "orderbook_lag_ms": {
+  "BTC-USDT": {
+   "p50": 66.2,
+   "p95": 77.9,
+   "min": 63.6
+  },
+  "BTC-USDT-SWAP": {
+   "p50": 66.8,
+   "p95": 78.2,
+   "min": 63.7
+  }
+ }
+}

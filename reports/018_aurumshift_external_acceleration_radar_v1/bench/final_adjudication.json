@@ -1,0 +1,21 @@
+{
+  "A01": {"final": "ADOPT_NOW", "note": "Outil d'analyse hors runtime. Intervalle primaire = HAC ; arch pour SPA/StepM/MCS et second avis (Q1 : ne bat pas HAC à petit N). Fusionné avec FGH-F01."},
+  "FGH-F01": {"final": "ADOPT_NOW", "note": "Doublon de A01 (arch.bootstrap)."},
+  "A02": {"final": "ADOPT_NOW", "note": "Estimateur primaire HAC (lag >= horizon de détention) + multitest + TOST ; meilleure couverture à N fixe dans Q1."},
+  "A05": {"final": "BENCH_NOW", "note": "Vendoriser la partie betting (Python pur). Moniteur d'arrêt (FWER peeking 0-1,7 % vs 30-69 %), pas preuve de gain (puissance 0,44-0,53 à N=500)."},
+  "A22": {"final": "ADOPT_NOW", "note": "Code maison ~20 lignes (pas un composant externe) ; oracle quantstats. Sert à annoncer le N requis."},
+  "A24": {"final": "ADOPT_NOW", "note": "Pratique (hash sha256 du plan + commit avant le premier Outcome B), pas un composant."},
+  "A25": {"final": "WATCH", "note": "Témoin externe optionnel ; le hash+commit suffit pour le canari interne."},
+  "CD01": {"final": "ADOPT_NOW", "note": "Oracle gratuit, md5 vérifié, déterministe ; 12 jours/an seulement => audit, pas calibration."},
+  "CD03": {"final": "PARK", "note": "curl + md5 suffit ; client 5.0 a cassé son API."},
+  "CD05": {"final": "BENCH_NOW", "note": "Utilitaire de reconstruction L2 seulement (3,4e-4 bps vs snapshot) ; amont inactif > 9 mois ; moteur de fills PARK."},
+  "CD08": {"final": "BENCH_NOW", "note": "Oracle maison (BUILD minimal) à confronter à COST_CONTRACT_V1 : X1."},
+  "CD12": {"final": "ADOPT_NOW", "note": "Source officielle de vérité funding OKX (si PAPER perp)."},
+  "CD13": {"final": "ADOPT_NOW", "note": "Source officielle de vérité funding Binance (publication mensuelle, tardive)."},
+  "CD02": {"final": "SHADOW", "note": "TIER_C ; à acheter seulement si X1 montre un écart de coût matériel et qu'il faut calibrer une table coût×taille avant que la capture maison ait l'historique."},
+  "E01": {"final": "BENCH_NOW", "note": "Rétrogradé d'ADOPT_NOW : L3 mesuré sur OKX seulement ; Binance/Bybit non exécutés ; remplacement de collecteur = migration => X3 shadow d'abord."},
+  "E02": {"final": "ADOPT_NOW", "note": "Action immédiate : vérifier seqId/prevSeqId au lieu du checksum CRC32 déprécié le 2026-06-23."},
+  "BJKL-J03": {"final": "ADOPT_NOW", "note": "Déjà prouvé par LAB_PRIOR 004/017 ; compute offline uniquement."},
+  "laneI-I03": {"final": "BENCH_NOW", "note": "403 depuis cet egress aujourd'hui ; L2 prouvé dans LAB_PRIOR 010."},
+  "laneI-I08": {"final": "BENCH_NOW", "note": "Essai payant TIER_B pour actual/consensus à faible coût de dev ; guest supprimé (410)."}
+}

@@ -1,0 +1,16 @@
+{
+ "name": "fed_press_rss",
+ "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+ "receipt_time_utc": "2026-10-05T11:05:44.098878+00:00",
+ "status": 200,
+ "latency_ms": 207,
+ "bytes": 14719,
+ "sha256": "8474ef479802f613e1dc8188a1478039a4d5a2d1a6a1bbc919a303fc48ec3757",
+ "headers": {
+  "Date": "Mon, 05 Oct 2026 11:05:44 GMT",
+  "Content-Type": "text/xml",
+  "ETag": "W/\"58457debae52dd1:0\"",
+  "Age": "4",
+  "Last-Modified": "Fri, 02 Oct 2026 20:45:11 GMT"
+ }
+}

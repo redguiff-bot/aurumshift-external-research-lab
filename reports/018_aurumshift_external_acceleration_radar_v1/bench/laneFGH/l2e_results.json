@@ -1,0 +1,17 @@
+{
+ "t_iid": 0.8033333333333333,
+ "stationary_bs": 0.89,
+ "circular_bs": 0.8833333333333333,
+ "sec": 5.6,
+ "SPA_pvalues_null": {
+  "lower": 0.572,
+  "consistent": 0.806,
+  "upper": 0.806
+ },
+ "MCS_included_null": [
+  0,
+  1,
+  2
+ ],
+ "deterministic_seeded": true
+}

@@ -1,0 +1,17 @@
+{
+ "name": "bea_ics",
+ "url": "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
+ "receipt_time_utc": "2026-10-05T11:05:39.675309+00:00",
+ "status": 200,
+ "latency_ms": 1891,
+ "bytes": 31131,
+ "sha256": "dbb86bc80b5b99a691a59ffb0651e588c9f2fe5cc920d556208f9d6db890b6ca",
+ "headers": {
+  "Date": "Mon, 05 Oct 2026 11:05:41 GMT",
+  "Content-Type": "text/plain; charset=UTF-8",
+  "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+  "Cache-Control": "public, s-maxage=60",
+  "Last-Modified": "Mon, 13 Jul 2026 12:09:32 GMT",
+  "Age": "56"
+ }
+}

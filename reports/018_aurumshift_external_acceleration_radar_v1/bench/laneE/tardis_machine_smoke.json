@@ -1,0 +1,42 @@
+{
+ "replay": "okex-swap BTC-USDT-SWAP 2026-09-01T00:00-00:01 (\u00e9chantillon gratuit 1er du mois, sans cl\u00e9)",
+ "lines": 1128,
+ "by_type": {
+  "trade": 821,
+  "derivative_ticker": 247,
+  "book_snapshot": 60
+ },
+ "http_bytes": 288445,
+ "fields_trade": [
+  "amount",
+  "exchange",
+  "id",
+  "localTimestamp",
+  "price",
+  "side",
+  "symbol",
+  "timestamp",
+  "type"
+ ],
+ "derivative_ticker_example": {
+  "type": "derivative_ticker",
+  "symbol": "BTC-USDT-SWAP",
+  "exchange": "okex-swap",
+  "lastPrice": 78522.7,
+  "openInterest": 2733181.110000009,
+  "fundingRate": 2.98043017536e-05,
+  "fundingTimestamp": "2026-09-01T08:00:00.000Z",
+  "indexPrice": 78560.9,
+  "markPrice": 78522.7,
+  "timestamp": "2026-09-01T00:00:59.053Z",
+  "localTimestamp": "2026-09-01T00:00:59.068940Z"
+ },
+ "live_20s_counts": {
+  "okex-swap/derivative_ticker": 16,
+  "okex-swap/trade": 903,
+  "okex/book_snapshot(quote)": 57,
+  "okex-swap/book_snapshot_5_100ms": 186,
+  "okex/trade": 11
+ },
+ "tardis_machine": "18.3.8 (engines node>=24.19 ; ex\u00e9cut\u00e9 sous node 22.22 avec EBADENGINE warning)"
+}

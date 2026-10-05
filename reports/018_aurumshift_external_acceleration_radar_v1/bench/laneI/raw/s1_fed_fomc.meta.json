@@ -1,0 +1,15 @@
+{
+ "name": "fed_fomc",
+ "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+ "receipt_time_utc": "2026-10-05T11:05:43.868291+00:00",
+ "status": 200,
+ "latency_ms": 229,
+ "bytes": 165460,
+ "sha256": "50bd4fc8fdbd58251dd1f9cbd2d466482445cc2e1b8da535c2d1ee30714a457e",
+ "headers": {
+  "Date": "Mon, 05 Oct 2026 11:05:44 GMT",
+  "Content-Type": "text/html",
+  "Age": "1",
+  "Last-Modified": "Wed, 16 Sep 2026 19:37:22 GMT"
+ }
+}

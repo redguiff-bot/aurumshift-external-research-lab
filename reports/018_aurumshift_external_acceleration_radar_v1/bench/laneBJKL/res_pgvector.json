@@ -1,0 +1,13 @@
+{
+ "pgvector": "0.8.7",
+ "n": 50000,
+ "dim": 128,
+ "t_copy_s": 3.26,
+ "t_hnsw_build_s": 10.19,
+ "recall10_ef40": 0.46,
+ "ms_per_query_ef40": 1.2,
+ "recall10_ef200": 0.82,
+ "ms_per_query_ef200": 3.48,
+ "plan_uses_hnsw": true,
+ "table_plus_index_mb": 68.8
+}

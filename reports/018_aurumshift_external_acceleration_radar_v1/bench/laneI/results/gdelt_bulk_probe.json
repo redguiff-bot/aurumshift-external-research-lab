@@ -1,0 +1,46 @@
+{
+ "receipt_utc": "2026-10-05T11:08:50.199620+00:00",
+ "lastupdate_http_date": "Mon, 05 Oct 2026 11:08:50 GMT",
+ "lastupdate_last_modified": "Mon, 05 Oct 2026 11:05:56 GMT",
+ "file": "https://data.gdeltproject.org/gdeltv2/20261005111500.export.CSV.zip",
+ "size_declared": 69755,
+ "size_got": 69755,
+ "md5_ok": true,
+ "n_rows": 1075,
+ "n_cols": [
+  [
+   61,
+   1075
+  ]
+ ],
+ "DATEADDED_values": [
+  [
+   "20261005111500",
+   1075
+  ]
+ ],
+ "SQLDATE_values": [
+  [
+   "20261005",
+   1030
+  ],
+  [
+   "20260928",
+   23
+  ],
+  [
+   "20260905",
+   14
+  ],
+  [
+   "20261004",
+   6
+  ],
+  [
+   "20251005",
+   2
+  ]
+ ],
+ "rows_mentioning_central_bank_actor": 0,
+ "sample_sourceurls": []
+}

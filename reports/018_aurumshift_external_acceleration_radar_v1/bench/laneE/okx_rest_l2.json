@@ -1,0 +1,591 @@
+{
+ "ccxt_version": "4.5.85",
+ "venue": "okx",
+ "run_utc_ms": 1791198356375,
+ "tests": [
+  {
+   "symbol": "BTC/USDT",
+   "instId": "BTC-USDT",
+   "type": "spot",
+   "contractSize": null,
+   "ticker": {
+    "lat_ms": 435.1,
+    "native_lat_ms": 601.2,
+    "err": null,
+    "pit": {
+     "timestamp": 1791198357861,
+     "datetime": "2026-10-05T11:05:57.861Z"
+    },
+    "bid": 85970.8,
+    "ask": 85970.9,
+    "bidVolume": 1.2461676,
+    "parse_fidelity": true,
+    "info_keys_equal_native_keys": true,
+    "native_ts_minus_ccxt_ts_ms": 701,
+    "native_bid_minus_ccxt_bid": 0.0,
+    "receipt_ts_in_ccxt_obj": false
+   },
+   "orderbook": {
+    "lat_ms": 355.8,
+    "native_lat_ms": 236.2,
+    "err": null,
+    "pit": {
+     "timestamp": 1791198359552,
+     "datetime": "2026-10-05T11:05:59.552Z",
+     "nonce": null
+    },
+    "levels": [
+     20,
+     20
+    ],
+    "level_width": 3,
+    "native_level_fields": 4,
+    "native_has_seqId": true,
+    "native_ts": "1791198359802"
+   },
+   "ohlcv": {
+    "lat_ms": 295.6,
+    "native_lat_ms": 256.1,
+    "err": null,
+    "row_width_ccxt": 6,
+    "row_width_native": 9,
+    "native_last_confirm": "0",
+    "ccxt_last_bar_open_ts": 1791198300000,
+    "ccxt_last_bar_age_ms": 59896,
+    "ccxt_last_bar_is_forming": true,
+    "ccxt_exposes_confirm": false,
+    "same_ts_as_native": true
+   },
+   "trades": {
+    "lat_ms": 282.4,
+    "err": null,
+    "n": 50,
+    "pit_first": {
+     "timestamp": 1791198343877,
+     "datetime": "2026-10-05T11:05:43.877Z"
+    },
+    "unified_keys": [
+     "amount",
+     "cost",
+     "datetime",
+     "fee",
+     "fees",
+     "id",
+     "order",
+     "price",
+     "side",
+     "symbol",
+     "takerOrMaker",
+     "timestamp",
+     "type"
+    ],
+    "info_kept": true,
+    "has_id": true
+   }
+  },
+  {
+   "symbol": "DOGE/USDT",
+   "instId": "DOGE-USDT",
+   "type": "spot",
+   "contractSize": null,
+   "ticker": {
+    "lat_ms": 268.6,
+    "native_lat_ms": 215.1,
+    "err": null,
+    "pit": {
+     "timestamp": 1791198360176,
+     "datetime": "2026-10-05T11:06:00.176Z"
+    },
+    "bid": 0.09614,
+    "ask": 0.09615,
+    "bidVolume": 29763.57457,
+    "parse_fidelity": true,
+    "info_keys_equal_native_keys": true,
+    "native_ts_minus_ccxt_ts_ms": 0,
+    "native_bid_minus_ccxt_bid": 0.0,
+    "receipt_ts_in_ccxt_obj": false
+   },
+   "orderbook": {
+    "lat_ms": 388.8,
+    "native_lat_ms": 238.4,
+    "err": null,
+    "pit": {
+     "timestamp": 1791198361509,
+     "datetime": "2026-10-05T11:06:01.509Z",
+     "nonce": null
+    },
+    "levels": [
+     20,
+     20
+    ],
+    "level_width": 3,
+    "native_level_fields": 4,
+    "native_has_seqId": true,
+    "native_ts": "1791198361759"
+   },
+   "ohlcv": {
+    "lat_ms": 277.3,
+    "native_lat_ms": 242.3,
+    "err": null,
+    "row_width_ccxt": 6,
+    "row_width_native": 9,
+    "native_last_confirm": "0",
+    "ccxt_last_bar_open_ts": 1791198360000,
+    "ccxt_last_bar_age_ms": 1841,
+    "ccxt_last_bar_is_forming": true,
+    "ccxt_exposes_confirm": false,
+    "same_ts_as_native": true
+   },
+   "trades": {
+    "lat_ms": 307.5,
+    "err": null,
+    "n": 50,
+    "pit_first": {
+     "timestamp": 1791198272236,
+     "datetime": "2026-10-05T11:04:32.236Z"
+    },
+    "unified_keys": [
+     "amount",
+     "cost",
+     "datetime",
+     "fee",
+     "fees",
+     "id",
+     "order",
+     "price",
+     "side",
+     "symbol",
+     "takerOrMaker",
+     "timestamp",
+     "type"
+    ],
+    "info_kept": true,
+    "has_id": true
+   }
+  },
+  {
+   "symbol": "BTC/USDT:USDT",
+   "instId": "BTC-USDT-SWAP",
+   "type": "swap",
+   "contractSize": 0.01,
+   "ticker": {
+    "lat_ms": 256.7,
+    "native_lat_ms": 233.0,
+    "err": null,
+    "pit": {
+     "timestamp": 1791198362067,
+     "datetime": "2026-10-05T11:06:02.067Z"
+    },
+    "bid": 85935.8,
+    "ask": 85935.9,
+    "bidVolume": 16.63,
+    "parse_fidelity": true,
+    "info_keys_equal_native_keys": true,
+    "native_ts_minus_ccxt_ts_ms": 597,
+    "native_bid_minus_ccxt_bid": -4.100000000005821,
+    "receipt_ts_in_ccxt_obj": false
+   },
+   "orderbook": {
+    "lat_ms": 404.8,
+    "native_lat_ms": 245.2,
+    "err": null,
+    "pit": {
+     "timestamp": 1791198363452,
+     "datetime": "2026-10-05T11:06:03.452Z",
+     "nonce": null
+    },
+    "levels": [
+     20,
+     20
+    ],
+    "level_width": 3,
+    "native_level_fields": 4,
+    "native_has_seqId": true,
+    "native_ts": "1791198363702"
+   },
+   "ohlcv": {
+    "lat_ms": 384.1,
+    "native_lat_ms": 255.0,
+    "err": null,
+    "row_width_ccxt": 6,
+    "row_width_native": 9,
+    "native_last_confirm": "0",
+    "ccxt_last_bar_open_ts": 1791198360000,
+    "ccxt_last_bar_age_ms": 3808,
+    "ccxt_last_bar_is_forming": true,
+    "ccxt_exposes_confirm": false,
+    "same_ts_as_native": true
+   },
+   "trades": {
+    "lat_ms": 288.8,
+    "err": null,
+    "n": 50,
+    "pit_first": {
+     "timestamp": 1791198359493,
+     "datetime": "2026-10-05T11:05:59.493Z"
+    },
+    "unified_keys": [
+     "amount",
+     "cost",
+     "datetime",
+     "fee",
+     "fees",
+     "id",
+     "order",
+     "price",
+     "side",
+     "symbol",
+     "takerOrMaker",
+     "timestamp",
+     "type"
+    ],
+    "info_kept": true,
+    "has_id": true
+   },
+   "funding": {
+    "lat_ms": 264.3,
+    "err": null,
+    "pit": {
+     "timestamp": null,
+     "datetime": null,
+     "fundingTimestamp": 1791216000000,
+     "nextFundingTimestamp": 1791244800000
+    },
+    "fundingRate": 8.37588955206e-05,
+    "native_fundingRate": 8.37588955206e-05,
+    "native_keys": [
+     "formulaType",
+     "fundingRate",
+     "fundingTime",
+     "impactValue",
+     "instId",
+     "instType",
+     "interestRate",
+     "maxFundingRate",
+     "method",
+     "minFundingRate",
+     "nextFundingRate",
+     "nextFundingTime",
+     "premium",
+     "prevFundingTime",
+     "settFundingRate",
+     "settState",
+     "ts"
+    ],
+    "ccxt_timestamp_is_None": true,
+    "interval": "8h",
+    "markPrice": null,
+    "indexPrice": null
+   },
+   "funding_history": {
+    "lat_ms": 461.7,
+    "err": null,
+    "n": 10,
+    "pit_last": {
+     "timestamp": 1791187200000,
+     "datetime": "2026-10-05T08:00:00.000Z"
+    },
+    "step_ms": 28800000,
+    "realized_in_info": true
+   },
+   "open_interest": {
+    "lat_ms": 483.3,
+    "err": null,
+    "pit": {
+     "timestamp": 1791198366057,
+     "datetime": "2026-10-05T11:06:06.057Z"
+    },
+    "openInterestAmount": 2897250.6100000106,
+    "openInterestValue": 2489659599.6839895,
+    "baseVolume": 28972.506100000108,
+    "native": {
+     "instId": "BTC-USDT-SWAP",
+     "instType": "SWAP",
+     "oi": "2897250.61000001081",
+     "oiCcy": "28972.5061000001081",
+     "oiUsd": "2489659599.68398928922758",
+     "ts": "1791198366328"
+    }
+   },
+   "open_interest_history": {
+    "lat_ms": 462.9,
+    "err": null,
+    "n": 10,
+    "pit_last": {
+     "timestamp": 1791198000000,
+     "datetime": "2026-10-05T11:00:00.000Z"
+    },
+    "last": {
+     "openInterestAmount": 2896205.4900000105,
+     "openInterestValue": 2489453819.3616095,
+     "baseVolume": 28960.842500000104,
+     "quoteVolume": null
+    },
+    "info_last": [
+     "1791198000000",
+     "2896205.49000001058",
+     "28960.8425000001033",
+     "2489453819.36160931449764"
+    ]
+   },
+   "mark_price": {
+    "lat_ms": 457.9,
+    "err": null,
+    "pit": {
+     "timestamp": 1791198367245,
+     "datetime": "2026-10-05T11:06:07.245Z"
+    },
+    "markPrice": 85930.5,
+    "indexPrice": null
+   },
+   "index_ohlcv": {
+    "lat_ms": 442.3,
+    "err": null,
+    "last": [
+     1791198360000,
+     85975.3,
+     85975.3,
+     85967.4,
+     85967.4,
+     null
+    ]
+   },
+   "liquidations": {
+    "ccxt_err": "NotSupported: okx fetchLiquidations() is not supported yet",
+    "native_code": "0",
+    "native_n": 1,
+    "native_first_details_n": 5,
+    "native_detail_keys": [
+     "bkLoss",
+     "bkPx",
+     "ccy",
+     "posSide",
+     "side",
+     "sz",
+     "time",
+     "ts"
+    ]
+   }
+  },
+  {
+   "symbol": "DOGE/USDT:USDT",
+   "instId": "DOGE-USDT-SWAP",
+   "type": "swap",
+   "contractSize": 1000.0,
+   "ticker": {
+    "lat_ms": 360.9,
+    "native_lat_ms": 280.2,
+    "err": null,
+    "pit": {
+     "timestamp": 1791198368076,
+     "datetime": "2026-10-05T11:06:08.076Z"
+    },
+    "bid": 0.09606,
+    "ask": 0.09607,
+    "bidVolume": 192.75,
+    "parse_fidelity": true,
+    "info_keys_equal_native_keys": true,
+    "native_ts_minus_ccxt_ts_ms": 0,
+    "native_bid_minus_ccxt_bid": 0.0,
+    "receipt_ts_in_ccxt_obj": false
+   },
+   "orderbook": {
+    "lat_ms": 462.8,
+    "native_lat_ms": 350.8,
+    "err": null,
+    "pit": {
+     "timestamp": 1791198369259,
+     "datetime": "2026-10-05T11:06:09.259Z",
+     "nonce": null
+    },
+    "levels": [
+     20,
+     20
+    ],
+    "level_width": 3,
+    "native_level_fields": 4,
+    "native_has_seqId": true,
+    "native_ts": "1791198369609"
+   },
+   "ohlcv": {
+    "lat_ms": 318.8,
+    "native_lat_ms": 297.0,
+    "err": null,
+    "row_width_ccxt": 6,
+    "row_width_native": 9,
+    "native_last_confirm": "0",
+    "ccxt_last_bar_open_ts": 1791198360000,
+    "ccxt_last_bar_age_ms": 9725,
+    "ccxt_last_bar_is_forming": true,
+    "ccxt_exposes_confirm": false,
+    "same_ts_as_native": true
+   },
+   "trades": {
+    "lat_ms": 377.3,
+    "err": null,
+    "n": 50,
+    "pit_first": {
+     "timestamp": 1791198359500,
+     "datetime": "2026-10-05T11:05:59.500Z"
+    },
+    "unified_keys": [
+     "amount",
+     "cost",
+     "datetime",
+     "fee",
+     "fees",
+     "id",
+     "order",
+     "price",
+     "side",
+     "symbol",
+     "takerOrMaker",
+     "timestamp",
+     "type"
+    ],
+    "info_kept": true,
+    "has_id": true
+   },
+   "funding": {
+    "lat_ms": 372.0,
+    "err": null,
+    "pit": {
+     "timestamp": null,
+     "datetime": null,
+     "fundingTimestamp": 1791216000000,
+     "nextFundingTimestamp": 1791244800000
+    },
+    "fundingRate": 0.0001,
+    "native_fundingRate": 0.0001,
+    "native_keys": [
+     "formulaType",
+     "fundingRate",
+     "fundingTime",
+     "impactValue",
+     "instId",
+     "instType",
+     "interestRate",
+     "maxFundingRate",
+     "method",
+     "minFundingRate",
+     "nextFundingRate",
+     "nextFundingTime",
+     "premium",
+     "prevFundingTime",
+     "settFundingRate",
+     "settState",
+     "ts"
+    ],
+    "ccxt_timestamp_is_None": true,
+    "interval": "8h",
+    "markPrice": null,
+    "indexPrice": null
+   },
+   "funding_history": {
+    "lat_ms": 482.3,
+    "err": null,
+    "n": 10,
+    "pit_last": {
+     "timestamp": 1791187200000,
+     "datetime": "2026-10-05T08:00:00.000Z"
+    },
+    "step_ms": 28800000,
+    "realized_in_info": true
+   },
+   "open_interest": {
+    "lat_ms": 438.6,
+    "err": null,
+    "pit": {
+     "timestamp": 1791198372200,
+     "datetime": "2026-10-05T11:06:12.200Z"
+    },
+    "openInterestAmount": 1079763.9999999993,
+    "openInterestValue": 103732927.47999993,
+    "baseVolume": 1079763999.9999993,
+    "native": {
+     "instId": "DOGE-USDT-SWAP",
+     "instType": "SWAP",
+     "oi": "1079763.99999999923",
+     "oiCcy": "1079763999.99999923",
+     "oiUsd": "103732927.4799999260261",
+     "ts": "1791198372432"
+    }
+   },
+   "open_interest_history": {
+    "lat_ms": 464.7,
+    "err": null,
+    "n": 10,
+    "pit_last": {
+     "timestamp": 1791198000000,
+     "datetime": "2026-10-05T11:00:00.000Z"
+    },
+    "last": {
+     "openInterestAmount": 1079188.2699999993,
+     "openInterestValue": 103688408.98159993,
+     "baseVolume": 1079188269.9999993,
+     "quoteVolume": null
+    },
+    "info_last": [
+     "1791198000000",
+     "1079188.26999999929",
+     "1079188269.99999929",
+     "103688408.9815999317832"
+    ]
+   },
+   "mark_price": {
+    "lat_ms": 455.5,
+    "err": null,
+    "pit": {
+     "timestamp": 1791198373352,
+     "datetime": "2026-10-05T11:06:13.352Z"
+    },
+    "markPrice": 0.09606,
+    "indexPrice": null
+   },
+   "index_ohlcv": {
+    "lat_ms": 470.0,
+    "err": null,
+    "last": [
+     1791198360000,
+     0.09614,
+     0.09614,
+     0.09609,
+     0.09609,
+     null
+    ]
+   },
+   "liquidations": {
+    "ccxt_err": "NotSupported: okx fetchLiquidations() is not supported yet",
+    "native_code": "0",
+    "native_n": 1,
+    "native_first_details_n": 5,
+    "native_detail_keys": [
+     "bkLoss",
+     "bkPx",
+     "ccy",
+     "posSide",
+     "side",
+     "sz",
+     "time",
+     "ts"
+    ]
+   }
+  }
+ ],
+ "load_markets_ms": 1546,
+ "clock": {
+  "exchange_ms": 1791198358171,
+  "local_send": 1791198357922,
+  "local_recv": 1791198358267,
+  "offset_ms_mid": 76.5,
+  "rtt_ms": 345.4
+ },
+ "basis_snapshot": {
+  "spot_mid": 85969.95,
+  "perp_mark": 85931.5,
+  "index": null,
+  "mark_minus_index_bps": null,
+  "ts_spot": 1791198374269,
+  "ts_mark": 1791198374770
+ }
+}

@@ -1,0 +1,22 @@
+psql:ledger_pg_minimal.sql:6: NOTICE:  table "run_ledger" does not exist, skipping
+ seq |          arm           |     prev     |     hash     
+-----+------------------------+--------------+--------------
+   1 | A_quorum2              |              | 54af8da3151b
+   2 | B_quorum1_shadow       | 54af8da3151b | d683e1d629f4
+   3 | C_single_family_shadow | d683e1d629f4 | 2a2de84c384b
+(3 rows)
+
+psql:ledger_pg_minimal.sql:52: ERROR:  xp.run_ledger is append-only (UPDATE refused)
+CONTEXT:  PL/pgSQL function xp.ledger_no_mutation() line 2 at RAISE
+psql:ledger_pg_minimal.sql:53: ERROR:  xp.run_ledger is append-only (DELETE refused)
+CONTEXT:  PL/pgSQL function xp.ledger_no_mutation() line 2 at RAISE
+ chain_breaks_before_tamper 
+----------------------------
+                          0
+(1 row)
+
+ chain_breaks_after_tamper 
+---------------------------
+                         1
+(1 row)
+

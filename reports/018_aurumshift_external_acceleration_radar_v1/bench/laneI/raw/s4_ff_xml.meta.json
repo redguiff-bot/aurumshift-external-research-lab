@@ -1,0 +1,18 @@
+{
+ "name": "ff_xml",
+ "url": "https://nfs.faireconomy.media/ff_calendar_thisweek.xml",
+ "receipt_time_utc": "2026-10-05T11:47:16.108589+00:00",
+ "status": 200,
+ "latency_ms": 497,
+ "bytes": 27236,
+ "sha256": "23c98747da93e96304e2c09f4d651b9e9288c936514ad76199cf3183ceaaa1da",
+ "headers": {
+  "Date": "Mon, 05 Oct 2026 11:47:16 GMT",
+  "Content-Type": "text/xml",
+  "last-modified": "Mon, 05 Oct 2026 11:42:18 GMT",
+  "Cache-Control": "public, max-age=60",
+  "etag": "W/\"6ac38d1a-6a64\"",
+  "Age": "56",
+  "expires": "Mon, 05 Oct 2026 11:48:16 GMT"
+ }
+}

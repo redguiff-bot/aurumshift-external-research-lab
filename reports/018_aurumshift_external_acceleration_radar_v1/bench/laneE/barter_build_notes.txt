@@ -1,0 +1,12 @@
+barter-data 0.13.0 (MIT) — build/smoke Lane E, 2026-10-05
+git clone --depth 1 https://github.com/barter-rs/barter-rs ; cd barter-rs/barter-data
+cargo build --release --example public_trades_streams_multi_exchange   # 6 min 22 s (froid), cargo 1.97
+Patches nécessaires dans le sandbox :
+ 1) src/exchange/okx/mod.rs : BASE_URL_OKX ':8443' -> port 443 (egress sandbox coupe 8443 ; cf. LAB_PRIOR 005)
+ 2) Cargo.toml (workspace) tokio-tungstenite feature "rustls-tls-webpki-roots" -> "rustls-tls-native-roots"
+    (webpki-roots compilés en dur => CA du proxy refusée : "invalid peer certificate: UnknownIssuer")
+cp barter_laneE_okx_trades.rs examples/laneE_okx_trades.rs ; cargo run --release --example laneE_okx_trades
+Résultat : 60 trades OKX (spot+perp) en 20 s ; MarketEvent{time_exchange, time_received} ; lag p50 65 ms, min 64 ms ;
+1 erreur non fatale "Deserialising JSON error ... payload: pong" (pong texte OKX non géré).
+Couverture lue dans src/exchange : OKX = trades seulement ; Binance spot/futures = trades, L1, L2, liquidations (futures) ;
+Bybit = trades, L1, L2 ; aucune surface funding / OI / mark / index / bougies venue.

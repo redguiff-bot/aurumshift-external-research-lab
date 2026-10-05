@@ -1,0 +1,13 @@
+{
+ "otel_sdk": "1.45.0",
+ "t_import_s": 0.294,
+ "spans_exported": 2,
+ "parent_child_ok": true,
+ "console_export_bytes": 1768,
+ "metrics_seen": [
+  "pit.snapshot.lag_ms",
+  "decision.count"
+ ],
+ "us_per_span_no_processor": 16.35,
+ "us_per_span_batch_inmemory": 42.66
+}

@@ -1,0 +1,174 @@
+{
+ "run_utc": "2026-10-05T11:07:14.306406+00:00",
+ "polymarket_open_no_change_oct2026": {
+  "start_creation_fid60": {
+   "status": 400,
+   "err": "{\"error\":\"invalid filters: 'startTs' and 'endTs' interval is too long\"}\n",
+   "n": 0,
+   "first": null,
+   "last": null,
+   "median_step_s": null,
+   "max_step_s": null
+  },
+  "start_creation_fid720": {
+   "status": 400,
+   "err": "{\"error\":\"invalid filters: 'startTs' and 'endTs' interval is too long\"}\n",
+   "n": 0,
+   "first": null,
+   "last": null,
+   "median_step_s": null,
+   "max_step_s": null
+  },
+  "start_creation_fid1440": {
+   "status": 400,
+   "err": "{\"error\":\"invalid filters: 'startTs' and 'endTs' interval is too long\"}\n",
+   "n": 0,
+   "first": null,
+   "last": null,
+   "median_step_s": null,
+   "max_step_s": null
+  },
+  "start_creation_to_plus20d_fid1": {
+   "status": 400,
+   "err": "{\"error\":\"invalid filters: 'startTs' and 'endTs' interval is too long\"}\n",
+   "n": 0,
+   "first": null,
+   "last": null,
+   "median_step_s": null,
+   "max_step_s": null
+  },
+  "interval_all_fid1440": {
+   "status": 200,
+   "err": null,
+   "n": 110,
+   "first": "2026-06-19T00:00:21+00:00",
+   "last": "2026-10-05T11:07:11+00:00",
+   "median_step_s": 86400,
+   "max_step_s": 86431
+  }
+ },
+ "polymarket_closed_oct2025_25bp_cut": {
+  "question": "Fed decreases interest rates by 25 bps after October 2025 meeting?",
+  "closedTime": "2025-10-29 21:15:21+00",
+  "umaResolutionStatus": "resolved",
+  "fid60": {
+   "status": 400,
+   "err": "{\"error\":\"invalid filters: 'startTs' and 'endTs' interval is too long\"}\n",
+   "n": 0,
+   "first": null,
+   "last": null,
+   "median_step_s": null,
+   "max_step_s": null
+  },
+  "fid1_lastday": {
+   "status": 200,
+   "err": null,
+   "n": 2514,
+   "first": "2025-10-28T00:00:16+00:00",
+   "last": "2025-10-29T21:15:12+00:00",
+   "median_step_s": 60,
+   "max_step_s": 7094
+  }
+ },
+ "kalshi_KXFED_26OCT": {
+  "market_keys": [
+   "can_close_early",
+   "close_time",
+   "created_time",
+   "event_ticker",
+   "exchange_index",
+   "expected_expiration_time",
+   "expiration_time",
+   "expiration_value",
+   "floor_strike",
+   "last_price_dollars",
+   "latest_expiration_time",
+   "market_type",
+   "no_ask_dollars",
+   "no_bid_dollars",
+   "no_sub_title",
+   "notional_value_dollars",
+   "open_interest_fp",
+   "open_time",
+   "previous_price_dollars",
+   "previous_yes_ask_dollars",
+   "previous_yes_bid_dollars",
+   "price_level_structure",
+   "price_ranges",
+   "result",
+   "rules_primary",
+   "rules_secondary",
+   "settlement_bounds_type",
+   "settlement_timer_seconds",
+   "status",
+   "strike_type",
+   "subtitle",
+   "ticker",
+   "title",
+   "updated_time",
+   "volume_24h_fp",
+   "volume_fp",
+   "yes_ask_dollars",
+   "yes_ask_size_fp",
+   "yes_bid_dollars",
+   "yes_bid_size_fp",
+   "yes_sub_title"
+  ],
+  "n_markets": 11,
+  "top": {
+   "ticker": "KXFED-26OCT-T4.00",
+   "yes_sub_title": "Above 4.00%",
+   "open_time": "2025-08-06T14:30:00Z",
+   "close_time": "2026-10-28T17:55:00Z",
+   "expected_expiration_time": "2026-10-28T18:05:00Z",
+   "volume_fp": "167072.58",
+   "open_interest_fp": "76583.17",
+   "last_price_dollars": "0.2400",
+   "yes_bid_dollars": "0.1800",
+   "yes_ask_dollars": "0.2000",
+   "updated_time": "2026-09-30T18:52:10.746156Z",
+   "status": "active"
+  },
+  "candles_1m_3d": {
+   "status": 200,
+   "err": null,
+   "n": 2081,
+   "first": "2026-10-02T11:14:00+00:00",
+   "last": "2026-10-05T11:06:00+00:00",
+   "median_step_s": 60.0,
+   "max_step_s": 3000
+  },
+  "candles_60m_60d": {
+   "status": 200,
+   "err": null,
+   "n": 1038,
+   "first": "2026-08-06T12:00:00+00:00",
+   "last": "2026-10-05T11:00:00+00:00",
+   "median_step_s": 3600,
+   "max_step_s": 57600
+  },
+  "candles_1440m_400d": {
+   "status": 200,
+   "err": null,
+   "n": 380,
+   "first": "2025-09-01T04:00:00+00:00",
+   "last": "2026-10-05T04:00:00+00:00",
+   "median_step_s": 86400,
+   "max_step_s": 432000
+  },
+  "trades_live_page": {
+   "status": 200,
+   "n": 1000,
+   "newest": "2026-10-05T05:23:28.594615Z",
+   "oldest": "2026-09-24T04:50:51.575797Z",
+   "cursor_present": true
+  },
+  "trades_historical_page": {
+   "status": 200,
+   "err": null,
+   "n": 100,
+   "newest": "2026-08-05T10:53:05.515009Z",
+   "oldest": "2026-05-18T00:27:57.043244Z"
+  }
+ }
+}
